@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xlmns="info:srw/schema/5/picaXML-v1.0">
+<record>
+  <datafield tag="002@">
+    <subfield code="0">Aan</subfield>
+  </datafield>
+  <datafield tag="003@">
+    <subfield code="0">12345</subfield>
+  </datafield>
+  <datafield tag="010@">
+    <subfield code="a">chi</subfield>
+  </datafield>
+  <datafield tag="011@">
+    <subfield code="a">2004</subfield>
+    <subfield code="n">2004.01</subfield>
+  </datafield>
+  <datafield tag="012X">
+    <subfield code="0">0</subfield>
+    <subfield code="x"></subfield>
+    <subfield code="y"></subfield>
+  </datafield>
+  <datafield tag="019@">
+    <subfield code="a">XB-CN</subfield>
+  </datafield>
+  <datafield tag="021A">
+    <subfield code="a">我国民事立法的回顾与展望</subfield>
+    <subfield code="f">History and perspective of China civil law</subfield>
+    <subfield code="h">柳经纬主编;</subfield>
+  </datafield>
+  <datafield tag="101@">
+    <subfield code="a">120</subfield>
+    <subfield code="c">PICA</subfield>
+    <subfield code="d">Oldenburg, IBIT Universität Oldenburg &amp;lt;715></subfield>
+  </datafield>
+  <datafield tag="101B">
+    <subfield code="0">15-01-09</subfield>
+    <subfield code="t">15:32:38.000</subfield>
+  </datafield>
+  <datafield tag="101D">
+    <subfield code="0">15-01-09</subfield>
+    <subfield code="b">9330</subfield>
+    <subfield code="a">0715</subfield>
+  </datafield>
+  <datafield tag="101U">
+    <subfield code="0">utf8</subfield>
+  </datafield>
+  <datafield tag="145Z" occurrence="40">
+    <subfield code="a">$</subfield>
+    <subfield code="b">test$</subfield>
+    <subfield code="c">...</subfield>
+  </datafield>
+  <datafield tag="201B" occurrence="01">
+    <subfield code="0">15-01-09</subfield>
+    <subfield code="t">15:32:38.000</subfield>
+  </datafield>
+  <datafield tag="201D" occurrence="01">
+    <subfield code="0">15-01-09</subfield>
+    <subfield code="b">9330</subfield>
+    <subfield code="a">0715</subfield>
+  </datafield>
+  <datafield tag="201U" occurrence="01">
+    <subfield code="0">utf8</subfield>
+  </datafield>
+  <datafield tag="203@" occurrence="01">
+    <subfield code="0">917400194</subfield>
+    <subfield code="x"></subfield>
+    <subfield code="y"></subfield>
+  </datafield>
+  <datafield tag="208@" occurrence="01">
+    <subfield code="a">15-01-09</subfield>
+    <subfield code="b">z</subfield>
+  </datafield>
+  <datafield tag="209A" occurrence="01">
+    <subfield code="f">108</subfield>
+    <subfield code="a">401-06356/09</subfield>
+    <subfield code="d">g</subfield>
+    <subfield code="x">00</subfield>
+  </datafield>
+</record>
+<record>
+  <datafield tag="003@">
+    <subfield code="0">67890</subfield>
+  </datafield>
+</record>
+</collection> 

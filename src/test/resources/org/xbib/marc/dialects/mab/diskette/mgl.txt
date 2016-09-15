@@ -1,0 +1,90 @@
+### 00001nM2.01000024      h
+001 000000658
+002 19990511
+003 20110119
+100 Moers, Walter
+331 ªDieª 13 1/2 Leben des K„pt'n Blaub„r
+335 die halben Lebenserinnerungen eines Seeb„ren ; mit zahlreichen Ill. u. unter Benutzung des "Lexikons der erkl„rungsbedrftigen Wunder, Daseinsformen und Ph„nomene Zamoniens und Umgebung" von Prof. Dr. Abdul Nachtigaller
+359 Walter Moers
+370bªDieª dreizehneinhalb Leben des K„pt'n Blaub„r
+410 Frankfurt
+412 Eichborn
+425 1999
+433 712 S.
+434 Ill.
+501 Nicht ausscheiden!
+540 3-8218-2969-9
+540zfest geb. : 49,80 DM
+700R20004217
+700S30001146
+700Z10003829
+700Z10005915
+
+### 00002nM2.01000024      h
+001 000000672
+002 19990511
+003 20110524
+100 Welsh, Renate
+104bMair, Martina ª[Ill.]ª
+331 ªDasª kleine Moorgespenst
+359 Renate Welsh. Bilder von Martina Mair
+410 Hamburg
+412 Oetinger
+425 1999
+433 61 S.
+434 Ill.
+451bSonne, Mond und Sterne
+540 3-7891-0557-0
+540zgeb.
+700R20001547
+700S30000507
+700Z10001088
+700Z10003002
+710 Gespenst
+
+### 00003nM2.01000024      h
+001 000000685
+002 19990511
+003 20110520
+100 Sommer, J”rg
+104bBaumann, Stephan ª[Ill.]ª
+331 Wir spielen Indianer
+335 das bffelstarke Spiel- und Spaábuch
+359 J”rg Sommer. Mit Ill. von Stephan Baumann
+403 1. Aufl.
+410 Wrzburg
+412 Arena
+425 1997
+433 175 S.
+434 zahlr. Ill.
+451 Arena-Taschenbuch ; 329
+501 In neuer Rechtschreibung
+540a3-401-00329-1
+540zkt. : 12,90
+700R20001652
+700Z10001168
+750cKr„henindianer Falkenauge fhrt durch die Sammlung von Spielen, Bastelanleitungen, Rezepten, R„tseln, Witzen etc. und regt dazu an, einen eigenen
+
+### 00004nM2.01000024      h
+001 000000688
+002 19990511
+003 20110520
+100 Dorris, Michael
+304 Guests <dt.>
+331 Fremde
+359 Michael Dorris. Mit Ill. von Wolfgang Slwaski
+403 Dt. Erstausg.
+410 Ravensburg
+412 Ravensburger Buchverl.
+425 1996
+433 126 S.
+434 Ill.
+435 21 cm
+501 Aus dem Engl. bers.
+540a3-473-34268-8
+540zgeb. : 10,12 EUR
+700R20001554
+700Z10001095
+710 Indianer
+750cDer Indianerjunge Moos (13) ist nicht damit einverstanden, daá sein Vater notleidende weiáe Siedle
+

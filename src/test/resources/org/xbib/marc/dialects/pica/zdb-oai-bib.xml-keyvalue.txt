@@ -1,0 +1,1133 @@
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:20-07-12]
+field=001$B$0t[0=9006:26-07-12, t=08:27:00.000]
+field=001$D$0[0=9006:20-07-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1024436012]
+field=008$H$de[d=Heh 2, e=DE-Heh2]
+field=029$@$4a[a=HBH, 4=b]
+field=029$@$4a[a=HHBH, 4=b]
+field=029$@$4a[a=Hechingen Heimatbücherei, 4=c]
+field=029$A$a[a=Hohenzollerische Heimatbücherei Hechingen]
+field=032$P$2abdefijklnp[a=Heiligkreuzstr. 10, b=Hechingen, d=DE, e=72379, f=Baden-Württemberg, i=Mi 14.30-18.00, j=während der Schulferien geschlossen, k=8.96369, l=48.34907, n=08417031, p=j, 2=S]
+field=035$B$acdefkl[a=S, c=j, d=49, e=7471, f=93 09-1168, k=kreisarchiv@zollernalbkreis.de, l=Vertreter eines der Träger der Heimatbücherei]
+field=035$E$abfghi[a=H, b=s, f=81, g=03, h=06, i=P]
+field=035$I$ace[a=BAW, c=SWB, e=n]
+field=050$D$a[a=Auftragsbestätigung: 19.07.2012; Heh 2: 23-07-12: K: Telefon, L: Fax]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:20-07-12]
+field=001$B$0t[0=9006:20-07-12, t=09:38:06.000]
+field=001$D$0[0=9006:20-07-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1024418251]
+field=008$H$de[d=B 1597, e=DE-B1597]
+field=009$Q$uz[u=http://www.degruyter.com, z=A]
+field=029$@$4a[a=Berlin Walter de Gruyter, 4=c]
+field=029$A$a[a=Walter de Gruyter GmbH & Co. KG]
+field=032$P$2abdefp[a=Genthiner Straße 13, b=Berlin, d=DE, e=10785, f=Berlin, p=j, 2=S]
+field=035$B$ack[a=S, c=j, k=info@degruyter.com]
+field=035$E$abfgh[a=H, b=s, f=87, g=08, h=11]
+field=050$D$a[a=Auftragsbestätigung: 19.07.2012 um 18.20]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:19-07-12]
+field=001$B$0t[0=9006:19-07-12, t=15:08:41.000]
+field=001$D$0[0=9006:19-07-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=102439235X]
+field=008$H$de[d=Dud 1, e=DE-Dud1]
+field=029$@$4a[a=Duderstadt Stadtarchiv, 4=c]
+field=029$A$a[a=Stadtarchiv Duderstadt]
+field=032$P$2abdefiklnp[a=Christian-Blank-Str. 1, b=Duderstadt, d=DE, e=37115, f=Niedersachsen, i=Mo, Mi und Fr. 8.00-12.00, k=10.26099, l=51.51458, n=03152007, p=j, 2=S]
+field=035$B$acdefghik[a=S, c=j, d=49, e=5527, f=21 44, g=49, h=5527, i=7 32 48, k=stadtarchiv-dud@gmx.de]
+field=035$E$abfghi[a=H, b=s, f=85, g=04, h=09, i=P]
+field=035$I$ace[a=NIE, c=GBV, e=n]
+field=047$A$a[a=Der Bestand umfasst ca. 1000 Urkunden (1266-1500), ca. 1500 lfdm Akten, je ca. 5000 Amtsbücher,  je 800 Karten, Plakate und Bauzeichnungen sowie 40000 Foto-Einheiten, die Präsenzbibliotkek ca. 3000 Bücher, dazu ein vollständiges Zeitungsarchiv von hiesigen Zeitungen aus dem Zeitraum von 1815  bis heute]
+field=050$D$a[a=Sigel-Beantragung vom 17.07.12]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:19-07-12]
+field=001$B$0t[0=9006:19-07-12, t=14:33:50.000]
+field=001$D$0[0=9006:19-07-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=102439106X]
+field=008$H$de[d=1904, e=DE-1904]
+field=029$@$4a[a=Bad Wurzach StB, 4=c]
+field=029$A$a[a=Städtische Bücherei Bad Wurzach]
+field=032$P$2abdefnp[a=Parkstr. 8, b=Bad Wurzach, d=DE, e=88410, f=Baden-Württemberg, n=08436010, p=j, 2=S]
+field=035$B$acdefk[a=S, c=j, d=49, e=7564, f=30 21 12, k=irene.brauchle@bad-wurzach.de]
+field=035$E$abfgh[a=H, b=s, f=33, g=04, h=05]
+field=035$I$ae[a=BAW, e=n]
+field=050$D$a[a=Auftragsbestätigung: 17.07.2012]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:19-07-12]
+field=001$B$0t[0=9006:19-07-12, t=10:31:46.000]
+field=001$D$0[0=9006:19-07-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1024366146]
+field=008$H$de[d=ZDB-4-NLEBK, e=ZDB-4-NLEBK]
+field=009$Q$uz[u=http://www.ebscohost.com/ebooks, z=A]
+field=029$@$4a[a=EBSCOhost E-Books, 4=a]
+field=029$@$4a[a=Datenbank, 4=a]
+field=029$A$a[a=EBSCO eBook Collection]
+field=032$P$2abdefp[a=c/o EBSCO Publishing, 10 Estes Street, b=Ipswich, d=US, e=01938, f=MA, USA, p=j, 2=S]
+field=035$B$ack[a=S, c=j, k=information@ebscohost.com]
+field=035$E$af[a=P, f=89]
+field=035$I$ae[a=WWW, e=n]
+field=035$P$adgi[a=E-Books, d=n, g=EBSCO Publishing, i=Anbieter kostenpflichtig]
+field=047$A$a[a=Online-Ressource; E-Books]
+field=050$D$a[a=BVB 21-06-12 Neuantrag]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:18-07-12]
+field=001$B$0t[0=9006:18-07-12, t=09:14:57.000]
+field=001$D$0[0=9006:18-07-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1024321339]
+field=008$H$de[d=ZDB-88-JRJ, e=ZDB-88-JRJ]
+field=009$Q$uz[u=http://www.juris.de, z=A]
+field=029$@$4a[a=Datenbank, 4=a]
+field=029$@$4a[a=juris Modul Strafrecht, 4=c]
+field=029$A$a[a=juris Modul Strafrecht]
+field=032$P$2abdefp[a=c/o juris GmbH,Gutenbergstraße 23, b=Saarbrücken, d=DE, e=66117, f=Saarland, p=j, 2=S]
+field=035$E$af[a=P, f=89]
+field=035$I$ae[a=WWW, e=n]
+field=035$P$adgi[a=E-Books E-Journals, d=j, g=juris GmbH, i=Anbieter kostenpflichtig]
+field=047$A$a[a=Online-Ressource; E-Books und E-Journals]
+field=050$D$a[a=HeBIS 04-07-12 Neuantrag]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:18-07-12]
+field=001$B$0t[0=9006:18-07-12, t=09:14:43.000]
+field=001$D$0[0=9006:18-07-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1024321312]
+field=008$H$de[d=ZDB-88-JRI, e=ZDB-88-JRI]
+field=009$Q$uz[u=http://www.juris.de, z=A]
+field=029$@$4a[a=Datenbank, 4=a]
+field=029$@$4a[a=juris OLG-Reporte, 4=c]
+field=029$A$a[a=juris OLG-Reporte]
+field=032$P$2abdefp[a=c/o juris GmbH,Gutenbergstraße 23, b=Saarbrücken, d=DE, e=66117, f=Saarland, p=j, 2=S]
+field=035$E$af[a=P, f=89]
+field=035$I$ae[a=WWW, e=n]
+field=035$P$adgi[a=E-Books E-Journals, d=j, g=juris GmbH, i=Anbieter kostenpflichtig]
+field=047$A$a[a=Online-Ressource; E-Books und E-Journals]
+field=050$D$a[a=HeBIS 04-07-12 Neuantrag]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:18-07-12]
+field=001$B$0t[0=9006:18-07-12, t=09:14:30.000]
+field=001$D$0[0=9006:18-07-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1024321304]
+field=008$H$de[d=ZDB-88-JRH, e=ZDB-88-JRH]
+field=009$Q$uz[u=http://www.juris.de, z=A]
+field=029$@$4a[a=Datenbank, 4=a]
+field=029$@$4a[a=juris Modul Verwaltungsvorschr, 4=c]
+field=029$A$a[a=juris Modul Verwaltungsvorschriften]
+field=032$P$2abdefp[a=c/o juris GmbH,Gutenbergstraße 23, b=Saarbrücken, d=DE, e=66117, f=Saarland, p=j, 2=S]
+field=035$E$af[a=P, f=89]
+field=035$I$ae[a=WWW, e=n]
+field=035$P$adgi[a=E-Books E-Journals, d=j, g=juris GmbH, i=Anbieter kostenpflichtig]
+field=047$A$a[a=Online-Ressource; E-Books und E-Journals]
+field=050$D$a[a=HeBIS 04-07-12 Neuantrag]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:18-07-12]
+field=001$B$0t[0=9006:18-07-12, t=09:14:18.000]
+field=001$D$0[0=9006:18-07-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1024321290]
+field=008$H$de[d=ZDB-88-JRG, e=ZDB-88-JRG]
+field=009$Q$uz[u=http://www.juris.de, z=A]
+field=029$@$4a[a=Datenbank, 4=a]
+field=029$@$4a[a=juris Familienrechtsmodul, 4=c]
+field=029$A$a[a=juris Familienrechtsmodul]
+field=032$P$2abdefp[a=c/o juris GmbH,Gutenbergstraße 23, b=Saarbrücken, d=DE, e=66117, f=Saarland, p=j, 2=S]
+field=035$E$af[a=P, f=89]
+field=035$I$ae[a=WWW, e=n]
+field=035$P$adgi[a=E-Books E-Journals, d=j, g=juris GmbH, i=Anbieter kostenpflichtig]
+field=047$A$a[a=Online-Ressource; E-Books und E-Journals]
+field=050$D$a[a=HeBIS 04-07-12 Neuantrag]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:18-07-12]
+field=001$B$0t[0=9006:18-07-12, t=09:14:04.000]
+field=001$D$0[0=9006:18-07-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1024321274]
+field=008$H$de[d=ZDB-88-JRF, e=ZDB-88-JRF]
+field=009$Q$uz[u=http://www.juris.de, z=A]
+field=029$@$4a[a=Datenbank, 4=a]
+field=029$@$4a[a=juris Fachportal Steuerrecht/H, 4=c]
+field=029$A$a[a=juris Fachportal Steuerrecht / Hochschulen]
+field=032$P$2abdefp[a=c/o juris GmbH,Gutenbergstraße 23, b=Saarbrücken, d=DE, e=66117, f=Saarland, p=j, 2=S]
+field=035$E$af[a=P, f=89]
+field=035$I$ae[a=WWW, e=n]
+field=035$P$adgi[a=E-Books E-Journals, d=j, g=juris GmbH, i=Anbieter kostenpflichtig]
+field=047$A$a[a=Online-Ressource; E-Books und E-Journals]
+field=050$D$a[a=HeBIS 04-07-12 Neuantrag]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:18-07-12]
+field=001$B$0t[0=9006:18-07-12, t=09:13:53.000]
+field=001$D$0[0=9006:18-07-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=102432124X]
+field=008$H$de[d=ZDB-88-JRE, e=ZDB-88-JRE]
+field=009$Q$uz[u=http://www.juris.de, z=A]
+field=029$@$4a[a=Datenbank, 4=a]
+field=029$@$4a[a=juris Fachportal Sozialrecht/H, 4=c]
+field=029$A$a[a=juris Fachportal Sozialrecht / Hochschulen]
+field=032$P$2abdefp[a=c/o juris GmbH,Gutenbergstraße 23, b=Saarbrücken, d=DE, e=66117, f=Saarland, p=j, 2=S]
+field=035$E$af[a=P, f=89]
+field=035$I$ae[a=WWW, e=n]
+field=035$P$adgi[a=E-Books E-Journals, d=j, g=juris GmbH, i=Anbieter kostenpflichtig]
+field=047$A$a[a=Online-Ressource; E-Books und E-Journals]
+field=050$D$a[a=HeBIS 04-07-12 Neuantrag]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:18-07-12]
+field=001$B$0t[0=9006:18-07-12, t=09:13:40.000]
+field=001$D$0[0=9006:18-07-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1024321231]
+field=008$H$de[d=ZDB-88-JRD, e=ZDB-88-JRD]
+field=009$Q$uz[u=http://www.juris.de, z=A]
+field=029$@$4a[a=Datenbank, 4=a]
+field=029$@$4a[a=juris Deutsches Gesetzesportal, 4=c]
+field=029$A$a[a=juris Deutsches Gesetzesportal]
+field=032$P$2abdefp[a=c/o juris GmbH,Gutenbergstraße 23, b=Saarbrücken, d=DE, e=66117, f=Saarland, p=j, 2=S]
+field=035$E$af[a=P, f=89]
+field=035$I$ae[a=WWW, e=n]
+field=035$P$adgi[a=E-Books E-Journals, d=j, g=juris GmbH, i=Anbieter kostenpflichtig]
+field=047$A$a[a=Online-Ressource; E-Books und E-Journals]
+field=050$D$a[a=HeBIS 04-07-12 Neuantrag]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:18-07-12]
+field=001$B$0t[0=9006:18-07-12, t=09:13:24.000]
+field=001$D$0[0=9006:18-07-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1024321215]
+field=008$H$de[d=ZDB-88-JRC, e=ZDB-88-JRC]
+field=009$Q$uz[u=http://www.juris.de, z=A]
+field=029$@$4a[a=Datenbank, 4=a]
+field=029$@$4a[a=juris Fachportal Öff. Verwalt., 4=c]
+field=029$A$a[a=juris Fachportal Öffentliche Verwaltung]
+field=032$P$2abdefp[a=c/o juris GmbH,Gutenbergstraße 23, b=Saarbrücken, d=DE, e=66117, f=Saarland, p=j, 2=S]
+field=035$E$af[a=P, f=89]
+field=035$I$ae[a=WWW, e=n]
+field=035$P$adgi[a=E-Books E-Journals, d=j, g=juris GmbH, i=Anbieter kostenpflichtig]
+field=047$A$a[a=Online-Ressource; E-Books und E-Journals]
+field=050$D$a[a=HeBIS 04-07-12 Neuantrag]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:18-07-12]
+field=001$B$0t[0=9006:18-07-12, t=09:13:10.000]
+field=001$D$0[0=9006:18-07-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1024321193]
+field=008$H$de[d=ZDB-88-JRB, e=ZDB-88-JRB]
+field=009$Q$uz[u=http://www.juris.de, z=A]
+field=029$@$4a[a=Datenbank, 4=a]
+field=029$@$4a[a=juris Spectrum / Hochschulen, 4=c]
+field=029$A$a[a=juris Spectrum / Hochschulen]
+field=032$P$2abdefp[a=c/o juris GmbH,Gutenbergstraße 23, b=Saarbrücken, d=DE, e=66117, f=Saarland, p=j, 2=S]
+field=035$E$af[a=P, f=89]
+field=035$I$ae[a=WWW, e=n]
+field=035$P$adgi[a=E-Books E-Journals, d=j, g=juris GmbH, i=Anbieter kostenpflichtig]
+field=047$A$a[a=Online-Ressource; E-Books und E-Journals]
+field=050$D$a[a=HeBIS 04-07-12 Neuantrag]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:18-07-12]
+field=001$B$0t[0=9006:18-07-12, t=09:00:06.000]
+field=001$D$0[0=9006:18-07-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1024320952]
+field=008$H$de[d=ZDB-88-JRA, e=ZDB-88-JRA]
+field=009$Q$uz[u=http://www.juris.de, z=A]
+field=029$@$4a[a=Datenbank, 4=a]
+field=029$@$4a[a=juris Standard, 4=c]
+field=029$A$a[a=juris Standard]
+field=032$P$2abdefp[a=c/o juris GmbH,Gutenbergstraße 23, b=Saarbrücken, d=DE, e=66117, f=Saarland, p=j, 2=S]
+field=035$E$af[a=P, f=89]
+field=035$I$ae[a=WWW, e=n]
+field=035$P$adgi[a=E-Books E-Journals, d=j, g=juris GmbH, i=Anbieter kostenpflichtig]
+field=047$A$a[a=Online-Ressource; E-Books und E-Journals]
+field=050$D$a[a=HeBIS 04-07-12 Neuantrag]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:16-07-12]
+field=001$B$0t[0=9006:16-07-12, t=09:50:34.000]
+field=001$D$0[0=9006:16-07-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1024250784]
+field=008$H$e[e=DE-MUS-043329]
+field=009$Q$uz[u=http://www.philippi-collection.de, z=A]
+field=009$Q$uxz[u=http://de.wikipedia.org/wiki/Sammlung_Philippi, x=Wikipedia, z=W]
+field=009$Q$uxz[u=http://www.museen-in-deutschland.de/singleview.php?muges=043329, x=Weitere Info, z=W]
+field=029$@$4a[a=Kirkel Sammlung Philippi, 4=c]
+field=029$@$4a[a=Philippi Collection, 4=d]
+field=029$A$a[a=Sammlung Philippi]
+field=032$P$2abdefjklnp[a=Im Driescher 10, b=Kirkel, d=DE, e=66459, f=Saarland, j=Besichtigungstermin auf Anfrage, k=7.22154, l=49.28677, n=10045115, p=j, 2=S]
+field=035$B$acdefghik[a=S, c=j, d=49, e=6849, f=9009322, g=49, h=6849, i=9009310, k=info@philippi-collection.de]
+field=035$E$abfgh[a=H, b=m, f=86, g=12, h=01]
+field=035$G$a[a=Kopfbedeckungen aus Glaube, Religion und Spiritualität]
+field=050$D$a[a=ZRB 05-07-2012 MUS-Adresse]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:16-07-12]
+field=001$B$0t[0=9006:01-08-12, t=13:29:20.000]
+field=001$D$0[0=9006:16-07-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1024249719]
+field=008$H$de[d=Tü 135, e=DE-Tue135]
+field=009$Q$uz[u=http://www.ixtheo.de/, z=A]
+field=029$@$4a[a=IxTheo, 4=b]
+field=029$@$4a[a=Tübingen IxTheo, 4=c]
+field=029$A$a[a=Index theologicus der Universitätsbibliothek Tübingen]
+field=032$P$2abdefnp[a=Wilhelmstraße 32, b=Tübingen, d=DE, e=72016, f=Baden-Württemberg, n=08416041, p=j, 2=S]
+field=032$P$2bdegp[b=Tübingen, d=DE, e=72016, g=2620, p=j, 2=P]
+field=035$B$acdefghikl[a=S, c=j, d=49, e=7071, f=29-72847, g=49, h=7071, i=29-3123, k=ixtheo@ub.uni-tuebingen.de, l=Die Telefax-Nr. ist die des Sekretariats der UB]
+field=035$E$abfg[a=H, b=s, f=95, g=02]
+field=035$G$aaa[a=Theologie, a=Religionswissenschaft, a=Alter Orient]
+field=035$I$ac[a=BAW, c=SWB]
+field=035$J$a[a=Fernleiherledigung und Subito-Lieferung durch die UB Tübingen]
+field=047$A$a[a=Nachweis unselbständig erschienener theol. und religionswiss. Literatur auf Grundlage der SSG-Bestände der Universitätsbibliothek Tübingen; Dokumentnachweise Stand 31.7.2012: 500.287]
+field=050$D$a[a=Auftragsbestätigung 06-07-12; DE-21 01-08-12 K Anmerkungen u. Fernleihe]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:13-07-12]
+field=001$B$0t[0=9006:13-07-12, t=10:07:42.000]
+field=001$D$0[0=9006:13-07-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1024208001]
+field=008$H$de[d=Po 86, e=DE-Po86]
+field=009$Q$uz[u=http://www.spsg.de/index.php?id=3687, z=A]
+field=029$@$4a[a=SPSG Bibliothek, 4=a]
+field=029$@$4a[a=Potsdam DIZ-Bibliothek, 4=c]
+field=029$A$a[a=Stiftung Preußische Schlösser und Gärten Berlin-Brandenburg / DIZ, Bibliothek]
+field=032$P$2abdefhijklnp[a=Lennéstr. 7A, b=Potsdam, d=DE, e=14471, f=Brandenburg, h=Villa Liegnitz, i=Mo-Di 9.00-12.00 und 13.00-16.00, Mi 13.00-16.00, Do-Fr 9.00-12.00, j=vorherige Anmeldung wird erbeten unter bibliothek@spsg.de oder (0331) 9 69 43 85, k=13.04, l=52.4, n=12054000, p=j, 2=S]
+field=032$P$2bdefgpz[b=Potsdam, d=DE, e=14414, f=Brandenburg, g=60 14 62, p=j, z=Allee nach Sanssouci 6, 2=P]
+field=035$B$acdefghik[a=S, c=j, d=49, e=331, f=9 69 43 85, g=49, h=331, i=9 69 43 76, k=bibliothek@spsg.de]
+field=035$E$abfghi[a=H, b=s, f=81, g=07, h=07, i=P]
+field=035$G$aaaa[a=Kunstgeschichte, a=Preußische Geschichte, a=Baudenkmalpflege, a=Gartendenkmalpflege]
+field=035$I$ace[a=BER, c=GBV, e=n]
+field=050$D$a[a=Auftragsbestätigung: 12.07.2012]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:12-07-12]
+field=001$B$0t[0=9006:12-07-12, t=14:39:05.000]
+field=001$D$0[0=9006:12-07-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1024188949]
+field=008$H$de[d=Y 10, e=DE-Y10]
+field=029$@$4a[a=Luxembourg MPI Internat. Law, 4=c]
+field=029$A$a[a=Max Planck Institute Luxembourg for International, European and Regulatory Procedural Law, Library]
+field=032$P$2abdefijp[a=4, rue Alphonse Weicker, b=Luxembourg, d=LU, e=2721, f=Luxemburg, i=Mo-Fr 8.00-12.00 und 13.00-17.00, j=für Mitarbeiter freier Zugang, p=j, 2=S]
+field=032$P$2abdehp[a=c/o MPI für Völkerrecht, Im Neuenheimer Feld 535, b=Heidelberg, d=DE, e=69120, h=Raum 047, p=j, 2=P]
+field=035$B$ack[a=S, c=j, k=jschwiet@mpil.de]
+field=035$E$abdfghi[a=H, b=s, d=MPG, f=81, g=08, h=07, i=P]
+field=035$I$ace[a=WEU, c=SWB, e=n]
+field=047$A$a[a=Institut und Bibliothek befinden sich noch in der Gründungsphase]
+field=050$D$a[a=Auftragsbestätigung: 12.07.2012 um 11.01]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:12-07-12]
+field=001$B$0t[0=9006:12-07-12, t=11:18:56.000]
+field=001$D$0[0=9006:12-07-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1024180131]
+field=008$H$bde[b=WD225, d=1903, e=DE-1903]
+field=009$Q$uz[u=http://www.muecheln.de/verzeichnis/visitenkarte.php?mandat=57691, z=A]
+field=029$@$4a[a=Mücheln/Geiseltal StB, 4=c]
+field=029$A$a[a=Stadtbibliothek Mücheln (Geiseltal)]
+field=032$P$2abdefinp[a=Bertolt-Brecht-Str. 11, b=Mücheln/Geiseltal, d=DE, e=06249, f=Sachsen-Anhalt, i=Mo und Fr 12.00-15.00, Di 9.00-18.00, Do 9.00-17.00, n=15088235, p=j, 2=S]
+field=035$B$acdefk[a=S, c=j, d=49, e=34632, f=2 22 17, k=stadtbibliothek-muecheln@web.de]
+field=035$E$abfgh[a=H, b=s, f=33, g=04, h=06]
+field=035$I$ace[a=SAA, c=GBV, e=n]
+field=050$D$a[a=Auftragsbestätigung: 11.07.2012]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:12-07-12]
+field=001$B$0t[0=9006:12-07-12, t=14:14:59.000]
+field=001$D$0[0=9006:12-07-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1024174107]
+field=008$H$de[d=Pul 1, e=DE-Pul1]
+field=009$Q$uz[u=http://www.afz.lvr.de/archiv+des+lvr/, z=A]
+field=029$@$4a[a=Pulheim/Brauweiler LVR-Archiv, 4=c]
+field=029$A$a[a=LVR-Archivberatungs- und Fortbildungszentrum, Archiv des Landschaftsverbandes Rheinland]
+field=032$P$2abdefijklnpz[a=Auf der Insel, b=Pulheim OT Brauweiler, d=DE, e=50259, f=Nordrhein-Westfalen, i=Mo-Fr 9.00-16.00, j=außerhalb der Öffnungszeiten auch nach Vereinbarung, k=6.78578, l=50.96231, n=05362036, p=j, z=Zufahrt über die von-Werth-Str., 2=S]
+field=035$B$acdefghik[a=S, c=j, d=49, e=2234, f=98 54-356, g=49, h=221, i=82 84 29 80, k=archiv@lvr.de]
+field=035$E$abfgh[a=H, b=s, f=85, g=07, h=11]
+field=035$I$ae[a=NRW, e=n]
+field=050$D$a[a=Auftragsbestätigung: 11.07.2012; Auftragsbestätigung: 12.07.2012]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:12-07-12]
+field=001$B$0t[0=9006:12-07-12, t=09:41:47.000]
+field=001$D$0[0=9006:12-07-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1024170926]
+field=008$H$de[d=1902, e=DE-1902]
+field=029$@$4a[a=Schule des Bistums Münster, 4=a]
+field=029$@$4a[a=Neuenkirchen A.-Janssen-Gymn., 4=c]
+field=029$A$a[a=Arnold-Janssen-Gymnasium, Bibliothek]
+field=032$P$2abdefnp[a=Emsdetter Str. 242, b=Neuenkirchen, d=DE, e=48485, f=Nordrhein-Westfalen, n=05566060, p=j, 2=S]
+field=035$B$acdefk[a=S, c=j, d=49, e=5973, f=60 80 30, k=ajg@bistum-muenster.de]
+field=035$E$abfgh[a=H, b=s, f=81, g=10, h=06]
+field=035$I$ae[a=NRW, e=n]
+field=050$D$a[a=Auftragsbestätigung: 11.07.2012]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:10-07-12]
+field=001$B$0t[0=9006:10-07-12, t=13:08:42.000]
+field=001$D$0[0=9006:10-07-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1024107728]
+field=008$H$de[d=ZDB-87-GNT, e=ZDB-87-GNT]
+field=009$Q$uz[u=http://www.classiques-garnier.com/numerique/, z=A]
+field=029$@$4a[a=Datenbank, 4=a]
+field=029$@$4a[a=Cl.GarnierNum. Théorie litt., 4=c]
+field=029$A$a[a=Classiques Garnier Numérique  / Théorie de la littérature]
+field=032$P$2abdefp[a=Classiques Garnier Numérique, b=Paris, d=FR, e=75005, f=Frankreich, p=j, 2=S]
+field=035$B$ack[a=S, c=j, k=contact@classiques-garnier.com]
+field=035$E$af[a=P, f=89]
+field=035$I$ae[a=WWW, e=n]
+field=035$P$adgi[a=E-Books, d=n, g=Classiques Garnier Numérique, i=Anbieter kostenpflichtig]
+field=047$A$a[a=Online-Ressource; E-Books]
+field=050$D$a[a=BVB 22-06-12 Neuantrag]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:10-07-12]
+field=001$B$0t[0=9006:10-07-12, t=13:07:59.000]
+field=001$D$0[0=9006:10-07-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1024107701]
+field=008$H$de[d=ZDB-87-GNL, e=ZDB-87-GNL]
+field=009$Q$uz[u=http://www.classiques-garnier.com/numerique/, z=A]
+field=029$@$4a[a=Datenbank, 4=a]
+field=029$@$4a[a=Cl.GarnierNum. Eur.Lumières, 4=c]
+field=029$A$a[a=Classiques Garnier Numérique  / L'Europe des Lumières]
+field=032$P$2abdefp[a=Classiques Garnier Numérique, b=Paris, d=FR, e=75005, f=Frankreich, p=j, 2=S]
+field=035$B$ack[a=S, c=j, k=contact@classiques-garnier.com]
+field=035$E$af[a=P, f=89]
+field=035$I$ae[a=WWW, e=n]
+field=035$P$adgi[a=E-Books, d=n, g=Classiques Garnier Numérique, i=Anbieter kostenpflichtig]
+field=047$A$a[a=Online-Ressource; E-Books]
+field=050$D$a[a=BVB 22-06-12 Neuantrag]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:10-07-12]
+field=001$B$0t[0=9006:10-07-12, t=13:06:47.000]
+field=001$D$0[0=9006:10-07-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1024107639]
+field=008$H$de[d=ZDB-87-GNE, e=ZDB-87-GNE]
+field=009$Q$uz[u=http://www.classiques-garnier.com/numerique/, z=A]
+field=029$@$4a[a=Datenbank, 4=a]
+field=029$@$4a[a=Cl.GarnierNum. Ètudes litt., 4=c]
+field=029$A$a[a=Classiques Garnier Numérique  / Ètudes de littérature des XXe et XXIe  siècles]
+field=032$P$2abdefp[a=Classiques Garnier Numérique, b=Paris, d=FR, e=75005, f=Frankreich, p=j, 2=S]
+field=035$B$ack[a=S, c=j, k=contact@classiques-garnier.com]
+field=035$E$af[a=P, f=89]
+field=035$I$ae[a=WWW, e=n]
+field=035$P$adgi[a=E-Books, d=n, g=Classiques Garnier Numérique, i=Anbieter kostenpflichtig]
+field=047$A$a[a=Online-Ressource; E-Books]
+field=050$D$a[a=BVB 22-06-12 Neuantrag]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:10-07-12]
+field=001$B$0t[0=9006:10-07-12, t=13:05:45.000]
+field=001$D$0[0=9006:10-07-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1024107558]
+field=008$H$de[d=ZDB-87-GNB, e=ZDB-87-GNB]
+field=009$Q$uz[u=http://www.classiques-garnier.com/numerique/, z=A]
+field=029$@$4a[a=Datenbank, 4=a]
+field=029$@$4a[a=Cl.GarnierNum théâtre fr., 4=c]
+field=029$A$a[a=Classiques Garnier Numérique / Bibliothèque du théâtre francais]
+field=032$P$2abdefp[a=Classiques Garnier Numérique, b=Paris, d=FR, e=75005, f=Frankreich, p=j, 2=S]
+field=035$B$ack[a=S, c=j, k=contact@classiques-garnier.com]
+field=035$E$af[a=P, f=89]
+field=035$I$ae[a=WWW, e=n]
+field=035$P$adgi[a=E-Books, d=n, g=Classiques Garnier Numérique, i=Anbieter kostenpflichtig]
+field=047$A$a[a=Online-Ressource; E-Books]
+field=050$D$a[a=BVB 22-06-12 Neuantrag]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:10-07-12]
+field=001$B$0t[0=9006:10-07-12, t=09:49:40.000]
+field=001$D$0[0=9006:10-07-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1024091546]
+field=008$H$ade[a=043051-1, d=ZDB-86-CHA, e=ZDB-86-CHA]
+field=009$Q$uz[u=http://chroniclingamerica.loc.gov/, z=A]
+field=029$@$4a[a=Datenbank, 4=a]
+field=029$@$4a[a=Chronicling  America, 4=c]
+field=029$A$a[a=Chronicling  America]
+field=032$P$2abdefp[a=Library of Congress, 101 Independence Ave, SE, b=Washington, d=US, e=20540, f=DC, USA, p=j, 2=S]
+field=035$E$acf[a=P, c=0172, f=89]
+field=035$I$ae[a=WWW, e=n]
+field=035$P$adegi[a=E-Journals, d=j, e=348, g=Library of Congress, i=kostenfrei]
+field=047$A$a[a=Online-Ressource; E-Journals]
+field=050$D$a[a=GBV 21-06-12 Neuantrag (SBB); Betreuung für ZDB: SBB Berlin, ISIL Pate: DE-1a]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:05-07-12]
+field=001$B$0t[0=9006:12-07-12, t=09:01:16.000]
+field=001$D$0[0=9006:05-07-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1023965402]
+field=008$H$bde[b=HQ864, d=1901, e=DE-1901]
+field=009$Q$uz[u=http://www.stadtbuecherei-kolbermoor.de, z=A]
+field=029$@$4a[a=Kolbermoor StB, 4=c]
+field=029$A$a[a=Stadtbücherei Kolbermoor]
+field=032$P$2abdefinp[a=Rosenheimer Str. 30b, b=Kolbermoor, d=DE, e=83059, f=Bayern, i=Mi 14.00-18.30, Do 14.00-18.00, n=09187150, p=j, 2=S]
+field=035$B$acdefk[a=S, c=j, d=49, e=8031, f=29 68-28, k=stadtbuecherei@olbermoor.de]
+field=035$E$abfgh[a=H, b=s, f=33, g=04, h=05]
+field=035$I$ae[a=BAY, e=n]
+field=050$D$a[a=E-Mailantrag 04.07.12]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:03-07-12]
+field=001$B$0t[0=9006:12-07-12, t=09:01:42.000]
+field=001$D$0[0=9006:03-07-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1023898802]
+field=008$H$bde[b=MB439, d=1900, e=DE-1900]
+field=009$Q$uz[u=http://www.leuna-stadt.de/index.php/stadtbibliothek.html, z=A]
+field=029$@$4a[a=Leuna StB, 4=c]
+field=029$A$a[a=Stadtbibliothek Leuna]
+field=032$P$2abdefinp[a=Rathausstr. 1, b=Leuna, d=DE, e=06237, f=Sachsen-Anhalt, i=Mo 10.00-12.00 und 13.00-16.00, Di und Do 10.00-12.00 und 13.00-18.00, Fr 10.00-12.00, n=14729040, p=j, 2=S]
+field=035$B$acdefghik[a=S, c=j, d=49, e=3461, f=84 01 44, g=49, h=3461, i=81 32 22, k=stadtbibliothek@leuna.de]
+field=035$E$abfgh[a=H, b=s, f=33, g=04, h=07]
+field=035$I$ace[a=SAA, c=GBV, e=n]
+field=050$D$a[a=Auftragsbestätigung: 02.07.2012]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:03-07-12]
+field=001$B$0t[0=9006:03-07-12, t=13:55:59.000]
+field=001$D$0[0=9006:03-07-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1023895641]
+field=008$H$de[d=1899, e=DE-1899]
+field=029$@$4a[a=Gera FH Gesundheit, 4=c]
+field=029$A$a[a=SRH Fachhochschule für Gesundheit, Bibliothek]
+field=032$P$2abdefinp[a=Hermann-Drechsler-Str. 2, b=Gera, d=DE, e=07548, f=Thüringen, i=Mo-Fr 7.30-17.00, n=16052000, p=j, 2=S]
+field=035$B$acdefghi[a=S, c=j, d=49, e=365, f=77 34 07-0, g=49, h=365, i=77 34 07 77]
+field=035$E$abdfgh[a=H, b=s, d=GBV, f=70, g=08, h=05]
+field=035$G$a[a=Gesundheitswissenschaften]
+field=035$I$ae[a=THU, e=n]
+field=047$A$a[a=Bibliothek befindet sich im Aufbau]
+field=050$D$a[a=Auftragsbestätigung: 28.06.2012]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:28-06-12]
+field=001$B$0t[0=9006:28-06-12, t=15:13:19.000]
+field=001$D$0[0=9006:28-06-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1023790718]
+field=008$H$de[d=N 39, e=DE-N39]
+field=009$Q$uz[u=http://www.moderne-kunst.org, z=A]
+field=009$Q$uz[u=http://www.moderne-kunst.org/archiv/onlinekatalog/titeldatenbank.html, z=B]
+field=029$@$4a[a=Nürnberg Inst. moderne Kunst, 4=c]
+field=029$A$a[a=Institut für moderne Kunst Nürnberg, Archiv / Bibliothek]
+field=032$P$2abdehiklnp[a=Luitpoldstr. 5, b=Nürnberg, d=DE, e=90402, h=im Verwaltungsbau des Neuen Museum - Staatliches Museum für Kunst und Design in Nürnberg, i=Di und Fr 10.00-16.00, Do 10.00-19.00, k=11.07978, l=49.44805, n=09564000, p=j, 2=S]
+field=035$B$acdefghik[a=S, c=j, d=49, e=911, f=2 40 21 16, g=49, h=911, i=2 40 21 19, k=archiv@moderne-kunst.org]
+field=035$E$abfghi[a=H, b=s, f=81, g=06, h=07, i=P]
+field=035$G$a[a=Zeitgenössische Kunst nach 1945]
+field=035$I$ae[a=BAY, e=n]
+field=050$D$a[a=Auftragsbestätigung: 27.06.2012; Name nach Rücksprache nochmals korrigiert]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:27-06-12]
+field=001$B$0t[0=9006:27-06-12, t=14:07:47.000]
+field=001$D$0[0=9006:27-06-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1023752980]
+field=008$H$de[d=ZDB-4-ASGB, e=ZDB-4-ASGB]
+field=009$Q$uz[u=http://www.ebscohost.com/ebooks/academic/subject-sets/green-business-2012/23702, z=A]
+field=029$@$4a[a=Datenbank, 4=a]
+field=029$@$4a[a=EBSCO GreenBusiness, 4=c]
+field=029$A$a[a=EBSCO Green Business]
+field=032$P$2abdefp[a=c/o EBSCO Publishing, 10 Estes Street, b=Ipswich, d=US, e=01938, f=MA, USA, p=j, 2=S]
+field=035$B$ack[a=S, c=j, k=information@ebscohost.com]
+field=035$E$af[a=P, f=89]
+field=035$I$ae[a=WWW, e=n]
+field=035$P$adgi[a=E-Books, d=n, g=EBSCO Publishing, i=Anbieter kostenpflichtig]
+field=047$A$a[a=Online-Ressource; E-Books]
+field=050$D$a[a=BVB:30-05-12:Neuantrag]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:25-06-12]
+field=001$B$0t[0=9006:02-08-12, t=16:40:51.000]
+field=001$D$0[0=9006:25-06-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=102366951X]
+field=008$H$bde[b=HB363, d=1898, e=DE-1898]
+field=009$Q$uz[u=http://www.erlensee.de, z=A]
+field=029$@$a[a=Erlensee StB]
+field=029$A$a[a=Stadtbücherei Erlensee]
+field=032$P$2abdefhiklnp[a=Langendiebacher Str. 35a, b=Erlensee, d=DE, e=63526, f=Hessen, h=Georg-Büchner-Schule; Eingang: Konrad-Adenauer-Str., i=Mo 14.00-19.00, Di 9.00-12.00, Do 9.00-12.00 und 14.00-17.00, Fr 14.00-17.00, k=8.98349, l=50.16144, n=06435007, p=j, 2=S]
+field=035$B$acdefghik[a=S, c=j, d=49, e=6183, f=90 05 51, g=49, h=6183, i=90 05 53, k=buecherei-erlensee@t-online.de]
+field=035$E$abfgh[a=H, b=s, f=33, g=04, h=07]
+field=035$I$abce[a=HES, b=ÜLV, c=HeBIS, e=l]
+field=050$D$a[a=Auftragsbestätigung: 25.06.2012; HES 02-08-12 N ÜLV]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:22-06-12]
+field=001$B$0t[0=9006:22-06-12, t=14:30:04.000]
+field=001$D$0[0=9006:22-06-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=102363015X]
+field=008$H$ade[a=043050-x, d=ZDB-9-INF, e=ZDB-9-INF]
+field=009$Q$uz[u=http://www.gale.cengage.com/servlet/ItemDetailServlet?region=9&imprint=000&titleCode=INFO1&cf=n&type=4&id=161280, z=A]
+field=029$@$4a[a=Datenbank, 4=a]
+field=029$@$4a[a=Informe, 4=c]
+field=029$A$a[a=Informe]
+field=032$P$2abdefp[a=c/o Gale, Cengage Learning, b=Florence, d=US, e=41022-6904, f=KY, USA, p=j, 2=S]
+field=035$E$acf[a=P, c=0172, f=89]
+field=035$I$ae[a=WWW, e=n]
+field=035$P$adgi[a=E-Journals, d=j, g=Gale, Cengage Learning, i=Anbieter kostenpflichtig]
+field=047$A$a[a=Online-Ressource; E-Journals]
+field=050$D$a[a=GBV 08-06-12 Neuantrag; Betreuung für ZDB: Berlin IAI; ISIL Pate: DE-204]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:22-06-12]
+field=001$B$0t[0=9006:22-06-12, t=14:28:59.000]
+field=001$D$0[0=9006:22-06-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1023630087]
+field=008$H$ade[a=043049-3, d=ZDB-30-PRI, e=ZDB-30-PRI]
+field=009$Q$uz[u=http://prisma.chadwyck.com/marketing/titlelists.jsp, z=A]
+field=029$@$4a[a=Datenbank, 4=a]
+field=029$@$4a[a=Prisma, 4=c]
+field=029$A$a[a=Prisma. Publicaciones y revistas sociales y humanisticas]
+field=032$P$2abdefp[a=c/o ProQuest LLC, Barnwell Road, b=Cambridge, d=GB, e=CB5 8SW, f=Großbritannien, p=j, 2=S]
+field=035$E$acf[a=P, c=0172, f=89]
+field=035$I$ae[a=WWW, e=n]
+field=035$P$adgi[a=E-Journals, d=j, g=ProQuest LLC, i=Anbieter kostenpflichtig]
+field=047$A$a[a=Online-Ressource; E-Journals]
+field=050$D$a[a=GBV 08-06-12 Neuantrag; Betreuung für ZDB: Berlin IAI; ISIL Pate: DE-204]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:21-06-12]
+field=001$B$0t[0=9006:21-06-12, t=17:37:06.000]
+field=001$D$0[0=9006:21-06-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1023593106]
+field=008$H$ade[a=040092-0, d=ZDB-4-H6A, e=ZDB-4-H6A]
+field=009$Q$uz[u=http://www.ebscohost.com/archives/featured-archives/latino-hispanic-series-one, z=A]
+field=029$@$4a[a=Datenbank, 4=a]
+field=029$@$4a[a=EBSCO Arte Publico Hispanic 1, 4=c]
+field=029$A$a[a=EBSCO Arte Público Hispanic Historical Collection Series 1]
+field=032$P$2abdefp[a=c/o EBSCO Publishing, 10 Estes Street, b=Ipswich, d=US, e=01938, f=MA, USA, p=j, 2=S]
+field=035$E$acf[a=P, c=0147, f=89]
+field=035$I$ae[a=WWW, e=n]
+field=035$P$adgi[a=E-Books E-Journals, d=j, g=EBSCO Publishing, i=Anbieter kostenpflichtig]
+field=050$D$a[a=ISIL Pate: DE-600]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:20-06-12]
+field=001$B$0t[0=9006:20-06-12, t=16:40:40.000]
+field=001$D$0[0=9006:20-06-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1023559277]
+field=008$H$de[d=ZDB-16-HEP, e=ZDB-16-HEP]
+field=009$Q$uz[u=http://www.hanser-elibrary.com, z=A]
+field=029$@$4a[a=Hanser eBib-Bibliothek, 4=a]
+field=029$@$4a[a=Datenbank, 4=a]
+field=029$@$4a[a=Hanser eLibrary Plastics, 4=c]
+field=029$A$a[a=Hanser eLibrary / Plastics]
+field=032$P$2abdep[a=Carl Hanser Verlag GmbH & Co. KG, Kolberger Str. 22, b=München, d=DE, e=81679, p=j, 2=S]
+field=035$B$ack[a=S, c=j, k=onlinesupport@hanser.de]
+field=035$E$af[a=P, f=89]
+field=035$I$ae[a=WWW, e=n]
+field=035$P$adi[a=E-Books, d=n, i=Anbieter kostenpflichtig]
+field=047$A$a[a=Online-Ressource; E-Books]
+field=050$D$a[a=BVB 06-06-12 Neuantrag]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:20-06-12]
+field=001$B$0t[0=9006:20-06-12, t=14:24:28.000]
+field=001$D$0[0=9006:20-06-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1023553368]
+field=008$H$bde[b=WD298, d=1897, e=DE-1897]
+field=029$@$a[a=Coswig/Anhalt StB]
+field=029$A$a[a=Stadtbiblothek Coswig]
+field=032$P$2abdefhinp[a=Am Markt 13, b=Coswig/Anhalt, d=DE, e=06869, f=Sachsen-Anhalt, h=Amtshaus oder Zustellung Rathaus, i=Mo und Fr 10.00-12.00 und 13.00-16.00, Di 13.00-19.00, Do 13.00-18.00, n=15091060, p=j, 2=S]
+field=035$B$acdefk[a=S, c=j, d=49, e=34903, f=61 01 82, k=buecherei@coswig-online.de]
+field=035$E$abfgh[a=H, b=s, f=33, g=04, h=06]
+field=035$I$acde[a=SAA, c=GBV, d=BRISE, e=n]
+field=050$D$a[a=Auftragsbestätigung: 19.06.2012]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:19-06-12]
+field=001$B$0t[0=9006:31-07-12, t=14:34:25.000]
+field=001$D$0[0=9006:19-06-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1023505444]
+field=007$N$0[0=009023860]
+field=007$N$0[0=1013492250]
+field=007$N$0[0=1019564865]
+field=008$H$abdef[a=808255-8, b=AG255, d=255, e=DE-255, f=ZIKG]
+field=009$Q$uz[u=http://www.zikg.eu, z=A]
+field=009$Q$uz[u=http://www.zikg.eu/cgi-bin/gucha_de.pl?db=gucha&t_maske=x, z=B]
+field=029$@$4a[a=München ZI Kunstgeschichte, 4=c]
+field=029$A$a[a=Zentralinstitut für Kunstgeschichte, Bibliothek]
+field=032$P$2abdefiklnp[a=Katharina-von-Bora-Str. 10, b=München, d=DE, e=80333, f=Bayern, i=Mo-Fr 10.00-20.00, k=11.56634, l=48.14435, n=09162000, p=j, 2=S]
+field=035$B$acdefghik[a=S, c=j, d=49, e=89, f=2 89-27577 (Leitung) und 27581 (Fernleihe), g=49, h=89, i=2 89-27608, k=sekr-bib@zikg.eu]
+field=035$D$ab[a=255/KIR, b=DE-255-KIR]
+field=035$E$abcdfghi[a=H, b=s, c=0180, d=BVB, f=81, g=02, h=09, i=P]
+field=035$H$aaaaa[a=Kunst Frankreichs, a=Kunst der ost- und südosteuropäischen Länder, a=Kunstwissenschaftliche Literatur aus den ost- und südosteuropäischen Ländern, a=Kunsttheorie und Wissenschaftsgeschichte [der Kunstgeschichte], a=Ikonographie]
+field=035$I$acde[a=BAY, c=BVB, d=KuBiFV, e=k]
+field=050$D$a[a=DE-255 17-01-06 K Fernleihindikator; Umfrage2009 23-03-09; Online-Formular 16-11-10 K Sitzadr; ZDB 24-06-11 Umbuchungen 2011/3, ILN-Änderung, war 0113; ZRB 22-08-11 N Koord.; 09-01-12 Umbuchungen 2012/1, war ILN 0180; ZRB 20-06-12 Umbuchungen 2012/2 war ILN 0307; ZRB 31-07-12 Verw. 255/KIR eingefügt]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:19-06-12]
+field=001$B$0t[0=9006:24-07-12, t=11:11:11.000]
+field=001$D$0[0=9006:19-06-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=102350541X]
+field=007$N$0[0=009024166]
+field=007$N$0[0=1019564946]
+field=008$H$abdef[a=857000-0, b=AC092, d=92, e=DE-92, f=FHN]
+field=009$Q$uz[u=http://www.ohm-hochschule.de/bibliothek, z=A]
+field=029$@$4a[a=Nürnberg Ohm-HSB, 4=c]
+field=029$A$a[a=Ohm-Hochschulbibliothek Nürnberg]
+field=032$P$2abdefklnp[a=Keßlerpl. 12, b=Nürnberg, d=DE, e=90489, f=Bayern, k=11.09251, l=49.45257, n=09564000, p=j, 2=S]
+field=032$P$2bdefp[b=Nürnberg, d=DE, e=90121, f=Bayern, p=j, 2=P]
+field=035$B$acdefghik[a=S, c=j, d=49, e=911, f=58 80-4000 (Hotline) und 4290 (Fernleihe), g=49, h=911, i=58 80-8282, k=fernleihe@ohm-hochschule.de]
+field=035$E$abcdfgh[a=H, b=s, c=0035, d=BVB, f=70, g=02, h=08]
+field=035$I$abce[a=BAY, b=ÜLV, c=BVB, e=k]
+field=050$D$a[a=DE-92 05-10-07 K E-Mailadresse; Auftragsbestätigung 05-07-11; ZRB 09-01-12 Umbuchungen 2012/1, war ILN 0035; ZRB 20-07-12 Umbuchungen 2012/2, wieder zurück, war ILN 0304]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:19-06-12]
+field=001$B$0t[0=9006:27-06-12, t=13:30:47.000]
+field=001$D$0[0=9006:19-06-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1023487845]
+field=008$H$ade[a=041252-1, d=ZDB-1-JA11, e=ZDB-1-JA11]
+field=009$Q$uz[u=http://www.jstor.org, z=A]
+field=029$@$4a[a=Datenbank; Nationalkonsortium, 4=a]
+field=029$@$4a[a=Nationalkonsortium JSTORArts11, 4=c]
+field=029$A$a[a=JSTOR : Arts & Sciences XI Collection]
+field=032$P$2abdep[a=Bayerische Staatsbibliothek München, b=München, d=DE, e=80539, p=j, 2=S]
+field=035$B$ack[a=S, c=j, k=jstor@bsb-muenchen.de]
+field=035$E$acdf[a=P, c=0168, d=BVB, f=89]
+field=035$G$a[a=Online-Ressource; E-Journals]
+field=035$I$ae[a=ANL, e=k]
+field=035$P$adgi[a=E-Journals, d=j, g=JSTOR, i=Nationalkonsortium]
+field=047$A$a[a=Der Online-Zugriff auf das Zeitschriftenangebot wird im Rahmen eines Nationalkonsortiums bereitgestellt und durch die Bayerische Staatsbibliothek organisiert]
+field=050$D$a[a=BVB 18-06-12 Neuantrag; Betreuung für ZDB und EZB-Administration: BSB München ISIL Pate: DE-12]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:18-06-12]
+field=001$B$0t[0=9006:18-06-12, t=11:55:29.000]
+field=001$D$0[0=9006:18-06-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1023463709]
+field=008$H$bde[b=WF404, d=1896, e=DE-1896]
+field=009$Q$uz[u=http://www.bibliothek-museum-kroepelin.de/, z=A]
+field=029$@$4a[a=Kröpelin StB, 4=c]
+field=029$A$a[a=Stadtbibliothek Kröpelin]
+field=032$P$2abdefinp[a=Hauptstr. 5, b=Kröpelin, d=DE, e=18236, f=Mecklenburg-Vorpommern, i=Mo und Do 9.00-12.00 und 13.30-17.00, Di 9.00-12.00 und 13.30-18.00, Fr 9.00-12.00 und 13.30-16.00, Sa 9.00-12.00 (März-Sept.), n=13072058, p=j, 2=S]
+field=035$B$acdefghik[a=S, c=j, d=49, e=38292, f=6 82, g=49, h=38292, i=8 23 83, k=stadtbibliothek-kroepelin@t-online.de]
+field=035$E$abfgh[a=H, b=s, f=33, g=04, h=05]
+field=035$I$ace[a=HAM, c=GBV, e=n]
+field=050$D$a[a=Auftragsbestätigung: 14.06.2012]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:15-06-12]
+field=001$B$0t[0=9006:15-06-12, t=13:21:58.000]
+field=001$D$0[0=9006:15-06-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1023408651]
+field=008$H$de[d=Khm 1, e=DE-Khm1]
+field=009$Q$uz[u=http://www.naxos.de, z=A]
+field=029$@$4a[a=Kirchheim Naxos Deutschl., 4=c]
+field=029$A$a[a=Naxos Deutschland Musik & Video Vertriebs-GmbH]
+field=032$P$2abdefklnp[a=Hürderstr. 4, b=Kirchheim/München, d=DE, e=85551, f=Bayern, k=11.75839, l=48.15764, n=09184131, p=j, 2=S]
+field=035$B$acdefghik[a=S, c=j, d=49, e=89, f=9 07 74 99 40, g=49, h=89, i=9 07 74 99 41, k=info@naxos.de]
+field=035$E$abfgh[a=H, b=s, f=88, g=08, h=11]
+field=035$I$ae[a=BAY, e=n]
+field=050$D$a[a=Auftragsbestätigung: 14.06.2012]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:14-06-12]
+field=001$B$0t[0=9006:14-06-12, t=13:56:21.000]
+field=001$D$0[0=9006:14-06-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1023380374]
+field=008$H$bde[b=KR430, d=1895, e=DE-1895]
+field=009$Q$uz[u=http://www.langenau.de/stadtbuecherei, z=A]
+field=029$@$4a[a=Langenau StB, 4=c]
+field=029$A$a[a=Stadtbücherei im Pfleghof Langenau]
+field=032$P$2abdefinp[a=Kirchgasse 9, b=Langenau, d=DE, e=89129, f=Baden-Württemberg, i=Di und Fr 10.00-18.00, Mi und Sa 10.00-12.00, Do 12.00-19.00, n=08425072, p=j, 2=S]
+field=035$B$acdefghik[a=S, c=j, d=49, e=7345, f=96 24 30, g=49, h=7345, i=96 24 35, k=stadtbuecherei@langenau.de]
+field=035$E$abfgh[a=H, b=s, f=33, g=04, h=06]
+field=035$I$ae[a=BAW, e=n]
+field=050$D$a[a=Auftragsbestätigung: 08.06.2012]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:07-06-12]
+field=001$B$0t[0=9006:07-06-12, t=14:55:28.000]
+field=001$D$0[0=9006:07-06-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1023144395]
+field=008$H$bde[b=WD420, d=1894, e=DE-1894]
+field=009$Q$uz[u=http://www.tambach-dietharz.de/index.php?id=71, z=A]
+field=009$Q$uz[u=http://gso.gbv.de/DB=6.534/, z=B]
+field=029$@$4a[a=Tambach-Dietharz StB, 4=c]
+field=029$A$a[a=Stadt- und Kurbibliothek Tambach-Dietharz]
+field=032$P$2abdefinp[a=Burgstallstr. 31a, b=Tambach-Dietharz, d=DE, e=99897, f=Thüringen, i=Mo und Do 13.00-17.00, Di 10.00-12.00 und 13.00-18.00, Fr 13.00-16.00, n=16067065, p=j, 2=S]
+field=035$B$acdefghik[a=S, c=j, d=49, e=36252, f=3 44 35, g=49, h=36252, i=3 44 29, k=bibliothek@tambach-dietharz.de]
+field=035$E$abcdfgh[a=H, b=s, c=GBV, d=ÖVK, f=33, g=04, h=05]
+field=035$I$ae[a=THU, e=n]
+field=050$D$a[a=Auftragsbestätigung: 07.06.2012]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:07-06-12]
+field=001$B$0t[0=9006:12-06-12, t=14:37:14.000]
+field=001$D$0[0=9006:07-06-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1023138433]
+field=008$H$de[d=Pfo 2, e=DE-Pfo2]
+field=009$Q$uz[u=https://www.enzkreis.de/Kreis-Verwaltung/Gesundheit-Familie-Soziales-und-br-Bildung/Amt-f%C3%BCr-Bildung-und-Kultur-mit-Medienzentrum-und-Archiv/Kreisarchiv, z=A]
+field=029$@$4a[a=Pforzheim Kreisarchiv, 4=c]
+field=029$A$a[a=Kreisarchiv des Enzkreises, Bibliothek]
+field=032$P$2abdefiklnp[a=Zähringerallee 3, b=Pforzheim, d=DE, e=75177, f=Baden-Württemberg, i=Mo 8.00-12.30, Di 8.00-12.30 und 13.30-18.00, Do 8.00-14.00, Fr 8.00-12.00, k=8.70346, l=48.89467, n=08231000, p=j, 2=S]
+field=032$P$2bdefgp[b=Pforzheim, d=DE, e=75110, f=Baden-Württemberg, g=10 10 80, p=j, 2=P]
+field=035$B$acdefghik[a=S, c=j, d=49, e=7231, f=3 08-9423, g=49, h=7231, i=3 08-9837, k=Kreisarchiv@enzkreis.de]
+field=035$E$abfghi[a=H, b=s, f=85, g=03, h=06, i=P]
+field=035$G$aa[a=Raum Pforzheim <Regional- und Ortsgeschichte>, a=Genealogie]
+field=035$I$ace[a=BAW, c=SWB, e=n]
+field=050$D$a[a=Auftragsbestätigung: 06.06.2012; Auftragsbestätigung: 08.06.2012]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:05-06-12]
+field=001$B$0t[0=9006:05-06-12, t=12:09:18.000]
+field=001$D$0[0=9006:05-06-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1023063778]
+field=008$H$de[d=B 1596, e=DE-B1596]
+field=009$Q$uz[u=http://www.sprachenzentrum.hu-berlin.de, z=A]
+field=029$@$4a[a=Berlin Mediothek ZE Sprachenz., 4=c]
+field=029$A$a[a=Mediothek der ZE Sprachenzentrum der Humboldt-Universität zu Berlin]
+field=032$P$2abdefhip[a=Dorotheenstr. 65, b=Berlin, d=DE, e=10117, f=Berlin, h=August-Boeckh-Haus, i=Mo-Do 10.00-19.00, Fr 10.00-18.00, p=j, 2=S]
+field=032$P$2abdefnp[a=Unter den Linden 6, b=Berlin, d=DE, e=10099, f=Berlin, n=11000000, p=j, 2=P]
+field=035$B$acdefk[a=S, c=j, d=49, e=30, f=20 93-5042, k=barbara.bauerfeld@spz.hu-berlin.de]
+field=035$E$abfghi[a=H, b=s, f=88, g=07, h=06, i=P]
+field=035$G$a[a=Audiovisuelle Medien für Selbstlern-, Studien- und Forschungszwecke in der Fremdsprachenausbildung]
+field=035$I$ace[a=BER, c=KOBV, e=n]
+field=050$D$a[a=Auftragsbestätigung: 30.05.2012]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:05-06-12]
+field=001$B$0t[0=9006:05-06-12, t=11:04:43.000]
+field=001$D$0[0=9006:05-06-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1023060663]
+field=008$H$de[d=Ef 32, e=DE-Ef32]
+field=009$Q$uz[u=http://opac.uni-erfurt.de/DB=6.2/LNG=DU/, z=B]
+field=009$Q$uz[u=http://opac.uni-erfurt.de/DB=6/LNG=DU/, z=B]
+field=029$@$4a[a=Bibliothek des TFM, 4=b]
+field=029$@$4a[a=Erfurt FM, 4=c]
+field=029$A$a[a=Thüringer Finanzministerium, Bibliothek]
+field=032$P$2abdefiklnp[a=Ludwig-Erhard-Ring 7, b=Erfurt, d=DE, e=99099, f=Thüringen, i=Mo-Do 8.30-12.00 und 13.100-18.00, Fr 8.30-12.30 und 13.00-15.00, k=11.0574, l=50.96659, n=16051000, p=j, 2=S]
+field=035$B$acdefghikl[a=S, c=j, d=49, e=361, f=3 79 61 83 und 3 79 61 86, g=49, h=361, i=3 79 66 50, k=H.Werneburg@tfm.thueringen.de, l=Weitere E-Mailadresse: Bibliothek@tfm.thueringen.de]
+field=035$E$abfghi[a=H, b=s, f=81, g=02, h=06, i=P]
+field=035$G$aaa[a=Steuerrecht, a=Wirtschaftsrecht, a=Haushaltsrecht]
+field=035$I$ace[a=THU, c=GBV, e=n]
+field=050$D$a[a=Auftragsbestätigung: 05.06.2012]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:31-05-12]
+field=001$B$0t[0=9006:31-05-12, t=10:52:27.000]
+field=001$D$0[0=9006:31-05-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1022900692]
+field=008$H$bde[b=LD443, d=1893, e=DE-1893]
+field=009$Q$uz[u=http://www.buecherei.bietigheim-bissingen, z=A]
+field=009$Q$uz[u=http://bond-bibi.kdrs.de, z=B]
+field=029$@$4a[a=Bietigheim-Bissingen StB, 4=c]
+field=029$A$a[a=Otto-Rombach-Bücherei]
+field=032$P$2abdefinp[a=Hauptstr. 19, b=Bietigheim-Bissingen, d=DE, e=74321, f=Baden-Württemberg, i=Mo-Fr 10.00-19.00, Sa 9.00-13.00, n=08118079, p=j, 2=S]
+field=035$B$acdefghik[a=S, c=j, d=49, e=7142, f=74-486, g=49, h=7142, i=74-850, k=stadtbuecherei@bietigheim-bissingen.de]
+field=035$E$abfghi[a=H, b=s, f=33, g=04, h=07, i=P]
+field=035$I$ae[a=BAW, e=n]
+field=050$D$a[a=Auftragseingang: 22-05-12]
+endRecord
+beginRecord
+format=Pica
+type=XML
+leader=00000     1000000   000 
+field=001$A$0[0=9006:31-05-12]
+field=001$B$0t[0=9006:31-05-12, t=09:42:04.000]
+field=001$D$0[0=9006:31-05-12]
+field=001$U$0[0=utf8]
+field=001$X$0[0=0]
+field=002$@$0[0=Tw]
+field=003$@$0[0=1022897322]
+field=008$H$bde[b=HK052, d=1892, e=DE-1892]
+field=029$@$4a[a=Kallmünz StB, 4=c]
+field=029$A$a[a=Marktbibliothek Kallmünz]
+field=032$P$2abdefijnp[a=Zum Fuchsenbügl 12, b=Kallmünz, d=DE, e=93183, f=Bayern, i=Di 16.00-19.30, Mi 7.45-12.15, Do 16.30-18.30, j=Öffnungszeiten am Mi im 14-tägigen Rhythmus den Schulzeiten angepasst, n=09375156, p=j, 2=S]
+field=035$B$acdefk[a=S, c=j, d=49, e=9473, f=9 50 99 44, k=mail@bibliothek-kallmuenz.de]
+field=035$E$abfgh[a=H, b=s, f=33, g=04, h=05]
+field=035$I$ae[a=BAY, e=n]
+field=050$D$a[a=Auftragsbestätigung: 23.05.2012]
+endRecord

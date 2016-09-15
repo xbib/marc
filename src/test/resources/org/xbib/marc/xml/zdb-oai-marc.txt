@@ -1,0 +1,6100 @@
+beginRecord
+MARC21
+Bibliographic
+leader
+00908nas a2200313 c 4500
+001
+001=1024796043
+003
+003=DE-101
+005
+005=20120802144841.0
+007
+007=tu
+008
+008=120802c20129999gw f||p|r ||| 0||||0ger c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1024796043
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675962-7
+0167 
+035  
+035  a
+035  a=(DE-599)ZDB2675962-7
+035  
+040  
+040  a
+040  a=1241
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=1241
+040  
+041  
+041  a
+041  a=ger
+041  
+044  
+044  c
+044  c=XA-DE
+044  
+084  
+084  a
+084  a=050
+084  a
+084  a=070
+084  q
+084  q=DE-101
+084  2
+084  2=sdnb
+084  
+084  
+084  a
+084  a=050
+084  a
+084  a=070
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+090  
+090  n
+090  n=fn
+090  
+24510
+24510a
+24510a=Alt-Höchst
+24510n
+24510n=[...]
+24510p
+24510p=Infobrief
+24510c
+24510c=Bürgervereinigung Höchster Altstadt
+24510
+24619
+24619a
+24619a=Alt-Höchst / Infobrief
+24619
+2603 
+2603 a
+2603 a=Frankfurt-Höchst
+2603 b
+2603 b=Bürgervereinigung Höchster Altstadt
+2603 
+300  
+300  c
+300  c=30 cm
+300  
+3620 
+3620 a
+3620 a=Nachgewiesen 2012 -
+3620 
+36301
+363018
+363018=1.1\x
+36301i
+36301i=2012
+36301
+515  
+515  a
+515  a=Periodizität: halbjährl.
+515  
+77208
+77208i
+77208i=Beil. zu:
+77208t
+77208t=Alt-Höchst
+77208w
+77208w=(DE-600)969378-6
+77208w
+77208w=(DE-101)015112500
+77208
+925r 
+925r a
+925r a=rb
+925r 
+930  
+930  a
+930  a=Infobrief
+930  
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+00752nas a2200229 c 4500
+001
+001=1024795764
+003
+003=DE-101
+005
+005=20120802144628.0
+007
+007=tu
+008
+008=120802c20129999gw u||p|r ||| 0||||0ger c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1024795764
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675961-5
+0167 
+035  
+035  a
+035  a=(DE-599)ZDB2675961-5
+035  
+040  
+040  a
+040  a=3238
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=3238
+040  
+041  
+041  a
+041  a=ger
+041  
+044  
+044  c
+044  c=XA-DE
+044  
+084  
+084  a
+084  a=3,61
+084  2
+084  2=ssgn
+084  
+084  
+084  a
+084  a=050
+084  a
+084  a=320
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+24510
+24510a
+24510a=Willi-Bleicher-Preis
+24510b
+24510b=Journalismuspreis der IG Metall Baden-Württemberg
+24510c
+24510c=IG-Metall Bezirksleitung Baden-Württemberg
+24510
+2603 
+2603 a
+2603 a=Stuttgart
+2603 b
+2603 b=IG-Metall
+2603 
+3620 
+3620 a
+3620 a=Nachgewiesen 2012 -
+3620 
+7102 
+7102 0
+7102 0=(DE-588)5252909-5
+7102 0
+7102 0=(DE-101)952358069
+7102 a
+7102 a=Industriegewerkschaft Metall
+7102 g
+7102 g=Deutschland
+7102 b
+7102 b=Bezirk Baden-Württemberg
+7102 
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+00819nas a2200277 c 4500
+001
+001=1024794741
+003
+003=DE-101
+005
+005=20120802141847.0
+007
+007=tu
+008
+008=120802c20129999gw q||p|r ||| 0||||0ger c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1024794741
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675954-8
+0167 
+035  
+035  a
+035  a=(DE-599)ZDB2675954-8
+035  
+040  
+040  a
+040  a=1241
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=1241
+040  
+041  
+041  a
+041  a=ger
+041  
+044  
+044  c
+044  c=XA-DE
+044  
+084  
+084  a
+084  a=610
+084  q
+084  q=DE-101
+084  2
+084  2=sdnb
+084  
+084  
+084  a
+084  a=610
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+24510
+24510a
+24510a=Akupunktur
+24510b
+24510b=Medizin auf den Punkt gebracht
+24510c
+24510c=Deutsche Akademie für Akupunktur, DAA e.V.
+24510
+2603 
+2603 a
+2603 a=München
+2603 b
+2603 b=Dt. Akad. für Akupunktur
+2603 
+300  
+300  c
+300  c=28 cm
+300  
+3620 
+3620 a
+3620 a=Nachgewiesen 2012 -
+3620 
+36301
+363018
+363018=1.1\x
+36301i
+36301i=2012
+36301
+515  
+515  a
+515  a=Ersch. vierteljährl.
+515  
+77208
+77208i
+77208i=Beil. zu:
+77208t
+77208t=Akupunktur & Aurikulomedizin
+77208w
+77208w=(DE-600)2631051-X
+77208w
+77208w=(DE-101)1015780636
+77208
+925r 
+925r a
+925r a=rb
+925r 
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+00504nas a2200205 c 4500
+001
+001=1024794520
+003
+003=DE-101
+005
+005=20120802141155.0
+007
+007=tu
+008
+008=120802c20129999ck u||m|r ||| 0||||0spa c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1024794520
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675953-6
+0167 
+035  
+035  a
+035  a=(DE-599)ZDB2675953-6
+035  
+040  
+040  a
+040  a=0204
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=0204
+040  
+041  
+041  a
+041  a=spa
+041  
+044  
+044  c
+044  c=XD-CO
+044  
+24510
+24510a
+24510a=Colección Los Torreones
+24510
+24613
+24613i
+24613i=Nebent.
+24613a
+24613a=Los Torreones
+24613
+2603 
+2603 a
+2603 a=Ibagué
+2603 b
+2603 b=Caza de Libros
+2603 
+3620 
+3620 a
+3620 a=1.2012 -
+3620 
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+00969nas a2200301 c 4500
+001
+001=1024794466
+003
+003=DE-101
+005
+005=20120802142224.0
+007
+007=tu
+008
+008=120802c20129999gw a||p|r ||| 0||||0ger c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1024794466
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675952-4
+0167 
+035  
+035  a
+035  a=(DE-599)ZDB2675952-4
+035  
+040  
+040  a
+040  a=1241
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=1241
+040  
+041  
+041  a
+041  a=ger
+041  
+044  
+044  c
+044  c=XA-DE
+044  
+084  
+084  a
+084  a=580
+084  a
+084  a=630
+084  a
+084  a=640
+084  q
+084  q=DE-101
+084  2
+084  2=sdnb
+084  
+084  
+084  a
+084  a=580
+084  a
+084  a=630
+084  a
+084  a=640
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+090  
+090  n
+090  n=fn
+090  
+24510
+24510a
+24510a=Haus - und Kleingarten, sachgerechter Pflanzenschutz ...
+24510c
+24510c=Hrsg.: Landwirtschaftliches Technologiezentrum Augustenberg (LTZ)
+24510
+2603 
+2603 a
+2603 a=[Stuttgart]
+2603 b
+2603 b=[Ulmer]
+2603 
+300  
+300  c
+300  c=30 cm
+300  
+3620 
+3620 a
+3620 a=2012 -
+3620 
+36301
+363018
+363018=1.1\x
+36301i
+36301i=2012
+36301
+515  
+515  a
+515  a=Periodizität:  jährl.
+515  
+77208
+77208i
+77208i=Beil. zu:
+77208t
+77208t=Obst & Garten <Stuttgart>
+77208w
+77208w=(DE-600)123377-4
+77208w
+77208w=(DE-101)010692851
+77208
+78000
+78000i
+78000i=Vorg.:
+78000t
+78000t=Pflanzenschutz im Haus- und Kleingarten ... 
+78000w
+78000w=(DE-600)2545666-0
+78000w
+78000w=(DE-101)1001034139
+78000
+925r 
+925r a
+925r a=ra
+925r 
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+00543nas a2200217 c 4500
+001
+001=1024791920
+003
+003=DE-101
+005
+005=20120802132127.0
+007
+007=tu
+008
+008=120802c20129999|||u||m|r ||| 0||||0ara c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1024791920
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675944-5
+0167 
+035  
+035  a
+035  a=(DE-599)ZDB2675944-5
+035  
+040  
+040  a
+040  a=6999
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=6999
+040  
+041  
+041  a
+041  a=ara
+041  
+084  
+084  a
+084  a=230
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+24510
+24510a
+24510a=Dirāsāt fī 'l-adyān
+24510
+24610
+24610a
+24610a=al-adyān
+24610
+2603 
+2603 a
+2603 a=Bairūt
+2603 b
+2603 b=Dār al-Mašriq
+2603 
+3620 
+3620 a
+3620 a=1.2012 -
+3620 
+546  
+546  a
+546  a=In arab. Schr., arab.
+546  
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+01051nas a2200253 c 4500
+001
+001=102479170X
+003
+003=DE-101
+005
+005=20120802132035.0
+007
+007=tu
+008
+008=120802c20129999xx u||p|r ||| 0||||0||| c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=102479170X
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675941-X
+0167 
+035  
+035  a
+035  a=(DE-599)ZDB2675941-X
+035  
+040  
+040  a
+040  a=0001
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=0001
+040  
+044  
+044  c
+044  c=XA-RU
+044  
+084  
+084  a
+084  a=890
+084  a
+084  a=910
+084  a
+084  a=940
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+24510
+24510a
+24510a=Social'nye i gumanitarnye nauki
+24510b
+24510b=RŽ ; referativnyj žurnal
+24510n
+24510n=Otečestvennaja i zarubežnaja literatura
+24510n
+24510n=Serija 9, Vostokovedenie i afrikanistika
+24510c
+24510c=Rossijskaja Akademija Nauk, Institut Naučnoj Informacii po Obščestvennym Naukam
+24510
+24619
+24619a
+24619a=Social'nye i gumanitarnye nauki / Otečestvennaja i zarubežnaja literatura / 9
+24619
+2603 
+2603 a
+2603 a=Moskva
+2603 b
+2603 b=[s.n.]
+2603 
+3620 
+3620 a
+3620 a=2012 -
+3620 
+36301
+363018
+363018=1.1\x
+36301i
+36301i=2012
+36301
+78000
+78000i
+78000i=Vorg.:
+78000t
+78000t=Social'nye i gumanitarnye nauki / Zarubežnaja literatura / 9
+78000w
+78000w=(DE-600)1192399-4
+78000w
+78000w=(DE-101)017196175
+78000
+930  
+930  r
+930  r=Otečestvennaja i zarubežnaja literatura
+930  
+930  
+930  r
+930  r=Serija 9, Vostokovedenie i afrikanistika
+930  
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+00897nas a2200301 c 4500
+001
+001=1024791513
+003
+003=DE-101
+005
+005=20120802131231.0
+007
+007=tu
+008
+008=120802c20129999gw z||m|r ||| 0||||0ger c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1024791513
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675939-1
+0167 
+035  
+035  a
+035  a=(DE-599)ZDB2675939-1
+035  
+040  
+040  a
+040  a=6999
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=6999
+040  
+041  
+041  a
+041  a=ger
+041  
+044  
+044  c
+044  c=XA-DE
+044  
+084  
+084  a
+084  a=000
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+1102 
+1102 0
+1102 0=(DE-588)16166409-X
+1102 0
+1102 0=(DE-101)1013960157
+1102 a
+1102 a=Internationales Kolleg Morphomata
+1102 g
+1102 g=Köln
+1102 4
+1102 4=aut
+1102 
+24510
+24510a
+24510a=Morphomata
+24510n
+24510n=[...]
+24510p
+24510p=Lectures Cologne
+24510c
+24510c=Internationales Kolleg Morphomata
+24510
+24619
+24619a
+24619a=Morphomata / Lectures Cologne
+24619
+24613
+24613a
+24613a=Morphomata Lectures Cologne
+24613
+24613
+24613a
+24613a=Morphomata lectures Cologne
+24613
+24613
+24613i
+24613i=Nebent.
+24613a
+24613a=MLC
+24613
+2603 
+2603 a
+2603 a=Paderborn
+2603 b
+2603 b=Fink
+2603 
+3620 
+3620 a
+3620 a=1.2012 -
+3620 
+36301
+363018
+363018=1.1\x
+36301i
+36301i=2012
+36301
+515  
+515  a
+515  a=Ersch. unregelmäßig
+515  
+930  
+930  a
+930  a=Lectures Cologne
+930  
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+00940nas a2200301 c 4500
+001
+001=102479105X
+003
+003=DE-101
+005
+005=20120802130446.0
+007
+007=tu
+008
+008=120802c20129999gw z||m|r ||| 0||||0ger c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=102479105X
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675935-4
+0167 
+035  
+035  a
+035  a=(DE-599)ZDB2675935-4
+035  
+040  
+040  a
+040  a=1240
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=1240
+040  
+041  
+041  a
+041  a=ger
+041  
+044  
+044  c
+044  c=XA-DE
+044  
+084  
+084  a
+084  a=230
+084  q
+084  q=DE-101
+084  2
+084  2=sdnb
+084  
+084  
+084  a
+084  a=230
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+1102 
+1102 0
+1102 0=(DE-588)16345568-5
+1102 0
+1102 0=(DE-101)1021371572
+1102 a
+1102 a=Katholische Hochschule
+1102 g
+1102 g=Mainz
+1102 4
+1102 4=aut
+1102 
+24510
+24510a
+24510a=Schriftenreihe der KH Mainz
+24510c
+24510c=Katholische Hochschule Mainz
+24510
+24613
+24613i
+24613i=Nebent.
+24613a
+24613a=Schriftenreihe
+24613
+2603 
+2603 a
+2603 a=St. Ottilien
+2603 b
+2603 b=EOS-Verl.
+2603 
+300  
+300  c
+300  c=24 cm
+300  
+3620 
+3620 a
+3620 a=6.2012 -
+3620 
+36301
+363018
+363018=1.1\x
+36301a
+36301a=6
+36301i
+36301i=2012
+36301
+515  
+515  a
+515  a=Ersch. unregelmäßig
+515  
+78000
+78000i
+78000i=Bis Bd. 5 u.d.T.:
+78000a
+78000a=Katholische Fachhochschule <Mainz>
+78000t
+78000t=Schriftenreihe der KFH Mainz
+78000w
+78000w=(DE-600)2279337-9
+78000w
+78000w=(DE-101)983880514
+78000
+925r 
+925r a
+925r a=ra
+925r 
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+00744nas a2200265 c 4500
+001
+001=1024790401
+003
+003=DE-101
+005
+005=20120802124057.0
+007
+007=tu
+008
+008=120802c20129999gw m||p|r ||| 0||||0ger c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1024790401
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675926-3
+0167 
+035  
+035  a
+035  a=(DE-599)ZDB2675926-3
+035  
+040  
+040  a
+040  a=0107
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=0107
+040  
+041  
+041  a
+041  a=ger
+041  
+044  
+044  c
+044  c=XA-DE
+044  
+084  
+084  a
+084  a=621.3
+084  a
+084  a=791
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+084  
+084  a
+084  a=530
+084  a
+084  a=920
+084  2
+084  2=rpb
+084  
+24510
+24510a
+24510a=Video
+24510b
+24510b=TV, Sat,  HiFi, Heimkino, Netzwerke
+24510
+24613
+24613i
+24613i=Nebent.
+24613a
+24613a=Video-Magazin.de
+24613
+2603 
+2603 a
+2603 a=Haar bei München
+2603 b
+2603 b=WEKA-Media-Publ.
+2603 
+3620 
+3620 a
+3620 a=2012,9 -
+3620 
+36301
+363018
+363018=1.1\x
+36301b
+36301b=9
+36301i
+36301i=2012
+36301
+515  
+515  a
+515  a=Ersch. monatl.
+515  
+78000
+78000i
+78000i=Vorg.:
+78000t
+78000t=Video-Homevision
+78000w
+78000w=(DE-600)2458232-3
+78000w
+78000w=(DE-101)990820734
+78000
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+00829nas a2200253 c 4500
+001
+001=1024789349
+003
+003=DE-101
+005
+005=20120802120423.0
+007
+007=tu
+008
+008=120802c20129999xx a||p|r ||| 0||||0ger c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1024789349
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675911-1
+0167 
+035  
+035  a
+035  a=(DE-599)ZDB2675911-1
+035  
+040  
+040  a
+040  a=0109
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=0109
+040  
+041  
+041  a
+041  a=ger
+041  
+044  
+044  c
+044  c=XA-DXDE
+044  
+084  
+084  a
+084  a=330
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+24510
+24510a
+24510a=Bericht über die örtliche Prüfung der Eröffnungsbilanz zum 1. Januar ... 
+24510c
+24510c=Landeshauptstadt Stuttgart, Rechnungsprüfungsamt
+24510
+2603 
+2603 a
+2603 a=Stuttgart
+2603 b
+2603 b=Landeshauptstadt Stuttgart, Rechnungsprüfungsamt
+2603 
+300  
+300  c
+300  c=30 cm
+300  
+3620 
+3620 a
+3620 a=Nachgewiesen 2010(2012) -
+3620 
+36301
+363018
+363018=1.1\x
+36301i
+36301i=2010
+36301
+515  
+515  a
+515  a=Ersch. jährl.
+515  
+7101 
+7101 0
+7101 0=(DE-588)5086277-7
+7101 0
+7101 0=(DE-101)050862774
+7101 a
+7101 a=Stuttgart
+7101 b
+7101 b=Rechnungsprüfungsamt
+7101 
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+00793nas a2200301 c 4500
+001
+001=1024789217
+003
+003=DE-101
+005
+005=20120802133625.0
+007
+007=tu
+008
+008=120802c20129999gw z||m|r ||| 0||||0ger c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1024789217
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675910-X
+0167 
+035  
+035  a
+035  a=(DE-599)ZDB2675910-X
+035  
+040  
+040  a
+040  a=1140
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=1140
+040  
+041  
+041  a
+041  a=ger
+041  
+044  
+044  c
+044  c=XA-DE
+044  
+084  
+084  a
+084  a=290
+084  q
+084  q=DE-101
+084  2
+084  2=sdnb
+084  
+084  
+084  a
+084  a=290
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+24510
+24510a
+24510a=Europäisch-jüdische Studien
+24510b
+24510b=EJSB
+24510n
+24510n=[...]
+24510p
+24510p=Beiträge
+24510
+24619
+24619a
+24619a=Europäisch-jüdische Studien / Beiträge
+24619
+24613
+24613a
+24613a=EJSB
+24613
+2603 
+2603 a
+2603 a=Berlin
+2603 a
+2603 a=Boston, Mass.
+2603 b
+2603 b=De Gruyter
+2603 
+300  
+300  c
+300  c=24 cm
+300  
+3620 
+3620 a
+3620 a=1.2012 -
+3620 
+36301
+363018
+363018=1.1\x
+36301a
+36301a=1
+36301i
+36301i=2012
+36301
+515  
+515  a
+515  a=Ersch. unregelmäßig
+515  
+925r 
+925r a
+925r a=ra
+925r 
+930  
+930  a
+930  a=Beiträge
+930  
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+00451nas a22001818c 4500
+001
+001=1024788172
+003
+003=DE-101
+005
+005=20120802114350.0
+007
+007=tu
+008
+008=120802c20129999|||u||p|r ||| 0||||0||| c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1024788172
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675906-8
+0167 
+022  
+022  a
+022  a=2194-7805
+022  
+035  
+035  a
+035  a=(DE-599)ZDB2675906-8
+035  
+040  
+040  a
+040  a=1241
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=1241
+040  
+24510
+24510a
+24510a=Astacus astacus
+24510
+2603 
+2603 a
+2603 a=Rottach-Egern
+2603 b
+2603 b=Buchfink GbR
+2603 
+3620 
+3620 a
+3620 a=Nachgewiesen 2012,1 -
+3620 
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+01032nas a2200277 c 4500
+001
+001=1024787680
+003
+003=DE-101
+005
+005=20120802113343.0
+007
+007=tu
+008
+008=120802c20129999xx a||p|r ||| 0||||0ger c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1024787680
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675904-4
+0167 
+035  
+035  a
+035  a=(DE-599)ZDB2675904-4
+035  
+040  
+040  a
+040  a=0109
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=0109
+040  
+041  
+041  a
+041  a=ger
+041  
+044  
+044  c
+044  c=XA-DXDE
+044  
+084  
+084  a
+084  a=330
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+1102 
+1102 0
+1102 0=(DE-588)2027583-3
+1102 0
+1102 0=(DE-101)004843541
+1102 a
+1102 a=Stuttgart
+1102 4
+1102 4=aut
+1102 
+24510
+24510a
+24510a=Schlußbericht ... über die Prüfung des Jahresabschlusses / Stuttgart
+24510c
+24510c=Landeshauptstadt Stuttgart, Rechnungsprüfungsamt
+24510
+2603 
+2603 a
+2603 a=Stuttgart
+2603 b
+2603 b=Landeshauptstadt Stuttgart, Rechnungsprüfungsamt
+2603 
+300  
+300  c
+300  c=30 cm
+300  
+3620 
+3620 a
+3620 a=2010(2012) -
+3620 
+36301
+363018
+363018=1.1\x
+36301i
+36301i=2010
+36301
+515  
+515  a
+515  a=Ersch. jährl.
+515  
+7101 
+7101 0
+7101 0=(DE-588)5086277-7
+7101 0
+7101 0=(DE-101)050862774
+7101 a
+7101 a=Stuttgart
+7101 b
+7101 b=Rechnungsprüfungsamt
+7101 
+78000
+78000i
+78000i=Vorg.:
+78000a
+78000a=Stuttgart
+78000t
+78000t=Schlußbericht ... über die örtliche Prüfung der Jahresrechnung / Stuttgart
+78000w
+78000w=(DE-600)2405554-2
+78000w
+78000w=(DE-101)987213199
+78000
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+00706nas a2200241 c 4500
+001
+001=102478763X
+003
+003=DE-101
+005
+005=20120802113300.0
+007
+007=tu
+008
+008=120802c20129999sp u||m|r ||| 0||||0spa c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=102478763X
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675903-2
+0167 
+035  
+035  a
+035  a=(DE-599)ZDB2675903-2
+035  
+040  
+040  a
+040  a=0204
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=0204
+040  
+041  
+041  a
+041  a=spa
+041  
+044  
+044  c
+044  c=XA-ES
+044  
+084  
+084  a
+084  a=340
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+24510
+24510a
+24510a=Colección de monografías de derecho civil
+24510n
+24510n=1
+24510p
+24510p=Persona y familia
+24510
+24619
+24619a
+24619a=Colección de monografías de derecho civil / 1
+24619
+24613
+24613i
+24613i=Nebent.
+24613a
+24613a=Monografías de derecho civil
+24613
+2603 
+2603 a
+2603 a=Madrid
+2603 b
+2603 b=Ed. Dykinson
+2603 
+3620 
+3620 a
+3620 a=Nachgewiesen 10.2012 -
+3620 
+930  
+930  l
+930  l=1
+930  a
+930  a=Persona y familia
+930  
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+00475nas a22001818c 4500
+001
+001=1024787540
+003
+003=DE-101
+005
+005=20120802113038.0
+007
+007=tu
+008
+008=120802c20129999|||u||p|r ||| 0||||0||| c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1024787540
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675902-0
+0167 
+022  
+022  a
+022  a=2194-8771
+022  
+035  
+035  a
+035  a=(DE-599)ZDB2675902-0
+035  
+040  
+040  a
+040  a=1241
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=1241
+040  
+24510
+24510a
+24510a=Journal of sensors and sensor systems
+24510
+2603 
+2603 a
+2603 a=Göttingen
+2603 b
+2603 b=Copernicus Publ.
+2603 
+3620 
+3620 a
+3620 a=Nachgewiesen 2012,1 -
+3620 
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+01238nas a2200325 c 4500
+001
+001=1024787338
+003
+003=DE-101
+005
+005=20120802113202.0
+007
+007=cr||||||||||||
+008
+008=120802c20129999it m||p|o ||| 0||||0ita c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1024787338
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675901-9
+0167 
+035  
+035  a
+035  a=(DE-599)ZDB2675901-9
+035  
+040  
+040  a
+040  a=9001
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=9001
+040  
+041  
+041  a
+041  a=ita
+041  
+044  
+044  c
+044  c=XA-IT
+044  
+084  
+084  a
+084  a=796
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+1102 
+1102 0
+1102 0=(DE-588)1001266-7
+1102 0
+1102 0=(DE-101)004008766
+1102 a
+1102 a=Club Alpino Italiano
+1102 4
+1102 4=aut
+1102 
+24510
+24510a
+24510a=Montagne 360°
+24510h
+24510h=[Elektronische Ressource]
+24510b
+24510b=la rivista del Club Alpino Italiano
+24510
+24613
+24613a
+24613a=Montagne 360 gradi
+24613
+24613
+24613a
+24613a=Montagne trecentosessanta gradi
+24613
+2603 
+2603 a
+2603 a=Milano
+2603 b
+2603 b=Club
+2603 
+300  
+300  a
+300  a=Online-Ressource
+300  
+3620 
+3620 a
+3620 a=2012 -
+3620 
+36301
+363018
+363018=1.1\x
+36301i
+36301i=2012
+36301
+515  
+515  a
+515  a=Ersch.monatl
+515  
+591  
+591  a
+591  a=st: noch keine Titelhistorie eingetragen, weil erst 2013 Volltext verfügbar ist(02-08-12)
+591  
+77508
+77508i
+77508i=Druckausg.
+77508a
+77508a=Club Alpino Italiano
+77508t
+77508t=Montagne 360°
+77508w
+77508w=(DE-600)2666041-6
+77508w
+77508w=(DE-101)1023185245
+77508
+78000
+78000i
+78000i=Vorg.:
+78000a
+78000a=Club Alpino Italiano
+78000t
+78000t=La rivista del Club Alpino Italiano
+78000w
+78000w=(DE-600)2669438-4
+78000w
+78000w=(DE-101)1023824493
+78000
+8564 
+8564 u
+8564 u=http://www.cai.it/index.php?id=1473&L=0
+8564 x
+8564 x=Verlag; Volltext nach einem Jahr verfügbar
+8564 
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+00450nas a22001818c 4500
+001
+001=1024787206
+003
+003=DE-101
+005
+005=20120802112406.0
+007
+007=tu
+008
+008=120802c20129999|||u||p|r ||| 0||||0||| c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1024787206
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675900-7
+0167 
+022  
+022  a
+022  a=2194-8852
+022  
+035  
+035  a
+035  a=(DE-599)ZDB2675900-7
+035  
+040  
+040  a
+040  a=1241
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=1241
+040  
+24510
+24510a
+24510a=Musik & Psyche
+24510
+2603 
+2603 a
+2603 a=Gießen
+2603 b
+2603 b=Psychosozial-Verl.
+2603 
+3620 
+3620 a
+3620 a=Nachgewiesen 2012,1 -
+3620 
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+00850nas a2200301 c 4500
+001
+001=1024786005
+003
+003=DE-101
+005
+005=20120802105609.0
+007
+007=tu
+008
+008=120802c20129999gw b||p|r ||| 0||||0ger c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1024786005
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675893-3
+0167 
+035  
+035  a
+035  a=(DE-599)ZDB2675893-3
+035  
+040  
+040  a
+040  a=1241
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=1241
+040  
+041  
+041  a
+041  a=ger
+041  
+044  
+044  c
+044  c=XA-DE
+044  
+084  
+084  a
+084  a=610
+084  q
+084  q=DE-101
+084  2
+084  2=sdnb
+084  
+084  
+084  a
+084  a=610
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+090  
+090  n
+090  n=fn
+090  
+24510
+24510a
+24510a=Competence
+24510b
+24510b=Wissenschaft und Forschung
+24510
+2603 
+2603 a
+2603 a=Offenbach
+2603 b
+2603 b=Health-Care-Com
+2603 
+300  
+300  c
+300  c=28 cm
+300  
+3620 
+3620 a
+3620 a=Nachgewiesen 2012 -
+3620 
+36301
+363018
+363018=1.1\x
+36301i
+36301i=2012
+36301
+515  
+515  a
+515  a=Periodizität: alle zwei Monate
+515  
+751  
+751  0
+751  0=(DE-588)2021065-6
+751  0
+751  0=(DE-101)004789385
+751  a
+751  a=Offenbach, Main
+751  4
+751  4=dbp
+751  2
+751  2=gnd
+751  
+77208
+77208i
+77208i=Beil. zu:
+77208t
+77208t=E-health-com
+77208w
+77208w=(DE-600)2269168-6
+77208w
+77208w=(DE-101)983022488
+77208
+925r 
+925r a
+925r a=ra
+925r 
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+00492nas a2200193 c 4500
+001
+001=1024785890
+003
+003=DE-101
+005
+005=20120802105406.0
+007
+007=tu
+008
+008=120802c20129999xxuu||m|r ||| 0||||0||| c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1024785890
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675892-1
+0167 
+035  
+035  a
+035  a=(DE-599)ZDB2675892-1
+035  
+040  
+040  a
+040  a=0001
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=0001
+040  
+044  
+044  c
+044  c=XD-US
+044  c
+044  c=XA-GB
+044  
+084  
+084  a
+084  a=000
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+24510
+24510a
+24510a=Routledge studies in heritage
+24510
+2603 
+2603 a
+2603 a=New York, NY [u.a.]
+2603 b
+2603 b=Routledge
+2603 
+3620 
+3620 a
+3620 a=1.2012 -
+3620 
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+01122nas a2200313 c 4500
+001
+001=1024785750
+003
+003=DE-101
+005
+005=20120802110322.0
+007
+007=cr||||||||||||
+008
+008=120802c20129999gw f||p|o ||| 0||||0ger c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1024785750
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675890-8
+0167 
+029ad
+029ada
+029ada=2194-5705
+029ad
+035  
+035  a
+035  a=(DE-599)ZDB2675890-8
+035  
+040  
+040  a
+040  a=9001
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=9001
+040  
+041  
+041  a
+041  a=ger
+041  
+044  
+044  c
+044  c=XA-DE
+044  
+084  
+084  a
+084  a=530
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+24510
+24510a
+24510a=Entdeckt
+24510h
+24510h=[Elektronische Ressource]
+24510b
+24510b=das Forschungsmagazin aus dem HZDR
+24510
+2603 
+2603 a
+2603 a=Dresden
+2603 b
+2603 b=Helmholtz-Zentrum Dresden-Rossendorf
+2603 
+300  
+300  a
+300  a=Online-Ressource
+300  
+3620 
+3620 a
+3620 a=1.2012 -
+3620 
+36301
+363018
+363018=1.1\x
+36301a
+36301a=1
+36301i
+36301i=2012
+36301
+515  
+515  a
+515  a=2011 nicht ersch.; 2x jährl.
+515  
+7102 
+7102 0
+7102 0=(DE-588)16102193-1
+7102 0
+7102 0=(DE-101)1010237780
+7102 a
+7102 a=Helmholtz-Zentrum
+7102 g
+7102 g=Dresden
+7102 
+77508
+77508i
+77508i=Druckausg.
+77508t
+77508t=Entdeckt
+77508w
+77508w=(DE-600)2673671-8
+77508w
+77508w=(DE-101)102438005X
+77508
+78000
+78000i
+78000i=Vorg.:
+78000a
+78000a=Forschungszentrum <Dresden>
+78000t
+78000t=FZD-Journal
+78000w
+78000w=(DE-600)2608135-0
+78000w
+78000w=(DE-101)1011693356
+78000
+8564 
+8564 u
+8564 u=http://www.hzdr.de/db/Cms?pNid=2931
+8564 x
+8564 x=Verlag
+8564 z
+8564 z=kostenfrei
+8564 
+8564 
+8564 u
+8564 u=http://www.bibliothek.uni-regensburg.de/ezeit/?2675890
+8564 x
+8564 x=EZB
+8564 
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+00929nas a2200265 c 4500
+001
+001=1024785092
+003
+003=DE-101
+005
+005=20120802103602.0
+007
+007=tu
+008
+008=120802c20129999gw f||p|r ||| 0||||0ger c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1024785092
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675888-X
+0167 
+035  
+035  a
+035  a=(DE-599)ZDB2675888-X
+035  
+040  
+040  a
+040  a=0929
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=0929
+040  
+041  
+041  a
+041  a=ger
+041  
+044  
+044  c
+044  c=XA-DE
+044  
+084  
+084  a
+084  a=370
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+084  
+084  a
+084  a=120
+084  a
+084  a=130
+084  a
+084  a=140
+084  2
+084  2=rpb
+084  
+1102 
+1102 0
+1102 0=(DE-588)10130985-5
+1102 0
+1102 0=(DE-101)978864921
+1102 a
+1102 a=Kreisvolkshochschule des Rhein-Lahn-Kreises
+1102 g
+1102 g=Ems
+1102 4
+1102 4=aut
+1102 
+24510
+24510a
+24510a=Semesterprogramm / Kreisvolkshochschule des Rhein-Lahn-Kreises
+24510
+2603 
+2603 a
+2603 a=Bad Ems
+2603 b
+2603 b=Kreisvolkshochschule
+2603 
+3620 
+3620 a
+3620 a=2012/13,He./Wi. -
+3620 
+36301
+363018
+363018=1.1\x
+36301i
+36301i=2012/13
+36301
+515  
+515  a
+515  a=Ersch. halbjährl.
+515  
+78000
+78000i
+78000i=Vorg.:
+78000a
+78000a=Kreisvolkshochschule des Rhein-Lahn-Kreises <Ems>
+78000t
+78000t=Programmheft / Kreisvolkshochschule des Rhein-Lahn-Kreises
+78000w
+78000w=(DE-600)2508573-6
+78000w
+78000w=(DE-101)995778558
+78000
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+00818nas a2200241 c 4500
+001
+001=1024785017
+003
+003=DE-101
+005
+005=20120802103448.0
+007
+007=tu
+008
+008=120802c20129999gw u||p|r ||| 0||||0ger c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1024785017
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675886-6
+0167 
+035  
+035  a
+035  a=(DE-599)ZDB2675886-6
+035  
+040  
+040  a
+040  a=4031
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=4031
+040  
+041  
+041  a
+041  a=ger
+041  
+044  
+044  c
+044  c=XA-DE
+044  
+084  
+084  a
+084  a=370
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+090  
+090  n
+090  n=sc
+090  
+1102 
+1102 0
+1102 0=(DE-588)1024784592
+1102 0
+1102 0=(DE-101)1024784592
+1102 a
+1102 a=Labenwolf-Gymnasium
+1102 4
+1102 4=aut
+1102 
+24510
+24510a
+24510a=Jahresbericht / Labenwolf-Gymnasium, das musische Gymnasium der Stadt Nürnberg
+24510
+2603 
+2603 a
+2603 a=Nürnberg
+2603 b
+2603 b=[s.n.]
+2603 
+3620 
+3620 a
+3620 a=2011/2012 -
+3620 
+78000
+78000i
+78000i=Vorg.:
+78000a
+78000a=Städtisches Labenwolf-Gymnasium <Nürnberg>
+78000t
+78000t=Jahresbericht / Städtisches Labenwolf-Gymnasium Nürnberg
+78000w
+78000w=(DE-600)1274477-3
+78000w
+78000w=(DE-101)017856345
+78000
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+00957nas a2200253 c 4500
+001
+001=1024784665
+003
+003=DE-101
+005
+005=20120802142517.0
+007
+007=tu
+008
+008=120802c20129999xx u||p|r ||| 0||||0rus c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1024784665
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675883-0
+0167 
+035  
+035  a
+035  a=(DE-599)ZDB2675883-0
+035  
+040  
+040  a
+040  a=0001
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=0001
+040  
+041  
+041  a
+041  a=rus
+041  
+044  
+044  c
+044  c=XA-RU
+044  
+084  
+084  a
+084  a=020
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+1102 
+1102 0
+1102 0=(DE-588)16093884-3
+1102 0
+1102 0=(DE-101)1009079247
+1102 a
+1102 a=Prezidentskaja Biblioteka Imeni Borisa Nikolaeviča Elʹzina
+1102 g
+1102 g=Sankt Petersburg
+1102 4
+1102 4=aut
+1102 
+24510
+24510a
+24510a=Ežegodnyj otčet / Prezidentskaja Biblioteka Imeni B. N. Elʹcina
+24510
+2603 
+2603 a
+2603 a=Sankt Peterburg
+2603 b
+2603 b=[s.n.]
+2603 
+3620 
+3620 a
+3620 a=2011(2012) -
+3620 
+36301
+363018
+363018=1.1\x
+36301i
+36301i=2011 
+36301
+546  
+546  a
+546  a=In kyrill. Schr.; Text russ.
+546  
+77508
+77508i
+77508i=Engl. Ausg.
+77508a
+77508a=Prezidentskaja Biblioteka Imeni Borisa Nikolaeviča Elʹzina <Sankt Petersburg>
+77508t
+77508t=Annual report / Boris Yeltsin Presidential Library
+77508w
+77508w=(DE-600)2654089-7
+77508w
+77508w=(DE-101)1020468351
+77508
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+00462nas a22001818c 4500
+001
+001=1024784533
+003
+003=DE-101
+005
+005=20120802115038.0
+007
+007=tu
+008
+008=120802c20129999|||u||p|r ||| 0||||0||| c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1024784533
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675881-7
+0167 
+022  
+022  a
+022  a=2193-7567
+022  
+035  
+035  a
+035  a=(DE-599)ZDB2675881-7
+035  
+040  
+040  a
+040  a=1241
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=1241
+040  
+24510
+24510a
+24510a=Der große Android-App-Guide
+24510
+2603 
+2603 a
+2603 a=München
+2603 b
+2603 b=Media GmbH
+2603 
+3620 
+3620 a
+3620 a=Nachgewiesen 2012,1 -
+3620 
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+00654nas a2200265 c 4500
+001
+001=1024783731
+003
+003=DE-101
+005
+005=20120802100826.0
+007
+007=tu
+008
+008=120802c20129999gw a||p|r ||| 0||||0ger c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1024783731
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675879-9
+0167 
+035  
+035  a
+035  a=(DE-599)ZDB2675879-9
+035  
+040  
+040  a
+040  a=1141
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=1141
+040  
+041  
+041  a
+041  a=ger
+041  
+044  
+044  c
+044  c=XA-DE
+044  
+084  
+084  a
+084  a=630
+084  q
+084  q=DE-101
+084  2
+084  2=sdnb
+084  
+084  
+084  a
+084  a=630
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+24510
+24510a
+24510a=Rosenheimer Holzbaupreis
+24510c
+24510c=RosenheimKreis e.V.
+24510
+2603 
+2603 a
+2603 a=Rosenheim
+2603 b
+2603 b=RosenheimKreis
+2603 
+300  
+300  c
+300  c=30 cm
+300  
+3620 
+3620 a
+3620 a=3.2012 -
+3620 
+36301
+363018
+363018=1.1\x
+36301a
+36301a=3
+36301i
+36301i=2012
+36301
+515  
+515  a
+515  a=Ersch. jährl.
+515  
+925r 
+925r a
+925r a=rb
+925r 
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+00939nas a2200301 c 4500
+001
+001=1024783170
+003
+003=DE-101
+005
+005=20120802124511.0
+007
+007=tu
+008
+008=120802c20129999gw e||n|r l|| 0||||0ger c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1024783170
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675875-1
+0167 
+035  
+035  a
+035  a=(DE-599)ZDB2675875-1
+035  
+040  
+040  a
+040  a=1241
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=1241
+040  
+041  
+041  a
+041  a=ger
+041  
+044  
+044  c
+044  c=XA-DE
+044  
+084  
+084  a
+084  a=350
+084  q
+084  q=DE-101
+084  2
+084  2=sdnb
+084  
+084  
+084  a
+084  a=350
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+1102 
+1102 0
+1102 0=(DE-588)24279-2
+1102 0
+1102 0=(DE-101)000242799
+1102 a
+1102 a=Grenzach-Wyhlen
+1102 4
+1102 4=aut
+1102 
+24510
+24510a
+24510a=Info / Grenzach-Wyhlen 
+24510b
+24510b=amtliches Mitteilungsblatt
+24510
+2603 
+2603 a
+2603 a=Stockach
+2603 b
+2603 b=Primo-Verl.
+2603 
+300  
+300  c
+300  c=30 cm
+300  
+3620 
+3620 a
+3620 a=37.2012,14 -
+3620 
+36301
+363018
+363018=1.1\x
+36301a
+36301a=37
+36301i
+36301i=2012
+36301
+515  
+515  a
+515  a=Periodizität: vierzehntägl.
+515  
+751  
+751  0
+751  0=(DE-588)24279-2
+751  0
+751  0=(DE-101)000242799
+751  a
+751  a=Grenzach-Wyhlen
+751  4
+751  4=dbp
+751  2
+751  2=gnd
+751  
+78000
+78000i
+78000i=Vorg.:
+78000a
+78000a=Grenzach-Wyhlen
+78000t
+78000t=Mitteilungsblatt Grenzach-Wyhlen
+78000w
+78000w=(DE-600)522606-5
+78000w
+78000w=(DE-101)012785911
+78000
+925r 
+925r a
+925r a=ra
+925r 
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+00915nas a2200289 c 4500
+001
+001=1024783146
+003
+003=DE-101
+005
+005=20120802100135.0
+007
+007=tu
+008
+008=120802c20129999gw z||p|r ||| 0||||0ger c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1024783146
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675874-X
+0167 
+035  
+035  a
+035  a=(DE-599)ZDB2675874-X
+035  
+040  
+040  a
+040  a=1241
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=1241
+040  
+041  
+041  a
+041  a=ger
+041  
+044  
+044  c
+044  c=XA-DE
+044  
+084  
+084  a
+084  a=330
+084  q
+084  q=DE-101
+084  2
+084  2=sdnb
+084  
+084  
+084  a
+084  a=330
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+1102 
+1102 0
+1102 0=(DE-588)1024759075
+1102 0
+1102 0=(DE-101)1024759075
+1102 a
+1102 a=Kreishandwerkerschaft Rureifel
+1102 4
+1102 4=aut
+1102 
+24510
+24510a
+24510a=Das Handwerkerverzeichnis der Kreishandwerkerschaft Rureifel
+24510b
+24510b=Mitgliederverzeichnis der Innungsfachbetriebe aus dem Bezirk der Kreishandwerkerschaft Rureifel
+24510
+2603 
+2603 a
+2603 a=Mainz
+2603 b
+2603 b=BVS, Verl. für werbewirksame Publ.
+2603 
+300  
+300  c
+300  c=21 cm
+300  
+3620 
+3620 a
+3620 a=Aufl. 1.2012 -
+3620 
+36301
+363018
+363018=1.1\x
+36301a
+36301a=1
+36301i
+36301i=2012
+36301
+365  
+365  b
+365  b=kart.
+365  
+515  
+515  a
+515  a=Ersch. unregelmäßig
+515  
+925r 
+925r a
+925r a=ra
+925r 
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+00645nas a2200229 c 4500
+001
+001=1024782808
+003
+003=DE-101
+005
+005=20120802094851.0
+007
+007=tu
+008
+008=120802c20129999gw u||m|r ||| 0||||0ger c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1024782808
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675870-2
+0167 
+035  
+035  a
+035  a=(DE-599)ZDB2675870-2
+035  
+040  
+040  a
+040  a=4011
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=4011
+040  
+041  
+041  a
+041  a=ger
+041  
+044  
+044  c
+044  c=XA-DE
+044  
+084  
+084  a
+084  a=700
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+1102 
+1102 0
+1102 0=(DE-588)3021470-1
+1102 0
+1102 0=(DE-101)941172449
+1102 a
+1102 a=Galerie Rothe
+1102 g
+1102 g=Frankfurt, Main
+1102 4
+1102 4=aut
+1102 
+24510
+24510a
+24510a=Jahresgabe ... / Galerie Rothe, Frankfurt am Main
+24510
+2603 
+2603 a
+2603 a=Frankfurt, M.
+2603 b
+2603 b=[s.n.]
+2603 
+3620 
+3620 a
+3620 a=Nachgewiesen 2012 -
+3620 
+36301
+363018
+363018=1.1\x
+36301i
+36301i=2012
+36301
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+00671nas a2200229 c 4500
+001
+001=102478200X
+003
+003=DE-101
+005
+005=20120802093026.0
+007
+007=tu
+008
+008=120802c20129999pl u||p|r ||| 0||||0eng c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=102478200X
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675867-2
+0167 
+022  
+022  a
+022  a=2084-6096
+022  
+035  
+035  a
+035  a=(DE-599)ZDB2675867-2
+035  
+040  
+040  a
+040  a=0089
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=0089
+040  
+041  
+041  a
+041  a=eng
+041  
+044  
+044  c
+044  c=XA-PL
+044  
+084  
+084  a
+084  a=660
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+24510
+24510a
+24510a=Composites theory and practice
+24510b
+24510b=quarterly ; research journal of the Polish Society of Composite Materials
+24510
+2603 
+2603 a
+2603 a=Cze̜stochowa
+2603 b
+2603 b=[s.n.]
+2603 
+3620 
+3620 a
+3620 a=12.2012 -
+3620 
+78000
+78000i
+78000i=Vorg.:
+78000t
+78000t=Kompozyty
+78000w
+78000w=(DE-600)2056168-4
+78000w
+78000w=(DE-101)022535993
+78000
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+01300nas a2200301 c 4500
+001
+001=1024781097
+003
+003=DE-101
+005
+005=20120802090718.0
+007
+007=cr||||||||||||
+008
+008=120802c20129999gw u||m|o ||| 0||||0||| c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1024781097
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675861-1
+0167 
+029ad
+029ada
+029ada=2191-4907
+029ad
+035  
+035  a
+035  a=(DE-599)ZDB2675861-1
+035  
+040  
+040  a
+040  a=0046
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=0046
+040  
+044  
+044  c
+044  c=XA-DE
+044  
+084  
+084  a
+084  a=330
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+24510
+24510a
+24510a=RessourcenKultur
+24510h
+24510h=[Elektronische Ressource]
+24510b
+24510b=Vertrauenskultur, Innovation, Ressourceneffinzienz
+24510n
+24510n=[...]
+24510p
+24510p=Sonderausgabe
+24510c
+24510c=artec, Forschungszentrum Nachhaltigkeit ; Wuppertal Institut
+24510
+24619
+24619a
+24619a=RessourcenKultur [[Elektronische Ressource]]  / Sonderausgabe
+24619
+2603 
+2603 a
+2603 a=Bremen
+2603 b
+2603 b=artec, Forschungszentrum Nachhaltigkeit
+2603 
+2603 
+2603 a
+2603 a=Wuppertal
+2603 b
+2603 b=Wuppertal Institut für Klima, Umwelt, Energie
+2603 
+300  
+300  a
+300  a=Online-Ressource
+300  
+3620 
+3620 a
+3620 a=1.2012 -
+3620 
+36301
+363018
+363018=1.1\x
+36301i
+36301i=2012
+36301
+7102 
+7102 0
+7102 0=(DE-588)10077304-7
+7102 0
+7102 0=(DE-101)970998066
+7102 a
+7102 a=Forschungszentrum Nachhaltigkeit (Artec)
+7102 g
+7102 g=Bremen
+7102 
+7102 
+7102 0
+7102 0=(DE-588)6052682-8
+7102 0
+7102 0=(DE-101)979168228
+7102 a
+7102 a=Wuppertal-Institut für Klima, Umwelt, Energie
+7102 b
+7102 b=Forschungsgruppe Nachhaltiges Produzieren und Konsumieren
+7102 
+77508
+77508i
+77508i=Druckausg.:
+77508t
+77508t=RessourcenKultur / Sonderausgabe
+77508w
+77508w=(DE-600)2675858-1
+77508w
+77508w=(DE-101)1024780945
+77508
+930  
+930  a
+930  a=Sonderausgabe
+930  
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+01229nas a2200289 c 4500
+001
+001=1024780945
+003
+003=DE-101
+005
+005=20120802090821.0
+007
+007=tu
+008
+008=120802c20129999gw z||m|r ||| 0||||0||| c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1024780945
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675858-1
+0167 
+022  
+022  a
+022  a=2191-4907
+022  
+035  
+035  a
+035  a=(DE-599)ZDB2675858-1
+035  
+040  
+040  a
+040  a=0046
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=0046
+040  
+044  
+044  c
+044  c=XA-DE
+044  
+084  
+084  a
+084  a=330
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+24510
+24510a
+24510a=RessourcenKultur
+24510b
+24510b=Vertrauenskultur, Innovation, Ressourceneffinzienz
+24510n
+24510n=[...]
+24510p
+24510p=Sonderausgabe
+24510c
+24510c=artec, Forschungszentrum Nachhaltigkeit ; Wuppertal Institut
+24510
+24619
+24619a
+24619a=RessourcenKultur / Sonderausgabe
+24619
+2603 
+2603 a
+2603 a=Bremen
+2603 b
+2603 b=artec, Forschungszentrum Nachhaltigkeit
+2603 
+2603 
+2603 a
+2603 a=Wuppertal
+2603 b
+2603 b=Wuppertal Institut für Klima, Umwelt, Energie
+2603 
+3620 
+3620 a
+3620 a=1.2012 -
+3620 
+36301
+363018
+363018=1.1\x
+36301i
+36301i=2012
+36301
+7102 
+7102 0
+7102 0=(DE-588)10077304-7
+7102 0
+7102 0=(DE-101)970998066
+7102 a
+7102 a=Forschungszentrum Nachhaltigkeit (Artec)
+7102 g
+7102 g=Bremen
+7102 
+7102 
+7102 0
+7102 0=(DE-588)6052682-8
+7102 0
+7102 0=(DE-101)979168228
+7102 a
+7102 a=Wuppertal-Institut für Klima, Umwelt, Energie
+7102 b
+7102 b=Forschungsgruppe Nachhaltiges Produzieren und Konsumieren
+7102 
+77508
+77508i
+77508i=Online-Ausg.
+77508t
+77508t=RessourcenKultur [[Elektronische Ressource]]  / Sonderausgabe
+77508w
+77508w=(DE-600)2675861-1
+77508w
+77508w=(DE-101)1024781097
+77508
+930  
+930  a
+930  a=Sonderausgabe
+930  
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+00963nas a2200313 c 4500
+001
+001=1024780600
+003
+003=DE-101
+005
+005=20120802085258.0
+007
+007=tu
+008
+008=120802c20129999gw a||p|r ||| 0||||0ger c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1024780600
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675854-4
+0167 
+035  
+035  a
+035  a=(DE-599)ZDB2675854-4
+035  
+040  
+040  a
+040  a=1141
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=1141
+040  
+041  
+041  a
+041  a=ger
+041  
+044  
+044  c
+044  c=XA-DE
+044  
+084  
+084  a
+084  a=914.3
+084  q
+084  q=DE-101
+084  2
+084  2=sdnb
+084  
+084  
+084  a
+084  a=914.3
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+24510
+24510a
+24510a=Ferienzeitung Brandenburg
+24510n
+24510n=[...]
+24510p
+24510p=Ruppiner Seenland, Prignitz, Oberhavel
+24510
+24619
+24619a
+24619a=Ferienzeitung Brandenburg / Ruppiner Land, Prignitz, Oberhavel
+24619
+2603 
+2603 a
+2603 a=Berlin
+2603 b
+2603 b=Terra Press GmbH
+2603 
+300  
+300  c
+300  c=34 cm
+300  
+3620 
+3620 a
+3620 a=2012 -
+3620 
+36301
+363018
+363018=1.1\x
+36301i
+36301i=2012
+36301
+365  
+365  b
+365  b=EUR 1.50 (Einzelbd.)
+365  
+515  
+515  a
+515  a=Ersch. jährl.
+515  
+78000
+78000i
+78000i=Vorg.:
+78000t
+78000t=Ferienzeitung / Ruppiner Land, Prignitz, Oberhavel
+78000w
+78000w=(DE-600)2388036-3
+78000w
+78000w=(DE-101)98573972X
+78000
+925r 
+925r a
+925r a=ra
+925r 
+930  
+930  a
+930  a=Ruppiner Seenland, Prignitz, Oberhavel
+930  
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+01040nas a2200289 c 4500
+001
+001=1024779696
+003
+003=DE-101
+005
+005=20120802083329.0
+007
+007=cr||||||||||||
+008
+008=120802c20129999xx u||p|o ||| 0||||0eng c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1024779696
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675850-7
+0167 
+022  
+022  a
+022  a=1800-9581
+022  
+035  
+035  a
+035  a=(DE-599)ZDB2675850-7
+035  
+040  
+040  a
+040  a=0355
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=0355
+040  
+041  
+041  a
+041  a=eng
+041  
+044  
+044  c
+044  c=XA-ME
+044  
+084  
+084  a
+084  a=330
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+24510
+24510a
+24510a=Journal of central banking theory and practice
+24510h
+24510h=[Elektronische Ressource]
+24510c
+24510c=Central Bank of Montenegro
+24510
+24613
+24613i
+24613i=Nebent.
+24613a
+24613a=Journal of central banking
+24613
+2603 
+2603 a
+2603 a=Podgorica
+2603 b
+2603 b=[s.n.]
+2603 
+300  
+300  a
+300  a=Online-Ressource
+300  
+3620 
+3620 a
+3620 a=1.2012 -
+3620 
+7102 
+7102 0
+7102 0=(DE-588)10130226-5
+7102 0
+7102 0=(DE-101)978798600
+7102 a
+7102 a=Centralna Banka Crne Gore
+7102 
+77508
+77508i
+77508i=Druckausg.
+77508t
+77508t=Journal of central banking theory and practice
+77508w
+77508w=(DE-600)2673361-4
+77508w
+77508w=(DE-101)1024305473
+77508
+8564 
+8564 u
+8564 u=http://www.cb-mn.org/eng/index.php?bl=journal
+8564 x
+8564 x=Verlag
+8564 z
+8564 z=kostenfrei
+8564 
+8564 
+8564 u
+8564 u=http://www.bibliothek.uni-regensburg.de/ezeit/?2675850
+8564 x
+8564 x=EZB
+8564 
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+01853nas a2200433 c 4500
+001
+001=1024757986
+003
+003=DE-101
+005
+005=20120802083041.0
+007
+007=tu
+008
+008=120801c20129999au w||n|r ||| 0||||0ger c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1024757986
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675787-4
+0167 
+035  
+035  a
+035  a=(DE-599)ZDB2675787-4
+035  
+040  
+040  a
+040  a=4060
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=4060
+040  
+041  
+041  a
+041  a=ger
+041  
+044  
+044  c
+044  c=XA-AT
+044  
+084  
+084  a
+084  a=070
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+090  
+090  n
+090  n=ao
+090  n
+090  n=lp
+090  
+24510
+24510a
+24510a=Meine Woche
+24510n
+24510n=[...]
+24510p
+24510p=St. Veit
+24510
+24619
+24619a
+24619a=Meine Woche / St. Veit
+24619
+24613
+24613a
+24613a=Meine Woche / Sankt Veit
+24613
+24613
+24613i
+24613i=Nebent.
+24613a
+24613a=Woche St. Veit
+24613
+24710
+24710a
+24710a=Kärntner Woche
+24710f
+24710f=Nebent. d. 1. OG
+24710
+2603 
+2603 a
+2603 a=Klagenfurt
+2603 b
+2603 b=Kärntner Woche Zeitungs-GmbH
+2603 
+3620 
+3620 a
+3620 a=2012,19(9.Mai) -
+3620 
+36301
+363018
+363018=1.1\x
+36301b
+36301b=19
+36301i
+36301i=2012
+36301
+515  
+515  a
+515  a=Periodizität: wöchentl.
+515  
+751  
+751  0
+751  0=(DE-588)1023732653
+751  0
+751  0=(DE-101)1023732653
+751  a
+751  a=Klagenfurt am Wörthersee
+751  4
+751  4=dbp
+751  2
+751  2=gnd
+751  
+751  
+751  0
+751  0=(DE-588)4051627-1
+751  0
+751  0=(DE-101)04051627X
+751  a
+751  a=Sankt Veit, Glan
+751  4
+751  4=dbp
+751  2
+751  2=gnd
+751  
+77508
+77508i
+77508i=Parallelausg.:
+77508t
+77508t=Meine Woche / Völkermarkt
+77508w
+77508w=(DE-600)2675706-0
+77508w
+77508w=(DE-101)1024749592
+77508
+77508
+77508i
+77508i=Parallelausg.:
+77508t
+77508t=Meine Woche / Villach
+77508w
+77508w=(DE-600)2675714-X
+77508w
+77508w=(DE-101)102475040X
+77508
+77508
+77508i
+77508i=Parallelausg.:
+77508t
+77508t=Meine Woche / Spittal
+77508w
+77508w=(DE-600)2675719-9
+77508w
+77508w=(DE-101)1024750965
+77508
+77508
+77508i
+77508i=Parallelausg.:
+77508t
+77508t=Meine Woche / Lavanttal
+77508w
+77508w=(DE-600)2675739-4
+77508w
+77508w=(DE-101)1024752208
+77508
+77508
+77508i
+77508i=Parallelausg.:
+77508t
+77508t=Meine Woche / Klagenfurt Land
+77508w
+77508w=(DE-600)2675740-0
+77508w
+77508w=(DE-101)1024752410
+77508
+77508
+77508i
+77508i=Parallelausg.:
+77508t
+77508t=Meine Woche / Klagenfurt
+77508w
+77508w=(DE-600)2675776-X
+77508w
+77508w=(DE-101)1024757080
+77508
+77508
+77508i
+77508i=Parallelausg.:
+77508t
+77508t=Meine Woche / Gailtal
+77508w
+77508w=(DE-600)2675782-5
+77508w
+77508w=(DE-101)1024757579
+77508
+77508
+77508i
+77508i=Parallelausg.:
+77508t
+77508t=Meine Woche / Feldkirchen
+77508w
+77508w=(DE-600)2675783-7
+77508w
+77508w=(DE-101)1024757757
+77508
+78000
+78000i
+78000i=Vorg.:
+78000t
+78000t=Kärntner Woche / Sankt Veit
+78000w
+78000w=(DE-600)2607761-9
+78000w
+78000w=(DE-101)1011621029
+78000
+930  
+930  a
+930  a=St. Veit
+930  
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+00799nas a2200301 c 4500
+001
+001=102470310X
+003
+003=DE-101
+005
+005=20120802133653.0
+007
+007=tu
+008
+008=120731c20129999gw z||m|r ||| 0||||0ger c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=102470310X
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675453-8
+0167 
+035  
+035  a
+035  a=(DE-599)ZDB2675453-8
+035  
+040  
+040  a
+040  a=1140
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=1140
+040  
+041  
+041  a
+041  a=ger
+041  
+044  
+044  c
+044  c=XA-DE
+044  
+084  
+084  a
+084  a=290
+084  q
+084  q=DE-101
+084  2
+084  2=sdnb
+084  
+084  
+084  a
+084  a=290
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+24510
+24510a
+24510a=Europäisch-jüdische Studien
+24510b
+24510b=EJSK
+24510n
+24510n=[...]
+24510p
+24510p=Kontroversen
+24510
+24619
+24619a
+24619a=Europäisch-jüdische Studien / Kontroversen
+24619
+24613
+24613a
+24613a=EJSK
+24613
+2603 
+2603 a
+2603 a=Berlin
+2603 a
+2603 a=Boston, Mass.
+2603 b
+2603 b=De Gruyter
+2603 
+300  
+300  c
+300  c=24 cm
+300  
+3620 
+3620 a
+3620 a=1.2012 -
+3620 
+36301
+363018
+363018=1.1\x
+36301a
+36301a=1
+36301i
+36301i=2012
+36301
+515  
+515  a
+515  a=Ersch. unregelmäßig
+515  
+925r 
+925r a
+925r a=ra
+925r 
+930  
+930  a
+930  a=Kontroversen
+930  
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+00717nas a22002298c 4500
+001
+001=1024637395
+003
+003=DE-101
+005
+005=20120802103931.0
+007
+007=tu
+008
+008=120727c20129999|||a||p|r ||| 0||||0||| c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1024637395
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675128-8
+0167 
+022  
+022  a
+022  a=2235-3089
+022  
+035  
+035  a
+035  a=(DE-599)ZDB2675128-8
+035  
+035  
+035  a
+035  a=(OCoLC)795705686
+035  
+040  
+040  a
+040  a=1131
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=9001
+040  
+084  
+084  a
+084  a=8,1
+084  2
+084  2=ssgn
+084  
+084  
+084  a
+084  a=940
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+24510
+24510a
+24510a=Neujahrsblatt des Stadtzürcher Heimatschutzes
+24510
+2603 
+2603 a
+2603 a=Zürich
+2603 b
+2603 b=Stadtzürcher Heimatschutz
+2603 
+3620 
+3620 a
+3620 a=Nachgewiesen 2012 -
+3620 
+78000
+78000i
+78000i=Vorg.:
+78000a
+78000a=Zürcher Heimatschutz
+78000t
+78000t=Neujahrsblatt ... des Zürcher Heimatschutzes
+78000w
+78000w=(DE-600)2426942-6
+78000w
+78000w=(DE-101)98875620X
+78000
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+00733nas a2200253 c 4500
+001
+001=1024623688
+003
+003=DE-101
+005
+005=20120802143024.0
+007
+007=tu
+008
+008=120727c20129999sz a||p|r ||| 0||||0ger c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1024623688
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2675042-9
+0167 
+035  
+035  a
+035  a=(DE-599)ZDB2675042-9
+035  
+040  
+040  a
+040  a=1131
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=1141
+040  
+041  
+041  a
+041  a=ger
+041  
+044  
+044  c
+044  c=XA-CH
+044  
+1102 
+1102 0
+1102 0=(DE-588)1024795039
+1102 0
+1102 0=(DE-101)1024795039
+1102 a
+1102 a=ibW Höhere Fachschule Südostschweiz
+1102 4
+1102 4=aut
+1102 
+24510
+24510a
+24510a=Jahresbericht der ibW Höhere Fachschule Südostschweiz
+24510
+2603 
+2603 a
+2603 a=Chur
+2603 b
+2603 b=ibW Höhere Fachschule Südostschweiz
+2603 
+300  
+300  c
+300  c=30 cm
+300  
+3620 
+3620 a
+3620 a=Nachgewiesen 2011(2012) -
+3620 
+36301
+363018
+363018=1.1\x
+36301i
+36301i=2011
+36301
+515  
+515  a
+515  a=Ersch. jährl.
+515  
+925r 
+925r a
+925r a=rb
+925r 
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+01772nas a2200445 c 4500
+001
+001=1024516296
+003
+003=DE-101
+005
+005=20120802082416.0
+007
+007=co||||||||||||
+008
+008=120724c20129999gw z||p|q ||| 0||||0ger c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1024516296
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2674402-8
+0167 
+035  
+035  a
+035  a=(DE-599)ZDB2674402-8
+035  
+040  
+040  a
+040  a=1241
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=1250
+040  
+041  
+041  a
+041  a=ger
+041  
+044  
+044  c
+044  c=XA-DE
+044  
+08204
+082048
+082048=1\x
+08204a
+08204a=617.600681
+08204q
+08204q=DE-101
+082042
+082042=22/ger
+08204
+084  
+084  a
+084  a=610
+084  q
+084  q=DE-101
+084  2
+084  2=sdnb
+084  
+084  
+084  a
+084  a=610
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+085  
+085  8
+085  8=1\x
+085  b
+085  b=617.6
+085  
+085  
+085  8
+085  8=1\x
+085  z
+085  z=1
+085  s
+085  s=0681
+085  
+24510
+24510a
+24510a=Textvorlagen für die Zahnarztpraxis
+24510h
+24510h=[Elektronische Ressource]
+24510b
+24510b=perfekte Mustertexte, Formulare und Checklisten für ein erfolgreiches Praxismanagement
+24510
+24700
+24700g
+24700g=Hauptsacht. vom Behältnis
+24700
+2603 
+2603 a
+2603 a=Balingen
+2603 b
+2603 b=Spitta
+2603 
+300  
+300  a
+300  a=CD-ROMs
+300  c
+300  c=12 cm, in Behältnis 19 x 14 x 2 cm
+300  e
+300  e=Booklet
+300  
+3620 
+3620 a
+3620 a=1.0.2012 -
+3620 
+36301
+363018
+363018=1.1\x
+36301a
+36301a=1
+36301i
+36301i=2012
+36301
+515  
+515  a
+515  a=Ersch. unregelmäßig
+515  
+538  
+538  a
+538  a=Systemvoraussetzungen: Prozessor: mind. 500 MHz; RAM-Speicher: mind. 128 MB; freie Festplattenkapazität: mind. 250 MB; CD-ROM-Laufwerk; Monitor: 17", 1024 x 768 Pixel; Internet Explorer ab Version 5.0; Windows XP, Windows Vista, Windows 7
+538  
+650 7
+650 70
+650 70=(DE-588)4067303-0
+650 70
+650 70=(DE-101)040673030
+650 7a
+650 7a=Zahnarzt
+650 72
+650 72=gnd
+650 7
+650 7
+650 70
+650 70=(DE-588)4003167-6
+650 70
+650 70=(DE-101)040031675
+650 7a
+650 7a=Arztpraxis
+650 72
+650 72=gnd
+650 7
+655 7
+655 7a
+655 7a=Formularsammlung
+655 72
+655 72=gnd
+655 7
+655 7
+655 7a
+655 7a=CD-ROM
+655 72
+655 72=gnd
+655 7
+68900
+689000
+689000=(DE-588)4067303-0
+689000
+689000=(DE-101)040673030
+68900D
+68900D=s
+68900a
+68900a=Zahnarzt
+68900
+68901
+689010
+689010=(DE-588)4003167-6
+689010
+689010=(DE-101)040031675
+68901D
+68901D=s
+68901a
+68901a=Arztpraxis
+68901
+68902
+68902A
+68902A=f
+68902a
+68902a=Formularsammlung
+68902
+68903
+68903A
+68903A=f
+68903a
+68903a=CD-ROM
+68903
+6890 
+6890 5
+6890 5=DE-101
+6890 5
+6890 5=DE-101
+6890 
+78000
+78000i
+78000i=Vorg.:
+78000t
+78000t=Erfolgreiche Mustertexte für die Zahnarztpraxis
+78000w
+78000w=(DE-600)2375716-4
+78000w
+78000w=(DE-101)984816984
+78000
+925r 
+925r a
+925r a=ra
+925r 
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+01046nas a2200313 c 4500
+001
+001=102438005X
+003
+003=DE-101
+005
+005=20120802105123.0
+007
+007=tu
+008
+008=120719c20129999gw f||p|r ||| 0||||0ger c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=102438005X
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2673671-8
+0167 
+022  
+022  a
+022  a=2194-5705
+022  
+035  
+035  a
+035  a=(DE-599)ZDB2673671-8
+035  
+040  
+040  a
+040  a=0014
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=9001
+040  
+041  
+041  a
+041  a=ger
+041  
+044  
+044  c
+044  c=XA-DE
+044  
+084  
+084  a
+084  a=500
+084  a
+084  a=620
+084  q
+084  q=DE-101
+084  2
+084  2=sdnb
+084  
+084  
+084  a
+084  a=530
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+24510
+24510a
+24510a=Entdeckt
+24510b
+24510b=das Forschungsmagazin aus dem HZDR
+24510
+2603 
+2603 a
+2603 a=Dresden
+2603 b
+2603 b=Helmholtz-Zentrum Dresden-Rossendorf
+2603 
+300  
+300  c
+300  c=30 cm
+300  
+3620 
+3620 a
+3620 a=Ausg. 1.2012 -
+3620 
+36301
+363018
+363018=1.1\x
+36301a
+36301a=1
+36301i
+36301i=2012
+36301
+515  
+515  a
+515  a=2011 nicht ersch.; 2x jährl.
+515  
+7102 
+7102 0
+7102 0=(DE-588)16102193-1
+7102 0
+7102 0=(DE-101)1010237780
+7102 a
+7102 a=Helmholtz-Zentrum
+7102 g
+7102 g=Dresden
+7102 
+77508
+77508i
+77508i=Online-Ausg.
+77508t
+77508t=Entdeckt
+77508w
+77508w=(DE-600)2675890-8
+77508w
+77508w=(DE-101)1024785750
+77508
+78000
+78000i
+78000i=Vorg.:
+78000a
+78000a=Forschungszentrum <Dresden>
+78000t
+78000t=FZD-Journal  . das Journal des Forschungszentrums Dresden-Rossendorf
+78000w
+78000w=(DE-600)2409633-7
+78000w
+78000w=(DE-101)987511513
+78000
+925r 
+925r a
+925r a=rb
+925r 
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+00812nas a2200253 c 4500
+001
+001=1024305473
+003
+003=DE-101
+005
+005=20120802083328.0
+007
+007=tu
+008
+008=120717c20129999xx u||p|r ||| 0||||0eng c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1024305473
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2673361-4
+0167 
+022  
+022  a
+022  a=1800-9581
+022  
+035  
+035  a
+035  a=(DE-599)ZDB2673361-4
+035  
+040  
+040  a
+040  a=0206
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=0355
+040  
+041  
+041  a
+041  a=eng
+041  
+044  
+044  c
+044  c=XA-ME
+044  
+084  
+084  a
+084  a=330
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+24510
+24510a
+24510a=Journal of central banking theory and practice
+24510c
+24510c=Central Bank of Montenegro
+24510
+24613
+24613i
+24613i=Nebent.
+24613a
+24613a=Journal of central banking
+24613
+2603 
+2603 a
+2603 a=Podgorica
+2603 b
+2603 b=[s.n.]
+2603 
+3620 
+3620 a
+3620 a=1.2012 -
+3620 
+7102 
+7102 0
+7102 0=(DE-588)10130226-5
+7102 0
+7102 0=(DE-101)978798600
+7102 a
+7102 a=Centralna Banka Crne Gore
+7102 
+77508
+77508i
+77508i=Online-Ausg.
+77508t
+77508t=Journal of central banking theory and practice
+77508w
+77508w=(DE-600)2675850-7
+77508w
+77508w=(DE-101)1024779696
+77508
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+00787nas a2200277 c 4500
+001
+001=102428607X
+003
+003=DE-101
+005
+005=20120802095112.0
+007
+007=tu
+008
+008=120717c20129999gw z||m|r ||| 0||||0ger c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=102428607X
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2673243-9
+0167 
+035  
+035  a
+035  a=(DE-599)ZDB2673243-9
+035  
+040  
+040  a
+040  a=0046
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=1240
+040  
+041  
+041  a
+041  a=ger
+041  
+044  
+044  c
+044  c=XA-DE
+044  
+084  
+084  a
+084  a=370
+084  q
+084  q=DE-101
+084  2
+084  2=sdnb
+084  
+084  
+084  a
+084  a=370
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+24510
+24510a
+24510a=Apollon-Schriftenreihe zur Bildungsforschung
+24510c
+24510c=hrsg. vom Präsidium der Apollon-Hochschule der Gesundheitswirtschaft
+24510
+24613
+24613a
+24613a=Schriftenreihe zur Bildungsforschung
+24613
+2603 
+2603 a
+2603 a=Bremen
+2603 b
+2603 b=Apollon Univ. Press
+2603 
+300  
+300  c
+300  c=22 cm
+300  
+3620 
+3620 a
+3620 a=1.2012 -
+3620 
+36301
+363018
+363018=1.1\x
+36301a
+36301a=1
+36301i
+36301i=2012
+36301
+515  
+515  a
+515  a=Ersch. unregelmäßig
+515  
+925r 
+925r a
+925r a=ra
+925r 
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+00989nas a2200361 c 4500
+001
+001=1024193225
+003
+003=DE-101
+005
+005=20120802093334.0
+007
+007=tu
+008
+008=120712c20129999gw z||p|r ||| 0||||0ger c
+015  
+015  a
+015  a=12,B32
+015  2
+015  2=dnb
+015  
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1024193225
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2672793-6
+0167 
+035  
+035  a
+035  a=(DE-599)ZDB2672793-6
+035  
+040  
+040  a
+040  a=1241
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=9001
+040  
+041  
+041  a
+041  a=ger
+041  
+044  
+044  c
+044  c=XA-DE
+044  
+08204
+082048
+082048=1\x
+08204a
+08204a=920.043371
+08204q
+08204q=DE-101
+082042
+082042=22/ger
+08204
+0830 
+0830 8
+0830 8=2\x
+0830 a
+0830 a=920.0434735
+0830 q
+0830 q=DE-101
+0830 2
+0830 2=22/ger
+0830 
+084  
+084  a
+084  a=920
+084  q
+084  q=DE-101
+084  2
+084  2=sdnb
+084  
+084  
+084  a
+084  a=050
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+085  
+085  8
+085  8=1\x
+085  b
+085  b=920
+085  
+085  
+085  8
+085  8=1\x
+085  z
+085  z=2
+085  s
+085  s=43371
+085  
+085  
+085  8
+085  8=2\x
+085  b
+085  b=920
+085  
+085  
+085  8
+085  8=2\x
+085  z
+085  z=2
+085  s
+085  s=434735
+085  
+24510
+24510a
+24510a=Wer ist wer Allgäu-Oberschwaben
+24510b
+24510b=... Köpfe der Region
+24510
+24613
+24613i
+24613i=Nebent.
+24613a
+24613a=Wer ist wer in Allgäu-Oberschwaben
+24613
+2603 
+2603 a
+2603 a=Leutkirch im Allgäu
+2603 b
+2603 b=Allgovia media
+2603 
+300  
+300  c
+300  c=21 cm
+300  
+3620 
+3620 a
+3620 a=Aufl. 1.2012 -
+3620 
+36301
+363018
+363018=1.1\x
+36301a
+36301a=1
+36301i
+36301i=2012
+36301
+515  
+515  a
+515  a=Ersch. unregelmäßig
+515  
+925r 
+925r a
+925r a=rb
+925r 
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+00749nas a2200277 c 4500
+001
+001=1024169979
+003
+003=DE-101
+005
+005=20120802132652.0
+007
+007=tu
+008
+008=120712c20129999gw z||m|r ||| 0||||0eng c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1024169979
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2672633-6
+0167 
+022  
+022  a
+022  a=2191-8864
+022  
+035  
+035  a
+035  a=(DE-599)ZDB2672633-6
+035  
+040  
+040  a
+040  a=6999
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=1250
+040  
+041  
+041  a
+041  a=eng
+041  
+044  
+044  c
+044  c=XA-DE
+044  c
+044  c=XA-CH
+044  c
+044  c=XA-AT
+044  
+084  
+084  a
+084  a=900
+084  a
+084  a=940
+084  q
+084  q=DE-101
+084  2
+084  2=sdnb
+084  
+084  
+084  a
+084  a=900
+084  a
+084  a=940
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+24510
+24510a
+24510a=Eastern and central European studies
+24510
+2603 
+2603 a
+2603 a=Frankfurt, M.
+2603 a
+2603 a=Bern
+2603 a
+2603 a=Berlin
+2603 a
+2603 a=Bruxelles
+2603 a
+2603 a=New York, NY
+2603 a
+2603 a=Oxford
+2603 a
+2603 a=Wien
+2603 b
+2603 b=Lang
+2603 
+300  
+300  c
+300  c=22 cm
+300  
+3620 
+3620 a
+3620 a=1.2012 -
+3620 
+36301
+363018
+363018=1.1\x
+36301a
+36301a=1
+36301i
+36301i=2012
+36301
+515  
+515  a
+515  a=Ersch. unregelmäßig
+515  
+925r 
+925r a
+925r a=ra
+925r 
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+01263nas a2200349 c 4500
+001
+001=1023782529
+003
+003=DE-101
+005
+005=20120802082902.0
+007
+007=cr||||||||||||
+008
+008=120628c20129999xxku||p|o ||| 0||||0eng c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1023782529
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2669168-1
+0167 
+022  
+022  a
+022  a=2047-7716
+022  
+029ad
+029ada
+029ada=0305-7674
+029ad
+035  
+035  a
+035  a=(DE-599)ZDB2669168-1
+035  
+040  
+040  a
+040  a=0038
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=9001
+040  
+041  
+041  a
+041  a=eng
+041  
+044  
+044  c
+044  c=XA-GB
+044  
+084  
+084  a
+084  a=10
+084  2
+084  2=ssgn
+084  
+084  
+084  a
+084  a=300
+084  a
+084  a=390
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+24510
+24510a
+24510a=Cambridge anthropology
+24510h
+24510h=[Elektronische Ressource]
+24510b
+24510b=a journal of the Department of Social Anthropology, Cambridge University
+24510
+24700
+24700g
+24700g=Gesehen am 28.06.12
+24700
+2603 
+2603 a
+2603 a=Biggleswade
+2603 b
+2603 b=Berghahn Journals
+2603 
+260  
+260  a
+260  a=Cambridge
+260  b
+260  b=Univ.
+260  c
+260  c=anfangs
+260  
+300  
+300  a
+300  a=Online-Ressource
+300  
+3620 
+3620 a
+3620 a=Nachgewiesen 30.2012 -
+3620 
+36301
+363018
+363018=1.1\x
+36301a
+36301a=30
+36301i
+36301i=2012
+36301
+7102 
+7102 0
+7102 0=(DE-588)5350688-1
+7102 0
+7102 0=(DE-101)957989180
+7102 a
+7102 a=University
+7102 g
+7102 g=Cambridge
+7102 b
+7102 b=Department of Social Anthropology
+7102 
+77508
+77508i
+77508i=Druckausg.
+77508t
+77508t=Cambridge anthropology
+77508w
+77508w=(DE-600)8161-9
+77508w
+77508w=(DE-101)010107126
+77508
+8564 
+8564 u
+8564 u=http://www.ingentaconnect.com/content/berghahn/ca
+8564 x
+8564 x=Agentur
+8564 
+8564 
+8564 u
+8564 u=http://www.journals.berghahnbooks.com/ca
+8564 x
+8564 x=Verlag
+8564 
+8564 
+8564 u
+8564 u=http://www.bibliothek.uni-regensburg.de/ezeit/?2669168
+8564 x
+8564 x=EZB
+8564 
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+01362nas a2200385 c 4500
+001
+001=1023737159
+003
+003=DE-101
+005
+005=20120802080054.0
+007
+007=tu
+008
+008=120627c20129999gw w||n|r ||| 0||||0ger c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1023737159
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2668915-7
+0167 
+035  
+035  a
+035  a=(DE-599)ZDB2668915-7
+035  
+040  
+040  a
+040  a=0012
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=0384
+040  
+041  
+041  a
+041  a=ger
+041  
+044  
+044  c
+044  c=XA-DE
+044  
+084  
+084  a
+084  a=230
+084  q
+084  q=DE-101
+084  2
+084  2=sdnb
+084  
+084  
+084  a
+084  a=230
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+090  
+090  n
+090  n=eo
+090  
+24510
+24510a
+24510a=Katholische SonntagsZeitung
+24510n
+24510n=[...]
+24510p
+24510p=Bistum Augsburg
+24510c
+24510c=im Auftrag des Bischofs von Augsburg
+24510
+24619
+24619a
+24619a=Katholische SonntagsZeitung / Bistum Augsburg
+24619
+2603 
+2603 a
+2603 a=Augsburg
+2603 b
+2603 b=Sankt Ulrich Verlag
+2603 
+3620 
+3620 a
+3620 a=85.2012,21(26/27.Mai) -
+3620 
+36301
+363018
+363018=1.1\x
+36301a
+36301a=85
+36301b
+36301b=21
+36301i
+36301i=2012
+36301
+515  
+515  a
+515  a=Periodizität: wöchentl.
+515  
+591  
+591  a
+591  a=Kopie
+591  
+651 7
+651 70
+651 70=(DE-588)4003616-9
+651 70
+651 70=(DE-101)040036162
+651 7a
+651 7a=Diözese Augsburg
+651 72
+651 72=gnd
+651 7
+655 7
+655 7a
+655 7a=Zeitschrift
+655 72
+655 72=gnd
+655 7
+68900
+689000
+689000=(DE-588)4003616-9
+689000
+689000=(DE-101)040036162
+68900D
+68900D=g
+68900a
+68900a=Diözese Augsburg
+68900
+68901
+68901A
+68901A=f
+68901a
+68901a=Zeitschrift
+68901
+6890 
+6890 5
+6890 5=DE-384
+6890 5
+6890 5=DE-604
+6890 
+7102 
+7102 0
+7102 0=(DE-588)1001896-7
+7102 0
+7102 0=(DE-101)004012666
+7102 a
+7102 a=Diözese
+7102 g
+7102 g=Augsburg
+7102 
+751  
+751  0
+751  0=(DE-588)2028044-0
+751  0
+751  0=(DE-101)004847482
+751  a
+751  a=Augsburg
+751  4
+751  4=dbp
+751  2
+751  2=gnd
+751  
+78000
+78000i
+78000i=Vorg.:
+78000a
+78000a=Diözese <Augsburg>
+78000t
+78000t=Katholische SonntagsZeitung für das Bistum Augsburg
+78000w
+78000w=(DE-600)1158928-0
+78000w
+78000w=(DE-101)016871790
+78000
+930  
+930  a
+930  a=Bistum Augsburg
+930  
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+00993nas a2200301 c 4500
+001
+001=1023412403
+003
+003=DE-101
+005
+005=20120802142210.0
+007
+007=tu
+008
+008=120615c20129999gw a||p|r ||| 0||||0ger c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1023412403
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2667188-8
+0167 
+035  
+035  a
+035  a=(DE-599)ZDB2667188-8
+035  
+040  
+040  a
+040  a=0109
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=1241
+040  
+041  
+041  a
+041  a=ger
+041  
+044  
+044  c
+044  c=XA-DE
+044  
+084  
+084  a
+084  a=330
+084  q
+084  q=DE-101
+084  2
+084  2=sdnb
+084  
+084  
+084  a
+084  a=330
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+24510
+24510a
+24510a=Nachhaltigkeitsbericht  ... / Mainova
+24510
+2603 
+2603 a
+2603 a=Frankfurt, M.
+2603 b
+2603 b=Mainova
+2603 
+300  
+300  c
+300  c=30 cm
+300  
+3620 
+3620 a
+3620 a=2011(2012) -
+3620 
+36301
+363018
+363018=1.1\x
+36301i
+36301i=2011
+36301
+515  
+515  a
+515  a=Ersch. jährl.
+515  
+7102 
+7102 0
+7102 0=(DE-588)5335944-6
+7102 0
+7102 0=(DE-101)95732460X
+7102 a
+7102 a=Mainova-Aktiengesellschaft
+7102 g
+7102 g=Frankfurt, Main
+7102 
+78000
+78000i
+78000i=Als Vorg. gilt
+78000t
+78000t=Umweltbericht Verbund Mainova ...
+78000w
+78000w=(DE-600)2565455-X
+78000w
+78000w=(DE-101)1004956614
+78000
+78000
+78000i
+78000i=Als Vorg. gilt
+78000a
+78000a=Mainova-Aktiengesellschaft <Frankfurt, Main>
+78000t
+78000t=Personalbericht ... / Mainova
+78000w
+78000w=(DE-600)2387571-9
+78000w
+78000w=(DE-101)985709820
+78000
+925r 
+925r a
+925r a=rb
+925r 
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+02240nas a2200493 c 4500
+001
+001=1023356279
+003
+003=DE-101
+005
+005=20120802141007.0
+007
+007=co||||||||||||
+008
+008=120614c20129999gw z||p|q ||| 0||||0ger c
+015  
+015  a
+015  a=12,A26
+015  2
+015  2=dnb
+015  
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1023356279
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2666750-2
+0167 
+035  
+035  a
+035  a=(DE-599)ZDB2666750-2
+035  
+035  
+035  a
+035  a=(OCoLC)797190385
+035  
+040  
+040  a
+040  a=1241
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=9001
+040  
+041  
+041  a
+041  a=ger
+041  
+044  
+044  c
+044  c=XA-DE
+044  
+08204
+082048
+082048=1\x
+08204a
+08204a=658.477
+08204q
+08204q=DE-101
+082042
+082042=22/ger
+08204
+084  
+084  a
+084  a=650
+084  q
+084  q=DE-101
+084  2
+084  2=sdnb
+084  
+084  
+084  a
+084  a=360
+084  a
+084  a=340
+084  a
+084  a=620
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+084  
+084  a
+084  a=TEC 830f
+084  2
+084  2=stub
+084  
+085  
+085  8
+085  8=1\x
+085  b
+085  b=658.477
+085  
+086  
+086  2
+086  2=z
+086  a
+086  a=CD4492
+086  
+24510
+24510a
+24510a=Betriebliches Brandschutzmanagement
+24510h
+24510h=[Elektronische Ressource]
+24510b
+24510b=Maßnahmen professionell und branchenspezifisch umsetzen ; Aufgaben und Pflichten kennen und verstehen, Anforderungen umsetzen, Brandschutz korrekt überwachen
+24510
+24700
+24700g
+24700g=Hauptsacht. vom Behältnis
+24700
+2603 
+2603 a
+2603 a=Kissing
+2603 b
+2603 b=WEKA-Media GmbH
+2603 
+300  
+300  a
+300  a=DVDs
+300  c
+300  c=12 cm, in Behältnis 19 x 14 x 2 cm
+300  e
+300  e=Beil.
+300  
+3620 
+3620 a
+3620 a=2012,5 -
+3620 
+36301
+363018
+363018=1.1\x
+36301b
+36301b=5
+36301i
+36301i=2012
+36301
+4900 
+4900 a
+4900 a=WEKA-Praxislösungen
+4900 
+501  
+501  a
+501  a=Darin 2012,5: Archiv - Handbuch für den betrieblichen Brandschutz
+501  
+515  
+515  a
+515  a=Ersch. unregelmäßig; Druckausg. als Losebl.-Ausg. ersch.
+515  
+538  
+538  a
+538  a=Systemvoraussetzungen: Windows-PC ab Pentium III (1 GHz) oder vergleichbar; Monitor SVGA (1.024 x 768) oder höher; Betriebssystem Windows 7, Vista oder XP; Speicherplatz ca. 650 MB freier Speicher auf der Festplatte; Arbeitsspeicher ab 1 GB (empfohlen); CD-ROM-/DVD-Laufwerk; Software Adobe Reader, MS Office 2003 (mind. Word, Excel, PowerPoint)
+538  
+650 7
+650 70
+650 70=(DE-588)4006138-3
+650 70
+650 70=(DE-101)040061388
+650 7a
+650 7a=Betrieb
+650 72
+650 72=gnd
+650 7
+650 7
+650 70
+650 70=(DE-588)4007974-0
+650 70
+650 70=(DE-101)040079740
+650 7a
+650 7a=Brandschutz
+650 72
+650 72=gnd
+650 7
+655 7
+655 7a
+655 7a=CD-ROM
+655 72
+655 72=gnd
+655 7
+68900
+689000
+689000=(DE-588)4006138-3
+689000
+689000=(DE-101)040061388
+68900D
+68900D=s
+68900a
+68900a=Betrieb
+68900
+68901
+689010
+689010=(DE-588)4007974-0
+689010
+689010=(DE-101)040079740
+68901D
+68901D=s
+68901a
+68901a=Brandschutz
+68901
+68902
+68902A
+68902A=f
+68902a
+68902a=CD-ROM
+68902
+6890 
+6890 5
+6890 5=DE-101
+6890 5
+6890 5=DE-101
+6890 
+77008
+77008i
+77008i=Beil.:
+77008t
+77008t=Betriebliches Brandschutzmanagement / Newsletter
+77008w
+77008w=(DE-600)2666756-3
+77008w
+77008w=(DE-101)1023356600
+77008
+78000
+78000i
+78000i=Vorg.:
+78000t
+78000t=Handbuch für den betrieblichen Brandschutz
+78000w
+78000w=(DE-600)2196164-5
+78000w
+78000w=(DE-101)975739751
+78000
+925r 
+925r a
+925r a=ra
+925r 
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+00982nas a2200301 c 4500
+001
+001=1023185245
+003
+003=DE-101
+005
+005=20120802112740.0
+007
+007=tu
+008
+008=120608c20129999it m||p|r ||| 0||||0ita c
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1023185245
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2666041-6
+0167 
+035  
+035  a
+035  a=(DE-599)ZDB2666041-6
+035  
+040  
+040  a
+040  a=4014
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=9001
+040  
+041  
+041  a
+041  a=ita
+041  
+044  
+044  c
+044  c=XA-IT
+044  
+084  
+084  a
+084  a=31
+084  2
+084  2=ssgn
+084  
+084  
+084  a
+084  a=796
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+1102 
+1102 0
+1102 0=(DE-588)1001266-7
+1102 0
+1102 0=(DE-101)004008766
+1102 a
+1102 a=Club Alpino Italiano
+1102 4
+1102 4=aut
+1102 
+24510
+24510a
+24510a=Montagne 360°
+24510b
+24510b=la rivista del Club Alpino Italiano
+24510
+24613
+24613a
+24613a=Montagne 360 gradi
+24613
+24613
+24613a
+24613a=Montagne trecentosessanta gradi
+24613
+2603 
+2603 a
+2603 a=Milano
+2603 b
+2603 b=Club
+2603 
+3620 
+3620 a
+3620 a=2012 -
+3620 
+36301
+363018
+363018=1.1\x
+36301i
+36301i=2012
+36301
+515  
+515  a
+515  a=Ersch.monatl
+515  
+77508
+77508i
+77508i=Online-Ausg.
+77508a
+77508a=Club Alpino Italiano
+77508t
+77508t=Montagne 360°
+77508w
+77508w=(DE-600)2675901-9
+77508w
+77508w=(DE-101)1024787338
+77508
+78000
+78000i
+78000i=Vorg.:
+78000a
+78000a=Club Alpino Italiano
+78000t
+78000t=La rivista del Club Alpino Italiano
+78000w
+78000w=(DE-600)1104600-4
+78000w
+78000w=(DE-101)016346467
+78000
+endRecord
+beginRecord
+MARC21
+Bibliographic
+leader
+01744nas a2200517 c 4500
+001
+001=1023092700
+003
+003=DE-101
+005
+005=20120802093159.0
+007
+007=tu
+008
+008=120606c20129999gw m||p|r ||| 0||||0ger c
+015  
+015  a
+015  a=12,A31
+015  2
+015  2=dnb
+015  
+0167 
+0167 2
+0167 2=DE-101
+0167 a
+0167 a=1023092700
+0167 
+0167 
+0167 2
+0167 2=DE-600
+0167 a
+0167 a=2665612-7
+0167 
+022  
+022  a
+022  a=2194-4806
+022  
+029aa
+029aaa
+029aaa=2194-4806 = Steuern im Handel
+029aa
+035  
+035  a
+035  a=(DE-599)ZDB2665612-7
+035  
+040  
+040  a
+040  a=1241
+040  b
+040  b=ger
+040  c
+040  c=DE-101
+040  d
+040  d=9001
+040  
+041  
+041  a
+041  a=ger
+041  
+044  
+044  c
+044  c=XA-DE
+044  
+08204
+082048
+082048=1\x
+08204a
+08204a=343.4306805
+08204q
+08204q=DE-101
+082042
+082042=22/ger
+08204
+084  
+084  a
+084  a=340
+084  a
+084  a=650
+084  q
+084  q=DE-101
+084  2
+084  2=sdnb
+084  
+084  
+084  a
+084  a=330
+084  q
+084  q=DE-600
+084  2
+084  2=sdnb
+084  
+085  
+085  8
+085  8=1\x
+085  b
+085  b=343.068
+085  
+085  
+085  8
+085  8=1\x
+085  z
+085  z=1
+085  s
+085  s=05
+085  
+085  
+085  8
+085  8=1\x
+085  z
+085  z=2
+085  s
+085  s=43
+085  
+222 0
+222 0a
+222 0a=Steuern im Handel
+222 0
+24510
+24510a
+24510a=Steuern im Handel
+24510b
+24510b=SH ; sicher durch die Betriebsprüfung  und weniger Steuern
+24510
+24613
+24613a
+24613a=SH
+24613
+2603 
+2603 a
+2603 a=Würzburg
+2603 b
+2603 b=IWW-Inst. für Wirtschaftspubl., Verl. Steuern, Recht, Wirtschaft
+2603 
+300  
+300  c
+300  c=30 cm
+300  
+3620 
+3620 a
+3620 a=2012,1(Juni) -
+3620 
+36301
+363018
+363018=1.1\x
+36301i
+36301i=2012
+36301
+365  
+365  b
+365  b=EUR 192.00 (jährl.)
+365  
+515  
+515  a
+515  a=Ersch. monatl.
+515  
+650 7
+650 70
+650 70=(DE-588)4023226-8
+650 70
+650 70=(DE-101)040232263
+650 7a
+650 7a=Handelsbetrieb
+650 72
+650 72=gnd
+650 7
+650 7
+650 70
+650 70=(DE-588)4006201-6
+650 70
+650 70=(DE-101)040062015
+650 7a
+650 7a=Betriebsprüfung
+650 72
+650 72=gnd
+650 7
+650 7
+650 70
+650 70=(DE-588)4116614-0
+650 70
+650 70=(DE-101)041166140
+650 7a
+650 7a=Steuerrecht
+650 72
+650 72=gnd
+650 7
+651 7
+651 70
+651 70=(DE-588)4011882-4
+651 70
+651 70=(DE-101)040118827
+651 7a
+651 7a=Deutschland
+651 72
+651 72=gnd
+651 7
+655 7
+655 7a
+655 7a=Zeitschrift
+655 72
+655 72=gnd
+655 7
+68900
+689000
+689000=(DE-588)4011882-4
+689000
+689000=(DE-101)040118827
+68900D
+68900D=g
+68900a
+68900a=Deutschland
+68900
+68901
+689010
+689010=(DE-588)4023226-8
+689010
+689010=(DE-101)040232263
+68901D
+68901D=s
+68901a
+68901a=Handelsbetrieb
+68901
+68902
+689020
+689020=(DE-588)4006201-6
+689020
+689020=(DE-101)040062015
+68902D
+68902D=s
+68902a
+68902a=Betriebsprüfung
+68902
+68903
+689030
+689030=(DE-588)4116614-0
+689030
+689030=(DE-101)041166140
+68903D
+68903D=s
+68903a
+68903a=Steuerrecht
+68903
+68904
+68904A
+68904A=f
+68904a
+68904a=Zeitschrift
+68904
+6890 
+6890 5
+6890 5=DE-101
+6890 5
+6890 5=DE-101
+6890 
+925r 
+925r a
+925r a=ra
+925r 
+endRecord

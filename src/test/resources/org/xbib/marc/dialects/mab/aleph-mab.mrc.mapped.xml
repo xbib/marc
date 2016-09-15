@@ -1,0 +1,1484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="info:lc/xmlns/marcxchange-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="info:lc/xmlns/marcxchange-v2 http://www.loc.gov/standards/iso25577/marcxchange-2-0.xsd">
+  <record format="MAB" type="Bibliographic">
+    <leader>00800nM2.01100024   000h</leader>
+    <controlfield tag="001"> HT016983451</controlfield>
+    <controlfield tag="002">20111004</controlfield>
+    <controlfield tag="003">20111206</controlfield>
+    <controlfield tag="004">20140616</controlfield>
+    <datafield tag="020" ind1="b" ind2=" ">
+      <subfield code=" ">BV039600502</subfield>
+      <subfield code="b">BVB</subfield>
+    </datafield>
+    <datafield tag="026" ind1=" " ind2=" ">
+      <subfield code=" ">BVBBV039600502</subfield>
+    </datafield>
+    <datafield tag="030" ind1=" " ind2=" ">
+      <subfield code=" ">a|1uc||||||17</subfield>
+    </datafield>
+    <datafield tag="036" ind1="a" ind2=" ">
+      <subfield code=" ">XA-DE-BW</subfield>
+    </datafield>
+    <datafield tag="037" ind1="b" ind2=" ">
+      <subfield code=" ">ger</subfield>
+    </datafield>
+    <datafield tag="050" ind1=" " ind2=" ">
+      <subfield code=" ">||||||||g|||||</subfield>
+    </datafield>
+    <datafield tag="051" ind1=" " ind2=" ">
+      <subfield code=" ">m|||||||</subfield>
+    </datafield>
+    <datafield tag="070" ind1=" " ind2=" ">
+      <subfield code=" ">361</subfield>
+    </datafield>
+    <datafield tag="070" ind1="b" ind2=" ">
+      <subfield code=" ">708</subfield>
+    </datafield>
+    <datafield tag="078" ind1="e" ind2=" ">
+      <subfield code=" ">ZDB-59-BPG</subfield>
+    </datafield>
+    <datafield tag="078" ind1="i" ind2=" ">
+      <subfield code=" ">iall</subfield>
+    </datafield>
+    <datafield tag="080" ind1=" " ind2=" ">
+      <subfield code=" ">60</subfield>
+    </datafield>
+    <datafield tag="086" ind1="a" ind2=" ">
+      <subfield code=" ">978-3-621-27683-2</subfield>
+    </datafield>
+    <datafield tag="100" ind1=" " ind2=" ">
+      <subfield code=" ">Schandry, Rainer</subfield>
+      <subfield code="9">(DE-588)120139901</subfield>
+    </datafield>
+    <datafield tag="331" ind1=" " ind2=" ">
+      <subfield code=" ">Biologische Psychologie</subfield>
+    </datafield>
+    <datafield tag="334" ind1=" " ind2=" ">
+      <subfield code=" ">Elektronische Ressource</subfield>
+    </datafield>
+    <datafield tag="335" ind1=" " ind2=" ">
+      <subfield code=" ">[mit Add-on]</subfield>
+    </datafield>
+    <datafield tag="359" ind1=" " ind2=" ">
+      <subfield code=" ">Rainer Schandry</subfield>
+    </datafield>
+    <datafield tag="403" ind1=" " ind2=" ">
+      <subfield code=" ">3., vollst. überarb. Aufl.</subfield>
+    </datafield>
+    <datafield tag="410" ind1=" " ind2=" ">
+      <subfield code=" ">Weinheim</subfield>
+    </datafield>
+    <datafield tag="412" ind1=" " ind2=" ">
+      <subfield code=" ">Beltz</subfield>
+    </datafield>
+    <datafield tag="425" ind1=" " ind2=" ">
+      <subfield code=" ">2011</subfield>
+    </datafield>
+    <datafield tag="425" ind1="a" ind2=" ">
+      <subfield code=" ">2011</subfield>
+    </datafield>
+    <datafield tag="433" ind1=" " ind2=" ">
+      <subfield code=" ">596 S. : Ill., graph. Darst.</subfield>
+    </datafield>
+    <datafield tag="527" ind1="z" ind2=" ">
+      <subfield code=" ">Druckausg.</subfield>
+      <subfield code="a">Schandry, Rainer: Biologische Psychologie</subfield>
+      <subfield code="9">HT016879875</subfield>
+    </datafield>
+    <datafield tag="537" ind1=" " ind2=" ">
+      <subfield code=" ">Gesehen am: 06.12.2011</subfield>
+    </datafield>
+    <datafield tag="540" ind1="a" ind2=" ">
+      <subfield code=" ">978-3-621-27844-7</subfield>
+    </datafield>
+    <datafield tag="652" ind1="a" ind2=" ">
+      <subfield code=" ">Online-Ressource</subfield>
+    </datafield>
+    <datafield tag="700" ind1=" " ind2=" ">
+      <subfield code=" ">610</subfield>
+    </datafield>
+    <datafield tag="700" ind1=" " ind2=" ">
+      <subfield code=" ">150</subfield>
+    </datafield>
+    <datafield tag="700" ind1="g" ind2=" ">
+      <subfield code=" ">CZ 1000</subfield>
+    </datafield>
+    <datafield tag="700" ind1="g" ind2=" ">
+      <subfield code=" ">WW 4200</subfield>
+    </datafield>
+    <datafield tag="705" ind1="a" ind2=" ">
+      <subfield code=" ">612.8</subfield>
+      <subfield code="c">612.8</subfield>
+      <subfield code="e">DDC22ger</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="0">
+      <subfield code=" ">Physiologische Psychologie</subfield>
+      <subfield code="9">(DE-588)4076126-5</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="1">
+      <subfield code=" ">Lehrbuch</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="2">
+      <subfield code=" ">Online-Publikation</subfield>
+    </datafield>
+  </record>
+  <record format="MAB" type="Bibliographic">
+    <leader>01075nM2.01100024   000h</leader>
+    <controlfield tag="001"> HT016980609</controlfield>
+    <controlfield tag="002">20110929</controlfield>
+    <controlfield tag="003">20111216</controlfield>
+    <controlfield tag="004">20140616</controlfield>
+    <datafield tag="026" ind1=" " ind2=" ">
+      <subfield code=" ">HBZHT016980609</subfield>
+    </datafield>
+    <datafield tag="030" ind1=" " ind2=" ">
+      <subfield code=" ">a|1uc||||||17</subfield>
+    </datafield>
+    <datafield tag="036" ind1="a" ind2=" ">
+      <subfield code=" ">XA-DE-BW</subfield>
+    </datafield>
+    <datafield tag="037" ind1="b" ind2=" ">
+      <subfield code=" ">ger</subfield>
+    </datafield>
+    <datafield tag="050" ind1=" " ind2=" ">
+      <subfield code=" ">||||||||g|||||</subfield>
+    </datafield>
+    <datafield tag="051" ind1=" " ind2=" ">
+      <subfield code=" ">m|||||||</subfield>
+    </datafield>
+    <datafield tag="070" ind1=" " ind2=" ">
+      <subfield code=" ">361</subfield>
+    </datafield>
+    <datafield tag="070" ind1="b" ind2=" ">
+      <subfield code=" ">468</subfield>
+    </datafield>
+    <datafield tag="078" ind1="e" ind2=" ">
+      <subfield code=" ">ZDB-59-BPA</subfield>
+    </datafield>
+    <datafield tag="078" ind1="i" ind2=" ">
+      <subfield code=" ">iall</subfield>
+    </datafield>
+    <datafield tag="080" ind1=" " ind2=" ">
+      <subfield code=" ">60</subfield>
+    </datafield>
+    <datafield tag="086" ind1="a" ind2=" ">
+      <subfield code=" ">978-3-621-27806-5</subfield>
+    </datafield>
+    <datafield tag="100" ind1=" " ind2=" ">
+      <subfield code=" ">Heinrichs, Nina</subfield>
+      <subfield code="d">1973-</subfield>
+      <subfield code="9">(DE-588)12484085X</subfield>
+    </datafield>
+    <datafield tag="104" ind1="a" ind2=" ">
+      <subfield code=" ">Lohaus, Arnold</subfield>
+      <subfield code="d">1954-</subfield>
+      <subfield code="9">(DE-588)115417141</subfield>
+    </datafield>
+    <datafield tag="331" ind1=" " ind2=" ">
+      <subfield code=" ">Klinische Entwicklungspsychologie kompakt</subfield>
+    </datafield>
+    <datafield tag="334" ind1=" " ind2=" ">
+      <subfield code=" ">Elektronische Ressource</subfield>
+    </datafield>
+    <datafield tag="335" ind1=" " ind2=" ">
+      <subfield code=" ">psychische Störungen im Kindes- und Jugendalter ; [mit Add-on]</subfield>
+    </datafield>
+    <datafield tag="359" ind1=" " ind2=" ">
+      <subfield code=" ">Nina Heinrichs ; Arnold Lohaus</subfield>
+    </datafield>
+    <datafield tag="403" ind1=" " ind2=" ">
+      <subfield code=" ">1. Aufl.</subfield>
+    </datafield>
+    <datafield tag="410" ind1=" " ind2=" ">
+      <subfield code=" ">Weinheim [u.a.]</subfield>
+    </datafield>
+    <datafield tag="412" ind1=" " ind2=" ">
+      <subfield code=" ">Beltz</subfield>
+    </datafield>
+    <datafield tag="425" ind1="a" ind2=" ">
+      <subfield code=" ">2011</subfield>
+    </datafield>
+    <datafield tag="433" ind1=" " ind2=" ">
+      <subfield code=" ">220 S. : Ill., graph. Darst.</subfield>
+    </datafield>
+    <datafield tag="527" ind1="z" ind2=" ">
+      <subfield code=" ">Druckausg.</subfield>
+      <subfield code="a">Heinrichs, Nina: Klinische Entwicklungspsychologie kompakt</subfield>
+      <subfield code="9">HT016873568</subfield>
+    </datafield>
+    <datafield tag="540" ind1="a" ind2=" ">
+      <subfield code=" ">978-3-621-27899-7</subfield>
+    </datafield>
+    <datafield tag="652" ind1="a" ind2=" ">
+      <subfield code=" ">Online-Ressource</subfield>
+    </datafield>
+    <datafield tag="700" ind1=" " ind2=" ">
+      <subfield code=" ">610</subfield>
+    </datafield>
+    <datafield tag="700" ind1=" " ind2=" ">
+      <subfield code=" ">150</subfield>
+    </datafield>
+    <datafield tag="700" ind1="g" ind2=" ">
+      <subfield code=" ">CU 5000</subfield>
+    </datafield>
+    <datafield tag="705" ind1="a" ind2=" ">
+      <subfield code=" ">618.928907</subfield>
+      <subfield code="c">618.92</subfield>
+      <subfield code="d">616.89</subfield>
+      <subfield code="e">DDC22ger</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2=" ">
+      <subfield code=" ">Kind</subfield>
+      <subfield code="9">(DE-588)4030550-8</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="0">
+      <subfield code=" ">Jugend</subfield>
+      <subfield code="9">(DE-588)4028859-6</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="1">
+      <subfield code=" ">Entwicklungsstörung</subfield>
+      <subfield code="9">(DE-588)4014966-3</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="2">
+      <subfield code=" ">Psychische Störung</subfield>
+      <subfield code="9">(DE-588)4047686-8</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="3">
+      <subfield code=" ">Psychopathologie</subfield>
+      <subfield code="9">(DE-588)4047724-1</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="4">
+      <subfield code=" ">Entwicklungspsychologie</subfield>
+      <subfield code="9">(DE-588)4014963-8</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="5">
+      <subfield code=" ">Lehrbuch</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="6">
+      <subfield code=" ">Online-Publikation</subfield>
+    </datafield>
+  </record>
+  <record format="MAB" type="Bibliographic">
+    <leader>00757nM2.01100024   000h</leader>
+    <controlfield tag="001"> HT016978781</controlfield>
+    <controlfield tag="002">20110928</controlfield>
+    <controlfield tag="003">20120319</controlfield>
+    <controlfield tag="004">20140616</controlfield>
+    <datafield tag="026" ind1=" " ind2=" ">
+      <subfield code=" ">HBZHT016978781</subfield>
+    </datafield>
+    <datafield tag="030" ind1=" " ind2=" ">
+      <subfield code=" ">a|1uc||||||17</subfield>
+    </datafield>
+    <datafield tag="036" ind1="a" ind2=" ">
+      <subfield code=" ">XA-DE-BW</subfield>
+    </datafield>
+    <datafield tag="037" ind1="b" ind2=" ">
+      <subfield code=" ">ger</subfield>
+    </datafield>
+    <datafield tag="050" ind1=" " ind2=" ">
+      <subfield code=" ">||||||||g|||||</subfield>
+    </datafield>
+    <datafield tag="051" ind1=" " ind2=" ">
+      <subfield code=" ">m|||||||</subfield>
+    </datafield>
+    <datafield tag="070" ind1=" " ind2=" ">
+      <subfield code=" ">361</subfield>
+    </datafield>
+    <datafield tag="070" ind1="b" ind2=" ">
+      <subfield code=" ">708</subfield>
+    </datafield>
+    <datafield tag="078" ind1="e" ind2=" ">
+      <subfield code=" ">ZDB-59-BPA</subfield>
+    </datafield>
+    <datafield tag="078" ind1="i" ind2=" ">
+      <subfield code=" ">iall</subfield>
+    </datafield>
+    <datafield tag="080" ind1=" " ind2=" ">
+      <subfield code=" ">60</subfield>
+    </datafield>
+    <datafield tag="086" ind1="a" ind2=" ">
+      <subfield code=" ">978-3-621-27792-1</subfield>
+    </datafield>
+    <datafield tag="100" ind1=" " ind2=" ">
+      <subfield code=" ">Treier, Michael</subfield>
+      <subfield code="9">(DE-588)122337875</subfield>
+    </datafield>
+    <datafield tag="331" ind1=" " ind2=" ">
+      <subfield code=" ">Personalpsychologie kompakt</subfield>
+    </datafield>
+    <datafield tag="334" ind1=" " ind2=" ">
+      <subfield code=" ">Elektronische Ressource</subfield>
+    </datafield>
+    <datafield tag="335" ind1=" " ind2=" ">
+      <subfield code=" ">[mit Add-on]</subfield>
+    </datafield>
+    <datafield tag="359" ind1=" " ind2=" ">
+      <subfield code=" ">Michael Treier</subfield>
+    </datafield>
+    <datafield tag="403" ind1=" " ind2=" ">
+      <subfield code=" ">1. Aufl.</subfield>
+    </datafield>
+    <datafield tag="410" ind1=" " ind2=" ">
+      <subfield code=" ">Weinheim [u.a.]</subfield>
+    </datafield>
+    <datafield tag="412" ind1=" " ind2=" ">
+      <subfield code=" ">Beltz</subfield>
+    </datafield>
+    <datafield tag="425" ind1="a" ind2=" ">
+      <subfield code=" ">2011</subfield>
+    </datafield>
+    <datafield tag="433" ind1=" " ind2=" ">
+      <subfield code=" ">220 S. : graph. Darst.</subfield>
+    </datafield>
+    <datafield tag="451" ind1=" " ind2=" ">
+      <subfield code=" ">Kompakt</subfield>
+    </datafield>
+    <datafield tag="527" ind1="z" ind2=" ">
+      <subfield code=" ">Druckausg.</subfield>
+      <subfield code="a">Treier, Michael: Personalpsychologie kompakt</subfield>
+      <subfield code="9">HT016873618</subfield>
+    </datafield>
+    <datafield tag="537" ind1=" " ind2=" ">
+      <subfield code=" ">Gesehen am: 19.03.2012</subfield>
+    </datafield>
+    <datafield tag="540" ind1="a" ind2=" ">
+      <subfield code=" ">978-3-621-27911-6</subfield>
+    </datafield>
+    <datafield tag="652" ind1="a" ind2=" ">
+      <subfield code=" ">Online-Ressource</subfield>
+    </datafield>
+    <datafield tag="700" ind1=" " ind2=" ">
+      <subfield code=" ">650</subfield>
+    </datafield>
+    <datafield tag="700" ind1=" " ind2=" ">
+      <subfield code=" ">150</subfield>
+    </datafield>
+    <datafield tag="700" ind1="g" ind2=" ">
+      <subfield code=" ">QV 570</subfield>
+    </datafield>
+    <datafield tag="700" ind1="g" ind2=" ">
+      <subfield code=" ">CW 4700</subfield>
+    </datafield>
+    <datafield tag="705" ind1="a" ind2=" ">
+      <subfield code=" ">658.30019</subfield>
+      <subfield code="c">658.3</subfield>
+      <subfield code="e">DDC22ger</subfield>
+      <subfield code="f">019</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2=" ">
+      <subfield code=" ">Personalpsychologie</subfield>
+      <subfield code="9">(DE-588)4784219-2</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="0">
+      <subfield code=" ">Online-Publikation</subfield>
+    </datafield>
+  </record>
+  <record format="MAB" type="Bibliographic">
+    <leader>00949nM2.01100024   000h</leader>
+    <controlfield tag="001"> HT016984572</controlfield>
+    <controlfield tag="002">20111005</controlfield>
+    <controlfield tag="003">20120116</controlfield>
+    <controlfield tag="004">20140616</controlfield>
+    <datafield tag="020" ind1="b" ind2=" ">
+      <subfield code=" ">BV039600772</subfield>
+      <subfield code="b">BVB</subfield>
+    </datafield>
+    <datafield tag="026" ind1=" " ind2=" ">
+      <subfield code=" ">BVBBV039600772</subfield>
+    </datafield>
+    <datafield tag="030" ind1=" " ind2=" ">
+      <subfield code=" ">a|1uc||||||17</subfield>
+    </datafield>
+    <datafield tag="036" ind1="a" ind2=" ">
+      <subfield code=" ">XA-DE-BW</subfield>
+    </datafield>
+    <datafield tag="037" ind1="b" ind2=" ">
+      <subfield code=" ">ger</subfield>
+    </datafield>
+    <datafield tag="050" ind1=" " ind2=" ">
+      <subfield code=" ">||||||||g|||||</subfield>
+    </datafield>
+    <datafield tag="051" ind1=" " ind2=" ">
+      <subfield code=" ">m|||||||</subfield>
+    </datafield>
+    <datafield tag="070" ind1=" " ind2=" ">
+      <subfield code=" ">361</subfield>
+    </datafield>
+    <datafield tag="070" ind1="b" ind2=" ">
+      <subfield code=" ">294</subfield>
+    </datafield>
+    <datafield tag="078" ind1="e" ind2=" ">
+      <subfield code=" ">ZDB-59-BPG</subfield>
+    </datafield>
+    <datafield tag="078" ind1="i" ind2=" ">
+      <subfield code=" ">iall</subfield>
+    </datafield>
+    <datafield tag="080" ind1=" " ind2=" ">
+      <subfield code=" ">60</subfield>
+    </datafield>
+    <datafield tag="086" ind1="a" ind2=" ">
+      <subfield code=" ">978-3-621-27524-8</subfield>
+    </datafield>
+    <datafield tag="100" ind1=" " ind2=" ">
+      <subfield code=" ">Eid, Michael</subfield>
+      <subfield code="d">1963-</subfield>
+      <subfield code="9">(DE-588)130635405</subfield>
+    </datafield>
+    <datafield tag="104" ind1="a" ind2=" ">
+      <subfield code=" ">Gollwitzer, Mario</subfield>
+      <subfield code="d">1973-</subfield>
+      <subfield code="9">(DE-588)123250196</subfield>
+    </datafield>
+    <datafield tag="108" ind1="a" ind2=" ">
+      <subfield code=" ">Schmitt, Manfred</subfield>
+      <subfield code="9">(DE-588)132779420</subfield>
+    </datafield>
+    <datafield tag="331" ind1=" " ind2=" ">
+      <subfield code=" ">Statistik und Forschungsmethoden</subfield>
+    </datafield>
+    <datafield tag="334" ind1=" " ind2=" ">
+      <subfield code=" ">Elektronische Ressource</subfield>
+    </datafield>
+    <datafield tag="335" ind1=" " ind2=" ">
+      <subfield code=" ">Lehrbuch ; [mit Add-on]</subfield>
+    </datafield>
+    <datafield tag="359" ind1=" " ind2=" ">
+      <subfield code=" ">Michael Eid ; Mario Gollwitzer ; Manfred Schmitt</subfield>
+    </datafield>
+    <datafield tag="403" ind1=" " ind2=" ">
+      <subfield code=" ">2., korr. Aufl.</subfield>
+    </datafield>
+    <datafield tag="410" ind1=" " ind2=" ">
+      <subfield code=" ">Weinheim [u.a.]</subfield>
+    </datafield>
+    <datafield tag="412" ind1=" " ind2=" ">
+      <subfield code=" ">Beltz</subfield>
+    </datafield>
+    <datafield tag="425" ind1="a" ind2=" ">
+      <subfield code=" ">2011</subfield>
+    </datafield>
+    <datafield tag="433" ind1=" " ind2=" ">
+      <subfield code=" ">XXXII, 982 S. : graph. Darst.</subfield>
+    </datafield>
+    <datafield tag="527" ind1="z" ind2=" ">
+      <subfield code=" ">Druckausg.</subfield>
+      <subfield code="a">Eid, Michael: Statistik und Forschungsmethoden</subfield>
+      <subfield code="9">HT017013654</subfield>
+    </datafield>
+    <datafield tag="537" ind1=" " ind2=" ">
+      <subfield code=" ">Gesehen am: 06.12.2011</subfield>
+    </datafield>
+    <datafield tag="540" ind1="a" ind2=" ">
+      <subfield code=" ">978-3-621-27834-8</subfield>
+    </datafield>
+    <datafield tag="652" ind1="a" ind2=" ">
+      <subfield code=" ">Online-Ressource</subfield>
+    </datafield>
+    <datafield tag="700" ind1=" " ind2=" ">
+      <subfield code=" ">510</subfield>
+    </datafield>
+    <datafield tag="700" ind1="g" ind2=" ">
+      <subfield code=" ">SK 850</subfield>
+    </datafield>
+    <datafield tag="700" ind1="g" ind2=" ">
+      <subfield code=" ">QH 254</subfield>
+    </datafield>
+    <datafield tag="700" ind1="g" ind2=" ">
+      <subfield code=" ">CM 4000</subfield>
+    </datafield>
+    <datafield tag="700" ind1="g" ind2=" ">
+      <subfield code=" ">MR 2000</subfield>
+    </datafield>
+    <datafield tag="700" ind1="g" ind2=" ">
+      <subfield code=" ">MR 2100</subfield>
+    </datafield>
+    <datafield tag="705" ind1="a" ind2=" ">
+      <subfield code=" ">519.5</subfield>
+      <subfield code="c">519.5</subfield>
+      <subfield code="e">DDC22ger</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2=" ">
+      <subfield code=" ">Statistik</subfield>
+      <subfield code="9">(DE-588)4056995-0</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="0">
+      <subfield code=" ">Lehrbuch</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="1">
+      <subfield code=" ">Online-Publikation</subfield>
+    </datafield>
+  </record>
+  <record format="MAB" type="Bibliographic">
+    <leader>00802nM2.01100024   000h</leader>
+    <controlfield tag="001"> HT016979194</controlfield>
+    <controlfield tag="002">20110928</controlfield>
+    <controlfield tag="003">20120319</controlfield>
+    <controlfield tag="004">20140616</controlfield>
+    <datafield tag="026" ind1=" " ind2=" ">
+      <subfield code=" ">HBZHT016979194</subfield>
+    </datafield>
+    <datafield tag="030" ind1=" " ind2=" ">
+      <subfield code=" ">a|1uc||||||17</subfield>
+    </datafield>
+    <datafield tag="036" ind1="a" ind2=" ">
+      <subfield code=" ">XA-DE-BW</subfield>
+    </datafield>
+    <datafield tag="037" ind1="b" ind2=" ">
+      <subfield code=" ">ger</subfield>
+    </datafield>
+    <datafield tag="050" ind1=" " ind2=" ">
+      <subfield code=" ">||||||||g|||||</subfield>
+    </datafield>
+    <datafield tag="051" ind1=" " ind2=" ">
+      <subfield code=" ">m|||||||</subfield>
+    </datafield>
+    <datafield tag="070" ind1=" " ind2=" ">
+      <subfield code=" ">361</subfield>
+    </datafield>
+    <datafield tag="070" ind1="b" ind2=" ">
+      <subfield code=" ">708</subfield>
+    </datafield>
+    <datafield tag="078" ind1="e" ind2=" ">
+      <subfield code=" ">ZDB-59-BPA</subfield>
+    </datafield>
+    <datafield tag="078" ind1="i" ind2=" ">
+      <subfield code=" ">iall</subfield>
+    </datafield>
+    <datafield tag="080" ind1=" " ind2=" ">
+      <subfield code=" ">60</subfield>
+    </datafield>
+    <datafield tag="086" ind1="a" ind2=" ">
+      <subfield code=" ">978-3-621-27773-0</subfield>
+    </datafield>
+    <datafield tag="100" ind1=" " ind2=" ">
+      <subfield code=" ">Schnotz, Wolfgang</subfield>
+      <subfield code="d">1946-</subfield>
+      <subfield code="9">(DE-588)109223292</subfield>
+    </datafield>
+    <datafield tag="331" ind1=" " ind2=" ">
+      <subfield code=" ">Pädagogische Psychologie kompakt</subfield>
+    </datafield>
+    <datafield tag="334" ind1=" " ind2=" ">
+      <subfield code=" ">Elektronische Ressource</subfield>
+    </datafield>
+    <datafield tag="335" ind1=" " ind2=" ">
+      <subfield code=" ">[mit Add-on]</subfield>
+    </datafield>
+    <datafield tag="359" ind1=" " ind2=" ">
+      <subfield code=" ">Wolfgang Schnotz</subfield>
+    </datafield>
+    <datafield tag="403" ind1=" " ind2=" ">
+      <subfield code=" ">2., überarb. und erw. Aufl.</subfield>
+    </datafield>
+    <datafield tag="410" ind1=" " ind2=" ">
+      <subfield code=" ">Weinheim</subfield>
+    </datafield>
+    <datafield tag="412" ind1=" " ind2=" ">
+      <subfield code=" ">Beltz</subfield>
+    </datafield>
+    <datafield tag="425" ind1="a" ind2=" ">
+      <subfield code=" ">2011</subfield>
+    </datafield>
+    <datafield tag="433" ind1=" " ind2=" ">
+      <subfield code=" ">221 S. : Ill., graph. Darst.</subfield>
+    </datafield>
+    <datafield tag="527" ind1="z" ind2=" ">
+      <subfield code=" ">Druckausg.</subfield>
+      <subfield code="a">Schnotz, Wolfgang: Pädagogische Psychologie kompakt</subfield>
+      <subfield code="9">HT016661083</subfield>
+    </datafield>
+    <datafield tag="537" ind1=" " ind2=" ">
+      <subfield code=" ">Gesehen am: 19.03.2012</subfield>
+    </datafield>
+    <datafield tag="540" ind1="a" ind2=" ">
+      <subfield code=" ">978-3-621-27907-9</subfield>
+    </datafield>
+    <datafield tag="652" ind1="a" ind2=" ">
+      <subfield code=" ">Online-Ressource</subfield>
+    </datafield>
+    <datafield tag="700" ind1=" " ind2=" ">
+      <subfield code=" ">370</subfield>
+    </datafield>
+    <datafield tag="700" ind1=" " ind2=" ">
+      <subfield code=" ">150</subfield>
+    </datafield>
+    <datafield tag="700" ind1="g" ind2=" ">
+      <subfield code=" ">CX 1000</subfield>
+    </datafield>
+    <datafield tag="700" ind1="g" ind2=" ">
+      <subfield code=" ">CX 3000</subfield>
+    </datafield>
+    <datafield tag="705" ind1="a" ind2=" ">
+      <subfield code=" ">370.15</subfield>
+      <subfield code="c">370.15</subfield>
+      <subfield code="e">DDC22ger</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2=" ">
+      <subfield code=" ">Pädagogische Psychologie</subfield>
+      <subfield code="9">(DE-588)4044321-8</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="0">
+      <subfield code=" ">Lehrbuch</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="1">
+      <subfield code=" ">Online-Publikation</subfield>
+    </datafield>
+  </record>
+  <record format="MAB" type="Bibliographic">
+    <leader>00907nM2.01100024   000h</leader>
+    <controlfield tag="001"> HT016980352</controlfield>
+    <controlfield tag="002">20110929</controlfield>
+    <controlfield tag="003">20120319</controlfield>
+    <controlfield tag="004">20140616</controlfield>
+    <datafield tag="026" ind1=" " ind2=" ">
+      <subfield code=" ">HBZHT016980352</subfield>
+    </datafield>
+    <datafield tag="030" ind1=" " ind2=" ">
+      <subfield code=" ">a|1uc||||||17</subfield>
+    </datafield>
+    <datafield tag="036" ind1="a" ind2=" ">
+      <subfield code=" ">XA-DE-BW</subfield>
+    </datafield>
+    <datafield tag="037" ind1="b" ind2=" ">
+      <subfield code=" ">ger</subfield>
+    </datafield>
+    <datafield tag="050" ind1=" " ind2=" ">
+      <subfield code=" ">||||||||g|||||</subfield>
+    </datafield>
+    <datafield tag="051" ind1=" " ind2=" ">
+      <subfield code=" ">m|||||||</subfield>
+    </datafield>
+    <datafield tag="070" ind1=" " ind2=" ">
+      <subfield code=" ">361</subfield>
+    </datafield>
+    <datafield tag="070" ind1="b" ind2=" ">
+      <subfield code=" ">708</subfield>
+    </datafield>
+    <datafield tag="078" ind1="e" ind2=" ">
+      <subfield code=" ">ZDB-59-BPA</subfield>
+    </datafield>
+    <datafield tag="078" ind1="i" ind2=" ">
+      <subfield code=" ">iall</subfield>
+    </datafield>
+    <datafield tag="080" ind1=" " ind2=" ">
+      <subfield code=" ">60</subfield>
+    </datafield>
+    <datafield tag="086" ind1="a" ind2=" ">
+      <subfield code=" ">978-3-621-27594-1</subfield>
+    </datafield>
+    <datafield tag="100" ind1=" " ind2=" ">
+      <subfield code=" ">Kals, Elisabeth</subfield>
+      <subfield code="d">1966-</subfield>
+      <subfield code="9">(DE-588)122147979</subfield>
+    </datafield>
+    <datafield tag="104" ind1="a" ind2=" ">
+      <subfield code=" ">Gallenmüller-Roschmann, Jutta</subfield>
+      <subfield code="d">1957-</subfield>
+      <subfield code="9">(DE-588)123532256</subfield>
+    </datafield>
+    <datafield tag="331" ind1=" " ind2=" ">
+      <subfield code=" ">Arbeits- und Organisationspsychologie kompakt</subfield>
+    </datafield>
+    <datafield tag="334" ind1=" " ind2=" ">
+      <subfield code=" ">Elektronische Ressource</subfield>
+    </datafield>
+    <datafield tag="335" ind1=" " ind2=" ">
+      <subfield code=" ">[mit Add-on]</subfield>
+    </datafield>
+    <datafield tag="359" ind1=" " ind2=" ">
+      <subfield code=" ">Elisabeth Kals ; Jutta Gallenmüller-Roschmann</subfield>
+    </datafield>
+    <datafield tag="403" ind1=" " ind2=" ">
+      <subfield code=" ">2., überarb. Aufl.</subfield>
+    </datafield>
+    <datafield tag="410" ind1=" " ind2=" ">
+      <subfield code=" ">Weinheim [u.a.]</subfield>
+    </datafield>
+    <datafield tag="412" ind1=" " ind2=" ">
+      <subfield code=" ">Beltz</subfield>
+    </datafield>
+    <datafield tag="425" ind1="a" ind2=" ">
+      <subfield code=" ">2011</subfield>
+    </datafield>
+    <datafield tag="433" ind1=" " ind2=" ">
+      <subfield code=" ">256 S. : graph. Darst.</subfield>
+    </datafield>
+    <datafield tag="527" ind1="z" ind2=" ">
+      <subfield code=" ">Druckausg.</subfield>
+      <subfield code="a">Kals, Elisabeth: Arbeits- und Organisationspsychologie kompakt</subfield>
+      <subfield code="9">HT016657155</subfield>
+    </datafield>
+    <datafield tag="537" ind1=" " ind2=" ">
+      <subfield code=" ">Gesehen am: 19.03.2012</subfield>
+    </datafield>
+    <datafield tag="540" ind1="a" ind2=" ">
+      <subfield code=" ">978-3-621-27901-7</subfield>
+    </datafield>
+    <datafield tag="652" ind1="a" ind2=" ">
+      <subfield code=" ">Online-Ressource</subfield>
+    </datafield>
+    <datafield tag="700" ind1=" " ind2=" ">
+      <subfield code=" ">650</subfield>
+    </datafield>
+    <datafield tag="700" ind1=" " ind2=" ">
+      <subfield code=" ">150</subfield>
+    </datafield>
+    <datafield tag="700" ind1="g" ind2=" ">
+      <subfield code=" ">QP 342</subfield>
+    </datafield>
+    <datafield tag="700" ind1="g" ind2=" ">
+      <subfield code=" ">CW 1500</subfield>
+    </datafield>
+    <datafield tag="700" ind1="g" ind2=" ">
+      <subfield code=" ">CW 4500</subfield>
+    </datafield>
+    <datafield tag="705" ind1="a" ind2=" ">
+      <subfield code=" ">658.30019</subfield>
+      <subfield code="c">658.3</subfield>
+      <subfield code="e">DDC22ger</subfield>
+      <subfield code="f">019</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2=" ">
+      <subfield code=" ">Personalpsychologie</subfield>
+      <subfield code="9">(DE-588)4784219-2</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="0">
+      <subfield code=" ">Online-Publikation</subfield>
+    </datafield>
+  </record>
+  <record format="MAB" type="Bibliographic">
+    <leader>00858nM2.01100024   000h</leader>
+    <controlfield tag="001"> HT016983768</controlfield>
+    <controlfield tag="002">20111004</controlfield>
+    <controlfield tag="003">20140527</controlfield>
+    <controlfield tag="004">20140616</controlfield>
+    <datafield tag="020" ind1="b" ind2=" ">
+      <subfield code=" ">BV039600622</subfield>
+      <subfield code="b">BVB</subfield>
+    </datafield>
+    <datafield tag="026" ind1=" " ind2=" ">
+      <subfield code=" ">BVBBV039600622</subfield>
+    </datafield>
+    <datafield tag="030" ind1=" " ind2=" ">
+      <subfield code=" ">a|1uc||||||17</subfield>
+    </datafield>
+    <datafield tag="036" ind1="a" ind2=" ">
+      <subfield code=" ">XA-DE-BW</subfield>
+    </datafield>
+    <datafield tag="037" ind1="b" ind2=" ">
+      <subfield code=" ">ger</subfield>
+    </datafield>
+    <datafield tag="050" ind1=" " ind2=" ">
+      <subfield code=" ">||||||||g|||||</subfield>
+    </datafield>
+    <datafield tag="051" ind1=" " ind2=" ">
+      <subfield code=" ">m|||||||</subfield>
+    </datafield>
+    <datafield tag="070" ind1=" " ind2=" ">
+      <subfield code=" ">361</subfield>
+    </datafield>
+    <datafield tag="070" ind1="b" ind2=" ">
+      <subfield code=" ">Dü 62</subfield>
+    </datafield>
+    <datafield tag="078" ind1="e" ind2=" ">
+      <subfield code=" ">ZDB-59-BPG</subfield>
+      <subfield code="a">ZDB-22-CAN</subfield>
+    </datafield>
+    <datafield tag="078" ind1="i" ind2=" ">
+      <subfield code=" ">iall</subfield>
+    </datafield>
+    <datafield tag="080" ind1=" " ind2=" ">
+      <subfield code=" ">60</subfield>
+    </datafield>
+    <datafield tag="086" ind1="a" ind2=" ">
+      <subfield code=" ">978-3-621-27770-9</subfield>
+    </datafield>
+    <datafield tag="100" ind1=" " ind2=" ">
+      <subfield code=" ">Lamnek, Siegfried</subfield>
+      <subfield code="d">1943-</subfield>
+      <subfield code="9">(DE-588)120446049</subfield>
+    </datafield>
+    <datafield tag="331" ind1=" " ind2=" ">
+      <subfield code=" ">Qualitative Sozialforschung</subfield>
+    </datafield>
+    <datafield tag="334" ind1=" " ind2=" ">
+      <subfield code=" ">Elektronische Ressource</subfield>
+    </datafield>
+    <datafield tag="335" ind1=" " ind2=" ">
+      <subfield code=" ">Lehrbuch ; [mit Add-on]</subfield>
+    </datafield>
+    <datafield tag="359" ind1=" " ind2=" ">
+      <subfield code=" ">Siegfried Lamnek</subfield>
+    </datafield>
+    <datafield tag="403" ind1=" " ind2=" ">
+      <subfield code=" ">5., überarb. Aufl.</subfield>
+    </datafield>
+    <datafield tag="410" ind1=" " ind2=" ">
+      <subfield code=" ">Weinheim [u.a.]</subfield>
+    </datafield>
+    <datafield tag="412" ind1=" " ind2=" ">
+      <subfield code=" ">Beltz</subfield>
+    </datafield>
+    <datafield tag="425" ind1="a" ind2=" ">
+      <subfield code=" ">2010</subfield>
+    </datafield>
+    <datafield tag="433" ind1=" " ind2=" ">
+      <subfield code=" ">XIV, 748 S. : graph. Darst.</subfield>
+    </datafield>
+    <datafield tag="527" ind1="z" ind2=" ">
+      <subfield code=" ">Druckausg.</subfield>
+      <subfield code="a">Lamnek, Siegfried: Qualitative Sozialforschung</subfield>
+      <subfield code="9">HT016365019</subfield>
+    </datafield>
+    <datafield tag="537" ind1=" " ind2=" ">
+      <subfield code=" ">Gesehen am: 12.3.2012</subfield>
+    </datafield>
+    <datafield tag="540" ind1="a" ind2=" ">
+      <subfield code=" ">978-3-621-27840-9</subfield>
+    </datafield>
+    <datafield tag="652" ind1="a" ind2=" ">
+      <subfield code=" ">Online-Ressource</subfield>
+    </datafield>
+    <datafield tag="700" ind1=" " ind2=" ">
+      <subfield code=" ">300</subfield>
+    </datafield>
+    <datafield tag="700" ind1="g" ind2=" ">
+      <subfield code=" ">CM 3600</subfield>
+    </datafield>
+    <datafield tag="700" ind1="g" ind2=" ">
+      <subfield code=" ">MR 2800</subfield>
+    </datafield>
+    <datafield tag="700" ind1="g" ind2=" ">
+      <subfield code=" ">CV 2000</subfield>
+    </datafield>
+    <datafield tag="700" ind1="g" ind2=" ">
+      <subfield code=" ">MR 2000</subfield>
+    </datafield>
+    <datafield tag="705" ind1="a" ind2=" ">
+      <subfield code=" ">300.723</subfield>
+      <subfield code="c">300</subfield>
+      <subfield code="e">DDC22ger</subfield>
+      <subfield code="f">0723</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2=" ">
+      <subfield code=" ">Qualitative Sozialforschung</subfield>
+      <subfield code="9">(DE-588)4395695-6</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="0">
+      <subfield code=" ">Lehrbuch</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="1">
+      <subfield code=" ">Online-Publikation</subfield>
+    </datafield>
+  </record>
+  <record format="MAB" type="Bibliographic">
+    <leader>00841nM2.01100024   000h</leader>
+    <controlfield tag="001"> HT016979244</controlfield>
+    <controlfield tag="002">20110928</controlfield>
+    <controlfield tag="003">20120730</controlfield>
+    <controlfield tag="004">20140616</controlfield>
+    <datafield tag="026" ind1=" " ind2=" ">
+      <subfield code=" ">HBZHT016979244</subfield>
+    </datafield>
+    <datafield tag="030" ind1=" " ind2=" ">
+      <subfield code=" ">a|1uc||||||37</subfield>
+    </datafield>
+    <datafield tag="036" ind1="a" ind2=" ">
+      <subfield code=" ">XA-DE-BW</subfield>
+    </datafield>
+    <datafield tag="037" ind1="b" ind2=" ">
+      <subfield code=" ">ger</subfield>
+    </datafield>
+    <datafield tag="050" ind1=" " ind2=" ">
+      <subfield code=" ">||||||||g|||||</subfield>
+    </datafield>
+    <datafield tag="051" ind1=" " ind2=" ">
+      <subfield code=" ">me||||||</subfield>
+    </datafield>
+    <datafield tag="070" ind1=" " ind2=" ">
+      <subfield code=" ">361</subfield>
+    </datafield>
+    <datafield tag="070" ind1="b" ind2=" ">
+      <subfield code=" ">708</subfield>
+    </datafield>
+    <datafield tag="078" ind1="e" ind2=" ">
+      <subfield code=" ">ZDB-59-BPA</subfield>
+    </datafield>
+    <datafield tag="078" ind1="i" ind2=" ">
+      <subfield code=" ">iall</subfield>
+    </datafield>
+    <datafield tag="080" ind1=" " ind2=" ">
+      <subfield code=" ">60</subfield>
+    </datafield>
+    <datafield tag="086" ind1="a" ind2=" ">
+      <subfield code=" ">978-3-621-27690-0</subfield>
+    </datafield>
+    <datafield tag="100" ind1="b" ind2=" ">
+      <subfield code=" ">Rost, Detlef H.</subfield>
+      <subfield code="d">1945-</subfield>
+      <subfield code="9">(DE-588)120732564</subfield>
+      <subfield code="b">[Hrsg.]</subfield>
+    </datafield>
+    <datafield tag="331" ind1=" " ind2=" ">
+      <subfield code=" ">Handwörterbuch Pädagogische Psychologie</subfield>
+    </datafield>
+    <datafield tag="334" ind1=" " ind2=" ">
+      <subfield code=" ">Elektronische Ressource</subfield>
+    </datafield>
+    <datafield tag="359" ind1=" " ind2=" ">
+      <subfield code=" ">Detlef H. Rost (Hrsg.)</subfield>
+    </datafield>
+    <datafield tag="403" ind1=" " ind2=" ">
+      <subfield code=" ">4., überarb. und erw. Aufl.</subfield>
+    </datafield>
+    <datafield tag="410" ind1=" " ind2=" ">
+      <subfield code=" ">Weinheim [u.a.]</subfield>
+    </datafield>
+    <datafield tag="412" ind1=" " ind2=" ">
+      <subfield code=" ">Beltz</subfield>
+    </datafield>
+    <datafield tag="425" ind1="a" ind2=" ">
+      <subfield code=" ">2010</subfield>
+    </datafield>
+    <datafield tag="433" ind1=" " ind2=" ">
+      <subfield code=" ">XIV, 1020 S. : graph. Darst.</subfield>
+    </datafield>
+    <datafield tag="527" ind1="z" ind2=" ">
+      <subfield code=" ">Druckausg.</subfield>
+      <subfield code="a">Handwörterbuch Pädagogische Psychologie</subfield>
+      <subfield code="9">HT016395334</subfield>
+    </datafield>
+    <datafield tag="537" ind1=" " ind2=" ">
+      <subfield code=" ">Gesehen am: 19.03.2012</subfield>
+    </datafield>
+    <datafield tag="540" ind1="a" ind2=" ">
+      <subfield code=" ">978-3-621-27906-2</subfield>
+    </datafield>
+    <datafield tag="652" ind1="a" ind2=" ">
+      <subfield code=" ">Online-Ressource</subfield>
+    </datafield>
+    <datafield tag="700" ind1=" " ind2=" ">
+      <subfield code=" ">370</subfield>
+    </datafield>
+    <datafield tag="700" ind1=" " ind2=" ">
+      <subfield code=" ">150</subfield>
+    </datafield>
+    <datafield tag="700" ind1="g" ind2=" ">
+      <subfield code=" ">CX 1000</subfield>
+    </datafield>
+    <datafield tag="705" ind1="a" ind2=" ">
+      <subfield code=" ">370.1503</subfield>
+      <subfield code="c">370.15</subfield>
+      <subfield code="e">DDC22ger</subfield>
+      <subfield code="f">03</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2=" ">
+      <subfield code=" ">Pädagogische Psychologie</subfield>
+      <subfield code="9">(DE-588)4044321-8</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="0">
+      <subfield code=" ">Wörterbuch</subfield>
+      <subfield code="9">(DE-588)4066724-8</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="1">
+      <subfield code=" ">Online-Publikation</subfield>
+      <subfield code="9">(DE-588)4511937-5</subfield>
+    </datafield>
+  </record>
+  <record format="MAB" type="Bibliographic">
+    <leader>00798nM2.01100024   000h</leader>
+    <controlfield tag="001"> HT016979076</controlfield>
+    <controlfield tag="002">20110928</controlfield>
+    <controlfield tag="003">20120322</controlfield>
+    <controlfield tag="004">20140616</controlfield>
+    <datafield tag="026" ind1=" " ind2=" ">
+      <subfield code=" ">HBZHT016979076</subfield>
+    </datafield>
+    <datafield tag="030" ind1=" " ind2=" ">
+      <subfield code=" ">a|1uc||||||17</subfield>
+    </datafield>
+    <datafield tag="036" ind1="a" ind2=" ">
+      <subfield code=" ">XA-DE-BW</subfield>
+    </datafield>
+    <datafield tag="037" ind1="b" ind2=" ">
+      <subfield code=" ">ger</subfield>
+    </datafield>
+    <datafield tag="050" ind1=" " ind2=" ">
+      <subfield code=" ">||||||||g|||||</subfield>
+    </datafield>
+    <datafield tag="051" ind1=" " ind2=" ">
+      <subfield code=" ">m|||||||</subfield>
+    </datafield>
+    <datafield tag="070" ind1=" " ind2=" ">
+      <subfield code=" ">361</subfield>
+    </datafield>
+    <datafield tag="070" ind1="b" ind2=" ">
+      <subfield code=" ">708</subfield>
+    </datafield>
+    <datafield tag="078" ind1="e" ind2=" ">
+      <subfield code=" ">ZDB-59-BPA</subfield>
+    </datafield>
+    <datafield tag="078" ind1="i" ind2=" ">
+      <subfield code=" ">iall</subfield>
+    </datafield>
+    <datafield tag="080" ind1=" " ind2=" ">
+      <subfield code=" ">60</subfield>
+    </datafield>
+    <datafield tag="086" ind1="a" ind2=" ">
+      <subfield code=" ">978-3-621-27565-1</subfield>
+    </datafield>
+    <datafield tag="100" ind1=" " ind2=" ">
+      <subfield code=" ">Suhling, Stefan</subfield>
+      <subfield code="9">(DE-588)123120772</subfield>
+    </datafield>
+    <datafield tag="104" ind1="a" ind2=" ">
+      <subfield code=" ">Greve, Werner</subfield>
+      <subfield code="d">1959-</subfield>
+      <subfield code="9">(DE-588)130634999</subfield>
+    </datafield>
+    <datafield tag="331" ind1=" " ind2=" ">
+      <subfield code=" ">Kriminalpsychologie kompakt</subfield>
+    </datafield>
+    <datafield tag="334" ind1=" " ind2=" ">
+      <subfield code=" ">Elektronische Ressource</subfield>
+    </datafield>
+    <datafield tag="335" ind1=" " ind2=" ">
+      <subfield code=" ">[mit Add-on]</subfield>
+    </datafield>
+    <datafield tag="359" ind1=" " ind2=" ">
+      <subfield code=" ">Stefan Suhling ; Werner Greve</subfield>
+    </datafield>
+    <datafield tag="403" ind1=" " ind2=" ">
+      <subfield code=" ">1. Aufl.</subfield>
+    </datafield>
+    <datafield tag="410" ind1=" " ind2=" ">
+      <subfield code=" ">Weinheim [u.a.]</subfield>
+    </datafield>
+    <datafield tag="412" ind1=" " ind2=" ">
+      <subfield code=" ">Beltz</subfield>
+    </datafield>
+    <datafield tag="425" ind1="a" ind2=" ">
+      <subfield code=" ">2010</subfield>
+    </datafield>
+    <datafield tag="433" ind1=" " ind2=" ">
+      <subfield code=" ">196 S. : graph. Darst.</subfield>
+    </datafield>
+    <datafield tag="527" ind1="z" ind2=" ">
+      <subfield code=" ">Druckausg.</subfield>
+      <subfield code="a">Suhling, Stefan: Kriminalpsychologie kompakt</subfield>
+      <subfield code="9">HT016497428</subfield>
+    </datafield>
+    <datafield tag="537" ind1=" " ind2=" ">
+      <subfield code=" ">Gesehen am: 22.03.2012</subfield>
+    </datafield>
+    <datafield tag="540" ind1="a" ind2=" ">
+      <subfield code=" ">978-3-621-27916-1</subfield>
+    </datafield>
+    <datafield tag="652" ind1="a" ind2=" ">
+      <subfield code=" ">Online-Ressource</subfield>
+    </datafield>
+    <datafield tag="700" ind1=" " ind2=" ">
+      <subfield code=" ">360</subfield>
+    </datafield>
+    <datafield tag="700" ind1=" " ind2=" ">
+      <subfield code=" ">150</subfield>
+    </datafield>
+    <datafield tag="700" ind1="g" ind2=" ">
+      <subfield code=" ">CW 8100</subfield>
+    </datafield>
+    <datafield tag="705" ind1="a" ind2=" ">
+      <subfield code=" ">364.3</subfield>
+      <subfield code="c">364.3</subfield>
+      <subfield code="e">DDC22ger</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2=" ">
+      <subfield code=" ">Kriminalpsychologie</subfield>
+      <subfield code="9">(DE-588)4033186-6</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="0">
+      <subfield code=" ">Lehrbuch</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="1">
+      <subfield code=" ">Online-Publikation</subfield>
+    </datafield>
+  </record>
+  <record format="MAB" type="Bibliographic">
+    <leader>00948nM2.01100024   000h</leader>
+    <controlfield tag="001"> HT016982637</controlfield>
+    <controlfield tag="002">20110930</controlfield>
+    <controlfield tag="003">20120315</controlfield>
+    <controlfield tag="004">20140616</controlfield>
+    <datafield tag="020" ind1="b" ind2=" ">
+      <subfield code=" ">BV039597081</subfield>
+      <subfield code="b">BVB</subfield>
+    </datafield>
+    <datafield tag="026" ind1=" " ind2=" ">
+      <subfield code=" ">BVBBV039597081</subfield>
+    </datafield>
+    <datafield tag="030" ind1=" " ind2=" ">
+      <subfield code=" ">a|1uc||||||17</subfield>
+    </datafield>
+    <datafield tag="036" ind1="a" ind2=" ">
+      <subfield code=" ">XA-DE-BW</subfield>
+    </datafield>
+    <datafield tag="037" ind1="b" ind2=" ">
+      <subfield code=" ">ger</subfield>
+    </datafield>
+    <datafield tag="050" ind1=" " ind2=" ">
+      <subfield code=" ">||||||||g|||||</subfield>
+    </datafield>
+    <datafield tag="051" ind1=" " ind2=" ">
+      <subfield code=" ">m|||||||</subfield>
+    </datafield>
+    <datafield tag="070" ind1=" " ind2=" ">
+      <subfield code=" ">361</subfield>
+    </datafield>
+    <datafield tag="070" ind1="b" ind2=" ">
+      <subfield code=" ">708</subfield>
+    </datafield>
+    <datafield tag="078" ind1="e" ind2=" ">
+      <subfield code=" ">ZDB-59-BPG</subfield>
+    </datafield>
+    <datafield tag="078" ind1="i" ind2=" ">
+      <subfield code=" ">iall</subfield>
+    </datafield>
+    <datafield tag="080" ind1=" " ind2=" ">
+      <subfield code=" ">60</subfield>
+    </datafield>
+    <datafield tag="086" ind1="a" ind2=" ">
+      <subfield code=" ">978-3-621-27666-5</subfield>
+    </datafield>
+    <datafield tag="100" ind1=" " ind2=" ">
+      <subfield code=" ">Schmitt, Manfred</subfield>
+      <subfield code="9">(DE-588)132779420</subfield>
+    </datafield>
+    <datafield tag="104" ind1="a" ind2=" ">
+      <subfield code=" ">Altstötter-Gleich, Christine</subfield>
+      <subfield code="9">(DE-588)114846618</subfield>
+    </datafield>
+    <datafield tag="331" ind1=" " ind2=" ">
+      <subfield code=" ">Differentielle Psychologie und Persönlichkeitspsychologie kompakt</subfield>
+    </datafield>
+    <datafield tag="334" ind1=" " ind2=" ">
+      <subfield code=" ">Elektronische Ressource</subfield>
+    </datafield>
+    <datafield tag="335" ind1=" " ind2=" ">
+      <subfield code=" ">[mit Add-on]</subfield>
+    </datafield>
+    <datafield tag="359" ind1=" " ind2=" ">
+      <subfield code=" ">Manfred Schmitt ; Christine Altstötter-Gleich</subfield>
+    </datafield>
+    <datafield tag="403" ind1=" " ind2=" ">
+      <subfield code=" ">1. Aufl.</subfield>
+    </datafield>
+    <datafield tag="410" ind1=" " ind2=" ">
+      <subfield code=" ">Weinheim [u.a.]</subfield>
+    </datafield>
+    <datafield tag="412" ind1=" " ind2=" ">
+      <subfield code=" ">Beltz</subfield>
+    </datafield>
+    <datafield tag="425" ind1="a" ind2=" ">
+      <subfield code=" ">2010</subfield>
+    </datafield>
+    <datafield tag="433" ind1=" " ind2=" ">
+      <subfield code=" ">XII, 187 S. : Ill., graph. Darst.</subfield>
+    </datafield>
+    <datafield tag="527" ind1="z" ind2=" ">
+      <subfield code=" ">Druckausg.</subfield>
+      <subfield code="a">Schmitt, Manfred: Differentielle Psychologie und Persönlichkeitspsychologie kompakt</subfield>
+      <subfield code="9">HT016205029</subfield>
+    </datafield>
+    <datafield tag="537" ind1=" " ind2=" ">
+      <subfield code=" ">Gesehen am: 15.03.2012</subfield>
+    </datafield>
+    <datafield tag="540" ind1="a" ind2=" ">
+      <subfield code=" ">978-3-621-27856-0</subfield>
+    </datafield>
+    <datafield tag="652" ind1="a" ind2=" ">
+      <subfield code=" ">Online-Ressource</subfield>
+    </datafield>
+    <datafield tag="700" ind1=" " ind2=" ">
+      <subfield code=" ">150</subfield>
+    </datafield>
+    <datafield tag="700" ind1="g" ind2=" ">
+      <subfield code=" ">CR 1000</subfield>
+    </datafield>
+    <datafield tag="700" ind1="g" ind2=" ">
+      <subfield code=" ">CV 1000</subfield>
+    </datafield>
+    <datafield tag="705" ind1="a" ind2=" ">
+      <subfield code=" ">155.2</subfield>
+      <subfield code="c">155.2</subfield>
+      <subfield code="e">DDC22ger</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2=" ">
+      <subfield code=" ">Persönlichkeitspsychologie</subfield>
+      <subfield code="9">(DE-588)4075996-9</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="0">
+      <subfield code=" ">Lehrbuch</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="1">
+      <subfield code=" ">Online-Publikation</subfield>
+    </datafield>
+  </record>
+  <record format="MAB" type="Bibliographic">
+    <leader>00918nM2.01100024   000h</leader>
+    <controlfield tag="001"> HT016983725</controlfield>
+    <controlfield tag="002">20111004</controlfield>
+    <controlfield tag="003">20140123</controlfield>
+    <controlfield tag="004">20140616</controlfield>
+    <datafield tag="020" ind1="b" ind2=" ">
+      <subfield code=" ">BV039600588</subfield>
+      <subfield code="b">BVB</subfield>
+    </datafield>
+    <datafield tag="026" ind1=" " ind2=" ">
+      <subfield code=" ">BVBBV039600588</subfield>
+    </datafield>
+    <datafield tag="030" ind1=" " ind2=" ">
+      <subfield code=" ">a|1uc||||||17</subfield>
+    </datafield>
+    <datafield tag="036" ind1="a" ind2=" ">
+      <subfield code=" ">XA-DE-BW</subfield>
+    </datafield>
+    <datafield tag="037" ind1="b" ind2=" ">
+      <subfield code=" ">ger</subfield>
+    </datafield>
+    <datafield tag="050" ind1=" " ind2=" ">
+      <subfield code=" ">||||||||g|||||</subfield>
+    </datafield>
+    <datafield tag="051" ind1=" " ind2=" ">
+      <subfield code=" ">m|||||||</subfield>
+    </datafield>
+    <datafield tag="070" ind1=" " ind2=" ">
+      <subfield code=" ">361</subfield>
+    </datafield>
+    <datafield tag="070" ind1="b" ind2=" ">
+      <subfield code=" ">294</subfield>
+    </datafield>
+    <datafield tag="078" ind1="e" ind2=" ">
+      <subfield code=" ">ZDB-59-BPG</subfield>
+    </datafield>
+    <datafield tag="078" ind1="i" ind2=" ">
+      <subfield code=" ">iall</subfield>
+    </datafield>
+    <datafield tag="080" ind1=" " ind2=" ">
+      <subfield code=" ">60</subfield>
+    </datafield>
+    <datafield tag="086" ind1="a" ind2=" ">
+      <subfield code=" ">978-3-621-27702-0</subfield>
+    </datafield>
+    <datafield tag="100" ind1=" " ind2=" ">
+      <subfield code=" ">Luhmann, Maike</subfield>
+      <subfield code="9">(DE-588)13623450X</subfield>
+    </datafield>
+    <datafield tag="331" ind1=" " ind2=" ">
+      <subfield code=" ">R für Einsteiger</subfield>
+    </datafield>
+    <datafield tag="334" ind1=" " ind2=" ">
+      <subfield code=" ">Elektronische Ressource</subfield>
+    </datafield>
+    <datafield tag="335" ind1=" " ind2=" ">
+      <subfield code=" ">Einführung in die Statistiksoftware für die Sozialwissenschaften ; [mit Add-on]</subfield>
+    </datafield>
+    <datafield tag="359" ind1=" " ind2=" ">
+      <subfield code=" ">Maike Luhmann</subfield>
+    </datafield>
+    <datafield tag="403" ind1=" " ind2=" ">
+      <subfield code=" ">1. Aufl.</subfield>
+    </datafield>
+    <datafield tag="410" ind1=" " ind2=" ">
+      <subfield code=" ">Weinheim [u.a.]</subfield>
+    </datafield>
+    <datafield tag="412" ind1=" " ind2=" ">
+      <subfield code=" ">Beltz</subfield>
+    </datafield>
+    <datafield tag="425" ind1="a" ind2=" ">
+      <subfield code=" ">2010</subfield>
+    </datafield>
+    <datafield tag="433" ind1=" " ind2=" ">
+      <subfield code=" ">XI, 305 S. : graph. Darst.</subfield>
+    </datafield>
+    <datafield tag="527" ind1="z" ind2=" ">
+      <subfield code=" ">Druckausg.</subfield>
+      <subfield code="a">Luhmann, Maike: R für Einsteiger</subfield>
+      <subfield code="9">HT016204416</subfield>
+    </datafield>
+    <datafield tag="537" ind1=" " ind2=" ">
+      <subfield code=" ">Gesehen am: 15.03.2012</subfield>
+    </datafield>
+    <datafield tag="540" ind1="a" ind2=" ">
+      <subfield code=" ">978-3-621-27841-6</subfield>
+    </datafield>
+    <datafield tag="652" ind1="a" ind2=" ">
+      <subfield code=" ">Online-Ressource</subfield>
+    </datafield>
+    <datafield tag="700" ind1=" " ind2=" ">
+      <subfield code=" ">510</subfield>
+    </datafield>
+    <datafield tag="700" ind1=" " ind2=" ">
+      <subfield code=" ">300</subfield>
+    </datafield>
+    <datafield tag="700" ind1=" " ind2=" ">
+      <subfield code=" ">004</subfield>
+    </datafield>
+    <datafield tag="700" ind1="g" ind2=" ">
+      <subfield code=" ">QH 231</subfield>
+    </datafield>
+    <datafield tag="700" ind1="g" ind2=" ">
+      <subfield code=" ">CM 4000</subfield>
+    </datafield>
+    <datafield tag="700" ind1="g" ind2=" ">
+      <subfield code=" ">MR 2100</subfield>
+    </datafield>
+    <datafield tag="700" ind1="g" ind2=" ">
+      <subfield code=" ">ST 250</subfield>
+    </datafield>
+    <datafield tag="700" ind1="g" ind2=" ">
+      <subfield code=" ">ST 601</subfield>
+    </datafield>
+    <datafield tag="700" ind1="g" ind2=" ">
+      <subfield code=" ">ST 650</subfield>
+    </datafield>
+    <datafield tag="705" ind1="a" ind2=" ">
+      <subfield code=" ">519.50285555</subfield>
+      <subfield code="c">519.5</subfield>
+      <subfield code="d">005.55</subfield>
+      <subfield code="e">DDC22ger</subfield>
+      <subfield code="f">0285</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2=" ">
+      <subfield code=" ">Statistik</subfield>
+      <subfield code="9">(DE-588)4056995-0</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="0">
+      <subfield code=" ">R</subfield>
+      <subfield code="h">Programm</subfield>
+      <subfield code="9">(DE-588)4705956-4</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="1">
+      <subfield code=" ">Online-Publikation</subfield>
+    </datafield>
+    <datafield tag="903" ind1=" " ind2=" ">
+      <subfield code=" ">213</subfield>
+    </datafield>
+  </record>
+  <record format="MAB" type="Bibliographic">
+    <leader>00742nM2.01100024   000h</leader>
+    <controlfield tag="001"> HT016977854</controlfield>
+    <controlfield tag="002">20110927</controlfield>
+    <controlfield tag="003">20120315</controlfield>
+    <controlfield tag="004">20140616</controlfield>
+    <datafield tag="020" ind1="b" ind2=" ">
+      <subfield code=" ">BV039596996</subfield>
+      <subfield code="b">BVB</subfield>
+    </datafield>
+    <datafield tag="026" ind1=" " ind2=" ">
+      <subfield code=" ">BVBBV039596996</subfield>
+    </datafield>
+    <datafield tag="030" ind1=" " ind2=" ">
+      <subfield code=" ">a|1uc||||||17</subfield>
+    </datafield>
+    <datafield tag="036" ind1="a" ind2=" ">
+      <subfield code=" ">XA-DE-BW</subfield>
+    </datafield>
+    <datafield tag="037" ind1="b" ind2=" ">
+      <subfield code=" ">ger</subfield>
+    </datafield>
+    <datafield tag="050" ind1=" " ind2=" ">
+      <subfield code=" ">||||||||g|||||</subfield>
+    </datafield>
+    <datafield tag="051" ind1=" " ind2=" ">
+      <subfield code=" ">m|||||||</subfield>
+    </datafield>
+    <datafield tag="070" ind1=" " ind2=" ">
+      <subfield code=" ">361</subfield>
+    </datafield>
+    <datafield tag="070" ind1="b" ind2=" ">
+      <subfield code=" ">708</subfield>
+    </datafield>
+    <datafield tag="078" ind1="e" ind2=" ">
+      <subfield code=" ">ZDB-59-BPG</subfield>
+    </datafield>
+    <datafield tag="078" ind1="i" ind2=" ">
+      <subfield code=" ">iall</subfield>
+    </datafield>
+    <datafield tag="080" ind1=" " ind2=" ">
+      <subfield code=" ">60</subfield>
+    </datafield>
+    <datafield tag="086" ind1="a" ind2=" ">
+      <subfield code=" ">978-3-621-27646-7</subfield>
+    </datafield>
+    <datafield tag="100" ind1=" " ind2=" ">
+      <subfield code=" ">Rost, Detlef H.</subfield>
+      <subfield code="d">1945-</subfield>
+      <subfield code="9">(DE-588)120732564</subfield>
+    </datafield>
+    <datafield tag="331" ind1=" " ind2=" ">
+      <subfield code=" ">Intelligenz</subfield>
+    </datafield>
+    <datafield tag="334" ind1=" " ind2=" ">
+      <subfield code=" ">Elektronische Ressource</subfield>
+    </datafield>
+    <datafield tag="335" ind1=" " ind2=" ">
+      <subfield code=" ">Fakten und Mythen</subfield>
+    </datafield>
+    <datafield tag="359" ind1=" " ind2=" ">
+      <subfield code=" ">Detlef H. Rost</subfield>
+    </datafield>
+    <datafield tag="403" ind1=" " ind2=" ">
+      <subfield code=" ">1. Aufl.</subfield>
+    </datafield>
+    <datafield tag="410" ind1=" " ind2=" ">
+      <subfield code=" ">Weinheim [u.a.]</subfield>
+    </datafield>
+    <datafield tag="412" ind1=" " ind2=" ">
+      <subfield code=" ">Beltz PVU</subfield>
+    </datafield>
+    <datafield tag="425" ind1=" " ind2=" ">
+      <subfield code=" ">2009</subfield>
+    </datafield>
+    <datafield tag="425" ind1="a" ind2=" ">
+      <subfield code=" ">2009</subfield>
+    </datafield>
+    <datafield tag="433" ind1=" " ind2=" ">
+      <subfield code=" ">VIII, 368 S. : graph. Darst.</subfield>
+    </datafield>
+    <datafield tag="527" ind1="z" ind2=" ">
+      <subfield code=" ">Druckausg.</subfield>
+      <subfield code="a">Rost, Detlef H.: Intelligenz</subfield>
+      <subfield code="9">HT015850019</subfield>
+    </datafield>
+    <datafield tag="537" ind1=" " ind2=" ">
+      <subfield code=" ">Gesehen am: 15.03.2012</subfield>
+    </datafield>
+    <datafield tag="540" ind1="a" ind2=" ">
+      <subfield code=" ">978-3-621-27908-6</subfield>
+    </datafield>
+    <datafield tag="652" ind1="a" ind2=" ">
+      <subfield code=" ">Online-Ressource</subfield>
+    </datafield>
+    <datafield tag="700" ind1=" " ind2=" ">
+      <subfield code=" ">150</subfield>
+    </datafield>
+    <datafield tag="700" ind1="g" ind2=" ">
+      <subfield code=" ">CR 5000</subfield>
+    </datafield>
+    <datafield tag="700" ind1="g" ind2=" ">
+      <subfield code=" ">DF 4500</subfield>
+    </datafield>
+    <datafield tag="705" ind1="a" ind2=" ">
+      <subfield code=" ">153.9</subfield>
+      <subfield code="c">153.9</subfield>
+      <subfield code="e">DDC22ger</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2=" ">
+      <subfield code=" ">Intelligenz</subfield>
+      <subfield code="9">(DE-588)4027251-5</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="0">
+      <subfield code=" ">Online-Publikation</subfield>
+    </datafield>
+  </record>
+</collection>

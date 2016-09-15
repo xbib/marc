@@ -1,0 +1,158 @@
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+    <ListRecords>
+        <record>
+            <header>
+                <identifier>aleph-publish:005510642</identifier>
+            </header>
+            <metadata>
+                <record xmlns="http://www.ddb.de/professionell/mabxml/mabxml-1.xsd">
+                    <leader>00000nM2.01200024------h</leader>
+                    <controlfield tag="LDR">00000nM2.01200024------h</controlfield>
+                    <controlfield tag="FMT">MH</controlfield>
+                    <datafield tag="001" ind1="-" ind2="1">
+                        <subfield code="a">HT006944711</subfield>
+                    </datafield>
+                    <datafield tag="002" ind1="a" ind2="1">
+                        <subfield code="a">19991119</subfield>
+                    </datafield>
+                    <datafield tag="003" ind1="-" ind2="1">
+                        <subfield code="a">20140607142345</subfield>
+                    </datafield>
+                    <datafield tag="020" ind1="a" ind2="1">
+                        <subfield code="a">438422-2</subfield>
+                        <subfield code="b">DNB</subfield>
+                    </datafield>
+                    <datafield tag="025" ind1="a" ind2="1">
+                        <subfield code="a">01250484X</subfield>
+                    </datafield>
+                    <datafield tag="025" ind1="z" ind2="1">
+                        <subfield code="a">438422-2</subfield>
+                    </datafield>
+                    <datafield tag="026" ind1="-" ind2="1">
+                        <subfield code="a">ZDB438422-2</subfield>
+                    </datafield>
+                    <controlfield tag="030">a||da||||||27</controlfield>
+                    <datafield tag="036" ind1="a" ind2="1">
+                        <subfield code="a">XD-CR</subfield>
+                    </datafield>
+                    <datafield tag="037" ind1="b" ind2="1">
+                        <subfield code="a">spa</subfield>
+                    </datafield>
+                    <controlfield tag="050">a|a|||||||||||</controlfield>
+                    <controlfield tag="052">pst||||t|||||||</controlfield>
+                    <datafield tag="070" ind1="-" ind2="1">
+                        <subfield code="a">9001</subfield>
+                    </datafield>
+                    <datafield tag="070" ind1="a" ind2="1">
+                        <subfield code="a">DNB</subfield>
+                    </datafield>
+                    <datafield tag="070" ind1="b" ind2="1">
+                        <subfield code="a">0206</subfield>
+                    </datafield>
+                    <datafield tag="200" ind1="-" ind2="1">
+                        <subfield code="g">Costa Rica</subfield>
+                        <subfield code="9">(DE-588)4010618-4</subfield>
+                    </datafield>
+                    <datafield tag="201" ind1="-" ind2="1">
+                        <subfield code="g">Kostarika</subfield>
+                    </datafield>
+                    <datafield tag="201" ind1="-" ind2="1">
+                        <subfield code="g">República de Costa Rica</subfield>
+                    </datafield>
+                    <datafield tag="331" ind1="-" ind2="1">
+                        <subfield code="a">Anuario estadístico de Costa Rica</subfield>
+                    </datafield>
+                    <datafield tag="359" ind1="-" ind2="1">
+                        <subfield code="a">República de Costa Rica</subfield>
+                    </datafield>
+                    <datafield tag="370" ind1="c" ind2="1">
+                        <subfield code="a">Anuario estadístico de la República de Costa Rica</subfield>
+                    </datafield>
+                    <datafield tag="370" ind1="c" ind2="1">
+                        <subfield code="a">Anuario estadístico</subfield>
+                    </datafield>
+                    <datafield tag="405" ind1="-" ind2="1">
+                        <subfield code="a">1.1883 - 19.1915(1917); 1956(1957) - 1988/92(1998)</subfield>
+                    </datafield>
+                    <datafield tag="410" ind1="-" ind2="1">
+                        <subfield code="a">San José de Costa Rica</subfield>
+                    </datafield>
+                    <datafield tag="412" ind1="-" ind2="1">
+                        <subfield code="a">[s.n.]</subfield>
+                    </datafield>
+                    <datafield tag="425" ind1="b" ind2="1">
+                        <subfield code="a">1883</subfield>
+                    </datafield>
+                    <datafield tag="425" ind1="c" ind2="1">
+                        <subfield code="a">1998</subfield>
+                    </datafield>
+                    <datafield tag="507" ind1="-" ind2="1">
+                        <subfield code="a">Hauptsacht. teils: Anuario estadístico de la República de Costa Rica</subfield>
+                    </datafield>
+                    <datafield tag="507" ind1="-" ind2="1">
+                        <subfield code="a">Hauptsacht. 17.1913 - 19.1915: Anuario estadístico</subfield>
+                    </datafield>
+                    <datafield tag="509" ind1="-" ind2="1">
+                        <subfield code="p">Beteil. Körp. 19.1915</subfield>
+                        <subfield code="a">Ministerio de Fomento</subfield>
+                    </datafield>
+                    <datafield tag="523" ind1="-" ind2="1">
+                        <subfield code="a">1978 - 1981 nicht ersch.</subfield>
+                    </datafield>
+                    <datafield tag="527" ind1="z" ind2="1">
+                        <subfield code="p">Gekürzte Ausg. ---></subfield>
+                        <subfield code="a">Costa Rica / Dirección General de Estadística: Informe de la Dirección General de Estadística</subfield>
+                        <subfield code="9">HT012185361</subfield>
+                    </datafield>
+                    <datafield tag="529" ind1="z" ind2="1">
+                        <subfield code="p">17.1913 - 19.1915 darin 1913 - 1915 von ---></subfield>
+                        <subfield code="a">Costa Rica / Dirección General de Estadística: Informe de la Dirección General de Estadística</subfield>
+                        <subfield code="9">HT012185361</subfield>
+                    </datafield>
+                    <datafield tag="532" ind1="z" ind2="1">
+                        <subfield code="p">20.1916 - 1950 ---></subfield>
+                        <subfield code="a">Costa Rica / Dirección General de Estadística: Anuario estadístico</subfield>
+                        <subfield code="9">HT012258484</subfield>
+                    </datafield>
+                    <datafield tag="532" ind1="z" ind2="1">
+                        <subfield code="p">1951/52 - 1955 ---></subfield>
+                        <subfield code="a">Costa Rica / Dirección General de Estadística y Censos: Anuario estadístico</subfield>
+                        <subfield code="9">HT012262499</subfield>
+                    </datafield>
+                    <datafield tag="533" ind1="z" ind2="1">
+                        <subfield code="p">Forts.: ---></subfield>
+                        <subfield code="a">Instituto Nacional de Estadística y Censos <San José, Costa Rica>: Anuario estadístico</subfield>
+                        <subfield code="9">HT013037664</subfield>
+                    </datafield>
+                    <datafield tag="537" ind1="-" ind2="1">
+                        <subfield code="a">204!</subfield>
+                    </datafield>
+                    <datafield tag="542" ind1="a" ind2="1">
+                        <subfield code="a">0252-8487</subfield>
+                    </datafield>
+                    <datafield tag="675" ind1="-" ind2="1">
+                        <subfield code="a">Costa-Rica</subfield>
+                    </datafield>
+                    <datafield tag="700" ind1="-" ind2="1">
+                        <subfield code="a">310</subfield>
+                        <subfield code="2">ZDB</subfield>
+                    </datafield>
+                    <controlfield tag="SYS">005510642</controlfield>
+                    <datafield tag="LOW" ind1="-" ind2="1">
+                        <subfield code="a">K0001</subfield>
+                    </datafield>
+                    <datafield tag="088" ind1="" ind2="">
+                        <subfield code="a">Bo 133</subfield>
+                        <subfield code="c">Y 108</subfield>
+                        <subfield code="d">1965 - 1966</subfield>
+                    </datafield>
+                    <datafield tag="088" ind1="" ind2="">
+                        <subfield code="a">38</subfield>
+                        <subfield code="c">XH226</subfield>
+                        <subfield code="d">1962(1963) - 1974</subfield>
+                    </datafield>
+                </record>
+            </metadata>
+        </record>
+    </ListRecords>
+</OAI-PMH>

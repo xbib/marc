@@ -1,0 +1,1341 @@
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00908nas a2200313 c 4500
+001$$1024796043
+003$$DE-101
+005$$20120802144841.0
+007$$tu
+008$$120802c20129999gw f||p|r ||| 0||||0ger c
+016$7 $2a[2=DE-101, a=1024796043]
+016$7 $2a[2=DE-600, a=2675962-7]
+035$  $a[a=(DE-599)ZDB2675962-7]
+040$  $abcd[a=1241, b=ger, c=DE-101, d=1241]
+041$  $a[a=ger]
+044$  $c[c=XA-DE]
+084$  $2aaq[a=050, a=070, q=DE-101, 2=sdnb]
+084$  $2aaq[a=050, a=070, q=DE-600, 2=sdnb]
+090$  $n[n=fn]
+245$10$acnp[a=Alt-Höchst, n=[...], p=Infobrief, c=Bürgervereinigung Höchster Altstadt]
+246$19$a[a=Alt-Höchst / Infobrief]
+260$3 $ab[a=Frankfurt-Höchst, b=Bürgervereinigung Höchster Altstadt]
+300$  $c[c=30 cm]
+362$0 $a[a=Nachgewiesen 2012 -]
+363$01$8i[8=1.1\x, i=2012]
+515$  $a[a=Periodizität: halbjährl.]
+772$08$itww[i=Beil. zu:, t=Alt-Höchst, w=(DE-600)969378-6, w=(DE-101)015112500]
+925$r $a[a=rb]
+930$  $a[a=Infobrief]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00752nas a2200229 c 4500
+001$$1024795764
+003$$DE-101
+005$$20120802144628.0
+007$$tu
+008$$120802c20129999gw u||p|r ||| 0||||0ger c
+016$7 $2a[2=DE-101, a=1024795764]
+016$7 $2a[2=DE-600, a=2675961-5]
+035$  $a[a=(DE-599)ZDB2675961-5]
+040$  $abcd[a=3238, b=ger, c=DE-101, d=3238]
+041$  $a[a=ger]
+044$  $c[c=XA-DE]
+084$  $2a[a=3,61, 2=ssgn]
+084$  $2aaq[a=050, a=320, q=DE-600, 2=sdnb]
+245$10$abc[a=Willi-Bleicher-Preis, b=Journalismuspreis der IG Metall Baden-Württemberg, c=IG-Metall Bezirksleitung Baden-Württemberg]
+260$3 $ab[a=Stuttgart, b=IG-Metall]
+362$0 $a[a=Nachgewiesen 2012 -]
+710$2 $00abg[0=(DE-588)5252909-5, 0=(DE-101)952358069, a=Industriegewerkschaft Metall, g=Deutschland, b=Bezirk Baden-Württemberg]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00819nas a2200277 c 4500
+001$$1024794741
+003$$DE-101
+005$$20120802141847.0
+007$$tu
+008$$120802c20129999gw q||p|r ||| 0||||0ger c
+016$7 $2a[2=DE-101, a=1024794741]
+016$7 $2a[2=DE-600, a=2675954-8]
+035$  $a[a=(DE-599)ZDB2675954-8]
+040$  $abcd[a=1241, b=ger, c=DE-101, d=1241]
+041$  $a[a=ger]
+044$  $c[c=XA-DE]
+084$  $2aq[a=610, q=DE-101, 2=sdnb]
+084$  $2aq[a=610, q=DE-600, 2=sdnb]
+245$10$abc[a=Akupunktur, b=Medizin auf den Punkt gebracht, c=Deutsche Akademie für Akupunktur, DAA e.V.]
+260$3 $ab[a=München, b=Dt. Akad. für Akupunktur]
+300$  $c[c=28 cm]
+362$0 $a[a=Nachgewiesen 2012 -]
+363$01$8i[8=1.1\x, i=2012]
+515$  $a[a=Ersch. vierteljährl.]
+772$08$itww[i=Beil. zu:, t=Akupunktur & Aurikulomedizin, w=(DE-600)2631051-X, w=(DE-101)1015780636]
+925$r $a[a=rb]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00504nas a2200205 c 4500
+001$$1024794520
+003$$DE-101
+005$$20120802141155.0
+007$$tu
+008$$120802c20129999ck u||m|r ||| 0||||0spa c
+016$7 $2a[2=DE-101, a=1024794520]
+016$7 $2a[2=DE-600, a=2675953-6]
+035$  $a[a=(DE-599)ZDB2675953-6]
+040$  $abcd[a=0204, b=ger, c=DE-101, d=0204]
+041$  $a[a=spa]
+044$  $c[c=XD-CO]
+245$10$a[a=Colección Los Torreones]
+246$13$ai[i=Nebent., a=Los Torreones]
+260$3 $ab[a=Ibagué, b=Caza de Libros]
+362$0 $a[a=1.2012 -]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00969nas a2200301 c 4500
+001$$1024794466
+003$$DE-101
+005$$20120802142224.0
+007$$tu
+008$$120802c20129999gw a||p|r ||| 0||||0ger c
+016$7 $2a[2=DE-101, a=1024794466]
+016$7 $2a[2=DE-600, a=2675952-4]
+035$  $a[a=(DE-599)ZDB2675952-4]
+040$  $abcd[a=1241, b=ger, c=DE-101, d=1241]
+041$  $a[a=ger]
+044$  $c[c=XA-DE]
+084$  $2aaaq[a=580, a=630, a=640, q=DE-101, 2=sdnb]
+084$  $2aaaq[a=580, a=630, a=640, q=DE-600, 2=sdnb]
+090$  $n[n=fn]
+245$10$ac[a=Haus - und Kleingarten, sachgerechter Pflanzenschutz ..., c=Hrsg.: Landwirtschaftliches Technologiezentrum Augustenberg (LTZ)]
+260$3 $ab[a=[Stuttgart], b=[Ulmer]]
+300$  $c[c=30 cm]
+362$0 $a[a=2012 -]
+363$01$8i[8=1.1\x, i=2012]
+515$  $a[a=Periodizität:  jährl.]
+772$08$itww[i=Beil. zu:, t=Obst & Garten <Stuttgart>, w=(DE-600)123377-4, w=(DE-101)010692851]
+780$00$itww[i=Vorg.:, t=Pflanzenschutz im Haus- und Kleingarten ... , w=(DE-600)2545666-0, w=(DE-101)1001034139]
+925$r $a[a=ra]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00543nas a2200217 c 4500
+001$$1024791920
+003$$DE-101
+005$$20120802132127.0
+007$$tu
+008$$120802c20129999|||u||m|r ||| 0||||0ara c
+016$7 $2a[2=DE-101, a=1024791920]
+016$7 $2a[2=DE-600, a=2675944-5]
+035$  $a[a=(DE-599)ZDB2675944-5]
+040$  $abcd[a=6999, b=ger, c=DE-101, d=6999]
+041$  $a[a=ara]
+084$  $2aq[a=230, q=DE-600, 2=sdnb]
+245$10$a[a=Dirāsāt fī 'l-adyān]
+246$10$a[a=al-adyān]
+260$3 $ab[a=Bairūt, b=Dār al-Mašriq]
+362$0 $a[a=1.2012 -]
+546$  $a[a=In arab. Schr., arab.]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=01051nas a2200253 c 4500
+001$$102479170X
+003$$DE-101
+005$$20120802132035.0
+007$$tu
+008$$120802c20129999xx u||p|r ||| 0||||0||| c
+016$7 $2a[2=DE-101, a=102479170X]
+016$7 $2a[2=DE-600, a=2675941-X]
+035$  $a[a=(DE-599)ZDB2675941-X]
+040$  $abcd[a=0001, b=ger, c=DE-101, d=0001]
+044$  $c[c=XA-RU]
+084$  $2aaaq[a=890, a=910, a=940, q=DE-600, 2=sdnb]
+245$10$abcnn[a=Social'nye i gumanitarnye nauki, b=RŽ ; referativnyj žurnal, n=Otečestvennaja i zarubežnaja literatura, n=Serija 9, Vostokovedenie i afrikanistika, c=Rossijskaja Akademija Nauk, Institut Naučnoj Informacii po Obščestvennym Naukam]
+246$19$a[a=Social'nye i gumanitarnye nauki / Otečestvennaja i zarubežnaja literatura / 9]
+260$3 $ab[a=Moskva, b=[s.n.]]
+362$0 $a[a=2012 -]
+363$01$8i[8=1.1\x, i=2012]
+780$00$itww[i=Vorg.:, t=Social'nye i gumanitarnye nauki / Zarubežnaja literatura / 9, w=(DE-600)1192399-4, w=(DE-101)017196175]
+930$  $r[r=Otečestvennaja i zarubežnaja literatura]
+930$  $r[r=Serija 9, Vostokovedenie i afrikanistika]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00897nas a2200301 c 4500
+001$$1024791513
+003$$DE-101
+005$$20120802131231.0
+007$$tu
+008$$120802c20129999gw z||m|r ||| 0||||0ger c
+016$7 $2a[2=DE-101, a=1024791513]
+016$7 $2a[2=DE-600, a=2675939-1]
+035$  $a[a=(DE-599)ZDB2675939-1]
+040$  $abcd[a=6999, b=ger, c=DE-101, d=6999]
+041$  $a[a=ger]
+044$  $c[c=XA-DE]
+084$  $2aq[a=000, q=DE-600, 2=sdnb]
+110$2 $004ag[0=(DE-588)16166409-X, 0=(DE-101)1013960157, a=Internationales Kolleg Morphomata, g=Köln, 4=aut]
+245$10$acnp[a=Morphomata, n=[...], p=Lectures Cologne, c=Internationales Kolleg Morphomata]
+246$19$a[a=Morphomata / Lectures Cologne]
+246$13$a[a=Morphomata Lectures Cologne]
+246$13$a[a=Morphomata lectures Cologne]
+246$13$ai[i=Nebent., a=MLC]
+260$3 $ab[a=Paderborn, b=Fink]
+362$0 $a[a=1.2012 -]
+363$01$8i[8=1.1\x, i=2012]
+515$  $a[a=Ersch. unregelmäßig]
+930$  $a[a=Lectures Cologne]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00940nas a2200301 c 4500
+001$$102479105X
+003$$DE-101
+005$$20120802130446.0
+007$$tu
+008$$120802c20129999gw z||m|r ||| 0||||0ger c
+016$7 $2a[2=DE-101, a=102479105X]
+016$7 $2a[2=DE-600, a=2675935-4]
+035$  $a[a=(DE-599)ZDB2675935-4]
+040$  $abcd[a=1240, b=ger, c=DE-101, d=1240]
+041$  $a[a=ger]
+044$  $c[c=XA-DE]
+084$  $2aq[a=230, q=DE-101, 2=sdnb]
+084$  $2aq[a=230, q=DE-600, 2=sdnb]
+110$2 $004ag[0=(DE-588)16345568-5, 0=(DE-101)1021371572, a=Katholische Hochschule, g=Mainz, 4=aut]
+245$10$ac[a=Schriftenreihe der KH Mainz, c=Katholische Hochschule Mainz]
+246$13$ai[i=Nebent., a=Schriftenreihe]
+260$3 $ab[a=St. Ottilien, b=EOS-Verl.]
+300$  $c[c=24 cm]
+362$0 $a[a=6.2012 -]
+363$01$8ai[8=1.1\x, a=6, i=2012]
+515$  $a[a=Ersch. unregelmäßig]
+780$00$aitww[i=Bis Bd. 5 u.d.T.:, a=Katholische Fachhochschule <Mainz>, t=Schriftenreihe der KFH Mainz, w=(DE-600)2279337-9, w=(DE-101)983880514]
+925$r $a[a=ra]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00744nas a2200265 c 4500
+001$$1024790401
+003$$DE-101
+005$$20120802124057.0
+007$$tu
+008$$120802c20129999gw m||p|r ||| 0||||0ger c
+016$7 $2a[2=DE-101, a=1024790401]
+016$7 $2a[2=DE-600, a=2675926-3]
+035$  $a[a=(DE-599)ZDB2675926-3]
+040$  $abcd[a=0107, b=ger, c=DE-101, d=0107]
+041$  $a[a=ger]
+044$  $c[c=XA-DE]
+084$  $2aaq[a=621.3, a=791, q=DE-600, 2=sdnb]
+084$  $2aa[a=530, a=920, 2=rpb]
+245$10$ab[a=Video, b=TV, Sat,  HiFi, Heimkino, Netzwerke]
+246$13$ai[i=Nebent., a=Video-Magazin.de]
+260$3 $ab[a=Haar bei München, b=WEKA-Media-Publ.]
+362$0 $a[a=2012,9 -]
+363$01$8bi[8=1.1\x, b=9, i=2012]
+515$  $a[a=Ersch. monatl.]
+780$00$itww[i=Vorg.:, t=Video-Homevision, w=(DE-600)2458232-3, w=(DE-101)990820734]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00829nas a2200253 c 4500
+001$$1024789349
+003$$DE-101
+005$$20120802120423.0
+007$$tu
+008$$120802c20129999xx a||p|r ||| 0||||0ger c
+016$7 $2a[2=DE-101, a=1024789349]
+016$7 $2a[2=DE-600, a=2675911-1]
+035$  $a[a=(DE-599)ZDB2675911-1]
+040$  $abcd[a=0109, b=ger, c=DE-101, d=0109]
+041$  $a[a=ger]
+044$  $c[c=XA-DXDE]
+084$  $2aq[a=330, q=DE-600, 2=sdnb]
+245$10$ac[a=Bericht über die örtliche Prüfung der Eröffnungsbilanz zum 1. Januar ... , c=Landeshauptstadt Stuttgart, Rechnungsprüfungsamt]
+260$3 $ab[a=Stuttgart, b=Landeshauptstadt Stuttgart, Rechnungsprüfungsamt]
+300$  $c[c=30 cm]
+362$0 $a[a=Nachgewiesen 2010(2012) -]
+363$01$8i[8=1.1\x, i=2010]
+515$  $a[a=Ersch. jährl.]
+710$1 $00ab[0=(DE-588)5086277-7, 0=(DE-101)050862774, a=Stuttgart, b=Rechnungsprüfungsamt]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00793nas a2200301 c 4500
+001$$1024789217
+003$$DE-101
+005$$20120802133625.0
+007$$tu
+008$$120802c20129999gw z||m|r ||| 0||||0ger c
+016$7 $2a[2=DE-101, a=1024789217]
+016$7 $2a[2=DE-600, a=2675910-X]
+035$  $a[a=(DE-599)ZDB2675910-X]
+040$  $abcd[a=1140, b=ger, c=DE-101, d=1140]
+041$  $a[a=ger]
+044$  $c[c=XA-DE]
+084$  $2aq[a=290, q=DE-101, 2=sdnb]
+084$  $2aq[a=290, q=DE-600, 2=sdnb]
+245$10$abnp[a=Europäisch-jüdische Studien, b=EJSB, n=[...], p=Beiträge]
+246$19$a[a=Europäisch-jüdische Studien / Beiträge]
+246$13$a[a=EJSB]
+260$3 $aab[a=Berlin, a=Boston, Mass., b=De Gruyter]
+300$  $c[c=24 cm]
+362$0 $a[a=1.2012 -]
+363$01$8ai[8=1.1\x, a=1, i=2012]
+515$  $a[a=Ersch. unregelmäßig]
+925$r $a[a=ra]
+930$  $a[a=Beiträge]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00451nas a22001818c 4500
+001$$1024788172
+003$$DE-101
+005$$20120802114350.0
+007$$tu
+008$$120802c20129999|||u||p|r ||| 0||||0||| c
+016$7 $2a[2=DE-101, a=1024788172]
+016$7 $2a[2=DE-600, a=2675906-8]
+022$  $a[a=2194-7805]
+035$  $a[a=(DE-599)ZDB2675906-8]
+040$  $abcd[a=1241, b=ger, c=DE-101, d=1241]
+245$10$a[a=Astacus astacus]
+260$3 $ab[a=Rottach-Egern, b=Buchfink GbR]
+362$0 $a[a=Nachgewiesen 2012,1 -]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=01032nas a2200277 c 4500
+001$$1024787680
+003$$DE-101
+005$$20120802113343.0
+007$$tu
+008$$120802c20129999xx a||p|r ||| 0||||0ger c
+016$7 $2a[2=DE-101, a=1024787680]
+016$7 $2a[2=DE-600, a=2675904-4]
+035$  $a[a=(DE-599)ZDB2675904-4]
+040$  $abcd[a=0109, b=ger, c=DE-101, d=0109]
+041$  $a[a=ger]
+044$  $c[c=XA-DXDE]
+084$  $2aq[a=330, q=DE-600, 2=sdnb]
+110$2 $004a[0=(DE-588)2027583-3, 0=(DE-101)004843541, a=Stuttgart, 4=aut]
+245$10$ac[a=Schlußbericht ... über die Prüfung des Jahresabschlusses / Stuttgart, c=Landeshauptstadt Stuttgart, Rechnungsprüfungsamt]
+260$3 $ab[a=Stuttgart, b=Landeshauptstadt Stuttgart, Rechnungsprüfungsamt]
+300$  $c[c=30 cm]
+362$0 $a[a=2010(2012) -]
+363$01$8i[8=1.1\x, i=2010]
+515$  $a[a=Ersch. jährl.]
+710$1 $00ab[0=(DE-588)5086277-7, 0=(DE-101)050862774, a=Stuttgart, b=Rechnungsprüfungsamt]
+780$00$aitww[i=Vorg.:, a=Stuttgart, t=Schlußbericht ... über die örtliche Prüfung der Jahresrechnung / Stuttgart, w=(DE-600)2405554-2, w=(DE-101)987213199]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00706nas a2200241 c 4500
+001$$102478763X
+003$$DE-101
+005$$20120802113300.0
+007$$tu
+008$$120802c20129999sp u||m|r ||| 0||||0spa c
+016$7 $2a[2=DE-101, a=102478763X]
+016$7 $2a[2=DE-600, a=2675903-2]
+035$  $a[a=(DE-599)ZDB2675903-2]
+040$  $abcd[a=0204, b=ger, c=DE-101, d=0204]
+041$  $a[a=spa]
+044$  $c[c=XA-ES]
+084$  $2aq[a=340, q=DE-600, 2=sdnb]
+245$10$anp[a=Colección de monografías de derecho civil, n=1, p=Persona y familia]
+246$19$a[a=Colección de monografías de derecho civil / 1]
+246$13$ai[i=Nebent., a=Monografías de derecho civil]
+260$3 $ab[a=Madrid, b=Ed. Dykinson]
+362$0 $a[a=Nachgewiesen 10.2012 -]
+930$  $al[l=1, a=Persona y familia]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00475nas a22001818c 4500
+001$$1024787540
+003$$DE-101
+005$$20120802113038.0
+007$$tu
+008$$120802c20129999|||u||p|r ||| 0||||0||| c
+016$7 $2a[2=DE-101, a=1024787540]
+016$7 $2a[2=DE-600, a=2675902-0]
+022$  $a[a=2194-8771]
+035$  $a[a=(DE-599)ZDB2675902-0]
+040$  $abcd[a=1241, b=ger, c=DE-101, d=1241]
+245$10$a[a=Journal of sensors and sensor systems]
+260$3 $ab[a=Göttingen, b=Copernicus Publ.]
+362$0 $a[a=Nachgewiesen 2012,1 -]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=01238nas a2200325 c 4500
+001$$1024787338
+003$$DE-101
+005$$20120802113202.0
+007$$cr||||||||||||
+008$$120802c20129999it m||p|o ||| 0||||0ita c
+016$7 $2a[2=DE-101, a=1024787338]
+016$7 $2a[2=DE-600, a=2675901-9]
+035$  $a[a=(DE-599)ZDB2675901-9]
+040$  $abcd[a=9001, b=ger, c=DE-101, d=9001]
+041$  $a[a=ita]
+044$  $c[c=XA-IT]
+084$  $2aq[a=796, q=DE-600, 2=sdnb]
+110$2 $004a[0=(DE-588)1001266-7, 0=(DE-101)004008766, a=Club Alpino Italiano, 4=aut]
+245$10$abh[a=Montagne 360°, h=[Elektronische Ressource], b=la rivista del Club Alpino Italiano]
+246$13$a[a=Montagne 360 gradi]
+246$13$a[a=Montagne trecentosessanta gradi]
+260$3 $ab[a=Milano, b=Club]
+300$  $a[a=Online-Ressource]
+362$0 $a[a=2012 -]
+363$01$8i[8=1.1\x, i=2012]
+515$  $a[a=Ersch.monatl]
+591$  $a[a=st: noch keine Titelhistorie eingetragen, weil erst 2013 Volltext verfügbar ist(02-08-12)]
+775$08$aitww[i=Druckausg., a=Club Alpino Italiano, t=Montagne 360°, w=(DE-600)2666041-6, w=(DE-101)1023185245]
+780$00$aitww[i=Vorg.:, a=Club Alpino Italiano, t=La rivista del Club Alpino Italiano, w=(DE-600)2669438-4, w=(DE-101)1023824493]
+856$4 $ux[u=http://www.cai.it/index.php?id=1473&L=0, x=Verlag; Volltext nach einem Jahr verfügbar]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00450nas a22001818c 4500
+001$$1024787206
+003$$DE-101
+005$$20120802112406.0
+007$$tu
+008$$120802c20129999|||u||p|r ||| 0||||0||| c
+016$7 $2a[2=DE-101, a=1024787206]
+016$7 $2a[2=DE-600, a=2675900-7]
+022$  $a[a=2194-8852]
+035$  $a[a=(DE-599)ZDB2675900-7]
+040$  $abcd[a=1241, b=ger, c=DE-101, d=1241]
+245$10$a[a=Musik & Psyche]
+260$3 $ab[a=Gießen, b=Psychosozial-Verl.]
+362$0 $a[a=Nachgewiesen 2012,1 -]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00850nas a2200301 c 4500
+001$$1024786005
+003$$DE-101
+005$$20120802105609.0
+007$$tu
+008$$120802c20129999gw b||p|r ||| 0||||0ger c
+016$7 $2a[2=DE-101, a=1024786005]
+016$7 $2a[2=DE-600, a=2675893-3]
+035$  $a[a=(DE-599)ZDB2675893-3]
+040$  $abcd[a=1241, b=ger, c=DE-101, d=1241]
+041$  $a[a=ger]
+044$  $c[c=XA-DE]
+084$  $2aq[a=610, q=DE-101, 2=sdnb]
+084$  $2aq[a=610, q=DE-600, 2=sdnb]
+090$  $n[n=fn]
+245$10$ab[a=Competence, b=Wissenschaft und Forschung]
+260$3 $ab[a=Offenbach, b=Health-Care-Com]
+300$  $c[c=28 cm]
+362$0 $a[a=Nachgewiesen 2012 -]
+363$01$8i[8=1.1\x, i=2012]
+515$  $a[a=Periodizität: alle zwei Monate]
+751$  $0024a[0=(DE-588)2021065-6, 0=(DE-101)004789385, a=Offenbach, Main, 4=dbp, 2=gnd]
+772$08$itww[i=Beil. zu:, t=E-health-com, w=(DE-600)2269168-6, w=(DE-101)983022488]
+925$r $a[a=ra]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00492nas a2200193 c 4500
+001$$1024785890
+003$$DE-101
+005$$20120802105406.0
+007$$tu
+008$$120802c20129999xxuu||m|r ||| 0||||0||| c
+016$7 $2a[2=DE-101, a=1024785890]
+016$7 $2a[2=DE-600, a=2675892-1]
+035$  $a[a=(DE-599)ZDB2675892-1]
+040$  $abcd[a=0001, b=ger, c=DE-101, d=0001]
+044$  $cc[c=XD-US, c=XA-GB]
+084$  $2aq[a=000, q=DE-600, 2=sdnb]
+245$10$a[a=Routledge studies in heritage]
+260$3 $ab[a=New York, NY [u.a.], b=Routledge]
+362$0 $a[a=1.2012 -]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=01122nas a2200313 c 4500
+001$$1024785750
+003$$DE-101
+005$$20120802110322.0
+007$$cr||||||||||||
+008$$120802c20129999gw f||p|o ||| 0||||0ger c
+016$7 $2a[2=DE-101, a=1024785750]
+016$7 $2a[2=DE-600, a=2675890-8]
+029$ad$a[a=2194-5705]
+035$  $a[a=(DE-599)ZDB2675890-8]
+040$  $abcd[a=9001, b=ger, c=DE-101, d=9001]
+041$  $a[a=ger]
+044$  $c[c=XA-DE]
+084$  $2aq[a=530, q=DE-600, 2=sdnb]
+245$10$abh[a=Entdeckt, h=[Elektronische Ressource], b=das Forschungsmagazin aus dem HZDR]
+260$3 $ab[a=Dresden, b=Helmholtz-Zentrum Dresden-Rossendorf]
+300$  $a[a=Online-Ressource]
+362$0 $a[a=1.2012 -]
+363$01$8ai[8=1.1\x, a=1, i=2012]
+515$  $a[a=2011 nicht ersch.; 2x jährl.]
+710$2 $00ag[0=(DE-588)16102193-1, 0=(DE-101)1010237780, a=Helmholtz-Zentrum, g=Dresden]
+775$08$itww[i=Druckausg., t=Entdeckt, w=(DE-600)2673671-8, w=(DE-101)102438005X]
+780$00$aitww[i=Vorg.:, a=Forschungszentrum <Dresden>, t=FZD-Journal, w=(DE-600)2608135-0, w=(DE-101)1011693356]
+856$4 $uxz[u=http://www.hzdr.de/db/Cms?pNid=2931, x=Verlag, z=kostenfrei]
+856$4 $ux[u=http://www.bibliothek.uni-regensburg.de/ezeit/?2675890, x=EZB]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00929nas a2200265 c 4500
+001$$1024785092
+003$$DE-101
+005$$20120802103602.0
+007$$tu
+008$$120802c20129999gw f||p|r ||| 0||||0ger c
+016$7 $2a[2=DE-101, a=1024785092]
+016$7 $2a[2=DE-600, a=2675888-X]
+035$  $a[a=(DE-599)ZDB2675888-X]
+040$  $abcd[a=0929, b=ger, c=DE-101, d=0929]
+041$  $a[a=ger]
+044$  $c[c=XA-DE]
+084$  $2aq[a=370, q=DE-600, 2=sdnb]
+084$  $2aaa[a=120, a=130, a=140, 2=rpb]
+110$2 $004ag[0=(DE-588)10130985-5, 0=(DE-101)978864921, a=Kreisvolkshochschule des Rhein-Lahn-Kreises, g=Ems, 4=aut]
+245$10$a[a=Semesterprogramm / Kreisvolkshochschule des Rhein-Lahn-Kreises]
+260$3 $ab[a=Bad Ems, b=Kreisvolkshochschule]
+362$0 $a[a=2012/13,He./Wi. -]
+363$01$8i[8=1.1\x, i=2012/13]
+515$  $a[a=Ersch. halbjährl.]
+780$00$aitww[i=Vorg.:, a=Kreisvolkshochschule des Rhein-Lahn-Kreises <Ems>, t=Programmheft / Kreisvolkshochschule des Rhein-Lahn-Kreises, w=(DE-600)2508573-6, w=(DE-101)995778558]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00818nas a2200241 c 4500
+001$$1024785017
+003$$DE-101
+005$$20120802103448.0
+007$$tu
+008$$120802c20129999gw u||p|r ||| 0||||0ger c
+016$7 $2a[2=DE-101, a=1024785017]
+016$7 $2a[2=DE-600, a=2675886-6]
+035$  $a[a=(DE-599)ZDB2675886-6]
+040$  $abcd[a=4031, b=ger, c=DE-101, d=4031]
+041$  $a[a=ger]
+044$  $c[c=XA-DE]
+084$  $2aq[a=370, q=DE-600, 2=sdnb]
+090$  $n[n=sc]
+110$2 $004a[0=(DE-588)1024784592, 0=(DE-101)1024784592, a=Labenwolf-Gymnasium, 4=aut]
+245$10$a[a=Jahresbericht / Labenwolf-Gymnasium, das musische Gymnasium der Stadt Nürnberg]
+260$3 $ab[a=Nürnberg, b=[s.n.]]
+362$0 $a[a=2011/2012 -]
+780$00$aitww[i=Vorg.:, a=Städtisches Labenwolf-Gymnasium <Nürnberg>, t=Jahresbericht / Städtisches Labenwolf-Gymnasium Nürnberg, w=(DE-600)1274477-3, w=(DE-101)017856345]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00957nas a2200253 c 4500
+001$$1024784665
+003$$DE-101
+005$$20120802142517.0
+007$$tu
+008$$120802c20129999xx u||p|r ||| 0||||0rus c
+016$7 $2a[2=DE-101, a=1024784665]
+016$7 $2a[2=DE-600, a=2675883-0]
+035$  $a[a=(DE-599)ZDB2675883-0]
+040$  $abcd[a=0001, b=ger, c=DE-101, d=0001]
+041$  $a[a=rus]
+044$  $c[c=XA-RU]
+084$  $2aq[a=020, q=DE-600, 2=sdnb]
+110$2 $004ag[0=(DE-588)16093884-3, 0=(DE-101)1009079247, a=Prezidentskaja Biblioteka Imeni Borisa Nikolaeviča Elʹzina, g=Sankt Petersburg, 4=aut]
+245$10$a[a=Ežegodnyj otčet / Prezidentskaja Biblioteka Imeni B. N. Elʹcina]
+260$3 $ab[a=Sankt Peterburg, b=[s.n.]]
+362$0 $a[a=2011(2012) -]
+363$01$8i[8=1.1\x, i=2011 ]
+546$  $a[a=In kyrill. Schr.; Text russ.]
+775$08$aitww[i=Engl. Ausg., a=Prezidentskaja Biblioteka Imeni Borisa Nikolaeviča Elʹzina <Sankt Petersburg>, t=Annual report / Boris Yeltsin Presidential Library, w=(DE-600)2654089-7, w=(DE-101)1020468351]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00462nas a22001818c 4500
+001$$1024784533
+003$$DE-101
+005$$20120802115038.0
+007$$tu
+008$$120802c20129999|||u||p|r ||| 0||||0||| c
+016$7 $2a[2=DE-101, a=1024784533]
+016$7 $2a[2=DE-600, a=2675881-7]
+022$  $a[a=2193-7567]
+035$  $a[a=(DE-599)ZDB2675881-7]
+040$  $abcd[a=1241, b=ger, c=DE-101, d=1241]
+245$10$a[a=Der große Android-App-Guide]
+260$3 $ab[a=München, b=Media GmbH]
+362$0 $a[a=Nachgewiesen 2012,1 -]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00654nas a2200265 c 4500
+001$$1024783731
+003$$DE-101
+005$$20120802100826.0
+007$$tu
+008$$120802c20129999gw a||p|r ||| 0||||0ger c
+016$7 $2a[2=DE-101, a=1024783731]
+016$7 $2a[2=DE-600, a=2675879-9]
+035$  $a[a=(DE-599)ZDB2675879-9]
+040$  $abcd[a=1141, b=ger, c=DE-101, d=1141]
+041$  $a[a=ger]
+044$  $c[c=XA-DE]
+084$  $2aq[a=630, q=DE-101, 2=sdnb]
+084$  $2aq[a=630, q=DE-600, 2=sdnb]
+245$10$ac[a=Rosenheimer Holzbaupreis, c=RosenheimKreis e.V.]
+260$3 $ab[a=Rosenheim, b=RosenheimKreis]
+300$  $c[c=30 cm]
+362$0 $a[a=3.2012 -]
+363$01$8ai[8=1.1\x, a=3, i=2012]
+515$  $a[a=Ersch. jährl.]
+925$r $a[a=rb]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00939nas a2200301 c 4500
+001$$1024783170
+003$$DE-101
+005$$20120802124511.0
+007$$tu
+008$$120802c20129999gw e||n|r l|| 0||||0ger c
+016$7 $2a[2=DE-101, a=1024783170]
+016$7 $2a[2=DE-600, a=2675875-1]
+035$  $a[a=(DE-599)ZDB2675875-1]
+040$  $abcd[a=1241, b=ger, c=DE-101, d=1241]
+041$  $a[a=ger]
+044$  $c[c=XA-DE]
+084$  $2aq[a=350, q=DE-101, 2=sdnb]
+084$  $2aq[a=350, q=DE-600, 2=sdnb]
+110$2 $004a[0=(DE-588)24279-2, 0=(DE-101)000242799, a=Grenzach-Wyhlen, 4=aut]
+245$10$ab[a=Info / Grenzach-Wyhlen , b=amtliches Mitteilungsblatt]
+260$3 $ab[a=Stockach, b=Primo-Verl.]
+300$  $c[c=30 cm]
+362$0 $a[a=37.2012,14 -]
+363$01$8ai[8=1.1\x, a=37, i=2012]
+515$  $a[a=Periodizität: vierzehntägl.]
+751$  $0024a[0=(DE-588)24279-2, 0=(DE-101)000242799, a=Grenzach-Wyhlen, 4=dbp, 2=gnd]
+780$00$aitww[i=Vorg.:, a=Grenzach-Wyhlen, t=Mitteilungsblatt Grenzach-Wyhlen, w=(DE-600)522606-5, w=(DE-101)012785911]
+925$r $a[a=ra]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00915nas a2200289 c 4500
+001$$1024783146
+003$$DE-101
+005$$20120802100135.0
+007$$tu
+008$$120802c20129999gw z||p|r ||| 0||||0ger c
+016$7 $2a[2=DE-101, a=1024783146]
+016$7 $2a[2=DE-600, a=2675874-X]
+035$  $a[a=(DE-599)ZDB2675874-X]
+040$  $abcd[a=1241, b=ger, c=DE-101, d=1241]
+041$  $a[a=ger]
+044$  $c[c=XA-DE]
+084$  $2aq[a=330, q=DE-101, 2=sdnb]
+084$  $2aq[a=330, q=DE-600, 2=sdnb]
+110$2 $004a[0=(DE-588)1024759075, 0=(DE-101)1024759075, a=Kreishandwerkerschaft Rureifel, 4=aut]
+245$10$ab[a=Das Handwerkerverzeichnis der Kreishandwerkerschaft Rureifel, b=Mitgliederverzeichnis der Innungsfachbetriebe aus dem Bezirk der Kreishandwerkerschaft Rureifel]
+260$3 $ab[a=Mainz, b=BVS, Verl. für werbewirksame Publ.]
+300$  $c[c=21 cm]
+362$0 $a[a=Aufl. 1.2012 -]
+363$01$8ai[8=1.1\x, a=1, i=2012]
+365$  $b[b=kart.]
+515$  $a[a=Ersch. unregelmäßig]
+925$r $a[a=ra]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00645nas a2200229 c 4500
+001$$1024782808
+003$$DE-101
+005$$20120802094851.0
+007$$tu
+008$$120802c20129999gw u||m|r ||| 0||||0ger c
+016$7 $2a[2=DE-101, a=1024782808]
+016$7 $2a[2=DE-600, a=2675870-2]
+035$  $a[a=(DE-599)ZDB2675870-2]
+040$  $abcd[a=4011, b=ger, c=DE-101, d=4011]
+041$  $a[a=ger]
+044$  $c[c=XA-DE]
+084$  $2aq[a=700, q=DE-600, 2=sdnb]
+110$2 $004ag[0=(DE-588)3021470-1, 0=(DE-101)941172449, a=Galerie Rothe, g=Frankfurt, Main, 4=aut]
+245$10$a[a=Jahresgabe ... / Galerie Rothe, Frankfurt am Main]
+260$3 $ab[a=Frankfurt, M., b=[s.n.]]
+362$0 $a[a=Nachgewiesen 2012 -]
+363$01$8i[8=1.1\x, i=2012]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00671nas a2200229 c 4500
+001$$102478200X
+003$$DE-101
+005$$20120802093026.0
+007$$tu
+008$$120802c20129999pl u||p|r ||| 0||||0eng c
+016$7 $2a[2=DE-101, a=102478200X]
+016$7 $2a[2=DE-600, a=2675867-2]
+022$  $a[a=2084-6096]
+035$  $a[a=(DE-599)ZDB2675867-2]
+040$  $abcd[a=0089, b=ger, c=DE-101, d=0089]
+041$  $a[a=eng]
+044$  $c[c=XA-PL]
+084$  $2aq[a=660, q=DE-600, 2=sdnb]
+245$10$ab[a=Composites theory and practice, b=quarterly ; research journal of the Polish Society of Composite Materials]
+260$3 $ab[a=Cze̜stochowa, b=[s.n.]]
+362$0 $a[a=12.2012 -]
+780$00$itww[i=Vorg.:, t=Kompozyty, w=(DE-600)2056168-4, w=(DE-101)022535993]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=01300nas a2200301 c 4500
+001$$1024781097
+003$$DE-101
+005$$20120802090718.0
+007$$cr||||||||||||
+008$$120802c20129999gw u||m|o ||| 0||||0||| c
+016$7 $2a[2=DE-101, a=1024781097]
+016$7 $2a[2=DE-600, a=2675861-1]
+029$ad$a[a=2191-4907]
+035$  $a[a=(DE-599)ZDB2675861-1]
+040$  $abcd[a=0046, b=ger, c=DE-101, d=0046]
+044$  $c[c=XA-DE]
+084$  $2aq[a=330, q=DE-600, 2=sdnb]
+245$10$abchnp[a=RessourcenKultur, h=[Elektronische Ressource], b=Vertrauenskultur, Innovation, Ressourceneffinzienz, n=[...], p=Sonderausgabe, c=artec, Forschungszentrum Nachhaltigkeit ; Wuppertal Institut]
+246$19$a[a=RessourcenKultur [[Elektronische Ressource]]  / Sonderausgabe]
+260$3 $ab[a=Bremen, b=artec, Forschungszentrum Nachhaltigkeit]
+260$3 $ab[a=Wuppertal, b=Wuppertal Institut für Klima, Umwelt, Energie]
+300$  $a[a=Online-Ressource]
+362$0 $a[a=1.2012 -]
+363$01$8i[8=1.1\x, i=2012]
+710$2 $00ag[0=(DE-588)10077304-7, 0=(DE-101)970998066, a=Forschungszentrum Nachhaltigkeit (Artec), g=Bremen]
+710$2 $00ab[0=(DE-588)6052682-8, 0=(DE-101)979168228, a=Wuppertal-Institut für Klima, Umwelt, Energie, b=Forschungsgruppe Nachhaltiges Produzieren und Konsumieren]
+775$08$itww[i=Druckausg.:, t=RessourcenKultur / Sonderausgabe, w=(DE-600)2675858-1, w=(DE-101)1024780945]
+930$  $a[a=Sonderausgabe]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=01229nas a2200289 c 4500
+001$$1024780945
+003$$DE-101
+005$$20120802090821.0
+007$$tu
+008$$120802c20129999gw z||m|r ||| 0||||0||| c
+016$7 $2a[2=DE-101, a=1024780945]
+016$7 $2a[2=DE-600, a=2675858-1]
+022$  $a[a=2191-4907]
+035$  $a[a=(DE-599)ZDB2675858-1]
+040$  $abcd[a=0046, b=ger, c=DE-101, d=0046]
+044$  $c[c=XA-DE]
+084$  $2aq[a=330, q=DE-600, 2=sdnb]
+245$10$abcnp[a=RessourcenKultur, b=Vertrauenskultur, Innovation, Ressourceneffinzienz, n=[...], p=Sonderausgabe, c=artec, Forschungszentrum Nachhaltigkeit ; Wuppertal Institut]
+246$19$a[a=RessourcenKultur / Sonderausgabe]
+260$3 $ab[a=Bremen, b=artec, Forschungszentrum Nachhaltigkeit]
+260$3 $ab[a=Wuppertal, b=Wuppertal Institut für Klima, Umwelt, Energie]
+362$0 $a[a=1.2012 -]
+363$01$8i[8=1.1\x, i=2012]
+710$2 $00ag[0=(DE-588)10077304-7, 0=(DE-101)970998066, a=Forschungszentrum Nachhaltigkeit (Artec), g=Bremen]
+710$2 $00ab[0=(DE-588)6052682-8, 0=(DE-101)979168228, a=Wuppertal-Institut für Klima, Umwelt, Energie, b=Forschungsgruppe Nachhaltiges Produzieren und Konsumieren]
+775$08$itww[i=Online-Ausg., t=RessourcenKultur [[Elektronische Ressource]]  / Sonderausgabe, w=(DE-600)2675861-1, w=(DE-101)1024781097]
+930$  $a[a=Sonderausgabe]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00963nas a2200313 c 4500
+001$$1024780600
+003$$DE-101
+005$$20120802085258.0
+007$$tu
+008$$120802c20129999gw a||p|r ||| 0||||0ger c
+016$7 $2a[2=DE-101, a=1024780600]
+016$7 $2a[2=DE-600, a=2675854-4]
+035$  $a[a=(DE-599)ZDB2675854-4]
+040$  $abcd[a=1141, b=ger, c=DE-101, d=1141]
+041$  $a[a=ger]
+044$  $c[c=XA-DE]
+084$  $2aq[a=914.3, q=DE-101, 2=sdnb]
+084$  $2aq[a=914.3, q=DE-600, 2=sdnb]
+245$10$anp[a=Ferienzeitung Brandenburg, n=[...], p=Ruppiner Seenland, Prignitz, Oberhavel]
+246$19$a[a=Ferienzeitung Brandenburg / Ruppiner Land, Prignitz, Oberhavel]
+260$3 $ab[a=Berlin, b=Terra Press GmbH]
+300$  $c[c=34 cm]
+362$0 $a[a=2012 -]
+363$01$8i[8=1.1\x, i=2012]
+365$  $b[b=EUR 1.50 (Einzelbd.)]
+515$  $a[a=Ersch. jährl.]
+780$00$itww[i=Vorg.:, t=Ferienzeitung / Ruppiner Land, Prignitz, Oberhavel, w=(DE-600)2388036-3, w=(DE-101)98573972X]
+925$r $a[a=ra]
+930$  $a[a=Ruppiner Seenland, Prignitz, Oberhavel]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=01040nas a2200289 c 4500
+001$$1024779696
+003$$DE-101
+005$$20120802083329.0
+007$$cr||||||||||||
+008$$120802c20129999xx u||p|o ||| 0||||0eng c
+016$7 $2a[2=DE-101, a=1024779696]
+016$7 $2a[2=DE-600, a=2675850-7]
+022$  $a[a=1800-9581]
+035$  $a[a=(DE-599)ZDB2675850-7]
+040$  $abcd[a=0355, b=ger, c=DE-101, d=0355]
+041$  $a[a=eng]
+044$  $c[c=XA-ME]
+084$  $2aq[a=330, q=DE-600, 2=sdnb]
+245$10$ach[a=Journal of central banking theory and practice, h=[Elektronische Ressource], c=Central Bank of Montenegro]
+246$13$ai[i=Nebent., a=Journal of central banking]
+260$3 $ab[a=Podgorica, b=[s.n.]]
+300$  $a[a=Online-Ressource]
+362$0 $a[a=1.2012 -]
+710$2 $00a[0=(DE-588)10130226-5, 0=(DE-101)978798600, a=Centralna Banka Crne Gore]
+775$08$itww[i=Druckausg., t=Journal of central banking theory and practice, w=(DE-600)2673361-4, w=(DE-101)1024305473]
+856$4 $uxz[u=http://www.cb-mn.org/eng/index.php?bl=journal, x=Verlag, z=kostenfrei]
+856$4 $ux[u=http://www.bibliothek.uni-regensburg.de/ezeit/?2675850, x=EZB]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=01853nas a2200433 c 4500
+001$$1024757986
+003$$DE-101
+005$$20120802083041.0
+007$$tu
+008$$120801c20129999au w||n|r ||| 0||||0ger c
+016$7 $2a[2=DE-101, a=1024757986]
+016$7 $2a[2=DE-600, a=2675787-4]
+035$  $a[a=(DE-599)ZDB2675787-4]
+040$  $abcd[a=4060, b=ger, c=DE-101, d=4060]
+041$  $a[a=ger]
+044$  $c[c=XA-AT]
+084$  $2aq[a=070, q=DE-600, 2=sdnb]
+090$  $nn[n=ao, n=lp]
+245$10$anp[a=Meine Woche, n=[...], p=St. Veit]
+246$19$a[a=Meine Woche / St. Veit]
+246$13$a[a=Meine Woche / Sankt Veit]
+246$13$ai[i=Nebent., a=Woche St. Veit]
+247$10$af[a=Kärntner Woche, f=Nebent. d. 1. OG]
+260$3 $ab[a=Klagenfurt, b=Kärntner Woche Zeitungs-GmbH]
+362$0 $a[a=2012,19(9.Mai) -]
+363$01$8bi[8=1.1\x, b=19, i=2012]
+515$  $a[a=Periodizität: wöchentl.]
+751$  $0024a[0=(DE-588)1023732653, 0=(DE-101)1023732653, a=Klagenfurt am Wörthersee, 4=dbp, 2=gnd]
+751$  $0024a[0=(DE-588)4051627-1, 0=(DE-101)04051627X, a=Sankt Veit, Glan, 4=dbp, 2=gnd]
+775$08$itww[i=Parallelausg.:, t=Meine Woche / Völkermarkt, w=(DE-600)2675706-0, w=(DE-101)1024749592]
+775$08$itww[i=Parallelausg.:, t=Meine Woche / Villach, w=(DE-600)2675714-X, w=(DE-101)102475040X]
+775$08$itww[i=Parallelausg.:, t=Meine Woche / Spittal, w=(DE-600)2675719-9, w=(DE-101)1024750965]
+775$08$itww[i=Parallelausg.:, t=Meine Woche / Lavanttal, w=(DE-600)2675739-4, w=(DE-101)1024752208]
+775$08$itww[i=Parallelausg.:, t=Meine Woche / Klagenfurt Land, w=(DE-600)2675740-0, w=(DE-101)1024752410]
+775$08$itww[i=Parallelausg.:, t=Meine Woche / Klagenfurt, w=(DE-600)2675776-X, w=(DE-101)1024757080]
+775$08$itww[i=Parallelausg.:, t=Meine Woche / Gailtal, w=(DE-600)2675782-5, w=(DE-101)1024757579]
+775$08$itww[i=Parallelausg.:, t=Meine Woche / Feldkirchen, w=(DE-600)2675783-7, w=(DE-101)1024757757]
+780$00$itww[i=Vorg.:, t=Kärntner Woche / Sankt Veit, w=(DE-600)2607761-9, w=(DE-101)1011621029]
+930$  $a[a=St. Veit]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00799nas a2200301 c 4500
+001$$102470310X
+003$$DE-101
+005$$20120802133653.0
+007$$tu
+008$$120731c20129999gw z||m|r ||| 0||||0ger c
+016$7 $2a[2=DE-101, a=102470310X]
+016$7 $2a[2=DE-600, a=2675453-8]
+035$  $a[a=(DE-599)ZDB2675453-8]
+040$  $abcd[a=1140, b=ger, c=DE-101, d=1140]
+041$  $a[a=ger]
+044$  $c[c=XA-DE]
+084$  $2aq[a=290, q=DE-101, 2=sdnb]
+084$  $2aq[a=290, q=DE-600, 2=sdnb]
+245$10$abnp[a=Europäisch-jüdische Studien, b=EJSK, n=[...], p=Kontroversen]
+246$19$a[a=Europäisch-jüdische Studien / Kontroversen]
+246$13$a[a=EJSK]
+260$3 $aab[a=Berlin, a=Boston, Mass., b=De Gruyter]
+300$  $c[c=24 cm]
+362$0 $a[a=1.2012 -]
+363$01$8ai[8=1.1\x, a=1, i=2012]
+515$  $a[a=Ersch. unregelmäßig]
+925$r $a[a=ra]
+930$  $a[a=Kontroversen]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00717nas a22002298c 4500
+001$$1024637395
+003$$DE-101
+005$$20120802103931.0
+007$$tu
+008$$120727c20129999|||a||p|r ||| 0||||0||| c
+016$7 $2a[2=DE-101, a=1024637395]
+016$7 $2a[2=DE-600, a=2675128-8]
+022$  $a[a=2235-3089]
+035$  $a[a=(DE-599)ZDB2675128-8]
+035$  $a[a=(OCoLC)795705686]
+040$  $abcd[a=1131, b=ger, c=DE-101, d=9001]
+084$  $2a[a=8,1, 2=ssgn]
+084$  $2aq[a=940, q=DE-600, 2=sdnb]
+245$10$a[a=Neujahrsblatt des Stadtzürcher Heimatschutzes]
+260$3 $ab[a=Zürich, b=Stadtzürcher Heimatschutz]
+362$0 $a[a=Nachgewiesen 2012 -]
+780$00$aitww[i=Vorg.:, a=Zürcher Heimatschutz, t=Neujahrsblatt ... des Zürcher Heimatschutzes, w=(DE-600)2426942-6, w=(DE-101)98875620X]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00733nas a2200253 c 4500
+001$$1024623688
+003$$DE-101
+005$$20120802143024.0
+007$$tu
+008$$120727c20129999sz a||p|r ||| 0||||0ger c
+016$7 $2a[2=DE-101, a=1024623688]
+016$7 $2a[2=DE-600, a=2675042-9]
+035$  $a[a=(DE-599)ZDB2675042-9]
+040$  $abcd[a=1131, b=ger, c=DE-101, d=1141]
+041$  $a[a=ger]
+044$  $c[c=XA-CH]
+110$2 $004a[0=(DE-588)1024795039, 0=(DE-101)1024795039, a=ibW Höhere Fachschule Südostschweiz, 4=aut]
+245$10$a[a=Jahresbericht der ibW Höhere Fachschule Südostschweiz]
+260$3 $ab[a=Chur, b=ibW Höhere Fachschule Südostschweiz]
+300$  $c[c=30 cm]
+362$0 $a[a=Nachgewiesen 2011(2012) -]
+363$01$8i[8=1.1\x, i=2011]
+515$  $a[a=Ersch. jährl.]
+925$r $a[a=rb]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=01772nas a2200445 c 4500
+001$$1024516296
+003$$DE-101
+005$$20120802082416.0
+007$$co||||||||||||
+008$$120724c20129999gw z||p|q ||| 0||||0ger c
+016$7 $2a[2=DE-101, a=1024516296]
+016$7 $2a[2=DE-600, a=2674402-8]
+035$  $a[a=(DE-599)ZDB2674402-8]
+040$  $abcd[a=1241, b=ger, c=DE-101, d=1250]
+041$  $a[a=ger]
+044$  $c[c=XA-DE]
+082$04$28aq[8=1\x, a=617.600681, q=DE-101, 2=22/ger]
+084$  $2aq[a=610, q=DE-101, 2=sdnb]
+084$  $2aq[a=610, q=DE-600, 2=sdnb]
+085$  $8b[8=1\x, b=617.6]
+085$  $8sz[8=1\x, z=1, s=0681]
+245$10$abh[a=Textvorlagen für die Zahnarztpraxis, h=[Elektronische Ressource], b=perfekte Mustertexte, Formulare und Checklisten für ein erfolgreiches Praxismanagement]
+247$00$g[g=Hauptsacht. vom Behältnis]
+260$3 $ab[a=Balingen, b=Spitta]
+300$  $ace[a=CD-ROMs, c=12 cm, in Behältnis 19 x 14 x 2 cm, e=Booklet]
+362$0 $a[a=1.0.2012 -]
+363$01$8ai[8=1.1\x, a=1, i=2012]
+515$  $a[a=Ersch. unregelmäßig]
+538$  $a[a=Systemvoraussetzungen: Prozessor: mind. 500 MHz; RAM-Speicher: mind. 128 MB; freie Festplattenkapazität: mind. 250 MB; CD-ROM-Laufwerk; Monitor: 17", 1024 x 768 Pixel; Internet Explorer ab Version 5.0; Windows XP, Windows Vista, Windows 7]
+650$ 7$002a[0=(DE-588)4067303-0, 0=(DE-101)040673030, a=Zahnarzt, 2=gnd]
+650$ 7$002a[0=(DE-588)4003167-6, 0=(DE-101)040031675, a=Arztpraxis, 2=gnd]
+655$ 7$2a[a=Formularsammlung, 2=gnd]
+655$ 7$2a[a=CD-ROM, 2=gnd]
+689$00$00Da[0=(DE-588)4067303-0, 0=(DE-101)040673030, D=s, a=Zahnarzt]
+689$01$00Da[0=(DE-588)4003167-6, 0=(DE-101)040031675, D=s, a=Arztpraxis]
+689$02$Aa[A=f, a=Formularsammlung]
+689$03$Aa[A=f, a=CD-ROM]
+689$0 $55[5=DE-101, 5=DE-101]
+780$00$itww[i=Vorg.:, t=Erfolgreiche Mustertexte für die Zahnarztpraxis, w=(DE-600)2375716-4, w=(DE-101)984816984]
+925$r $a[a=ra]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=01046nas a2200313 c 4500
+001$$102438005X
+003$$DE-101
+005$$20120802105123.0
+007$$tu
+008$$120719c20129999gw f||p|r ||| 0||||0ger c
+016$7 $2a[2=DE-101, a=102438005X]
+016$7 $2a[2=DE-600, a=2673671-8]
+022$  $a[a=2194-5705]
+035$  $a[a=(DE-599)ZDB2673671-8]
+040$  $abcd[a=0014, b=ger, c=DE-101, d=9001]
+041$  $a[a=ger]
+044$  $c[c=XA-DE]
+084$  $2aaq[a=500, a=620, q=DE-101, 2=sdnb]
+084$  $2aq[a=530, q=DE-600, 2=sdnb]
+245$10$ab[a=Entdeckt, b=das Forschungsmagazin aus dem HZDR]
+260$3 $ab[a=Dresden, b=Helmholtz-Zentrum Dresden-Rossendorf]
+300$  $c[c=30 cm]
+362$0 $a[a=Ausg. 1.2012 -]
+363$01$8ai[8=1.1\x, a=1, i=2012]
+515$  $a[a=2011 nicht ersch.; 2x jährl.]
+710$2 $00ag[0=(DE-588)16102193-1, 0=(DE-101)1010237780, a=Helmholtz-Zentrum, g=Dresden]
+775$08$itww[i=Online-Ausg., t=Entdeckt, w=(DE-600)2675890-8, w=(DE-101)1024785750]
+780$00$aitww[i=Vorg.:, a=Forschungszentrum <Dresden>, t=FZD-Journal  . das Journal des Forschungszentrums Dresden-Rossendorf, w=(DE-600)2409633-7, w=(DE-101)987511513]
+925$r $a[a=rb]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00812nas a2200253 c 4500
+001$$1024305473
+003$$DE-101
+005$$20120802083328.0
+007$$tu
+008$$120717c20129999xx u||p|r ||| 0||||0eng c
+016$7 $2a[2=DE-101, a=1024305473]
+016$7 $2a[2=DE-600, a=2673361-4]
+022$  $a[a=1800-9581]
+035$  $a[a=(DE-599)ZDB2673361-4]
+040$  $abcd[a=0206, b=ger, c=DE-101, d=0355]
+041$  $a[a=eng]
+044$  $c[c=XA-ME]
+084$  $2aq[a=330, q=DE-600, 2=sdnb]
+245$10$ac[a=Journal of central banking theory and practice, c=Central Bank of Montenegro]
+246$13$ai[i=Nebent., a=Journal of central banking]
+260$3 $ab[a=Podgorica, b=[s.n.]]
+362$0 $a[a=1.2012 -]
+710$2 $00a[0=(DE-588)10130226-5, 0=(DE-101)978798600, a=Centralna Banka Crne Gore]
+775$08$itww[i=Online-Ausg., t=Journal of central banking theory and practice, w=(DE-600)2675850-7, w=(DE-101)1024779696]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00787nas a2200277 c 4500
+001$$102428607X
+003$$DE-101
+005$$20120802095112.0
+007$$tu
+008$$120717c20129999gw z||m|r ||| 0||||0ger c
+016$7 $2a[2=DE-101, a=102428607X]
+016$7 $2a[2=DE-600, a=2673243-9]
+035$  $a[a=(DE-599)ZDB2673243-9]
+040$  $abcd[a=0046, b=ger, c=DE-101, d=1240]
+041$  $a[a=ger]
+044$  $c[c=XA-DE]
+084$  $2aq[a=370, q=DE-101, 2=sdnb]
+084$  $2aq[a=370, q=DE-600, 2=sdnb]
+245$10$ac[a=Apollon-Schriftenreihe zur Bildungsforschung, c=hrsg. vom Präsidium der Apollon-Hochschule der Gesundheitswirtschaft]
+246$13$a[a=Schriftenreihe zur Bildungsforschung]
+260$3 $ab[a=Bremen, b=Apollon Univ. Press]
+300$  $c[c=22 cm]
+362$0 $a[a=1.2012 -]
+363$01$8ai[8=1.1\x, a=1, i=2012]
+515$  $a[a=Ersch. unregelmäßig]
+925$r $a[a=ra]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00989nas a2200361 c 4500
+001$$1024193225
+003$$DE-101
+005$$20120802093334.0
+007$$tu
+008$$120712c20129999gw z||p|r ||| 0||||0ger c
+015$  $2a[a=12,B32, 2=dnb]
+016$7 $2a[2=DE-101, a=1024193225]
+016$7 $2a[2=DE-600, a=2672793-6]
+035$  $a[a=(DE-599)ZDB2672793-6]
+040$  $abcd[a=1241, b=ger, c=DE-101, d=9001]
+041$  $a[a=ger]
+044$  $c[c=XA-DE]
+082$04$28aq[8=1\x, a=920.043371, q=DE-101, 2=22/ger]
+083$0 $28aq[8=2\x, a=920.0434735, q=DE-101, 2=22/ger]
+084$  $2aq[a=920, q=DE-101, 2=sdnb]
+084$  $2aq[a=050, q=DE-600, 2=sdnb]
+085$  $8b[8=1\x, b=920]
+085$  $8sz[8=1\x, z=2, s=43371]
+085$  $8b[8=2\x, b=920]
+085$  $8sz[8=2\x, z=2, s=434735]
+245$10$ab[a=Wer ist wer Allgäu-Oberschwaben, b=... Köpfe der Region]
+246$13$ai[i=Nebent., a=Wer ist wer in Allgäu-Oberschwaben]
+260$3 $ab[a=Leutkirch im Allgäu, b=Allgovia media]
+300$  $c[c=21 cm]
+362$0 $a[a=Aufl. 1.2012 -]
+363$01$8ai[8=1.1\x, a=1, i=2012]
+515$  $a[a=Ersch. unregelmäßig]
+925$r $a[a=rb]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00749nas a2200277 c 4500
+001$$1024169979
+003$$DE-101
+005$$20120802132652.0
+007$$tu
+008$$120712c20129999gw z||m|r ||| 0||||0eng c
+016$7 $2a[2=DE-101, a=1024169979]
+016$7 $2a[2=DE-600, a=2672633-6]
+022$  $a[a=2191-8864]
+035$  $a[a=(DE-599)ZDB2672633-6]
+040$  $abcd[a=6999, b=ger, c=DE-101, d=1250]
+041$  $a[a=eng]
+044$  $ccc[c=XA-DE, c=XA-CH, c=XA-AT]
+084$  $2aaq[a=900, a=940, q=DE-101, 2=sdnb]
+084$  $2aaq[a=900, a=940, q=DE-600, 2=sdnb]
+245$10$a[a=Eastern and central European studies]
+260$3 $aaaaaaab[a=Frankfurt, M., a=Bern, a=Berlin, a=Bruxelles, a=New York, NY, a=Oxford, a=Wien, b=Lang]
+300$  $c[c=22 cm]
+362$0 $a[a=1.2012 -]
+363$01$8ai[8=1.1\x, a=1, i=2012]
+515$  $a[a=Ersch. unregelmäßig]
+925$r $a[a=ra]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=01263nas a2200349 c 4500
+001$$1023782529
+003$$DE-101
+005$$20120802082902.0
+007$$cr||||||||||||
+008$$120628c20129999xxku||p|o ||| 0||||0eng c
+016$7 $2a[2=DE-101, a=1023782529]
+016$7 $2a[2=DE-600, a=2669168-1]
+022$  $a[a=2047-7716]
+029$ad$a[a=0305-7674]
+035$  $a[a=(DE-599)ZDB2669168-1]
+040$  $abcd[a=0038, b=ger, c=DE-101, d=9001]
+041$  $a[a=eng]
+044$  $c[c=XA-GB]
+084$  $2a[a=10, 2=ssgn]
+084$  $2aaq[a=300, a=390, q=DE-600, 2=sdnb]
+245$10$abh[a=Cambridge anthropology, h=[Elektronische Ressource], b=a journal of the Department of Social Anthropology, Cambridge University]
+247$00$g[g=Gesehen am 28.06.12]
+260$3 $ab[a=Biggleswade, b=Berghahn Journals]
+260$  $abc[a=Cambridge, b=Univ., c=anfangs]
+300$  $a[a=Online-Ressource]
+362$0 $a[a=Nachgewiesen 30.2012 -]
+363$01$8ai[8=1.1\x, a=30, i=2012]
+710$2 $00abg[0=(DE-588)5350688-1, 0=(DE-101)957989180, a=University, g=Cambridge, b=Department of Social Anthropology]
+775$08$itww[i=Druckausg., t=Cambridge anthropology, w=(DE-600)8161-9, w=(DE-101)010107126]
+856$4 $ux[u=http://www.ingentaconnect.com/content/berghahn/ca, x=Agentur]
+856$4 $ux[u=http://www.journals.berghahnbooks.com/ca, x=Verlag]
+856$4 $ux[u=http://www.bibliothek.uni-regensburg.de/ezeit/?2669168, x=EZB]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=01362nas a2200385 c 4500
+001$$1023737159
+003$$DE-101
+005$$20120802080054.0
+007$$tu
+008$$120627c20129999gw w||n|r ||| 0||||0ger c
+016$7 $2a[2=DE-101, a=1023737159]
+016$7 $2a[2=DE-600, a=2668915-7]
+035$  $a[a=(DE-599)ZDB2668915-7]
+040$  $abcd[a=0012, b=ger, c=DE-101, d=0384]
+041$  $a[a=ger]
+044$  $c[c=XA-DE]
+084$  $2aq[a=230, q=DE-101, 2=sdnb]
+084$  $2aq[a=230, q=DE-600, 2=sdnb]
+090$  $n[n=eo]
+245$10$acnp[a=Katholische SonntagsZeitung, n=[...], p=Bistum Augsburg, c=im Auftrag des Bischofs von Augsburg]
+246$19$a[a=Katholische SonntagsZeitung / Bistum Augsburg]
+260$3 $ab[a=Augsburg, b=Sankt Ulrich Verlag]
+362$0 $a[a=85.2012,21(26/27.Mai) -]
+363$01$8abi[8=1.1\x, a=85, b=21, i=2012]
+515$  $a[a=Periodizität: wöchentl.]
+591$  $a[a=Kopie]
+651$ 7$002a[0=(DE-588)4003616-9, 0=(DE-101)040036162, a=Diözese Augsburg, 2=gnd]
+655$ 7$2a[a=Zeitschrift, 2=gnd]
+689$00$00Da[0=(DE-588)4003616-9, 0=(DE-101)040036162, D=g, a=Diözese Augsburg]
+689$01$Aa[A=f, a=Zeitschrift]
+689$0 $55[5=DE-384, 5=DE-604]
+710$2 $00ag[0=(DE-588)1001896-7, 0=(DE-101)004012666, a=Diözese, g=Augsburg]
+751$  $0024a[0=(DE-588)2028044-0, 0=(DE-101)004847482, a=Augsburg, 4=dbp, 2=gnd]
+780$00$aitww[i=Vorg.:, a=Diözese <Augsburg>, t=Katholische SonntagsZeitung für das Bistum Augsburg, w=(DE-600)1158928-0, w=(DE-101)016871790]
+930$  $a[a=Bistum Augsburg]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00993nas a2200301 c 4500
+001$$1023412403
+003$$DE-101
+005$$20120802142210.0
+007$$tu
+008$$120615c20129999gw a||p|r ||| 0||||0ger c
+016$7 $2a[2=DE-101, a=1023412403]
+016$7 $2a[2=DE-600, a=2667188-8]
+035$  $a[a=(DE-599)ZDB2667188-8]
+040$  $abcd[a=0109, b=ger, c=DE-101, d=1241]
+041$  $a[a=ger]
+044$  $c[c=XA-DE]
+084$  $2aq[a=330, q=DE-101, 2=sdnb]
+084$  $2aq[a=330, q=DE-600, 2=sdnb]
+245$10$a[a=Nachhaltigkeitsbericht  ... / Mainova]
+260$3 $ab[a=Frankfurt, M., b=Mainova]
+300$  $c[c=30 cm]
+362$0 $a[a=2011(2012) -]
+363$01$8i[8=1.1\x, i=2011]
+515$  $a[a=Ersch. jährl.]
+710$2 $00ag[0=(DE-588)5335944-6, 0=(DE-101)95732460X, a=Mainova-Aktiengesellschaft, g=Frankfurt, Main]
+780$00$itww[i=Als Vorg. gilt, t=Umweltbericht Verbund Mainova ..., w=(DE-600)2565455-X, w=(DE-101)1004956614]
+780$00$aitww[i=Als Vorg. gilt, a=Mainova-Aktiengesellschaft <Frankfurt, Main>, t=Personalbericht ... / Mainova, w=(DE-600)2387571-9, w=(DE-101)985709820]
+925$r $a[a=rb]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=02240nas a2200493 c 4500
+001$$1023356279
+003$$DE-101
+005$$20120802141007.0
+007$$co||||||||||||
+008$$120614c20129999gw z||p|q ||| 0||||0ger c
+015$  $2a[a=12,A26, 2=dnb]
+016$7 $2a[2=DE-101, a=1023356279]
+016$7 $2a[2=DE-600, a=2666750-2]
+035$  $a[a=(DE-599)ZDB2666750-2]
+035$  $a[a=(OCoLC)797190385]
+040$  $abcd[a=1241, b=ger, c=DE-101, d=9001]
+041$  $a[a=ger]
+044$  $c[c=XA-DE]
+082$04$28aq[8=1\x, a=658.477, q=DE-101, 2=22/ger]
+084$  $2aq[a=650, q=DE-101, 2=sdnb]
+084$  $2aaaq[a=360, a=340, a=620, q=DE-600, 2=sdnb]
+084$  $2a[a=TEC 830f, 2=stub]
+085$  $8b[8=1\x, b=658.477]
+086$  $2a[2=z, a=CD4492]
+245$10$abh[a=Betriebliches Brandschutzmanagement, h=[Elektronische Ressource], b=Maßnahmen professionell und branchenspezifisch umsetzen ; Aufgaben und Pflichten kennen und verstehen, Anforderungen umsetzen, Brandschutz korrekt überwachen]
+247$00$g[g=Hauptsacht. vom Behältnis]
+260$3 $ab[a=Kissing, b=WEKA-Media GmbH]
+300$  $ace[a=DVDs, c=12 cm, in Behältnis 19 x 14 x 2 cm, e=Beil.]
+362$0 $a[a=2012,5 -]
+363$01$8bi[8=1.1\x, b=5, i=2012]
+490$0 $a[a=WEKA-Praxislösungen]
+501$  $a[a=Darin 2012,5: Archiv - Handbuch für den betrieblichen Brandschutz]
+515$  $a[a=Ersch. unregelmäßig; Druckausg. als Losebl.-Ausg. ersch.]
+538$  $a[a=Systemvoraussetzungen: Windows-PC ab Pentium III (1 GHz) oder vergleichbar; Monitor SVGA (1.024 x 768) oder höher; Betriebssystem Windows 7, Vista oder XP; Speicherplatz ca. 650 MB freier Speicher auf der Festplatte; Arbeitsspeicher ab 1 GB (empfohlen); CD-ROM-/DVD-Laufwerk; Software Adobe Reader, MS Office 2003 (mind. Word, Excel, PowerPoint)]
+650$ 7$002a[0=(DE-588)4006138-3, 0=(DE-101)040061388, a=Betrieb, 2=gnd]
+650$ 7$002a[0=(DE-588)4007974-0, 0=(DE-101)040079740, a=Brandschutz, 2=gnd]
+655$ 7$2a[a=CD-ROM, 2=gnd]
+689$00$00Da[0=(DE-588)4006138-3, 0=(DE-101)040061388, D=s, a=Betrieb]
+689$01$00Da[0=(DE-588)4007974-0, 0=(DE-101)040079740, D=s, a=Brandschutz]
+689$02$Aa[A=f, a=CD-ROM]
+689$0 $55[5=DE-101, 5=DE-101]
+770$08$itww[i=Beil.:, t=Betriebliches Brandschutzmanagement / Newsletter, w=(DE-600)2666756-3, w=(DE-101)1023356600]
+780$00$itww[i=Vorg.:, t=Handbuch für den betrieblichen Brandschutz, w=(DE-600)2196164-5, w=(DE-101)975739751]
+925$r $a[a=ra]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00982nas a2200301 c 4500
+001$$1023185245
+003$$DE-101
+005$$20120802112740.0
+007$$tu
+008$$120608c20129999it m||p|r ||| 0||||0ita c
+016$7 $2a[2=DE-101, a=1023185245]
+016$7 $2a[2=DE-600, a=2666041-6]
+035$  $a[a=(DE-599)ZDB2666041-6]
+040$  $abcd[a=4014, b=ger, c=DE-101, d=9001]
+041$  $a[a=ita]
+044$  $c[c=XA-IT]
+084$  $2a[a=31, 2=ssgn]
+084$  $2aq[a=796, q=DE-600, 2=sdnb]
+110$2 $004a[0=(DE-588)1001266-7, 0=(DE-101)004008766, a=Club Alpino Italiano, 4=aut]
+245$10$ab[a=Montagne 360°, b=la rivista del Club Alpino Italiano]
+246$13$a[a=Montagne 360 gradi]
+246$13$a[a=Montagne trecentosessanta gradi]
+260$3 $ab[a=Milano, b=Club]
+362$0 $a[a=2012 -]
+363$01$8i[8=1.1\x, i=2012]
+515$  $a[a=Ersch.monatl]
+775$08$aitww[i=Online-Ausg., a=Club Alpino Italiano, t=Montagne 360°, w=(DE-600)2675901-9, w=(DE-101)1024787338]
+780$00$aitww[i=Vorg.:, a=Club Alpino Italiano, t=La rivista del Club Alpino Italiano, w=(DE-600)1104600-4, w=(DE-101)016346467]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=01744nas a2200517 c 4500
+001$$1023092700
+003$$DE-101
+005$$20120802093159.0
+007$$tu
+008$$120606c20129999gw m||p|r ||| 0||||0ger c
+015$  $2a[a=12,A31, 2=dnb]
+016$7 $2a[2=DE-101, a=1023092700]
+016$7 $2a[2=DE-600, a=2665612-7]
+022$  $a[a=2194-4806]
+029$aa$a[a=2194-4806 = Steuern im Handel]
+035$  $a[a=(DE-599)ZDB2665612-7]
+040$  $abcd[a=1241, b=ger, c=DE-101, d=9001]
+041$  $a[a=ger]
+044$  $c[c=XA-DE]
+082$04$28aq[8=1\x, a=343.4306805, q=DE-101, 2=22/ger]
+084$  $2aaq[a=340, a=650, q=DE-101, 2=sdnb]
+084$  $2aq[a=330, q=DE-600, 2=sdnb]
+085$  $8b[8=1\x, b=343.068]
+085$  $8sz[8=1\x, z=1, s=05]
+085$  $8sz[8=1\x, z=2, s=43]
+222$ 0$a[a=Steuern im Handel]
+245$10$ab[a=Steuern im Handel, b=SH ; sicher durch die Betriebsprüfung  und weniger Steuern]
+246$13$a[a=SH]
+260$3 $ab[a=Würzburg, b=IWW-Inst. für Wirtschaftspubl., Verl. Steuern, Recht, Wirtschaft]
+300$  $c[c=30 cm]
+362$0 $a[a=2012,1(Juni) -]
+363$01$8i[8=1.1\x, i=2012]
+365$  $b[b=EUR 192.00 (jährl.)]
+515$  $a[a=Ersch. monatl.]
+650$ 7$002a[0=(DE-588)4023226-8, 0=(DE-101)040232263, a=Handelsbetrieb, 2=gnd]
+650$ 7$002a[0=(DE-588)4006201-6, 0=(DE-101)040062015, a=Betriebsprüfung, 2=gnd]
+650$ 7$002a[0=(DE-588)4116614-0, 0=(DE-101)041166140, a=Steuerrecht, 2=gnd]
+651$ 7$002a[0=(DE-588)4011882-4, 0=(DE-101)040118827, a=Deutschland, 2=gnd]
+655$ 7$2a[a=Zeitschrift, 2=gnd]
+689$00$00Da[0=(DE-588)4011882-4, 0=(DE-101)040118827, D=g, a=Deutschland]
+689$01$00Da[0=(DE-588)4023226-8, 0=(DE-101)040232263, D=s, a=Handelsbetrieb]
+689$02$00Da[0=(DE-588)4006201-6, 0=(DE-101)040062015, D=s, a=Betriebsprüfung]
+689$03$00Da[0=(DE-588)4116614-0, 0=(DE-101)041166140, D=s, a=Steuerrecht]
+689$04$Aa[A=f, a=Zeitschrift]
+689$0 $55[5=DE-101, 5=DE-101]
+925$r $a[a=ra]
+endRecord

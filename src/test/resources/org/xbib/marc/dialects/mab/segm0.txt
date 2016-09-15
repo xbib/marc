@@ -1,0 +1,1064 @@
+                                MAB2-Format
+                         Satzkennung und Segmente 0--
+                       (gueltig fuer alle MAB2-Dateien)
+
+                        Online-Kurzreferenz-Version
+                           Stand: November 2001
+
+
+
+
+SATZKENNUNG
+
+0 - 4          Satzlaenge
+5              Satzstatus
+               c = korrigierter Datensatz (corrected)
+               d = geloeschter Datensatz (deleted)
+               n = neuer Datensatz
+               p = provisorischer Datensatz
+               u = umgelenkter Datensatz
+               v = unveraenderter Datensatz
+6 - 9          Versionsangabe
+10             Indikatorlaenge
+11             Teilfeldkennungslaenge
+12 - 16        Datenanfangsadresse
+17 - 22        nicht benutzt
+23             Satztyp
+               h = Hauptsatz fuer Titeldaten (MAB-TITEL)
+               y = Untersatz fuer die Auffuehrung von Abteilungen
+                   (MAB-TITEL)
+               u = Untersatz fuer die Bandauffuehrung (MAB-TITEL)
+               v = Pauschalverweisungssatz oder Siehe-auch-Hinweis
+                   (MAB-TITEL)
+
+               p = Personennamensatz (MAB-PND)
+               t = Pauschalverweisungssatz oder Siehe-auch-Hinweis
+                   (MAB-PND)
+
+               k = Koerperschaftsnamensatz (MAB-GKD)
+               w = Pauschalverweisungssatz oder Siehe-auch-Hinweis
+                   (MAB-GKD)
+
+               r = Schlagwortkettensatz (MAB-SWD)
+               s = Schlagwortsatz (MAB-SWD)
+               x = Pauschalverweisungssatz oder Siehe-auch-Hinweis
+                   (MAB-SWD)
+
+               q = Notationssatz (MAB-NOTAT)
+                     Provisorischer Notationsdatensatz fuer die Angabe
+                     von Notationen
+
+               l = Hauptsatz fuer Lokaldaten, die fuer alle Exemplare
+                   gueltig sind (MAB-LOKAL)
+               e = Untersatz fuer Exemplardaten, die fuer ein oder
+                   mehrere Exemplare gueltig sind (MAB-LOKAL)
+
+               m = Adressdatensatz (MAB-ADRESS)
+                     Provisorischer Adressdatensatz fuer die Angabe
+                     von Adressdaten
+
+               c = Redaktionssatz
+
+
+001-029   SEGMENT IDENTIFIKATIONSNUMMERN, DATUMS- UND VERSIONS-
+          ANGABEN
+
+001       IDENTIFIKATIONSNUMMER DES DATENSATZES
+
+          Indikator:
+          Blank = nicht definiert
+
+
+002       DATUM DER ERSTERFASSUNG / FREMDDATENUEBERNAHME
+
+          Indikator:
+          a = Datum der Ersterfassung
+          b = Datum der Fremddatenuebernahme
+
+
+003       DATUM DER LETZTEN KORREKTUR
+
+          Indikator:
+          Blank = nicht definiert
+
+
+004       ERSTELLUNGSDATUM DES AUSTAUSCHSATZES
+
+          Indikator:
+          Blank = nicht definiert
+
+
+005       TRANSAKTIONSDATUM
+
+          Indikator:
+          n = letzte Transaktion
+          v = vorletzte Transaktion
+
+
+006       VERSIONSNUMMER
+
+          Indikator:
+          n = letzte Transaktion
+          v = vorletzte Transaktion
+
+
+010       IDENTIFIKATIONSNUMMER DES DIREKT UEBERGEORDNETEN
+          DATENSATZES
+
+          Indikator:
+          blank = nicht definiert
+
+
+011       IDENTIFIKATIONSNUMMER DER VERKNUEPFTEN SAETZE FUER
+          PAUSCHALVERWEISUNGEN UND SIEHE-AUCH-HINWEISE
+
+          Indikator:
+          blank = nicht definiert
+
+
+012       IDENTIFIKATIONSNUMMER DES TITELDATENSATZES (MAB-LOKAL)
+
+          Indikator:
+          blank = nicht definiert
+
+
+015       IDENTIFIKATIONSNUMMER DES ZIELSATZES
+
+          Indikator:
+          Blank = nicht definiert
+
+
+016       IDENTIFIKATIONSNUMMER DES UMGELENKTEN SATZES
+
+          Indikator:
+          Blank = nicht definiert
+
+
+020       IDENTIFIKATIONSNUMMER EINES GELIEFERTEN DATENSATZES
+
+          Indikator:
+          blank = nicht spezifiziert
+          a     = Ueberregionale Identifikationsnummer
+          b     = Regionale Identifikationsnummer
+          c     = Lokale Identifikationsnummer
+
+
+021       IDENTIFIKATIONSNUMMER DER PRIMAERFORM
+
+          Indikator:
+          blank = nicht spezifiziert
+          a     = Ueberregionale Identifikationsnummer
+          b     = Regionale Identifikationsnummer
+          c     = Lokale Identifikationsnummer
+
+
+022       IDENTIFIKATIONSNUMMER DER SEKUNDAERFORM
+
+          Indikator:
+          blank = nicht spezifiziert
+          a     = Ueberregionale Identifikationsnummer
+          b     = Regionale Identifikationsnummer
+          c     = Lokale Identifikationsnummer
+
+
+023       IDENTIFIKATIONSNUMMER DES ZU KORRIGIERENDEN SATZES
+
+          Indikator:
+          blank = nicht spezifiziert
+          a     = MAB-TITEL
+          b     = MAB-PND
+          c     = MAB-GKD
+          d     = MAB-SWD
+          e     = MAB-NOTAT
+          f     = MAB-ADRESS
+
+          Unterfelder:
+          $a    = Identifikationsnummer des zu korrigierenden Datensatzes
+
+
+025       UEBERREGIONALE IDENTIFIKATIONSNUMMER
+
+          Indikator:
+          blank = nicht spezifiziert
+          a     = DDB
+          b     = BNB
+          c     = Casalini libri
+          e     = ekz
+          f     = BNF
+          g     = ZKA
+          l     = LoC
+          o     = OCLC
+          z     = ZDB
+
+
+026       REGIONALE IDENTIFIKATIONSNUMMER
+
+          Indikator:
+          blank = nicht spezifiziert
+          a     = Bibliotheksverbund Berlin-Brandenburg
+          b     = Norddeutscher Bibliotheksverbund (bis 1996)
+          c     = Bibliotheksverbund Niedersachsen/Sachsen-Anhalt
+                  (bis 1996)
+          d     = Nordrhein-Westfaelischer Bibliotheksverbund
+          e     = Hessisches Bibliotheksinformationssystem
+          f     = Suedwestdeutscher Bibliotheksverbund
+          g     = Bibliotheksverbund Bayern
+          h     = Gemeinsamer Bibliotheksverbund der Laender Bremen,
+                  Hamburg, Mecklenburg-Vorpommern, Niedersachsen,
+                  Sachsen-Anhalt, Schleswig-Holstein, Thueringen
+                  (ab 1996)
+
+
+027       LOKALE IDENTIFIKATIONSNUMMER
+
+          Indikator:
+          blank = nicht spezifiziert
+          a     = gepruefte Identifikationsnummer
+          b     = ungepruefte Identifikationsnummer
+
+
+028       IDENTIFIKATIONSNUMMER VON NORMDATEN
+
+          Indikator:
+          blank = nicht spezifiziert
+          a     = Identifikationsnummer der PND
+          b     = Identifikationsnummer der GKD
+          c     = Identifikationsnummer der SWD
+
+
+029       SONSTIGE IDENTIFIKATIONSNUMMER DES VORLIEGENDEN
+          DATENSATZES
+
+          Indikator:
+          blank = nicht spezifiziert
+
+
+
+
+030-035   SEGMENT ALLGEMEINE VERARBEITUNGSTECHNISCHE ANGABEN
+
+030       CODIERTE ANGABEN ZUM DATENSATZ
+
+          Indikator:
+          blank = nicht definiert
+
+          Datenelemente:
+            0  Bearbeitungsstatus
+               a = Autopsie
+               b = teilweise Autopsie
+               c = Uebernahme aus Nationalbibliographie
+               d = Uebernahme aus anderen Quellen
+               e = konvertierte Altdaten
+               f = CIP-Aufnahme
+               g = vervollstaendigte CIP-Aufnahme
+               h = ohne Autopsie
+               u = maschinelle Umsetzung einer Titelaufnahme,
+                   die nicht nach RAK erstellt ist
+               z = keine Angabe
+
+            1  Ansetzungsstatus (Normdateien)
+               a = ueberregional autorisierte Ansetzungsform
+               b = regional autorisierte Ansetzungsform
+               c = lokal autorisierte Ansetzungsform
+               d = nicht autorisierte Ansetzungsform
+               e = maschinell ermittelte Ansetzungsform
+               f = vorlaeufige Ansetzung
+               z = keine Angabe
+
+            2  Zeichenvorrat
+               1 = MAB-Zeichenvorrat
+               3 = DIN 31628, Stufe 1
+               5 = DIN 31628, Stufe 2
+               7 = DIN 31628, Stufe 3
+               z = Sonstiger Zeichenvorrat
+
+            3  Zeichencode
+               a = DIN 66003-DRV
+               b = DIN 66003-IRV
+               c = DIN 66003 + DIN 31624
+                   Die DIN-Normen entsprechen dem Zeichenvorrat
+                   von DIN 31628, Stufe 2.
+               d = ISO 646 (IRV) + ISO 5426
+                   Im MAB-Zeichensatz sind die Zeichen in
+                   ISO 646 (IRV) und ISO 5426 (in der vorlaeufigen
+                   deutschen Version) definiert.
+               i = Industriestandard  (=  festgelegte
+                   Zeichensatztabellen IBM-kompatibler PC's
+                   fuer MS-DOS-Anwendungen)
+               u = Unicode / ISO 10646 (UTF 8)
+               z = Sonstiger Zeichencode
+
+            4  Regeln fuer die Formalerschliessung
+               a = RAK-Anwendung der Deutschen Bibliothek
+               b = RAK-OEB mit alternativen Ansetzungsformen
+               c = RAK-WB
+               d = Sonstige RAK-Anwendung
+               e = DIN 1505
+               f = PI - Instruktionen fuer die alphabetischen
+                   Kataloge der preussischen Bibliotheken
+               g = RNA - Regeln fuer Nachlaesse und Autographen
+               h = Formalerschliessung nach dem Verzeichnis der
+                   Drucke des 16. Jahrhunderts (VD 16)
+               i = Formalerschliessung nach dem Verzeichnis der
+                   Drucke des 17. Jahrhunderts (VD 17)
+               k = maschinelle Umsetzung aus AACR
+               z = Sonstiges Regelwerk
+
+            5  Regeln fuer die Sacherschliessung
+               r = RSWK
+               s = RSWK-Alternativregeln
+               z = Sonstiges Regelwerk
+
+            6  Regeln fuer die Normdatenansetzung
+               g = RNA - Regeln fuer Nachlaesse und Autographen
+               h = Ansetzung nach dem Verzeichnis der Drucke des
+                   16. Jahrhunderts (VD 16)
+               i = Ansetzung nach dem Verzeichnis der Drucke des
+                   17. Jahrhunderts (VD 17)
+               k = LOC Name Authority
+               l = PND-Ansetzungsform
+               m = GKD-Ansetzungsform
+               n = SWD-Ansetzungsform
+               r = RSWK
+               s = RSWK-Alternativregeln
+               z = Sonstiges Regelwerk
+
+            7   Transliteration/Transkription
+                a = Transliteration
+                b = Transkription
+                z = keine Angabe
+
+            8   Stichwortkennung
+                a = Stichwortanfang- und Stichwortendezeichen
+                b = Stichwortanfangszeichen
+                c = eigene Stichwortfelder
+
+         9-10   Faecherstatistik
+                Die Faecherstatistik erfolgt nach der Deutschen
+                Bibliotheksstatistik (DBS).
+
+            11  Haupteintragungstyp
+                1 = Verfasserwerk
+                2 = Urheberwerk
+                3 = Sachtitelwerk
+
+            12  Ordnungssachtitel
+                4 = Ordnungssachtitel ist der Inhalt des
+                    Feldes 304
+                5 = Ordnungssachtitel ist der Inhalt des
+                    Feldes 310
+                7 = Ordnungssachtitel ist der Inhalt des
+                    Feldes 331
+
+
+031       ANGABEN ZUM REDAKTIONSSATZ
+
+          Indikator:
+          blank = nicht definiert
+
+          Unterfelder:
+          $a    = Art des Redaktionssatzes
+          $b    = Stand der redaktionellen Bearbeitung
+          $c    = Weitere Angaben zum Redaktionssatz
+          $d    = Inhalt des neuen (korrigierten) Feldes
+          $e    = Grund des Redaktionssatzes
+
+
+
+036-049   SEGMENT ALLGEMEINE CODIERTE ANGABEN
+
+036       LAENDERCODE
+
+          Indikator:
+          blank = nicht spezifiziert
+          a     = zweibuchstabiger Laendercode nach DIN EN 23166
+          b     = dreibuchstabiger Laendercode nach DIN EN 23166
+          c     = Laendercode der SWD
+          z     = sonstiger Laendercode
+
+
+037       SPRACHENCODE
+
+          Indikator:
+          blank = nicht spezifiziert
+          a     = Sprachencode nach DIN 2335
+          b     = Sprachencode nach ISO 639
+          c     = Sprachencode nach Z39.53 (USMARC, UNIMARC)
+          z     = Sonstiger Sprachencode
+
+
+038       CODE FUER HERKUNFTSSPRACHE / SPRACHE DES ORIGINALS
+
+          Indikator:
+          blank = nicht spezifiziert
+          a     = Sprachencode nach DIN 2335
+          b     = Sprachencode nach ISO 639
+          c     = Sprachencode nach Z39.53 (USMARC, UNIMARC)
+          z     = Sonstiger Sprachencode
+
+
+039       ZEITCODE
+
+          Indikator:
+          blank = nicht spezifiziert
+          a     = Zeitcode der Universalen Dezimal-
+                  Klassifikation (UDK-Zeitcode)
+          b     = Time Period Code der Library of Congress
+          c     = Zeitcode nach Jahreszahlen
+          z     = Sonstiger Zeitcode
+
+
+040       NOTATION FUER NORMDATEN
+
+          Indikator:
+          blank = nicht spezifiziert
+
+
+041       NOTATIONSSPEZIFISCHE CODIERUNGEN
+
+          Indikator:
+          blank = nicht definiert
+
+          Datenelemente:
+            0   Art der Notation
+                blank = Systematik der katalogisierenden Institution
+                a     = UDC     (Universal Decimal Classification)
+                b     = DDC     (Dewey Decimal Classification)
+                c     = LC      (Library of Congress Classification)
+                d     = DNB     (Systematik der Deutschen Nationalbibliographie)
+                e     = Methode Eppelsheimer
+                g     = Regensburger Verbundklassifikation
+                h     = Gesamthochschulbibliothekssystematik (GHBS)
+                l     = RPB     (Rheinland-Pfaelzische Bibliographie)
+                m     = MSC     (Mathematics Subject Classification)
+                n     = NWBib   (Nordrhein-Westfaelische Bibliographie)
+                o     = ASB     (Allgemeine Systematik fÃ¼r Bibliotheken)
+                p     = SSD     (Systematik der Stadtbibliothek Duisburg)
+                q     = SfB     (Systematik fÃ¼r Bibliotheken)
+                r     = KAB     (Klassifikation fÃ¼r Allgemeinbibliotheken)
+                s     = Systematiken der ekz
+                t     = Systematik der TUB Muenchen
+                u     = DOPAED der UB Erlangen
+                v     = IFZ-Systematik
+                w     = Systematik der Bayerischen Bibliographie
+                z     = ZDB-Systematik
+
+            1   Art der Notation bei Anwendung der Methode Eppelsheimer
+                a     = Notation des systematischen Katalogs
+                b     = Notation des Laenderkatalogs
+                c     = Notation des biographischen Katalogs
+                d     = Notation des Ortskatalogs
+
+
+
+050-064   SEGMENT  VEROEFFENTLICHUNGS- UND MATERIALSPEZIFISCHE
+          ANGABEN
+
+050       DATENTRAEGER
+
+          Indikator:
+          blank = nicht definiert
+
+          Datenelemente:
+            0  Druckschrift
+               a = nicht spezifiziert
+
+            1  Handschrift
+               a = nicht spezifiziert
+
+            2  Papierzustand
+               a = nicht spezifiziert
+               b = saeurefreies, alterungsbestaendiges Papier
+               c = kein saeurefreies, kein alterungsbestaendiges
+                   Papier
+               d = entsaeuertes Papier
+               e = Pergament
+               z = sonstiges Material
+
+            3  Mikroform
+               a = nicht spezifiziert
+               b = Mikroform-Master
+               c = Sekundaerform
+
+            4  Blindenschrifttraeger
+               a = nicht spezifiziert
+
+          5-6  Audiovisuelles Medium / Bildliche Darstellung
+
+               Tontraeger:
+               aa = CD-DA (Compact Disc Digital Audio, Single
+                    Compact Disc)
+               ab = CD-Bildplatte
+               ac = Tonband
+               ad = Compact-Cassette
+               ae = Micro-Cassette (Diktier- oder Stenocassette)
+               af = Digital Audio Tape (DAT-Cassette)
+               ag = Digital Compact Cassette (DCC-Cassette)
+               ah = Cartridge (8-Track Cartridge)
+               ai = Drahtton (Stahlband)
+               aj = Schallplatte
+               ak = Walze (Zylinder)
+               al = Klavierrolle (Mechanisches Klavier)
+               am = Filmtonspur
+               an = Tonbildreihe
+
+               Film, visuelle Projektion:
+               ba = Filmspulen
+               bb = Film-Cartridge
+               bc = Film-Cassette
+               bd = Anderes Filmmedium
+               be = Filmstreifen
+               bf = Filmstreifen-Cartridge
+               bg = Filmstreifen-Rolle
+               bh = Anderer Filmstreifentyp
+               bi = Diapositiv, Diaset, Stereograph
+               bj = Arbeitstransparent
+               bk = Arbeitstransparentstreifen
+
+               Videoaufnahme:
+               ca = Videobandcassette
+               cb = Videobandcartridge
+               cc = Videobandspulen
+               cd = Bildplatte (Videodisc)
+               ce = Anderer Videotyp
+
+               Bildliche Darstellung:
+               da = Foto
+               db = Kunstblatt (Originalgraphik, Nachdruck)
+               dc = Plakat
+
+               Sonstige Angaben:
+               uu = unbekannt
+               yy = nicht spezifiziert
+               zz = sonstige audiovisuelle Medien
+
+            7  Medienkombination
+               a = nicht spezifiziert
+
+            8  Computerdatei
+               a = nicht spezifiziert
+               b = Diskette(n)
+               c = Magnetbandkassette(n)
+               d = Optische Speicherplatte(n)
+                   (z.B. CD-ROM, CD-I, Photo-CD, WORM, DVD)
+               e = Einsteckmodul(e)
+               f = Magnetband, Magnetbaender
+               g = Computerdatei(en) im Fernzugriff
+               z = sonstige Computerdatei(en)
+
+            9  Spiele
+               a = nicht spezifiziert
+
+           10  Landkarten
+               a = nicht spezifiziert
+
+        11-13  Anzahl der physischen Einheiten
+
+
+051     VEROEFFENTLICHUNGSSPEZIFISCHE ANGABEN ZU BEGRENZTEN
+        WERKEN
+
+          Indikator:
+          blank = nicht definiert
+
+          Datenelemente:
+            0  Erscheinungsform
+               a = unselbstaendig erschienenes Werk
+               f = Fortsetzung
+               m = einbaendiges Werk - nicht Teil eines
+                   Gesamtwerks
+               n = mehrbaendiges begrenztes Werk - nicht Teil
+                   eines Gesamtwerks
+               s = einbaendiges Werk  u n d  Teil (mit
+                   Stuecktitel) eines Gesamtwerks
+               t = mehrbaendiges begrenztes Werk  u n d
+                   Teil (mit Stuecktitel) eines Gesamtwerks
+
+          1-3  Veroeffentlichungsart und Inhalt
+               a = Abstract (Referat)
+               b = Bibliographie
+               c = Katalog
+               d = Woerterbuch
+               e = Enzyklopaedie
+               f = Festschrift
+               g = Datenbank
+               h = Biographie
+               i = Registerwerk
+               j = Fortschrittsbericht
+               k = Konferenzschrift
+               l = Gesetz
+               m = Musikalia
+               n = Normschrift
+               o = Loseblattausgabe
+               p = Patentdokument
+               q = Lieferungswerk
+               r = Report
+               s = Statistik
+               t = Aufsatz
+               u = Universitaetsschrift
+               v = Sonderdruck
+               x = Schulbuch
+               z = sonstige Veroeffentlichungsart/-inhalt
+
+            4  Literaturtyp
+               f = Fachbuch
+               k = Kinderbuch, Jugendbuch, Schulbuch
+               l = Lehrbuch
+               p = populaerwissenschaftliche Literatur
+               s = Belletristik
+               t = Trivialliteratur
+               w = wissenschaftliche Literatur
+               z = Sonstiges
+
+            5  Reprint-Kennzeichen
+               r = Reprint
+
+            6  Kennzeichnung Amtlicher Druckschriften
+               b = Regierungsbezirksebene
+               f = nationalstaatliche Ebene
+               i = internationale Ebene (multinational)
+               k = Kreis
+               l = lokale Ebene (Stadt, Gemeinde)
+               m = mehrere amtliche Koerperschaften innerhalb
+                   eines Staates sind beteiligt
+               o = Koerperschaft des oeffentlichen Rechts
+               r = Region
+               s = Land (Provinz)
+               u = sonstige amtliche Druckschrift
+
+
+052       VEROEFFENTLICHUNGSSPEZIFISCHE ANGABEN ZU FORTLAUFENDEN
+          SAMMELWERKEN
+
+          Indikator:
+          blank = nicht definiert
+
+          Datenelemente:
+            0  Erscheinungsform
+               a = unselbstaendig erschienenes Werk
+               f = Fortsetzung
+               j = zeitschriftenartige Reihe
+               p = Zeitschrift
+               r = Schriftenreihe (Serie)
+               z = Zeitung
+
+          1-6  Veroeffentlichungsart und Inhalt
+               ab = Abstract (Referat)
+               aa = Amtsblatt
+               am = Amts- und Gesetzblatt
+               az = Anzeigenblatt
+               au = Aufsatz
+               bi = Bibliographie
+               kt = Bibliothekskatalog
+               da = Datenbank
+               di = Directory
+               es = Entscheidungssammlung
+               ft = Fachzeitung
+               fz = Firmenzeitschrift/-zeitung
+               fb = Fortschrittsbericht
+               ag = Gesetz(und Verordnungs-)blatt
+               ha = Haushaltsplan
+               il = Illustrierte
+               in = Index
+               ko = Konferenzschrift / Kongressbericht
+               mg = Magazin
+               me = Messeblatt
+               pa = Parlamentaria
+               rf = Referateorgan
+               re = Report-Serie
+               sc = Schul- / Universitaetsschrift
+               se = Serie
+               so = Sonderdruck
+               xj = Sonstige Periodika, juristische
+               st = Statistik
+               ub = Uebersetzungszeitschrift
+               bg = Biographie
+               ez = Enzyklopaedie
+               li = Lieferungswerk
+               lo = Loseblattausgabe
+               mu = Musikalia
+               no = Normschrift
+               pt = Patentdokument
+               rg = Registerwerk
+               uu = sonstige Veroeffentlichungsart/-inhalt
+
+               ao = Zeitung fuer die allgemeine Oeffentlichkeit
+               eo = Zeitung fuer eine eingeschraenkte
+                    Oeffentlichkeit
+               up = Ueberregionale Zeitung
+               rp = Regionale Zeitung
+               lp = Lokale Zeitung
+
+            7  Publikationsstatus
+               a = fortlaufende Publikation ohne geplanten
+                   Abschluss
+               f = Titelaenderung
+               t = eingestelltes Erscheinen
+               z = keine Angabe moeglich
+
+         8-10  Erscheinungsweise
+               d = taeglich
+               t = drei- bis fuenfmal woechentlich
+               c = zweimal woechentlich
+               w = woechentlich
+               e = vierzehntaegig
+               s = halbmonatlich
+               m = monatlich
+               b = alle zwei Monate
+               q = vierteljaehrlich
+               f = halbjaehrlich
+               a = jaehrlich
+               g = alle zwei Jahre
+               h = alle drei Jahre
+               z = unregelmaessig oder sonstige Erscheinungsweise
+
+           11  Reprint-Kennzeichen
+               r = Reprint
+
+           12  Kennzeichnung Amtlicher Druckschriften
+               b = Regierungsbezirksebene
+               f = nationalstaatliche Ebene
+               i = internationale Ebene (multinational)
+               k = Kreis
+               l = lokale Ebene (Stadt, Gemeinde)
+               m = mehrere amtliche Koerperschaften innerhalb
+                   eines Staates sind beteiligt
+               o = Koerperschaft des oeffentlichen Rechts
+               r = Region
+               s = Land (Provinz)
+               u = sonstige amtliche Druckschrift
+
+        13-14  Fruehere Erscheinungsform
+               a = unselbstaendig erschienenes Werk
+               f = Fortsetzung
+               j = zeitschriftenartige Reihe
+               p = Zeitschrift
+               r = Schriftenreihe (Serie)
+               z = Zeitung
+
+
+053       NACHLAESSE UND AUTOGRAPHEN
+
+          Indikator:
+          blank = nicht definiert
+
+          Datenelement
+            0  Nachlassmaterialien
+               b = Korrespondenz
+               l = Lebensdokument/Sachakte
+               n = Nachlass
+               s = Sammlung
+               w = Werkmanuskript
+
+
+057       MATERIALSPEZIFISCHE CODES FUER MIKROFORMEN
+
+          Indikator:
+          blank = nicht definiert
+
+          Datenelemente:
+            0  Materialart
+               a = Mikrofilm-Lochkarte
+               b = Mikrofilm-Cartridge
+               c = Mikrofilm-Cassette
+               d = Mikrofilmspule
+               e = Mikrofiche (Mikroplanfilm)
+               f = Mikrofiche-Kassette
+               g = Mikro-opaque (Microcard usw.)
+               h = Mikrofilmstreifen
+               j = Mikrofilm-Jacket
+               u = Unbekannt
+               z = Andere
+
+            1  Polaritaet
+               a = Positiv
+               b = Negativ
+               d = Gemischte Polaritaet
+               u = Unbekannt
+
+            2  Format der Mikroform
+               a =   8 mm                         (Mikrofilm)
+               d =  16 mm                         (Mikrofilm)
+               f =  35 mm                         (Mikrofilm)
+               g =  70 mm                         (Mikrofilm)
+               h = 105 mm                         (Mikrofilm)
+               l = 76,2x127 mm (3x5 in.)
+                   (Mikrofiche oder Mikro-opaque)
+               m = 101,6x152,4 mm (4x6 in., d.h. 105x148mm)
+                   (Mikrofiche oder Mikro-opaque)
+               o = 152,4x228,6 mm (6x9 in.)
+                   (Mikrofiche oder Mikro-opaque)
+               p = 82,55x187,325 mm (3 1/4 x 7 3/8 in.)
+                   (Mikrofilm-Lochkarte)
+               u = Unbekanntes Format
+               z = Andere Formate
+
+            3  Verkleinerungsrate
+               a = Niedrige Verkleinerung
+               b = Standardverkleinerung (16x - 30x)
+               c = Hohe Verkleinerung (31x - 60x)
+               d = Sehr hohe Verkleinerung (61x - 90x)
+               e = Extrem hohe Verkleinerung (91x -  )
+               u = Unbekannte Verkleinerung
+               v = Verschiedene Verkleinerungen
+
+          4-6  Spezifische Verkleinerungsrate
+
+            7  Farbe
+               a = Monochrom
+               b = Farbig
+               u = Unbekannt
+               v = Variiert
+
+            8  Emulsion des Filmes
+               a = Silberhalogenid
+               b = Diazo
+               c = Vesikularfilm
+               u = Unbekannte Emulsion
+               v = Verschiedene Emulsionen
+               x = Nicht anwendbar
+               z = Andere Emulsion
+
+            9  Generation
+               a = Erste Generation (Mutterfilm, Master)
+               b = Zweite Generation: Dupliziervorlage
+                   (Printing-Master)
+               c = Gebrauchskopie
+               u = Unbekannt
+               v = Verschiedene Generationen
+
+           10  Traegermaterial
+               a = Sicherheitstraegermaterial: Polyester,
+                   Polyethylenerephtalat
+               b = Sicherheitstraegermaterial: Acetatmaterial
+                   (Triacetat)
+               c = Kein Sicherheitstraegermaterial (z.B.
+                   Cellulosenitrat)
+               u = Unbekanntes Traegermaterial
+               v = Verschiedene Traegermaterialien
+               x = Nicht anwendbar
+
+
+
+
+065-069   SEGMENT NORMDATENSPEZIFISCHE ANGABEN
+
+065       NORMDATENSPEZIFISCHE ANGABEN ZUR PND
+
+          Indikator:
+          blank = nicht definiert
+
+          Datenelemente:
+            0  Individualisierungskennzeichen
+               a = Individualisierter Personennamensatz
+               b = Nicht-Individualisierter Personennamensatz
+
+            1  Geschlecht
+               m = maennlich
+               w = weiblich
+
+            2  Namenstyp
+               a = Pseudonym
+               b = Verlagspseudonym
+               c = Sammelpseudonym
+               d = fiktive Person (z.B. literarische Gestalt)
+               e = Familien- oder Geschlechtername
+               f = Person, stellvertretend fuer ihre Familie
+               g = Person, stellvertretend fuer eine ihr
+                   zugeordnete Einrichtung (keine Koerperschaft)
+
+            3  Personentyp
+               a = Person mit modernem Namen in einer
+                   europaeischen Sprache
+               b = Person mit modernem Namen in einer nicht-
+                   europaeischen Sprache
+               c = Person mit biblischem Namen
+               d = Person mit altgriechischem Namen
+               e = Person mit altroemischem Namen
+               f = Person mit sonstigem Namen des Altertums
+               g = Person mit mittelalterlichem Namen
+                   in einer europaeischen Sprache
+               h = Person mit mittelalterlichem Namen in einer
+                   nicht-europaeischen Sprache
+               i = Person mit byzantinischem Namen
+               j = Person mit Fuerstennamen
+               k = Person mit Namen eines geistlichen
+                   Wuerdentraegers
+
+
+066       NORMDATENSPEZIFISCHE ANGABEN ZUR GKD
+
+          Indikator:
+          blank = nicht defininiert
+
+          Datenelemente:
+            0  Typ der Koerperschaft
+               blank = nicht spezifizierte Koerperschaft
+               c     = Kongress (pauschal)
+               d     = Kongress (einzeln)
+               f     = Firma
+               g     = Gebietskoerperschaft
+               k     = kirchliche Koerperschaft
+               m     = musikalische Koerperschaft
+               u     = Un-Koerperschaft
+
+            1  Stufe der Koerperschaft
+               blank = oberste Stufe
+               a     = nachgeordnete Stufe
+
+
+067       NORMDATENSPEZIFISCHE ANGABEN ZUR SWD
+
+          Indikator:
+          blank = nicht definiert
+
+          Datenelemente:
+            0  Schlagwortkategorie
+               p = Personenschlagwort
+               k = Koerperschaftsschlagwort (fuer Koerperschaften,
+                   die unter ihrem Individualnamen angesetzt werden)
+               c = Koerperschaftsschlagwort (fuer Koerperschaften,
+                   die unter einem Geographikum angesetzt werden)
+               g = geographisches/ethnographisches Schlagwort
+               t = Sachtitel eines Werkes
+               s = Sachschlagwort
+               f = Formschlagwort
+               z = Zeitschlagwort
+
+            1  Permutationskennung fuer Hauptschlagwort bzw.
+               Schlagwortansetzung
+               1 = konstanter Wert
+
+            2  Permutationskennung fuer Hauptschlagwort bzw.
+               Schlagwortansetzung
+               0 = Feld 801 wird nicht permutiert
+               1 = Feld 801 wird permutiert
+
+            3  Permutationskennung fuer Hauptschlagwort bzw.
+               Schlagwortansetzung
+               0 = Feld 802 wird nicht permutiert
+
+            4  Permutationskennung fuer Hauptschlagwort bzw.
+               Schlagwortansetzung
+               0 = Feld 803 wird nicht permutiert
+
+            5  Permutationskennung fuer Hauptschlagwort bzw.
+               Schlagwortansetzung
+               0 = Feld 804 wird nicht permutiert
+
+            6  Permutationskennung fuer Hauptschlagwort bzw.
+               Schlagwortansetzung
+               0 = Feld 805 wird nicht permutiert
+
+            7  Hinweissatz
+               a = Hinweissatz zur Benutzung in der SWD
+
+
+068       NORMDATENSPEZIFISCHE CODIERUNGEN
+
+          Indikator:
+          blank = nicht spezifiziert
+          a     = Teilbestandskennzeichen
+          b     = Autorisierungskennzeichen
+          c     = Verwendungskennzeichen
+          d     = Herkunftskennzeichen
+          e     = Nutzungskennzeichen
+          z     = sonstige Codierung
+
+
+
+
+070-075   SEGMENT ANWENDERSPEZIFISCHE DATEN UND CODES
+
+070       IDENTIFIZIERUNGSMERKMALE DER BEARBEITENDEN INSTITUTION
+
+          Indikator:
+          blank = Kennzeichen der katalogisierenden Institution
+          a     = Kennzeichen der liefernden Institution
+          b     = Kennzeichen der korrigierenden Institution
+
+
+071       IDENTIFIZIERUNGSMERKMALE DER BESITZENDEN INSTITUTION
+
+          Indikator:
+          blank = Kennzeichen der besitzenden Institution
+                  (Bibliothekssigel)
+          a     = Bibliothekskennzeichnung der besitzenden
+                  Bibliothek (= BIK)
+          b     = Identifikationsnummer der Deutschen
+                  Bibliotheksstatistik (DBS)
+          c     = Regionales Bibliothekskennzeichen
+
+
+072       CODIERTE ANGABEN ZUR BESITZENDEN INSTITUTION
+
+          Indikator:
+          blank = nicht definiert
+
+          Datenelemente:
+          0-2  Leihverkehrsregion
+               BAW = Baden-Wuerttemberg, Saarland und Teile von
+                     Rheinland-Pfalz
+               BAY = Bayern
+               BER = Berlin und Brandenburg
+               HAM = Hamburg, Bremen und Schleswig-Holstein
+               HES = Hessen und Teile von Rheinland-Pfalz
+               MEC = Mecklenburg-Vorpommern
+               NIE = Niedersachsen
+               NRW = Nordrhein-Westfalen und Teile von Rheinland-
+                     Pfalz
+               SAA = Sachsen-Anhalt
+               SAX = Sachsen
+               THU = Thueringen
+               WEU = Europaeisches Ausland
+               WWW = regional und national uebergreifende Bestaende
+
+            3  Leihverkehrsrelevanz der besitzenden Bibliothek
+               l = leihverkehrsrelevante Bibliothek
+               n = nicht leihverkehrsrelevante Bibliothek
+               u = unbekannt bzw. nicht definiert
+
+            4  Benutzungsbeschraenkungen / Ausleihindikator
+
+            5  Geschaeftsgangstatus
+
+
+073       SONDERSAMMELGEBIETSNUMMER
+
+          Indikator:
+          blank = nicht definiert
+
+
+074       SONDERSAMMELGEBIETSNOTATION
+
+          Indikator:
+          blank = nicht definiert
+
+
+075       ZDB-PRIORITAETSZAHL
+
+          Indikator:
+          blank = nicht definiert
+
+
+
+
+076-088   SEGMENT ANWENDERSPEZIFISCHE ANGABEN
+
+076       FREI DEFINIERBARE ANWENDERSPEZIFISCHE ANGABEN,
+          KENNZEICHEN UND CODES
+
+...
+
+079       FREI DEFINIERBARE ANWENDERSPEZIFISCHE ANGABEN,
+          KENNZEICHEN UND CODES
+
+080       ZUGRIFFS- UND UPDATE-ANWEISUNGEN
+
+081       FREI DEFINIERBARE ANWENDERSPEZIFISCHE ANGABEN,
+          KENNZEICHEN UND CODES
+
+...
+
+088       FREI DEFINIERBARE ANWENDERSPEZIFISCHE ANGABEN,
+          KENNZEICHEN UND CODES

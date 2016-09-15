@@ -1,0 +1,125 @@
+http://wiki.koha-community.org/wiki/Holdings_data_fields_(9xx)
+
+UNIMARC Holding field, 3.2 default - field 995
+
+Until now only a proposal (not in the code)
+Tag/subfield
+Data element
+SQL column
+Description
+Notes
+995$0
+Withdrawn status
+items.wthdrawn
+
+
+995$2
+Lost status
+items.itemlost
+
+
+995$3
+Use restrictions
+items.restricted
+
+
+995$5
+Date acquired
+items.dateaccessioned
+
+
+995$6
+Copy number
+items.copynumber
+
+
+995$7
+URI
+items.uri
+
+
+995$8
+Koha collection
+items.ccode
+
+
+995$9
+Internal item number
+items.itemnumber
+
+
+995$a
+Homebranch (free text)
+----
+
+
+995$b
+Homebranch (coded)
+items.homebranch
+
+
+995$c
+Holding branch (coded)
+items.holdingbranch
+
+
+995$d
+Holding branch (free text)
+----
+
+
+995$e
+Shelving location
+items.location
+
+
+995$f
+Barcode
+items.barcode
+
+
+995$j
+Inventory number
+items.stocknumber
+
+
+995$k
+Call number
+items.itemcallnumber
+
+
+995$l
+Numbering (volume or other part)
+items.materials
+
+
+995$m
+Date of loan or deposit
+items.datelastborrowed
+
+
+995$n
+Expiration of loan date
+items.onloan
+
+
+995$o
+Circulation type (not for loan)
+items.notforloan
+
+
+995$r
+Type of item and material
+items.itype
+
+
+995$u
+Copy note
+items.itemnotes
+
+
+995$v
+Serial Enumeration / chronology
+items.enumchron
+
+For serials

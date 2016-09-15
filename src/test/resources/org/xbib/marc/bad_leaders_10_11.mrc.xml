@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="info:lc/xmlns/marcxchange-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="info:lc/xmlns/marcxchange-v2 http://www.loc.gov/standards/iso25577/marcxchange-2-0.xsd">
+  <record format="MARC21" type="Bibliographic">
+    <leader>01794     0000445   000 </leader>
+    <controlfield tag="001">000800000020003000008020004200038035001200080005001700092008008100109010001700190016002200207029002200229035001200251035001600263040001800279042000800297043003000305049000900335050002200344072001200366110004800378245024900426246002200675260008500697300004100782504005100823650004300874650004300917650004300960650004301003650004101046610005901087700002001146700002501166938005301191994001201244910002601256991006601282</controlfield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">0772</subfield>
+    </datafield>
+    <datafield tag="200" ind1=" " ind2=" ">
+      <subfield code="a">90311033800.0</subfield>
+    </datafield>
+    <datafield tag="051" ind1=" " ind2=" ">
+      <subfield code="a">028s                                 01609cam  22004094a 4500                </subfield>
+    </datafield>
+  </record>
+</collection>

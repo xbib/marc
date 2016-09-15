@@ -1,0 +1,3306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="info:lc/xmlns/marcxchange-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="info:lc/xmlns/marcxchange-v2 http://www.loc.gov/standards/iso25577/marcxchange-2-0.xsd">
+  <record format="MarcXchange" type="Bibliographic">
+    <leader>00000nam a22003011  4500</leader>
+    <controlfield tag="001">000000794</controlfield>
+    <controlfield tag="003">MiU</controlfield>
+    <controlfield tag="005">19880715000000.0</controlfield>
+    <controlfield tag="006">m        d        </controlfield>
+    <controlfield tag="007">cr bn ---auaua</controlfield>
+    <controlfield tag="008">880715r19701918enk      b   |00100 eng  </controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">78011026</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(RLIN)MIUG0067181-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CaOTULAS)159818938</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocm00067181</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DLC</subfield>
+      <subfield code="c">DLC</subfield>
+      <subfield code="d">MiU</subfield>
+    </datafield>
+    <datafield tag="050" ind1="0" ind2=" ">
+      <subfield code="a">PA47</subfield>
+      <subfield code="b">.C45 1970</subfield>
+    </datafield>
+    <datafield tag="082" ind1=" " ind2=" ">
+      <subfield code="a">091</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Clark, Albert Curtis,</subfield>
+      <subfield code="d">1859-1937.</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="4">
+      <subfield code="a">The descent of manuscripts.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Oxford,</subfield>
+      <subfield code="b">Clarendon Press</subfield>
+      <subfield code="c">[1969]</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">xiv, 464 p.</subfield>
+      <subfield code="c">23 cm.</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+      <subfield code="a">Reprint of the 1918 ed.</subfield>
+    </datafield>
+    <datafield tag="504" ind1=" " ind2=" ">
+      <subfield code="a">Includes bibliographical references.</subfield>
+    </datafield>
+    <datafield tag="538" ind1=" " ind2=" ">
+      <subfield code="a">Mode of access: Internet.</subfield>
+    </datafield>
+    <datafield tag="600" ind1="1" ind2="0">
+      <subfield code="a">Cicero, Marcus Tullius</subfield>
+      <subfield code="x">Manuscripts.</subfield>
+    </datafield>
+    <datafield tag="600" ind1="0" ind2="0">
+      <subfield code="a">Plato.</subfield>
+      <subfield code="t">Critias</subfield>
+      <subfield code="x">Manuscripts.</subfield>
+    </datafield>
+    <datafield tag="600" ind1="0" ind2="0">
+      <subfield code="a">Demosthenes</subfield>
+      <subfield code="x">Manuscripts.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Criticism, Textual</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Transmission of texts</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">HATCH</subfield>
+      <subfield code="c">GRAD</subfield>
+      <subfield code="h">PA 47 .C592d 1969</subfield>
+    </datafield>
+    <datafield tag="970" ind1=" " ind2=" ">
+      <subfield code="a">BK</subfield>
+      <subfield code="b">Book</subfield>
+    </datafield>
+    <datafield tag="971" ind1=" " ind2=" ">
+      <subfield code="a">MiU</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">HT</subfield>
+      <subfield code="b">avail_ht</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">AC</subfield>
+      <subfield code="b">avail_circ</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">mdp.39015004128438</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20120530</subfield>
+    </datafield>
+    <datafield tag="998" ind1=" " ind2=" ">
+      <subfield code="s">9665</subfield>
+    </datafield>
+  </record>
+  <record format="MarcXchange" type="Bibliographic">
+    <leader>00000nam a22002771  4500</leader>
+    <controlfield tag="001">000001118</controlfield>
+    <controlfield tag="003">MiU</controlfield>
+    <controlfield tag="005">19880715000000.0</controlfield>
+    <controlfield tag="006">m        d        </controlfield>
+    <controlfield tag="007">cr bn ---auaua</controlfield>
+    <controlfield tag="008">880715s1970    nju      b   |00000 eng  </controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">73120791</subfield>
+    </datafield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="a">0137319924</subfield>
+      <subfield code="c">5.95</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(RLIN)MIUG0085737-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CaOTULAS)159819321</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocm00085737</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">sdr-nrlf.b170195454</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DLC</subfield>
+      <subfield code="c">DLC</subfield>
+      <subfield code="d">MiU</subfield>
+    </datafield>
+    <datafield tag="050" ind1=" " ind2="4">
+      <subfield code="a">RC327</subfield>
+      <subfield code="b">.B41</subfield>
+    </datafield>
+    <datafield tag="082" ind1=" " ind2=" ">
+      <subfield code="a">616.89</subfield>
+    </datafield>
+    <datafield tag="110" ind1="2" ind2=" ">
+      <subfield code="a">Behavioral and Social Sciences Survey Committee.</subfield>
+      <subfield code="b">Psychiatry Panel.</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Psychiatry as a behavioral science.</subfield>
+      <subfield code="c">Edited by David A. Hamburg.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Englewood Cliffs, N.J.,</subfield>
+      <subfield code="b">Prentice-Hall</subfield>
+      <subfield code="c">[1970]</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">xii, 114 p.</subfield>
+      <subfield code="c">22 cm.</subfield>
+    </datafield>
+    <datafield tag="490" ind1="0" ind2=" ">
+      <subfield code="a">A Spectrum book</subfield>
+    </datafield>
+    <datafield tag="504" ind1=" " ind2=" ">
+      <subfield code="a">Includes bibliographical references.</subfield>
+    </datafield>
+    <datafield tag="538" ind1=" " ind2=" ">
+      <subfield code="a">Mode of access: Internet.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Psychiatry</subfield>
+      <subfield code="x">Congresses.</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Hamburg, David A.,</subfield>
+      <subfield code="d">1925-</subfield>
+      <subfield code="e">ed.</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">BUHR</subfield>
+      <subfield code="c">GRAD</subfield>
+      <subfield code="h">RC 327 .B41</subfield>
+      <subfield code="x">tr. fr. ugl 3-16-93</subfield>
+    </datafield>
+    <datafield tag="852" ind1=" " ind2=" ">
+      <subfield code="a">uc1</subfield>
+      <subfield code="b">SDR</subfield>
+      <subfield code="c">NRLF</subfield>
+    </datafield>
+    <datafield tag="970" ind1=" " ind2=" ">
+      <subfield code="a">BK</subfield>
+      <subfield code="b">Book</subfield>
+    </datafield>
+    <datafield tag="970" ind1=" " ind2=" ">
+      <subfield code="a">XC</subfield>
+      <subfield code="b">Conference</subfield>
+    </datafield>
+    <datafield tag="971" ind1=" " ind2=" ">
+      <subfield code="a">MiU</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">HT</subfield>
+      <subfield code="b">avail_ht</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">AC</subfield>
+      <subfield code="b">avail_circ</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">mdp.39015009397665</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20120530</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">uc1.$b659404</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20101209</subfield>
+    </datafield>
+    <datafield tag="998" ind1=" " ind2=" ">
+      <subfield code="s">9665</subfield>
+    </datafield>
+  </record>
+  <record format="MarcXchange" type="Bibliographic">
+    <leader>00000nam a22002771  4500</leader>
+    <controlfield tag="001">000001580</controlfield>
+    <controlfield tag="003">MiU</controlfield>
+    <controlfield tag="005">19880715000000.0</controlfield>
+    <controlfield tag="006">m        d        </controlfield>
+    <controlfield tag="007">cr bn ---auaua</controlfield>
+    <controlfield tag="008">880715s1970    enk          |00100 eng  </controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">74120936</subfield>
+    </datafield>
+    <datafield tag="015" ind1=" " ind2=" ">
+      <subfield code="a">B70-19354</subfield>
+    </datafield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="a">0631126902</subfield>
+      <subfield code="c">45/-</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(RLIN)MIUG0113131-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CaOTULAS)159819858</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocm00113131</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">sdr-wu1874523</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DLC</subfield>
+      <subfield code="c">DLC</subfield>
+      <subfield code="d">MiU</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="a">e-uk---</subfield>
+    </datafield>
+    <datafield tag="050" ind1=" " ind2="4">
+      <subfield code="a">HD1491.G7</subfield>
+      <subfield code="b">D521 1970</subfield>
+    </datafield>
+    <datafield tag="082" ind1=" " ind2=" ">
+      <subfield code="a">334/.683/0917242</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Digby, Margaret,</subfield>
+      <subfield code="d">1902-</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Agricultural co-operation in the Commonwealth.</subfield>
+    </datafield>
+    <datafield tag="250" ind1=" " ind2=" ">
+      <subfield code="a">2nd ed.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Oxford,</subfield>
+      <subfield code="b">Blackwell,</subfield>
+      <subfield code="c">1970.</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">[1], vii, 222 p.</subfield>
+      <subfield code="c">23 cm.</subfield>
+    </datafield>
+    <datafield tag="538" ind1=" " ind2=" ">
+      <subfield code="a">Mode of access: Internet.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Agriculture, Cooperative</subfield>
+      <subfield code="z">Great Britain</subfield>
+      <subfield code="x">Colonies.</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">BUHR</subfield>
+      <subfield code="c">GRAD</subfield>
+      <subfield code="h">HD1491.G7 D521 1970</subfield>
+    </datafield>
+    <datafield tag="852" ind1=" " ind2=" ">
+      <subfield code="a">wu</subfield>
+      <subfield code="b">SDR</subfield>
+      <subfield code="c">WU</subfield>
+    </datafield>
+    <datafield tag="970" ind1=" " ind2=" ">
+      <subfield code="a">BK</subfield>
+      <subfield code="b">Book</subfield>
+    </datafield>
+    <datafield tag="971" ind1=" " ind2=" ">
+      <subfield code="a">MiU</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">HT</subfield>
+      <subfield code="b">avail_ht</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">AC</subfield>
+      <subfield code="b">avail_circ</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">mdp.39015030215993</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20120530</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">wu.89041950478</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20120529</subfield>
+    </datafield>
+    <datafield tag="998" ind1=" " ind2=" ">
+      <subfield code="s">9665</subfield>
+    </datafield>
+  </record>
+  <record format="MarcXchange" type="Bibliographic">
+    <leader>00000nam a22002891  4500</leader>
+    <controlfield tag="001">000001646</controlfield>
+    <controlfield tag="003">MiU</controlfield>
+    <controlfield tag="005">19880715000000.0</controlfield>
+    <controlfield tag="006">m        d        </controlfield>
+    <controlfield tag="007">cr bn ---auaua</controlfield>
+    <controlfield tag="008">880715s1969    onc      b    00110 eng  </controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">75520445</subfield>
+    </datafield>
+    <datafield tag="015" ind1=" " ind2=" ">
+      <subfield code="a">C***</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(RLIN)MIUG0117360-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CaOTULAS)159819933</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocm00117360</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">sdr-nrlf-ucscb16742595x</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DLC</subfield>
+      <subfield code="c">DLC</subfield>
+      <subfield code="d">MiU</subfield>
+    </datafield>
+    <datafield tag="041" ind1="1" ind2=" ">
+      <subfield code="a">eng</subfield>
+      <subfield code="h">lat</subfield>
+    </datafield>
+    <datafield tag="050" ind1="0" ind2=" ">
+      <subfield code="a">PA8395.P36</subfield>
+      <subfield code="b">D513</subfield>
+    </datafield>
+    <datafield tag="082" ind1=" " ind2=" ">
+      <subfield code="a">398.2/0917/4927</subfield>
+    </datafield>
+    <datafield tag="100" ind1="0" ind2=" ">
+      <subfield code="a">Petrus Alfonsi,</subfield>
+      <subfield code="d">1062-1110?</subfield>
+    </datafield>
+    <datafield tag="240" ind1="1" ind2="0">
+      <subfield code="a">Disciplina Clericalis.</subfield>
+      <subfield code="l">English</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="4">
+      <subfield code="a">The scholar's guide.</subfield>
+      <subfield code="b">A translation of the twelfth-century Disciplina Clericalis of Pedro Alfonso,</subfield>
+      <subfield code="c">by Joseph Ramon Jones and John Esten Keller.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Toronto,</subfield>
+      <subfield code="b">Pontifical Institute of Mediaeval Studies,</subfield>
+      <subfield code="c">1969.</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">117 p.</subfield>
+      <subfield code="c">20 cm.</subfield>
+    </datafield>
+    <datafield tag="504" ind1=" " ind2=" ">
+      <subfield code="a">Includes bibliographical references.</subfield>
+    </datafield>
+    <datafield tag="538" ind1=" " ind2=" ">
+      <subfield code="a">Mode of access: Internet.</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Jones, Joseph Ramon,</subfield>
+      <subfield code="d">1935-</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Keller, John Esten,</subfield>
+      <subfield code="e">ed.</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">HATCH</subfield>
+      <subfield code="c">GRAD</subfield>
+      <subfield code="h">PA8395.P48 D63 1969</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">HATCH</subfield>
+      <subfield code="c">GRAD</subfield>
+      <subfield code="h">PA8395.P48 D63 1969</subfield>
+    </datafield>
+    <datafield tag="970" ind1=" " ind2=" ">
+      <subfield code="a">BK</subfield>
+      <subfield code="b">Book</subfield>
+    </datafield>
+    <datafield tag="971" ind1=" " ind2=" ">
+      <subfield code="a">MiU</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">HT</subfield>
+      <subfield code="b">avail_ht</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">AC</subfield>
+      <subfield code="b">avail_circ</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">mdp.39015005879807</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20120530</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">mdp.39015011292607</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20120530</subfield>
+    </datafield>
+    <datafield tag="998" ind1=" " ind2=" ">
+      <subfield code="c">SEP</subfield>
+      <subfield code="s">9115</subfield>
+    </datafield>
+  </record>
+  <record format="MarcXchange" type="Bibliographic">
+    <leader>00000nam a22002651  4500</leader>
+    <controlfield tag="001">000001659</controlfield>
+    <controlfield tag="003">MiU</controlfield>
+    <controlfield tag="005">19880715000000.0</controlfield>
+    <controlfield tag="006">m        d        </controlfield>
+    <controlfield tag="007">cr bn ---auaua</controlfield>
+    <controlfield tag="008">880715s1969    nyu      b    00110 eng  </controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">69019912</subfield>
+    </datafield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="a">0030771153</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(RLIN)MIUG0118050-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CaOTULAS)159819948</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocm00118050</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">sdr-nrlf.b146119964</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DLC</subfield>
+      <subfield code="c">DLC</subfield>
+      <subfield code="d">MiU</subfield>
+    </datafield>
+    <datafield tag="050" ind1="0" ind2=" ">
+      <subfield code="a">P291</subfield>
+      <subfield code="b">.C58</subfield>
+    </datafield>
+    <datafield tag="082" ind1=" " ind2=" ">
+      <subfield code="a">415</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Cook, Walter Anthony,</subfield>
+      <subfield code="d">1922-</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Introduction to tagmemic analysis</subfield>
+      <subfield code="c">[by] Walter A. Cook.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">New York,</subfield>
+      <subfield code="b">Holt, Rinehart and Winston</subfield>
+      <subfield code="c">[1969]</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">viii, 210 p.</subfield>
+      <subfield code="c">23 cm.</subfield>
+    </datafield>
+    <datafield tag="490" ind1="0" ind2=" ">
+      <subfield code="a">Transatlantic series in linguistics</subfield>
+    </datafield>
+    <datafield tag="504" ind1=" " ind2=" ">
+      <subfield code="a">Bibliography: p. 200-204.</subfield>
+    </datafield>
+    <datafield tag="538" ind1=" " ind2=" ">
+      <subfield code="a">Mode of access: Internet.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Tagmemics</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">BUHR</subfield>
+      <subfield code="c">GRAD</subfield>
+      <subfield code="h">P 160 .C77 1969</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">HATCH</subfield>
+      <subfield code="c">GRAD</subfield>
+      <subfield code="h">P 160 .C77 1969</subfield>
+    </datafield>
+    <datafield tag="970" ind1=" " ind2=" ">
+      <subfield code="a">BK</subfield>
+      <subfield code="b">Book</subfield>
+    </datafield>
+    <datafield tag="971" ind1=" " ind2=" ">
+      <subfield code="a">MiU</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">HT</subfield>
+      <subfield code="b">avail_ht</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">AC</subfield>
+      <subfield code="b">avail_circ</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">mdp.39015013397750</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20120530</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">mdp.39015030740339</subfield>
+      <subfield code="r">ic</subfield>
+    </datafield>
+    <datafield tag="998" ind1=" " ind2=" ">
+      <subfield code="s">9665</subfield>
+    </datafield>
+  </record>
+  <record format="MarcXchange" type="Bibliographic">
+    <leader>00000nam a22002291  4500</leader>
+    <controlfield tag="001">000003028</controlfield>
+    <controlfield tag="003">MiU</controlfield>
+    <controlfield tag="005">19880715000000.0</controlfield>
+    <controlfield tag="006">m        d        </controlfield>
+    <controlfield tag="007">cr bn ---auaua</controlfield>
+    <controlfield tag="008">880715s1971    nyu          |00011 eng  </controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">78156496</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(RLIN)MIUG0208418-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CaOTULAS)159821539</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocm00208418</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DLC</subfield>
+      <subfield code="c">DLC</subfield>
+      <subfield code="d">MiU</subfield>
+    </datafield>
+    <datafield tag="050" ind1="0" ind2=" ">
+      <subfield code="a">PZ3.V398</subfield>
+      <subfield code="b">Mo</subfield>
+      <subfield code="a">PS3543.A67</subfield>
+    </datafield>
+    <datafield tag="082" ind1=" " ind2=" ">
+      <subfield code="a">813/.5/2</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Varandyan, Emmanuel P.</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="4">
+      <subfield code="a">The Moon sails;</subfield>
+      <subfield code="b">a novel,</subfield>
+      <subfield code="c">by Emmanuel P. Varandyan.</subfield>
+    </datafield>
+    <datafield tag="250" ind1=" " ind2=" ">
+      <subfield code="a">[1st ed.]</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Delmar, N.Y.,</subfield>
+      <subfield code="b">Pinnacle,</subfield>
+      <subfield code="c">1971.</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">251 p.</subfield>
+      <subfield code="c">24 cm.</subfield>
+    </datafield>
+    <datafield tag="538" ind1=" " ind2=" ">
+      <subfield code="a">Mode of access: Internet.</subfield>
+    </datafield>
+    <datafield tag="852" ind1="1" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">BUHR</subfield>
+      <subfield code="c">GRAD</subfield>
+      <subfield code="h">828 V288mn, 1971</subfield>
+    </datafield>
+    <datafield tag="970" ind1=" " ind2=" ">
+      <subfield code="a">BK</subfield>
+      <subfield code="b">Book</subfield>
+    </datafield>
+    <datafield tag="971" ind1=" " ind2=" ">
+      <subfield code="a">MiU</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">HT</subfield>
+      <subfield code="b">avail_ht</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">AC</subfield>
+      <subfield code="b">avail_circ</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">mdp.39015030715380</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20120530</subfield>
+    </datafield>
+    <datafield tag="998" ind1=" " ind2=" ">
+      <subfield code="s">9665</subfield>
+    </datafield>
+  </record>
+  <record format="MarcXchange" type="Bibliographic">
+    <leader>00000nam a22002411  4500</leader>
+    <controlfield tag="001">000003441</controlfield>
+    <controlfield tag="003">MiU</controlfield>
+    <controlfield tag="005">19880715000000.0</controlfield>
+    <controlfield tag="006">m        d        </controlfield>
+    <controlfield tag="007">cr bn ---auaua</controlfield>
+    <controlfield tag="008">880715c19681967pau          |00000 eng  </controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">68010619</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(RLIN)MIUG0237566-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CaOTULAS)159822019</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocm00237566</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">sdr-nrlf-ucscb167381271</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DLC</subfield>
+      <subfield code="c">DLC</subfield>
+      <subfield code="d">MiU</subfield>
+    </datafield>
+    <datafield tag="050" ind1="0" ind2=" ">
+      <subfield code="a">HE2751</subfield>
+      <subfield code="b">.L9</subfield>
+    </datafield>
+    <datafield tag="082" ind1=" " ind2=" ">
+      <subfield code="a">385/.0973</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Lyon, Peter,</subfield>
+      <subfield code="d">1915-</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">To hell in a day coach;</subfield>
+      <subfield code="b">an exasperated look at American railroads.</subfield>
+    </datafield>
+    <datafield tag="250" ind1=" " ind2=" ">
+      <subfield code="a">[1st ed.]</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Philadelphia,</subfield>
+      <subfield code="b">Lippincott,</subfield>
+      <subfield code="c">1968 [c1967]</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">vii, 324 p.</subfield>
+      <subfield code="c">22 cm.</subfield>
+    </datafield>
+    <datafield tag="538" ind1=" " ind2=" ">
+      <subfield code="a">Mode of access: Internet.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Railroads</subfield>
+      <subfield code="z">United States</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">SPEC</subfield>
+      <subfield code="c">RARE</subfield>
+      <subfield code="h">HE 2751 .L98</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">SPEC</subfield>
+      <subfield code="c">THC</subfield>
+      <subfield code="h">HE 2751 .L98</subfield>
+    </datafield>
+    <datafield tag="852" ind1=" " ind2=" ">
+      <subfield code="a">uc1</subfield>
+      <subfield code="b">SDR</subfield>
+      <subfield code="c">NRLF</subfield>
+    </datafield>
+    <datafield tag="970" ind1=" " ind2=" ">
+      <subfield code="a">BK</subfield>
+      <subfield code="b">Book</subfield>
+    </datafield>
+    <datafield tag="971" ind1=" " ind2=" ">
+      <subfield code="a">MiU</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">HT</subfield>
+      <subfield code="b">avail_ht</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">mdp.39015023095238</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20120530</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">uc1.b4912198</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20111204</subfield>
+    </datafield>
+    <datafield tag="998" ind1=" " ind2=" ">
+      <subfield code="s">9665</subfield>
+    </datafield>
+  </record>
+  <record format="MarcXchange" type="Bibliographic">
+    <leader>00000nam a22003011  4500</leader>
+    <controlfield tag="001">000003823</controlfield>
+    <controlfield tag="003">MiU</controlfield>
+    <controlfield tag="005">19880715000000.0</controlfield>
+    <controlfield tag="006">m        d        </controlfield>
+    <controlfield tag="007">cr bn ---auaua</controlfield>
+    <controlfield tag="008">880715s1967    nyu      b    00010 eng  </controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">67025457</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(RLIN)MIUG0264219-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CaOTULAS)159822454</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocm00264219</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">sdr-nrlfGLAD187507-B</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DLC</subfield>
+      <subfield code="c">DLC</subfield>
+      <subfield code="d">MiU</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="a">n-us---</subfield>
+    </datafield>
+    <datafield tag="050" ind1="0" ind2=" ">
+      <subfield code="a">HV4194.A3</subfield>
+      <subfield code="b">D3 1967</subfield>
+    </datafield>
+    <datafield tag="082" ind1=" " ind2=" ">
+      <subfield code="a">362/.9/73</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Davis, Allen Freeman,</subfield>
+      <subfield code="d">1931-</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Spearheads for reform;</subfield>
+      <subfield code="b">the social settlements and the progressive movement, 1890-1914</subfield>
+      <subfield code="c">[by] Allen F. Davis.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">New York,</subfield>
+      <subfield code="b">Oxford University Press,</subfield>
+      <subfield code="c">1967.</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">xviii, 322 p.</subfield>
+      <subfield code="c">22 cm.</subfield>
+    </datafield>
+    <datafield tag="490" ind1="0" ind2=" ">
+      <subfield code="a">Urban life in America series</subfield>
+    </datafield>
+    <datafield tag="502" ind1=" " ind2=" ">
+      <subfield code="a">Issued in microfilm form as thesis, University of Wisconsin, 1960.</subfield>
+    </datafield>
+    <datafield tag="504" ind1=" " ind2=" ">
+      <subfield code="a">"A note on sources": p. 247-255. Bibliography: p. 259-304.</subfield>
+    </datafield>
+    <datafield tag="538" ind1=" " ind2=" ">
+      <subfield code="a">Mode of access: Internet.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Social settlements</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Progressivism (United States politics)</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Cities and towns</subfield>
+      <subfield code="z">United States.</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">HATCH</subfield>
+      <subfield code="c">GRAD</subfield>
+      <subfield code="h">HV 4194 .D26</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">HATCH</subfield>
+      <subfield code="c">GRAD</subfield>
+      <subfield code="h">HV 4194 .D26</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">UGL</subfield>
+      <subfield code="h">HV 4194 .D26</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">HATCH</subfield>
+      <subfield code="c">GRAD</subfield>
+      <subfield code="h">HV 4194 .D26</subfield>
+    </datafield>
+    <datafield tag="970" ind1=" " ind2=" ">
+      <subfield code="a">BK</subfield>
+      <subfield code="b">Book</subfield>
+    </datafield>
+    <datafield tag="971" ind1=" " ind2=" ">
+      <subfield code="a">MiU</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">HT</subfield>
+      <subfield code="b">avail_ht</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">AC</subfield>
+      <subfield code="b">avail_circ</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">mdp.39015002281593</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20090807</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">mdp.39015014594108</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20090807</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">mdp.39015016230438</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20120419</subfield>
+    </datafield>
+    <datafield tag="998" ind1=" " ind2=" ">
+      <subfield code="s">9665</subfield>
+    </datafield>
+  </record>
+  <record format="MarcXchange" type="Bibliographic">
+    <leader>00000nam a22002291  4500</leader>
+    <controlfield tag="001">000004152</controlfield>
+    <controlfield tag="003">MiU</controlfield>
+    <controlfield tag="005">19890605000000.0</controlfield>
+    <controlfield tag="006">m        d        </controlfield>
+    <controlfield tag="007">cr bn ---auaua</controlfield>
+    <controlfield tag="008">880715|1960|||||||          |||||||eng|u</controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">60005725</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(RLIN)MIUG0289130-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CaOTULAS)159822835</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocm00289130</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">sdr-nrlf.b120345171</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="c">OWibfC</subfield>
+      <subfield code="d">MiU</subfield>
+      <subfield code="d">CStRLIN</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Lyon, Bryce Dale,</subfield>
+      <subfield code="d">1920-</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="2">
+      <subfield code="a">A constitutional and legal history of medieval England.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">New York,</subfield>
+      <subfield code="b">Harper</subfield>
+      <subfield code="c">[1960]</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">671p.</subfield>
+      <subfield code="b">illus.</subfield>
+      <subfield code="c">25 cm.</subfield>
+    </datafield>
+    <datafield tag="504" ind1=" " ind2=" ">
+      <subfield code="a">Includes bibliography.</subfield>
+    </datafield>
+    <datafield tag="538" ind1=" " ind2=" ">
+      <subfield code="a">Mode of access: Internet.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Law</subfield>
+      <subfield code="z">Great Britain</subfield>
+      <subfield code="x">History</subfield>
+    </datafield>
+    <datafield tag="651" ind1=" " ind2="0">
+      <subfield code="a">Great Britain</subfield>
+      <subfield code="x">Politics and government</subfield>
+      <subfield code="y">To 1485.</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">HATCH</subfield>
+      <subfield code="c">GRAD</subfield>
+      <subfield code="h">JN 137 .L98</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">HATCH</subfield>
+      <subfield code="c">GRAD</subfield>
+      <subfield code="h">JN 137 .L98</subfield>
+    </datafield>
+    <datafield tag="852" ind1=" " ind2=" ">
+      <subfield code="a">uc1</subfield>
+      <subfield code="b">SDR</subfield>
+      <subfield code="c">NRLF</subfield>
+    </datafield>
+    <datafield tag="970" ind1=" " ind2=" ">
+      <subfield code="a">BK</subfield>
+      <subfield code="b">Book</subfield>
+    </datafield>
+    <datafield tag="971" ind1=" " ind2=" ">
+      <subfield code="a">MiU</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">HT</subfield>
+      <subfield code="b">avail_ht</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">AC</subfield>
+      <subfield code="b">avail_circ</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">mdp.39015004930999</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20120530</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">mdp.39015066017214</subfield>
+      <subfield code="r">ic</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="z">c.3</subfield>
+      <subfield code="u">uc1.b3457094</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20100514</subfield>
+    </datafield>
+    <datafield tag="998" ind1=" " ind2=" ">
+      <subfield code="s">9665</subfield>
+    </datafield>
+  </record>
+  <record format="MarcXchange" type="Bibliographic">
+    <leader>00000nam a22001931  4500</leader>
+    <controlfield tag="001">000004309</controlfield>
+    <controlfield tag="003">MiU</controlfield>
+    <controlfield tag="005">20120524152322.0</controlfield>
+    <controlfield tag="006">m        d        </controlfield>
+    <controlfield tag="007">cr bn ---auaua</controlfield>
+    <controlfield tag="008">880715s1964    nyua   j      000 1 eng u</controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">64019711</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(RLIN)MIUG0301132-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CaOTULAS)159823014</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocm00301132</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="c">ODaWU</subfield>
+      <subfield code="d">InLS</subfield>
+      <subfield code="d">*OCL*</subfield>
+      <subfield code="d">MiU</subfield>
+      <subfield code="d">CStRLIN</subfield>
+      <subfield code="d">EYM</subfield>
+    </datafield>
+    <datafield tag="099" ind1=" " ind2="0">
+      <subfield code="a">P Z7 .F5768 H3</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Fitzhugh, Louise.</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Harriet, the spy /</subfield>
+      <subfield code="c">written and illustrated by Louise Fitzhugh.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">New York :</subfield>
+      <subfield code="b">Harper &amp; Row,</subfield>
+      <subfield code="c">1964.</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">298 p. :</subfield>
+      <subfield code="b">ill. ;</subfield>
+      <subfield code="c">21 cm.</subfield>
+    </datafield>
+    <datafield tag="538" ind1=" " ind2=" ">
+      <subfield code="a">Mode of access: Internet.</subfield>
+    </datafield>
+    <datafield tag="590" ind1=" " ind2=" ">
+      <subfield code="a">SPEC WLPR: In the Lee Walp Family Juvenile Literature Collection. Gift of the Lee Walp Family.</subfield>
+    </datafield>
+    <datafield tag="590" ind1=" " ind2=" ">
+      <subfield code="a">SPEC WLPR: Lee Walp’s clippings and notes laid in.</subfield>
+    </datafield>
+    <datafield tag="590" ind1=" " ind2=" ">
+      <subfield code="a">SPEC WLPR: In dust jacket.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Friendship</subfield>
+      <subfield code="v">Juvenile fiction.</subfield>
+    </datafield>
+    <datafield tag="651" ind1=" " ind2="0">
+      <subfield code="a">New York (N.Y.)</subfield>
+      <subfield code="v">Juvenile fiction.</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">UGL</subfield>
+      <subfield code="h">PZ 7 .F555</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">UGL</subfield>
+      <subfield code="h">PZ 7 .F555</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">UGL</subfield>
+      <subfield code="c">CLC</subfield>
+      <subfield code="h">PZ 7 .F555</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">HATCH</subfield>
+      <subfield code="c">GRAD</subfield>
+      <subfield code="h">PZ 7 .F555</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">SPEC</subfield>
+      <subfield code="c">WLPR</subfield>
+      <subfield code="h">P Z7 .F5768 H3</subfield>
+    </datafield>
+    <datafield tag="970" ind1=" " ind2=" ">
+      <subfield code="a">BK</subfield>
+      <subfield code="b">Book</subfield>
+    </datafield>
+    <datafield tag="971" ind1=" " ind2=" ">
+      <subfield code="a">MiU</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20120524</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">HT</subfield>
+      <subfield code="b">avail_ht</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">AC</subfield>
+      <subfield code="b">avail_circ</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">mdp.39015058018790</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20120530</subfield>
+    </datafield>
+    <datafield tag="997" ind1=" " ind2=" ">
+      <subfield code="a">MARS</subfield>
+    </datafield>
+    <datafield tag="998" ind1=" " ind2=" ">
+      <subfield code="s">9665</subfield>
+    </datafield>
+  </record>
+  <record format="MarcXchange" type="Bibliographic">
+    <leader>00000nam a22002291  4500</leader>
+    <controlfield tag="001">000004964</controlfield>
+    <controlfield tag="003">MiU</controlfield>
+    <controlfield tag="005">19880715000000.0</controlfield>
+    <controlfield tag="006">m        d        </controlfield>
+    <controlfield tag="007">cr bn ---auaua</controlfield>
+    <controlfield tag="008">880715|1965|||||||          |||||||eng|u</controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">65023062</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(RLIN)MIUG0345135-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CaOTULAS)159823753</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocm00345135</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="c">OUrC</subfield>
+      <subfield code="d">MiU</subfield>
+      <subfield code="d">CStRLIN</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Nussbaum, Allen.</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Electromagnetic theory for engineers and scientists.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Englewood Cliffs, N. J.,</subfield>
+      <subfield code="b">Prentice-Hall</subfield>
+      <subfield code="c">[1965]</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">xiii, 312 p.</subfield>
+      <subfield code="b">illus.</subfield>
+    </datafield>
+    <datafield tag="490" ind1="0" ind2=" ">
+      <subfield code="a">Microwaves and fields series</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+      <subfield code="a">Prentice-Hall electrical engineering series.</subfield>
+    </datafield>
+    <datafield tag="538" ind1=" " ind2=" ">
+      <subfield code="a">Mode of access: Internet.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Electromagnetic theory</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">SCI</subfield>
+      <subfield code="c">BKS</subfield>
+      <subfield code="h">QC 670.N975</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">SCI</subfield>
+      <subfield code="c">BKS</subfield>
+      <subfield code="h">QC 670 .N975</subfield>
+    </datafield>
+    <datafield tag="970" ind1=" " ind2=" ">
+      <subfield code="a">BK</subfield>
+      <subfield code="b">Book</subfield>
+    </datafield>
+    <datafield tag="971" ind1=" " ind2=" ">
+      <subfield code="a">MiU</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">HT</subfield>
+      <subfield code="b">avail_ht</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">AC</subfield>
+      <subfield code="b">avail_circ</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">mdp.39015017245518</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20120530</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">mdp.39015017270458</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20100306</subfield>
+    </datafield>
+    <datafield tag="998" ind1=" " ind2=" ">
+      <subfield code="s">9665</subfield>
+    </datafield>
+  </record>
+  <record format="MarcXchange" type="Bibliographic">
+    <leader>00000nam a22002171  4500</leader>
+    <controlfield tag="001">000005123</controlfield>
+    <controlfield tag="003">MiU</controlfield>
+    <controlfield tag="005">19880715000000.0</controlfield>
+    <controlfield tag="006">m        d        </controlfield>
+    <controlfield tag="007">cr bn ---auaua</controlfield>
+    <controlfield tag="008">880715|1965|||||||          |||||||eng|u</controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">65018827</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(RLIN)MIUG0358204-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CaOTULAS)159823931</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocm00358204</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="c">ODaWU</subfield>
+      <subfield code="d">MiU</subfield>
+      <subfield code="d">CStRLIN</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Potter, Stephen,</subfield>
+      <subfield code="d">1900-1969.</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Coleridge and S.T.C.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">New York,</subfield>
+      <subfield code="b">Russell &amp; Russell,</subfield>
+      <subfield code="c">1965.</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">284 p.</subfield>
+    </datafield>
+    <datafield tag="504" ind1=" " ind2=" ">
+      <subfield code="a">Bibliography: p. 281-282.</subfield>
+    </datafield>
+    <datafield tag="538" ind1=" " ind2=" ">
+      <subfield code="a">Mode of access: Internet.</subfield>
+    </datafield>
+    <datafield tag="600" ind1="1" ind2="0">
+      <subfield code="a">Coleridge, Samuel Taylor,</subfield>
+      <subfield code="d">1772-1834.</subfield>
+    </datafield>
+    <datafield tag="852" ind1="1" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">BUHR</subfield>
+      <subfield code="c">GRAD</subfield>
+      <subfield code="h">828 C693O P87 1965</subfield>
+    </datafield>
+    <datafield tag="970" ind1=" " ind2=" ">
+      <subfield code="a">BK</subfield>
+      <subfield code="b">Book</subfield>
+    </datafield>
+    <datafield tag="971" ind1=" " ind2=" ">
+      <subfield code="a">MiU</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">HT</subfield>
+      <subfield code="b">avail_ht</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">AC</subfield>
+      <subfield code="b">avail_circ</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">mdp.39015030723566</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20120530</subfield>
+    </datafield>
+    <datafield tag="998" ind1=" " ind2=" ">
+      <subfield code="s">9665</subfield>
+    </datafield>
+  </record>
+  <record format="MarcXchange" type="Bibliographic">
+    <leader>00000nam a22002051  4500</leader>
+    <controlfield tag="001">000005617</controlfield>
+    <controlfield tag="003">MiU</controlfield>
+    <controlfield tag="005">19880715000000.0</controlfield>
+    <controlfield tag="006">m        d        </controlfield>
+    <controlfield tag="007">cr bn ---auaua</controlfield>
+    <controlfield tag="008">880715|1971|||||||          |||||||eng|u</controlfield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(RLIN)MIUG0400752-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CaOTULAS)159824485</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocm00400752</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="c">OU</subfield>
+      <subfield code="d">MiU</subfield>
+      <subfield code="d">CStRLIN</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Schlesinger, Janet.</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Challenge to the urban orchestra;</subfield>
+      <subfield code="b">the case of the Pittsburgh Symphony.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">[Pittsburgh?,</subfield>
+      <subfield code="c">c1971]</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">163 p.</subfield>
+      <subfield code="c">29 cm.</subfield>
+    </datafield>
+    <datafield tag="504" ind1=" " ind2=" ">
+      <subfield code="a">Bibliography: p. 158-163.</subfield>
+    </datafield>
+    <datafield tag="538" ind1=" " ind2=" ">
+      <subfield code="a">Mode of access: Internet.</subfield>
+    </datafield>
+    <datafield tag="610" ind1="2" ind2="0">
+      <subfield code="a">Pittsburgh Symphony Orchestra.</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">BUHR</subfield>
+      <subfield code="c">MUSI</subfield>
+      <subfield code="h">ML 200.8 .P69 S34</subfield>
+    </datafield>
+    <datafield tag="970" ind1=" " ind2=" ">
+      <subfield code="a">BK</subfield>
+      <subfield code="b">Book</subfield>
+    </datafield>
+    <datafield tag="971" ind1=" " ind2=" ">
+      <subfield code="a">MiU</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">HT</subfield>
+      <subfield code="b">avail_ht</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">AC</subfield>
+      <subfield code="b">avail_circ</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">mdp.39015007987756</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20120525</subfield>
+    </datafield>
+    <datafield tag="998" ind1=" " ind2=" ">
+      <subfield code="s">9665</subfield>
+    </datafield>
+  </record>
+  <record format="MarcXchange" type="Bibliographic">
+    <leader>00000nam a22002291  4500</leader>
+    <controlfield tag="001">000005933</controlfield>
+    <controlfield tag="003">MiU</controlfield>
+    <controlfield tag="005">19990430000000.0</controlfield>
+    <controlfield tag="006">m        d        </controlfield>
+    <controlfield tag="007">cr bn ---auaua</controlfield>
+    <controlfield tag="008">880715|1957|||||||          |||||||eng|u</controlfield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(RLIN)MIUG0424414-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CaOTULAS)159824847</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocm00424414</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="c">OWorP</subfield>
+      <subfield code="d">MiU</subfield>
+      <subfield code="d">CStRLIN</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Cunningham, Noble E</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="4">
+      <subfield code="a">The Jeffersonian Republicans;</subfield>
+      <subfield code="b">the formation of party organization, 1789-1801,</subfield>
+      <subfield code="c">by Noble E. Cunningham.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Chapel Hill,</subfield>
+      <subfield code="b">Published for the Institute of Early American History and Culture at Williamsburg by the Univ. of N. Car. Pr.</subfield>
+      <subfield code="c">[c1957]</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">x, 279 p.</subfield>
+      <subfield code="b">facsims.</subfield>
+      <subfield code="c">24 cm.</subfield>
+    </datafield>
+    <datafield tag="538" ind1=" " ind2=" ">
+      <subfield code="a">Mode of access: Internet.</subfield>
+    </datafield>
+    <datafield tag="610" ind1="2" ind2="0">
+      <subfield code="a">Democratic Party (U.S.)</subfield>
+      <subfield code="x">History.</subfield>
+    </datafield>
+    <datafield tag="651" ind1=" " ind2="0">
+      <subfield code="a">United States</subfield>
+      <subfield code="x">Politics and government</subfield>
+      <subfield code="y">1789-1809.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Political parties</subfield>
+      <subfield code="z">United States</subfield>
+      <subfield code="x">History.</subfield>
+    </datafield>
+    <datafield tag="710" ind1="2" ind2=" ">
+      <subfield code="a">Institute of Early American History and Culture (Williamsburg, Va.)</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">HATCH</subfield>
+      <subfield code="c">GRAD</subfield>
+      <subfield code="h">JK 2316 .C97</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">HATCH</subfield>
+      <subfield code="c">GRAD</subfield>
+      <subfield code="h">JK 2316 .C97</subfield>
+    </datafield>
+    <datafield tag="970" ind1=" " ind2=" ">
+      <subfield code="a">BK</subfield>
+      <subfield code="b">Book</subfield>
+    </datafield>
+    <datafield tag="971" ind1=" " ind2=" ">
+      <subfield code="a">MiU</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">HT</subfield>
+      <subfield code="b">avail_ht</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">AC</subfield>
+      <subfield code="b">avail_circ</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">mdp.39015007045035</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20120530</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">mdp.39015066018212</subfield>
+      <subfield code="r">ic</subfield>
+    </datafield>
+    <datafield tag="998" ind1=" " ind2=" ">
+      <subfield code="s">9665</subfield>
+    </datafield>
+  </record>
+  <record format="MarcXchange" type="Bibliographic">
+    <leader>00000nam a22002531  4500</leader>
+    <controlfield tag="001">000006347</controlfield>
+    <controlfield tag="003">MiU</controlfield>
+    <controlfield tag="005">19880715000000.0</controlfield>
+    <controlfield tag="006">m        d        </controlfield>
+    <controlfield tag="007">cr bn ---auaua</controlfield>
+    <controlfield tag="008">880715|1972|||||||          |||||||eng|u</controlfield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(RLIN)MIUG0477263-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CaOTULAS)159825319</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocm00477263</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="c">OCX</subfield>
+      <subfield code="d">MiU</subfield>
+      <subfield code="d">CStRLIN</subfield>
+    </datafield>
+    <datafield tag="082" ind1=" " ind2=" ">
+      <subfield code="a">417/.7</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Cottrell, Leonard.</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Reading the past;</subfield>
+      <subfield code="b">the story of deciphering ancient languages</subfield>
+      <subfield code="c">[by] Leonard Cottrell.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">London,</subfield>
+      <subfield code="b">J. M. Dent &amp; Sons</subfield>
+      <subfield code="c">[1972]</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">viii, 182 p.</subfield>
+      <subfield code="b">illus.</subfield>
+      <subfield code="c">24 cm.</subfield>
+    </datafield>
+    <datafield tag="504" ind1=" " ind2=" ">
+      <subfield code="a">Bibliography: p. 171-173.</subfield>
+    </datafield>
+    <datafield tag="538" ind1=" " ind2=" ">
+      <subfield code="a">Mode of access: Internet.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Hieroglyphics.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Cuneiform writing</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Alphabet.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Writing</subfield>
+      <subfield code="x">History</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">HATCH</subfield>
+      <subfield code="c">GRAD</subfield>
+      <subfield code="h">P211 .C84 1972</subfield>
+    </datafield>
+    <datafield tag="970" ind1=" " ind2=" ">
+      <subfield code="a">BK</subfield>
+      <subfield code="b">Book</subfield>
+    </datafield>
+    <datafield tag="971" ind1=" " ind2=" ">
+      <subfield code="a">MiU</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">HT</subfield>
+      <subfield code="b">avail_ht</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">AC</subfield>
+      <subfield code="b">avail_circ</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">mdp.39015003847020</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20120530</subfield>
+    </datafield>
+    <datafield tag="998" ind1=" " ind2=" ">
+      <subfield code="s">9665</subfield>
+    </datafield>
+  </record>
+  <record format="MarcXchange" type="Bibliographic">
+    <leader>00000nam a22003371  4500</leader>
+    <controlfield tag="001">000006850</controlfield>
+    <controlfield tag="003">MiU</controlfield>
+    <controlfield tag="005">20010806000000.0</controlfield>
+    <controlfield tag="008">880715s1967    ilu      b    00010 eng  </controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">66020582</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(RLIN)MIUG0513381-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CaOTULAS)159825875</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocm00513381</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">sdr-umdb.b10778883</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DLC</subfield>
+      <subfield code="c">DLC</subfield>
+      <subfield code="d">MiU</subfield>
+    </datafield>
+    <datafield tag="041" ind1="1" ind2=" ">
+      <subfield code="a">eng</subfield>
+      <subfield code="h">rus</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="a">e-ur---</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Schwarz, Solomon M.</subfield>
+    </datafield>
+    <datafield tag="240" ind1="1" ind2="0">
+      <subfield code="a">Menʹshevizm i bolʹshevizm v ikh otnoshenii k massovomu rabochemu dvizhenii︠u︡.</subfield>
+      <subfield code="l">English</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="4">
+      <subfield code="a">The Russian Revolution of 1905 :</subfield>
+      <subfield code="b">the workers' movement and the formation of Bolshevism and Menshevism /</subfield>
+      <subfield code="c">[by] Solomon M. Schwarz ; Translated by Gertrude Vakar.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Chicago :</subfield>
+      <subfield code="b">University of Chicago Press,</subfield>
+      <subfield code="c">[1967]</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">xxii, 361 p. ;</subfield>
+      <subfield code="c">24 cm.</subfield>
+    </datafield>
+    <datafield tag="490" ind1="0" ind2=" ">
+      <subfield code="a">Hoover Institution publications</subfield>
+    </datafield>
+    <datafield tag="490" ind1="0" ind2=" ">
+      <subfield code="a">History of Menshevism</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+      <subfield code="a">Translation and expansion of Menʹshevizm i bolʹshevizm v ikh otnoshenii k massovomu rabochemu dvizhenii︠u︡.</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+      <subfield code="a">"One of a series arising from the work of the Inter-university Project on the History of the Menshevik Movement."</subfield>
+    </datafield>
+    <datafield tag="504" ind1=" " ind2=" ">
+      <subfield code="a">Includes bibliographical references.</subfield>
+    </datafield>
+    <datafield tag="610" ind1="2" ind2="0">
+      <subfield code="a">Rossiĭskai︠a︡ sot︠s︡ial-demokraticheskai︠a︡ rabochai︠a︡ partii︠a︡.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Labor movement</subfield>
+      <subfield code="z">Soviet Union.</subfield>
+    </datafield>
+    <datafield tag="651" ind1=" " ind2="0">
+      <subfield code="a">Russia</subfield>
+      <subfield code="x">History</subfield>
+      <subfield code="y">Revolution, 1905-1907.</subfield>
+    </datafield>
+    <datafield tag="710" ind1="2" ind2=" ">
+      <subfield code="a">Inter-university Project on the History of the Menshevik Movement.</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">HATCH</subfield>
+      <subfield code="c">GRAD</subfield>
+      <subfield code="h">JN6598.R8 S423</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">HATCH</subfield>
+      <subfield code="c">GRAD</subfield>
+      <subfield code="h">JN6598.R8 S423</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">SPEC</subfield>
+      <subfield code="c">LABD</subfield>
+      <subfield code="h">JN 6598 .R8 S423</subfield>
+      <subfield code="x">30215341</subfield>
+    </datafield>
+    <datafield tag="970" ind1=" " ind2=" ">
+      <subfield code="a">BK</subfield>
+      <subfield code="b">Book</subfield>
+    </datafield>
+    <datafield tag="971" ind1=" " ind2=" ">
+      <subfield code="a">MiU</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">AC</subfield>
+      <subfield code="b">avail_circ</subfield>
+    </datafield>
+    <datafield tag="998" ind1=" " ind2=" ">
+      <subfield code="s">9615</subfield>
+    </datafield>
+  </record>
+  <record format="MarcXchange" type="Bibliographic">
+    <leader>00000nam a22002411  4500</leader>
+    <controlfield tag="001">000008015</controlfield>
+    <controlfield tag="003">MiU</controlfield>
+    <controlfield tag="005">19890306000000.0</controlfield>
+    <controlfield tag="006">m        d        </controlfield>
+    <controlfield tag="007">cr bn ---auaua</controlfield>
+    <controlfield tag="008">880715s1973    nyua     d   |00000 eng  </controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">73153601</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(RLIN)MIUG0590313-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CaOTULAS)159827164</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocm00590313</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DLC</subfield>
+      <subfield code="c">DLC</subfield>
+      <subfield code="d">MiU</subfield>
+    </datafield>
+    <datafield tag="050" ind1="0" ind2=" ">
+      <subfield code="a">PE1625</subfield>
+      <subfield code="b">.S713 1973</subfield>
+    </datafield>
+    <datafield tag="082" ind1=" " ind2=" ">
+      <subfield code="a">423</subfield>
+    </datafield>
+    <datafield tag="245" ind1="0" ind2="0">
+      <subfield code="a">Funk &amp; Wagnalls standard dictionary of the English language.</subfield>
+    </datafield>
+    <datafield tag="250" ind1=" " ind2=" ">
+      <subfield code="a">International ed.,</subfield>
+      <subfield code="b">with special supplementary features.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">New York,</subfield>
+      <subfield code="b">Funk &amp; Wagnalls</subfield>
+      <subfield code="c">[1973]</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">2 v. (xx, 1695 p.)</subfield>
+      <subfield code="b">illus. (part col.)</subfield>
+      <subfield code="c">29 cm.</subfield>
+    </datafield>
+    <datafield tag="538" ind1=" " ind2=" ">
+      <subfield code="a">Mode of access: Internet.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">English language</subfield>
+      <subfield code="x">Dictionaries</subfield>
+    </datafield>
+    <datafield tag="740" ind1="0" ind2=" ">
+      <subfield code="a">Funk and Wagnalls standard dictionary of the English language.</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">HATCH</subfield>
+      <subfield code="c">GRAD</subfield>
+      <subfield code="h">PE 1625 .S785 1973</subfield>
+      <subfield code="x">tr. fr. GLRF 9-5-97</subfield>
+    </datafield>
+    <datafield tag="970" ind1=" " ind2=" ">
+      <subfield code="a">BK</subfield>
+      <subfield code="b">Book</subfield>
+    </datafield>
+    <datafield tag="970" ind1=" " ind2=" ">
+      <subfield code="a">DI</subfield>
+      <subfield code="b">Dictionaries</subfield>
+    </datafield>
+    <datafield tag="971" ind1=" " ind2=" ">
+      <subfield code="a">MiU</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">HT</subfield>
+      <subfield code="b">avail_ht</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">AC</subfield>
+      <subfield code="b">avail_circ</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="z">v.1</subfield>
+      <subfield code="u">mdp.39015066305270</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20120530</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="z">v.2</subfield>
+      <subfield code="u">mdp.39015066305429</subfield>
+      <subfield code="r">ic</subfield>
+    </datafield>
+    <datafield tag="998" ind1=" " ind2=" ">
+      <subfield code="s">9665</subfield>
+    </datafield>
+  </record>
+  <record format="MarcXchange" type="Bibliographic">
+    <leader>00000nam a22002531  4500</leader>
+    <controlfield tag="001">000008105</controlfield>
+    <controlfield tag="003">MiU</controlfield>
+    <controlfield tag="005">20071115093023.0</controlfield>
+    <controlfield tag="006">m        d        </controlfield>
+    <controlfield tag="007">cr bn ---auaua</controlfield>
+    <controlfield tag="008">880715s1973    nyu          |00010 eng  </controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">72014035</subfield>
+    </datafield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="a">0442214707</subfield>
+      <subfield code="c">$5.95</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(RLIN)MIUG0595319-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CaOTULAS)159827258</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocm00595319</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">sdr-wu88160</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DLC</subfield>
+      <subfield code="c">DLC</subfield>
+      <subfield code="d">MiU</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+      <subfield code="a">n-us---</subfield>
+    </datafield>
+    <datafield tag="050" ind1="0" ind2=" ">
+      <subfield code="a">HQ536</subfield>
+      <subfield code="b">.B86</subfield>
+    </datafield>
+    <datafield tag="082" ind1=" " ind2=" ">
+      <subfield code="a">301.42/0973</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Burger, Robert E.</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="4">
+      <subfield code="a">The love contract;</subfield>
+      <subfield code="b">handbook for a liberated marriage</subfield>
+      <subfield code="c">[by] Robert E. Burger.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">New York,</subfield>
+      <subfield code="b">Van Nostrand Reinhold</subfield>
+      <subfield code="c">[1973]</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">ix, 107 p.</subfield>
+      <subfield code="c">24 cm.</subfield>
+    </datafield>
+    <datafield tag="538" ind1=" " ind2=" ">
+      <subfield code="a">Mode of access: Internet.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Marriage</subfield>
+      <subfield code="z">United States</subfield>
+    </datafield>
+    <datafield tag="852" ind1=" " ind2=" ">
+      <subfield code="a">wu</subfield>
+      <subfield code="b">SDR</subfield>
+      <subfield code="c">WU</subfield>
+    </datafield>
+    <datafield tag="970" ind1=" " ind2=" ">
+      <subfield code="a">BK</subfield>
+      <subfield code="b">Book</subfield>
+    </datafield>
+    <datafield tag="971" ind1=" " ind2=" ">
+      <subfield code="a">MiU</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">HT</subfield>
+      <subfield code="b">avail_ht</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">AC</subfield>
+      <subfield code="b">avail_circ</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">wu.89031137284</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20120530</subfield>
+    </datafield>
+    <datafield tag="998" ind1=" " ind2=" ">
+      <subfield code="s">9665</subfield>
+    </datafield>
+  </record>
+  <record format="MarcXchange" type="Bibliographic">
+    <leader>00000nam a22002171  4500</leader>
+    <controlfield tag="001">000008459</controlfield>
+    <controlfield tag="003">MiU</controlfield>
+    <controlfield tag="005">19880715000000.0</controlfield>
+    <controlfield tag="006">m        d        </controlfield>
+    <controlfield tag="007">cr bn ---auaua</controlfield>
+    <controlfield tag="008">880715|1970|||||||          |||||||ita|u</controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">76881291</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(RLIN)MIUG0615380-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CaOTULAS)159827651</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocm00615380</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">sdr-nrlfGLAD17038931-B</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="c">OCU</subfield>
+      <subfield code="d">MiU</subfield>
+      <subfield code="d">CStRLIN</subfield>
+    </datafield>
+    <datafield tag="050" ind1=" " ind2="4">
+      <subfield code="a">PA2402</subfield>
+      <subfield code="b">.S21</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Savelli, Angelo,</subfield>
+      <subfield code="d">1930-</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Nuovissime interpretazioni etrusche.</subfield>
+      <subfield code="b">Le lamine d'oro di Pyrgi, l'iscrizione estrusco-latina del Lapis Niger, la stele greco-tirrena di Lemno.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Bologna,</subfield>
+      <subfield code="b">Tip. Accorsi,</subfield>
+      <subfield code="c">1970.</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">78 p.</subfield>
+      <subfield code="c">24 cm.</subfield>
+    </datafield>
+    <datafield tag="538" ind1=" " ind2=" ">
+      <subfield code="a">Mode of access: Internet.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Inscriptions, Etruscan</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">HATCH</subfield>
+      <subfield code="c">GRAD</subfield>
+      <subfield code="h">PA2402 .S21</subfield>
+    </datafield>
+    <datafield tag="852" ind1=" " ind2=" ">
+      <subfield code="a">uc1</subfield>
+      <subfield code="b">SDR</subfield>
+      <subfield code="c">NRLF</subfield>
+    </datafield>
+    <datafield tag="970" ind1=" " ind2=" ">
+      <subfield code="a">BK</subfield>
+      <subfield code="b">Book</subfield>
+    </datafield>
+    <datafield tag="971" ind1=" " ind2=" ">
+      <subfield code="a">MiU</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">HT</subfield>
+      <subfield code="b">avail_ht</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">AC</subfield>
+      <subfield code="b">avail_circ</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">mdp.39015025030563</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20120530</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">uc1.b3176758</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20090915</subfield>
+    </datafield>
+    <datafield tag="998" ind1=" " ind2=" ">
+      <subfield code="s">9665</subfield>
+    </datafield>
+  </record>
+  <record format="MarcXchange" type="Bibliographic">
+    <leader>00000nam a22003011  4500</leader>
+    <controlfield tag="001">000009080</controlfield>
+    <controlfield tag="003">MiU</controlfield>
+    <controlfield tag="005">19880715000000.0</controlfield>
+    <controlfield tag="006">m        d        </controlfield>
+    <controlfield tag="007">cr bn ---auaua</controlfield>
+    <controlfield tag="008">880715s1972    enka     b   |00110 engx </controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">73160987</subfield>
+    </datafield>
+    <datafield tag="015" ind1=" " ind2=" ">
+      <subfield code="a">B73-00589</subfield>
+    </datafield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="a">0140806652</subfield>
+      <subfield code="c">£1.25</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(RLIN)MIUG0651225-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CaOTULAS)159828340</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocm00651225</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DLC</subfield>
+      <subfield code="c">DLC</subfield>
+      <subfield code="d">MiU</subfield>
+      <subfield code="d">CStRLIN</subfield>
+    </datafield>
+    <datafield tag="050" ind1="0" ind2=" ">
+      <subfield code="a">P41</subfield>
+      <subfield code="b">.P72</subfield>
+    </datafield>
+    <datafield tag="082" ind1=" " ind2=" ">
+      <subfield code="a">301.2/1</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Pride, J. B. E.</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Sociolinguistics: selected readings;</subfield>
+      <subfield code="c">edited by J. B. Pride and Janet Holmes.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">[Harmondsworth,]</subfield>
+      <subfield code="b">Penguin,</subfield>
+      <subfield code="c">[1972]</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">381 p.</subfield>
+      <subfield code="b">illus.</subfield>
+      <subfield code="c">20 cm. index.</subfield>
+    </datafield>
+    <datafield tag="490" ind1="0" ind2=" ">
+      <subfield code="a">Penguin education</subfield>
+    </datafield>
+    <datafield tag="490" ind1="0" ind2=" ">
+      <subfield code="a">Penguin modern linguistics readings</subfield>
+    </datafield>
+    <datafield tag="504" ind1=" " ind2=" ">
+      <subfield code="a">Bibliography: p. 367-369.</subfield>
+    </datafield>
+    <datafield tag="538" ind1=" " ind2=" ">
+      <subfield code="a">Mode of access: Internet.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Sociolinguistics.</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Holmes, Janet.</subfield>
+      <subfield code="e">joint comp.</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">HATCH</subfield>
+      <subfield code="c">GRAD</subfield>
+      <subfield code="h">P 41 .P946</subfield>
+    </datafield>
+    <datafield tag="970" ind1=" " ind2=" ">
+      <subfield code="a">BK</subfield>
+      <subfield code="b">Book</subfield>
+    </datafield>
+    <datafield tag="971" ind1=" " ind2=" ">
+      <subfield code="a">MiU</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">HT</subfield>
+      <subfield code="b">avail_ht</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">AC</subfield>
+      <subfield code="b">avail_circ</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">mdp.39015019228280</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20120530</subfield>
+    </datafield>
+    <datafield tag="998" ind1=" " ind2=" ">
+      <subfield code="s">9665</subfield>
+    </datafield>
+  </record>
+  <record format="MarcXchange" type="Bibliographic">
+    <leader>00000nam a22002531  4500</leader>
+    <controlfield tag="001">000009820</controlfield>
+    <controlfield tag="003">MiU</controlfield>
+    <controlfield tag="005">19880715000000.0</controlfield>
+    <controlfield tag="006">m        d        </controlfield>
+    <controlfield tag="007">cr bn ---auaua</controlfield>
+    <controlfield tag="008">880715s1973    nyu      b    00010beng  </controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">73000507</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(RLIN)MIUG0695465-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CaOTULAS)159829137</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocm00695465</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DLC</subfield>
+      <subfield code="c">DLC</subfield>
+      <subfield code="d">MiU</subfield>
+    </datafield>
+    <datafield tag="050" ind1="0" ind2=" ">
+      <subfield code="a">PS1291</subfield>
+      <subfield code="b">.H8</subfield>
+    </datafield>
+    <datafield tag="082" ind1=" " ind2=" ">
+      <subfield code="a">811/.2</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Hudspeth, Robert N.</subfield>
+    </datafield>
+    <datafield tag="245" ind1="0" ind2="0">
+      <subfield code="a">Ellery Channing,</subfield>
+      <subfield code="c">by Robert N. Hudspeth.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">New York,</subfield>
+      <subfield code="b">Twayne Publishers</subfield>
+      <subfield code="c">[1973]</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">182 p.</subfield>
+      <subfield code="c">21 cm.</subfield>
+    </datafield>
+    <datafield tag="490" ind1="0" ind2=" ">
+      <subfield code="a">Twayne's United States authors series,</subfield>
+      <subfield code="v">TUSAS 223</subfield>
+    </datafield>
+    <datafield tag="504" ind1=" " ind2=" ">
+      <subfield code="a">Bibliography: p. 171-177.</subfield>
+    </datafield>
+    <datafield tag="538" ind1=" " ind2=" ">
+      <subfield code="a">Mode of access: Internet.</subfield>
+    </datafield>
+    <datafield tag="600" ind1="1" ind2="0">
+      <subfield code="a">Channing, William Ellery,</subfield>
+      <subfield code="d">1817-1901.</subfield>
+    </datafield>
+    <datafield tag="852" ind1="1" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">BUHR</subfield>
+      <subfield code="c">GRAD</subfield>
+      <subfield code="h">828 C458O H88</subfield>
+    </datafield>
+    <datafield tag="970" ind1=" " ind2=" ">
+      <subfield code="a">BK</subfield>
+      <subfield code="b">Book</subfield>
+    </datafield>
+    <datafield tag="970" ind1=" " ind2=" ">
+      <subfield code="a">BI</subfield>
+      <subfield code="b">Biography</subfield>
+    </datafield>
+    <datafield tag="971" ind1=" " ind2=" ">
+      <subfield code="a">MiU</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">HT</subfield>
+      <subfield code="b">avail_ht</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">AC</subfield>
+      <subfield code="b">avail_circ</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">mdp.39015030727799</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20120530</subfield>
+    </datafield>
+    <datafield tag="998" ind1=" " ind2=" ">
+      <subfield code="s">9125</subfield>
+    </datafield>
+  </record>
+  <record format="MarcXchange" type="Bibliographic">
+    <leader>00000nam a22002411  4500</leader>
+    <controlfield tag="001">000010179</controlfield>
+    <controlfield tag="003">MiU</controlfield>
+    <controlfield tag="005">19880715000000.0</controlfield>
+    <controlfield tag="006">m        d        </controlfield>
+    <controlfield tag="007">cr bn ---auaua</controlfield>
+    <controlfield tag="008">880715s1962    nyu           00001 eng  </controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">62009606/L/r66</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(RLIN)MIUG0710844-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CaOTULAS)159829527</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocm00710844</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">sdr-ucsc.b15850766</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DLC</subfield>
+      <subfield code="c">DLC</subfield>
+      <subfield code="d">MiU</subfield>
+    </datafield>
+    <datafield tag="041" ind1="1" ind2=" ">
+      <subfield code="a">enggre</subfield>
+    </datafield>
+    <datafield tag="050" ind1="0" ind2=" ">
+      <subfield code="a">PZ3.K1884</subfield>
+      <subfield code="b">Sai</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Kazantzakis, Nikos,</subfield>
+      <subfield code="d">1883-1957.</subfield>
+    </datafield>
+    <datafield tag="240" ind1="0" ind2="3">
+      <subfield code="a">Ho phtochoules tou Theou.</subfield>
+      <subfield code="l">English</subfield>
+    </datafield>
+    <datafield tag="245" ind1="0" ind2="0">
+      <subfield code="a">Saint Francis,</subfield>
+      <subfield code="b">a novel.</subfield>
+      <subfield code="c">Translated from the Greek by P. A. Bien.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">New York,</subfield>
+      <subfield code="b">Simon and Schuster,</subfield>
+      <subfield code="c">1962.</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">379 p.</subfield>
+      <subfield code="c">22 cm.</subfield>
+    </datafield>
+    <datafield tag="538" ind1=" " ind2=" ">
+      <subfield code="a">Mode of access: Internet.</subfield>
+    </datafield>
+    <datafield tag="600" ind1="0" ind2="0">
+      <subfield code="a">Francis,</subfield>
+      <subfield code="c">of Assisi, Saint,</subfield>
+      <subfield code="d">1182-1226</subfield>
+      <subfield code="x">Fiction.</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">HATCH</subfield>
+      <subfield code="c">GRAD</subfield>
+      <subfield code="h">PA 5610 .K23 P53</subfield>
+    </datafield>
+    <datafield tag="852" ind1=" " ind2=" ">
+      <subfield code="a">uc1</subfield>
+      <subfield code="b">SDR</subfield>
+      <subfield code="c">UCSC</subfield>
+    </datafield>
+    <datafield tag="970" ind1=" " ind2=" ">
+      <subfield code="a">BK</subfield>
+      <subfield code="b">Book</subfield>
+    </datafield>
+    <datafield tag="971" ind1=" " ind2=" ">
+      <subfield code="a">MiU</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">HT</subfield>
+      <subfield code="b">avail_ht</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">AC</subfield>
+      <subfield code="b">avail_circ</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">mdp.39015002669383</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20120530</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">uc1.32106006141748</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20100906</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">uc1.32106016310622</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20100906</subfield>
+    </datafield>
+    <datafield tag="998" ind1=" " ind2=" ">
+      <subfield code="s">9665</subfield>
+    </datafield>
+  </record>
+  <record format="MarcXchange" type="Bibliographic">
+    <leader>00000nam a22002171  4500</leader>
+    <controlfield tag="001">000010638</controlfield>
+    <controlfield tag="003">MiU</controlfield>
+    <controlfield tag="005">19990204000000.0</controlfield>
+    <controlfield tag="006">m        d        </controlfield>
+    <controlfield tag="007">cr bn ---auaua</controlfield>
+    <controlfield tag="008">880715|1971|||||||          |||||||spa|u</controlfield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(RLIN)MIUG0735125-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CaOTULAS)159830027</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocm17092730</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="c">NIC</subfield>
+      <subfield code="d">MiU</subfield>
+      <subfield code="d">CStRLIN</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Hudson, W. H.</subfield>
+      <subfield code="q">(William Henry),</subfield>
+      <subfield code="d">1841-1922.</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Hudson en Quilmes y Chascomus.</subfield>
+      <subfield code="c">Estudio, selección y notas de Alcides Degiuseppe.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">La Plata,</subfield>
+      <subfield code="b">Ministerio de Educación, Subsecretaria de Cultura</subfield>
+      <subfield code="c">[1971]</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">101 p.</subfield>
+      <subfield code="c">23 cm.</subfield>
+    </datafield>
+    <datafield tag="490" ind1="1" ind2=" ">
+      <subfield code="a">Cuadernos del Instituto de Literatura, 8</subfield>
+    </datafield>
+    <datafield tag="538" ind1=" " ind2=" ">
+      <subfield code="a">Mode of access: Internet.</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Degiuseppe, Alcides.</subfield>
+    </datafield>
+    <datafield tag="830" ind1=" " ind2="0">
+      <subfield code="a">Cuadernos del Instituto de Literatura : Serie "Nuestra provincia" ;</subfield>
+      <subfield code="v">8</subfield>
+    </datafield>
+    <datafield tag="852" ind1="1" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">BUHR</subfield>
+      <subfield code="c">GRAD</subfield>
+      <subfield code="h">828 H8861, D32</subfield>
+    </datafield>
+    <datafield tag="970" ind1=" " ind2=" ">
+      <subfield code="a">BK</subfield>
+      <subfield code="b">Book</subfield>
+    </datafield>
+    <datafield tag="971" ind1=" " ind2=" ">
+      <subfield code="a">MiU</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">HT</subfield>
+      <subfield code="b">avail_ht</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">AC</subfield>
+      <subfield code="b">avail_circ</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">mdp.39015002388257</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20120530</subfield>
+    </datafield>
+    <datafield tag="998" ind1=" " ind2=" ">
+      <subfield code="s">9665</subfield>
+    </datafield>
+  </record>
+  <record format="MarcXchange" type="Bibliographic">
+    <leader>00000nam a22002771  4500</leader>
+    <controlfield tag="001">000010709</controlfield>
+    <controlfield tag="003">MiU</controlfield>
+    <controlfield tag="005">19880715000000.0</controlfield>
+    <controlfield tag="006">m        d        </controlfield>
+    <controlfield tag="007">cr bn ---auaua</controlfield>
+    <controlfield tag="008">880715|1973|||||||          |||||||ger|u</controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">73348769</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(RLIN)MIUG0738825-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CaOTULAS)159830103</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocm00738825</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="c">OOxM</subfield>
+      <subfield code="d">MiU</subfield>
+      <subfield code="d">CStRLIN</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">gerlat</subfield>
+    </datafield>
+    <datafield tag="050" ind1=" " ind2=" ">
+      <subfield code="a">PA8570.R5</subfield>
+      <subfield code="b">H6 1973</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Reuchlin, Johann,</subfield>
+      <subfield code="d">1455-1522.</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Johann Reuchlins Komödien;</subfield>
+      <subfield code="b">ein Beitrag zur Geschichte des lateinischen Schuldramas.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Halle a. S.,</subfield>
+      <subfield code="b">Verlag der Buchhandlung des Waisenhauses,</subfield>
+      <subfield code="c">1888</subfield>
+      <subfield code="a">[Leipzig,</subfield>
+      <subfield code="b">Zentralantiquariat der Deutschen Demokratischen Republik,</subfield>
+      <subfield code="c">1973]</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">viii, 172 p.</subfield>
+      <subfield code="c">21 cm.</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+      <subfield code="a">Includes text of J. Reuchlin's Progymnasmata scenica and his Sergius.</subfield>
+    </datafield>
+    <datafield tag="504" ind1=" " ind2=" ">
+      <subfield code="a">Bibliography: p. [155]-166.</subfield>
+    </datafield>
+    <datafield tag="538" ind1=" " ind2=" ">
+      <subfield code="a">Mode of access: Internet.</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Holstein, Hugo,</subfield>
+      <subfield code="d">1834-1904.</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Reuchlin, Johann,</subfield>
+      <subfield code="d">1455-1522.</subfield>
+      <subfield code="t">Progymnasmata scenica.</subfield>
+      <subfield code="f">1973.</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Reuchlin, Johann,</subfield>
+      <subfield code="d">1455-1522.</subfield>
+      <subfield code="t">Sergius.</subfield>
+      <subfield code="f">1973.</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">HATCH</subfield>
+      <subfield code="c">GRAD</subfield>
+      <subfield code="h">PA8570.R5A6 H75 1888 a</subfield>
+    </datafield>
+    <datafield tag="970" ind1=" " ind2=" ">
+      <subfield code="a">BK</subfield>
+      <subfield code="b">Book</subfield>
+    </datafield>
+    <datafield tag="971" ind1=" " ind2=" ">
+      <subfield code="a">MiU</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">HT</subfield>
+      <subfield code="b">avail_ht</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">HA</subfield>
+      <subfield code="b">avail_ht_fulltext</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">AO</subfield>
+      <subfield code="b">avail_online</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">AC</subfield>
+      <subfield code="b">avail_circ</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">mdp.39015017693311</subfield>
+      <subfield code="r">pdus</subfield>
+      <subfield code="d">20120530</subfield>
+    </datafield>
+    <datafield tag="998" ind1=" " ind2=" ">
+      <subfield code="s">9665</subfield>
+    </datafield>
+  </record>
+  <record format="MarcXchange" type="Bibliographic">
+    <leader>00000nam a22002651  4500</leader>
+    <controlfield tag="001">000011552</controlfield>
+    <controlfield tag="003">MiU</controlfield>
+    <controlfield tag="005">19880715000000.0</controlfield>
+    <controlfield tag="006">m        d        </controlfield>
+    <controlfield tag="007">cr bn ---auaua</controlfield>
+    <controlfield tag="008">880715m19711972mau      b    00000 lat u</controlfield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(RLIN)MIUG0786193-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CaOTULAS)159831006</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocm00187779</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="c">OCU</subfield>
+      <subfield code="d">MiU</subfield>
+      <subfield code="d">CStRLIN</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">lateng</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Seneca, Lucius Annaeus,</subfield>
+      <subfield code="d">ca. 4 B.C.-65 A.D.</subfield>
+    </datafield>
+    <datafield tag="240" ind1="1" ind2="0">
+      <subfield code="a">Naturales quaestiones.</subfield>
+      <subfield code="l">English &amp; Latin.</subfield>
+      <subfield code="s">Corcoran</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Naturales quaestiones.</subfield>
+      <subfield code="c">With an English translation by Thomas H. Corcoran.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Cambridge, Mass.,</subfield>
+      <subfield code="b">Harvard University Press,</subfield>
+      <subfield code="c">1971-1972.</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">2 v.</subfield>
+      <subfield code="c">17 cm.</subfield>
+    </datafield>
+    <datafield tag="490" ind1="0" ind2=" ">
+      <subfield code="a">Seneca in ten volumes,</subfield>
+      <subfield code="v">VII, X</subfield>
+    </datafield>
+    <datafield tag="490" ind1="0" ind2=" ">
+      <subfield code="a">Loeb classical library. [Latin authors]</subfield>
+      <subfield code="v">no. 450, 457</subfield>
+    </datafield>
+    <datafield tag="504" ind1=" " ind2=" ">
+      <subfield code="a">Bibliography: v. 1, p. xxvii-xxix.</subfield>
+    </datafield>
+    <datafield tag="505" ind1="0" ind2=" ">
+      <subfield code="a">1. Book I-III.--2. Book IV-VII.</subfield>
+    </datafield>
+    <datafield tag="538" ind1=" " ind2=" ">
+      <subfield code="a">Mode of access: Internet.</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Corcoran, Thomas H.</subfield>
+      <subfield code="e">tr.</subfield>
+    </datafield>
+    <datafield tag="852" ind1="1" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">HATCH</subfield>
+      <subfield code="c">GRAD</subfield>
+      <subfield code="h">878 S2na 1971</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">HATCH</subfield>
+      <subfield code="c">GRAD</subfield>
+      <subfield code="h">PA6661 .N3 1971</subfield>
+    </datafield>
+    <datafield tag="970" ind1=" " ind2=" ">
+      <subfield code="a">BK</subfield>
+      <subfield code="b">Book</subfield>
+    </datafield>
+    <datafield tag="971" ind1=" " ind2=" ">
+      <subfield code="a">MiU</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">HT</subfield>
+      <subfield code="b">avail_ht</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">AC</subfield>
+      <subfield code="b">avail_circ</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="z">v.1</subfield>
+      <subfield code="u">mdp.39015008723838</subfield>
+      <subfield code="r">ic</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="z">v.1</subfield>
+      <subfield code="u">mdp.39015010681172</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20120530</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="z">v.2</subfield>
+      <subfield code="u">mdp.39015004109255</subfield>
+      <subfield code="r">ic</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="z">v.2</subfield>
+      <subfield code="u">mdp.39015010681180</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20120524</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="z">v.2</subfield>
+      <subfield code="u">mdp.39015019055956</subfield>
+      <subfield code="r">ic</subfield>
+    </datafield>
+    <datafield tag="998" ind1=" " ind2=" ">
+      <subfield code="s">9125</subfield>
+    </datafield>
+  </record>
+  <record format="MarcXchange" type="Bibliographic">
+    <leader>00000nam a22002531  4500</leader>
+    <controlfield tag="001">000012062</controlfield>
+    <controlfield tag="003">MiU</controlfield>
+    <controlfield tag="005">19880715000000.0</controlfield>
+    <controlfield tag="006">m        d        </controlfield>
+    <controlfield tag="007">cr bn ---auaua</controlfield>
+    <controlfield tag="008">880715s1973    nyua          00010 eng  </controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">72097069</subfield>
+    </datafield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="a">0913634093</subfield>
+      <subfield code="c">$19.95</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(RLIN)MIUG0804868-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CaOTULAS)159831548</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocm00804868</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DLC</subfield>
+      <subfield code="c">DLC</subfield>
+      <subfield code="d">MiU</subfield>
+    </datafield>
+    <datafield tag="050" ind1="0" ind2=" ">
+      <subfield code="a">TH1199</subfield>
+      <subfield code="b">.K46</subfield>
+    </datafield>
+    <datafield tag="082" ind1=" " ind2=" ">
+      <subfield code="a">693</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Kenny, Michael F.</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Masonry estimating handbook</subfield>
+      <subfield code="c">[by] Michael F. Kenny.</subfield>
+    </datafield>
+    <datafield tag="250" ind1=" " ind2=" ">
+      <subfield code="a">[1st ed.]</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">New York,</subfield>
+      <subfield code="b">Construction Pub. Co.</subfield>
+      <subfield code="c">[1973]</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">vii, 136 p.</subfield>
+      <subfield code="b">illus.</subfield>
+      <subfield code="c">28 cm.</subfield>
+    </datafield>
+    <datafield tag="538" ind1=" " ind2=" ">
+      <subfield code="a">Mode of access: Internet.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Masonry</subfield>
+      <subfield code="x">Estimates.</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">BUHR</subfield>
+      <subfield code="c">AAEL</subfield>
+      <subfield code="h">TH1199 .K36</subfield>
+    </datafield>
+    <datafield tag="970" ind1=" " ind2=" ">
+      <subfield code="a">BK</subfield>
+      <subfield code="b">Book</subfield>
+    </datafield>
+    <datafield tag="971" ind1=" " ind2=" ">
+      <subfield code="a">MiU</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">HT</subfield>
+      <subfield code="b">avail_ht</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">AC</subfield>
+      <subfield code="b">avail_circ</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">mdp.39015007230496</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20120530</subfield>
+    </datafield>
+    <datafield tag="998" ind1=" " ind2=" ">
+      <subfield code="s">9665</subfield>
+    </datafield>
+  </record>
+  <record format="MarcXchange" type="Bibliographic">
+    <leader>00000nam a22001931  4500</leader>
+    <controlfield tag="001">000013155</controlfield>
+    <controlfield tag="003">MiU</controlfield>
+    <controlfield tag="005">19880715000000.0</controlfield>
+    <controlfield tag="006">m        d        </controlfield>
+    <controlfield tag="007">cr bn ---auaua</controlfield>
+    <controlfield tag="008">880715|1974|||||||          |||||||eng u</controlfield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(RLIN)MIUG0855581-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CaOTULAS)159832723</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocm00855581</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="c">NBuU</subfield>
+      <subfield code="d">MiU</subfield>
+      <subfield code="d">CStRLIN</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Haines, John,</subfield>
+      <subfield code="d">1924-2011.</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Leaves and ashes;</subfield>
+      <subfield code="b">poems</subfield>
+      <subfield code="c">by John Haines.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">[Santa Cruz.</subfield>
+      <subfield code="b">Kayak Books,</subfield>
+      <subfield code="c">1974]</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">52 p.</subfield>
+      <subfield code="b">illus.</subfield>
+      <subfield code="c">21 cm.</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+      <subfield code="a">Published in collaboration with West coast poetry review, Reno, Nevada.</subfield>
+    </datafield>
+    <datafield tag="538" ind1=" " ind2=" ">
+      <subfield code="a">Mode of access: Internet.</subfield>
+    </datafield>
+    <datafield tag="852" ind1="1" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">BUHR</subfield>
+      <subfield code="c">GRAD</subfield>
+      <subfield code="h">828 H1534Le</subfield>
+    </datafield>
+    <datafield tag="970" ind1=" " ind2=" ">
+      <subfield code="a">BK</subfield>
+      <subfield code="b">Book</subfield>
+    </datafield>
+    <datafield tag="971" ind1=" " ind2=" ">
+      <subfield code="a">MiU</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">HT</subfield>
+      <subfield code="b">avail_ht</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">AC</subfield>
+      <subfield code="b">avail_circ</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">mdp.39015028563222</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20120530</subfield>
+    </datafield>
+    <datafield tag="998" ind1=" " ind2=" ">
+      <subfield code="s">9665</subfield>
+    </datafield>
+  </record>
+  <record format="MarcXchange" type="Bibliographic">
+    <leader>00000nam a22002771  4500</leader>
+    <controlfield tag="001">000013410</controlfield>
+    <controlfield tag="003">MiU</controlfield>
+    <controlfield tag="005">19880715000000.0</controlfield>
+    <controlfield tag="006">m        d        </controlfield>
+    <controlfield tag="007">cr bn ---auaua</controlfield>
+    <controlfield tag="008">880715s1973    quccf    b    00010bfre  </controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">74158672</subfield>
+    </datafield>
+    <datafield tag="015" ind1=" " ind2=" ">
+      <subfield code="a">C73-3537</subfield>
+    </datafield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="a">0775504688</subfield>
+      <subfield code="c">$5.00</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(RLIN)MIUG0867095-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CaOTULAS)159832998</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocm00867095</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DLC</subfield>
+      <subfield code="c">DLC</subfield>
+      <subfield code="d">MiU</subfield>
+    </datafield>
+    <datafield tag="050" ind1=" " ind2="4">
+      <subfield code="a">NB249.H34</subfield>
+      <subfield code="b">H321</subfield>
+    </datafield>
+    <datafield tag="082" ind1=" " ind2=" ">
+      <subfield code="a">730/.92/4</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Hébert, Bruno.</subfield>
+    </datafield>
+    <datafield tag="245" ind1="0" ind2="0">
+      <subfield code="a">Philippe Hébert, sculpteur,</subfield>
+      <subfield code="c">par Bruno Hébert.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Montréal,</subfield>
+      <subfield code="b">Fides,</subfield>
+      <subfield code="c">1973.</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">157 p.</subfield>
+      <subfield code="b">[16] l. of plates (ports.)</subfield>
+      <subfield code="c">22 cm.</subfield>
+    </datafield>
+    <datafield tag="490" ind1="0" ind2=" ">
+      <subfield code="a">Vies canadiennes</subfield>
+    </datafield>
+    <datafield tag="504" ind1=" " ind2=" ">
+      <subfield code="a">Bibliography: p. 150-153.</subfield>
+    </datafield>
+    <datafield tag="538" ind1=" " ind2=" ">
+      <subfield code="a">Mode of access: Internet.</subfield>
+    </datafield>
+    <datafield tag="600" ind1="1" ind2="0">
+      <subfield code="a">Hébert, Philippe,</subfield>
+      <subfield code="d">1850-1917.</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">BUHR</subfield>
+      <subfield code="c">GRAD</subfield>
+      <subfield code="h">NB249.H34 H321</subfield>
+    </datafield>
+    <datafield tag="970" ind1=" " ind2=" ">
+      <subfield code="a">BK</subfield>
+      <subfield code="b">Book</subfield>
+    </datafield>
+    <datafield tag="970" ind1=" " ind2=" ">
+      <subfield code="a">BI</subfield>
+      <subfield code="b">Biography</subfield>
+    </datafield>
+    <datafield tag="971" ind1=" " ind2=" ">
+      <subfield code="a">MiU</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">HT</subfield>
+      <subfield code="b">avail_ht</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">AC</subfield>
+      <subfield code="b">avail_circ</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">mdp.39015031969242</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20120530</subfield>
+    </datafield>
+    <datafield tag="998" ind1=" " ind2=" ">
+      <subfield code="s">9665</subfield>
+    </datafield>
+  </record>
+  <record format="MarcXchange" type="Bibliographic">
+    <leader>00000nam a22003131  4500</leader>
+    <controlfield tag="001">000014357</controlfield>
+    <controlfield tag="003">MiU</controlfield>
+    <controlfield tag="005">20120522122941.0</controlfield>
+    <controlfield tag="008">880715s1973    sz a     b    101 0 eng  </controlfield>
+    <datafield tag="010" ind1=" " ind2=" ">
+      <subfield code="a">74163614</subfield>
+    </datafield>
+    <datafield tag="015" ind1=" " ind2=" ">
+      <subfield code="a">Sw***</subfield>
+    </datafield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="a">3805515713 (v. 1)</subfield>
+      <subfield code="c">286.00F ($88.70 U.S.) per vol.</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(RLIN)MIUG0903429-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CaOTULAS)159834006</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocm00903429</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DLC</subfield>
+      <subfield code="c">DLC</subfield>
+      <subfield code="d">MiU</subfield>
+    </datafield>
+    <datafield tag="050" ind1="0" ind2="0">
+      <subfield code="a">QP106.6</subfield>
+      <subfield code="b">.E9 1972</subfield>
+    </datafield>
+    <datafield tag="082" ind1="0" ind2=" ">
+      <subfield code="a">612/.13</subfield>
+    </datafield>
+    <datafield tag="111" ind1="2" ind2=" ">
+      <subfield code="a">European Conference on Microcirculation</subfield>
+      <subfield code="n">(7th :</subfield>
+      <subfield code="d">1972 :</subfield>
+      <subfield code="c">Aberdeen, Scot.)</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">7th European Conference on Microcirculation /</subfield>
+      <subfield code="c">Edited by J. Ditzel and D. H. Lewis.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Basel,</subfield>
+      <subfield code="a">New York :</subfield>
+      <subfield code="b">S. Karger,</subfield>
+      <subfield code="c">1973.</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">2 v.</subfield>
+      <subfield code="b">illus. (part col.)</subfield>
+      <subfield code="c">25 cm.</subfield>
+    </datafield>
+    <datafield tag="440" ind1=" " ind2="0">
+      <subfield code="a">Bibliotheca anatomica ;</subfield>
+      <subfield code="v">no. 11, 12</subfield>
+    </datafield>
+    <datafield tag="504" ind1=" " ind2=" ">
+      <subfield code="a">Includes bibliographies.</subfield>
+    </datafield>
+    <datafield tag="505" ind1="0" ind2=" ">
+      <subfield code="a">pt. 1. Methodology in microcirculation.--pt. 2. Clinical aspects of microcirculation.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Microcirculation</subfield>
+      <subfield code="v">Congresses.</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Ditzel, Jørn,</subfield>
+      <subfield code="d">1924-</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Lewis, David H.</subfield>
+    </datafield>
+    <datafield tag="852" ind1="8" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">TAUB</subfield>
+      <subfield code="c">PER</subfield>
+      <subfield code="h">Journals no.11-12</subfield>
+    </datafield>
+    <datafield tag="970" ind1=" " ind2=" ">
+      <subfield code="a">BK</subfield>
+      <subfield code="b">Book</subfield>
+    </datafield>
+    <datafield tag="970" ind1=" " ind2=" ">
+      <subfield code="a">XC</subfield>
+      <subfield code="b">Conference</subfield>
+    </datafield>
+    <datafield tag="971" ind1=" " ind2=" ">
+      <subfield code="a">MiU</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">AC</subfield>
+      <subfield code="b">avail_circ</subfield>
+    </datafield>
+    <datafield tag="997" ind1=" " ind2=" ">
+      <subfield code="a">MARS</subfield>
+    </datafield>
+    <datafield tag="998" ind1=" " ind2=" ">
+      <subfield code="s">9665</subfield>
+    </datafield>
+  </record>
+  <record format="MarcXchange" type="Bibliographic">
+    <leader>00000nam a22002531  4500</leader>
+    <controlfield tag="001">000014664</controlfield>
+    <controlfield tag="003">MiU</controlfield>
+    <controlfield tag="005">19880715000000.0</controlfield>
+    <controlfield tag="006">m        d        </controlfield>
+    <controlfield tag="007">cr bn ---auaua</controlfield>
+    <controlfield tag="008">880715|1973|||||||          |||||||eng u</controlfield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(RLIN)MIUG0917617-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CaOTULAS)159834326</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocm00917617</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="c">NIC</subfield>
+      <subfield code="d">MiU</subfield>
+      <subfield code="d">CStRLIN</subfield>
+    </datafield>
+    <datafield tag="082" ind1=" " ind2=" ">
+      <subfield code="a">080 s</subfield>
+      <subfield code="a">418/.007/12485</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Elek, Tibor von.</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Teaching foreign language grammar to adults.</subfield>
+      <subfield code="b">A comparative study.</subfield>
+      <subfield code="c">By Tibor von Elek and Mats Oskarsson.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Stockholm,</subfield>
+      <subfield code="b">Almqvist &amp; Wiksell</subfield>
+      <subfield code="c">[1973]</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">242 p.</subfield>
+      <subfield code="b">illus.</subfield>
+      <subfield code="c">23cm.</subfield>
+    </datafield>
+    <datafield tag="440" ind1=" " ind2="0">
+      <subfield code="a">Gothenburg studies in English.</subfield>
+      <subfield code="v">26</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+      <subfield code="a">At head of title: Acta Universitatis Gothoburgensis</subfield>
+    </datafield>
+    <datafield tag="504" ind1=" " ind2=" ">
+      <subfield code="a">Bibliography: p. [216]-224.</subfield>
+    </datafield>
+    <datafield tag="538" ind1=" " ind2=" ">
+      <subfield code="a">Mode of access: Internet.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Languages, Modern</subfield>
+      <subfield code="x">Study and teaching</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Oskarsson, Mats,</subfield>
+      <subfield code="d">1939-</subfield>
+    </datafield>
+    <datafield tag="852" ind1="1" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">BUHR</subfield>
+      <subfield code="c">GRAD</subfield>
+      <subfield code="h">820.6 G684 v.26</subfield>
+    </datafield>
+    <datafield tag="970" ind1=" " ind2=" ">
+      <subfield code="a">BK</subfield>
+      <subfield code="b">Book</subfield>
+    </datafield>
+    <datafield tag="971" ind1=" " ind2=" ">
+      <subfield code="a">MiU</subfield>
+    </datafield>
+    <datafield tag="972" ind1=" " ind2=" ">
+      <subfield code="c">20040625</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">HT</subfield>
+      <subfield code="b">avail_ht</subfield>
+    </datafield>
+    <datafield tag="973" ind1=" " ind2=" ">
+      <subfield code="a">AC</subfield>
+      <subfield code="b">avail_circ</subfield>
+    </datafield>
+    <datafield tag="974" ind1=" " ind2=" ">
+      <subfield code="u">mdp.39015019065583</subfield>
+      <subfield code="r">ic</subfield>
+      <subfield code="d">20120530</subfield>
+    </datafield>
+    <datafield tag="998" ind1=" " ind2=" ">
+      <subfield code="s">9665</subfield>
+    </datafield>
+  </record>
+  <record format="MarcXchange" type="Bibliographic">
+    <leader>00000nam a22002891  4500</leader>
+    <controlfield tag="001">000014841</controlfield>
+    <controlfield tag="003">MiU</controlfield>
+    <controlfield tag="005">20120530122447.0</controlfield>
+    <controlfield tag="006">m        d        </controlfield>
+    <controlfield tag="007">cr bn ---auaua</controlfield>
+    <controlfield tag="008">880715|1973|||||||          |||||||fre u</controlfield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="a">906004326X</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(RLIN)MIUG0925500-B</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(CaOTULAS)159834512</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)ocm00925500</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="c">MH-AH</subfield>
+      <subfield code="d">MiU</subfield>
+      <subfield code="d">CStRLIN</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Theux, X. de</subfield>
+      <subfield code="q">(Xavier),</subfield>
+      <subfield code="d">1838-1896.</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Bibliographie liégeoise,</subfield>
+      <subfield code="b">contenant: 1? les livres imprimés à Liége depuis le XVIe siècle jusqu'à nos jours, 2? les ouvrages publiés en Belgique et à l'étranger, concernant l'histoire de l'ancienne principauté de Liége et de la province actuelle du même nom,</subfield>
+      <subfield code="c">par le Chev. de Theux de Montjardin.</subfield>
+    </datafield>
+    <datafield tag="250" ind1=" " ind2=" ">
+      <subfield code="a">2. éd.,</subfield>
+      <subfield code="b">augm.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Nieuwkoop,</subfield>
+      <subfield code="b">De Graaf,</subfield>
+      <subfield code="c">1973.</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">viii, 1713 col.</subfield>
+      <subfield code="c">31 cm.</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+      <subfield code="a">Reprint of the edition Bruges, l885.</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+      <subfield code="a">Three columns to the page. (Introduction in double columns)</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+      <subfield code="a">"Liste des articles publiés dans les revues belges sur l'histoire du pays de Liége": col. 1549-1581.</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+      <subfield code="a">"Table des articles concernant l'ancienne principauté de Liége contenus dans l'ouvrage de Potthast, Bibliotheca medii aevi": col. 1582-1584.</subfield>
+    </datafield>
+    <datafield tag="538" ind1=" " ind2=" ">
+      <subfield code="a">Mode of access: Internet.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Belgian literature</subfield>
+      <subfield code="x">Bibliography.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+      <subfield code="a">Printing</subfield>
+      <subfield code="z">Belgium</subfield>
+      <subfield code="z">Liége.</subfield>
+    </datafield>
+    <datafield tag="651" ind1=" " ind2="0">
+      <subfield code="a">Liège (Belgium)</subfield>
+      <subfield code="x">Bibliography.</subfield>
+    </datafield>
+    <datafield tag="852" ind1="0" ind2=" ">
+      <subfield code="a">MiU</subfield>
+      <subfield code="b">BUHR</subfield>
+      <subfield code="c">GRAD</subfield>
+      <subfield code="h">Z2424.L72 T42 1973</subfield>
+    </datafield>
+  </record>
+</collection>

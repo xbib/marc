@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 4 U (http://www.xmlspy.com) by Giovanni Bergamin (National Library of Florence) -->
+<xsd:schema targetNamespace="http://www.bncf.firenze.sbn.it/unimarc/slim" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.1" xml:lang="en" xmlns="http://www.bncf.firenze.sbn.it/unimarc/slim" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:annotation>
+		<xsd:documentation>	UNIMARCSLIM: UNIMARC XML Schema prepared by Giovanni Bergamin and Detlev Schumacher based on MARCXML ( The MARC 21 XML Schema prepared by Corey Keith http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd). 
+August 8, 2004  Initial Release 0.1 This schema allows XML markup of UNIMARC records as specified in the MARC documentation (see http://www.ifla.org/VI/3/p1996-1/sec-uni.htm). This schema accommodates UNIMARC bibliographic and authority records and allows the embedded fields technique
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:element name="rec" type="recordType" nillable="true" id="record.e">
+		<xsd:annotation>
+			<xsd:documentation>record is a top level container element for all of the field elements which compose the record</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="collection" type="collectionType" nillable="true" id="collection.e">
+		<xsd:annotation>
+			<xsd:documentation>collection is a top level container element for 0 or many records</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:complexType name="collectionType" id="collection.ct">
+		<xsd:sequence minOccurs="0" maxOccurs="unbounded">
+			<xsd:element ref="rec"/>
+		</xsd:sequence>
+		<xsd:attribute name="id" type="idDataType" use="optional"/>
+	</xsd:complexType>
+	<xsd:complexType name="recordType" id="record.ct">
+		<xsd:sequence minOccurs="0">
+			<xsd:element name="lab" type="leaderFieldType"/>
+			<xsd:element name="cf" type="controlFieldType" maxOccurs="unbounded"/>
+			<xsd:element name="df" type="dataFieldType" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+		<xsd:attribute name="type" type="recordTypeType" use="optional"/>
+		<xsd:attribute name="id" type="idDataType" use="optional"/>
+	</xsd:complexType>
+	<xsd:simpleType name="recordTypeType" id="type.st">
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:enumeration value="Bibliographic"/>
+			<xsd:enumeration value="Authority"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="leaderFieldType" id="leader.ct">
+		<xsd:annotation>
+			<xsd:documentation>UNIMARC record label 24 characters</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="leaderDataType">
+				<xsd:attribute name="id" type="idDataType" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:simpleType name="leaderDataType" id="leader.st">
+		<xsd:restriction base="xsd:string">
+			<xsd:whiteSpace value="preserve"/>
+			<xsd:pattern value="[\d ]{5}[\dA-Za-z ]{1}[\dA-Za-z]{1}[\dA-Za-z&#32;]{3}(2| )(2| )[\d ]{5}[\dA-Za-z&#32;]{3}(450&#32;|    )"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="controlFieldType" id="controlfield.ct">
+		<xsd:annotation>
+			<xsd:documentation>UNIMARC Fields 001-009</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="controlDataType">
+				<xsd:attribute name="id" type="idDataType" use="optional"/>
+				<xsd:attribute name="t" type="controltagDataType" use="required"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:simpleType name="controlDataType" id="controlfield.st">
+		<xsd:restriction base="xsd:string">
+			<xsd:whiteSpace value="preserve"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="controltagDataType" id="controltag.st">
+		<xsd:restriction base="xsd:string">
+			<xsd:whiteSpace value="preserve"/>
+			<xsd:pattern value="00[1-9A-Za-z]{1}"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="dataFieldType" id="datafield.ct">
+		<xsd:annotation>
+			<xsd:documentation>UNIMARC Variable Data Fields 010-999</xsd:documentation>
+		</xsd:annotation>
+		<xsd:choice>
+			<xsd:annotation>
+				<xsd:documentation>UNIMARC field can be composed by standard subfields (strings) or by "s1" subfields with embedded tags indicators and subfields ex. g.: 4xx or 604 tags</xsd:documentation>
+			</xsd:annotation>
+			<xsd:sequence maxOccurs="unbounded">
+				<xsd:element name="sf" type="subfieldatafieldType"/>
+			</xsd:sequence>
+			<xsd:sequence maxOccurs="unbounded">
+				<xsd:element name="s1" type="s1Type"/>
+			</xsd:sequence>
+		</xsd:choice>
+		<xsd:attribute name="id" type="idDataType" use="optional"/>
+		<xsd:attribute name="t" type="tagDataType" use="required"/>
+		<xsd:attribute name="i1" type="indicatorDataType" use="required"/>
+		<xsd:attribute name="i2" type="indicatorDataType" use="required"/>
+	</xsd:complexType>
+	<xsd:simpleType name="tagDataType" id="tag.st">
+		<xsd:restriction base="xsd:string">
+			<xsd:whiteSpace value="preserve"/>
+			<xsd:pattern value="(0([1-9A-Z][0-9A-Z])|0([1-9a-z][0-9a-z]))|(([1-9A-Z][0-9A-Z]{2})|([1-9a-z][0-9a-z]{2}))"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="indicatorDataType" id="ind.st">
+		<xsd:restriction base="xsd:string">
+			<xsd:whiteSpace value="preserve"/>
+			<xsd:pattern value="[\d\|a-z ]{1}"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="subfieldatafieldType" id="subfield.ct">
+		<xsd:simpleContent>
+			<xsd:extension base="subfieldDataType">
+				<xsd:attribute name="id" type="idDataType" use="optional"/>
+				<xsd:attribute name="c" type="subfieldcodeDataType" use="required"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:simpleType name="subfieldDataType" id="subfield.st">
+		<xsd:restriction base="xsd:string">
+			<xsd:whiteSpace value="preserve"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="subfieldcodeDataType" id="code.st">
+		<xsd:restriction base="xsd:string">
+			<xsd:whiteSpace value="preserve"/>
+			<xsd:pattern value="[\da-z!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?{}_^`~\[\]\\]{1}"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="idDataType" id="id.st">
+		<xsd:restriction base="xsd:ID"/>
+	</xsd:simpleType>
+	<xsd:complexType name="s1Type" id="s1.ct">
+		<xsd:annotation>
+			<xsd:documentation>The embedded fields technique  introduced by s1 tag</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="cf" type="controlFieldType" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="df" type="dataFieldType" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>
+

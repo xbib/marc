@@ -1,0 +1,319 @@
+begin object
+begin
+tag=__FORMAT indicator=null subfield=null data=MARC21
+end
+begin
+tag=__TYPE indicator=null subfield=null data=Bibliographic
+end
+begin
+tag=__LEADER indicator=null subfield=null data=00860vM2.01200024---000h
+end
+begin
+tag=LDR indicator=null subfield=null data=null
+tag=LDR indicator=null subfield=a data=00860vM2.01200024------h
+end
+begin
+tag=FMT indicator=null subfield=null data=null
+tag=FMT indicator=null subfield=a data=MH
+end
+begin
+tag=001 indicator= 1 subfield=null data=HT004330420
+end
+begin
+tag=002 indicator=a1 subfield=null data=19921110
+end
+begin
+tag=030 indicator=null subfield=null data=null
+tag=030 indicator=null subfield=a data=a|1uc||||||17
+end
+begin
+tag=050 indicator=null subfield=null data=null
+tag=050 indicator=null subfield=a data=a|||||||||||||
+end
+begin
+tag=051 indicator=null subfield=null data=null
+tag=051 indicator=null subfield=a data=s|||||||
+end
+begin
+tag=070 indicator= 1 subfield=null data=null
+tag=070 indicator= 1 subfield=a data=292
+end
+begin
+tag=080 indicator= 1 subfield=null data=null
+tag=080 indicator= 1 subfield=a data=60
+end
+begin
+tag=100 indicator= 1 subfield=null data=null
+tag=100 indicator= 1 subfield=p data=Aselmeier, Ulrich
+tag=100 indicator= 1 subfield=9 data=(DE-588)108129330
+end
+begin
+tag=104 indicator=a1 subfield=null data=null
+tag=104 indicator=a1 subfield=p data=Vogel, Günter
+tag=104 indicator=a1 subfield=9 data=(DE-588)104707070
+end
+begin
+tag=105 indicator= 1 subfield=null data=null
+tag=105 indicator= 1 subfield=p data=Vogel, W.
+end
+begin
+tag=105 indicator= 1 subfield=null data=null
+tag=105 indicator= 1 subfield=p data=Vogel, Gunther
+end
+begin
+tag=331 indicator= 1 subfield=null data=null
+tag=331 indicator= 1 subfield=a data=Handlungshilfen zur Unterrichtsplanung
+end
+begin
+tag=335 indicator= 1 subfield=null data=null
+tag=335 indicator= 1 subfield=a data=Grundlagen und Beispiele aus sach- und schülerorientierter Sicht
+end
+begin
+tag=359 indicator= 1 subfield=null data=null
+tag=359 indicator= 1 subfield=a data=Ulrich Aselmeier ; Günter Vogel
+end
+begin
+tag=410 indicator= 1 subfield=null data=null
+tag=410 indicator= 1 subfield=a data=Rheinfelden [u.a.]
+end
+begin
+tag=412 indicator= 1 subfield=null data=null
+tag=412 indicator= 1 subfield=a data=Schäuble
+end
+begin
+tag=425 indicator=a1 subfield=null data=null
+tag=425 indicator=a1 subfield=a data=1992
+end
+begin
+tag=433 indicator= 1 subfield=null data=null
+tag=433 indicator= 1 subfield=a data=135 S. : graph. Darst.
+end
+begin
+tag=451 indicator= 1 subfield=null data=null
+tag=451 indicator= 1 subfield=a data=Gesellschaft, Erziehung und Bildung : Beiträge zu einer neuen Lernkultur ; 6
+end
+begin
+tag=453 indicator= 1 subfield=null data=null
+tag=453 indicator= 1 subfield=a data=HT003704070
+end
+begin
+tag=455 indicator= 1 subfield=null data=null
+tag=455 indicator= 1 subfield=a data=6 = 23 [d. Gesamtw.]
+end
+begin
+tag=456 indicator= 1 subfield=null data=null
+tag=456 indicator= 1 subfield=a data=6
+end
+begin
+tag=461 indicator= 1 subfield=null data=null
+tag=461 indicator= 1 subfield=a data=Gesellschaft, Erziehung und Bildung ; 23
+end
+begin
+tag=463 indicator= 1 subfield=null data=null
+tag=463 indicator= 1 subfield=a data=HT003575299
+end
+begin
+tag=465 indicator= 1 subfield=null data=null
+tag=465 indicator= 1 subfield=a data=23 : Beiträge zu einer neuen Lernkultur ; 6
+end
+begin
+tag=466 indicator= 1 subfield=null data=null
+tag=466 indicator= 1 subfield=a data=23
+end
+begin
+tag=540 indicator=a1 subfield=null data=null
+tag=540 indicator=a1 subfield=a data=3-87718-583-5
+tag=540 indicator=a1 subfield=b data=kart. : ca. DM 48.00 (freier Pr.)
+end
+begin
+tag=700 indicator=l1 subfield=null data=null
+tag=700 indicator=l1 subfield=a data=120
+end
+begin
+tag=902 indicator= 1 subfield=null data=null
+tag=902 indicator= 1 subfield=s data=Unterrichtsplanung
+tag=902 indicator= 1 subfield=9 data=(DE-588)4117301-6
+end
+begin
+tag=902 indicator= 1 subfield=null data=null
+tag=902 indicator= 1 subfield=s data=Sekundarstufe
+tag=902 indicator= 1 subfield=9 data=(DE-588)4077347-4
+end
+begin
+tag=903 indicator= 1 subfield=null data=null
+tag=903 indicator= 1 subfield=a data=21
+end
+begin
+tag=SYS indicator=null subfield=null data=null
+tag=SYS indicator=null subfield=a data=006488301
+end
+begin
+tag=LOW indicator= 1 subfield=null data=null
+tag=LOW indicator= 1 subfield=a data=C5001
+end
+begin
+tag=LOW indicator= 1 subfield=null data=null
+tag=LOW indicator= 1 subfield=a data=U0001
+end
+begin
+tag=LOW indicator= 1 subfield=null data=null
+tag=LOW indicator= 1 subfield=a data=R0001
+end
+begin
+tag=LOW indicator= 1 subfield=null data=null
+tag=LOW indicator= 1 subfield=a data=B0001
+end
+begin
+tag=LOW indicator= 1 subfield=null data=null
+tag=LOW indicator= 1 subfield=a data=L0001
+end
+begin
+tag=LOW indicator= 1 subfield=null data=null
+tag=LOW indicator= 1 subfield=a data=M1054
+end
+begin
+tag=LOW indicator= 1 subfield=null data=null
+tag=LOW indicator= 1 subfield=a data=M0001
+end
+begin
+tag=952 indicator= 1 subfield=null data=null
+tag=952 indicator= 1 subfield=s data=Lehrplanung
+end
+begin
+tag=952 indicator= 1 subfield=null data=null
+tag=952 indicator= 1 subfield=s data=Unterricht
+tag=952 indicator= 1 subfield=x data=Planung
+end
+begin
+tag=952 indicator= 1 subfield=null data=null
+tag=952 indicator= 1 subfield=s data=Secondary School
+end
+begin
+tag=952 indicator= 1 subfield=null data=null
+tag=952 indicator= 1 subfield=s data=Sekundarbereich
+end
+begin
+tag=952 indicator= 1 subfield=null data=null
+tag=952 indicator= 1 subfield=s data=Sekundarschule
+end
+begin
+tag=952 indicator= 1 subfield=null data=null
+tag=952 indicator= 1 subfield=s data=Schuljahr 5-13
+end
+begin
+tag=952 indicator= 1 subfield=null data=null
+tag=952 indicator= 1 subfield=s data=Schuljahr 5-12
+end
+begin
+tag=088 indicator=   subfield=null data=null
+tag=088 indicator=   subfield=a data=Bi 10
+tag=088 indicator=   subfield=b data=00078080
+tag=088 indicator=   subfield=c data=IGX Asel
+tag=088 indicator=   subfield=e data=ILL Ausleihe
+end
+begin
+tag=088 indicator=   subfield=null data=null
+tag=088 indicator=   subfield=a data=290
+tag=088 indicator=   subfield=b data=00000001
+tag=088 indicator=   subfield=c data=Bg 14187
+tag=088 indicator=   subfield=e data=ILL Ausleihe
+end
+begin
+tag=088 indicator=   subfield=null data=null
+tag=088 indicator=   subfield=a data=290
+tag=088 indicator=   subfield=b data=00012012
+tag=088 indicator=   subfield=c data=PCA 430/67
+tag=088 indicator=   subfield=e data=keine ILL
+end
+begin
+tag=088 indicator=   subfield=null data=null
+tag=088 indicator=   subfield=a data=DE-294
+tag=088 indicator=   subfield=b data=00000014
+tag=088 indicator=   subfield=c data=MVA7096
+tag=088 indicator=   subfield=e data=ILL Ausleihe
+end
+begin
+tag=088 indicator=   subfield=null data=null
+tag=088 indicator=   subfield=a data=51
+tag=088 indicator=   subfield=b data=00000000
+tag=088 indicator=   subfield=c data=IGX 112
+tag=088 indicator=   subfield=e data=ILL Ausleihe
+end
+begin
+tag=088 indicator=   subfield=null data=null
+tag=088 indicator=   subfield=a data=6
+tag=088 indicator=   subfield=b data=00000040
+tag=088 indicator=   subfield=c data=3D 90391
+tag=088 indicator=   subfield=e data=ILL Ausleihe
+end
+begin
+tag=088 indicator=   subfield=null data=null
+tag=088 indicator=   subfield=a data=6/123
+tag=088 indicator=   subfield=b data=00004040
+tag=088 indicator=   subfield=c data=ERZ XG2 9A
+tag=088 indicator=   subfield=e data=ILL Ausleihe
+end
+begin
+tag=088 indicator=   subfield=null data=null
+tag=088 indicator=   subfield=a data=929
+tag=088 indicator=   subfield=b data=00000000
+tag=088 indicator=   subfield=c data=94/3507
+tag=088 indicator=   subfield=e data=ILL Ausleihe
+end
+begin
+tag=088 indicator=   subfield=null data=null
+tag=088 indicator=   subfield=a data=708
+tag=088 indicator=   subfield=b data=00
+tag=088 indicator=   subfield=c data=IGX/ASE
+tag=088 indicator=   subfield=e data=Normalausleihe
+end
+begin
+tag=088 indicator=   subfield=null data=null
+tag=088 indicator=   subfield=a data=467
+tag=088 indicator=   subfield=b data=63
+tag=088 indicator=   subfield=c data=63TML2274
+tag=088 indicator=   subfield=e data=Ausleihbar
+end
+begin
+tag=088 indicator=   subfield=null data=null
+tag=088 indicator=   subfield=a data=467
+tag=088 indicator=   subfield=b data=63
+tag=088 indicator=   subfield=c data=63TML2274+1
+tag=088 indicator=   subfield=e data=Ausleihbar
+end
+begin
+tag=088 indicator=   subfield=null data=null
+tag=088 indicator=   subfield=a data=Kob 7
+tag=088 indicator=   subfield=b data=FRHKO
+tag=088 indicator=   subfield=c data=93/3202
+tag=088 indicator=   subfield=e data=ausleihbar 4 Wo
+end
+begin
+tag=088 indicator=   subfield=null data=null
+tag=088 indicator=   subfield=a data=Lan 1
+tag=088 indicator=   subfield=b data=FRHLD
+tag=088 indicator=   subfield=c data=gru 92-58
+tag=088 indicator=   subfield=e data=ausleihbar 4 Wo
+end
+begin
+tag=088 indicator=   subfield=null data=null
+tag=088 indicator=   subfield=a data=465
+tag=088 indicator=   subfield=b data=E11
+tag=088 indicator=   subfield=c data=IGX2455
+tag=088 indicator=   subfield=e data=Ausleihbestand
+end
+begin
+tag=088 indicator=   subfield=null data=null
+tag=088 indicator=   subfield=a data=464
+tag=088 indicator=   subfield=b data=D01
+tag=088 indicator=   subfield=c data=IGX2112_d
+tag=088 indicator=   subfield=e data=Ausleihbestand
+end
+begin
+tag=088 indicator=   subfield=null data=null
+tag=088 indicator=   subfield=a data=1116
+tag=088 indicator=   subfield=b data=X0001
+tag=088 indicator=   subfield=c data=Ndk ASE
+tag=088 indicator=   subfield=e data=Monographie
+end
+end object

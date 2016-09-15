@@ -1,0 +1,129 @@
+<collection xmlns="info:lc/xmlns/marcxchange-v2">
+  <record format="MARC21" type="Bibliographic">
+    <leader>01613cam  2200409 a 4500</leader>
+    <controlfield tag="001">ocn124450154</controlfield>
+    <controlfield tag="003">OCoLC</controlfield>
+    <controlfield tag="005">20070605103524.0</controlfield>
+    <controlfield tag="008">970411s1947    nyu           001 0 rus d</controlfield>
+    <datafield ind2=" " ind1=" " tag="040">
+      <subfield code="a">NNC</subfield>
+      <subfield code="c">VXJ</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="066">
+      <subfield code="c">(N</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="035">
+      <subfield code="a">(OCoLC)124450154</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="035">
+      <subfield code="a">(CStRLIN)NYJH97-B3375</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="1" tag="041">
+      <subfield code="a">rus</subfield>
+      <subfield code="h">yid</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="043">
+      <subfield code="a">n-us---</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="079">
+      <subfield code="a">ocm42037006</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="090">
+      <subfield code="a">PJ5192.R8</subfield>
+      <subfield code="b">F4</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="049">
+      <subfield code="a">OCLC</subfield>
+    </datafield>
+    <datafield ind2="0" ind1="0" tag="245">
+      <subfield code="6">880-01</subfield>
+      <subfield code="a">Evreĭskai͡a poėzii͡a :</subfield>
+      <subfield code="b">antologii͡a /</subfield>
+      <subfield code="c">Leonid Grebnev (L. Faĭnberg).</subfield>
+    </datafield>
+    <datafield ind2="5" ind1="1" tag="246">
+      <subfield code="a">Yiddish poetry</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="260">
+      <subfield code="6">880-02</subfield>
+      <subfield code="a">Nʹi͡u-Ĭork :</subfield>
+      <subfield code="b">Izd. Soi͡uza russkikh evreev v Nʹi͡u-Iorke,</subfield>
+      <subfield code="c">1947.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="300">
+      <subfield code="a">240 p. ;</subfield>
+      <subfield code="c">23 cm.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="500">
+      <subfield code="a">No more published?</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="0" tag="505">
+      <subfield code="a">Tom 1. Amerika.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="500">
+      <subfield code="a">Includes index.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="590">
+      <subfield code="a">Author's autograph presentation copy to Moses Shifris.</subfield>
+    </datafield>
+    <datafield ind2="0" ind1=" " tag="650">
+      <subfield code="a">Yiddish poetry</subfield>
+      <subfield code="z">United States.</subfield>
+    </datafield>
+    <datafield ind2="0" ind1=" " tag="650">
+      <subfield code="a">Yiddish poetry</subfield>
+      <subfield code="x">Translations into Russian</subfield>
+      <subfield code="x">Collections.</subfield>
+    </datafield>
+    <datafield ind2="0" ind1=" " tag="650">
+      <subfield code="a">Russian poetry</subfield>
+      <subfield code="x">Translations from Yiddish</subfield>
+      <subfield code="x">Collections.</subfield>
+    </datafield>
+    <datafield ind2="4" ind1="1" tag="600">
+      <subfield code="6">880-03</subfield>
+      <subfield code="a">Feinberg, Leon,</subfield>
+      <subfield code="d">1897-1969</subfield>
+      <subfield code="x">Presentation inscription to Moses Shifris.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="1" tag="700">
+      <subfield code="6">880-04</subfield>
+      <subfield code="a">Feinberg, Leon,</subfield>
+      <subfield code="d">1897-1969.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="852">
+      <subfield code="a">NNJ</subfield>
+      <subfield code="b">PUBL</subfield>
+      <subfield code="h">PJ5192.R8</subfield>
+      <subfield code="i">F4</subfield>
+      <subfield code="t">1</subfield>
+      <subfield code="x">CIN=AMW; OID=UTC</subfield>
+    </datafield>
+    <datafield ind2="0" ind1="0" tag="880">
+      <subfield code="6">245-01/(N</subfield>
+      <subfield code="a">Еврейская поэзия :</subfield>
+      <subfield code="b">антология /</subfield>
+      <subfield code="c">Леонид Гребнев [Л. Файнберг].</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="880">
+      <subfield code="6">260-02/(N</subfield>
+      <subfield code="a">Нью-Йорк :</subfield>
+      <subfield code="b">Изд. Союза русских евреев в Нью-Йорке,</subfield>
+      <subfield code="c">1947.</subfield>
+    </datafield>
+    <datafield ind2="4" ind1="1" tag="880">
+      <subfield code="6">600-03/(N</subfield>
+      <subfield code="a">Файнберг, Леон,</subfield>
+      <subfield code="d">1897-1969.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="1" tag="880">
+      <subfield code="6">700-04/(N</subfield>
+      <subfield code="a">Файнберг, Леон,</subfield>
+      <subfield code="d">1897-1969.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="994">
+      <subfield code="a">C0</subfield>
+      <subfield code="b">OCL</subfield>
+    </datafield>
+  </record>
+</collection>

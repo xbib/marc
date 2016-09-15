@@ -1,0 +1,207 @@
+                                 MAB2-GKD
+                         Online-Kurzreferenz-Version
+                            Stand: November 1998
+
+
+
+          SATZKENNUNG
+
+
+001-088   SEGMENT 0--
+
+001-029   IDENTIFIKATIONSNUMMERN, DATUMS- UND VERSIONSANGABEN
+030-035   ALLGEMEINE VERARBEITUNGSTECHNISCHE ANGABEN
+036-049   ALLGEMEINE CODIERTE ANGABEN
+065-069   NORMDATENSPEZIFISCHE ANGABEN
+070-075   ANWENDERSPEZIFISCHE DATEN UND CODES
+076-088   ANWENDERSPEZIFISCHE ANGABEN
+
+
+
+
+600-603   SEGMENT PAUSCHALVERWEISUNGEN UND SIEHE-AUCH-HINWEISE
+
+600       1. TEIL DER VERWEISUNG
+
+          Indikator:
+          a = allgemein
+          e = Koerperschaftsnamen
+
+
+601       BEMERKUNGEN ZUM 1. TEIL DER VERWEISUNG
+
+          Indikator:
+          blank = nicht definiert
+
+
+602       2. TEIL DER VERWEISUNG
+
+          Indikator:
+          a = Pauschalverweisung
+          b = Siehe-auch-Hinweis
+
+
+603       BEMERKUNGEN ZUM 2. TEIL DER VERWEISUNG
+
+          Indikator:
+          blank = nicht definiert
+
+
+
+651-659   SEGMENT AUSGABEVERMERK COMPUTERDATEIEN
+
+655       ELEKTRONISCHE ADRESSE UND ZUGRIFFSART
+          FUER EINE COMPUTERDATEI IM FERNZUGRIFF
+
+          Indikator:
+
+          Zugriffsmethode:
+          blank = nicht spezifiziert
+          a     = E-Mail
+          b     = FTP (File Transfer)
+          c     = Remote Login (Telnet)
+          d     = Dial-up (konventioneller Telefonanschluss)
+          e     = HTTP
+          h     = In Unterfeld $2 spezifizierte Zugriffsmethode
+
+          Unterfelder:
+          $a    = Name des Host
+          $b    = IP-Zugriffsnummer
+          $c    = Art der Komprimierung
+          $d    = Zugriffspfad fuer eine Datei
+          $f    = Elektronischer Name der Datei im Verzeichnis des Host
+          $g    = URN (Uniform Resource Name)
+          $h    = Durchfuehrende Stelle einer Anfrage
+          $i    = Anweisung fuer die Ausfuehrung einer Anfrage
+          $j    = Datenuebertragungsrate (Bits pro Sekunde)
+          $k    = Passwort
+          $l    = Logon/Login-Angabe
+          $m    = Kontaktperson
+          $n    = Ort des Host
+          $o    = Betriebssystem des Host
+          $p    = Port
+          $q    = Elektronischer Dateiformattyp
+          $r    = Einstellungen fuer die Dateiuebertragung
+          $t    = Groesse der Datei
+          $u    = URL (Uniform Resource Locator)
+          $v    = Oeffnungszeiten des Host fuer die gewaehlte Zugangsart
+          $w    = Identifikationsnummer des verknuepften Datensatzes
+          $x    = Interne Bemerkungen
+          $z    = Allgemeine Bemerkungen
+          $2    = Zugriffsmethode
+          $3    = Bezugswerk
+          $A    = Beziehung
+
+
+
+8--       SEGMENT KOERPERSCHAFTSNAMEN
+
+800       NAME DER KOERPERSCHAFT IN ANSETZUNGSFORM
+
+          Indikator:
+          blank = nicht definiert
+
+
+801       ZUSAETZLICHE ANGABEN ZUR ANSETZUNGSFORM
+
+          Indikator:
+          a = Bemerkungen zur Ansetzungsform
+          b = Abkuerzungen der Ansetzungsform
+
+
+803       UEBERSETZUNG DES KOERPERSCHAFTSNAMENS
+
+          Indikator:
+          blank = nicht definiert
+
+
+805       DATEN DER KOERPERSCHAFT
+
+          Indikator:
+          blank = nicht definiert
+
+
+806       UEBEROERTLICHE IDENTIFIKATIONSNUMMER DER
+          UEBERGEORDNETEN KOERPERSCHAFT
+
+          Indikator:
+          blank = nicht definiert
+
+
+810       1. VERWEISUNGSFORM ZUM NAMEN DER KOERPERSCHAFT
+
+          Indikator:
+          blank = Namensverweisung
+          b     = Namens-Siehe-auch-Hinweis
+
+
+811       ZUSAETZLICHE ANGABEN ZUR 1. VERWEISUNGSFORM
+
+          Indikator:
+          a = Bemerkungen zur Verweisungsform
+          b = Abkuerzungen der Verweisungsform
+
+
+812       2. VERWEISUNGSFORM ZUM NAMEN DER KOERPERSCHAFT
+813       ZUSAETZLICHE ANGABEN ZUR 2. VERWEISUNGSFORM
+
+...
+
+848       20. VERWEISUNGSFORM ZUM NAMEN DER KOERPERSCHAFT
+849       ZUSAETZLICHE ANGABEN ZUR 20. VERWEISUNGSFORM
+
+
+850       1. FRUEHERER, ZEITWEISER ODER SPAETERER NAME DER
+          KOERPERSCHAFT
+
+          Indikator:
+          a = frueherer Name
+              (reziproke Beziehung)
+          b = zeitweiser Name
+          c = spaeterer Name
+              (reziproke Beziehung)
+          d = frueherer und spaeterer Name
+          e = frueher auch
+          f = spaeter auch
+          m = frueherer Name
+              (nicht reziproke Beziehung)
+          o = spaeterer Name
+              (nicht reziproke Beziehung)
+          s = siehe auch
+
+
+851       ZUSAETZLICHE ANGABEN ZUM 1. FRUEHEREN, ZEITWEISEN ODER
+          SPAETEREN NAMEN DER KOERPERSCHAFT
+
+          Indikator:
+          blank = nicht definiert
+
+
+852       IDENTIFIKATIONSNUMMER DES 1. FRUEHEREN, ZEITWEISEN ODER
+          SPAETEREN NAMENS
+
+          Indikator:
+          blank = nicht definiert
+
+
+853       2. FRUEHERER, ZEITWEISER ODER SPAETERER NAME DER
+          KOERPERSCHAFT
+854       ZUSAETZLICHE ANGABEN ZUM 2. FRUEHEREN, ZEITWEISEN ODER
+          SPAETEREN NAMEN DER KOERPERSCHAFT
+855       IDENTIFIKATIONSNUMMER DES 2. FRUEHEREN, ZEITWEISEN ODER
+          SPAETEREN NAMENS DER KOERPERSCHAFT
+
+...
+
+892       15. FRUEHERER, ZEITWEISER ODER SPAETERER NAME DER
+          KOERPERSCHAFT
+893       ZUSAETZLICHE ANGABEN ZUM 15. FRUEHEREN, ZEITWEISEN ODER
+          SPAETEREN NAMEN DER KOERPERSCHAFT
+894       IDENTIFIKATIONSNUMMER DES 15. FRUEHEREN, ZEITWEISEN ODER
+          SPAETEREN NAMENS DER KOERPERSCHAFT
+
+
+895       ZUSAETZLICHE SUCHWOERTER
+
+          Indikator:
+          blank = nicht definiert

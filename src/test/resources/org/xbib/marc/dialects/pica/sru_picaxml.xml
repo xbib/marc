@@ -1,0 +1,768 @@
+<?xml version="1.0"?>
+<searchRetrieveResponse xmlns="http://www.loc.gov/zing/srw/">
+  <version>1.1</version>
+  <numberOfRecords>3</numberOfRecords>
+  <resultSetId>12652199276829292</resultSetId>
+  <records>
+    <record>
+      <recordSchema>picaxml</recordSchema>
+      <recordPacking>xml</recordPacking>
+      <recordData>
+        <record xmlns="info:srw/schema/5/picaXML-v1.0">
+          <datafield tag="001@">
+            <subfield code="0">703</subfield>
+          </datafield>
+          <datafield tag="001A">
+            <subfield code="0">2045:10-03-11</subfield>
+          </datafield>
+          <datafield tag="001B">
+            <subfield code="0">2045:09-04-13</subfield>
+            <subfield code="t">18:26:39.000</subfield>
+          </datafield>
+          <datafield tag="001D">
+            <subfield code="0">2045:14-05-11</subfield>
+          </datafield>
+          <datafield tag="001U">
+            <subfield code="0">utf8</subfield>
+          </datafield>
+          <datafield tag="001X">
+            <subfield code="0">0</subfield>
+          </datafield>
+          <datafield tag="002@">
+            <subfield code="0">Oax</subfield>
+          </datafield>
+          <datafield tag="003@">
+            <subfield code="0">658700774</subfield>
+          </datafield>
+          <datafield tag="004A">
+            <subfield code="0">3642036805</subfield>
+          </datafield>
+          <datafield tag="004J">
+            <subfield code="0">3642036813</subfield>
+            <subfield code="A">9783642036811</subfield>
+            <subfield code="f">160.45 &#x20AC;</subfield>
+          </datafield>
+          <datafield tag="006X">
+            <subfield code="c">CIANDO</subfield>
+            <subfield code="0">43423</subfield>
+          </datafield>
+          <datafield tag="007G">
+            <subfield code="c">GBV</subfield>
+            <subfield code="0">658700774</subfield>
+          </datafield>
+          <datafield tag="008E">
+            <subfield code="a">ZDB-22-CAN</subfield>
+          </datafield>
+          <datafield tag="009@">
+            <subfield code="a">CIANDO</subfield>
+            <subfield code="b">eBook</subfield>
+          </datafield>
+          <datafield tag="009P" occurrence="05">
+            <subfield code="S">1</subfield>
+            <subfield code="a">http://ebooks.ciando.com/book/index.cfm/bok_id/43423</subfield>
+            <subfield code="n">CIANDO</subfield>
+            <subfield code="q">application/pdf</subfield>
+            <subfield code="v">10-03-11</subfield>
+            <subfield code="3">34</subfield>
+            <subfield code="A">CIANDO</subfield>
+          </datafield>
+          <datafield tag="009Q">
+            <subfield code="S">1</subfield>
+            <subfield code="y">C</subfield>
+            <subfield code="a">http://www.ciando.com/img/books/big/3642036813_k.jpg</subfield>
+            <subfield code="n">CIANDO</subfield>
+            <subfield code="q">image/jpeg</subfield>
+            <subfield code="3">93</subfield>
+            <subfield code="A">Ciando</subfield>
+          </datafield>
+          <datafield tag="009Q">
+            <subfield code="S">1</subfield>
+            <subfield code="y">C</subfield>
+            <subfield code="a">http://www.ciando.com/img/books/3642036813_k.jpg</subfield>
+            <subfield code="n">CIANDO</subfield>
+            <subfield code="q">image/jpeg</subfield>
+            <subfield code="3">93</subfield>
+            <subfield code="A">Ciando</subfield>
+          </datafield>
+          <datafield tag="009Q">
+            <subfield code="S">0</subfield>
+            <subfield code="y">Inhaltsverzeichnis</subfield>
+            <subfield code="0">pdf</subfield>
+            <subfield code="a">http://www.gbv.de/dms/bowker/toc/9783642036804.pdf</subfield>
+            <subfield code="m">DE-601</subfield>
+            <subfield code="n">Bowker</subfield>
+            <subfield code="q">pdf/application</subfield>
+            <subfield code="v">2011-12-23</subfield>
+            <subfield code="3">04</subfield>
+            <subfield code="A">GBV</subfield>
+            <subfield code="B">2</subfield>
+          </datafield>
+          <datafield tag="009Q">
+            <subfield code="S">1</subfield>
+            <subfield code="y">C</subfield>
+            <subfield code="a">http://www.ciando.com/img/books/width167/3642036813_k.jpg</subfield>
+            <subfield code="n">CIANDO</subfield>
+            <subfield code="q">image/jpeg</subfield>
+            <subfield code="3">93</subfield>
+            <subfield code="A">Ciando</subfield>
+          </datafield>
+          <datafield tag="009Q">
+            <subfield code="S">1</subfield>
+            <subfield code="y">C</subfield>
+            <subfield code="a">http://www.ciando.com/pictures/bib/3642036813bib_t_1.jpg</subfield>
+            <subfield code="n">CIANDO</subfield>
+            <subfield code="q">image/jpeg</subfield>
+            <subfield code="3">93</subfield>
+            <subfield code="A">Ciando</subfield>
+          </datafield>
+          <datafield tag="010@">
+            <subfield code="a">eng</subfield>
+          </datafield>
+          <datafield tag="011@">
+            <subfield code="a">2010</subfield>
+          </datafield>
+          <datafield tag="013@">
+            <subfield code="0">o3</subfield>
+          </datafield>
+          <datafield tag="016D">
+            <subfield code="0">cr</subfield>
+          </datafield>
+          <datafield tag="016H">
+            <subfield code="0">Elektronische Ressource</subfield>
+          </datafield>
+          <datafield tag="020F">
+            <subfield code="a">The agricultural world has changed significantly during the last years. The excessive use of heavy machinery, waste disposal, the use of agrochemicals and new soil cultivation means led to severe problems, which agricultural engineers have to cope with in order to prevent soil from permanent irreversible damage.This Soil Biology volume will update readers on several cutting-edge aspects of sustainable soil engineering including topics such as: soil compaction, soil density increases, soil disturbance and soil fragmentation, soil tillage machineries and optimization of tillage tools, soil traffic and traction, effects of heavy agricultural machines, the use of robotics in agriculture and controlled traffic farming, mechanical weed control, the characterization of soil variability and the recycling of compost and biosolids in agricultural soils.</subfield>
+          </datafield>
+          <datafield tag="021A">
+            <subfield code="a">Soil Engineering. (Soil Biology, Vol 20)</subfield>
+          </datafield>
+          <datafield tag="028A">
+            <subfield code="d">Athanasios P.</subfield>
+            <subfield code="a">Dedousis</subfield>
+          </datafield>
+          <datafield tag="028B" occurrence="01">
+            <subfield code="d">Thomas</subfield>
+            <subfield code="a">Bartzanas</subfield>
+          </datafield>
+          <datafield tag="032@">
+            <subfield code="a">1. Aufl.</subfield>
+          </datafield>
+          <datafield tag="033A">
+            <subfield code="p">[s.l.]</subfield>
+            <subfield code="n">Springer-Verlag</subfield>
+          </datafield>
+          <datafield tag="034D">
+            <subfield code="a">Online Ressource (5007 KB, 300 S.)</subfield>
+          </datafield>
+          <datafield tag="044Z">
+            <subfield code="b">ciando</subfield>
+            <subfield code="a">Politik Umweltpolitik</subfield>
+          </datafield>
+        </record>
+      </recordData>
+      <recordPosition>1</recordPosition>
+    </record>
+    <record>
+      <recordSchema>picaxml</recordSchema>
+      <recordPacking>xml</recordPacking>
+      <recordData>
+        <record xmlns="info:srw/schema/5/picaXML-v1.0">
+          <datafield tag="001@">
+            <subfield code="0">703</subfield>
+          </datafield>
+          <datafield tag="001A">
+            <subfield code="0">2045:10-03-11</subfield>
+          </datafield>
+          <datafield tag="001B">
+            <subfield code="0">1999:22-11-12</subfield>
+            <subfield code="t">06:31:01.000</subfield>
+          </datafield>
+          <datafield tag="001D">
+            <subfield code="0">2045:14-05-11</subfield>
+          </datafield>
+          <datafield tag="001U">
+            <subfield code="0">utf8</subfield>
+          </datafield>
+          <datafield tag="001X">
+            <subfield code="0">0</subfield>
+          </datafield>
+          <datafield tag="002@">
+            <subfield code="0">Oax</subfield>
+          </datafield>
+          <datafield tag="003@">
+            <subfield code="0">65869538X</subfield>
+          </datafield>
+          <datafield tag="004A">
+            <subfield code="0">3642050751</subfield>
+          </datafield>
+          <datafield tag="004J">
+            <subfield code="0">364205076X</subfield>
+            <subfield code="A">9783642050763</subfield>
+            <subfield code="f">160.45 &#x20AC;</subfield>
+          </datafield>
+          <datafield tag="006X">
+            <subfield code="c">CIANDO</subfield>
+            <subfield code="0">42632</subfield>
+          </datafield>
+          <datafield tag="007G">
+            <subfield code="c">GBV</subfield>
+            <subfield code="0">65869538X</subfield>
+          </datafield>
+          <datafield tag="008E">
+            <subfield code="a">ZDB-22-CAN</subfield>
+          </datafield>
+          <datafield tag="009@">
+            <subfield code="a">CIANDO</subfield>
+            <subfield code="b">eBook</subfield>
+          </datafield>
+          <datafield tag="009P" occurrence="05">
+            <subfield code="S">1</subfield>
+            <subfield code="a">http://ebooks.ciando.com/book/index.cfm/bok_id/42632</subfield>
+            <subfield code="n">CIANDO</subfield>
+            <subfield code="q">application/pdf</subfield>
+            <subfield code="v">10-03-11</subfield>
+            <subfield code="3">34</subfield>
+            <subfield code="A">CIANDO</subfield>
+          </datafield>
+          <datafield tag="009Q">
+            <subfield code="S">1</subfield>
+            <subfield code="y">C</subfield>
+            <subfield code="a">http://www.ciando.com/img/books/364205076X_k.jpg</subfield>
+            <subfield code="n">CIANDO</subfield>
+            <subfield code="q">image/jpeg</subfield>
+            <subfield code="3">93</subfield>
+            <subfield code="A">Ciando</subfield>
+          </datafield>
+          <datafield tag="009Q">
+            <subfield code="S">1</subfield>
+            <subfield code="y">C</subfield>
+            <subfield code="a">http://www.ciando.com/img/books/big/364205076X_k.jpg</subfield>
+            <subfield code="n">CIANDO</subfield>
+            <subfield code="q">image/jpeg</subfield>
+            <subfield code="3">93</subfield>
+            <subfield code="A">Ciando</subfield>
+          </datafield>
+          <datafield tag="009Q">
+            <subfield code="S">1</subfield>
+            <subfield code="y">C</subfield>
+            <subfield code="a">http://www.ciando.com/img/books/width167/364205076X_k.jpg</subfield>
+            <subfield code="n">CIANDO</subfield>
+            <subfield code="q">image/jpeg</subfield>
+            <subfield code="3">93</subfield>
+            <subfield code="A">Ciando</subfield>
+          </datafield>
+          <datafield tag="009Q">
+            <subfield code="S">1</subfield>
+            <subfield code="y">C</subfield>
+            <subfield code="a">http://www.ciando.com/pictures/bib/364205076Xbib_t_1_38234.jpg</subfield>
+            <subfield code="n">CIANDO</subfield>
+            <subfield code="q">image/jpeg</subfield>
+            <subfield code="3">93</subfield>
+            <subfield code="A">Ciando</subfield>
+          </datafield>
+          <datafield tag="010@">
+            <subfield code="a">eng</subfield>
+          </datafield>
+          <datafield tag="011@">
+            <subfield code="a">2010</subfield>
+          </datafield>
+          <datafield tag="013@">
+            <subfield code="0">o3</subfield>
+          </datafield>
+          <datafield tag="016D">
+            <subfield code="0">cr</subfield>
+          </datafield>
+          <datafield tag="016H">
+            <subfield code="0">Elektronische Ressource</subfield>
+          </datafield>
+          <datafield tag="020F">
+            <subfield code="a">The relationships between soils, microbes and humans are of crucial relevance in the tropics, where plant stress and microbial activity are exacerbated. This volume of Soil Biology presents the living component of tropical soils, showing how it is shaped by environmental conditions and emphasizing its dramatic impact on human survival and well-being. Following an introduction to the specificities of tropical soils and of their microbial communities, the biological aspects of soil management are examined, dealing with land use change, conservation and slash-and-burn agriculture, the restoration of hot deserts, agroforestry and paddy rice cultivation. As they are of particular relevance for tropical agriculture, symbioses of plants and microbes are thoroughly covered, as are the biodegradation of pesticides and health risks associated with wastewater irrigation. Lastly, traditional soil knowledge is discussed as a key to our sustainable presence in this world.</subfield>
+          </datafield>
+          <datafield tag="021A">
+            <subfield code="a">Soil Biology and Agriculture in the Tropics, Vol 21</subfield>
+          </datafield>
+          <datafield tag="028A">
+            <subfield code="d">Patrice</subfield>
+            <subfield code="a">Dion</subfield>
+          </datafield>
+          <datafield tag="032@">
+            <subfield code="a">1. Aufl.</subfield>
+          </datafield>
+          <datafield tag="033A">
+            <subfield code="p">[s.l.]</subfield>
+            <subfield code="n">Springer-Verlag</subfield>
+          </datafield>
+          <datafield tag="034D">
+            <subfield code="a">Online Ressource (3383 KB, 330 S.)</subfield>
+          </datafield>
+          <datafield tag="044Z">
+            <subfield code="b">ciando</subfield>
+            <subfield code="a">Politik Umweltpolitik</subfield>
+          </datafield>
+        </record>
+      </recordData>
+      <recordPosition>2</recordPosition>
+    </record>
+    <record>
+      <recordSchema>picaxml</recordSchema>
+      <recordPacking>xml</recordPacking>
+      <recordData>
+        <record xmlns="info:srw/schema/5/picaXML-v1.0">
+          <datafield tag="001@">
+            <subfield code="0">20,22,24,62,65</subfield>
+          </datafield>
+          <datafield tag="001A">
+            <subfield code="0">2001:02-12-09</subfield>
+          </datafield>
+          <datafield tag="001B">
+            <subfield code="0">1999:14-01-13</subfield>
+            <subfield code="t">19:55:48.000</subfield>
+          </datafield>
+          <datafield tag="001D">
+            <subfield code="0">0003:26-03-10</subfield>
+          </datafield>
+          <datafield tag="001U">
+            <subfield code="0">utf8</subfield>
+          </datafield>
+          <datafield tag="001X">
+            <subfield code="0">0</subfield>
+          </datafield>
+          <datafield tag="002@">
+            <subfield code="0">Aaua</subfield>
+          </datafield>
+          <datafield tag="003@">
+            <subfield code="0">614133955</subfield>
+          </datafield>
+          <datafield tag="004A">
+            <subfield code="A">9783642050756</subfield>
+            <subfield code="g">GB.</subfield>
+            <subfield code="f">ca. EUR 160.45</subfield>
+            <subfield code="m">freier Pr.), ca. sfr 249.00 (freier Pr.</subfield>
+          </datafield>
+          <datafield tag="004P">
+            <subfield code="S">o</subfield>
+            <subfield code="A">978-3-642-05076-3</subfield>
+          </datafield>
+          <datafield tag="006A">
+            <subfield code="0">  2010920235</subfield>
+          </datafield>
+          <datafield tag="006G">
+            <subfield code="0">998455768</subfield>
+          </datafield>
+          <datafield tag="006L">
+            <subfield code="c">DNB</subfield>
+            <subfield code="0">998455768</subfield>
+          </datafield>
+          <datafield tag="006T">
+            <subfield code="0">09N501430</subfield>
+          </datafield>
+          <datafield tag="006X">
+            <subfield code="c">OCoLC</subfield>
+            <subfield code="0">ocn462921767</subfield>
+          </datafield>
+          <datafield tag="006Y">
+            <subfield code="0">FGBA316629626</subfield>
+          </datafield>
+          <datafield tag="007D">
+            <subfield code="l">Best.-Nr.</subfield>
+            <subfield code="0">12324408</subfield>
+          </datafield>
+          <datafield tag="007G">
+            <subfield code="c">DNB</subfield>
+            <subfield code="0">998455768</subfield>
+          </datafield>
+          <datafield tag="010@">
+            <subfield code="a">eng</subfield>
+          </datafield>
+          <datafield tag="011@">
+            <subfield code="a">2010</subfield>
+          </datafield>
+          <datafield tag="019@">
+            <subfield code="a">XA-DE</subfield>
+            <subfield code="a">XA-NL</subfield>
+            <subfield code="a">XA-GB</subfield>
+          </datafield>
+          <datafield tag="021A">
+            <subfield code="a">Soil biology and agriculture in the tropics</subfield>
+            <subfield code="h">Patrice Dion ed.</subfield>
+          </datafield>
+          <datafield tag="028C">
+            <subfield code="d">Patrice</subfield>
+            <subfield code="a">Dion</subfield>
+          </datafield>
+          <datafield tag="033A">
+            <subfield code="p">Heidelberg [u.a.]</subfield>
+            <subfield code="n">Springer</subfield>
+          </datafield>
+          <datafield tag="034D">
+            <subfield code="a">XIII, 325 S.</subfield>
+          </datafield>
+          <datafield tag="034I">
+            <subfield code="a">235 mm x 155 mm</subfield>
+          </datafield>
+          <datafield tag="034M">
+            <subfield code="a">Ill., graph. Darst.</subfield>
+          </datafield>
+          <datafield tag="036E">
+            <subfield code="a">Soil Biology</subfield>
+            <subfield code="l">21</subfield>
+          </datafield>
+          <datafield tag="036F">
+            <subfield code="x">2100</subfield>
+            <subfield code="9">390966320</subfield>
+            <subfield code="a">Soil biology</subfield>
+            <subfield code="p">Berlin</subfield>
+            <subfield code="n">Springer</subfield>
+            <subfield code="n">2004-</subfield>
+            <subfield code="0">21517551</subfield>
+            <subfield code="l">21</subfield>
+          </datafield>
+          <datafield tag="041A">
+            <subfield code="S">g</subfield>
+            <subfield code="9">104483709</subfield>
+            <subfield code="M">Tgv1</subfield>
+            <subfield code="a">Tropen</subfield>
+            <subfield code="0">gnd/4060997-2</subfield>
+          </datafield>
+          <datafield tag="041A" occurrence="01">
+            <subfield code="S">s</subfield>
+            <subfield code="9">10625295X</subfield>
+            <subfield code="M">Tsv1</subfield>
+            <subfield code="a">Landwirtschaft</subfield>
+            <subfield code="0">gnd/4034402-2</subfield>
+          </datafield>
+          <datafield tag="041A" occurrence="02">
+            <subfield code="S">s</subfield>
+            <subfield code="9">106373862</subfield>
+            <subfield code="M">Tsv1</subfield>
+            <subfield code="a">Bodenbiologie</subfield>
+            <subfield code="0">gnd/4007358-0</subfield>
+          </datafield>
+          <datafield tag="044A">
+            <subfield code="N">650</subfield>
+            <subfield code="S">s</subfield>
+            <subfield code="a">Soil microbiology</subfield>
+            <subfield code="z">Tropics</subfield>
+          </datafield>
+          <datafield tag="044A">
+            <subfield code="N">650</subfield>
+            <subfield code="S">s</subfield>
+            <subfield code="a">Soil management</subfield>
+            <subfield code="z">Tropics</subfield>
+          </datafield>
+          <datafield tag="044A">
+            <subfield code="N">650</subfield>
+            <subfield code="S">s</subfield>
+            <subfield code="a">Agriculture</subfield>
+            <subfield code="z">Tropics</subfield>
+          </datafield>
+          <datafield tag="044G">
+            <subfield code="S">a</subfield>
+            <subfield code="a">Agriculture</subfield>
+          </datafield>
+          <datafield tag="044G">
+            <subfield code="S">a</subfield>
+            <subfield code="a">Life sciences</subfield>
+          </datafield>
+          <datafield tag="044G">
+            <subfield code="S">a</subfield>
+            <subfield code="a">Soil conservation</subfield>
+          </datafield>
+          <datafield tag="044K">
+            <subfield code="S">g</subfield>
+            <subfield code="9">104483709</subfield>
+            <subfield code="M">Tgv1</subfield>
+            <subfield code="a">Tropen</subfield>
+            <subfield code="0">gnd/4060997-2</subfield>
+          </datafield>
+          <datafield tag="044K">
+            <subfield code="S">s</subfield>
+            <subfield code="9">10625295X</subfield>
+            <subfield code="M">Tsv1</subfield>
+            <subfield code="a">Landwirtschaft</subfield>
+            <subfield code="0">gnd/4034402-2</subfield>
+          </datafield>
+          <datafield tag="044K">
+            <subfield code="S">s</subfield>
+            <subfield code="9">106373862</subfield>
+            <subfield code="M">Tsv1</subfield>
+            <subfield code="a">Bodenbiologie</subfield>
+            <subfield code="0">gnd/4007358-0</subfield>
+          </datafield>
+          <datafield tag="044K">
+            <subfield code="A">BVB</subfield>
+          </datafield>
+          <datafield tag="045A">
+            <subfield code="a">QR111</subfield>
+          </datafield>
+          <datafield tag="045F">
+            <subfield code="e">23</subfield>
+            <subfield code="a">579/.1757</subfield>
+            <subfield code="A">LOC</subfield>
+          </datafield>
+          <datafield tag="045G">
+            <subfield code="a">630</subfield>
+            <subfield code="a">570</subfield>
+          </datafield>
+          <datafield tag="045H">
+            <subfield code="e">DDC22ger</subfield>
+            <subfield code="a">631.460913</subfield>
+            <subfield code="c">631.46</subfield>
+            <subfield code="g">13</subfield>
+            <subfield code="A">DDB</subfield>
+          </datafield>
+          <datafield tag="045Q" occurrence="01">
+            <subfield code="9">106408917</subfield>
+            <subfield code="a">42.91</subfield>
+            <subfield code="j">Terrestrische &#xD6;kologie</subfield>
+          </datafield>
+          <datafield tag="045Q" occurrence="02">
+            <subfield code="9">106409069</subfield>
+            <subfield code="a">48.32</subfield>
+            <subfield code="j">Bodenkunde</subfield>
+            <subfield code="j">Bodenbewertung</subfield>
+            <subfield code="X">Land- und Forstwirtschaft</subfield>
+          </datafield>
+          <datafield tag="045T">
+            <subfield code="a">ZC 14000</subfield>
+            <subfield code="A">BSZ</subfield>
+          </datafield>
+          <datafield tag="045V">
+            <subfield code="a">13</subfield>
+          </datafield>
+          <datafield tag="045X">
+            <subfield code="b">NAL</subfield>
+            <subfield code="a">QR111</subfield>
+            <subfield code="A">LOC</subfield>
+          </datafield>
+          <datafield tag="045Y">
+            <subfield code="a">ggo</subfield>
+          </datafield>
+          <datafield tag="046M">
+            <subfield code="a">Literaturangaben</subfield>
+          </datafield>
+          <datafield tag="101@">
+            <subfield code="a">20</subfield>
+            <subfield code="c">PICA</subfield>
+          </datafield>
+          <datafield tag="201B" occurrence="01">
+            <subfield code="0">04-05-10</subfield>
+            <subfield code="t">09:21:00.000</subfield>
+          </datafield>
+          <datafield tag="201D" occurrence="01">
+            <subfield code="0">04-05-10</subfield>
+            <subfield code="b">1026</subfield>
+            <subfield code="a">0084</subfield>
+          </datafield>
+          <datafield tag="201U" occurrence="01">
+            <subfield code="0">utf8</subfield>
+          </datafield>
+          <datafield tag="203@" occurrence="01">
+            <subfield code="0">1107112451</subfield>
+          </datafield>
+          <datafield tag="208@" occurrence="01">
+            <subfield code="a">19-03-10</subfield>
+            <subfield code="b">k</subfield>
+          </datafield>
+          <datafield tag="209A" occurrence="01">
+            <subfield code="f">LS2</subfield>
+            <subfield code="a">GO P 607 (21)</subfield>
+            <subfield code="x">00</subfield>
+          </datafield>
+          <datafield tag="209A" occurrence="01">
+            <subfield code="a">2899-7920</subfield>
+            <subfield code="x">09</subfield>
+          </datafield>
+          <datafield tag="209G" occurrence="01">
+            <subfield code="a">84$028997920</subfield>
+          </datafield>
+          <datafield tag="101@">
+            <subfield code="a">22</subfield>
+            <subfield code="c">PICA</subfield>
+          </datafield>
+          <datafield tag="201B" occurrence="01">
+            <subfield code="0">16-09-10</subfield>
+            <subfield code="t">10:54:30.000</subfield>
+          </datafield>
+          <datafield tag="201D" occurrence="01">
+            <subfield code="0">16-09-10</subfield>
+            <subfield code="b">6922</subfield>
+            <subfield code="a">0018</subfield>
+          </datafield>
+          <datafield tag="201U" occurrence="01">
+            <subfield code="0">utf8</subfield>
+          </datafield>
+          <datafield tag="203@" occurrence="01">
+            <subfield code="0">1169941761</subfield>
+          </datafield>
+          <datafield tag="208@" occurrence="01">
+            <subfield code="a">16-09-10</subfield>
+            <subfield code="b">zu</subfield>
+          </datafield>
+          <datafield tag="209A" occurrence="01">
+            <subfield code="f">SUB</subfield>
+            <subfield code="a">A 2010/9138</subfield>
+            <subfield code="d">u</subfield>
+            <subfield code="x">00</subfield>
+          </datafield>
+          <datafield tag="209G" occurrence="01">
+            <subfield code="a">941490010</subfield>
+          </datafield>
+          <datafield tag="101@">
+            <subfield code="a">24</subfield>
+            <subfield code="c">PICA</subfield>
+          </datafield>
+          <datafield tag="201B" occurrence="01">
+            <subfield code="0">23-10-10</subfield>
+            <subfield code="t">01:37:19.000</subfield>
+          </datafield>
+          <datafield tag="201D" occurrence="01">
+            <subfield code="0">23-10-10</subfield>
+            <subfield code="b">relkiel</subfield>
+            <subfield code="a">0008</subfield>
+          </datafield>
+          <datafield tag="201U" occurrence="01">
+            <subfield code="0">utf8</subfield>
+          </datafield>
+          <datafield tag="203@" occurrence="01">
+            <subfield code="0">1163067784</subfield>
+          </datafield>
+          <datafield tag="208@" occurrence="01">
+            <subfield code="a">18-05-10</subfield>
+            <subfield code="b">zz1</subfield>
+          </datafield>
+          <datafield tag="209A" occurrence="01">
+            <subfield code="b">8</subfield>
+            <subfield code="f">10 agr 530</subfield>
+            <subfield code="a">Bm 435</subfield>
+            <subfield code="d">u</subfield>
+            <subfield code="x">00</subfield>
+          </datafield>
+          <datafield tag="209B" occurrence="01">
+            <subfield code="a">acq</subfield>
+            <subfield code="x">50</subfield>
+          </datafield>
+          <datafield tag="209G" occurrence="01">
+            <subfield code="a">8$0000361445</subfield>
+          </datafield>
+          <datafield tag="209O" occurrence="01">
+            <subfield code="a">va</subfield>
+            <subfield code="x">00</subfield>
+          </datafield>
+          <datafield tag="220B" occurrence="01">
+            <subfield code="a">2010-06-24</subfield>
+          </datafield>
+          <datafield tag="245Z" occurrence="01">
+            <subfield code="9">057871930</subfield>
+            <subfield code="a">agr 530</subfield>
+            <subfield code="j">Bodenbiologie</subfield>
+            <subfield code="x">50</subfield>
+          </datafield>
+          <datafield tag="245Z" occurrence="01">
+            <subfield code="9">057871884</subfield>
+            <subfield code="a">agr 518</subfield>
+            <subfield code="j">B&#xF6;den weltweit</subfield>
+            <subfield code="x">51</subfield>
+          </datafield>
+          <datafield tag="245Z" occurrence="01">
+            <subfield code="9">05787073X</subfield>
+            <subfield code="a">agr 250.100</subfield>
+            <subfield code="j">Tropen</subfield>
+            <subfield code="j">Landwirtschaft und Ern&#xE4;hrungswirtschaft</subfield>
+            <subfield code="x">52</subfield>
+          </datafield>
+          <datafield tag="245Z" occurrence="01">
+            <subfield code="9">481854215</subfield>
+            <subfield code="a">agr 250</subfield>
+            <subfield code="j">Regionale Landwirtschaft und Ern&#xE4;hrungswirtschaft in einzelnen Zonen</subfield>
+            <subfield code="x">72</subfield>
+          </datafield>
+          <datafield tag="101@">
+            <subfield code="a">62</subfield>
+            <subfield code="c">PICA</subfield>
+          </datafield>
+          <datafield tag="201B" occurrence="01">
+            <subfield code="0">15-12-11</subfield>
+            <subfield code="t">09:34:26.000</subfield>
+          </datafield>
+          <datafield tag="201D" occurrence="01">
+            <subfield code="0">15-12-11</subfield>
+            <subfield code="b">r62acq</subfield>
+            <subfield code="a">1999</subfield>
+          </datafield>
+          <datafield tag="201U" occurrence="01">
+            <subfield code="0">utf8</subfield>
+          </datafield>
+          <datafield tag="203@" occurrence="01">
+            <subfield code="0">1161091157</subfield>
+          </datafield>
+          <datafield tag="208@" occurrence="01">
+            <subfield code="a">21-06-10</subfield>
+            <subfield code="b">zbb1</subfield>
+          </datafield>
+          <datafield tag="209A" occurrence="01">
+            <subfield code="f">28/BB1</subfield>
+            <subfield code="a">ZC 14000 S683-21</subfield>
+            <subfield code="d">u</subfield>
+            <subfield code="x">00</subfield>
+          </datafield>
+          <datafield tag="209C" occurrence="01">
+            <subfield code="a">2010.08108</subfield>
+            <subfield code="x">00</subfield>
+          </datafield>
+          <datafield tag="209G" occurrence="01">
+            <subfield code="a">28$009646124</subfield>
+          </datafield>
+          <datafield tag="209O" occurrence="01">
+            <subfield code="a">ACQ</subfield>
+            <subfield code="x">00</subfield>
+          </datafield>
+          <datafield tag="101@">
+            <subfield code="a">65</subfield>
+            <subfield code="c">PICA</subfield>
+          </datafield>
+          <datafield tag="201B" occurrence="01">
+            <subfield code="0">26-03-10</subfield>
+            <subfield code="t">14:19:28.000</subfield>
+          </datafield>
+          <datafield tag="201D" occurrence="01">
+            <subfield code="0">26-03-10</subfield>
+            <subfield code="b">2575</subfield>
+            <subfield code="a">0003/0004</subfield>
+          </datafield>
+          <datafield tag="201U" occurrence="01">
+            <subfield code="0">utf8</subfield>
+          </datafield>
+          <datafield tag="203@" occurrence="01">
+            <subfield code="0">1114907871</subfield>
+          </datafield>
+          <datafield tag="208@" occurrence="01">
+            <subfield code="a">26-03-10</subfield>
+            <subfield code="b">ka004</subfield>
+          </datafield>
+          <datafield tag="209A" occurrence="01">
+            <subfield code="b">3</subfield>
+            <subfield code="j">4</subfield>
+            <subfield code="f">Ha 4</subfield>
+            <subfield code="a">L 2010-502</subfield>
+            <subfield code="d">u</subfield>
+            <subfield code="x">00</subfield>
+          </datafield>
+          <datafield tag="209C" occurrence="01">
+            <subfield code="a">4/2010/00502</subfield>
+            <subfield code="x">00</subfield>
+          </datafield>
+          <datafield tag="209G" occurrence="01">
+            <subfield code="a">3/4$000681431</subfield>
+          </datafield>
+        </record>
+      </recordData>
+      <recordPosition>3</recordPosition>
+    </record>
+  </records>
+  <nextRecordPosition>4</nextRecordPosition>
+  <echoedSearchRetrieveRequest>
+    <version>1.1</version>
+    <recordSchema>picaxml</recordSchema>
+  </echoedSearchRetrieveRequest>
+</searchRetrieveResponse>

@@ -1,0 +1,18 @@
+000001059 FMT   L BK
+000001059 LDR   L 00641nam^^22002291^^4500
+000001059 001   L AAJ0078
+000001059 008   L 000814s1959^^^^ilua^^^^^^^^^^00000^eng^^
+000001059 010   L $$a58011949
+000001059 035   L $$a(OCoLC)99058213
+000001059 040   L $$cCarP
+000001059 0500  L $$aHB871$$b.H37
+000001059 051   L $$cCopy 2.
+000001059 051   L $$cCopy 3.
+000001059 090   L $$aHB871$$b.H376
+000001059 10010 L $$aHauser, Philip Morris,$$d1909-$$eed.
+000001059 24504 L $$aThe study of population:$$ban inventoryand appraisal.
+000001059 2600  L $$a[Chicago]$$bUniversity of ChicagoPress$$c[1959]
+000001059 300   L $$a864 p.$$billus.$$c25 cm.
+000001059 650-0 L $$aDemography.
+000001059 650-0 L $$aPopulation.
+000001059 70010 L $$aDuncan, Otis Dudley,$$ejoint ed.

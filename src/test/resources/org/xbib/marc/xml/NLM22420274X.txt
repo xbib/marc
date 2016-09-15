@@ -1,0 +1,102 @@
+beginRecord
+MabXML
+h
+leader
+00000     1000000   000 
+001 
+001 a
+001 a=NLM22420274X
+001 
+025 
+025 a
+025 a=acs200908211147000417644
+025 
+026h
+026ha
+026ha=NLM22420274X
+026h
+030 
+030 a
+030 a=d|zu|||z|0017
+030 
+037b
+037ba
+037ba=eng
+037b
+050 
+050 a
+050 a=||||||||g|
+050 
+051 
+051 a
+051 a=a|||||
+051 
+070a
+070aa
+070aa=GBV
+070a
+078e
+078ea
+078ea=ZDB-1-ACS
+078e
+100 
+100 a
+100 a=Ellis, Jacqueline
+100 
+104a
+104aa
+104aa=Bagshaw, Clive R.
+104a
+108a
+108aa
+108aa=Shaw, William V.
+108a
+331a
+331aa
+331aa=Kinetic mechanism of chloramphenicol acetyltransferase: the role of ternary complex interconversion in rate determination
+331a
+334 
+334 a
+334 a=Elektronische Ressource
+334 
+410 
+410 a
+410 a=s.l.
+410 
+412 
+412 a
+412 a=American Chemical Society
+412 
+425a
+425aa
+425aa=1995
+425a
+590 
+590 a
+590 a=Biochemistry
+590 
+594 
+594 a
+594 a=Columbus, Ohio
+594 
+596 
+596 a
+596 a=34 (1995), S. 16852-16859
+596 
+599a
+599aa
+599aa=1520-4995
+599a
+621b
+621ba
+621ba=ACS Legacy Archives
+621b
+622z
+622za
+622za=041002-0
+622z
+655 
+655 u
+655 u=http://dx.doi.org/10.1021/bi00051a036
+655 
+endRecord

@@ -1,0 +1,418 @@
+<collection xmlns="info:lc/xmlns/marcxchange-v2">
+  <record format="MARC21" type="Bibliographic">
+    <leader>01737nam  22004334a 4500</leader>
+    <controlfield tag="001">ocn137607921</controlfield>
+    <controlfield tag="003">OCoLC</controlfield>
+    <controlfield tag="005">20070605101501.0</controlfield>
+    <controlfield tag="008">060223s2004    ye       b    000 0 ara  </controlfield>
+    <datafield ind2=" " ind1=" " tag="010">
+      <subfield code="a">  2005311567</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="040">
+      <subfield code="a">DLC-R</subfield>
+      <subfield code="c">NYP</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="066">
+      <subfield code="c">(3</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="035">
+      <subfield code="a">(OCoLC)137607921</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="035">
+      <subfield code="a">(CStRLIN)NYPN06-B180</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="042">
+      <subfield code="a">lcode</subfield>
+      <subfield code="a">pcc</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="043">
+      <subfield code="a">ma-----</subfield>
+    </datafield>
+    <datafield ind2="0" ind1="0" tag="050">
+      <subfield code="a">PJ7538</subfield>
+      <subfield code="b">.L57 2004</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="079">
+      <subfield code="a">ocm60522147</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="090">
+      <subfield code="a">*OEM 06-1987</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="049">
+      <subfield code="a">OCLC</subfield>
+    </datafield>
+    <datafield ind2="0" ind1="0" tag="245">
+      <subfield code="6">880-01</subfield>
+      <subfield code="a">Liqāʼāt wa-shahādāt adabīyah /</subfield>
+      <subfield code="c">Najīb Maḥfūẓ ... [et al.] ; ajrá al-liqāʼāt Ḥasan ʻAlī Mijallī.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="250">
+      <subfield code="6">880-02</subfield>
+      <subfield code="a">al-Ṭabʻah 1.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="260">
+      <subfield code="6">880-03</subfield>
+      <subfield code="a">Ṣanʻāʼ :</subfield>
+      <subfield code="b">Markaz ʻAbbādī lil-Dirāsāt wa-al-Nashr,</subfield>
+      <subfield code="c">2004.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="300">
+      <subfield code="a">153 p. ;</subfield>
+      <subfield code="c">23 cm.</subfield>
+    </datafield>
+    <datafield ind2="0" ind1=" " tag="440">
+      <subfield code="6">880-04</subfield>
+      <subfield code="a">Maktabat al-dirāsāt al-fikrīyah wa-al-naqdīyah</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="504">
+      <subfield code="a">Includes bibliographical references.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="546">
+      <subfield code="a">In Arabic.</subfield>
+    </datafield>
+    <datafield ind2="0" ind1=" " tag="650">
+      <subfield code="a">Arabic literature</subfield>
+      <subfield code="y">20th century</subfield>
+      <subfield code="v">History and criticism.</subfield>
+    </datafield>
+    <datafield ind2="0" ind1=" " tag="650">
+      <subfield code="a">Authors, Arab</subfield>
+      <subfield code="y">20th century</subfield>
+      <subfield code="v">Interviews.</subfield>
+    </datafield>
+    <datafield ind2="0" ind1=" " tag="650">
+      <subfield code="a">Intellectuals</subfield>
+      <subfield code="z">Arab countries</subfield>
+      <subfield code="v">Interviews.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="1" tag="700">
+      <subfield code="a">Maḥfūẓ, Najīb,</subfield>
+      <subfield code="d">1911-</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="1" tag="700">
+      <subfield code="a">Mijallī, Ḥasan ʻAlī.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="8" tag="852">
+      <subfield code="a">New York Public Library</subfield>
+      <subfield code="b">ho</subfield>
+      <subfield code="h">*OEM 06-1987</subfield>
+      <subfield code="x">OID=AME;CIN=GYG</subfield>
+    </datafield>
+    <datafield ind2="0" ind1="0" tag="880">
+      <subfield code="6">245-01/(3/r</subfield>
+      <subfield code="a">&amp;#x200F;لقاءات وشهادات أدبية /&amp;#x200F;</subfield>
+      <subfield code="c">&amp;#x200F;نجيب محفوظ ... [et al.] ؛ أجرى اللقاءات حسن علي مجلي.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="880">
+      <subfield code="6">250-02/(3/r</subfield>
+      <subfield code="a">&amp;#x200F;الطبعة 1.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="880">
+      <subfield code="6">260-03/(3/r</subfield>
+      <subfield code="a">&amp;#x200F;صنعاء :&amp;#x200F;</subfield>
+      <subfield code="c">&amp;#x200F;2004.</subfield>
+    </datafield>
+    <datafield ind2="0" ind1=" " tag="880">
+      <subfield code="6">440-04/(3/r</subfield>
+    </datafield>
+    <datafield ind2="1" ind1=" " tag="901">
+      <subfield code="a">*OEM 06-1987</subfield>
+      <subfield code="i">33433069567414</subfield>
+      <subfield code="l">ho</subfield>
+      <subfield code="s">-</subfield>
+      <subfield code="t">002</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="994">
+      <subfield code="a">C0</subfield>
+      <subfield code="b">OCL</subfield>
+    </datafield>
+  </record>
+  <record format="MARC21" type="Bibliographic">
+    <leader>02647cas  2200589 a 4500</leader>
+    <controlfield tag="001">ocn124081299</controlfield>
+    <controlfield tag="003">OCoLC</controlfield>
+    <controlfield tag="005">20070605101501.0</controlfield>
+    <controlfield tag="008">970414c19789999iluqr p  g    0   a0eng d</controlfield>
+    <datafield ind2=" " ind1=" " tag="010">
+      <subfield code="a">   86641268 </subfield>
+      <subfield code="z">sn 84012219 </subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="040">
+      <subfield code="a">ICD-L</subfield>
+      <subfield code="c">FC0</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="0" tag="022">
+      <subfield code="a">0897-1277</subfield>
+      <subfield code="y">0022-6793</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="032">
+      <subfield code="a">399610</subfield>
+      <subfield code="b">USPS</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="035">
+      <subfield code="a">(OCoLC)124081299</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="035">
+      <subfield code="a">(CStRLIN)NYHL97-S162</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="042">
+      <subfield code="a">lc</subfield>
+      <subfield code="a">nsdp</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="043">
+      <subfield code="a">n-us---</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="0" tag="050">
+      <subfield code="a">K10</subfield>
+      <subfield code="b">.U67</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="079">
+      <subfield code="a">ocm05266384</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="0" tag="082">
+      <subfield code="a">344/.095/05</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="082">
+      <subfield code="a">342.49505</subfield>
+      <subfield code="2">19</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="049">
+      <subfield code="a">OCLC</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="0" tag="210">
+      <subfield code="a">Jurimetrics</subfield>
+      <subfield code="b">(Chic. Ill.)</subfield>
+    </datafield>
+    <datafield ind2="0" ind1=" " tag="222">
+      <subfield code="a">Jurimetrics</subfield>
+      <subfield code="b">(Chicago, Ill.)</subfield>
+    </datafield>
+    <datafield ind2="0" ind1="0" tag="245">
+      <subfield code="a">Jurimetrics.</subfield>
+    </datafield>
+    <datafield ind2="3" ind1="1" tag="246">
+      <subfield code="a">Jurimetrics journal of law, science and technology</subfield>
+      <subfield code="f">&lt;fall 1991-&gt;</subfield>
+    </datafield>
+    <datafield ind2="3" ind1="1" tag="246">
+      <subfield code="a">Jurimetrics journal</subfield>
+      <subfield code="f">1978-</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="260">
+      <subfield code="a">Chicago, Ill. :</subfield>
+      <subfield code="b">Section of Science &amp; Technology, American Bar Association,</subfield>
+      <subfield code="c">c1979-</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="300">
+      <subfield code="a">v. :</subfield>
+      <subfield code="b">ill. ;</subfield>
+      <subfield code="c">23 cm.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="310">
+      <subfield code="a">Quarterly</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="0" tag="362">
+      <subfield code="a">Vol. 19, no. 2 (winter 1978)-</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="500">
+      <subfield code="a">Title from cover.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="500">
+      <subfield code="a">"Journal of law, science and technology."</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="1" tag="510">
+      <subfield code="a">Index to legal periodicals</subfield>
+      <subfield code="x">0019-4077</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="1" tag="510">
+      <subfield code="a">Legal resource index</subfield>
+      <subfield code="b">1980-</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="2" tag="510">
+      <subfield code="a">Computer &amp; control abstracts</subfield>
+      <subfield code="x">0036-8113</subfield>
+      <subfield code="b">winter 1978-</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="2" tag="510">
+      <subfield code="a">Electrical &amp; electronics abstracts</subfield>
+      <subfield code="x">0036-8105</subfield>
+      <subfield code="b">winter 1978-</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="2" tag="510">
+      <subfield code="a">Physics abstracts</subfield>
+      <subfield code="x">0036-8091</subfield>
+      <subfield code="b">winter 1978-</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="515">
+      <subfield code="a">Special issue for 1979 called also v. 19, no. 5.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="525">
+      <subfield code="a">Special issue 1979 contains proceedings of the Section's annual meeting.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="550">
+      <subfield code="a">Vols. for spring 1985-winter 1986 issued by: American Bar Association Section of Science and Technology and the Arizona State University College of Law; spring 1986-&lt;fall 1987&gt; by the American Bar Association Section of Science and Technology, and the Center for the Study of Law, Science, and Technology of the Arizona State University College of Law.</subfield>
+    </datafield>
+    <datafield ind2="0" ind1=" " tag="650">
+      <subfield code="a">Science and law</subfield>
+      <subfield code="z">United States</subfield>
+      <subfield code="x">Periodicals.</subfield>
+    </datafield>
+    <datafield ind2="0" ind1=" " tag="650">
+      <subfield code="a">Technology and law</subfield>
+      <subfield code="z">United States</subfield>
+      <subfield code="x">Periodicals.</subfield>
+    </datafield>
+    <datafield ind2="0" ind1=" " tag="650">
+      <subfield code="a">Judicial process</subfield>
+      <subfield code="z">United States</subfield>
+      <subfield code="x">Periodicals.</subfield>
+    </datafield>
+    <datafield ind2="0" ind1=" " tag="650">
+      <subfield code="a">Legal research</subfield>
+      <subfield code="x">Data processing</subfield>
+      <subfield code="z">United States</subfield>
+      <subfield code="x">Periodicals.</subfield>
+    </datafield>
+    <datafield ind2="0" ind1=" " tag="650">
+      <subfield code="a">Information storage and retrieval systems</subfield>
+      <subfield code="x">Law</subfield>
+      <subfield code="z">United States</subfield>
+      <subfield code="x">Periodicals.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="2" tag="710">
+      <subfield code="a">American Bar Association.</subfield>
+      <subfield code="b">Section of Science and Technology.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="2" tag="710">
+      <subfield code="a">Arizona State University.</subfield>
+      <subfield code="b">College of Law.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="2" tag="710">
+      <subfield code="a">Arizona State University.</subfield>
+      <subfield code="b">Center for the Study of Law, Science, and Technology.</subfield>
+    </datafield>
+    <datafield ind2="0" ind1="0" tag="780">
+      <subfield code="t">Jurimetrics journal</subfield>
+      <subfield code="x">0022-6793</subfield>
+      <subfield code="w">(DLC)   92657369</subfield>
+      <subfield code="w">(OCoLC)1754902</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="852">
+      <subfield code="a">NNHHR</subfield>
+      <subfield code="b">MAIN</subfield>
+      <subfield code="j">\PER</subfield>
+      <subfield code="t">1</subfield>
+      <subfield code="x">OID=CCS</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="994">
+      <subfield code="a">C0</subfield>
+      <subfield code="b">OCL</subfield>
+    </datafield>
+  </record>
+  <record format="MARC21" type="Bibliographic">
+    <leader>01347cam  2200373 i 4500</leader>
+    <controlfield tag="001">ocn135450843</controlfield>
+    <controlfield tag="003">OCoLC</controlfield>
+    <controlfield tag="005">20070605101501.0</controlfield>
+    <controlfield tag="008">850910s1976    caua     bc   001 0 eng d</controlfield>
+    <datafield ind2=" " ind1=" " tag="010">
+      <subfield code="a">   76013691 </subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="040">
+      <subfield code="a">UBY</subfield>
+      <subfield code="c">UBY</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="020">
+      <subfield code="a">0875870708 :</subfield>
+      <subfield code="c">$5.00</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="020">
+      <subfield code="a">9780875870700</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="035">
+      <subfield code="a">(OCoLC)135450843</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="035">
+      <subfield code="a">(UPB)notisADN0346</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="035">
+      <subfield code="a">(CStRLIN)UTBG85-B43642</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="043">
+      <subfield code="a">n-us---</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="0" tag="050">
+      <subfield code="a">N6538.N5</subfield>
+      <subfield code="b">D74</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="079">
+      <subfield code="a">ocm02318292</subfield>
+      <subfield code="z">ocm02550323</subfield>
+      <subfield code="z">ocm03890870</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="082">
+      <subfield code="a">709/.73</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="090">
+      <subfield code="a">N6538</subfield>
+      <subfield code="b">.N5\D74</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="049">
+      <subfield code="a">OCLC</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="1" tag="100">
+      <subfield code="a">Driskell, David C.</subfield>
+    </datafield>
+    <datafield ind2="0" ind1="1" tag="245">
+      <subfield code="a">Two centuries of Black American art :</subfield>
+      <subfield code="b">[exhibition], Los Angeles County Museum of Art, the High Museum of Art, Atlanta, Museum of Fine Arts, Dallas, the Brooklyn Museum /</subfield>
+      <subfield code="c">David C. Driskell ; with catalog notes by Leonard Simon.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="250">
+      <subfield code="a">1st ed.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="260">
+      <subfield code="a">[Los Angeles] :</subfield>
+      <subfield code="b">Los Angeles County Museum of Art ;</subfield>
+      <subfield code="a">New York :</subfield>
+      <subfield code="b">Knopf :</subfield>
+      <subfield code="b">distributed by Random House,</subfield>
+      <subfield code="c">1976.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="300">
+      <subfield code="a">221 p. :</subfield>
+      <subfield code="b">ill. (some col.) ;</subfield>
+      <subfield code="c">28 cm.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="504">
+      <subfield code="a">Bibliography: p. 206-219.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="500">
+      <subfield code="a">Includes index.</subfield>
+    </datafield>
+    <datafield ind2="0" ind1=" " tag="650">
+      <subfield code="a">Afro-American art</subfield>
+      <subfield code="x">Exhibitions.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="1" tag="700">
+      <subfield code="a">Simon, Leonard,</subfield>
+      <subfield code="d">1936-</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="2" tag="710">
+      <subfield code="a">Los Angeles County Museum of Art.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="852">
+      <subfield code="a">UPB</subfield>
+      <subfield code="b">MAN</subfield>
+      <subfield code="h">N6538</subfield>
+      <subfield code="i">.N5\D74</subfield>
+      <subfield code="x">c.1 001</subfield>
+      <subfield code="x">c.2 002</subfield>
+      <subfield code="x">OID=SYL</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="994">
+      <subfield code="a">C0</subfield>
+      <subfield code="b">OCL</subfield>
+    </datafield>
+  </record>
+</collection>

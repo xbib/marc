@@ -1,0 +1,514 @@
+beginRecord
+format=MARC21
+type=Holdings
+leader=00366ny  a22001693n 4500
+001$$273652109
+003$$DE-101
+004$$1043033122
+005$$20131016150425.0
+008$$131016||||||||||||||||ger|||||||
+016$7 $2a[a=2737752-0, 2=DE-600]
+092$  $adklo[a=501001-9, d=38 M, k=NRW, l=a, o=b]
+852$  $8[8=1]
+852$ 1$9c[c=Zs.A 7009, 9=00]
+852$  $a[a=DE-38M]
+859$01$8i[8=1.1\x, i=2013]
+866$30$a[a=A30.2013 -]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00814nas a2200265 c 4500
+001$$1043033122
+003$$DE-101
+005$$20131016150638.0
+007$$tu
+008$$131016c20139999sz u||p|  ||| 0||||0ger c
+016$7 $2a[2=DE-101, a=1043033122]
+016$7 $2a[2=DE-600, a=2737752-0]
+035$  $a[a=(DE-599)ZDB2737752-0]
+040$  $abcd[a=4002, b=ger, c=DE-101, d=4002]
+041$  $a[a=ger]
+044$  $c[c=XA-CH]
+082$74$2aq[a=610, q=DE-600, 2=23sdnb]
+084$  $2aq[a=610, q=DE-600, 2=sdnb]
+110$2 $004a[0=(DE-588)2140654-6, 0=(DE-101)942372344, a=Schweizerische Alzheimervereinigung, 4=aut]
+245$10$a[a=IB / Schweizerische Alzheimervereinigung]
+246$13$ai[i=Nebent., a=Infoblatt]
+246$13$ai[i=Nebent., a=Infoblätter]
+260$3 $ab[a=Yverdon-les-Bains, b=Schweizerische Alzheimervereinigung]
+362$0 $a[a=Nachgewiesen Nr. A30.2013 -]
+515$  $a[a=Orig.-Zählung z.B.: IB 163 A 30]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00970nas a22002418c 4500
+001$$1036678784
+003$$DE-101
+005$$20130702175210.0
+007$$tu
+008$$130702c20119999sz u||p|  ||| 0||||0ita c
+016$7 $2a[2=DE-101, a=1036678784]
+016$7 $2a[2=DE-600, a=2722721-2]
+035$  $a[a=(DE-599)ZDB2722721-2]
+040$  $abcd[a=1141, b=ger, c=DE-101, d=1141]
+041$  $a[a=ita]
+044$  $c[c=XA-CH]
+110$2 $004a[0=(DE-588)2140654-6, 0=(DE-101)942372344, a=Schweizerische Alzheimervereinigung, 4=aut]
+245$10$a[a=Rapporto annuale / Associazione Alzheimer Svizzera]
+260$3 $ab[a=Yverdon-les-Bains, b=Assoc. Alzheimer Svizzera]
+362$0 $a[a=Nachgewiesen 2010(2011) -]
+363$01$8i[8=1.1\x, i=2010]
+775$08$aitww[i=Franz. Ausg., a=Schweizerische Alzheimervereinigung, t=Rapport annuel / Association Alzheimer Suisse, w=(DE-600)2722720-0, w=(DE-101)1036678733]
+780$00$aitww[i=Dt. Ausg. u. hervorgeg. aus, a=Schweizerische Alzheimervereinigung, t=Jahresbericht / Schweizerische Alzheimervereinigung, w=(DE-600)2087838-2, w=(DE-101)023859105]
+endRecord
+beginRecord
+format=MARC21
+type=Holdings
+leader=00479ny  a22001579n 4500
+001$$26606647X
+003$$DE-101
+004$$1036678784
+005$$20130703030510.0
+008$$130702||||||||||||||||ger|||||||
+016$7 $2a[a=2722721-2, 2=DE-600]
+092$  $adklo[a=950200-2, d=101a, k=SAX, l=a, o=b]
+541$  $e[e=L-2011-26606647X]
+852$  $a[a=DE-101a]
+866$ 0$z[z=Gehoert nicht zum Sammelgebiet der Deutschen Nationalbibliothek]
+866$ 0$x[x=NSG: fremdspr., im Ausland ersch. Veröff., keine Übers.; Vorlage: 2010. 2.7.13/fp]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00972nas a22002418c 4500
+001$$1036678733
+003$$DE-101
+005$$20130702175118.0
+007$$tu
+008$$130702c20119999sz u||p|  ||| 0||||0fre c
+016$7 $2a[2=DE-101, a=1036678733]
+016$7 $2a[2=DE-600, a=2722720-0]
+035$  $a[a=(DE-599)ZDB2722720-0]
+040$  $abcd[a=1141, b=ger, c=DE-101, d=1141]
+041$  $a[a=fre]
+044$  $c[c=XA-CH]
+110$2 $004a[0=(DE-588)2140654-6, 0=(DE-101)942372344, a=Schweizerische Alzheimervereinigung, 4=aut]
+245$10$a[a=Rapport annuel / Association Alzheimer Suisse]
+260$3 $ab[a=Yverdon-les-Bains, b=Association Alzheimer Suisse]
+362$0 $a[a=Nachgewiesen 2010(2011) -]
+363$01$8i[8=1.1\x, i=2010]
+775$08$aitww[i=Ital. Ausg., a=Schweizerische Alzheimervereinigung, t=Rapporto annuale / Associazione Alzheimer Svizzera, w=(DE-600)2722721-2, w=(DE-101)1036678784]
+780$00$aitww[i=Dt. Ausg. u. hervorgeg. aus, a=Schweizerische Alzheimervereinigung, t=Jahresbericht / Schweizerische Alzheimervereinigung, w=(DE-600)2087838-2, w=(DE-101)023859105]
+endRecord
+beginRecord
+format=MARC21
+type=Holdings
+leader=00479ny  a22001579n 4500
+001$$266066453
+003$$DE-101
+004$$1036678733
+005$$20130703030510.0
+008$$130702||||||||||||||||ger|||||||
+016$7 $2a[a=2722720-0, 2=DE-600]
+092$  $adklo[a=950200-2, d=101a, k=SAX, l=a, o=b]
+541$  $e[e=L-2011-266066453]
+852$  $a[a=DE-101a]
+866$ 0$z[z=Gehoert nicht zum Sammelgebiet der Deutschen Nationalbibliothek]
+866$ 0$x[x=NSG: fremdspr., im Ausland ersch. Veröff., keine Übers.; Vorlage: 2010. 2.7.13/fp]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=01111nas a22002538c 4500
+001$$989514528
+003$$DE-101
+005$$20090118151048.0
+007$$tu
+008$$080708c20089999|||u||p|  ||| 0||||0||| c
+016$7 $2a[2=DE-101, a=989514528]
+016$7 $2a[2=DE-600, a=2436353-4]
+035$  $a[a=(DE-599)ZDB2436353-4]
+040$  $abcd[a=1141, b=ger, c=DE-101, d=9999]
+082$74$2aq[a=610, q=DE-600, 2=22sdnb]
+084$  $2aq[a=610, q=DE-600, 2=sdnb]
+110$2 $004a[0=(DE-588)2140654-6, 0=(DE-101)942372344, a=Schweizerische Alzheimervereinigung, 4=aut]
+245$10$abnp[a=Memo / Association Alzheimer Suisse, b=bulletin pour membres et sympathisants, n=[...], p=[Französische Ausgabe]]
+246$19$a[a=Memo / Französische Ausgabe]
+260$3 $ab[a=Yverdon-les-Bains, b=Assoc. Alzheimer Suisse]
+362$0 $a[a=Nachgewiesen 2008 -]
+775$08$aitww[i=Dt. Ausg., a=Schweizerische Alzheimervereinigung, t=Memo / Deutsche Ausgabe / Schweizerische Alzheimervereinigung, w=(DE-600)2423815-6, w=(DE-101)964991209]
+775$08$aitww[i=Ital. Ausg., a=Schweizerische Alzheimervereinigung, t=Memo / Italienische Ausgabe / Associazione Alzheimer Svizzera, w=(DE-600)2436347-9, w=(DE-101)989514285]
+930$  $a[a=[Französische Ausgabe]]
+endRecord
+beginRecord
+format=MARC21
+type=Holdings
+leader=00466ny  a22001579n 4500
+001$$141399902
+003$$DE-101
+004$$989514528
+005$$20081011181644.0
+008$$080708||||||||||||||||ger|||||||
+016$7 $2a[a=2436353-4, 2=DE-600]
+092$  $adklo[a=950200-2, d=101a, k=SAX, l=a, o=b]
+541$  $e[e=L-2008-141399902]
+852$  $a[a=DE-101a]
+866$ 0$z[z=Gehoert nicht zum Sammelgebiet der Deutschen Nationalbibliothek]
+866$ 0$x[x=NSG, da fremdspr. Veröffentlichung des Auslandes, Entsch. Sod, 15.05.08]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=01105nas a22002538c 4500
+001$$989514285
+003$$DE-101
+005$$20090118151048.0
+007$$tu
+008$$080708c20089999|||u||p|  ||| 0||||0||| c
+016$7 $2a[2=DE-101, a=989514285]
+016$7 $2a[2=DE-600, a=2436347-9]
+035$  $a[a=(DE-599)ZDB2436347-9]
+040$  $abcd[a=1141, b=ger, c=DE-101, d=9999]
+082$74$2aq[a=610, q=DE-600, 2=22sdnb]
+084$  $2aq[a=610, q=DE-600, 2=sdnb]
+110$2 $004a[0=(DE-588)2140654-6, 0=(DE-101)942372344, a=Schweizerische Alzheimervereinigung, 4=aut]
+245$10$abnp[a=Memo / Associazione Alzheimer Svizzera, b=bollettino per soci e sostinetori, n=[...], p=[Italienische Ausgabe]]
+246$19$a[a=Memo / Italienische Ausgabe]
+260$3 $ab[a=Yverdon-les-Bains, b=Assoc. Alzheimer Svizzera]
+362$0 $a[a=Nachgewiesen 2008 -]
+775$08$aitww[i=Dt. Ausg., a=Schweizerische Alzheimervereinigung, t=Memo / Deutsche Ausgabe / Schweizerische Alzheimervereinigung, w=(DE-600)2423815-6, w=(DE-101)964991209]
+775$08$aitww[i=Franz. Ausg., a=Schweizerische Alzheimervereinigung, t=Memo / Französische Ausgabe / Association Alzheimer Suisse, w=(DE-600)2436353-4, w=(DE-101)989514528]
+930$  $a[a=[Italienische Ausgabe]]
+endRecord
+beginRecord
+format=MARC21
+type=Holdings
+leader=00466ny  a22001579n 4500
+001$$14139966X
+003$$DE-101
+004$$989514285
+005$$20081011181644.0
+008$$080708||||||||||||||||ger|||||||
+016$7 $2a[a=2436347-9, 2=DE-600]
+092$  $adklo[a=950200-2, d=101a, k=SAX, l=a, o=b]
+541$  $e[e=L-2008-14139966X]
+852$  $a[a=DE-101a]
+866$ 0$z[z=Gehoert nicht zum Sammelgebiet der Deutschen Nationalbibliothek]
+866$ 0$x[x=NSG, da fremdspr. Veröffentlichung des Auslandes, Entsch. Sod, 19.05.08]
+endRecord
+beginRecord
+format=MARC21
+type=Holdings
+leader=00372ny  a22001693n 4500
+001$$139975500
+003$$DE-101
+004$$988694379
+005$$20081011182907.0
+008$$080514||||||||||||||||ger|||||||
+016$7 $2a[a=2426344-8, 2=DE-600]
+092$  $adkloy[a=950200-2, d=101a, k=SAX, l=a, o=b, y=ge]
+541$  $e[e=L-2008-139975500]
+852$  $8[8=1]
+852$ 1$9c[c=ZB 98322, 9=00]
+852$  $a[a=DE-101a]
+866$30$a[a=2008,1 -]
+endRecord
+beginRecord
+format=MARC21
+type=Holdings
+leader=00361ny  a22001693n 4500
+001$$140784403
+003$$DE-101
+004$$988694379
+005$$20080609122256.0
+008$$080609||||||||||||||||ger|||||||
+016$7 $2a[a=2426344-8, 2=DE-600]
+092$  $adklo[a=501001-9, d=38 M, k=NRW, l=a, o=b]
+852$  $8[8=1]
+852$ 1$9c[c=Zs.A 4951, 9=00]
+852$  $a[a=DE-38M]
+859$01$8i[8=1.1\x, i=2008]
+866$30$a[a=2008 -]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=01484nas a2200409 c 4500
+001$$988694379
+003$$DE-101
+005$$20130828012904.0
+007$$tu
+008$$080514c20089999sz z||p|  ||| 0||||0ger c
+015$  $2a[a=08,B24,0321, 2=dnb]
+016$7 $2a[2=DE-101, a=988694379]
+016$7 $2a[2=DE-600, a=2426344-8]
+035$  $a[a=(DE-599)ZDB2426344-8]
+035$  $a[a=(OCoLC)428248297]
+040$  $abcd[a=1141, b=ger, c=DE-101, d=9999]
+041$  $a[a=ger]
+044$  $c[c=XA-CH]
+082$74$2aaq[a=360, a=610, q=DE-101, 2=22sdnb]
+083$7 $2aaq[a=070, a=610, q=DE-600, 2=22sdnb]
+084$  $2aaq[a=360, a=610, q=DE-101, 2=sdnb]
+084$  $2aaq[a=070, a=610, q=DE-600, 2=sdnb]
+090$  $n[n=fn]
+245$10$abc[a=Leben mit Demenz, b=Mitgliederbulletin der Schweizerischen Alzheimervereinigung, c=Alzheimer, Schweizerische Alzheimervereinigung]
+246$13$a[a=Mitgliederbulletin der Schweizerischen Alzheimervereinigung]
+260$3 $ab[a=Yverdon-les-Bains, b=Schweizerische Alzheimervereinigung]
+300$  $c[c=30 cm]
+362$0 $a[a=Nr. 1.2008 -]
+363$01$8i[8=1.1\x, i=2008]
+515$  $a[a=Periodizität: unregelmäßig]
+591$  $a[a=(üa/Z)]
+710$2 $00a[0=(DE-588)2140654-6, 0=(DE-101)942372344, a=Schweizerische Alzheimervereinigung]
+751$  $0024a[0=(DE-588)4067237-2, 0=(DE-101)040672379, a=Yverdon-les-Bains, 4=dbp, 2=gnd]
+775$08$itww[i=Franz. Ausg., t=Vivre avec Alzheimer, w=(DE-600)2584260-2, w=(DE-101)1008758531]
+775$08$itww[i=Ital. Ausg., t=Vivere con Alzheimer, w=(DE-600)2584259-6, w=(DE-101)100875840X]
+780$00$itww[i=Vorg.:, t=Alzheimer-Info, w=(DE-600)1447622-8, w=(DE-101)019413211]
+925$r $a[a=rb]
+endRecord
+beginRecord
+format=MARC21
+type=Holdings
+leader=00404ny  a22001813n 4500
+001$$603772412
+003$$DE-101
+004$$964991209
+005$$20110530192332.0
+008$$030224||||||||||||||||ger|||||||
+016$7 $2a[a=2423815-6, 2=DE-600]
+092$  $adkloy[a=950200-2, d=101a, k=SAX, l=a, o=b, y=ge]
+541$  $e[e=L-2002-603772412]
+852$  $8[8=1]
+852$ 1$9c[c=Z 2003 B 431, 9=00]
+852$  $a[a=DE-101a]
+859$01$8i[8=1.1\x, i=2002]
+866$30$a[a=2002,1 -]
+endRecord
+beginRecord
+format=MARC21
+type=Holdings
+leader=00562ny  a22002413n 4500
+001$$140783725
+003$$DE-101
+004$$964991209
+005$$20120627083137.0
+008$$080609||||||||||||||||ger|||||||
+016$7 $2a[a=2423815-6, 2=DE-600]
+092$  $adklo[a=501001-9, d=38 M, k=NRW, l=a, o=b]
+852$  $8[8=1]
+852$ 1$9c[c=Zs.A 6643, 9=00]
+852$  $a[a=DE-38M]
+859$00$8i[8=1.1\x, i=2005]
+859$10$8i[8=1.2\x, i=2008]
+859$00$8i[8=2.1\x, i=2009]
+859$00$8i[8=3.1\x, i=2010]
+859$00$8i[8=4.1\x, i=2011]
+859$01$8i[8=5.1\x, i=2012]
+866$30$a[a=2005 - 2008,1; 2009,2; 2010,2; 2011,2-3; 2012 -]
+866$30$z[z=[L]]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=01442nas a2200397 c 4500
+001$$964991209
+003$$DE-101
+005$$20110530192300.0
+006$$sq
+007$$tu
+008$$020807c20029999sz z||p|  ||| 0||||0ger c
+015$  $2a[a=03,B14,0471, 2=dnb]
+016$7 $2a[2=DE-101, a=964991209]
+016$7 $2a[2=DE-600, a=2423815-6]
+035$  $a[a=(DE-599)ZDB2423815-6]
+035$  $a[a=(OCoLC)722920868]
+040$  $abcd[a=1130, b=ger, c=DE-101, d=1141]
+041$  $a[a=ger]
+044$  $c[c=XA-CH]
+082$74$2aq[a=610, q=DE-600, 2=22sdnb]
+084$  $2aaq[a=33, a=610, q=DE-101, 2=sdnb]
+084$  $2aq[a=610, q=DE-600, 2=sdnb]
+110$2 $004a[0=(DE-588)2140654-6, 0=(DE-101)942372344, a=Schweizerische Alzheimervereinigung, 4=aut]
+245$10$abnp[a=Memo / Schweizerische Alzheimervereinigung, b=Bulletin für Mitglieder und Freunde, n=[...], p=[Deutsche Ausgabe]]
+246$19$a[a=Memo / Deutsche Ausgabe]
+247$10$af[a=Alzheimer-Memo, f=Nebent. teils]
+260$3 $ab[a=Yverdon-les-Bains, b=ALZ]
+300$  $c[c=30 cm]
+362$0 $a[a=2002,1 -]
+363$01$8i[8=1.1\x, i=2002]
+515$  $a[a=Anfangs vierteljährl., später 3x jährl.]
+775$08$aitww[i=Franz. Ausg., a=Schweizerische Alzheimervereinigung, t=Memo / Französische Ausgabe / Association Alzheimer Suisse, w=(DE-600)2436353-4, w=(DE-101)989514528]
+775$08$aitww[i=Ital. Ausg., a=Schweizerische Alzheimervereinigung, t=Memo / Italienische Ausgabe / Associazione Alzheimer Svizzera, w=(DE-600)2436347-9, w=(DE-101)989514285]
+889$  $w[w=(DE-101)964991209]
+925$r $a[a=rb]
+930$  $a[a=[Deutsche Ausgabe]]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00658nas a22002178c 4500
+001$$025815644
+003$$DE-101
+005$$20090118142210.0
+007$$tu
+008$$040329c20029999|||u||p|  ||| 0||||0||| c
+016$7 $2a[2=DE-101, a=025815644]
+016$7 $2a[2=DE-600, a=2141329-0]
+035$  $a[a=(DE-599)ZDB2141329-0]
+035$  $a[a=(OCoLC)645550085]
+040$  $abcd[a=0012, b=ger, c=DE-101, d=9999]
+082$74$2aq[a=370, q=DE-600, 2=22sdnb]
+084$  $2aq[a=370, q=DE-600, 2=sdnb]
+110$2 $004ag[0=(DE-588)1247980-9, 0=(DE-101)968176224, a=InfraServ, g=Gendorf, Burgkirchen, 4=aut]
+245$10$a[a=Aus- und Weiterbildung / InfraServ Gendorf, Aus- und Weiterbildung]
+260$3 $ab[a=Burgkirchen, b=[s.n.]]
+362$0 $a[a=Nachgewiesen 2002 -]
+endRecord
+beginRecord
+format=MARC21
+type=Holdings
+leader=00367ny  a22001573n 4500
+001$$094588082
+003$$DE-101
+004$$025815644
+005$$20070308104207.0
+008$$021112||||||||||||||||ger|||||||
+016$7 $2a[a=2141329-0, 2=DE-600]
+035$  $a[a=(DE-604)8036076564754]
+092$  $adklo[a=800100-5, d=12, k=BAY, l=a, o=c]
+852$ 1$9c[c=Wird nicht gesammelt, 9=00]
+852$  $a[a=DE-12]
+866$30$a[a=Kein Bestand]
+endRecord
+beginRecord
+format=MARC21
+type=Holdings
+leader=00375ny  a22001693n 4500
+001$$609242350
+003$$DE-101
+004$$963938347
+005$$20111216023021.0
+008$$020301||||||||||||||||ger|||||||
+016$7 $2a[a=2642833-7, 2=DE-600]
+092$  $adklo[a=950200-2, d=101a, k=SAX, l=a, o=b]
+541$  $e[e=L-2001-609242350]
+852$  $8[8=1]
+852$ 1$9c[c=Z 2004 B 329, 9=00]
+852$  $a[a=DE-101a]
+866$30$a[a=2001 - 2002]
+endRecord
+beginRecord
+format=MARC21
+type=Holdings
+leader=00375ny  a22001693n 4500
+001$$598112189
+003$$DE-101
+004$$963938347
+005$$20111216023021.0
+008$$020228||||||||||||||||ger|||||||
+016$7 $2a[a=2642833-7, 2=DE-600]
+092$  $adklo[a=600100-2, d=101b, k=HES, l=b, o=d]
+541$  $e[e=F-2001-598112189]
+852$  $8[8=1]
+852$ 1$9c[c=Z 2004 B 329, 9=00]
+852$  $a[a=DE-101b]
+866$30$a[a=2001 - 2002]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=01074nas a2200313 c 4500
+001$$963938347
+003$$DE-101
+005$$20111216023021.0
+007$$tu
+008$$020228d20012002gw u||p|  ||| 0||||0ger c
+015$  $2a[a=06,B31,0020, 2=dnb]
+016$7 $2a[2=DE-101, a=963938347]
+016$7 $2a[2=DE-600, a=2642833-7]
+035$  $a[a=(DE-599)ZDB2642833-7]
+035$  $a[a=(OCoLC)85712776]
+040$  $abcd[a=1240, b=ger, c=DE-101, d=9999]
+041$  $a[a=ger]
+044$  $c[c=XA-DE]
+082$74$2aaaq[a=230, a=330, a=360, q=DE-101, 2=22sdnb]
+083$7 $2aaaq[a=230, a=360, a=330, q=DE-600, 2=22sdnb]
+084$  $2aaaq[a=230, a=330, a=360, q=DE-101, 2=sdnb]
+084$  $2aaaq[a=230, a=360, a=330, q=DE-600, 2=sdnb]
+110$2 $004ag[0=(DE-588)2100899-1, 0=(DE-101)007493940, a=Arbeitslosenzentrum, g=Hannover, 4=aut]
+245$10$abc[a=Arbeitslosen-Zentrum Hannover, b=Entwicklung zur Fachberatungsstelle für Arbeitslose und von Arbeitslosigkeit bedrohte Menschen, c=Ev.-Luth. Stadtkirchenverband Hannover ; Arbeitslosen-Zentrum Hannover]
+260$3 $ab[a=Hannover, b=Arbeitslosen-Zentrum Hannover]
+300$  $c[c=31 cm]
+362$0 $a[a=2001 (Juli 2001) [?]-2002]
+889$  $w[w=(DE-101)963938347]
+925$r $a[a=rb]
+endRecord
+beginRecord
+format=MARC21
+type=Bibliographic
+leader=00827nas a2200265 c 4500
+001$$991237374
+003$$DE-101
+005$$20120413083717.0
+007$$tu
+008$$081113c19949999au z||p|  ||| 0||||0ger c
+016$7 $2a[2=DE-101, a=991237374]
+016$7 $2a[2=DE-600, a=2464911-9]
+035$  $a[a=(DE-599)ZDB2464911-9]
+035$  $a[a=(OCoLC)724002632]
+040$  $abcd[a=4060, b=ger, c=DE-101, d=9021]
+041$  $a[a=ger]
+044$  $c[c=XA-AT]
+082$74$2aaaq[a=630, a=640, a=620, q=DE-600, 2=22sdnb]
+084$  $2aaaq[a=630, a=640, a=620, q=DE-600, 2=sdnb]
+110$2 $004ag[0=(DE-588)10160947-4, 0=(DE-101)983041598, a=Mauch GesmbH & Co. KG, g=Burgkirchen a. d. Alz, 4=aut]
+245$10$ab[a=Mauch aktuell, b=Informationsschrift der Firma Mauch Ges.m.b.H. & Co. KG]
+260$3 $ab[a=Burgkirchen, b=[s.n.]]
+362$0 $a[a=[Ausg. Nr. 1.1994]; Ausg. Nr. 2.1995 -]
+363$01$8ai[8=1.1\x, a=1, i=1994]
+515$  $a[a=Ersch. unregelmäßig]
+endRecord
+beginRecord
+format=MARC21
+type=Holdings
+leader=00517ny  a22002053n 4500
+001$$149053126
+003$$DE-101
+004$$991237374
+005$$20090218171441.0
+008$$070131||||||||||||||||ger|||||||
+016$7 $2a[a=2464911-9, 2=DE-600]
+035$  $a[a=(AT-9:OBV)001649720]
+090$  $a[a=a]
+092$  $adklo[a=030007-x, d=AT-OÖLB, k=WEU, l=b, o=d]
+852$  $8[8=00.01]
+852$ 1$9c[c=OO-II-15751, 9=00]
+852$ 2$9b[b=ungebundene Jg. Zeitschriftenabt. Regal Nr. 491, 9=09]
+852$  $a[a=AT-OOeLB]
+859$01$8i[8=1.1\x, i=2001]
+866$30$a[a=2001,Nov.(=Ausgabe Nr.13) -]
+endRecord
+beginRecord
+format=MARC21
+type=Holdings
+leader=00551ny  a22002173n 4500
+001$$149070691
+003$$DE-101
+004$$991237374
+005$$20091030171544.0
+008$$081212||||||||||||||||ger|||||||
+016$7 $2a[a=2464911-9, 2=DE-600]
+035$  $a[a=(AT-9:OBV)001797891]
+090$  $a[a=a]
+092$  $adklo[a=030001-9, d=AT-ÖNB, k=WEU, l=a, o=c]
+852$  $8[8=00.01]
+852$ 1$9c[c=1,888.036-C.Neu-Per, 9=00]
+852$  $a[a=AT-OeNB]
+859$00$8ai[8=1.1\x, a=1, i=1994]
+859$01$8ai[8=2.1\x, a=2, i=1995]
+866$30$a[a=[Ausg. Nr. 1.1994]; Ausg. Nr. 2.1995 -]
+866$ 0$z[z=Lfde. Hefte in Zs.-Ls. benützbar]
+endRecord

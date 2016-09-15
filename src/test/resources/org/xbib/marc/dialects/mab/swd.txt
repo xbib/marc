@@ -1,0 +1,450 @@
+                                 MAB2-SWD
+                         Online-Kurzreferenz-Version
+                            Stand: November 1998
+
+
+
+          SATZKENNUNG
+
+
+001-088   SEGMENT 0--
+
+001-029   IDENTIFIKATIONSNUMMERN, DATUMS- UND VERSIONSANGABEN
+030-035   ALLGEMEINE VERARBEITUNGSTECHNISCHE ANGABEN
+036-049   ALLGEMEINE CODIERTE ANGABEN
+065-069   NORMDATENSPEZIFISCHE ANGABEN
+070-075   ANWENDERSPEZIFISCHE DATEN UND CODES
+076-088   ANWENDERSPEZIFISCHE ANGABEN
+
+
+
+
+600-603   SEGMENT PAUSCHALVERWEISUNGEN UND SIEHE-AUCH-HINWEISE
+
+600       1. TEIL DER VERWEISUNG
+
+          Indikator:
+          blank = nicht definiert
+
+
+601       BEMERKUNGEN ZUM 1. TEIL DER VERWEISUNG
+
+          Indikator:
+          blank = nicht definiert
+
+
+602       2. TEIL DER VERWEISUNG
+
+          Indikator:
+          a = Pauschalverweisung
+          b = nicht-reziproker Siehe-auch-Hinweis
+          c = reziproker Siehe-auch-Hinweis
+          d = Synonymie-Verweisung
+          e = hierarchische Verweisung
+          f = assoziative (reziproke) Verweisung
+          g = chronologische Verweisung
+
+
+603       BEMERKUNGEN ZUM 2. TEIL DER VERWEISUNG
+
+          Indikator:
+          blank = nicht definiert
+
+
+
+651-659   SEGMENT AUSGABEVERMERK COMPUTERDATEIEN
+
+655       ELEKTRONISCHE ADRESSE UND ZUGRIFFSART
+          FUER EINE COMPUTERDATEI IM FERNZUGRIFF
+
+          Indikator:
+
+          Zugriffsmethode:
+          blank = nicht spezifiziert
+          a     = E-Mail
+          b     = FTP (File Transfer)
+          c     = Remote Login (Telnet)
+          d     = Dial-up (konventioneller Telefonanschluss)
+          e     = HTTP
+          h     = In Unterfeld $2 spezifizierte Zugriffsmethode
+
+          Unterfelder:
+          $a    = Name des Host
+          $b    = IP-Zugriffsnummer
+          $c    = Art der Komprimierung
+          $d    = Zugriffspfad fuer eine Datei
+          $f    = Elektronischer Name der Datei im Verzeichnis des Host
+          $g    = URN (Uniform Resource Name)
+          $h    = Durchfuehrende Stelle einer Anfrage
+          $i    = Anweisung fuer die Ausfuehrung einer Anfrage
+          $j    = Datenuebertragungsrate (Bits pro Sekunde)
+          $k    = Passwort
+          $l    = Logon/Login-Angabe
+          $m    = Kontaktperson
+          $n    = Ort des Host
+          $o    = Betriebssystem des Host
+          $p    = Port
+          $q    = Elektronischer Dateiformattyp
+          $r    = Einstellungen fuer die Dateiuebertragung
+          $t    = Groesse der Datei
+          $u    = URL (Uniform Resource Locator)
+          $v    = Oeffnungszeiten des Host fuer die gewaehlte Zugangsart
+          $w    = Identifikationsnummer des verknuepften Datensatzes
+          $x    = Interne Bemerkungen
+          $z    = Allgemeine Bemerkungen
+          $2    = Zugriffsmethode
+          $3    = Bezugswerk
+          $A    = Beziehung
+
+
+
+8--       SEGMENT SCHLAGWOERTER
+
+800       HAUPTSCHLAGWORT
+
+          Indikator:
+          p     = Personenschlagwort bzw. Schlagwortansetzung mit
+                  Personenschlagwort als Hauptschlagwort
+          k     = Koerperschaftsschlagwort bzw. Schlagwortansetzung
+                  mit Koerperschaftsschlagwort als Hauptschlagwort
+                 (fuer Koerperschaften, die unter ihrem
+                  Individualnamen angesetzt werden)
+          c     = Koerperschaftsschlagwort bzw. Schlagwortansetzung mit
+                  Koerperschaftsschlagwort als Hauptschlagwort
+                  (fuer Koerperschaften, die unter einem Geographikum
+                  angesetzt werden)
+          g     = geographisches/ethnographisches Schlagwort,
+                  Schlagwort fuer Sprachbezeichnungen bzw.
+                  Schlagwortansetzung mit Geographikum
+                  als Hauptschlagwort
+          t     = Sachtitel eines Werkes
+          s     = Sachschlagwort
+          f     = Formschlagwort
+          z     = Zeitschlagwort
+          blank = nicht spezifiziert
+
+
+801       1. UNTERSCHLAGWORT
+
+          Indikator:
+          p     = Personenschlagwort bzw. Schlagwortansetzung mit
+                  Personenschlagwort als Hauptschlagwort
+          k     = Koerperschaftsschlagwort bzw. Schlagwortansetzung
+                  mit Koerperschaftsschlagwort als Hauptschlagwort
+                  (fuer Koerperschaften, die unter ihrem
+                  Individualnamen angesetzt werden)
+          c     = Koerperschaftsschlagwort bzw. Schlagwortansetzung mit
+                  Koerperschaftsschlagwort als Hauptschlagwort
+                  (fuer Koerperschaften, die unter einem Geographikum
+                  angesetzt werden)
+          g     = geographisches/ethnographisches Schlagwort, Schlagwort
+                  fuer Sprachbezeichnungen bzw. Schlagwortansetzung mit
+                  Geographikum als Hauptschlagwort
+          t     = Sachtitel eines Werkes
+          s     = Sachschlagwort
+          f     = Formschlagwort
+          z     = Zeitschlagwort
+          blank = nicht spezifiziert
+
+
+802       2. UNTERSCHLAGWORT
+
+          Indikator:
+
+           t     = Sachtitel eines Werkes
+           blank = nicht spezifiziert
+
+
+803       3. UNTERSCHLAGWORT
+804       4. UNTERSCHLAGWORT
+805       5. UNTERSCHLAGWORT
+
+
+808       ERLAEUTERUNGEN ZUM SCHLAGWORT
+
+          Indikator:
+          a = Quelle
+          b = Definition
+          c = Benutzungshinweise
+          d = Redaktionelle Bemerkungen
+
+
+820       ALTERNATIVFORM ZUM HAUPTSCHLAGWORT
+
+          Indikator:
+          p     = Personenschlagwort bzw. Schlagwortansetzung mit
+                  Personenschlagwort als Hauptschlagwort
+          k     = Koerperschaftsschlagwort bzw. Schlagwortansetzung
+                  mit Koerperschaftsschlagwort als Hauptschlagwort
+                  (fuer Koerperschaften, die unter ihrem
+                  Individualnamen angesetzt werden)
+          c     = Koerperschaftsschlagwort bzw. Schlagwortansetzung mit
+                  Koerperschaftsschlagwort als Hauptschlagwort
+                  (fuer Koerperschaften, die unter einem Geographikum
+                  angesetzt werden)
+          g     = geographisches/ethnographisches Schlagwort, Schlagwort
+                  fuer Sprachbezeichnungen bzw. Schlagwortansetzung mit
+                  Geographikum als Hauptschlagwort
+          t     = Sachtitel eines Werkes
+          s     = Sachschlagwort
+          f     = Formschlagwort
+          z     = Zeitschlagwort
+          blank = nicht spezifiziert
+
+
+821       1. UNTERSCHLAGWORT ZUR ALTERNATIVFORM
+822       2. UNTERSCHLAGWORT ZUR ALTERNATIVFORM
+823       3. UNTERSCHLAGWORT ZUR ALTERNATIVFORM
+824       4. UNTERSCHLAGWORT ZUR ALTERNATIVFORM
+825       5. UNTERSCHLAGWORT ZUR ALTERNATIVFORM
+
+
+829       IDENTIFIKATIONSNUMMER DER PAUSCHALVERWEISUNG
+          ZUR ALTERNATIVFORM
+
+          Indikator:
+          blank = nicht definiert
+
+
+830       Aequivalente Bezeichnung
+
+          Indikator:
+          p     = Personenschlagwort bzw. Schlagwortansetzung mit
+                  Personenschlagwort als Hauptschlagwort
+          k     = Koerperschaftsschlagwort bzw. Schlagwortansetzung
+                  mit Koerperschaftsschlagwort als Hauptschlagwort
+                  (fuer Koerperschaften, die unter ihrem
+                  Individualnamen angesetzt werden)
+          c     = Koerperschaftsschlagwort bzw. Schlagwortansetzung mit
+                  Koerperschaftsschlagwort als Hauptschlagwort
+                  (fuer Koerperschaften, die unter einem Geographikum
+                  angesetzt werden)
+          g     = geographisches/ethnographisches Schlagwort, Schlagwort
+                  fuer Sprachbezeichnungen bzw. Schlagwortansetzung mit
+                  Geographikum als Hauptschlagwort
+          t     = Sachtitel eines Werkes
+          s     = Sachschlagwort
+          f     = Formschlagwort
+          z     = Zeitschlagwort
+          blank = nicht spezifiziert
+          v     = Bemerkungen
+
+
+845       OBERBEGRIFF ZU INDIVIDUALBEZEICHNUNGEN
+          (SCHLAGWORTVERKNUEPFUNGEN)
+
+          Indikator:
+          p     = Personenschlagwort bzw. Schlagwortansetzung mit
+                  Personenschlagwort als Hauptschlagwort
+          k     = Koerperschaftsschlagwort bzw. Schlagwortansetzung
+                  mit Koerperschaftsschlagwort als Hauptschlagwort
+                  (fuer Koerperschaften, die unter ihrem
+                  Individualnamen angesetzt werden)
+          c     = Koerperschaftsschlagwort bzw. Schlagwortansetzung mit
+                  Koerperschaftsschlagwort als Hauptschlagwort
+                  (fuer Koerperschaften, die unter einem Geographikum
+                  angesetzt werden)
+          g     = geographisches/ethnographisches Schlagwort, Schlagwort
+                  fuer Sprachbezeichnungen bzw. Schlagwortansetzung mit
+                  Geographikum als Hauptschlagwort
+          t     = Sachtitel eines Werkes
+          s     = Sachschlagwort
+          f     = Formschlagwort
+          z     = Zeitschlagwort
+          blank = nicht spezifiziert
+          v     = Bemerkungen
+
+
+850       UEBERGEORDNETES SCHLAGWORT
+
+          Indikator:
+          p     = Personenschlagwort bzw. Schlagwortansetzung mit
+                  Personenschlagwort als Hauptschlagwort
+          k     = Koerperschaftsschlagwort bzw. Schlagwortansetzung
+                  mit Koerperschaftsschlagwort als Hauptschlagwort
+                  (fuer Koerperschaften, die unter ihrem
+                  Individualnamen angesetzt werden)
+          c     = Koerperschaftsschlagwort bzw. Schlagwortansetzung mit
+                  Koerperschaftsschlagwort als Hauptschlagwort
+                  (fuer Koerperschaften, die unter einem Geographikum
+                  angesetzt werden)
+          g     = geographisches/ethnographisches Schlagwort, Schlagwort
+                  fuer Sprachbezeichnungen bzw. Schlagwortansetzung mit
+                  Geographikum als Hauptschlagwort
+          t     = Sachtitel eines Werkes
+          s     = Sachschlagwort
+          f     = Formschlagwort
+          z     = Zeitschlagwort
+          blank = nicht spezifiziert
+          v     = Bemerkungen
+
+
+860       VERWANDTES SCHLAGWORT
+
+          Indikator:
+          p     = Personenschlagwort bzw. Schlagwortansetzung mit
+                  Personenschlagwort als Hauptschlagwort
+          k     = Koerperschaftsschlagwort bzw. Schlagwortansetzung
+                  mit Koerperschaftsschlagwort als Hauptschlagwort
+                  (fuer Koerperschaften, die unter ihrem
+                  Individualnamen angesetzt werden)
+          c     = Koerperschaftsschlagwort bzw. Schlagwortansetzung mit
+                  Koerperschaftsschlagwort als Hauptschlagwort
+                  (fuer Koerperschaften, die unter einem Geographikum
+                  angesetzt werden)
+          g     = geographisches/ethnographisches Schlagwort, Schlagwort
+                  fuer Sprachbezeichnungen bzw. Schlagwortansetzung mit
+                  Geographikum als Hauptschlagwort
+          t     = Sachtitel eines Werkes
+          s     = Sachschlagwort
+          f     = Formschlagwort
+          z     = Zeitschlagwort
+          blank = nicht spezifiziert
+          v     = Bemerkungen
+
+
+870       SCHLAGWORT FUER EINE FRUEHERE BENENNUNG
+
+          Indikator:
+          p     = Personenschlagwort bzw. Schlagwortansetzung mit
+                  Personenschlagwort als Hauptschlagwort
+          k     = Koerperschaftsschlagwort bzw. Schlagwortansetzung
+                  mit Koerperschaftsschlagwort als Hauptschlagwort
+                  (fuer Koerperschaften, die unter ihrem
+                  Individualnamen angesetzt werden)
+          c     = Koerperschaftsschlagwort bzw. Schlagwortansetzung mit
+                  Koerperschaftsschlagwort als Hauptschlagwort
+                  (fuer Koerperschaften, die unter einem Geographikum
+                  angesetzt werden)
+          g     = geographisches/ethnographisches Schlagwort, Schlagwort
+                  fuer Sprachbezeichnungen bzw. Schlagwortansetzung mit
+                  Geographikum als Hauptschlagwort
+          t     = Sachtitel eines Werkes
+          s     = Sachschlagwort
+          f     = Formschlagwort
+          z     = Zeitschlagwort
+          blank = nicht spezifiziert
+          v     = Bemerkungen
+
+
+880       SCHLAGWORT FUER EINE SPAETERE BENENNUNG
+
+          Indikator:
+          p     = Personenschlagwort bzw. Schlagwortansetzung mit
+                  Personenschlagwort als Hauptschlagwort
+          k     = Koerperschaftsschlagwort bzw. Schlagwortansetzung
+                  mit Koerperschaftsschlagwort als Hauptschlagwort
+                  (fuer Koerperschaften, die unter ihrem
+                  Individualnamen angesetzt werden)
+          c     = Koerperschaftsschlagwort bzw. Schlagwortansetzung
+                  mit Koerperschaftsschlagwort als Hauptschlagwort
+                  (fuer Koerperschaften, die unter einem Geographikum
+                  angesetzt werden)
+          g     = geographisches/ethnographisches Schlagwort, Schlagwort
+                  fuer Sprachbezeichnungen bzw. Schlagwortansetzung mit
+                  Geographikum als Hauptschlagwort
+          t     = Sachtitel eines Werkes
+          s     = Sachschlagwort
+          f     = Formschlagwort
+          z     = Zeitschlagwort
+          blank = nicht spezifiziert
+          v     = Bemerkungen
+
+
+890       NEUES SCHLAGWORT BEI SCHLAGWORTAENDERUNG
+
+          Indikator:
+          p     = Personenschlagwort bzw. Schlagwortansetzung mit
+                  Personenschlagwort als Hauptschlagwort
+          k     = Koerperschaftsschlagwort bzw. Schlagwortansetzung
+                  mit Koerperschaftsschlagwort als Hauptschlagwort
+                  (fuer Koerperschaften, die unter ihrem
+                  Individualnamen angesetzt werden)
+          c     = Koerperschaftsschlagwort bzw. Schlagwortansetzung mit
+                  Koerperschaftsschlagwort als Hauptschlagwort
+                  (fuer Koerperschaften, die unter einem Geographikum
+                  angesetzt werden)
+          g     = geographisches/ethnographisches Schlagwort, Schlagwort
+                  fuer Sprachbezeichnungen bzw. Schlagwortansetzung mit
+                  Geographikum als Hauptschlagwort
+          t     = Sachtitel eines Werkes
+          s     = Sachschlagwort
+          f     = Formschlagwort
+          z     = Zeitschlagwort
+          blank = nicht spezifiziert
+          v     = Bemerkungen
+
+
+891       ALTES SCHLAGWORT BEI SCHLAGWORTAENDERUNG
+
+          Indikator:
+          p     = Personenschlagwort bzw. Schlagwortansetzung mit
+                  Personenschlagwort als Hauptschlagwort
+          k     = Koerperschaftsschlagwort bzw. Schlagwortansetzung
+                  mit Koerperschaftsschlagwort als Hauptschlagwort
+                  (fuer Koerperschaften, die unter ihrem
+                  Individualnamen angesetzt werden)
+          c     = Koerperschaftsschlagwort bzw. Schlagwortansetzung mit
+                  Koerperschaftsschlagwort als Hauptschlagwort
+                  (fuer Koerperschaften, die unter einem Geographikum
+                  angesetzt werden)
+          g     = geographisches/ethnographisches Schlagwort, Schlagwort
+                  fuer Sprachbezeichnungen bzw. Schlagwortansetzung mit
+                  Geographikum als Hauptschlagwort
+          t     = Sachtitel eines Werkes
+          s     = Sachschlagwort
+          f     = Formschlagwort
+          z     = Zeitschlagwort
+          blank = nicht spezifiziert
+          v     = Bemerkungen
+
+
+
+9--       SEGMENT RSWK-SCHLAGWORTKETTEN
+
+900       IDENTIFIKATIONSNUMMER DER 1. SCHLAGWORTKETTE
+
+          Indikator:
+          blank = nicht definiert
+
+
+902       KETTENGLIED DER 1. SCHLAGWORTKETTE
+
+          Indikator:
+          p     = Personenschlagwort
+          g     = geographisch-ethnographisches Schlagwort
+          s     = Sachschlagwort
+          k     = Koerperschaftsschlagwort: Ansetzung unter dem
+                  Individualnamen
+          c     = Koerperschaftsschlagwort: Ansetzung unter dem
+                  Ortssitz
+          z     = Zeitschlagwort
+          f     = Formschlagwort
+          t     = Werktitel als Schlagwort
+          blank = Unterschlagwort einer Ansetzungskette
+
+
+903       PERMUTATIONSMUSTER DER 1. SCHLAGWORTKETTE
+
+          Indikator:
+          blank = nicht definiert
+
+
+904       ERLAEUTERUNGEN ZUR 1. SCHLAGWORTKETTE
+
+          Indikator:
+          blank = nicht definiert
+          a     = Herkunft / Nutzung
+
+
+905       IDENTIFIKATIONSNUMMER DER 2. SCHLAGWORTKETTE
+907       KETTENGLIED DER 2. SCHLAGWORTKETTE
+908       PERMUTATIONSMUSTER DER 2. SCHLAGWORTKETTE
+909       ERLAEUTERUNGEN ZUR 2. SCHLAGWORTKETTE
+
+...
+
+945       IDENTIFIKATIONSNUMMER DER 10. SCHLAGWORTKETTE
+947       KETTENGLIED DER 10. SCHLAGWORTKETTE
+948       PERMUTATIONSMUSTER DER 10. SCHLAGWORTKETTE
+949       Erlaeuterungen zur 10. Schlagwortkette

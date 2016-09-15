@@ -1,0 +1,1993 @@
+begin object
+begin
+tag=__FORMAT indicator=null subfield=null data=MAB
+end
+begin
+tag=__TYPE indicator=null subfield=null data=Bibliographic
+end
+begin
+tag=__LEADER indicator=null subfield=null data=00800nM2.01200024   000h
+end
+begin
+tag=001 indicator=null subfield=null data= HT016983451
+end
+begin
+tag=020 indicator=b subfield=null data=
+tag=020 indicator=b subfield=  data=BV039600502
+tag=020 indicator=b subfield=b data=BVB
+end
+begin
+tag=026 indicator=  subfield=null data=
+tag=026 indicator=  subfield=  data=BVBBV039600502
+end
+begin
+tag=030 indicator=  subfield=null data=
+tag=030 indicator=  subfield=  data=a|1uc||||||17
+end
+begin
+tag=036 indicator=a subfield=null data=
+tag=036 indicator=a subfield=  data=XA-DE-BW
+end
+begin
+tag=037 indicator=b subfield=null data=
+tag=037 indicator=b subfield=  data=ger
+end
+begin
+tag=050 indicator=  subfield=null data=
+tag=050 indicator=  subfield=  data=||||||||g|||||
+end
+begin
+tag=051 indicator=  subfield=null data=
+tag=051 indicator=  subfield=  data=m|||||||
+end
+begin
+tag=070 indicator=  subfield=null data=
+tag=070 indicator=  subfield=  data=361
+end
+begin
+tag=070 indicator=b subfield=null data=
+tag=070 indicator=b subfield=  data=708
+end
+begin
+tag=078 indicator=e subfield=null data=
+tag=078 indicator=e subfield=  data=ZDB-59-BPG
+end
+begin
+tag=078 indicator=i subfield=null data=
+tag=078 indicator=i subfield=  data=iall
+end
+begin
+tag=080 indicator=  subfield=null data=
+tag=080 indicator=  subfield=  data=60
+end
+begin
+tag=086 indicator=a subfield=null data=
+tag=086 indicator=a subfield=  data=978-3-621-27683-2
+end
+begin
+tag=100 indicator=  subfield=null data=
+tag=100 indicator=  subfield=  data=Schandry, Rainer
+tag=100 indicator=  subfield=9 data=(DE-588)120139901
+end
+begin
+tag=331 indicator=  subfield=null data=
+tag=331 indicator=  subfield=  data=Biologische Psychologie
+end
+begin
+tag=334 indicator=  subfield=null data=
+tag=334 indicator=  subfield=  data=Elektronische Ressource
+end
+begin
+tag=335 indicator=  subfield=null data=
+tag=335 indicator=  subfield=  data=[mit Add-on]
+end
+begin
+tag=359 indicator=  subfield=null data=
+tag=359 indicator=  subfield=  data=Rainer Schandry
+end
+begin
+tag=403 indicator=  subfield=null data=
+tag=403 indicator=  subfield=  data=3., vollst. überarb. Aufl.
+end
+begin
+tag=410 indicator=  subfield=null data=
+tag=410 indicator=  subfield=  data=Weinheim
+end
+begin
+tag=412 indicator=  subfield=null data=
+tag=412 indicator=  subfield=  data=Beltz
+end
+begin
+tag=425 indicator=  subfield=null data=
+tag=425 indicator=  subfield=  data=2011
+end
+begin
+tag=425 indicator=a subfield=null data=
+tag=425 indicator=a subfield=  data=2011
+end
+begin
+tag=433 indicator=  subfield=null data=
+tag=433 indicator=  subfield=  data=596 S. : Ill., graph. Darst.
+end
+begin
+tag=527 indicator=z subfield=null data=
+tag=527 indicator=z subfield=  data=Druckausg.
+tag=527 indicator=z subfield=a data=Schandry, Rainer: Biologische Psychologie
+tag=527 indicator=z subfield=9 data=HT016879875
+end
+begin
+tag=537 indicator=  subfield=null data=
+tag=537 indicator=  subfield=  data=Gesehen am: 06.12.2011
+end
+begin
+tag=540 indicator=a subfield=null data=
+tag=540 indicator=a subfield=  data=978-3-621-27844-7
+end
+begin
+tag=652 indicator=a subfield=null data=
+tag=652 indicator=a subfield=  data=Online-Ressource
+end
+begin
+tag=700 indicator=  subfield=null data=
+tag=700 indicator=  subfield=  data=610
+end
+begin
+tag=700 indicator=  subfield=null data=
+tag=700 indicator=  subfield=  data=150
+end
+begin
+tag=700 indicator=g subfield=null data=
+tag=700 indicator=g subfield=  data=CZ 1000
+end
+begin
+tag=700 indicator=g subfield=null data=
+tag=700 indicator=g subfield=  data=WW 4200
+end
+begin
+tag=705 indicator=a subfield=null data=
+tag=705 indicator=a subfield=  data=612.8
+tag=705 indicator=a subfield=c data=612.8
+tag=705 indicator=a subfield=e data=DDC22ger
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=Physiologische Psychologie
+tag=902 indicator=  subfield=9 data=(DE-588)4076126-5
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=Lehrbuch
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=Online-Publikation
+end
+end object
+begin object
+begin
+tag=__FORMAT indicator=null subfield=null data=MAB
+end
+begin
+tag=__TYPE indicator=null subfield=null data=Bibliographic
+end
+begin
+tag=__LEADER indicator=null subfield=null data=01075nM2.01200024   000h
+end
+begin
+tag=001 indicator=null subfield=null data= HT016980609
+end
+begin
+tag=026 indicator=  subfield=null data=
+tag=026 indicator=  subfield=  data=HBZHT016980609
+end
+begin
+tag=030 indicator=  subfield=null data=
+tag=030 indicator=  subfield=  data=a|1uc||||||17
+end
+begin
+tag=036 indicator=a subfield=null data=
+tag=036 indicator=a subfield=  data=XA-DE-BW
+end
+begin
+tag=037 indicator=b subfield=null data=
+tag=037 indicator=b subfield=  data=ger
+end
+begin
+tag=050 indicator=  subfield=null data=
+tag=050 indicator=  subfield=  data=||||||||g|||||
+end
+begin
+tag=051 indicator=  subfield=null data=
+tag=051 indicator=  subfield=  data=m|||||||
+end
+begin
+tag=070 indicator=  subfield=null data=
+tag=070 indicator=  subfield=  data=361
+end
+begin
+tag=070 indicator=b subfield=null data=
+tag=070 indicator=b subfield=  data=468
+end
+begin
+tag=078 indicator=e subfield=null data=
+tag=078 indicator=e subfield=  data=ZDB-59-BPA
+end
+begin
+tag=078 indicator=i subfield=null data=
+tag=078 indicator=i subfield=  data=iall
+end
+begin
+tag=080 indicator=  subfield=null data=
+tag=080 indicator=  subfield=  data=60
+end
+begin
+tag=086 indicator=a subfield=null data=
+tag=086 indicator=a subfield=  data=978-3-621-27806-5
+end
+begin
+tag=100 indicator=  subfield=null data=
+tag=100 indicator=  subfield=  data=Heinrichs, Nina
+tag=100 indicator=  subfield=d data=1973-
+tag=100 indicator=  subfield=9 data=(DE-588)12484085X
+end
+begin
+tag=104 indicator=a subfield=null data=
+tag=104 indicator=a subfield=  data=Lohaus, Arnold
+tag=104 indicator=a subfield=d data=1954-
+tag=104 indicator=a subfield=9 data=(DE-588)115417141
+end
+begin
+tag=331 indicator=  subfield=null data=
+tag=331 indicator=  subfield=  data=Klinische Entwicklungspsychologie kompakt
+end
+begin
+tag=334 indicator=  subfield=null data=
+tag=334 indicator=  subfield=  data=Elektronische Ressource
+end
+begin
+tag=335 indicator=  subfield=null data=
+tag=335 indicator=  subfield=  data=psychische Störungen im Kindes- und Jugendalter ; [mit Add-on]
+end
+begin
+tag=359 indicator=  subfield=null data=
+tag=359 indicator=  subfield=  data=Nina Heinrichs ; Arnold Lohaus
+end
+begin
+tag=403 indicator=  subfield=null data=
+tag=403 indicator=  subfield=  data=1. Aufl.
+end
+begin
+tag=410 indicator=  subfield=null data=
+tag=410 indicator=  subfield=  data=Weinheim [u.a.]
+end
+begin
+tag=412 indicator=  subfield=null data=
+tag=412 indicator=  subfield=  data=Beltz
+end
+begin
+tag=425 indicator=a subfield=null data=
+tag=425 indicator=a subfield=  data=2011
+end
+begin
+tag=433 indicator=  subfield=null data=
+tag=433 indicator=  subfield=  data=220 S. : Ill., graph. Darst.
+end
+begin
+tag=527 indicator=z subfield=null data=
+tag=527 indicator=z subfield=  data=Druckausg.
+tag=527 indicator=z subfield=a data=Heinrichs, Nina: Klinische Entwicklungspsychologie kompakt
+tag=527 indicator=z subfield=9 data=HT016873568
+end
+begin
+tag=540 indicator=a subfield=null data=
+tag=540 indicator=a subfield=  data=978-3-621-27899-7
+end
+begin
+tag=652 indicator=a subfield=null data=
+tag=652 indicator=a subfield=  data=Online-Ressource
+end
+begin
+tag=700 indicator=  subfield=null data=
+tag=700 indicator=  subfield=  data=610
+end
+begin
+tag=700 indicator=  subfield=null data=
+tag=700 indicator=  subfield=  data=150
+end
+begin
+tag=700 indicator=g subfield=null data=
+tag=700 indicator=g subfield=  data=CU 5000
+end
+begin
+tag=705 indicator=a subfield=null data=
+tag=705 indicator=a subfield=  data=618.928907
+tag=705 indicator=a subfield=c data=618.92
+tag=705 indicator=a subfield=d data=616.89
+tag=705 indicator=a subfield=e data=DDC22ger
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=Kind
+tag=902 indicator=  subfield=9 data=(DE-588)4030550-8
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=Jugend
+tag=902 indicator=  subfield=9 data=(DE-588)4028859-6
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=Entwicklungsstörung
+tag=902 indicator=  subfield=9 data=(DE-588)4014966-3
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=Psychische Störung
+tag=902 indicator=  subfield=9 data=(DE-588)4047686-8
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=Psychopathologie
+tag=902 indicator=  subfield=9 data=(DE-588)4047724-1
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=Entwicklungspsychologie
+tag=902 indicator=  subfield=9 data=(DE-588)4014963-8
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=Lehrbuch
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=Online-Publikation
+end
+end object
+begin object
+begin
+tag=__FORMAT indicator=null subfield=null data=MAB
+end
+begin
+tag=__TYPE indicator=null subfield=null data=Bibliographic
+end
+begin
+tag=__LEADER indicator=null subfield=null data=00757nM2.01200024   000h
+end
+begin
+tag=001 indicator=null subfield=null data= HT016978781
+end
+begin
+tag=026 indicator=  subfield=null data=
+tag=026 indicator=  subfield=  data=HBZHT016978781
+end
+begin
+tag=030 indicator=  subfield=null data=
+tag=030 indicator=  subfield=  data=a|1uc||||||17
+end
+begin
+tag=036 indicator=a subfield=null data=
+tag=036 indicator=a subfield=  data=XA-DE-BW
+end
+begin
+tag=037 indicator=b subfield=null data=
+tag=037 indicator=b subfield=  data=ger
+end
+begin
+tag=050 indicator=  subfield=null data=
+tag=050 indicator=  subfield=  data=||||||||g|||||
+end
+begin
+tag=051 indicator=  subfield=null data=
+tag=051 indicator=  subfield=  data=m|||||||
+end
+begin
+tag=070 indicator=  subfield=null data=
+tag=070 indicator=  subfield=  data=361
+end
+begin
+tag=070 indicator=b subfield=null data=
+tag=070 indicator=b subfield=  data=708
+end
+begin
+tag=078 indicator=e subfield=null data=
+tag=078 indicator=e subfield=  data=ZDB-59-BPA
+end
+begin
+tag=078 indicator=i subfield=null data=
+tag=078 indicator=i subfield=  data=iall
+end
+begin
+tag=080 indicator=  subfield=null data=
+tag=080 indicator=  subfield=  data=60
+end
+begin
+tag=086 indicator=a subfield=null data=
+tag=086 indicator=a subfield=  data=978-3-621-27792-1
+end
+begin
+tag=100 indicator=  subfield=null data=
+tag=100 indicator=  subfield=  data=Treier, Michael
+tag=100 indicator=  subfield=9 data=(DE-588)122337875
+end
+begin
+tag=331 indicator=  subfield=null data=
+tag=331 indicator=  subfield=  data=Personalpsychologie kompakt
+end
+begin
+tag=334 indicator=  subfield=null data=
+tag=334 indicator=  subfield=  data=Elektronische Ressource
+end
+begin
+tag=335 indicator=  subfield=null data=
+tag=335 indicator=  subfield=  data=[mit Add-on]
+end
+begin
+tag=359 indicator=  subfield=null data=
+tag=359 indicator=  subfield=  data=Michael Treier
+end
+begin
+tag=403 indicator=  subfield=null data=
+tag=403 indicator=  subfield=  data=1. Aufl.
+end
+begin
+tag=410 indicator=  subfield=null data=
+tag=410 indicator=  subfield=  data=Weinheim [u.a.]
+end
+begin
+tag=412 indicator=  subfield=null data=
+tag=412 indicator=  subfield=  data=Beltz
+end
+begin
+tag=425 indicator=a subfield=null data=
+tag=425 indicator=a subfield=  data=2011
+end
+begin
+tag=433 indicator=  subfield=null data=
+tag=433 indicator=  subfield=  data=220 S. : graph. Darst.
+end
+begin
+tag=451 indicator=  subfield=null data=
+tag=451 indicator=  subfield=  data=Kompakt
+end
+begin
+tag=527 indicator=z subfield=null data=
+tag=527 indicator=z subfield=  data=Druckausg.
+tag=527 indicator=z subfield=a data=Treier, Michael: Personalpsychologie kompakt
+tag=527 indicator=z subfield=9 data=HT016873618
+end
+begin
+tag=537 indicator=  subfield=null data=
+tag=537 indicator=  subfield=  data=Gesehen am: 19.03.2012
+end
+begin
+tag=540 indicator=a subfield=null data=
+tag=540 indicator=a subfield=  data=978-3-621-27911-6
+end
+begin
+tag=652 indicator=a subfield=null data=
+tag=652 indicator=a subfield=  data=Online-Ressource
+end
+begin
+tag=700 indicator=  subfield=null data=
+tag=700 indicator=  subfield=  data=650
+end
+begin
+tag=700 indicator=  subfield=null data=
+tag=700 indicator=  subfield=  data=150
+end
+begin
+tag=700 indicator=g subfield=null data=
+tag=700 indicator=g subfield=  data=QV 570
+end
+begin
+tag=700 indicator=g subfield=null data=
+tag=700 indicator=g subfield=  data=CW 4700
+end
+begin
+tag=705 indicator=a subfield=null data=
+tag=705 indicator=a subfield=  data=658.30019
+tag=705 indicator=a subfield=c data=658.3
+tag=705 indicator=a subfield=e data=DDC22ger
+tag=705 indicator=a subfield=f data=019
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=Personalpsychologie
+tag=902 indicator=  subfield=9 data=(DE-588)4784219-2
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=Online-Publikation
+end
+end object
+begin object
+begin
+tag=__FORMAT indicator=null subfield=null data=MAB
+end
+begin
+tag=__TYPE indicator=null subfield=null data=Bibliographic
+end
+begin
+tag=__LEADER indicator=null subfield=null data=00949nM2.01200024   000h
+end
+begin
+tag=001 indicator=null subfield=null data= HT016984572
+end
+begin
+tag=020 indicator=b subfield=null data=
+tag=020 indicator=b subfield=  data=BV039600772
+tag=020 indicator=b subfield=b data=BVB
+end
+begin
+tag=026 indicator=  subfield=null data=
+tag=026 indicator=  subfield=  data=BVBBV039600772
+end
+begin
+tag=030 indicator=  subfield=null data=
+tag=030 indicator=  subfield=  data=a|1uc||||||17
+end
+begin
+tag=036 indicator=a subfield=null data=
+tag=036 indicator=a subfield=  data=XA-DE-BW
+end
+begin
+tag=037 indicator=b subfield=null data=
+tag=037 indicator=b subfield=  data=ger
+end
+begin
+tag=050 indicator=  subfield=null data=
+tag=050 indicator=  subfield=  data=||||||||g|||||
+end
+begin
+tag=051 indicator=  subfield=null data=
+tag=051 indicator=  subfield=  data=m|||||||
+end
+begin
+tag=070 indicator=  subfield=null data=
+tag=070 indicator=  subfield=  data=361
+end
+begin
+tag=070 indicator=b subfield=null data=
+tag=070 indicator=b subfield=  data=294
+end
+begin
+tag=078 indicator=e subfield=null data=
+tag=078 indicator=e subfield=  data=ZDB-59-BPG
+end
+begin
+tag=078 indicator=i subfield=null data=
+tag=078 indicator=i subfield=  data=iall
+end
+begin
+tag=080 indicator=  subfield=null data=
+tag=080 indicator=  subfield=  data=60
+end
+begin
+tag=086 indicator=a subfield=null data=
+tag=086 indicator=a subfield=  data=978-3-621-27524-8
+end
+begin
+tag=100 indicator=  subfield=null data=
+tag=100 indicator=  subfield=  data=Eid, Michael
+tag=100 indicator=  subfield=d data=1963-
+tag=100 indicator=  subfield=9 data=(DE-588)130635405
+end
+begin
+tag=104 indicator=a subfield=null data=
+tag=104 indicator=a subfield=  data=Gollwitzer, Mario
+tag=104 indicator=a subfield=d data=1973-
+tag=104 indicator=a subfield=9 data=(DE-588)123250196
+end
+begin
+tag=108 indicator=a subfield=null data=
+tag=108 indicator=a subfield=  data=Schmitt, Manfred
+tag=108 indicator=a subfield=9 data=(DE-588)132779420
+end
+begin
+tag=331 indicator=  subfield=null data=
+tag=331 indicator=  subfield=  data=Statistik und Forschungsmethoden
+end
+begin
+tag=334 indicator=  subfield=null data=
+tag=334 indicator=  subfield=  data=Elektronische Ressource
+end
+begin
+tag=335 indicator=  subfield=null data=
+tag=335 indicator=  subfield=  data=Lehrbuch ; [mit Add-on]
+end
+begin
+tag=359 indicator=  subfield=null data=
+tag=359 indicator=  subfield=  data=Michael Eid ; Mario Gollwitzer ; Manfred Schmitt
+end
+begin
+tag=403 indicator=  subfield=null data=
+tag=403 indicator=  subfield=  data=2., korr. Aufl.
+end
+begin
+tag=410 indicator=  subfield=null data=
+tag=410 indicator=  subfield=  data=Weinheim [u.a.]
+end
+begin
+tag=412 indicator=  subfield=null data=
+tag=412 indicator=  subfield=  data=Beltz
+end
+begin
+tag=425 indicator=a subfield=null data=
+tag=425 indicator=a subfield=  data=2011
+end
+begin
+tag=433 indicator=  subfield=null data=
+tag=433 indicator=  subfield=  data=XXXII, 982 S. : graph. Darst.
+end
+begin
+tag=527 indicator=z subfield=null data=
+tag=527 indicator=z subfield=  data=Druckausg.
+tag=527 indicator=z subfield=a data=Eid, Michael: Statistik und Forschungsmethoden
+tag=527 indicator=z subfield=9 data=HT017013654
+end
+begin
+tag=537 indicator=  subfield=null data=
+tag=537 indicator=  subfield=  data=Gesehen am: 06.12.2011
+end
+begin
+tag=540 indicator=a subfield=null data=
+tag=540 indicator=a subfield=  data=978-3-621-27834-8
+end
+begin
+tag=652 indicator=a subfield=null data=
+tag=652 indicator=a subfield=  data=Online-Ressource
+end
+begin
+tag=700 indicator=  subfield=null data=
+tag=700 indicator=  subfield=  data=510
+end
+begin
+tag=700 indicator=g subfield=null data=
+tag=700 indicator=g subfield=  data=SK 850
+end
+begin
+tag=700 indicator=g subfield=null data=
+tag=700 indicator=g subfield=  data=QH 254
+end
+begin
+tag=700 indicator=g subfield=null data=
+tag=700 indicator=g subfield=  data=CM 4000
+end
+begin
+tag=700 indicator=g subfield=null data=
+tag=700 indicator=g subfield=  data=MR 2000
+end
+begin
+tag=700 indicator=g subfield=null data=
+tag=700 indicator=g subfield=  data=MR 2100
+end
+begin
+tag=705 indicator=a subfield=null data=
+tag=705 indicator=a subfield=  data=519.5
+tag=705 indicator=a subfield=c data=519.5
+tag=705 indicator=a subfield=e data=DDC22ger
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=Statistik
+tag=902 indicator=  subfield=9 data=(DE-588)4056995-0
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=Lehrbuch
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=Online-Publikation
+end
+end object
+begin object
+begin
+tag=__FORMAT indicator=null subfield=null data=MAB
+end
+begin
+tag=__TYPE indicator=null subfield=null data=Bibliographic
+end
+begin
+tag=__LEADER indicator=null subfield=null data=00802nM2.01200024   000h
+end
+begin
+tag=001 indicator=null subfield=null data= HT016979194
+end
+begin
+tag=026 indicator=  subfield=null data=
+tag=026 indicator=  subfield=  data=HBZHT016979194
+end
+begin
+tag=030 indicator=  subfield=null data=
+tag=030 indicator=  subfield=  data=a|1uc||||||17
+end
+begin
+tag=036 indicator=a subfield=null data=
+tag=036 indicator=a subfield=  data=XA-DE-BW
+end
+begin
+tag=037 indicator=b subfield=null data=
+tag=037 indicator=b subfield=  data=ger
+end
+begin
+tag=050 indicator=  subfield=null data=
+tag=050 indicator=  subfield=  data=||||||||g|||||
+end
+begin
+tag=051 indicator=  subfield=null data=
+tag=051 indicator=  subfield=  data=m|||||||
+end
+begin
+tag=070 indicator=  subfield=null data=
+tag=070 indicator=  subfield=  data=361
+end
+begin
+tag=070 indicator=b subfield=null data=
+tag=070 indicator=b subfield=  data=708
+end
+begin
+tag=078 indicator=e subfield=null data=
+tag=078 indicator=e subfield=  data=ZDB-59-BPA
+end
+begin
+tag=078 indicator=i subfield=null data=
+tag=078 indicator=i subfield=  data=iall
+end
+begin
+tag=080 indicator=  subfield=null data=
+tag=080 indicator=  subfield=  data=60
+end
+begin
+tag=086 indicator=a subfield=null data=
+tag=086 indicator=a subfield=  data=978-3-621-27773-0
+end
+begin
+tag=100 indicator=  subfield=null data=
+tag=100 indicator=  subfield=  data=Schnotz, Wolfgang
+tag=100 indicator=  subfield=d data=1946-
+tag=100 indicator=  subfield=9 data=(DE-588)109223292
+end
+begin
+tag=331 indicator=  subfield=null data=
+tag=331 indicator=  subfield=  data=Pädagogische Psychologie kompakt
+end
+begin
+tag=334 indicator=  subfield=null data=
+tag=334 indicator=  subfield=  data=Elektronische Ressource
+end
+begin
+tag=335 indicator=  subfield=null data=
+tag=335 indicator=  subfield=  data=[mit Add-on]
+end
+begin
+tag=359 indicator=  subfield=null data=
+tag=359 indicator=  subfield=  data=Wolfgang Schnotz
+end
+begin
+tag=403 indicator=  subfield=null data=
+tag=403 indicator=  subfield=  data=2., überarb. und erw. Aufl.
+end
+begin
+tag=410 indicator=  subfield=null data=
+tag=410 indicator=  subfield=  data=Weinheim
+end
+begin
+tag=412 indicator=  subfield=null data=
+tag=412 indicator=  subfield=  data=Beltz
+end
+begin
+tag=425 indicator=a subfield=null data=
+tag=425 indicator=a subfield=  data=2011
+end
+begin
+tag=433 indicator=  subfield=null data=
+tag=433 indicator=  subfield=  data=221 S. : Ill., graph. Darst.
+end
+begin
+tag=527 indicator=z subfield=null data=
+tag=527 indicator=z subfield=  data=Druckausg.
+tag=527 indicator=z subfield=a data=Schnotz, Wolfgang: Pädagogische Psychologie kompakt
+tag=527 indicator=z subfield=9 data=HT016661083
+end
+begin
+tag=537 indicator=  subfield=null data=
+tag=537 indicator=  subfield=  data=Gesehen am: 19.03.2012
+end
+begin
+tag=540 indicator=a subfield=null data=
+tag=540 indicator=a subfield=  data=978-3-621-27907-9
+end
+begin
+tag=652 indicator=a subfield=null data=
+tag=652 indicator=a subfield=  data=Online-Ressource
+end
+begin
+tag=700 indicator=  subfield=null data=
+tag=700 indicator=  subfield=  data=370
+end
+begin
+tag=700 indicator=  subfield=null data=
+tag=700 indicator=  subfield=  data=150
+end
+begin
+tag=700 indicator=g subfield=null data=
+tag=700 indicator=g subfield=  data=CX 1000
+end
+begin
+tag=700 indicator=g subfield=null data=
+tag=700 indicator=g subfield=  data=CX 3000
+end
+begin
+tag=705 indicator=a subfield=null data=
+tag=705 indicator=a subfield=  data=370.15
+tag=705 indicator=a subfield=c data=370.15
+tag=705 indicator=a subfield=e data=DDC22ger
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=Pädagogische Psychologie
+tag=902 indicator=  subfield=9 data=(DE-588)4044321-8
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=Lehrbuch
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=Online-Publikation
+end
+end object
+begin object
+begin
+tag=__FORMAT indicator=null subfield=null data=MAB
+end
+begin
+tag=__TYPE indicator=null subfield=null data=Bibliographic
+end
+begin
+tag=__LEADER indicator=null subfield=null data=00907nM2.01200024   000h
+end
+begin
+tag=001 indicator=null subfield=null data= HT016980352
+end
+begin
+tag=026 indicator=  subfield=null data=
+tag=026 indicator=  subfield=  data=HBZHT016980352
+end
+begin
+tag=030 indicator=  subfield=null data=
+tag=030 indicator=  subfield=  data=a|1uc||||||17
+end
+begin
+tag=036 indicator=a subfield=null data=
+tag=036 indicator=a subfield=  data=XA-DE-BW
+end
+begin
+tag=037 indicator=b subfield=null data=
+tag=037 indicator=b subfield=  data=ger
+end
+begin
+tag=050 indicator=  subfield=null data=
+tag=050 indicator=  subfield=  data=||||||||g|||||
+end
+begin
+tag=051 indicator=  subfield=null data=
+tag=051 indicator=  subfield=  data=m|||||||
+end
+begin
+tag=070 indicator=  subfield=null data=
+tag=070 indicator=  subfield=  data=361
+end
+begin
+tag=070 indicator=b subfield=null data=
+tag=070 indicator=b subfield=  data=708
+end
+begin
+tag=078 indicator=e subfield=null data=
+tag=078 indicator=e subfield=  data=ZDB-59-BPA
+end
+begin
+tag=078 indicator=i subfield=null data=
+tag=078 indicator=i subfield=  data=iall
+end
+begin
+tag=080 indicator=  subfield=null data=
+tag=080 indicator=  subfield=  data=60
+end
+begin
+tag=086 indicator=a subfield=null data=
+tag=086 indicator=a subfield=  data=978-3-621-27594-1
+end
+begin
+tag=100 indicator=  subfield=null data=
+tag=100 indicator=  subfield=  data=Kals, Elisabeth
+tag=100 indicator=  subfield=d data=1966-
+tag=100 indicator=  subfield=9 data=(DE-588)122147979
+end
+begin
+tag=104 indicator=a subfield=null data=
+tag=104 indicator=a subfield=  data=Gallenmüller-Roschmann, Jutta
+tag=104 indicator=a subfield=d data=1957-
+tag=104 indicator=a subfield=9 data=(DE-588)123532256
+end
+begin
+tag=331 indicator=  subfield=null data=
+tag=331 indicator=  subfield=  data=Arbeits- und Organisationspsychologie kompakt
+end
+begin
+tag=334 indicator=  subfield=null data=
+tag=334 indicator=  subfield=  data=Elektronische Ressource
+end
+begin
+tag=335 indicator=  subfield=null data=
+tag=335 indicator=  subfield=  data=[mit Add-on]
+end
+begin
+tag=359 indicator=  subfield=null data=
+tag=359 indicator=  subfield=  data=Elisabeth Kals ; Jutta Gallenmüller-Roschmann
+end
+begin
+tag=403 indicator=  subfield=null data=
+tag=403 indicator=  subfield=  data=2., überarb. Aufl.
+end
+begin
+tag=410 indicator=  subfield=null data=
+tag=410 indicator=  subfield=  data=Weinheim [u.a.]
+end
+begin
+tag=412 indicator=  subfield=null data=
+tag=412 indicator=  subfield=  data=Beltz
+end
+begin
+tag=425 indicator=a subfield=null data=
+tag=425 indicator=a subfield=  data=2011
+end
+begin
+tag=433 indicator=  subfield=null data=
+tag=433 indicator=  subfield=  data=256 S. : graph. Darst.
+end
+begin
+tag=527 indicator=z subfield=null data=
+tag=527 indicator=z subfield=  data=Druckausg.
+tag=527 indicator=z subfield=a data=Kals, Elisabeth: Arbeits- und Organisationspsychologie kompakt
+tag=527 indicator=z subfield=9 data=HT016657155
+end
+begin
+tag=537 indicator=  subfield=null data=
+tag=537 indicator=  subfield=  data=Gesehen am: 19.03.2012
+end
+begin
+tag=540 indicator=a subfield=null data=
+tag=540 indicator=a subfield=  data=978-3-621-27901-7
+end
+begin
+tag=652 indicator=a subfield=null data=
+tag=652 indicator=a subfield=  data=Online-Ressource
+end
+begin
+tag=700 indicator=  subfield=null data=
+tag=700 indicator=  subfield=  data=650
+end
+begin
+tag=700 indicator=  subfield=null data=
+tag=700 indicator=  subfield=  data=150
+end
+begin
+tag=700 indicator=g subfield=null data=
+tag=700 indicator=g subfield=  data=QP 342
+end
+begin
+tag=700 indicator=g subfield=null data=
+tag=700 indicator=g subfield=  data=CW 1500
+end
+begin
+tag=700 indicator=g subfield=null data=
+tag=700 indicator=g subfield=  data=CW 4500
+end
+begin
+tag=705 indicator=a subfield=null data=
+tag=705 indicator=a subfield=  data=658.30019
+tag=705 indicator=a subfield=c data=658.3
+tag=705 indicator=a subfield=e data=DDC22ger
+tag=705 indicator=a subfield=f data=019
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=Personalpsychologie
+tag=902 indicator=  subfield=9 data=(DE-588)4784219-2
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=Online-Publikation
+end
+end object
+begin object
+begin
+tag=__FORMAT indicator=null subfield=null data=MAB
+end
+begin
+tag=__TYPE indicator=null subfield=null data=Bibliographic
+end
+begin
+tag=__LEADER indicator=null subfield=null data=00858nM2.01200024   000h
+end
+begin
+tag=001 indicator=null subfield=null data= HT016983768
+end
+begin
+tag=020 indicator=b subfield=null data=
+tag=020 indicator=b subfield=  data=BV039600622
+tag=020 indicator=b subfield=b data=BVB
+end
+begin
+tag=026 indicator=  subfield=null data=
+tag=026 indicator=  subfield=  data=BVBBV039600622
+end
+begin
+tag=030 indicator=  subfield=null data=
+tag=030 indicator=  subfield=  data=a|1uc||||||17
+end
+begin
+tag=036 indicator=a subfield=null data=
+tag=036 indicator=a subfield=  data=XA-DE-BW
+end
+begin
+tag=037 indicator=b subfield=null data=
+tag=037 indicator=b subfield=  data=ger
+end
+begin
+tag=050 indicator=  subfield=null data=
+tag=050 indicator=  subfield=  data=||||||||g|||||
+end
+begin
+tag=051 indicator=  subfield=null data=
+tag=051 indicator=  subfield=  data=m|||||||
+end
+begin
+tag=070 indicator=  subfield=null data=
+tag=070 indicator=  subfield=  data=361
+end
+begin
+tag=070 indicator=b subfield=null data=
+tag=070 indicator=b subfield=  data=Dü 62
+end
+begin
+tag=078 indicator=e subfield=null data=
+tag=078 indicator=e subfield=  data=ZDB-59-BPG
+tag=078 indicator=e subfield=a data=ZDB-22-CAN
+end
+begin
+tag=078 indicator=i subfield=null data=
+tag=078 indicator=i subfield=  data=iall
+end
+begin
+tag=080 indicator=  subfield=null data=
+tag=080 indicator=  subfield=  data=60
+end
+begin
+tag=086 indicator=a subfield=null data=
+tag=086 indicator=a subfield=  data=978-3-621-27770-9
+end
+begin
+tag=100 indicator=  subfield=null data=
+tag=100 indicator=  subfield=  data=Lamnek, Siegfried
+tag=100 indicator=  subfield=d data=1943-
+tag=100 indicator=  subfield=9 data=(DE-588)120446049
+end
+begin
+tag=331 indicator=  subfield=null data=
+tag=331 indicator=  subfield=  data=Qualitative Sozialforschung
+end
+begin
+tag=334 indicator=  subfield=null data=
+tag=334 indicator=  subfield=  data=Elektronische Ressource
+end
+begin
+tag=335 indicator=  subfield=null data=
+tag=335 indicator=  subfield=  data=Lehrbuch ; [mit Add-on]
+end
+begin
+tag=359 indicator=  subfield=null data=
+tag=359 indicator=  subfield=  data=Siegfried Lamnek
+end
+begin
+tag=403 indicator=  subfield=null data=
+tag=403 indicator=  subfield=  data=5., überarb. Aufl.
+end
+begin
+tag=410 indicator=  subfield=null data=
+tag=410 indicator=  subfield=  data=Weinheim [u.a.]
+end
+begin
+tag=412 indicator=  subfield=null data=
+tag=412 indicator=  subfield=  data=Beltz
+end
+begin
+tag=425 indicator=a subfield=null data=
+tag=425 indicator=a subfield=  data=2010
+end
+begin
+tag=433 indicator=  subfield=null data=
+tag=433 indicator=  subfield=  data=XIV, 748 S. : graph. Darst.
+end
+begin
+tag=527 indicator=z subfield=null data=
+tag=527 indicator=z subfield=  data=Druckausg.
+tag=527 indicator=z subfield=a data=Lamnek, Siegfried: Qualitative Sozialforschung
+tag=527 indicator=z subfield=9 data=HT016365019
+end
+begin
+tag=537 indicator=  subfield=null data=
+tag=537 indicator=  subfield=  data=Gesehen am: 12.3.2012
+end
+begin
+tag=540 indicator=a subfield=null data=
+tag=540 indicator=a subfield=  data=978-3-621-27840-9
+end
+begin
+tag=652 indicator=a subfield=null data=
+tag=652 indicator=a subfield=  data=Online-Ressource
+end
+begin
+tag=700 indicator=  subfield=null data=
+tag=700 indicator=  subfield=  data=300
+end
+begin
+tag=700 indicator=g subfield=null data=
+tag=700 indicator=g subfield=  data=CM 3600
+end
+begin
+tag=700 indicator=g subfield=null data=
+tag=700 indicator=g subfield=  data=MR 2800
+end
+begin
+tag=700 indicator=g subfield=null data=
+tag=700 indicator=g subfield=  data=CV 2000
+end
+begin
+tag=700 indicator=g subfield=null data=
+tag=700 indicator=g subfield=  data=MR 2000
+end
+begin
+tag=705 indicator=a subfield=null data=
+tag=705 indicator=a subfield=  data=300.723
+tag=705 indicator=a subfield=c data=300
+tag=705 indicator=a subfield=e data=DDC22ger
+tag=705 indicator=a subfield=f data=0723
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=Qualitative Sozialforschung
+tag=902 indicator=  subfield=9 data=(DE-588)4395695-6
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=Lehrbuch
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=Online-Publikation
+end
+end object
+begin object
+begin
+tag=__FORMAT indicator=null subfield=null data=MAB
+end
+begin
+tag=__TYPE indicator=null subfield=null data=Bibliographic
+end
+begin
+tag=__LEADER indicator=null subfield=null data=00841nM2.01200024   000h
+end
+begin
+tag=001 indicator=null subfield=null data= HT016979244
+end
+begin
+tag=026 indicator=  subfield=null data=
+tag=026 indicator=  subfield=  data=HBZHT016979244
+end
+begin
+tag=030 indicator=  subfield=null data=
+tag=030 indicator=  subfield=  data=a|1uc||||||37
+end
+begin
+tag=036 indicator=a subfield=null data=
+tag=036 indicator=a subfield=  data=XA-DE-BW
+end
+begin
+tag=037 indicator=b subfield=null data=
+tag=037 indicator=b subfield=  data=ger
+end
+begin
+tag=050 indicator=  subfield=null data=
+tag=050 indicator=  subfield=  data=||||||||g|||||
+end
+begin
+tag=051 indicator=  subfield=null data=
+tag=051 indicator=  subfield=  data=me||||||
+end
+begin
+tag=070 indicator=  subfield=null data=
+tag=070 indicator=  subfield=  data=361
+end
+begin
+tag=070 indicator=b subfield=null data=
+tag=070 indicator=b subfield=  data=708
+end
+begin
+tag=078 indicator=e subfield=null data=
+tag=078 indicator=e subfield=  data=ZDB-59-BPA
+end
+begin
+tag=078 indicator=i subfield=null data=
+tag=078 indicator=i subfield=  data=iall
+end
+begin
+tag=080 indicator=  subfield=null data=
+tag=080 indicator=  subfield=  data=60
+end
+begin
+tag=086 indicator=a subfield=null data=
+tag=086 indicator=a subfield=  data=978-3-621-27690-0
+end
+begin
+tag=100 indicator=b subfield=null data=
+tag=100 indicator=b subfield=  data=Rost, Detlef H.
+tag=100 indicator=b subfield=d data=1945-
+tag=100 indicator=b subfield=9 data=(DE-588)120732564
+tag=100 indicator=b subfield=b data=[Hrsg.]
+end
+begin
+tag=331 indicator=  subfield=null data=
+tag=331 indicator=  subfield=  data=Handwörterbuch Pädagogische Psychologie
+end
+begin
+tag=334 indicator=  subfield=null data=
+tag=334 indicator=  subfield=  data=Elektronische Ressource
+end
+begin
+tag=359 indicator=  subfield=null data=
+tag=359 indicator=  subfield=  data=Detlef H. Rost (Hrsg.)
+end
+begin
+tag=403 indicator=  subfield=null data=
+tag=403 indicator=  subfield=  data=4., überarb. und erw. Aufl.
+end
+begin
+tag=410 indicator=  subfield=null data=
+tag=410 indicator=  subfield=  data=Weinheim [u.a.]
+end
+begin
+tag=412 indicator=  subfield=null data=
+tag=412 indicator=  subfield=  data=Beltz
+end
+begin
+tag=425 indicator=a subfield=null data=
+tag=425 indicator=a subfield=  data=2010
+end
+begin
+tag=433 indicator=  subfield=null data=
+tag=433 indicator=  subfield=  data=XIV, 1020 S. : graph. Darst.
+end
+begin
+tag=527 indicator=z subfield=null data=
+tag=527 indicator=z subfield=  data=Druckausg.
+tag=527 indicator=z subfield=a data=Handwörterbuch Pädagogische Psychologie
+tag=527 indicator=z subfield=9 data=HT016395334
+end
+begin
+tag=537 indicator=  subfield=null data=
+tag=537 indicator=  subfield=  data=Gesehen am: 19.03.2012
+end
+begin
+tag=540 indicator=a subfield=null data=
+tag=540 indicator=a subfield=  data=978-3-621-27906-2
+end
+begin
+tag=652 indicator=a subfield=null data=
+tag=652 indicator=a subfield=  data=Online-Ressource
+end
+begin
+tag=700 indicator=  subfield=null data=
+tag=700 indicator=  subfield=  data=370
+end
+begin
+tag=700 indicator=  subfield=null data=
+tag=700 indicator=  subfield=  data=150
+end
+begin
+tag=700 indicator=g subfield=null data=
+tag=700 indicator=g subfield=  data=CX 1000
+end
+begin
+tag=705 indicator=a subfield=null data=
+tag=705 indicator=a subfield=  data=370.1503
+tag=705 indicator=a subfield=c data=370.15
+tag=705 indicator=a subfield=e data=DDC22ger
+tag=705 indicator=a subfield=f data=03
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=Pädagogische Psychologie
+tag=902 indicator=  subfield=9 data=(DE-588)4044321-8
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=Wörterbuch
+tag=902 indicator=  subfield=9 data=(DE-588)4066724-8
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=Online-Publikation
+tag=902 indicator=  subfield=9 data=(DE-588)4511937-5
+end
+end object
+begin object
+begin
+tag=__FORMAT indicator=null subfield=null data=MAB
+end
+begin
+tag=__TYPE indicator=null subfield=null data=Bibliographic
+end
+begin
+tag=__LEADER indicator=null subfield=null data=00798nM2.01200024   000h
+end
+begin
+tag=001 indicator=null subfield=null data= HT016979076
+end
+begin
+tag=026 indicator=  subfield=null data=
+tag=026 indicator=  subfield=  data=HBZHT016979076
+end
+begin
+tag=030 indicator=  subfield=null data=
+tag=030 indicator=  subfield=  data=a|1uc||||||17
+end
+begin
+tag=036 indicator=a subfield=null data=
+tag=036 indicator=a subfield=  data=XA-DE-BW
+end
+begin
+tag=037 indicator=b subfield=null data=
+tag=037 indicator=b subfield=  data=ger
+end
+begin
+tag=050 indicator=  subfield=null data=
+tag=050 indicator=  subfield=  data=||||||||g|||||
+end
+begin
+tag=051 indicator=  subfield=null data=
+tag=051 indicator=  subfield=  data=m|||||||
+end
+begin
+tag=070 indicator=  subfield=null data=
+tag=070 indicator=  subfield=  data=361
+end
+begin
+tag=070 indicator=b subfield=null data=
+tag=070 indicator=b subfield=  data=708
+end
+begin
+tag=078 indicator=e subfield=null data=
+tag=078 indicator=e subfield=  data=ZDB-59-BPA
+end
+begin
+tag=078 indicator=i subfield=null data=
+tag=078 indicator=i subfield=  data=iall
+end
+begin
+tag=080 indicator=  subfield=null data=
+tag=080 indicator=  subfield=  data=60
+end
+begin
+tag=086 indicator=a subfield=null data=
+tag=086 indicator=a subfield=  data=978-3-621-27565-1
+end
+begin
+tag=100 indicator=  subfield=null data=
+tag=100 indicator=  subfield=  data=Suhling, Stefan
+tag=100 indicator=  subfield=9 data=(DE-588)123120772
+end
+begin
+tag=104 indicator=a subfield=null data=
+tag=104 indicator=a subfield=  data=Greve, Werner
+tag=104 indicator=a subfield=d data=1959-
+tag=104 indicator=a subfield=9 data=(DE-588)130634999
+end
+begin
+tag=331 indicator=  subfield=null data=
+tag=331 indicator=  subfield=  data=Kriminalpsychologie kompakt
+end
+begin
+tag=334 indicator=  subfield=null data=
+tag=334 indicator=  subfield=  data=Elektronische Ressource
+end
+begin
+tag=335 indicator=  subfield=null data=
+tag=335 indicator=  subfield=  data=[mit Add-on]
+end
+begin
+tag=359 indicator=  subfield=null data=
+tag=359 indicator=  subfield=  data=Stefan Suhling ; Werner Greve
+end
+begin
+tag=403 indicator=  subfield=null data=
+tag=403 indicator=  subfield=  data=1. Aufl.
+end
+begin
+tag=410 indicator=  subfield=null data=
+tag=410 indicator=  subfield=  data=Weinheim [u.a.]
+end
+begin
+tag=412 indicator=  subfield=null data=
+tag=412 indicator=  subfield=  data=Beltz
+end
+begin
+tag=425 indicator=a subfield=null data=
+tag=425 indicator=a subfield=  data=2010
+end
+begin
+tag=433 indicator=  subfield=null data=
+tag=433 indicator=  subfield=  data=196 S. : graph. Darst.
+end
+begin
+tag=527 indicator=z subfield=null data=
+tag=527 indicator=z subfield=  data=Druckausg.
+tag=527 indicator=z subfield=a data=Suhling, Stefan: Kriminalpsychologie kompakt
+tag=527 indicator=z subfield=9 data=HT016497428
+end
+begin
+tag=537 indicator=  subfield=null data=
+tag=537 indicator=  subfield=  data=Gesehen am: 22.03.2012
+end
+begin
+tag=540 indicator=a subfield=null data=
+tag=540 indicator=a subfield=  data=978-3-621-27916-1
+end
+begin
+tag=652 indicator=a subfield=null data=
+tag=652 indicator=a subfield=  data=Online-Ressource
+end
+begin
+tag=700 indicator=  subfield=null data=
+tag=700 indicator=  subfield=  data=360
+end
+begin
+tag=700 indicator=  subfield=null data=
+tag=700 indicator=  subfield=  data=150
+end
+begin
+tag=700 indicator=g subfield=null data=
+tag=700 indicator=g subfield=  data=CW 8100
+end
+begin
+tag=705 indicator=a subfield=null data=
+tag=705 indicator=a subfield=  data=364.3
+tag=705 indicator=a subfield=c data=364.3
+tag=705 indicator=a subfield=e data=DDC22ger
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=Kriminalpsychologie
+tag=902 indicator=  subfield=9 data=(DE-588)4033186-6
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=Lehrbuch
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=Online-Publikation
+end
+end object
+begin object
+begin
+tag=__FORMAT indicator=null subfield=null data=MAB
+end
+begin
+tag=__TYPE indicator=null subfield=null data=Bibliographic
+end
+begin
+tag=__LEADER indicator=null subfield=null data=00948nM2.01200024   000h
+end
+begin
+tag=001 indicator=null subfield=null data= HT016982637
+end
+begin
+tag=020 indicator=b subfield=null data=
+tag=020 indicator=b subfield=  data=BV039597081
+tag=020 indicator=b subfield=b data=BVB
+end
+begin
+tag=026 indicator=  subfield=null data=
+tag=026 indicator=  subfield=  data=BVBBV039597081
+end
+begin
+tag=030 indicator=  subfield=null data=
+tag=030 indicator=  subfield=  data=a|1uc||||||17
+end
+begin
+tag=036 indicator=a subfield=null data=
+tag=036 indicator=a subfield=  data=XA-DE-BW
+end
+begin
+tag=037 indicator=b subfield=null data=
+tag=037 indicator=b subfield=  data=ger
+end
+begin
+tag=050 indicator=  subfield=null data=
+tag=050 indicator=  subfield=  data=||||||||g|||||
+end
+begin
+tag=051 indicator=  subfield=null data=
+tag=051 indicator=  subfield=  data=m|||||||
+end
+begin
+tag=070 indicator=  subfield=null data=
+tag=070 indicator=  subfield=  data=361
+end
+begin
+tag=070 indicator=b subfield=null data=
+tag=070 indicator=b subfield=  data=708
+end
+begin
+tag=078 indicator=e subfield=null data=
+tag=078 indicator=e subfield=  data=ZDB-59-BPG
+end
+begin
+tag=078 indicator=i subfield=null data=
+tag=078 indicator=i subfield=  data=iall
+end
+begin
+tag=080 indicator=  subfield=null data=
+tag=080 indicator=  subfield=  data=60
+end
+begin
+tag=086 indicator=a subfield=null data=
+tag=086 indicator=a subfield=  data=978-3-621-27666-5
+end
+begin
+tag=100 indicator=  subfield=null data=
+tag=100 indicator=  subfield=  data=Schmitt, Manfred
+tag=100 indicator=  subfield=9 data=(DE-588)132779420
+end
+begin
+tag=104 indicator=a subfield=null data=
+tag=104 indicator=a subfield=  data=Altstötter-Gleich, Christine
+tag=104 indicator=a subfield=9 data=(DE-588)114846618
+end
+begin
+tag=331 indicator=  subfield=null data=
+tag=331 indicator=  subfield=  data=Differentielle Psychologie und Persönlichkeitspsychologie kompakt
+end
+begin
+tag=334 indicator=  subfield=null data=
+tag=334 indicator=  subfield=  data=Elektronische Ressource
+end
+begin
+tag=335 indicator=  subfield=null data=
+tag=335 indicator=  subfield=  data=[mit Add-on]
+end
+begin
+tag=359 indicator=  subfield=null data=
+tag=359 indicator=  subfield=  data=Manfred Schmitt ; Christine Altstötter-Gleich
+end
+begin
+tag=403 indicator=  subfield=null data=
+tag=403 indicator=  subfield=  data=1. Aufl.
+end
+begin
+tag=410 indicator=  subfield=null data=
+tag=410 indicator=  subfield=  data=Weinheim [u.a.]
+end
+begin
+tag=412 indicator=  subfield=null data=
+tag=412 indicator=  subfield=  data=Beltz
+end
+begin
+tag=425 indicator=a subfield=null data=
+tag=425 indicator=a subfield=  data=2010
+end
+begin
+tag=433 indicator=  subfield=null data=
+tag=433 indicator=  subfield=  data=XII, 187 S. : Ill., graph. Darst.
+end
+begin
+tag=527 indicator=z subfield=null data=
+tag=527 indicator=z subfield=  data=Druckausg.
+tag=527 indicator=z subfield=a data=Schmitt, Manfred: Differentielle Psychologie und Persönlichkeitspsychologie kompakt
+tag=527 indicator=z subfield=9 data=HT016205029
+end
+begin
+tag=537 indicator=  subfield=null data=
+tag=537 indicator=  subfield=  data=Gesehen am: 15.03.2012
+end
+begin
+tag=540 indicator=a subfield=null data=
+tag=540 indicator=a subfield=  data=978-3-621-27856-0
+end
+begin
+tag=652 indicator=a subfield=null data=
+tag=652 indicator=a subfield=  data=Online-Ressource
+end
+begin
+tag=700 indicator=  subfield=null data=
+tag=700 indicator=  subfield=  data=150
+end
+begin
+tag=700 indicator=g subfield=null data=
+tag=700 indicator=g subfield=  data=CR 1000
+end
+begin
+tag=700 indicator=g subfield=null data=
+tag=700 indicator=g subfield=  data=CV 1000
+end
+begin
+tag=705 indicator=a subfield=null data=
+tag=705 indicator=a subfield=  data=155.2
+tag=705 indicator=a subfield=c data=155.2
+tag=705 indicator=a subfield=e data=DDC22ger
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=Persönlichkeitspsychologie
+tag=902 indicator=  subfield=9 data=(DE-588)4075996-9
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=Lehrbuch
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=Online-Publikation
+end
+end object
+begin object
+begin
+tag=__FORMAT indicator=null subfield=null data=MAB
+end
+begin
+tag=__TYPE indicator=null subfield=null data=Bibliographic
+end
+begin
+tag=__LEADER indicator=null subfield=null data=00918nM2.01200024   000h
+end
+begin
+tag=001 indicator=null subfield=null data= HT016983725
+end
+begin
+tag=020 indicator=b subfield=null data=
+tag=020 indicator=b subfield=  data=BV039600588
+tag=020 indicator=b subfield=b data=BVB
+end
+begin
+tag=026 indicator=  subfield=null data=
+tag=026 indicator=  subfield=  data=BVBBV039600588
+end
+begin
+tag=030 indicator=  subfield=null data=
+tag=030 indicator=  subfield=  data=a|1uc||||||17
+end
+begin
+tag=036 indicator=a subfield=null data=
+tag=036 indicator=a subfield=  data=XA-DE-BW
+end
+begin
+tag=037 indicator=b subfield=null data=
+tag=037 indicator=b subfield=  data=ger
+end
+begin
+tag=050 indicator=  subfield=null data=
+tag=050 indicator=  subfield=  data=||||||||g|||||
+end
+begin
+tag=051 indicator=  subfield=null data=
+tag=051 indicator=  subfield=  data=m|||||||
+end
+begin
+tag=070 indicator=  subfield=null data=
+tag=070 indicator=  subfield=  data=361
+end
+begin
+tag=070 indicator=b subfield=null data=
+tag=070 indicator=b subfield=  data=294
+end
+begin
+tag=078 indicator=e subfield=null data=
+tag=078 indicator=e subfield=  data=ZDB-59-BPG
+end
+begin
+tag=078 indicator=i subfield=null data=
+tag=078 indicator=i subfield=  data=iall
+end
+begin
+tag=080 indicator=  subfield=null data=
+tag=080 indicator=  subfield=  data=60
+end
+begin
+tag=086 indicator=a subfield=null data=
+tag=086 indicator=a subfield=  data=978-3-621-27702-0
+end
+begin
+tag=100 indicator=  subfield=null data=
+tag=100 indicator=  subfield=  data=Luhmann, Maike
+tag=100 indicator=  subfield=9 data=(DE-588)13623450X
+end
+begin
+tag=331 indicator=  subfield=null data=
+tag=331 indicator=  subfield=  data=R für Einsteiger
+end
+begin
+tag=334 indicator=  subfield=null data=
+tag=334 indicator=  subfield=  data=Elektronische Ressource
+end
+begin
+tag=335 indicator=  subfield=null data=
+tag=335 indicator=  subfield=  data=Einführung in die Statistiksoftware für die Sozialwissenschaften ; [mit Add-on]
+end
+begin
+tag=359 indicator=  subfield=null data=
+tag=359 indicator=  subfield=  data=Maike Luhmann
+end
+begin
+tag=403 indicator=  subfield=null data=
+tag=403 indicator=  subfield=  data=1. Aufl.
+end
+begin
+tag=410 indicator=  subfield=null data=
+tag=410 indicator=  subfield=  data=Weinheim [u.a.]
+end
+begin
+tag=412 indicator=  subfield=null data=
+tag=412 indicator=  subfield=  data=Beltz
+end
+begin
+tag=425 indicator=a subfield=null data=
+tag=425 indicator=a subfield=  data=2010
+end
+begin
+tag=433 indicator=  subfield=null data=
+tag=433 indicator=  subfield=  data=XI, 305 S. : graph. Darst.
+end
+begin
+tag=527 indicator=z subfield=null data=
+tag=527 indicator=z subfield=  data=Druckausg.
+tag=527 indicator=z subfield=a data=Luhmann, Maike: R für Einsteiger
+tag=527 indicator=z subfield=9 data=HT016204416
+end
+begin
+tag=537 indicator=  subfield=null data=
+tag=537 indicator=  subfield=  data=Gesehen am: 15.03.2012
+end
+begin
+tag=540 indicator=a subfield=null data=
+tag=540 indicator=a subfield=  data=978-3-621-27841-6
+end
+begin
+tag=652 indicator=a subfield=null data=
+tag=652 indicator=a subfield=  data=Online-Ressource
+end
+begin
+tag=700 indicator=  subfield=null data=
+tag=700 indicator=  subfield=  data=510
+end
+begin
+tag=700 indicator=  subfield=null data=
+tag=700 indicator=  subfield=  data=300
+end
+begin
+tag=700 indicator=  subfield=null data=
+tag=700 indicator=  subfield=  data=004
+end
+begin
+tag=700 indicator=g subfield=null data=
+tag=700 indicator=g subfield=  data=QH 231
+end
+begin
+tag=700 indicator=g subfield=null data=
+tag=700 indicator=g subfield=  data=CM 4000
+end
+begin
+tag=700 indicator=g subfield=null data=
+tag=700 indicator=g subfield=  data=MR 2100
+end
+begin
+tag=700 indicator=g subfield=null data=
+tag=700 indicator=g subfield=  data=ST 250
+end
+begin
+tag=700 indicator=g subfield=null data=
+tag=700 indicator=g subfield=  data=ST 601
+end
+begin
+tag=700 indicator=g subfield=null data=
+tag=700 indicator=g subfield=  data=ST 650
+end
+begin
+tag=705 indicator=a subfield=null data=
+tag=705 indicator=a subfield=  data=519.50285555
+tag=705 indicator=a subfield=c data=519.5
+tag=705 indicator=a subfield=d data=005.55
+tag=705 indicator=a subfield=e data=DDC22ger
+tag=705 indicator=a subfield=f data=0285
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=Statistik
+tag=902 indicator=  subfield=9 data=(DE-588)4056995-0
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=R
+tag=902 indicator=  subfield=h data=Programm
+tag=902 indicator=  subfield=9 data=(DE-588)4705956-4
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=Online-Publikation
+end
+begin
+tag=903 indicator=  subfield=null data=
+tag=903 indicator=  subfield=  data=213
+end
+end object
+begin object
+begin
+tag=__FORMAT indicator=null subfield=null data=MAB
+end
+begin
+tag=__TYPE indicator=null subfield=null data=Bibliographic
+end
+begin
+tag=__LEADER indicator=null subfield=null data=00742nM2.01200024   000h
+end
+begin
+tag=001 indicator=null subfield=null data= HT016977854
+end
+begin
+tag=020 indicator=b subfield=null data=
+tag=020 indicator=b subfield=  data=BV039596996
+tag=020 indicator=b subfield=b data=BVB
+end
+begin
+tag=026 indicator=  subfield=null data=
+tag=026 indicator=  subfield=  data=BVBBV039596996
+end
+begin
+tag=030 indicator=  subfield=null data=
+tag=030 indicator=  subfield=  data=a|1uc||||||17
+end
+begin
+tag=036 indicator=a subfield=null data=
+tag=036 indicator=a subfield=  data=XA-DE-BW
+end
+begin
+tag=037 indicator=b subfield=null data=
+tag=037 indicator=b subfield=  data=ger
+end
+begin
+tag=050 indicator=  subfield=null data=
+tag=050 indicator=  subfield=  data=||||||||g|||||
+end
+begin
+tag=051 indicator=  subfield=null data=
+tag=051 indicator=  subfield=  data=m|||||||
+end
+begin
+tag=070 indicator=  subfield=null data=
+tag=070 indicator=  subfield=  data=361
+end
+begin
+tag=070 indicator=b subfield=null data=
+tag=070 indicator=b subfield=  data=708
+end
+begin
+tag=078 indicator=e subfield=null data=
+tag=078 indicator=e subfield=  data=ZDB-59-BPG
+end
+begin
+tag=078 indicator=i subfield=null data=
+tag=078 indicator=i subfield=  data=iall
+end
+begin
+tag=080 indicator=  subfield=null data=
+tag=080 indicator=  subfield=  data=60
+end
+begin
+tag=086 indicator=a subfield=null data=
+tag=086 indicator=a subfield=  data=978-3-621-27646-7
+end
+begin
+tag=100 indicator=  subfield=null data=
+tag=100 indicator=  subfield=  data=Rost, Detlef H.
+tag=100 indicator=  subfield=d data=1945-
+tag=100 indicator=  subfield=9 data=(DE-588)120732564
+end
+begin
+tag=331 indicator=  subfield=null data=
+tag=331 indicator=  subfield=  data=Intelligenz
+end
+begin
+tag=334 indicator=  subfield=null data=
+tag=334 indicator=  subfield=  data=Elektronische Ressource
+end
+begin
+tag=335 indicator=  subfield=null data=
+tag=335 indicator=  subfield=  data=Fakten und Mythen
+end
+begin
+tag=359 indicator=  subfield=null data=
+tag=359 indicator=  subfield=  data=Detlef H. Rost
+end
+begin
+tag=403 indicator=  subfield=null data=
+tag=403 indicator=  subfield=  data=1. Aufl.
+end
+begin
+tag=410 indicator=  subfield=null data=
+tag=410 indicator=  subfield=  data=Weinheim [u.a.]
+end
+begin
+tag=412 indicator=  subfield=null data=
+tag=412 indicator=  subfield=  data=Beltz PVU
+end
+begin
+tag=425 indicator=  subfield=null data=
+tag=425 indicator=  subfield=  data=2009
+end
+begin
+tag=425 indicator=a subfield=null data=
+tag=425 indicator=a subfield=  data=2009
+end
+begin
+tag=433 indicator=  subfield=null data=
+tag=433 indicator=  subfield=  data=VIII, 368 S. : graph. Darst.
+end
+begin
+tag=527 indicator=z subfield=null data=
+tag=527 indicator=z subfield=  data=Druckausg.
+tag=527 indicator=z subfield=a data=Rost, Detlef H.: Intelligenz
+tag=527 indicator=z subfield=9 data=HT015850019
+end
+begin
+tag=537 indicator=  subfield=null data=
+tag=537 indicator=  subfield=  data=Gesehen am: 15.03.2012
+end
+begin
+tag=540 indicator=a subfield=null data=
+tag=540 indicator=a subfield=  data=978-3-621-27908-6
+end
+begin
+tag=652 indicator=a subfield=null data=
+tag=652 indicator=a subfield=  data=Online-Ressource
+end
+begin
+tag=700 indicator=  subfield=null data=
+tag=700 indicator=  subfield=  data=150
+end
+begin
+tag=700 indicator=g subfield=null data=
+tag=700 indicator=g subfield=  data=CR 5000
+end
+begin
+tag=700 indicator=g subfield=null data=
+tag=700 indicator=g subfield=  data=DF 4500
+end
+begin
+tag=705 indicator=a subfield=null data=
+tag=705 indicator=a subfield=  data=153.9
+tag=705 indicator=a subfield=c data=153.9
+tag=705 indicator=a subfield=e data=DDC22ger
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=Intelligenz
+tag=902 indicator=  subfield=9 data=(DE-588)4027251-5
+end
+begin
+tag=902 indicator=  subfield=null data=
+tag=902 indicator=  subfield=  data=Online-Publikation
+end
+end object

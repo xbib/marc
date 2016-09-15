@@ -1,0 +1,299 @@
+                               MAB2-LOKAL
+                       Online-Kurzreferenz-Version
+                          Stand: November 2001
+
+
+
+          SATZKENNUNG
+
+
+001-088   SEGMENT 0--
+
+001-029   IDENTIFIKATIONSNUMMERN, DATUMS- UND VERSIONSANGABEN
+030-035   ALLGEMEINE VERARBEITUNGSTECHNISCHE ANGABEN
+036-049   ALLGEMEINE CODIERTE ANGABEN
+050-064   VEROEFFENTLICHUNGS- UND MATERIALSPEZIFISCHE ANGABEN
+065-069   NORMDATENSPEZIFISCHE ANGABEN
+070-075   ANWENDERSPEZIFISCHE DATEN UND CODES
+076-088   ANWENDERSPEZIFISCHE ANGABEN
+
+
+
+090-091   SEGMENT ANGABEN ZUR BANDAUFFUEHRUNG
+
+090       Sortierhilfe
+
+          Indikator:
+          blank = nicht definiert
+
+
+091       Einzelbandauffuehrung
+
+          Indikator:
+          blank = nicht spezifiziert
+          a     = Heftangabe
+          b     = Bandangabe
+          c     = Lueckenangabe
+          d     = Beilagen
+          e     = Register
+
+
+
+1--       SEGMENT TITEL- UND EXEMPLARBEZOGENE LOKALDATEN
+
+100       Signatur
+
+          Indikator:
+          blank = nicht spezifiziert
+          s     = Sortierform
+
+
+105       STANDORT
+
+          Indikator:
+          blank = nicht definiert
+
+
+107       ZUSAETZLICHE SIGNATUR
+
+          Indikator:
+          blank = nicht spezifiziert
+          s     = Sortierform
+
+
+110       ANZAHL DER EXEMPLARE
+
+          Indikator:
+          blank = nicht definiert
+
+
+115       AKZESSIONSNUMMER
+
+          Indikator:
+          blank = nicht definiert
+
+
+120       BUCHUNGSNUMMER
+
+          Indikator:
+          blank = nicht definiert
+
+
+123       EIGENTUEMER
+
+          Indikator:
+          blank = nicht definiert
+
+
+125       BEMERKUNGEN ZU DEN TITEL- UND EXEMPLARBEZOGENEN
+          LOKALDATEN
+
+          Indikator:
+          blank = nicht spezifiziert
+          a     = benutzerrelevante Bemerkungen
+          b     = verwaltungsinterne Bemerkungen
+
+
+130       BIBLIOGRAPHISCHE ANGABEN ZUM VORLIEGENDEN EXEMPLAR
+
+          Indikator:
+          blank = nicht definiert
+
+
+132       ALTE DRUCKE
+
+          Indikator:
+          blank = nicht spezifiziert
+          a     = Alte Signaturen
+          b     = Exemplarspezifische bibliographische Zitate
+          e     = Exemplarhinweise
+          k     = Kaufvermerke
+          m     = Marginalien
+          p     = Provenienz
+
+135       BUCHBINDERISCHE ZAEHLUNG ZUR BIBLIOGRAPHISCHEN
+          BANDZAEHLUNG
+
+          Indikator:
+          blank = nicht definiert
+
+
+
+2--       SEGMENT ZUSAMMENFASSENDE BESTANDSANGABEN
+
+200       ZUSAMMENFASSENDE BESTANDSANGABEN
+
+          Indikator:
+          blank = nicht definiert
+
+          Unterfelder:
+          $a = Einleitender Text
+          $b = Zusammenfassende Bestandsangabe
+          $c = Lueckenangabe (allgemein)
+          $d = Lueckenangabe (Desideratenverzeichnisse)
+          $e = Kommentar
+          $f = Magazin- / Grundsignatur
+          $g = (Sonder-) Standort
+          $h = (Sonder-) Standortsignatur
+          $k = Kommentar zur Grundsignatur
+          $n = SUBITO-Lieferbedingungen
+
+          $0 = Sortierhilfe
+
+
+210       NORMIERTE BESTANDSANGABEN
+
+          Indikator:
+          blank = nicht spezifiziert
+          a     = abgeschlossener Bestand
+          b     = laufender Bestand
+
+          Unterfelder:
+          Beginngruppe:
+          $5    = Parallele Zaehlung
+          $f    = Sachliche Benennung
+          $d    = Bandzaehlung
+          $e    = Heft
+          $b    = Tag
+          $c    = Monat
+          $j    = Berichtszeit bzw. Erscheinungszeit
+          $h    = Abweichende Erscheinungszeit
+          $g    = Kommentar zur Beginngruppe
+
+          Endegruppe:
+          $n    = Bandzaehlung
+          $o    = Heft
+          $l    = Tag
+          $m    = Monat
+          $k    = Berichtszeit bzw. Erscheinungszeit
+          $i    = Abweichende Erscheinungszeit
+          $q    = Kommentar zur Endegruppe
+
+          Schlussgruppe
+          $1    = Aufbewahrungszeitraum
+          $4    = Kommentar zu den Bestandsangaben
+
+
+Alle nachfolgenden Felder entsprechen MAB-TITEL:
+
+
+610-650   SEGMENT AUSGABEVERMERK SEKUNDAERFORMEN
+
+610       FUSSNOTE ZUR SEKUNDAERAUSGABE
+
+611       ORT(E) DES 1. VERLEGERS, HERSTELLERS USW.
+612       ADRESSE DES 1. VERLEGERS, HERSTELLERS USW.
+613       NAME DES 1. VERLEGERS, HERSTELLERS USW.
+
+614       ORT(E) DES 2. VERLEGERS, HERSTELLERS USW.
+615       ADRESSE DES 2. VERLEGERS, HERSTELLERS USW.
+616       NAME DES 2. VERLEGERS, HERSTELLERS USW.
+
+617       1. URHEBER DER VERFILMUNG
+618       2. URHEBER DER VERFILMUNG
+
+619       ERSCHEINUNGSJAHR(E) DER SEKUNDAERFORM
+620       HINWEISE ZUR VERFILMUNG
+
+
+621-626   1. GESAMTTITEL DER SEKUNDAERFORM
+
+621       1. GESAMTTITEL DER SEKUNDAERFORM IN VORLAGEFORM
+622       STANDARDNUMMERN DES 1. GESAMTTITELS DER SEKUNDAERFORM
+623       IDENTIFIKATIONSNUMMER DES 1. GESAMTTITELS
+          DER SEKUNDAERFORM
+624       1. GESAMTTITEL DER SEKUNDAERFORM IN ANSETZUNGSFORM
+625       BANDANGABE
+626       BANDANGABE IN SORTIERFORM
+
+
+627-632   2. GESAMTTITEL DER SEKUNDAERFORM
+
+627       2. GESAMTTITEL DER SEKUNDAERFORM IN VORLAGEFORM
+628       STANDARDNUMMERN DES 2. GESAMTTITELS DER SEKUNDAERFORM
+629       IDENTIFIKATIONSNUMMER DES 2. GESAMTTITELS
+          DER SEKUNDAERFORM
+630       2. GESAMTTITEL DER SEKUNDAERFORM IN ANSETZUNGSFORM
+631       BANDANGABE
+632       BANDANGABE IN SORTIERFORM
+
+633       ABWEICHENDER TITEL DER SEKUNDAERFORM
+634       INTERNATIONALE STANDARDBUCHNUMMER (ISBN) DER
+          SEKUNDAERFORM
+635       INTERNATIONALE STANDARDNUMMER FUER FORTLAUFENDE
+          SAMMELWERKE (ISSN) DER SEKUNDAERFORM
+636       SONSTIGE STANDARDNUMMER DER SEKUNDAERFORM
+637       UMFANGSANGABE UND PHYSISCHE BESCHREIBUNG DER
+          SEKUNDAERFORM
+638       ANGABE VON BEGLEITMATERIALIEN
+640       AUSGABEBEZEICHNUNG DER SEKUNDAERFORM IN VORLAGEFORM
+644       SIGNATUR DER SEKUNDAERFORM
+645       ERGAENZENDE ANGABEN ZUR SEKUNDAERFORM
+
+646       BESITZNACHWEIS FUER DIE VERFILMUNGSVORLAGE
+647       BESITZNACHWEIS FUER DEN SEKUNDAERFORM-MASTER
+
+
+
+651-659   SEGMENT AUSGABEVERMERK COMPUTERDATEIEN
+
+651       FUSSNOTE ZUR COMPUTERDATEI
+652       SPEZIFISCHE MATERIALBENENNUNG UND DATEITYP
+653       PHYSISCHE BESCHREIBUNG DER COMPUTERDATEI AUF DATENTRAEGER
+654       SYSTEMVORAUSSETZUNGEN FUER DIE COMPUTERDATEI
+655       ELEKTRONISCHE ADRESSE UND ZUGRIFFSART
+          FUER EINE COMPUTERDATEI IM FERNZUGRIFF
+659       ERGAENZENDE BEMERKUNGEN ZUR COMPUTERDATEI
+
+
+
+670-675   SEGMENT ZUSAETZLICHE SUCHKRITERIEN
+
+670       SACHTITEL IN ABWEICHENDER ORTHOGRAPHIE
+672       AUTORENNAME IN NORMIERTER FORM
+673       ORT IN NORMIERTER FORM
+674       VERANSTALTUNGSJAHR / ERSCHEINUNGSJAHR DES ORIGINALS
+675       STICHWOERTER IN ABWEICHENDER ORTHOGRAPHIE
+
+
+
+7--       SEGMENT SACHERSCHLIESSUNG
+
+700       NOTATION EINES KLASSIFIKATIONSSYSTEMS
+710       SCHLAGWOERTER UND SCHLAGWORTKETTEN
+720       STICHWOERTER
+730       PRECIS
+740       SUBJECT HEADINGS
+
+750       1. INHALTLICHE ZUSAMMENFASSUNG
+751       VERFASSER DER 1. INHALTLICHEN ZUSAMMENFASSUNG
+752       SPRACHEN DER 1. INHALTLICHEN ZUSAMMENFASSUNG
+
+753       2. INHALTLICHE ZUSAMMENFASSUNG
+754       VERFASSER DER 2. INHALTLICHEN ZUSAMMENFASSUNG
+755       SPRACHEN DER 2. INHALTLICHEN ZUSAMMENFASSUNG
+
+756       3. INHALTLICHE ZUSAMMENFASSUNG
+757       VERFASSER DER 3. INHALTLICHEN ZUSAMMENFASSUNG
+758       SPRACHEN DER 3. INHALTLICHEN ZUSAMMENFASSUNG
+
+
+
+9--       SEGMENT RSWK-SCHLAGWORTKETTEN
+
+900       IDENTIFIKATIONSNUMMER DER 1. SCHLAGWORTKETTE
+902       KETTENGLIED DER 1. SCHLAGWORTKETTE
+903       PERMUTATIONSMUSTER DER 1. SCHLAGWORTKETTE
+904       ERLAEUTERUNGEN ZUR 1. SCHLAGWORTKETTE
+
+905       IDENTIFIKATIONSNUMMER DER 2. SCHLAGWORTKETTE
+907       KETTENGLIED DER 2. SCHLAGWORTKETTE
+908       PERMUTATIONSMUSTER DER 2. SCHLAGWORTKETTE
+909       ERLAEUTERUNGEN ZUR 2. SCHLAGWORTKETTE
+
+...
+
+945       IDENTIFIKATIONSNUMMER DER 10. SCHLAGWORTKETTE
+947       KETTENGLIED DER 10. SCHLAGWORTKETTE
+948       PERMUTATIONSMUSTER DER 10. SCHLAGWORTKETTE
+949       ERLAEUTERUNGEN ZUR 10. SCHLAGWORTKETTE

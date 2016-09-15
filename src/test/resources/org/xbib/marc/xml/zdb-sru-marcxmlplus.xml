@@ -1,0 +1,1360 @@
+<?xml version="1.0" encoding="UTF-8"?><searchRetrieveResponse xmlns="http://www.loc.gov/zing/srw/"><version>1.1</version><numberOfRecords>44</numberOfRecords><resultSetId>13926556883954347</resultSetId><records><record><recordSchema>MARC21plus-xml</recordSchema><recordPacking>xml</recordPacking><recordData><collection xmlns="http://www.loc.gov/MARC21/slim">
+  <record type="Holdings">
+    <leader>00366ny  a22001693n 4500</leader>
+    <controlfield tag="001">273652109</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="004">1043033122</controlfield>
+    <controlfield tag="005">20131016150425.0</controlfield>
+    <controlfield tag="008">131016||||||||||||||||ger|||||||</controlfield>
+    <datafield ind1="7" ind2=" " tag="016">
+      <subfield code="a">2737752-0</subfield>
+      <subfield code="2">DE-600</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="092">
+      <subfield code="a">501001-9</subfield>
+      <subfield code="d">38 M</subfield>
+      <subfield code="k">NRW</subfield>
+      <subfield code="l">a</subfield>
+      <subfield code="o">b</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="852">
+      <subfield code="8">1</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="1" tag="852">
+      <subfield code="c">Zs.A 7009</subfield>
+      <subfield code="9">00</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="852">
+      <subfield code="a">DE-38M</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="1" tag="859">
+      <subfield code="8">1.1\x</subfield>
+      <subfield code="i">2013</subfield>
+    </datafield>
+    <datafield ind1="3" ind2="0" tag="866">
+      <subfield code="a">A30.2013 -</subfield>
+    </datafield>
+  </record>
+
+  <record type="Bibliographic">
+    <leader>00814nas a2200265 c 4500</leader>
+    <controlfield tag="001">1043033122</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20131016150638.0</controlfield>
+    <controlfield tag="007">tu</controlfield>
+    <controlfield tag="008">131016c20139999sz u||p|  ||| 0||||0ger c</controlfield>
+    <datafield ind1="7" ind2=" " tag="016">
+      <subfield code="2">DE-101</subfield>
+      <subfield code="a">1043033122</subfield>
+    </datafield>
+    <datafield ind1="7" ind2=" " tag="016">
+      <subfield code="2">DE-600</subfield>
+      <subfield code="a">2737752-0</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(DE-599)ZDB2737752-0</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="040">
+      <subfield code="a">4002</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="c">DE-101</subfield>
+      <subfield code="d">4002</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="041">
+      <subfield code="a">ger</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="044">
+      <subfield code="c">XA-CH</subfield>
+    </datafield>
+    <datafield ind1="7" ind2="4" tag="082">
+      <subfield code="a">610</subfield>
+      <subfield code="q">DE-600</subfield>
+      <subfield code="2">23sdnb</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="084">
+      <subfield code="a">610</subfield>
+      <subfield code="q">DE-600</subfield>
+      <subfield code="2">sdnb</subfield>
+    </datafield>
+    <datafield ind1="2" ind2=" " tag="110">
+      <subfield code="0">(DE-588)2140654-6</subfield>
+      <subfield code="0">(DE-101)942372344</subfield>
+      <subfield code="a">Schweizerische Alzheimervereinigung</subfield>
+      <subfield code="4">aut</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="245">
+      <subfield code="a">IB / Schweizerische Alzheimervereinigung</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="3" tag="246">
+      <subfield code="i">Nebent.</subfield>
+      <subfield code="a">Infoblatt</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="3" tag="246">
+      <subfield code="i">Nebent.</subfield>
+      <subfield code="a">Infoblätter</subfield>
+    </datafield>
+    <datafield ind1="3" ind2=" " tag="260">
+      <subfield code="a">Yverdon-les-Bains</subfield>
+      <subfield code="b">Schweizerische Alzheimervereinigung</subfield>
+    </datafield>
+    <datafield ind1="0" ind2=" " tag="362">
+      <subfield code="a">Nachgewiesen Nr. A30.2013 -</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="515">
+      <subfield code="a">Orig.-Zählung z.B.: IB 163 A 30</subfield>
+    </datafield>
+  </record>
+</collection></recordData><recordPosition>1</recordPosition></record><record><recordSchema>MARC21plus-xml</recordSchema><recordPacking>xml</recordPacking><recordData><collection xmlns="http://www.loc.gov/MARC21/slim">
+  <record type="Bibliographic">
+    <leader>00970nas a22002418c 4500</leader>
+    <controlfield tag="001">1036678784</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20130702175210.0</controlfield>
+    <controlfield tag="007">tu</controlfield>
+    <controlfield tag="008">130702c20119999sz u||p|  ||| 0||||0ita c</controlfield>
+    <datafield ind1="7" ind2=" " tag="016">
+      <subfield code="2">DE-101</subfield>
+      <subfield code="a">1036678784</subfield>
+    </datafield>
+    <datafield ind1="7" ind2=" " tag="016">
+      <subfield code="2">DE-600</subfield>
+      <subfield code="a">2722721-2</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(DE-599)ZDB2722721-2</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="040">
+      <subfield code="a">1141</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="c">DE-101</subfield>
+      <subfield code="d">1141</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="041">
+      <subfield code="a">ita</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="044">
+      <subfield code="c">XA-CH</subfield>
+    </datafield>
+    <datafield ind1="2" ind2=" " tag="110">
+      <subfield code="0">(DE-588)2140654-6</subfield>
+      <subfield code="0">(DE-101)942372344</subfield>
+      <subfield code="a">Schweizerische Alzheimervereinigung</subfield>
+      <subfield code="4">aut</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="245">
+      <subfield code="a">Rapporto annuale / Associazione Alzheimer Svizzera</subfield>
+    </datafield>
+    <datafield ind1="3" ind2=" " tag="260">
+      <subfield code="a">Yverdon-les-Bains</subfield>
+      <subfield code="b">Assoc. Alzheimer Svizzera</subfield>
+    </datafield>
+    <datafield ind1="0" ind2=" " tag="362">
+      <subfield code="a">Nachgewiesen 2010(2011) -</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="1" tag="363">
+      <subfield code="8">1.1\x</subfield>
+      <subfield code="i">2010</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="8" tag="775">
+      <subfield code="i">Franz. Ausg.</subfield>
+      <subfield code="a">Schweizerische Alzheimervereinigung</subfield>
+      <subfield code="t">Rapport annuel / Association Alzheimer Suisse</subfield>
+      <subfield code="w">(DE-600)2722720-0</subfield>
+      <subfield code="w">(DE-101)1036678733</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="0" tag="780">
+      <subfield code="i">Dt. Ausg. u. hervorgeg. aus</subfield>
+      <subfield code="a">Schweizerische Alzheimervereinigung</subfield>
+      <subfield code="t">Jahresbericht / Schweizerische Alzheimervereinigung</subfield>
+      <subfield code="w">(DE-600)2087838-2</subfield>
+      <subfield code="w">(DE-101)023859105</subfield>
+    </datafield>
+  </record>
+
+  <record type="Holdings">
+    <leader>00479ny  a22001579n 4500</leader>
+    <controlfield tag="001">26606647X</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="004">1036678784</controlfield>
+    <controlfield tag="005">20130703030510.0</controlfield>
+    <controlfield tag="008">130702||||||||||||||||ger|||||||</controlfield>
+    <datafield ind1="7" ind2=" " tag="016">
+      <subfield code="a">2722721-2</subfield>
+      <subfield code="2">DE-600</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="092">
+      <subfield code="a">950200-2</subfield>
+      <subfield code="d">101a</subfield>
+      <subfield code="k">SAX</subfield>
+      <subfield code="l">a</subfield>
+      <subfield code="o">b</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="541">
+      <subfield code="e">L-2011-26606647X</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="852">
+      <subfield code="a">DE-101a</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="866">
+      <subfield code="z">Gehoert nicht zum Sammelgebiet der Deutschen Nationalbibliothek</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="866">
+      <subfield code="x">NSG: fremdspr., im Ausland ersch. Veröff., keine Übers.; Vorlage: 2010. 2.7.13/fp</subfield>
+    </datafield>
+  </record>
+</collection></recordData><recordPosition>2</recordPosition></record><record><recordSchema>MARC21plus-xml</recordSchema><recordPacking>xml</recordPacking><recordData><collection xmlns="http://www.loc.gov/MARC21/slim">
+  <record type="Bibliographic">
+    <leader>00972nas a22002418c 4500</leader>
+    <controlfield tag="001">1036678733</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20130702175118.0</controlfield>
+    <controlfield tag="007">tu</controlfield>
+    <controlfield tag="008">130702c20119999sz u||p|  ||| 0||||0fre c</controlfield>
+    <datafield ind1="7" ind2=" " tag="016">
+      <subfield code="2">DE-101</subfield>
+      <subfield code="a">1036678733</subfield>
+    </datafield>
+    <datafield ind1="7" ind2=" " tag="016">
+      <subfield code="2">DE-600</subfield>
+      <subfield code="a">2722720-0</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(DE-599)ZDB2722720-0</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="040">
+      <subfield code="a">1141</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="c">DE-101</subfield>
+      <subfield code="d">1141</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="041">
+      <subfield code="a">fre</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="044">
+      <subfield code="c">XA-CH</subfield>
+    </datafield>
+    <datafield ind1="2" ind2=" " tag="110">
+      <subfield code="0">(DE-588)2140654-6</subfield>
+      <subfield code="0">(DE-101)942372344</subfield>
+      <subfield code="a">Schweizerische Alzheimervereinigung</subfield>
+      <subfield code="4">aut</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="245">
+      <subfield code="a">Rapport annuel / Association Alzheimer Suisse</subfield>
+    </datafield>
+    <datafield ind1="3" ind2=" " tag="260">
+      <subfield code="a">Yverdon-les-Bains</subfield>
+      <subfield code="b">Association Alzheimer Suisse</subfield>
+    </datafield>
+    <datafield ind1="0" ind2=" " tag="362">
+      <subfield code="a">Nachgewiesen 2010(2011) -</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="1" tag="363">
+      <subfield code="8">1.1\x</subfield>
+      <subfield code="i">2010</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="8" tag="775">
+      <subfield code="i">Ital. Ausg.</subfield>
+      <subfield code="a">Schweizerische Alzheimervereinigung</subfield>
+      <subfield code="t">Rapporto annuale / Associazione Alzheimer Svizzera</subfield>
+      <subfield code="w">(DE-600)2722721-2</subfield>
+      <subfield code="w">(DE-101)1036678784</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="0" tag="780">
+      <subfield code="i">Dt. Ausg. u. hervorgeg. aus</subfield>
+      <subfield code="a">Schweizerische Alzheimervereinigung</subfield>
+      <subfield code="t">Jahresbericht / Schweizerische Alzheimervereinigung</subfield>
+      <subfield code="w">(DE-600)2087838-2</subfield>
+      <subfield code="w">(DE-101)023859105</subfield>
+    </datafield>
+  </record>
+
+  <record type="Holdings">
+    <leader>00479ny  a22001579n 4500</leader>
+    <controlfield tag="001">266066453</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="004">1036678733</controlfield>
+    <controlfield tag="005">20130703030510.0</controlfield>
+    <controlfield tag="008">130702||||||||||||||||ger|||||||</controlfield>
+    <datafield ind1="7" ind2=" " tag="016">
+      <subfield code="a">2722720-0</subfield>
+      <subfield code="2">DE-600</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="092">
+      <subfield code="a">950200-2</subfield>
+      <subfield code="d">101a</subfield>
+      <subfield code="k">SAX</subfield>
+      <subfield code="l">a</subfield>
+      <subfield code="o">b</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="541">
+      <subfield code="e">L-2011-266066453</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="852">
+      <subfield code="a">DE-101a</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="866">
+      <subfield code="z">Gehoert nicht zum Sammelgebiet der Deutschen Nationalbibliothek</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="866">
+      <subfield code="x">NSG: fremdspr., im Ausland ersch. Veröff., keine Übers.; Vorlage: 2010. 2.7.13/fp</subfield>
+    </datafield>
+  </record>
+</collection></recordData><recordPosition>3</recordPosition></record><record><recordSchema>MARC21plus-xml</recordSchema><recordPacking>xml</recordPacking><recordData><collection xmlns="http://www.loc.gov/MARC21/slim">
+  <record type="Bibliographic">
+    <leader>01111nas a22002538c 4500</leader>
+    <controlfield tag="001">989514528</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20090118151048.0</controlfield>
+    <controlfield tag="007">tu</controlfield>
+    <controlfield tag="008">080708c20089999|||u||p|  ||| 0||||0||| c</controlfield>
+    <datafield ind1="7" ind2=" " tag="016">
+      <subfield code="2">DE-101</subfield>
+      <subfield code="a">989514528</subfield>
+    </datafield>
+    <datafield ind1="7" ind2=" " tag="016">
+      <subfield code="2">DE-600</subfield>
+      <subfield code="a">2436353-4</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(DE-599)ZDB2436353-4</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="040">
+      <subfield code="a">1141</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="c">DE-101</subfield>
+      <subfield code="d">9999</subfield>
+    </datafield>
+    <datafield ind1="7" ind2="4" tag="082">
+      <subfield code="a">610</subfield>
+      <subfield code="q">DE-600</subfield>
+      <subfield code="2">22sdnb</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="084">
+      <subfield code="a">610</subfield>
+      <subfield code="q">DE-600</subfield>
+      <subfield code="2">sdnb</subfield>
+    </datafield>
+    <datafield ind1="2" ind2=" " tag="110">
+      <subfield code="0">(DE-588)2140654-6</subfield>
+      <subfield code="0">(DE-101)942372344</subfield>
+      <subfield code="a">Schweizerische Alzheimervereinigung</subfield>
+      <subfield code="4">aut</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="245">
+      <subfield code="a">Memo / Association Alzheimer Suisse</subfield>
+      <subfield code="b">bulletin pour membres et sympathisants</subfield>
+      <subfield code="n">[...]</subfield>
+      <subfield code="p">[Französische Ausgabe]</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="9" tag="246">
+      <subfield code="a">Memo / Französische Ausgabe</subfield>
+    </datafield>
+    <datafield ind1="3" ind2=" " tag="260">
+      <subfield code="a">Yverdon-les-Bains</subfield>
+      <subfield code="b">Assoc. Alzheimer Suisse</subfield>
+    </datafield>
+    <datafield ind1="0" ind2=" " tag="362">
+      <subfield code="a">Nachgewiesen 2008 -</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="8" tag="775">
+      <subfield code="i">Dt. Ausg.</subfield>
+      <subfield code="a">Schweizerische Alzheimervereinigung</subfield>
+      <subfield code="t">Memo / Deutsche Ausgabe / Schweizerische Alzheimervereinigung</subfield>
+      <subfield code="w">(DE-600)2423815-6</subfield>
+      <subfield code="w">(DE-101)964991209</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="8" tag="775">
+      <subfield code="i">Ital. Ausg.</subfield>
+      <subfield code="a">Schweizerische Alzheimervereinigung</subfield>
+      <subfield code="t">Memo / Italienische Ausgabe / Associazione Alzheimer Svizzera</subfield>
+      <subfield code="w">(DE-600)2436347-9</subfield>
+      <subfield code="w">(DE-101)989514285</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="930">
+      <subfield code="a">[Französische Ausgabe]</subfield>
+    </datafield>
+  </record>
+
+  <record type="Holdings">
+    <leader>00466ny  a22001579n 4500</leader>
+    <controlfield tag="001">141399902</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="004">989514528</controlfield>
+    <controlfield tag="005">20081011181644.0</controlfield>
+    <controlfield tag="008">080708||||||||||||||||ger|||||||</controlfield>
+    <datafield ind1="7" ind2=" " tag="016">
+      <subfield code="a">2436353-4</subfield>
+      <subfield code="2">DE-600</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="092">
+      <subfield code="a">950200-2</subfield>
+      <subfield code="d">101a</subfield>
+      <subfield code="k">SAX</subfield>
+      <subfield code="l">a</subfield>
+      <subfield code="o">b</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="541">
+      <subfield code="e">L-2008-141399902</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="852">
+      <subfield code="a">DE-101a</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="866">
+      <subfield code="z">Gehoert nicht zum Sammelgebiet der Deutschen Nationalbibliothek</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="866">
+      <subfield code="x">NSG, da fremdspr. Veröffentlichung des Auslandes, Entsch. Sod, 15.05.08</subfield>
+    </datafield>
+  </record>
+</collection></recordData><recordPosition>4</recordPosition></record><record><recordSchema>MARC21plus-xml</recordSchema><recordPacking>xml</recordPacking><recordData><collection xmlns="http://www.loc.gov/MARC21/slim">
+  <record type="Bibliographic">
+    <leader>01105nas a22002538c 4500</leader>
+    <controlfield tag="001">989514285</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20090118151048.0</controlfield>
+    <controlfield tag="007">tu</controlfield>
+    <controlfield tag="008">080708c20089999|||u||p|  ||| 0||||0||| c</controlfield>
+    <datafield ind1="7" ind2=" " tag="016">
+      <subfield code="2">DE-101</subfield>
+      <subfield code="a">989514285</subfield>
+    </datafield>
+    <datafield ind1="7" ind2=" " tag="016">
+      <subfield code="2">DE-600</subfield>
+      <subfield code="a">2436347-9</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(DE-599)ZDB2436347-9</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="040">
+      <subfield code="a">1141</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="c">DE-101</subfield>
+      <subfield code="d">9999</subfield>
+    </datafield>
+    <datafield ind1="7" ind2="4" tag="082">
+      <subfield code="a">610</subfield>
+      <subfield code="q">DE-600</subfield>
+      <subfield code="2">22sdnb</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="084">
+      <subfield code="a">610</subfield>
+      <subfield code="q">DE-600</subfield>
+      <subfield code="2">sdnb</subfield>
+    </datafield>
+    <datafield ind1="2" ind2=" " tag="110">
+      <subfield code="0">(DE-588)2140654-6</subfield>
+      <subfield code="0">(DE-101)942372344</subfield>
+      <subfield code="a">Schweizerische Alzheimervereinigung</subfield>
+      <subfield code="4">aut</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="245">
+      <subfield code="a">Memo / Associazione Alzheimer Svizzera</subfield>
+      <subfield code="b">bollettino per soci e sostinetori</subfield>
+      <subfield code="n">[...]</subfield>
+      <subfield code="p">[Italienische Ausgabe]</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="9" tag="246">
+      <subfield code="a">Memo / Italienische Ausgabe</subfield>
+    </datafield>
+    <datafield ind1="3" ind2=" " tag="260">
+      <subfield code="a">Yverdon-les-Bains</subfield>
+      <subfield code="b">Assoc. Alzheimer Svizzera</subfield>
+    </datafield>
+    <datafield ind1="0" ind2=" " tag="362">
+      <subfield code="a">Nachgewiesen 2008 -</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="8" tag="775">
+      <subfield code="i">Dt. Ausg.</subfield>
+      <subfield code="a">Schweizerische Alzheimervereinigung</subfield>
+      <subfield code="t">Memo / Deutsche Ausgabe / Schweizerische Alzheimervereinigung</subfield>
+      <subfield code="w">(DE-600)2423815-6</subfield>
+      <subfield code="w">(DE-101)964991209</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="8" tag="775">
+      <subfield code="i">Franz. Ausg.</subfield>
+      <subfield code="a">Schweizerische Alzheimervereinigung</subfield>
+      <subfield code="t">Memo / Französische Ausgabe / Association Alzheimer Suisse</subfield>
+      <subfield code="w">(DE-600)2436353-4</subfield>
+      <subfield code="w">(DE-101)989514528</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="930">
+      <subfield code="a">[Italienische Ausgabe]</subfield>
+    </datafield>
+  </record>
+
+  <record type="Holdings">
+    <leader>00466ny  a22001579n 4500</leader>
+    <controlfield tag="001">14139966X</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="004">989514285</controlfield>
+    <controlfield tag="005">20081011181644.0</controlfield>
+    <controlfield tag="008">080708||||||||||||||||ger|||||||</controlfield>
+    <datafield ind1="7" ind2=" " tag="016">
+      <subfield code="a">2436347-9</subfield>
+      <subfield code="2">DE-600</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="092">
+      <subfield code="a">950200-2</subfield>
+      <subfield code="d">101a</subfield>
+      <subfield code="k">SAX</subfield>
+      <subfield code="l">a</subfield>
+      <subfield code="o">b</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="541">
+      <subfield code="e">L-2008-14139966X</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="852">
+      <subfield code="a">DE-101a</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="866">
+      <subfield code="z">Gehoert nicht zum Sammelgebiet der Deutschen Nationalbibliothek</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="866">
+      <subfield code="x">NSG, da fremdspr. Veröffentlichung des Auslandes, Entsch. Sod, 19.05.08</subfield>
+    </datafield>
+  </record>
+</collection></recordData><recordPosition>5</recordPosition></record><record><recordSchema>MARC21plus-xml</recordSchema><recordPacking>xml</recordPacking><recordData><collection xmlns="http://www.loc.gov/MARC21/slim">
+  <record type="Holdings">
+    <leader>00372ny  a22001693n 4500</leader>
+    <controlfield tag="001">139975500</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="004">988694379</controlfield>
+    <controlfield tag="005">20081011182907.0</controlfield>
+    <controlfield tag="008">080514||||||||||||||||ger|||||||</controlfield>
+    <datafield ind1="7" ind2=" " tag="016">
+      <subfield code="a">2426344-8</subfield>
+      <subfield code="2">DE-600</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="092">
+      <subfield code="a">950200-2</subfield>
+      <subfield code="d">101a</subfield>
+      <subfield code="k">SAX</subfield>
+      <subfield code="l">a</subfield>
+      <subfield code="o">b</subfield>
+      <subfield code="y">ge</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="541">
+      <subfield code="e">L-2008-139975500</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="852">
+      <subfield code="8">1</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="1" tag="852">
+      <subfield code="c">ZB 98322</subfield>
+      <subfield code="9">00</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="852">
+      <subfield code="a">DE-101a</subfield>
+    </datafield>
+    <datafield ind1="3" ind2="0" tag="866">
+      <subfield code="a">2008,1 -</subfield>
+    </datafield>
+  </record>
+  <record type="Holdings">
+    <leader>00361ny  a22001693n 4500</leader>
+    <controlfield tag="001">140784403</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="004">988694379</controlfield>
+    <controlfield tag="005">20080609122256.0</controlfield>
+    <controlfield tag="008">080609||||||||||||||||ger|||||||</controlfield>
+    <datafield ind1="7" ind2=" " tag="016">
+      <subfield code="a">2426344-8</subfield>
+      <subfield code="2">DE-600</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="092">
+      <subfield code="a">501001-9</subfield>
+      <subfield code="d">38 M</subfield>
+      <subfield code="k">NRW</subfield>
+      <subfield code="l">a</subfield>
+      <subfield code="o">b</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="852">
+      <subfield code="8">1</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="1" tag="852">
+      <subfield code="c">Zs.A 4951</subfield>
+      <subfield code="9">00</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="852">
+      <subfield code="a">DE-38M</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="1" tag="859">
+      <subfield code="8">1.1\x</subfield>
+      <subfield code="i">2008</subfield>
+    </datafield>
+    <datafield ind1="3" ind2="0" tag="866">
+      <subfield code="a">2008 -</subfield>
+    </datafield>
+  </record>
+
+  <record type="Bibliographic">
+    <leader>01484nas a2200409 c 4500</leader>
+    <controlfield tag="001">988694379</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20130828012904.0</controlfield>
+    <controlfield tag="007">tu</controlfield>
+    <controlfield tag="008">080514c20089999sz z||p|  ||| 0||||0ger c</controlfield>
+    <datafield ind1=" " ind2=" " tag="015">
+      <subfield code="a">08,B24,0321</subfield>
+      <subfield code="2">dnb</subfield>
+    </datafield>
+    <datafield ind1="7" ind2=" " tag="016">
+      <subfield code="2">DE-101</subfield>
+      <subfield code="a">988694379</subfield>
+    </datafield>
+    <datafield ind1="7" ind2=" " tag="016">
+      <subfield code="2">DE-600</subfield>
+      <subfield code="a">2426344-8</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(DE-599)ZDB2426344-8</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(OCoLC)428248297</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="040">
+      <subfield code="a">1141</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="c">DE-101</subfield>
+      <subfield code="d">9999</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="041">
+      <subfield code="a">ger</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="044">
+      <subfield code="c">XA-CH</subfield>
+    </datafield>
+    <datafield ind1="7" ind2="4" tag="082">
+      <subfield code="a">360</subfield>
+      <subfield code="a">610</subfield>
+      <subfield code="q">DE-101</subfield>
+      <subfield code="2">22sdnb</subfield>
+    </datafield>
+    <datafield ind1="7" ind2=" " tag="083">
+      <subfield code="a">070</subfield>
+      <subfield code="a">610</subfield>
+      <subfield code="q">DE-600</subfield>
+      <subfield code="2">22sdnb</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="084">
+      <subfield code="a">360</subfield>
+      <subfield code="a">610</subfield>
+      <subfield code="q">DE-101</subfield>
+      <subfield code="2">sdnb</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="084">
+      <subfield code="a">070</subfield>
+      <subfield code="a">610</subfield>
+      <subfield code="q">DE-600</subfield>
+      <subfield code="2">sdnb</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="090">
+      <subfield code="n">fn</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="245">
+      <subfield code="a">Leben mit Demenz</subfield>
+      <subfield code="b">Mitgliederbulletin der Schweizerischen Alzheimervereinigung</subfield>
+      <subfield code="c">Alzheimer, Schweizerische Alzheimervereinigung</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="3" tag="246">
+      <subfield code="a">Mitgliederbulletin der Schweizerischen Alzheimervereinigung</subfield>
+    </datafield>
+    <datafield ind1="3" ind2=" " tag="260">
+      <subfield code="a">Yverdon-les-Bains</subfield>
+      <subfield code="b">Schweizerische Alzheimervereinigung</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="300">
+      <subfield code="c">30 cm</subfield>
+    </datafield>
+    <datafield ind1="0" ind2=" " tag="362">
+      <subfield code="a">Nr. 1.2008 -</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="1" tag="363">
+      <subfield code="8">1.1\x</subfield>
+      <subfield code="i">2008</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="515">
+      <subfield code="a">Periodizität: unregelmäßig</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="591">
+      <subfield code="a">(üa/Z)</subfield>
+    </datafield>
+    <datafield ind1="2" ind2=" " tag="710">
+      <subfield code="0">(DE-588)2140654-6</subfield>
+      <subfield code="0">(DE-101)942372344</subfield>
+      <subfield code="a">Schweizerische Alzheimervereinigung</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="751">
+      <subfield code="0">(DE-588)4067237-2</subfield>
+      <subfield code="0">(DE-101)040672379</subfield>
+      <subfield code="a">Yverdon-les-Bains</subfield>
+      <subfield code="4">dbp</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="8" tag="775">
+      <subfield code="i">Franz. Ausg.</subfield>
+      <subfield code="t">Vivre avec Alzheimer</subfield>
+      <subfield code="w">(DE-600)2584260-2</subfield>
+      <subfield code="w">(DE-101)1008758531</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="8" tag="775">
+      <subfield code="i">Ital. Ausg.</subfield>
+      <subfield code="t">Vivere con Alzheimer</subfield>
+      <subfield code="w">(DE-600)2584259-6</subfield>
+      <subfield code="w">(DE-101)100875840X</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="0" tag="780">
+      <subfield code="i">Vorg.:</subfield>
+      <subfield code="t">Alzheimer-Info</subfield>
+      <subfield code="w">(DE-600)1447622-8</subfield>
+      <subfield code="w">(DE-101)019413211</subfield>
+    </datafield>
+    <datafield ind1="r" ind2=" " tag="925">
+      <subfield code="a">rb</subfield>
+    </datafield>
+  </record>
+</collection></recordData><recordPosition>6</recordPosition></record><record><recordSchema>MARC21plus-xml</recordSchema><recordPacking>xml</recordPacking><recordData><collection xmlns="http://www.loc.gov/MARC21/slim">
+  <record type="Holdings">
+    <leader>00404ny  a22001813n 4500</leader>
+    <controlfield tag="001">603772412</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="004">964991209</controlfield>
+    <controlfield tag="005">20110530192332.0</controlfield>
+    <controlfield tag="008">030224||||||||||||||||ger|||||||</controlfield>
+    <datafield ind1="7" ind2=" " tag="016">
+      <subfield code="a">2423815-6</subfield>
+      <subfield code="2">DE-600</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="092">
+      <subfield code="a">950200-2</subfield>
+      <subfield code="d">101a</subfield>
+      <subfield code="k">SAX</subfield>
+      <subfield code="l">a</subfield>
+      <subfield code="o">b</subfield>
+      <subfield code="y">ge</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="541">
+      <subfield code="e">L-2002-603772412</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="852">
+      <subfield code="8">1</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="1" tag="852">
+      <subfield code="c">Z 2003 B 431</subfield>
+      <subfield code="9">00</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="852">
+      <subfield code="a">DE-101a</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="1" tag="859">
+      <subfield code="8">1.1\x</subfield>
+      <subfield code="i">2002</subfield>
+    </datafield>
+    <datafield ind1="3" ind2="0" tag="866">
+      <subfield code="a">2002,1 -</subfield>
+    </datafield>
+  </record>
+  <record type="Holdings">
+    <leader>00562ny  a22002413n 4500</leader>
+    <controlfield tag="001">140783725</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="004">964991209</controlfield>
+    <controlfield tag="005">20120627083137.0</controlfield>
+    <controlfield tag="008">080609||||||||||||||||ger|||||||</controlfield>
+    <datafield ind1="7" ind2=" " tag="016">
+      <subfield code="a">2423815-6</subfield>
+      <subfield code="2">DE-600</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="092">
+      <subfield code="a">501001-9</subfield>
+      <subfield code="d">38 M</subfield>
+      <subfield code="k">NRW</subfield>
+      <subfield code="l">a</subfield>
+      <subfield code="o">b</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="852">
+      <subfield code="8">1</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="1" tag="852">
+      <subfield code="c">Zs.A 6643</subfield>
+      <subfield code="9">00</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="852">
+      <subfield code="a">DE-38M</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="0" tag="859">
+      <subfield code="8">1.1\x</subfield>
+      <subfield code="i">2005</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="859">
+      <subfield code="8">1.2\x</subfield>
+      <subfield code="i">2008</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="0" tag="859">
+      <subfield code="8">2.1\x</subfield>
+      <subfield code="i">2009</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="0" tag="859">
+      <subfield code="8">3.1\x</subfield>
+      <subfield code="i">2010</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="0" tag="859">
+      <subfield code="8">4.1\x</subfield>
+      <subfield code="i">2011</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="1" tag="859">
+      <subfield code="8">5.1\x</subfield>
+      <subfield code="i">2012</subfield>
+    </datafield>
+    <datafield ind1="3" ind2="0" tag="866">
+      <subfield code="a">2005 - 2008,1; 2009,2; 2010,2; 2011,2-3; 2012 -</subfield>
+    </datafield>
+    <datafield ind1="3" ind2="0" tag="866">
+      <subfield code="z">[L]</subfield>
+    </datafield>
+  </record>
+
+  <record type="Bibliographic">
+    <leader>01442nas a2200397 c 4500</leader>
+    <controlfield tag="001">964991209</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20110530192300.0</controlfield>
+    <controlfield tag="006">sq</controlfield>
+    <controlfield tag="007">tu</controlfield>
+    <controlfield tag="008">020807c20029999sz z||p|  ||| 0||||0ger c</controlfield>
+    <datafield ind1=" " ind2=" " tag="015">
+      <subfield code="a">03,B14,0471</subfield>
+      <subfield code="2">dnb</subfield>
+    </datafield>
+    <datafield ind1="7" ind2=" " tag="016">
+      <subfield code="2">DE-101</subfield>
+      <subfield code="a">964991209</subfield>
+    </datafield>
+    <datafield ind1="7" ind2=" " tag="016">
+      <subfield code="2">DE-600</subfield>
+      <subfield code="a">2423815-6</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(DE-599)ZDB2423815-6</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(OCoLC)722920868</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="040">
+      <subfield code="a">1130</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="c">DE-101</subfield>
+      <subfield code="d">1141</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="041">
+      <subfield code="a">ger</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="044">
+      <subfield code="c">XA-CH</subfield>
+    </datafield>
+    <datafield ind1="7" ind2="4" tag="082">
+      <subfield code="a">610</subfield>
+      <subfield code="q">DE-600</subfield>
+      <subfield code="2">22sdnb</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="084">
+      <subfield code="a">33</subfield>
+      <subfield code="a">610</subfield>
+      <subfield code="q">DE-101</subfield>
+      <subfield code="2">sdnb</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="084">
+      <subfield code="a">610</subfield>
+      <subfield code="q">DE-600</subfield>
+      <subfield code="2">sdnb</subfield>
+    </datafield>
+    <datafield ind1="2" ind2=" " tag="110">
+      <subfield code="0">(DE-588)2140654-6</subfield>
+      <subfield code="0">(DE-101)942372344</subfield>
+      <subfield code="a">Schweizerische Alzheimervereinigung</subfield>
+      <subfield code="4">aut</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="245">
+      <subfield code="a">Memo / Schweizerische Alzheimervereinigung</subfield>
+      <subfield code="b">Bulletin für Mitglieder und Freunde</subfield>
+      <subfield code="n">[...]</subfield>
+      <subfield code="p">[Deutsche Ausgabe]</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="9" tag="246">
+      <subfield code="a">Memo / Deutsche Ausgabe</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="247">
+      <subfield code="a">Alzheimer-Memo</subfield>
+      <subfield code="f">Nebent. teils</subfield>
+    </datafield>
+    <datafield ind1="3" ind2=" " tag="260">
+      <subfield code="a">Yverdon-les-Bains</subfield>
+      <subfield code="b">ALZ</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="300">
+      <subfield code="c">30 cm</subfield>
+    </datafield>
+    <datafield ind1="0" ind2=" " tag="362">
+      <subfield code="a">2002,1 -</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="1" tag="363">
+      <subfield code="8">1.1\x</subfield>
+      <subfield code="i">2002</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="515">
+      <subfield code="a">Anfangs vierteljährl., später 3x jährl.</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="8" tag="775">
+      <subfield code="i">Franz. Ausg.</subfield>
+      <subfield code="a">Schweizerische Alzheimervereinigung</subfield>
+      <subfield code="t">Memo / Französische Ausgabe / Association Alzheimer Suisse</subfield>
+      <subfield code="w">(DE-600)2436353-4</subfield>
+      <subfield code="w">(DE-101)989514528</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="8" tag="775">
+      <subfield code="i">Ital. Ausg.</subfield>
+      <subfield code="a">Schweizerische Alzheimervereinigung</subfield>
+      <subfield code="t">Memo / Italienische Ausgabe / Associazione Alzheimer Svizzera</subfield>
+      <subfield code="w">(DE-600)2436347-9</subfield>
+      <subfield code="w">(DE-101)989514285</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="889">
+      <subfield code="w">(DE-101)964991209</subfield>
+    </datafield>
+    <datafield ind1="r" ind2=" " tag="925">
+      <subfield code="a">rb</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="930">
+      <subfield code="a">[Deutsche Ausgabe]</subfield>
+    </datafield>
+  </record>
+</collection></recordData><recordPosition>7</recordPosition></record><record><recordSchema>MARC21plus-xml</recordSchema><recordPacking>xml</recordPacking><recordData><collection xmlns="http://www.loc.gov/MARC21/slim">
+  <record type="Bibliographic">
+    <leader>00658nas a22002178c 4500</leader>
+    <controlfield tag="001">025815644</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20090118142210.0</controlfield>
+    <controlfield tag="007">tu</controlfield>
+    <controlfield tag="008">040329c20029999|||u||p|  ||| 0||||0||| c</controlfield>
+    <datafield ind1="7" ind2=" " tag="016">
+      <subfield code="2">DE-101</subfield>
+      <subfield code="a">025815644</subfield>
+    </datafield>
+    <datafield ind1="7" ind2=" " tag="016">
+      <subfield code="2">DE-600</subfield>
+      <subfield code="a">2141329-0</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(DE-599)ZDB2141329-0</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(OCoLC)645550085</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="040">
+      <subfield code="a">0012</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="c">DE-101</subfield>
+      <subfield code="d">9999</subfield>
+    </datafield>
+    <datafield ind1="7" ind2="4" tag="082">
+      <subfield code="a">370</subfield>
+      <subfield code="q">DE-600</subfield>
+      <subfield code="2">22sdnb</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="084">
+      <subfield code="a">370</subfield>
+      <subfield code="q">DE-600</subfield>
+      <subfield code="2">sdnb</subfield>
+    </datafield>
+    <datafield ind1="2" ind2=" " tag="110">
+      <subfield code="0">(DE-588)1247980-9</subfield>
+      <subfield code="0">(DE-101)968176224</subfield>
+      <subfield code="a">InfraServ</subfield>
+      <subfield code="g">Gendorf, Burgkirchen</subfield>
+      <subfield code="4">aut</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="245">
+      <subfield code="a">Aus- und Weiterbildung / InfraServ Gendorf, Aus- und Weiterbildung</subfield>
+    </datafield>
+    <datafield ind1="3" ind2=" " tag="260">
+      <subfield code="a">Burgkirchen</subfield>
+      <subfield code="b">[s.n.]</subfield>
+    </datafield>
+    <datafield ind1="0" ind2=" " tag="362">
+      <subfield code="a">Nachgewiesen 2002 -</subfield>
+    </datafield>
+  </record>
+
+  <record type="Holdings">
+    <leader>00367ny  a22001573n 4500</leader>
+    <controlfield tag="001">094588082</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="004">025815644</controlfield>
+    <controlfield tag="005">20070308104207.0</controlfield>
+    <controlfield tag="008">021112||||||||||||||||ger|||||||</controlfield>
+    <datafield ind1="7" ind2=" " tag="016">
+      <subfield code="a">2141329-0</subfield>
+      <subfield code="2">DE-600</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(DE-604)8036076564754</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="092">
+      <subfield code="a">800100-5</subfield>
+      <subfield code="d">12</subfield>
+      <subfield code="k">BAY</subfield>
+      <subfield code="l">a</subfield>
+      <subfield code="o">c</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="1" tag="852">
+      <subfield code="c">Wird nicht gesammelt</subfield>
+      <subfield code="9">00</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="852">
+      <subfield code="a">DE-12</subfield>
+    </datafield>
+    <datafield ind1="3" ind2="0" tag="866">
+      <subfield code="a">Kein Bestand</subfield>
+    </datafield>
+  </record>
+</collection></recordData><recordPosition>8</recordPosition></record><record><recordSchema>MARC21plus-xml</recordSchema><recordPacking>xml</recordPacking><recordData><collection xmlns="http://www.loc.gov/MARC21/slim">
+  <record type="Holdings">
+    <leader>00375ny  a22001693n 4500</leader>
+    <controlfield tag="001">609242350</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="004">963938347</controlfield>
+    <controlfield tag="005">20111216023021.0</controlfield>
+    <controlfield tag="008">020301||||||||||||||||ger|||||||</controlfield>
+    <datafield ind1="7" ind2=" " tag="016">
+      <subfield code="a">2642833-7</subfield>
+      <subfield code="2">DE-600</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="092">
+      <subfield code="a">950200-2</subfield>
+      <subfield code="d">101a</subfield>
+      <subfield code="k">SAX</subfield>
+      <subfield code="l">a</subfield>
+      <subfield code="o">b</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="541">
+      <subfield code="e">L-2001-609242350</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="852">
+      <subfield code="8">1</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="1" tag="852">
+      <subfield code="c">Z 2004 B 329</subfield>
+      <subfield code="9">00</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="852">
+      <subfield code="a">DE-101a</subfield>
+    </datafield>
+    <datafield ind1="3" ind2="0" tag="866">
+      <subfield code="a">2001 - 2002</subfield>
+    </datafield>
+  </record>
+  <record type="Holdings">
+    <leader>00375ny  a22001693n 4500</leader>
+    <controlfield tag="001">598112189</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="004">963938347</controlfield>
+    <controlfield tag="005">20111216023021.0</controlfield>
+    <controlfield tag="008">020228||||||||||||||||ger|||||||</controlfield>
+    <datafield ind1="7" ind2=" " tag="016">
+      <subfield code="a">2642833-7</subfield>
+      <subfield code="2">DE-600</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="092">
+      <subfield code="a">600100-2</subfield>
+      <subfield code="d">101b</subfield>
+      <subfield code="k">HES</subfield>
+      <subfield code="l">b</subfield>
+      <subfield code="o">d</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="541">
+      <subfield code="e">F-2001-598112189</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="852">
+      <subfield code="8">1</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="1" tag="852">
+      <subfield code="c">Z 2004 B 329</subfield>
+      <subfield code="9">00</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="852">
+      <subfield code="a">DE-101b</subfield>
+    </datafield>
+    <datafield ind1="3" ind2="0" tag="866">
+      <subfield code="a">2001 - 2002</subfield>
+    </datafield>
+  </record>
+
+  <record type="Bibliographic">
+    <leader>01074nas a2200313 c 4500</leader>
+    <controlfield tag="001">963938347</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20111216023021.0</controlfield>
+    <controlfield tag="007">tu</controlfield>
+    <controlfield tag="008">020228d20012002gw u||p|  ||| 0||||0ger c</controlfield>
+    <datafield ind1=" " ind2=" " tag="015">
+      <subfield code="a">06,B31,0020</subfield>
+      <subfield code="2">dnb</subfield>
+    </datafield>
+    <datafield ind1="7" ind2=" " tag="016">
+      <subfield code="2">DE-101</subfield>
+      <subfield code="a">963938347</subfield>
+    </datafield>
+    <datafield ind1="7" ind2=" " tag="016">
+      <subfield code="2">DE-600</subfield>
+      <subfield code="a">2642833-7</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(DE-599)ZDB2642833-7</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(OCoLC)85712776</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="040">
+      <subfield code="a">1240</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="c">DE-101</subfield>
+      <subfield code="d">9999</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="041">
+      <subfield code="a">ger</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="044">
+      <subfield code="c">XA-DE</subfield>
+    </datafield>
+    <datafield ind1="7" ind2="4" tag="082">
+      <subfield code="a">230</subfield>
+      <subfield code="a">330</subfield>
+      <subfield code="a">360</subfield>
+      <subfield code="q">DE-101</subfield>
+      <subfield code="2">22sdnb</subfield>
+    </datafield>
+    <datafield ind1="7" ind2=" " tag="083">
+      <subfield code="a">230</subfield>
+      <subfield code="a">360</subfield>
+      <subfield code="a">330</subfield>
+      <subfield code="q">DE-600</subfield>
+      <subfield code="2">22sdnb</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="084">
+      <subfield code="a">230</subfield>
+      <subfield code="a">330</subfield>
+      <subfield code="a">360</subfield>
+      <subfield code="q">DE-101</subfield>
+      <subfield code="2">sdnb</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="084">
+      <subfield code="a">230</subfield>
+      <subfield code="a">360</subfield>
+      <subfield code="a">330</subfield>
+      <subfield code="q">DE-600</subfield>
+      <subfield code="2">sdnb</subfield>
+    </datafield>
+    <datafield ind1="2" ind2=" " tag="110">
+      <subfield code="0">(DE-588)2100899-1</subfield>
+      <subfield code="0">(DE-101)007493940</subfield>
+      <subfield code="a">Arbeitslosenzentrum</subfield>
+      <subfield code="g">Hannover</subfield>
+      <subfield code="4">aut</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="245">
+      <subfield code="a">Arbeitslosen-Zentrum Hannover</subfield>
+      <subfield code="b">Entwicklung zur Fachberatungsstelle für Arbeitslose und von Arbeitslosigkeit bedrohte Menschen</subfield>
+      <subfield code="c">Ev.-Luth. Stadtkirchenverband Hannover ; Arbeitslosen-Zentrum Hannover</subfield>
+    </datafield>
+    <datafield ind1="3" ind2=" " tag="260">
+      <subfield code="a">Hannover</subfield>
+      <subfield code="b">Arbeitslosen-Zentrum Hannover</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="300">
+      <subfield code="c">31 cm</subfield>
+    </datafield>
+    <datafield ind1="0" ind2=" " tag="362">
+      <subfield code="a">2001 (Juli 2001) [?]-2002</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="889">
+      <subfield code="w">(DE-101)963938347</subfield>
+    </datafield>
+    <datafield ind1="r" ind2=" " tag="925">
+      <subfield code="a">rb</subfield>
+    </datafield>
+  </record>
+</collection></recordData><recordPosition>9</recordPosition></record><record><recordSchema>MARC21plus-xml</recordSchema><recordPacking>xml</recordPacking><recordData><collection xmlns="http://www.loc.gov/MARC21/slim">
+  <record type="Bibliographic">
+    <leader>00827nas a2200265 c 4500</leader>
+    <controlfield tag="001">991237374</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="005">20120413083717.0</controlfield>
+    <controlfield tag="007">tu</controlfield>
+    <controlfield tag="008">081113c19949999au z||p|  ||| 0||||0ger c</controlfield>
+    <datafield ind1="7" ind2=" " tag="016">
+      <subfield code="2">DE-101</subfield>
+      <subfield code="a">991237374</subfield>
+    </datafield>
+    <datafield ind1="7" ind2=" " tag="016">
+      <subfield code="2">DE-600</subfield>
+      <subfield code="a">2464911-9</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(DE-599)ZDB2464911-9</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(OCoLC)724002632</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="040">
+      <subfield code="a">4060</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="c">DE-101</subfield>
+      <subfield code="d">9021</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="041">
+      <subfield code="a">ger</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="044">
+      <subfield code="c">XA-AT</subfield>
+    </datafield>
+    <datafield ind1="7" ind2="4" tag="082">
+      <subfield code="a">630</subfield>
+      <subfield code="a">640</subfield>
+      <subfield code="a">620</subfield>
+      <subfield code="q">DE-600</subfield>
+      <subfield code="2">22sdnb</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="084">
+      <subfield code="a">630</subfield>
+      <subfield code="a">640</subfield>
+      <subfield code="a">620</subfield>
+      <subfield code="q">DE-600</subfield>
+      <subfield code="2">sdnb</subfield>
+    </datafield>
+    <datafield ind1="2" ind2=" " tag="110">
+      <subfield code="0">(DE-588)10160947-4</subfield>
+      <subfield code="0">(DE-101)983041598</subfield>
+      <subfield code="a">Mauch GesmbH &amp; Co. KG</subfield>
+      <subfield code="g">Burgkirchen a. d. Alz</subfield>
+      <subfield code="4">aut</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="245">
+      <subfield code="a">Mauch aktuell</subfield>
+      <subfield code="b">Informationsschrift der Firma Mauch Ges.m.b.H. &amp; Co. KG</subfield>
+    </datafield>
+    <datafield ind1="3" ind2=" " tag="260">
+      <subfield code="a">Burgkirchen</subfield>
+      <subfield code="b">[s.n.]</subfield>
+    </datafield>
+    <datafield ind1="0" ind2=" " tag="362">
+      <subfield code="a">[Ausg. Nr. 1.1994]; Ausg. Nr. 2.1995 -</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="1" tag="363">
+      <subfield code="8">1.1\x</subfield>
+      <subfield code="a">1</subfield>
+      <subfield code="i">1994</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="515">
+      <subfield code="a">Ersch. unregelmäßig</subfield>
+    </datafield>
+  </record>
+
+  <record type="Holdings">
+    <leader>00517ny  a22002053n 4500</leader>
+    <controlfield tag="001">149053126</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="004">991237374</controlfield>
+    <controlfield tag="005">20090218171441.0</controlfield>
+    <controlfield tag="008">070131||||||||||||||||ger|||||||</controlfield>
+    <datafield ind1="7" ind2=" " tag="016">
+      <subfield code="a">2464911-9</subfield>
+      <subfield code="2">DE-600</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(AT-9:OBV)001649720</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="090">
+      <subfield code="a">a</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="092">
+      <subfield code="a">030007-x</subfield>
+      <subfield code="d">AT-OÖLB</subfield>
+      <subfield code="k">WEU</subfield>
+      <subfield code="l">b</subfield>
+      <subfield code="o">d</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="852">
+      <subfield code="8">00.01</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="1" tag="852">
+      <subfield code="c">OO-II-15751</subfield>
+      <subfield code="9">00</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="2" tag="852">
+      <subfield code="b">ungebundene Jg. Zeitschriftenabt. Regal Nr. 491</subfield>
+      <subfield code="9">09</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="852">
+      <subfield code="a">AT-OOeLB</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="1" tag="859">
+      <subfield code="8">1.1\x</subfield>
+      <subfield code="i">2001</subfield>
+    </datafield>
+    <datafield ind1="3" ind2="0" tag="866">
+      <subfield code="a">2001,Nov.(=Ausgabe Nr.13) -</subfield>
+    </datafield>
+  </record>
+  <record type="Holdings">
+    <leader>00551ny  a22002173n 4500</leader>
+    <controlfield tag="001">149070691</controlfield>
+    <controlfield tag="003">DE-101</controlfield>
+    <controlfield tag="004">991237374</controlfield>
+    <controlfield tag="005">20091030171544.0</controlfield>
+    <controlfield tag="008">081212||||||||||||||||ger|||||||</controlfield>
+    <datafield ind1="7" ind2=" " tag="016">
+      <subfield code="a">2464911-9</subfield>
+      <subfield code="2">DE-600</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(AT-9:OBV)001797891</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="090">
+      <subfield code="a">a</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="092">
+      <subfield code="a">030001-9</subfield>
+      <subfield code="d">AT-ÖNB</subfield>
+      <subfield code="k">WEU</subfield>
+      <subfield code="l">a</subfield>
+      <subfield code="o">c</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="852">
+      <subfield code="8">00.01</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="1" tag="852">
+      <subfield code="c">1,888.036-C.Neu-Per</subfield>
+      <subfield code="9">00</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="852">
+      <subfield code="a">AT-OeNB</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="0" tag="859">
+      <subfield code="8">1.1\x</subfield>
+      <subfield code="a">1</subfield>
+      <subfield code="i">1994</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="1" tag="859">
+      <subfield code="8">2.1\x</subfield>
+      <subfield code="a">2</subfield>
+      <subfield code="i">1995</subfield>
+    </datafield>
+    <datafield ind1="3" ind2="0" tag="866">
+      <subfield code="a">[Ausg. Nr. 1.1994]; Ausg. Nr. 2.1995 -</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="866">
+      <subfield code="z">Lfde. Hefte in Zs.-Ls. benützbar</subfield>
+    </datafield>
+  </record>
+</collection></recordData><recordPosition>10</recordPosition></record></records><nextRecordPosition>11</nextRecordPosition><echoedSearchRetrieveRequest><version>1.1</version><query>alz%3D190171-0</query><xQuery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/><startRecord>1</startRecord><maximumRecords>10</maximumRecords><recordSchema>MARC21plus-xml</recordSchema></echoedSearchRetrieveRequest><extraResponseData><accountOf xmlns="">HBZ Köln</accountOf></extraResponseData></searchRetrieveResponse>

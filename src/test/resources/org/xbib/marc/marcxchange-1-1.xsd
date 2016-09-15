@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v5 rel. 3 U (http://www.xmlspy.com) by TS (Dansk BiblioteksCenter) -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="info:lc/xmlns/marcxchange-v1" targetNamespace="info:lc/xmlns/marcxchange-v1" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.1" xml:lang="en">
+	<xsd:annotation>
+		<xsd:documentation>
+		 	MarcXchange: The general XML schema for MARC formatted records. Prepared by Tommy Schomacker - version 1.1 - July 2007. 
+		 	MarcXchange is made as a generalization (mainly by weakening restrictions) of the MARCXML schema for MARC21.
+		 	MARCXML is made by Corey Keith from the Library of Congress.
+		</xsd:documentation>
+		<xsd:documentation>
+			The schema supports XML markup of MARC records as specified in ISO 2701. 
+			ISO 2709 defines the following general structure: Record Label - Directory - Record Identifier - Reference Fields - Data Fields.
+			In the schema  the element "leader" is used for ISO 2709 Record Label, 
+			the element "control field" for ISO 2709 Record Identifier and Reference Fields,
+			and the element "data field" for ISO 2709 Data Fields.
+			The schema has no counterpart to ISO 2709 Directory.
+		</xsd:documentation>
+		<xsd:documentation>
+			Extensions and elucidations: 
+			The schema allows the usage of "data fields" for all legal tags, including 001 to 009, 00A to 00Z and 00a to 00z.
+			Subfield identifiers may consist of 8 bits characters from ISO 10646 BMP row 00 (Basic Latin and Latin-1 Supplement).
+			Two attributes are introduced to specify the content of a record - "format" to specify the MARC format, "type" to specify the kind of record.
+		</xsd:documentation>
+	</xsd:annotation>
+	<xsd:element name="collection" type="collectionType" nillable="true" id="collection.e">
+		<xsd:annotation>
+			<xsd:documentation>collection is a top level container element for 0 or many records</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="record" type="recordType" nillable="true" id="record.e">
+		<xsd:annotation>
+			<xsd:documentation>record is a top level container element for all of the field elements which compose the record</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:complexType name="collectionType" id="collection.ct">
+		<xsd:sequence minOccurs="0" maxOccurs="unbounded">
+			<xsd:element ref="record"/>
+		</xsd:sequence>
+		<xsd:attribute name="id" type="idDataType" use="optional"/>
+	</xsd:complexType>
+	<xsd:complexType name="recordType" id="record.ct">
+		<xsd:sequence minOccurs="0">
+			<xsd:element name="leader" type="leaderFieldType"/>
+			<xsd:element name="controlfield" type="controlFieldType" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="datafield" type="dataFieldType" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+		<xsd:attribute name="format" type="xsd:NMTOKEN" use="optional"/>
+		<xsd:attribute name="type" type="xsd:NMTOKEN" use="optional"/>
+		<xsd:attribute name="id" type="idDataType" use="optional"/>
+	</xsd:complexType>
+	<xsd:complexType name="leaderFieldType" id="leader.ct">
+		<xsd:annotation>
+			<xsd:documentation>ISO 2709 Record Label, 24 octets</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="leaderDataType">
+				<xsd:attribute name="id" type="idDataType" use="optional"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:simpleType name="leaderDataType" id="leader.st">
+		<xsd:restriction base="xsd:string">
+			<xsd:whiteSpace value="preserve"/>
+			<xsd:pattern value="\d{5}\p{IsBasicLatin}\p{IsBasicLatin}{4}\d\d\d{5}\p{IsBasicLatin}{3}\d\d\d\p{IsBasicLatin}"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="controlFieldType" id="controlfield.ct">
+		<xsd:annotation>
+			<xsd:documentation>ISO 2709 Record Identifier and Reference Fields</xsd:documentation>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="controlDataType">
+				<xsd:attribute name="id" type="idDataType" use="optional"/>
+				<xsd:attribute name="tag" type="controltagDataType" use="required"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:simpleType name="controlDataType" id="controlfield.st">
+		<xsd:restriction base="xsd:string">
+			<xsd:whiteSpace value="preserve"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="controltagDataType" id="controltag.st">
+		<xsd:restriction base="xsd:string">
+			<xsd:whiteSpace value="preserve"/>
+			<xsd:pattern value="00[1-9A-Za-z]"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="dataFieldType" id="datafield.ct">
+		<xsd:annotation>
+			<xsd:documentation>ISO 2709 data fields</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence maxOccurs="unbounded">
+			<xsd:element name="subfield" type="subfieldatafieldType"/>
+		</xsd:sequence>
+		<xsd:attribute name="id" type="idDataType" use="optional"/>
+		<xsd:attribute name="tag" type="tagDataType" use="required"/>
+		<xsd:attribute name="ind1" type="indicatorDataType" use="optional"/>
+		<xsd:attribute name="ind2" type="indicatorDataType" use="optional"/>
+		<xsd:attribute name="ind3" type="indicatorDataType" use="optional"/>
+		<xsd:attribute name="ind4" type="indicatorDataType" use="optional"/>
+		<xsd:attribute name="ind5" type="indicatorDataType" use="optional"/>
+		<xsd:attribute name="ind6" type="indicatorDataType" use="optional"/>
+		<xsd:attribute name="ind7" type="indicatorDataType" use="optional"/>
+		<xsd:attribute name="ind8" type="indicatorDataType" use="optional"/>
+		<xsd:attribute name="ind9" type="indicatorDataType" use="optional"/>
+	</xsd:complexType>
+	<xsd:simpleType name="tagDataType" id="tag.st">
+		<xsd:restriction base="xsd:string">
+			<xsd:whiteSpace value="preserve"/>
+			<xsd:pattern value="(00[1-9A-Za-z]|0[1-9A-Za-z][0-9A-Za-z]|[1-9A-Za-z][0-9A-Za-z]{2})"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="indicatorDataType" id="ind.st">
+		<xsd:restriction base="xsd:string">
+			<xsd:whiteSpace value="preserve"/>
+			<xsd:pattern value="\p{IsBasicLatin}{1}"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="subfieldatafieldType" id="subfield.ct">
+		<xsd:simpleContent>
+			<xsd:extension base="subfieldDataType">
+				<xsd:attribute name="id" type="idDataType" use="optional"/>
+				<xsd:attribute name="code" type="subfieldcodeDataType" use="required"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<xsd:simpleType name="subfieldDataType" id="subfield.st">
+		<xsd:restriction base="xsd:string">
+			<xsd:whiteSpace value="preserve"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="subfieldcodeDataType" id="code.st">
+		<xsd:restriction base="xsd:string">
+			<xsd:whiteSpace value="preserve"/>
+			<xsd:pattern value="(\p{IsBasicLatin}|\p{IsLatin-1Supplement}){0,8}"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="idDataType" id="id.st">
+		<xsd:restriction base="xsd:ID"/>
+	</xsd:simpleType>
+</xsd:schema>

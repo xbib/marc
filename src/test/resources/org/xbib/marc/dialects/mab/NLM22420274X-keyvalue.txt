@@ -1,0 +1,29 @@
+beginRecord
+format=MabXML
+type=h
+leader=00000     1000000   000 
+001$ $NLM22420274X
+025$ $acs200908211147000417644
+026$h$NLM22420274X
+030$ $d|zu|||z|0017
+037$b$eng
+050$ $||||||||g|
+051$ $a|||||
+070$a$GBV
+078$e$ZDB-1-ACS
+100$ $Ellis, Jacqueline
+104$a$Bagshaw, Clive R.
+108$a$Shaw, William V.
+331$a$Kinetic mechanism of chloramphenicol acetyltransferase: the role of ternary complex interconversion in rate determination
+334$ $Elektronische Ressource
+410$ $s.l.
+412$ $American Chemical Society
+425$a$1995
+590$ $Biochemistry
+594$ $Columbus, Ohio
+596$ $34 (1995), S. 16852-16859
+599$a$1520-4995
+621$b$ACS Legacy Archives
+622$z$041002-0
+655$ $u[u=http://dx.doi.org/10.1021/bi00051a036]
+endRecord

@@ -1,0 +1,48 @@
+
+Thanks to Bas Peters, who created
+
+- JAMES Java MARC events http://xml.coverpages.org/MARC-Events-James.html
+- Marc4j
+- the book "Crosswalking: Processing MARC in XML Environments with MARC4J"
+
+http://www.lulu.com/shop/bas-peters/crosswalking-processing-marc-in-xml-environments-with-marc4j/paperback/product-689445.html
+
+and inspired this project.
+
+----------------
+
+These four classes in org.xbib.marc.io
+
+FixedTokenReplacementInputStream
+ReplaceStringInputStream
+ScanBuffer
+StreamTokenHandler
+
+are derived versions from the classes in Swizzle (September 2016)
+
+https://github.com/codehaus/swizzle/tree/master/swizzle-stream/
+
+Swizzle License: The Apache Software License, Version 2.0
+
+-----------------
+
+These classes
+
+BytesArray
+BytesReference
+BytesStreamOutput
+
+are derived versions from classes in Elasticsearch 1.0
+
+https://github.com/elastic/elasticsearch/tree/1.0/src/main/java/org/elasticsearch/common/bytes
+
+Elasticsearch License: The Apache Software License, Version 2.0
+
+-----------------
+
+MARC test data has been acquired from
+
+https://github.com/marc4j/marc4j/tree/master/test/resources
+
+and were donated y libraries for testing purpose.
+

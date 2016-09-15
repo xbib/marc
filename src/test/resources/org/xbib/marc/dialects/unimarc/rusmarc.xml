@@ -1,0 +1,3826 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection>
+
+ <record
+  number="67183"
+  format="UNIMARC"
+  type="Bibliographic"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.rba.ru/rusmarc/publish/UNIMARC_XML.pdf http://www.rba.ru rusmarc/soft/UNISlim.xsd"
+  xmlns="http://www.rba.ru/rusmarc/soft">
+
+
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">966-504-025-1</subfield>
+  </datafield>
+  <datafield tag="090" ind1=" " ind2=" ">
+    <subfield code="9">52769</subfield>
+    <subfield code="a">52769</subfield>
+  </datafield>
+  <datafield tag="101" ind1=" " ind2=" ">
+    <subfield code="a">ukr</subfield>
+  </datafield>
+  <datafield tag="100" ind1=" " ind2=" ">
+    <subfield code="a">20110313              frey50        </subfield>
+  </datafield>
+  <datafield tag="200" ind1=" " ind2=" ">
+    <subfield code="a">Сучасна соціальна філософія</subfield>
+    <subfield code="f">Андрущенко В.П., Михальченко М.І.</subfield>
+  </datafield>
+  <datafield tag="210" ind1=" " ind2=" ">
+    <subfield code="a">К.</subfield>
+    <subfield code="c">Генеза</subfield>
+    <subfield code="d">1996</subfield>
+  </datafield>
+  <datafield tag="215" ind1=" " ind2=" ">
+    <subfield code="a">368 с.</subfield>
+  </datafield>
+  <datafield tag="675" ind1=" " ind2=" ">
+    <subfield code="a">1</subfield>
+  </datafield>
+  <datafield tag="700" ind1=" " ind2=" ">
+    <subfield code="a">Андрущенко</subfield>
+    <subfield code="g">В.П.</subfield>
+  </datafield>
+  <datafield tag="701" ind1=" " ind2=" ">
+    <subfield code="a">Михальченко</subfield>
+    <subfield code="g">М.І.</subfield>
+  </datafield>
+  <datafield tag="852" ind1=" " ind2=" ">
+    <subfield code="j">1/А66</subfield>
+    <subfield code="k">А66</subfield>
+  </datafield>
+  <datafield tag="942" ind1=" " ind2=" ">
+    <subfield code="h">1</subfield>
+    <subfield code="j">1/А66</subfield>
+    <subfield code="v">А66</subfield>
+    <subfield code="c">BOOK</subfield>
+    <subfield code="z">7721</subfield>
+    <subfield code="6">1</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116950</subfield>
+    <subfield code="f">206033</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124640</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206033</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116899</subfield>
+    <subfield code="f">205982</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124641</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205982</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2341</subfield>
+    <subfield code="f">203787</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124642</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203787</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2316</subfield>
+    <subfield code="f">203762</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124643</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203762</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2363</subfield>
+    <subfield code="f">203809</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124644</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203809</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2345</subfield>
+    <subfield code="f">203791</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124645</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203791</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116892</subfield>
+    <subfield code="f">205975</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124646</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205975</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116925</subfield>
+    <subfield code="f">206008</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124647</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206008</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116911</subfield>
+    <subfield code="f">205994</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124648</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205994</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116906</subfield>
+    <subfield code="f">205989</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124649</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205989</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-20</subfield>
+    <subfield code="z">116976</subfield>
+    <subfield code="f">204314</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124650</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">48.00</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">204314</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2311</subfield>
+    <subfield code="f">203757</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124651</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203757</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116918</subfield>
+    <subfield code="f">206001</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124652</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206001</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116972</subfield>
+    <subfield code="f">206055</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124653</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206055</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2318</subfield>
+    <subfield code="f">203764</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124654</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203764</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116901</subfield>
+    <subfield code="f">205984</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124655</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205984</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116896</subfield>
+    <subfield code="f">205979</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124656</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205979</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116944</subfield>
+    <subfield code="f">206027</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124657</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206027</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116963</subfield>
+    <subfield code="f">206046</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124658</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206046</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116968</subfield>
+    <subfield code="f">206051</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124659</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206051</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2390</subfield>
+    <subfield code="f">203836</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124660</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203836</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2352</subfield>
+    <subfield code="f">203798</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124661</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203798</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116913</subfield>
+    <subfield code="f">205996</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124662</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205996</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2401</subfield>
+    <subfield code="f">203847</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124663</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203847</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116903</subfield>
+    <subfield code="f">205986</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124664</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205986</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116954</subfield>
+    <subfield code="f">206037</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124665</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206037</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116890</subfield>
+    <subfield code="f">205973</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124666</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205973</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2338</subfield>
+    <subfield code="f">203784</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124667</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203784</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2312</subfield>
+    <subfield code="f">203758</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124668</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203758</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2336</subfield>
+    <subfield code="f">203782</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124669</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203782</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116905</subfield>
+    <subfield code="f">205988</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124670</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205988</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116915</subfield>
+    <subfield code="f">205998</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124671</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205998</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2366</subfield>
+    <subfield code="f">203812</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124672</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203812</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116965</subfield>
+    <subfield code="f">206048</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124673</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206048</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2408</subfield>
+    <subfield code="f">203854</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124674</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203854</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2370</subfield>
+    <subfield code="f">203816</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124675</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203816</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2340</subfield>
+    <subfield code="f">203786</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124676</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203786</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116926</subfield>
+    <subfield code="f">206009</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124677</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206009</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116907</subfield>
+    <subfield code="f">205990</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124678</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205990</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116880</subfield>
+    <subfield code="f">205963</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124679</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205963</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116879</subfield>
+    <subfield code="f">205962</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124680</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205962</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2348</subfield>
+    <subfield code="f">203794</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124681</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203794</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116934</subfield>
+    <subfield code="f">206017</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124682</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206017</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116909</subfield>
+    <subfield code="f">205992</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124683</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205992</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2347</subfield>
+    <subfield code="f">203793</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124684</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203793</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116920</subfield>
+    <subfield code="f">206003</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124685</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206003</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2395</subfield>
+    <subfield code="f">203841</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124686</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203841</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2342</subfield>
+    <subfield code="f">203788</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124687</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203788</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116938</subfield>
+    <subfield code="f">206021</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124688</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206021</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2358</subfield>
+    <subfield code="f">203804</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124689</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203804</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116912</subfield>
+    <subfield code="f">205995</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124690</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205995</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2384</subfield>
+    <subfield code="f">203830</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124691</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203830</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116898</subfield>
+    <subfield code="f">205981</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124692</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205981</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2359</subfield>
+    <subfield code="f">203805</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124693</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203805</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116966</subfield>
+    <subfield code="f">206049</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124694</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206049</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116975</subfield>
+    <subfield code="f">206058</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124695</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206058</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2323</subfield>
+    <subfield code="f">203769</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124696</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203769</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2399</subfield>
+    <subfield code="f">203845</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124697</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203845</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116895</subfield>
+    <subfield code="f">205978</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124698</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205978</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2327</subfield>
+    <subfield code="f">203773</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124699</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203773</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2378</subfield>
+    <subfield code="f">203824</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124700</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203824</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116971</subfield>
+    <subfield code="f">206054</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124701</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206054</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116885</subfield>
+    <subfield code="f">205968</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124702</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205968</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2382</subfield>
+    <subfield code="f">203828</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124703</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203828</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2397</subfield>
+    <subfield code="f">203843</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124704</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203843</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2335</subfield>
+    <subfield code="f">203781</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124705</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203781</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2324</subfield>
+    <subfield code="f">203770</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124706</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203770</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2375</subfield>
+    <subfield code="f">203821</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124707</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203821</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2369</subfield>
+    <subfield code="f">203815</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124708</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203815</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116931</subfield>
+    <subfield code="f">206014</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124709</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206014</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2393</subfield>
+    <subfield code="f">203839</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124710</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203839</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2325</subfield>
+    <subfield code="f">203771</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124711</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203771</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2361</subfield>
+    <subfield code="f">203807</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124712</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203807</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2373</subfield>
+    <subfield code="f">203819</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124713</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203819</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116973</subfield>
+    <subfield code="f">206056</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124714</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206056</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2330</subfield>
+    <subfield code="f">203776</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124715</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203776</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2374</subfield>
+    <subfield code="f">203820</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124716</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203820</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2368</subfield>
+    <subfield code="f">203814</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124717</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203814</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116877</subfield>
+    <subfield code="f">205960</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124718</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205960</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2322</subfield>
+    <subfield code="f">203768</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124719</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203768</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116962</subfield>
+    <subfield code="f">206045</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124720</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206045</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116970</subfield>
+    <subfield code="f">206053</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124721</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206053</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116887</subfield>
+    <subfield code="f">205970</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124722</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205970</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116961</subfield>
+    <subfield code="f">206044</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124723</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206044</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2332</subfield>
+    <subfield code="f">203778</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124724</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203778</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116921</subfield>
+    <subfield code="f">206004</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124725</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206004</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2388</subfield>
+    <subfield code="f">203834</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124726</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203834</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116922</subfield>
+    <subfield code="f">206005</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124727</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206005</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2405</subfield>
+    <subfield code="f">203851</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124728</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203851</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116940</subfield>
+    <subfield code="f">206023</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124729</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206023</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2362</subfield>
+    <subfield code="f">203808</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124730</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203808</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2355</subfield>
+    <subfield code="f">203801</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124731</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203801</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116948</subfield>
+    <subfield code="f">206031</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124732</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206031</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116928</subfield>
+    <subfield code="f">206011</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124733</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206011</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2400</subfield>
+    <subfield code="f">203846</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124734</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203846</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116878</subfield>
+    <subfield code="f">205961</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124735</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205961</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2377</subfield>
+    <subfield code="f">203823</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124736</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203823</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2334</subfield>
+    <subfield code="f">203780</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124737</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203780</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116889</subfield>
+    <subfield code="f">205972</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124738</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205972</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116902</subfield>
+    <subfield code="f">205985</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124739</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205985</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116967</subfield>
+    <subfield code="f">206050</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124740</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206050</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116910</subfield>
+    <subfield code="f">205993</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124741</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205993</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2339</subfield>
+    <subfield code="f">203785</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124742</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203785</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2365</subfield>
+    <subfield code="f">203811</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124743</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203811</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116897</subfield>
+    <subfield code="f">205980</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124744</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205980</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2406</subfield>
+    <subfield code="f">203852</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124745</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203852</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116959</subfield>
+    <subfield code="f">206042</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124746</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206042</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116945</subfield>
+    <subfield code="f">206028</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124747</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206028</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116932</subfield>
+    <subfield code="f">206015</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124748</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206015</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2385</subfield>
+    <subfield code="f">203831</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124749</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203831</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2319</subfield>
+    <subfield code="f">203765</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124750</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203765</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116939</subfield>
+    <subfield code="f">206022</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124751</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206022</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2351</subfield>
+    <subfield code="f">203797</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124752</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203797</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2356</subfield>
+    <subfield code="f">203802</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124753</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203802</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116933</subfield>
+    <subfield code="f">206016</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124754</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206016</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2349</subfield>
+    <subfield code="f">203795</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124755</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203795</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116936</subfield>
+    <subfield code="f">206019</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124756</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206019</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116914</subfield>
+    <subfield code="f">205997</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124757</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205997</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116876</subfield>
+    <subfield code="f">205959</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124758</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205959</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116947</subfield>
+    <subfield code="f">206030</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124759</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206030</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116908</subfield>
+    <subfield code="f">205991</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124760</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205991</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2310</subfield>
+    <subfield code="f">203756</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124761</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203756</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116943</subfield>
+    <subfield code="f">206026</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124762</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206026</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2343</subfield>
+    <subfield code="f">203789</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124763</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203789</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116937</subfield>
+    <subfield code="f">206020</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124764</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206020</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2309</subfield>
+    <subfield code="f">203755</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124765</subfield>
+    <subfield code="c">CHZ</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203755</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116917</subfield>
+    <subfield code="f">206000</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124766</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206000</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2337</subfield>
+    <subfield code="f">203783</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124767</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203783</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116888</subfield>
+    <subfield code="f">205971</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124768</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205971</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2372</subfield>
+    <subfield code="f">203818</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124769</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203818</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2326</subfield>
+    <subfield code="f">203772</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124770</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203772</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2407</subfield>
+    <subfield code="f">203853</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124771</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203853</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2317</subfield>
+    <subfield code="f">203763</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124772</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203763</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2353</subfield>
+    <subfield code="f">203799</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124773</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203799</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2364</subfield>
+    <subfield code="f">203810</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124774</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203810</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2391</subfield>
+    <subfield code="f">203837</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124775</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203837</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116935</subfield>
+    <subfield code="f">206018</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124776</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206018</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2371</subfield>
+    <subfield code="f">203817</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124777</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203817</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116881</subfield>
+    <subfield code="f">205964</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124778</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205964</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116919</subfield>
+    <subfield code="f">206002</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124779</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206002</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2396</subfield>
+    <subfield code="f">203842</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124780</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203842</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116900</subfield>
+    <subfield code="f">205983</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124781</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205983</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116951</subfield>
+    <subfield code="f">206034</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124782</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206034</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116929</subfield>
+    <subfield code="f">206012</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124783</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206012</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2398</subfield>
+    <subfield code="f">203844</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124784</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203844</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116969</subfield>
+    <subfield code="f">206052</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124785</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206052</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2381</subfield>
+    <subfield code="f">203827</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124786</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203827</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116930</subfield>
+    <subfield code="f">206013</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124787</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206013</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2379</subfield>
+    <subfield code="f">203825</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124788</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203825</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2394</subfield>
+    <subfield code="f">203840</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124789</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203840</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116884</subfield>
+    <subfield code="f">205967</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124790</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205967</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116893</subfield>
+    <subfield code="f">205976</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124791</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205976</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2383</subfield>
+    <subfield code="f">203829</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124792</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203829</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2404</subfield>
+    <subfield code="f">203850</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124793</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203850</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116958</subfield>
+    <subfield code="f">206041</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124794</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206041</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116974</subfield>
+    <subfield code="f">206057</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124795</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206057</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2403</subfield>
+    <subfield code="f">203849</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124796</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203849</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2321</subfield>
+    <subfield code="f">203767</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124797</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203767</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116916</subfield>
+    <subfield code="f">205999</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124798</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205999</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116891</subfield>
+    <subfield code="f">205974</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124799</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205974</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116886</subfield>
+    <subfield code="f">205969</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124800</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205969</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2346</subfield>
+    <subfield code="f">203792</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124801</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203792</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2354</subfield>
+    <subfield code="f">203800</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124802</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203800</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116949</subfield>
+    <subfield code="f">206032</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124803</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206032</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2329</subfield>
+    <subfield code="f">203775</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124804</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203775</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116956</subfield>
+    <subfield code="f">206039</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124805</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206039</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116964</subfield>
+    <subfield code="f">206047</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124806</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206047</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116952</subfield>
+    <subfield code="f">206035</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124807</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206035</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2402</subfield>
+    <subfield code="f">203848</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124808</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203848</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2389</subfield>
+    <subfield code="f">203835</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124809</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203835</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116923</subfield>
+    <subfield code="f">206006</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124810</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206006</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2386</subfield>
+    <subfield code="f">203832</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124811</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203832</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2376</subfield>
+    <subfield code="f">203822</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124812</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203822</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2313</subfield>
+    <subfield code="f">203759</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124813</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203759</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116953</subfield>
+    <subfield code="f">206036</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124814</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206036</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2367</subfield>
+    <subfield code="f">203813</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124815</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203813</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116924</subfield>
+    <subfield code="f">206007</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124816</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206007</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116941</subfield>
+    <subfield code="f">206024</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124817</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206024</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2350</subfield>
+    <subfield code="f">203796</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124818</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203796</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2380</subfield>
+    <subfield code="f">203826</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124819</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203826</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2328</subfield>
+    <subfield code="f">203774</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124820</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203774</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116942</subfield>
+    <subfield code="f">206025</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124821</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206025</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2392</subfield>
+    <subfield code="f">203838</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124822</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203838</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116955</subfield>
+    <subfield code="f">206038</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124823</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206038</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116960</subfield>
+    <subfield code="f">206043</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124824</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206043</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2344</subfield>
+    <subfield code="f">203790</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124825</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203790</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2357</subfield>
+    <subfield code="f">203803</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124826</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203803</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116957</subfield>
+    <subfield code="f">206040</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124827</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206040</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2314</subfield>
+    <subfield code="f">203760</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124828</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203760</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116927</subfield>
+    <subfield code="f">206010</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124829</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206010</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116946</subfield>
+    <subfield code="f">206029</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124830</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">206029</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116894</subfield>
+    <subfield code="f">205977</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124831</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205977</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2360</subfield>
+    <subfield code="f">203806</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124832</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203806</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2387</subfield>
+    <subfield code="f">203833</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124833</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203833</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116904</subfield>
+    <subfield code="f">205987</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124834</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205987</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-13</subfield>
+    <subfield code="z">116882</subfield>
+    <subfield code="f">205965</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124835</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">205965</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2011-03-29 15:09:25</subfield>
+    <subfield code="z">116883</subfield>
+    <subfield code="f">205966</subfield>
+    <subfield code="i">2011-03-29</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124836</subfield>
+    <subfield code="c">STL</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2006-03-20</subfield>
+    <subfield code="n">2011-04-19</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.30</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="m">2011-03-29</subfield>
+    <subfield code="b">STL</subfield>
+  </datafield>
+  <datafield tag="995" ind1=" " ind2=" ">
+    <subfield code="g">2008-03-18</subfield>
+    <subfield code="z">2333</subfield>
+    <subfield code="f">203779</subfield>
+    <subfield code="1">0</subfield>
+    <subfield code="0">0</subfield>
+    <subfield code="9">124837</subfield>
+    <subfield code="c">AB</subfield>
+    <subfield code="2">0</subfield>
+    <subfield code="k">1/А66</subfield>
+    <subfield code="5">2011-03-13</subfield>
+    <subfield code="3">0</subfield>
+    <subfield code="o">0</subfield>
+    <subfield code="4">udc</subfield>
+    <subfield code="p">4.29</subfield>
+    <subfield code="r">BOOK</subfield>
+    <subfield code="b">STL</subfield>
+    <subfield code="j">203779</subfield>
+  </datafield>
+</record>
+</collection>

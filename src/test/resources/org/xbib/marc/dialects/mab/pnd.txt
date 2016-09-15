@@ -1,0 +1,270 @@
+                                 MAB2-PND
+                         Online-Kurzreferenz-Version
+                            Stand: November 2001
+
+
+
+          SATZKENNUNG
+
+
+001-088   SEGMENT 0--
+
+001-029   IDENTIFIKATIONSNUMMERN, DATUMS- UND VERSIONSANGABEN
+030-035   ALLGEMEINE VERARBEITUNGSTECHNISCHE ANGABEN
+036-049   ALLGEMEINE CODIERTE ANGABEN
+065-069   NORMDATENSPEZIFISCHE ANGABEN
+070-075   ANWENDERSPEZIFISCHE DATEN UND CODES
+076-088   ANWENDERSPEZIFISCHE ANGABEN
+
+
+
+600-603   SEGMENT PAUSCHALVERWEISUNGEN UND SIEHE-AUCH-HINWEISE
+
+600       1. TEIL DER VERWEISUNG
+
+          Indikator:
+          a = allgemein
+          b = Personennamen (nicht differenziert)
+          c = persoenliche Namen
+          d = Familiennamen
+
+
+601       BEMERKUNGEN ZUM 1. TEIL DER VERWEISUNG
+
+          Indikator:
+          blank = nicht definiert
+
+
+602       2. TEIL DER VERWEISUNG
+
+          Indikator:
+          a = Pauschalverweisung
+          b = Siehe-auch-Hinweis
+
+
+603       BEMERKUNGEN ZUM 2. TEIL DER VERWEISUNG
+
+          Indikator:
+          blank = nicht definiert
+
+
+
+651-659   SEGMENT AUSGABEVERMERK COMPUTERDATEIEN
+
+655       ELEKTRONISCHE ADRESSE UND ZUGRIFFSART
+          FUER EINE COMPUTERDATEI IM FERNZUGRIFF
+
+          Indikator:
+
+          Zugriffsmethode:
+          blank = nicht spezifiziert
+          a     = E-Mail
+          b     = FTP (File Transfer)
+          c     = Remote Login (Telnet)
+          d     = Dial-up (konventioneller Telefonanschluss)
+          e     = HTTP
+          h     = In Unterfeld $2 spezifizierte Zugriffsmethode
+
+          Unterfelder:
+          $a    = Name des Host
+          $b    = IP-Zugriffsnummer
+          $c    = Art der Komprimierung
+          $d    = Zugriffspfad fuer eine Datei
+          $f    = Elektronischer Name der Datei im Verzeichnis des Host
+          $g    = URN (Uniform Resource Name)
+          $h    = Durchfuehrende Stelle einer Anfrage
+          $i    = Anweisung fuer die Ausfuehrung einer Anfrage
+          $j    = Datenuebertragungsrate (Bits pro Sekunde)
+          $k    = Passwort
+          $l    = Logon/Login-Angabe
+          $m    = Kontaktperson
+          $n    = Ort des Host
+          $o    = Betriebssystem des Host
+          $p    = Port
+          $q    = Elektronischer Dateiformattyp
+          $r    = Einstellungen fuer die Dateiuebertragung
+          $t    = Groesse der Datei
+          $u    = URL (Uniform Resource Locator)
+          $v    = Oeffnungszeiten des Host fuer die gewaehlte Zugangsart
+          $w    = Identifikationsnummer des verknuepften Datensatzes
+          $x    = Interne Bemerkungen
+          $z    = Allgemeine Bemerkungen
+          $2    = Zugriffsmethode
+          $3    = Bezugswerk
+          $A    = Beziehung
+
+
+
+8--       SEGMENT PERSONENNAMEN
+
+800       NAME DER PERSON IN ANSETZUNGSFORM
+
+          Indikator:
+          blank = Einheitliche Ansetzungsform fuer die
+                  ueberregionale PND
+          a     = Ansetzungsform nach RAK
+          b     = Ansetzungsform nach RSWK
+          c     = Ansetzungsform nach einem weiteren
+                  Regelwerk
+
+
+801       QUELLE FUER DIE NAMENSANSETZUNG
+
+          Indikator:
+          blank = Quelle fuer die einheitliche
+                  Namensansetzung
+          a     = Quelle fuer die RAK-Namensansetzung
+          b     = Quelle fuer die RSWK-Namensansetzung
+          c     = Quelle fuer die Namensansetzung nach
+                  einem weiteren Regelwerk
+
+
+802       BENUTZUNGSHINWEISE FUER DIE NAMENSANSETZUNG
+
+          Indikator:
+           blank = Benutzungshinweise fuer die einheitliche
+                   Namensansetzung
+           a     = Benutzungshinweise fuer die RAK-
+                   Namensansetzung
+           b     = Benutzungshinweise fuer die RSWK-
+                   Namensansetzung
+           c     = Benutzungshinweise fuer die Namensansetzung
+                   nach einem weiteren Regelwerk
+
+
+803       REDAKTIONELLE BEMERKUNGEN ZUR NAMENSANSETZUNG
+
+          Indikator:
+          blank  = Redaktionelle Bemerkungen zur
+                   einheitlichen Namensansetzung
+          a      = Redaktionelle Bemerkungen zur RAK-
+                   Namensansetzung
+          b      = Redaktionelle Bemerkungen zur RSWK-
+                   Namensansetzung
+          d      = Redaktionelle Bemerkungen zur
+                   Namensansetzung nach einem weiteren
+                   Regelwerk
+
+
+804       ERGEBNISLOS EINGESEHENE QUELLE(N) FUER DIE
+          NAMENSANSETZUNG
+
+          Indikator:
+             blank = Ergebnislos eingesehene Quelle(n) fuer
+                     die einheitliche Namensansetzung
+             b     = Ergebnislos eingesehene Quelle(n) fuer
+                     die RAK-Namensansetzung
+             c     = Ergebnislos eingesehene Quelle(n) fuer
+                     die RSWK-Namensansetzung
+             d     = Ergebnislos eingesehene Quelle(n) fuer
+                     die Namensansetzung nach einem weiteren
+                     Regelwerk
+
+
+814       DATEN ZUR PERSON
+
+          Indikator:
+          blank = nicht spezifiziert
+          a     = Lebensdaten
+          b     = Wirkungsdaten
+          c     = Geburtsort
+          d     = Sterbeort
+          e     = Wirkungsort/Adresse
+          f     = Geschlecht
+          g     = Nationalitaet
+          h     = Sprache
+          i     = Beruf und/oder Funktion
+          j     = Akademische Titel
+          k     = Dienstgrad
+          l     = Titel von Universalgelehrten
+          m     = Persoenliche Beziehungen
+          u     = Sonstige Daten
+          v     = Bemerkungen
+
+
+815       DATEN ZUR PERSON IN NORMIERTER FORM
+
+          Indikator:
+          blank = nicht spezifiziert
+          a     = Lebensdaten
+          b     = Wirkungsdaten
+          c     = Geburtsort
+          d     = Sterbeort
+          e     = Wirkungsort/Adresse
+          f     = Geschlecht
+          g     = Nationalitaet
+          h     = Sprache
+          i     = Beruf und/oder Funktion
+          j     = Akademische Titel
+          k     = Dienstgrad
+          l     = Titel von Universalgelehrten
+          m     = Persoenliche Beziehungen
+          u     = Sonstige Daten
+          v     = Bemerkungen
+
+
+816       WERKE DER PERSON
+
+          Indikator:
+          blank = nicht definiert
+
+
+817       KOERPERSCHAFT, ZU DER EINE PERSON IN BEZIEHUNG
+          STEHT (AFFILIATION)
+
+          Indikator:
+          blank = nicht definiert
+
+
+820       ANSETZUNGSFORM NACH EINEM WEITEREN REGELWERK
+
+          Indikator:
+          d = Ansetzungsform gemaess der RAK-Anwendung Der
+              Deutschen Bibliothek
+          e = Ansetzungsform nach RAK-OEB, mit alternativen
+              Ansetzungsformen
+          f = Ansetzungsform nach RAK-WB
+          g = Ansetzungsform nach einer sonstigen RAK-
+              Anwendung
+          h = Ansetzungsform nach den Instruktionen fuer
+              die Alphabetischen Kataloge der Preussischen
+              Bibliothek (PI)
+          i = Ansetzungsform nach dem Verzeichnis der
+              Drucke des 16. Jahrhunderts (VD 16)
+          j = Ansetzungsform nach AACR
+          k = LOC Name Authority
+          l = Ansetzungsform nach den Transliterationregeln der
+              SSG 7.6 (Israel) und 7.7 (Judentum)
+          m = Namensform mit aufgeloestem / aufgeloesten Vornamen
+          z = Sonstige Ansetzungsform
+          v = Bemerkungen
+
+
+830       VERWEISUNGSFORM ZUM NAMEN DER PERSON
+
+          Indikator:
+          blank = nicht spezifiziert
+          v     = Bemerkungen
+
+
+860       SIEHE-AUCH-VERWEISUNG ZUM NAMEN DER PERSON
+
+          Indikator:
+          blank = nicht spezifiziert
+          v     = Bemerkungen
+
+
+890       NEUE ANSETZUNGSFORM BEI AENDERUNG DES
+          PERSONENNAMENS
+
+          Indikator:
+          a = Neue Ansetzungsform des Personennamens
+          b = Bemerkungen
+
+
+891       ALTE ANSETZUNGSFORM BEI AENDERUNG DES
+          PERSONENNAMENS
+
+          Indikator:
+          a = Alte Ansetzungsform des Personennamens
+          b = Bemerkungen
