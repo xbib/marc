@@ -1,4 +1,6 @@
-# MARC bibliographic data processing library for Java
+# xbib MARC
+
+## Bibliographic data processing library for Java
 
 image::https://api.travis-ci.org/xbib/marc.svg[Build status]
 
@@ -25,7 +27,7 @@ MARC does not offer the features of XML or JSON, it is not a document format
 or a format for the Web. MARC is stream-based "structured data", composed of fields in sequential order,
 and was targeted to write records on magnetic tape.
 Today, magnetic tape data distribution service is history. Also, file distribution via FTP, common in the 1990s,
-does not fit well into a highly linked and sophisticated  information infrastructure like the Seamntic Web.
+does not fit well into a highly linked and sophisticated  information infrastructure like the Semantic Web.
 
 This library offers the first step in the complex procedure to move MARC data into computer applications of today,
 by writing MARC fields to XML or JSON formats. More steps would include the generation of
@@ -33,7 +35,8 @@ graph structures (RDF triples) by processing MARC records in context, but that i
 
 The library provides a fluent interface and a rich set of input streams, content handlers and listeners.
 Provided are writers for XML, stylesheet transformations (MODS), and a JSON writer for
-key/value-oriented JSON, suitable for indexing into Elasticsearch.
+key/value-oriented JSON, suitable for indexing into Elasticsearch. Indexing into Elasticsearch is not
+part of this package.
 
 Here is a code example for reading from an ISO 2709 stream and writing into a MarcXchange collection.
 
@@ -109,20 +112,25 @@ or with Maven
    </dependency>
 ```
 
+## Issues
+
+All contributions are welcome. If you find bugs, want to comment, or send pull request,
+just open an issue at https://github.com/xbib/marc/issues
+
 ## MARC4J
 
 This project was inspired by MARC4J, but is not related to MARC4J or makes reuse of the
-source code. It is a completeley new implementation. For the curious, I tried to
-compile a feature comparison table to highlight some differences.
+source code. It is a completeley new implementation.
 
 There is a MARC4J fork at https://github.com/ksclarke/freelib-marc4j where Kevin S. Clarke
 implements modern Java features into the MARC4J code base.
 
-I am not experienced with MARC4J, so I appreciate any hints, comments, or corrections.
+For the curious, I tried to compile a feature comparison table to highlight some differences.
+I am not very familiar with MARC4J, so I appreciate any hints, comments, or corrections.
 
-.Feature comparison to MARC4J
+.Feature comparison of MARC4J to xbib MARC
 |===
-| |MARC4J |MARC
+| |MARC4J | xbib MARC
 
 |started by
 |Bas Peters
