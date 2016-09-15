@@ -3,7 +3,7 @@
 ## Bibliographic data processing library for Java
 
 image::https://api.travis-ci.org/xbib/marc.svg[Build status]
-
+image::https://img.shields.io/sonar/http/nemo.sonarqube.com/org.xbib:marc/coverage.svg?style=flat-square[Coverage]
 image::https://maven-badges.herokuapp.com/maven-central/org.xbib/marc/badge.svg[Maven Central]
 
 This is a Java library for processing bibliographic data in the following formats:
@@ -111,6 +111,10 @@ or with Maven
      <version>1.0.0</version>
    </dependency>
 ```
+
+## Documentation
+
+TODO
 
 ## Issues
 

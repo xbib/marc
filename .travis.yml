@@ -6,7 +6,7 @@ cache:
   directories: 
   - $HOME/.m2
 after_success: 
-- ./gradlew sonarqube -Dsonar.host.url=https://sonarqube.com -Dsonar.login=$SONAR_TOKEN -Dsonar.verbose=true --debug
+- ./gradlew sonarqube -Dsonar.host.url=https://sonarqube.com -Dsonar.login=$SONAR_TOKEN
 env: 
   global: 
     secure: n1Ai4q/yMLn/Pg5pA4lTavoJoe7mQYB1PSKnZAqwbgyla94ySzK6iyBCBiNs/foMPisB/x+DHvmUXTsjvquw9Ay48ZITCV3xhcWzD0eZM2TMoG19CpRAEe8L8LNuYiti9k89ijDdUGZ5ifsvQNTGNHksouayAuApC3PrTUejJfR6SYrp1ZsQTbsMlr+4XU3p7QknK5rGgOwATIMP28F+bVnB05WJtlJA3b0SeucCurn3wJ4FGBQXRYmdlT7bQhNE4QgZM1VzcUFD/K0TBxzzq/otb/lNRSifyoekktDmJwQnaT9uQ4R8R6KdQ2Kb38Rvgjur+TKm5i1G8qS2+6LnIxQJG1aw3JvKK6W0wWCgnAVVRrXaCLday9NuY59tuh1mfjQ10UcsMNKcTdcKEMrLow506wSETcXc7L/LEnneWQyJJeV4vhPqR7KJfsBbeqgz3yIfsCn1GZVWFlfegzYCN52YTl0Y0uRD2Z+TnzQu+Bf4DzaWXLge1rz31xkhyeNNspub4h024+XqBjcMm6M9mlMzmmK8t2DIwPy/BlQbFBUyhrxziuR/5/2NEDPyHltvWkRb4AUIa25WJqkV0gTBegbMadZ9DyOo6Ea7aoVFBae2WGR08F1kzABsWrd1S7UJmWxW35iyMEtoAIayXphIK98qO5aCutwZ+3iOQazxbAs=
