@@ -44,5 +44,5 @@ MARC test data has been acquired from
 
 https://github.com/marc4j/marc4j/tree/master/test/resources
 
-and were donated y libraries for testing purpose.
+and were donated by libraries for testing purpose.
 
