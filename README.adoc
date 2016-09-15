@@ -19,16 +19,17 @@ with the focus on european/german application environment.
 The most known and widespread bibliographic data format is MARC, which stands for "machine readable cataloging"
 and was developed by the Library of Congress 1968. Inspired by the success of MARC, several other formats, mostly based
 on MARC, were developed in the 1970s, some very similar, some with significant differences. Most notable
-is the UNICODE format, developed by IFLA.
+is the UNIMARC format, developed by IFLA.
 
 MARC does not offer the features of XML or JSON, it is not a document format
-or a format for the Web. MARC is stream-based and was targeted to write records on magnetic tape.
-Today, magnetic tape distributions are history. Also, file distribution via FTP, common in the 1990s, does not fit
-well into a highly linked information infrastructure like the Seamntic Web.
+or a format for the Web. MARC is stream-based "structured data", composed of fields in sequential order,
+and was targeted to write records on magnetic tape.
+Today, magnetic tape data distribution service is history. Also, file distribution via FTP, common in the 1990s,
+does not fit well into a highly linked and sophisticated  information infrastructure like the Seamntic Web.
 
-This library offers the first step to transport MARC data into systems in use today,
+This library offers the first step in the complex procedure to move MARC data into computer applications of today,
 by writing MARC fields to XML or JSON formats. More steps would include the generation of
-graph structures (RDF triples) by processing records in context, but that is not part of this package.
+graph structures (RDF triples) by processing MARC records in context, but that is not part of this package.
 
 The library provides a fluent interface and a rich set of input streams, content handlers and listeners.
 Provided are writers for XML, stylesheet transformations (MODS), and a JSON writer for
@@ -117,7 +118,7 @@ compile a feature comparison table to highlight some differences.
 There is a MARC4J fork at https://github.com/ksclarke/freelib-marc4j where Kevin S. Clarke
 implements modern Java features into the MARC4J code base.
 
-I am not experienced with MARC4J, so I appreciate any hints, commments, or corrections.
+I am not experienced with MARC4J, so I appreciate any hints, comments, or corrections.
 
 .Feature comparison to MARC4J
 |===
