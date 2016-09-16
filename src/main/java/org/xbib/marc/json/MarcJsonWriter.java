@@ -44,6 +44,8 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
 
     public static final String TYPE_TAG = "_TYPE";
 
+    private static final String EMPTY_STRING = "";
+
     private static final String JSON_1 = "\":\"";
 
     private final Lock lock = new ReentrantLock();
@@ -262,8 +264,13 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
             if (count > 0) {
                 sb.append(",");
             }
-            sb.append("\"").append(marcField.getTag()).append("\":{\"")
-                    .append(marcField.getIndicator().replace(' ', '_')).append("\":");
+            String tag = marcField.getTag();
+            String indicator = marcField.getIndicator();
+            if (indicator == null) {
+                indicator = EMPTY_STRING;
+            }
+            sb.append("\"").append(tag).append("\":{\"")
+                    .append(indicator.replace(' ', '_')).append("\":");
             if (marcField.getSubfields().size() == 1) {
                 MarcField.Subfield subfield = marcField.getSubfields().get(0);
                 sb.append("{\"").append(subfield.getId()).append(JSON_1).append(escape(subfield.getValue())).append("\"}");
