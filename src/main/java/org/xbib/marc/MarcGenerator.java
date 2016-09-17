@@ -16,7 +16,6 @@
  */
 package org.xbib.marc;
 
-import static org.xbib.marc.io.InformationSeparator.FS;
 import static org.xbib.marc.io.InformationSeparator.GS;
 import static org.xbib.marc.io.InformationSeparator.RS;
 import static org.xbib.marc.io.InformationSeparator.US;
@@ -141,11 +140,6 @@ public class MarcGenerator implements ChunkListener<byte[], BytesReference> {
             return;
         }
         switch (separator) {
-            case FS: {
-                emitMarcField();
-                emitMarcRecord();
-                break;
-            }
             case GS: {
                 emitMarcField();
                 emitMarcRecord();
@@ -250,10 +244,6 @@ public class MarcGenerator implements ChunkListener<byte[], BytesReference> {
     }
 
     private void newRecord() throws IOException {
-        // checkguard
-        if (this.data == null || this.data.isEmpty()) {
-            return;
-        }
         // skip line-feed (OCLC PICA quirk)
         if (this.data.charAt(0) == '\n') {
             this.data = data.substring(1);

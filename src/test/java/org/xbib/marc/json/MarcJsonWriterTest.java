@@ -22,6 +22,7 @@ import org.junit.Test;
 import org.xbib.marc.Marc;
 import org.xbib.marc.MarcRecordAdapter;
 import org.xbib.marc.MarcXchangeConstants;
+import org.xbib.marc.xml.MarcContentHandler;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -83,10 +84,10 @@ public class MarcJsonWriterTest {
             file.deleteOnExit();
             FileOutputStream out = new FileOutputStream(file);
             try (MarcJsonWriter writer = new MarcJsonWriter(out)
-                    .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)
-                    .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)
             ) {
                 Marc.builder()
+                        .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)
+                        .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)
                         .setInputStream(in)
                         .setCharset(Charset.forName("ANSEL"))
                         .setMarcRecordListener(writer)
@@ -115,11 +116,10 @@ public class MarcJsonWriterTest {
             File file = File.createTempFile(s + ".", ".json");
             file.deleteOnExit();
             FileOutputStream out = new FileOutputStream(file);
-            try (MarcJsonWriter writer = new MarcJsonWriter(out)
-                    .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)
-                    .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)
-            ) {
+            try (MarcJsonWriter writer = new MarcJsonWriter(out)) {
                 Marc.builder()
+                        .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)
+                        .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)
                         .setInputStream(in)
                         .setCharset(Charset.forName("ANSEL"))
                         .setMarcListener(new MarcRecordAdapter(writer))
@@ -129,5 +129,30 @@ public class MarcJsonWriterTest {
             assertStream(s, getClass().getResource("/org/xbib/marc/json/" + s + ".json").openStream(),
                     new FileInputStream(file));
         }
+    }
+
+    @Test
+    public void testAlephPublishRecordAdapterJson() throws Exception {
+        String s = "HT016424175.xml";
+        InputStream in = getClass().getResource("/org/xbib/marc/dialects/mab/" + s).openStream();
+        File file = File.createTempFile(s + ".", ".json");
+        FileOutputStream out = new FileOutputStream(file);
+        try (MarcJsonWriter writer = new MarcJsonWriter(out, true)
+                .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)
+                .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)
+        ) {
+            MarcContentHandler contentHandler = new MarcContentHandler();
+            contentHandler.addNamespace("http://www.ddb.de/professionell/mabxml/mabxml-1.xsd");
+            contentHandler.setFormat("MARC21");
+            contentHandler.setType("Bibliographic");
+            contentHandler.setMarcListener(new MarcRecordAdapter(writer));
+            Marc.builder()
+                    .setInputStream(in)
+                    .setContentHandler(contentHandler)
+                    .build()
+                    .xmlReader().parse();
+        }
+        assertStream(s, getClass().getResource("/org/xbib/marc/json/" + s + ".json").openStream(),
+                new FileInputStream(file));
     }
 }

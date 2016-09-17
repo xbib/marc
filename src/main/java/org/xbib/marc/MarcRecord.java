@@ -22,7 +22,7 @@ import static org.xbib.marc.json.MarcJsonWriter.TYPE_TAG;
 
 import org.xbib.marc.label.RecordLabel;
 
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
@@ -33,7 +33,7 @@ import java.util.stream.Collectors;
 /**
  * A MARC record. This is an extended MARC record augmented with MarcXchange information.
  */
-public class MarcRecord extends HashMap<String, Object> {
+public class MarcRecord extends LinkedHashMap<String, Object> {
 
     private static final long serialVersionUID = 5305809148724342653L;
 
@@ -138,19 +138,15 @@ public class MarcRecord extends HashMap<String, Object> {
         put(LEADER_TAG, recordLabel.toString());
         for (MarcField marcField : marcFields) {
             String tag = marcField.getTag();
-            if (marcField.isControl()) {
-                put(tag, marcField.getValue());
-                continue;
-            }
             if (!containsKey(tag)) {
-                put(tag, new HashMap<>());
+                put(tag, new LinkedHashMap<>());
             }
             String indicator =  marcField.getIndicator();
-            if (indicator != null) {
+            if (indicator != null && !indicator.isEmpty()) {
                 indicator = indicator.replace(' ', '_');
                 Map<String, Object> indicators = (Map<String, Object>) get(tag);
                 if (!indicators.containsKey(indicator)) {
-                    indicators.put(indicator, new HashMap<>());
+                    indicators.put(indicator, new LinkedHashMap<>());
                 }
                 Map<String, Object> subfields = (Map<String, Object>) indicators.get(indicator);
                 for (MarcField.Subfield subfield : marcField.getSubfields()) {
@@ -167,6 +163,8 @@ public class MarcRecord extends HashMap<String, Object> {
                         subfields.put(subfield.getId(), subfield.getValue());
                     }
                 }
+            } else {
+                put(tag, marcField.getValue());
             }
         }
     }

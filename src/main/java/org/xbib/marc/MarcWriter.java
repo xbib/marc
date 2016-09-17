@@ -20,7 +20,7 @@ import org.xbib.marc.io.BytesStreamOutput;
 import org.xbib.marc.io.DefaultChunk;
 import org.xbib.marc.io.InformationSeparator;
 import org.xbib.marc.io.SeparatorOutputStream;
-import org.xbib.marc.transformer.value.MarcValueTransformer;
+import org.xbib.marc.transformer.value.MarcValueTransformers;
 import org.xbib.marc.xml.MarcContentHandler;
 
 import java.io.Closeable;
@@ -47,7 +47,7 @@ public class MarcWriter extends MarcContentHandler implements Flushable, Closeab
 
     private final Charset charset;
 
-    private MarcValueTransformer marcValueTransformer;
+    private MarcValueTransformers marcValueTransformers;
 
     private boolean fatalErrors;
 
@@ -76,20 +76,8 @@ public class MarcWriter extends MarcContentHandler implements Flushable, Closeab
         this.bytesStreamOutput = new BytesStreamOutput();
     }
 
-    @Override
-    public MarcWriter setFormat(String format) {
-        super.setFormat(format);
-        return this;
-    }
-
-    @Override
-    public MarcWriter setType(String type) {
-        super.setType(type);
-        return this;
-    }
-
-    public MarcWriter setMarcValueTransformer(MarcValueTransformer marcValueTransformer) {
-        this.marcValueTransformer = marcValueTransformer;
+    public MarcWriter setMarcValueTransformers(MarcValueTransformers marcValueTransformers) {
+        this.marcValueTransformers = marcValueTransformers;
         return this;
     }
 
@@ -138,30 +126,31 @@ public class MarcWriter extends MarcContentHandler implements Flushable, Closeab
             return;
         }
         try {
+            MarcField marcField = marcValueTransformers != null ? marcValueTransformers.transformValue(field) : field;
             bytesStreamOutput.reset();
             // we clean up a bit. Write control field, and fields that are not empty.
             // Do not care about the control field / data field order.
-            if (field.isControl()) {
-                String value = field.getValue();
+            if (marcField.isControl()) {
+                String value = marcField.getValue();
                 if (value != null && !value.isEmpty()) {
-                    bytesStreamOutput.write(field.getTag().getBytes(StandardCharsets.ISO_8859_1));
-                    bytesStreamOutput.write(transform(value).getBytes(charset));
+                    bytesStreamOutput.write(marcField.getTag().getBytes(StandardCharsets.ISO_8859_1));
+                    bytesStreamOutput.write(value.getBytes(charset));
                     out.chunk(new DefaultChunk(InformationSeparator.RS, bytesStreamOutput.bytes()));
                 }
-            } else if (!field.isEmpty()) {
-                bytesStreamOutput.write(field.getTag().getBytes(StandardCharsets.ISO_8859_1));
-                bytesStreamOutput.write(field.getIndicator().getBytes(StandardCharsets.ISO_8859_1));
-                String value = field.getValue();
+            } else if (!marcField.isEmpty()) {
+                bytesStreamOutput.write(marcField.getTag().getBytes(StandardCharsets.ISO_8859_1));
+                bytesStreamOutput.write(marcField.getIndicator().getBytes(StandardCharsets.ISO_8859_1));
+                String value = marcField.getValue();
                 if (value != null && !value.isEmpty()) {
-                    bytesStreamOutput.write(transform(value).getBytes(charset));
+                    bytesStreamOutput.write(value.getBytes(charset));
                 }
                 out.chunk(new DefaultChunk(InformationSeparator.RS, bytesStreamOutput.bytes()));
-                for (MarcField.Subfield subfield : field.getSubfields()) {
+                for (MarcField.Subfield subfield : marcField.getSubfields()) {
                     value = subfield.getValue();
                     if (value != null && !value.isEmpty()) {
                         bytesStreamOutput.reset();
                         bytesStreamOutput.write(subfield.getId().getBytes(StandardCharsets.ISO_8859_1));
-                        bytesStreamOutput.write(transform(value).getBytes(charset));
+                        bytesStreamOutput.write(value.getBytes(charset));
                         out.chunk(new DefaultChunk(InformationSeparator.US, bytesStreamOutput.bytes()));
                     }
                 }
@@ -203,10 +192,6 @@ public class MarcWriter extends MarcContentHandler implements Flushable, Closeab
 
     public Exception getException() {
         return exception;
-    }
-
-    private String transform(String value) {
-        return marcValueTransformer != null ? marcValueTransformer.transform(value) : value;
     }
 
     private void handleException(IOException e) {

@@ -76,7 +76,6 @@ public class ConcurrencyTest {
             assertNull(writer.getException());
             assertEquals(n * 292, writer.getRecordCounter());
         }
-        //assertEquals(8175000, file.length());
     }
 
     /**
@@ -116,7 +115,6 @@ public class ConcurrencyTest {
             assertNull(writer.getException());
             assertEquals(n * 292, writer.getRecordCounter());
         }
-        assertEquals(175761 * n + 1, file.length());
     }
     /**
      * Write JSON lines format. This is shorter than array, because commas are not required.
@@ -155,6 +153,5 @@ public class ConcurrencyTest {
             assertNull(writer.getException());
             assertEquals(n * 292, writer.getRecordCounter());
         }
-        assertEquals(176053 * n - 1, file.length());
     }
 }

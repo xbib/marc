@@ -76,6 +76,10 @@ public class RecordLabel {
         return builder.typeOfControl;
     }
 
+    public Encoding getEncoding() {
+        return builder.encoding;
+    }
+
     public int getIndicatorLength() {
         return builder.indicatorLength;
     }
@@ -150,6 +154,8 @@ public class RecordLabel {
         private TypeOfRecord typeOfRecord;
 
         private TypeOfControl typeOfControl;
+
+        private Encoding encoding;
 
         private Builder() {
             cfix = empty;
@@ -310,6 +316,17 @@ public class RecordLabel {
         public Builder setTypeOfControl(TypeOfControl typeOfControl) {
             this.typeOfControl = typeOfControl;
             cfix[8] = typeOfControl.getChar();
+            return this;
+        }
+
+        /**
+         * Set encoding. See {@link Encoding}.
+         * @param encoding the encoding
+         * @return this builder
+         */
+        public Builder setEncoding(Encoding encoding) {
+            this.encoding = encoding;
+            cfix[9] = encoding.getChar();
             return this;
         }
 

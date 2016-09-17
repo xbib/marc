@@ -126,6 +126,12 @@ public class RecordLabelTest {
     }
 
     @Test
+    public void testEncoding() {
+        RecordLabel recordLabel = RecordLabel.builder().setEncoding(Encoding.MARC8).build();
+        assertEquals(Encoding.MARC8, recordLabel.getEncoding());
+    }
+
+    @Test
     public void testRecordLabelBuilder() {
         RecordLabel recordLabel = RecordLabel.builder()
                 .setRecordStatus(RecordStatus.DELETED)

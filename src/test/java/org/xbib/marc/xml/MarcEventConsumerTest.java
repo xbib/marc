@@ -67,4 +67,24 @@ public class MarcEventConsumerTest extends Assert {
         assertNull(writer.getException());
         assertThat(sw.toString(), CompareMatcher.isIdenticalTo(getClass().getResource(s + "-eventconsumer.xml").openStream()));
     }
+
+    @Test
+    public void testMarcXchangeWriterWithEventConsumer() throws Exception {
+        String s = "HT016424175.xml";
+        InputStream in = getClass().getResourceAsStream(s);
+        MarcXchangeEventConsumer consumer = new MarcXchangeEventConsumer();
+        consumer.addNamespace("http://www.ddb.de/professionell/mabxml/mabxml-1.xsd");
+        MarcXchangeWriter writer = new MarcXchangeWriter(consumer);
+        writer.setFormat("AlephXML").setType("Bibliographic");
+        writer.startDocument();
+        Marc.builder()
+                .setInputStream(in)
+                .setCharset(StandardCharsets.UTF_8)
+                .setFormat("AlephXML")
+                .setType("Bibliographic")
+                .build()
+                .writeCollection();
+        writer.endDocument();
+        assertNull(writer.getException());
+    }
 }

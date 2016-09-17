@@ -198,4 +198,28 @@ public class MarcRecordTest extends Assert {
         assertThat(file, CompareMatcher.isIdenticalTo(getClass().getResource(s + ".xml").openStream()));
     }
 
+    @Test
+    public void testIRMARC8AsLightweightRecordAdapter() throws Exception {
+        String s = "IRMARC8.bin";
+        InputStream in = getClass().getResource(s).openStream();
+        File file = File.createTempFile(s + ".", ".xml");
+        file.deleteOnExit();
+        FileOutputStream out = new FileOutputStream(file);
+        MarcValueTransformers marcValueTransformers = new MarcValueTransformers();
+        marcValueTransformers.setMarcValueTransformer(value -> Normalizer.normalize(value, Normalizer.Form.NFC));
+        try (MarcXchangeWriter writer = new MarcXchangeWriter(out)
+                .setMarcValueTransformers(marcValueTransformers)) {
+            writer.startDocument(); // just write XML processing instruction
+            Marc.builder()
+                    .setInputStream(in)
+                    .setCharset(Charset.forName("ANSEL"))
+                    .setMarcListener(new LightweightMarcRecordAdapter(writer))
+                    .build()
+                    .writeCollection();
+            assertNull(writer.getException());
+            writer.endDocument();
+        }
+        assertThat(file, CompareMatcher.isIdenticalTo(getClass().getResource(s + ".xml").openStream()));
+    }
+
 }

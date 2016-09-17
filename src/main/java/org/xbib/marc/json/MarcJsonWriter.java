@@ -16,9 +16,11 @@
  */
 package org.xbib.marc.json;
 
+import org.xbib.marc.Marc;
 import org.xbib.marc.MarcField;
 import org.xbib.marc.MarcListener;
 import org.xbib.marc.MarcRecord;
+import org.xbib.marc.label.RecordLabel;
 import org.xbib.marc.xml.MarcContentHandler;
 
 import java.io.BufferedWriter;
@@ -30,6 +32,9 @@ import java.io.OutputStreamWriter;
 import java.io.UncheckedIOException;
 import java.io.Writer;
 import java.nio.charset.StandardCharsets;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -44,21 +49,17 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
 
     public static final String TYPE_TAG = "_TYPE";
 
-    private static final String EMPTY_STRING = "";
-
-    private static final String JSON_1 = "\":\"";
-
     private final Lock lock = new ReentrantLock();
 
     private final BufferedWriter writer;
 
     private final StringBuilder sb;
 
+    private Marc.Builder builder;
+
     private boolean fatalErrors = false;
 
     private boolean jsonlines;
-
-    private int fieldCount;
 
     private Exception exception;
 
@@ -77,8 +78,8 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
     public MarcJsonWriter(Writer writer, boolean jsonlines) throws IOException {
         this.writer = new BufferedWriter(writer);
         this.sb = new StringBuilder();
-        this.fieldCount = 0;
         this.jsonlines = jsonlines;
+        this.builder = Marc.builder();
     }
 
     public MarcJsonWriter setFatalErrors(boolean fatalErrors) {
@@ -95,12 +96,14 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
     @Override
     public MarcJsonWriter setFormat(String format) {
         super.setFormat(format);
+        builder.setFormat(format);
         return this;
     }
 
     @Override
     public MarcJsonWriter setType(String type) {
         super.setType(type);
+        builder.setType(type);
         return this;
     }
 
@@ -120,35 +123,20 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
     @Override
     public void beginRecord(String format, String type) {
         super.beginRecord(format, type);
-        if (recordCounter.get() > 0) {
-            sb.append(jsonlines ? "\n" : ",");
-        }
-        sb.append("{");
-        String s = format != null ? format : this.format;
-        sb.append("\"").append(FORMAT_TAG).append("\":\"").append(escape(s)).append("\"");
-        fieldCount++;
-        s = type != null ? type : this.type;
-        if (fieldCount > 0) {
-            sb.append(",");
-        }
-        sb.append("\"").append(TYPE_TAG).append("\":\"").append(escape(s)).append("\"");
-        fieldCount++;
+        setFormat(format);
+        setType(type);
     }
 
     @Override
     public void leader(String label) {
         super.leader(label);
-        if (fieldCount > 0) {
-            sb.append(",");
-        }
-        sb.append("\"").append(LEADER_TAG).append("\":\"").append(label).append("\"");
-        fieldCount++;
+        builder.recordLabel(RecordLabel.builder().from(label.toCharArray()).build());
     }
 
     @Override
     public void field(MarcField field) {
         super.field(field);
-        fieldCount = toJson(field, fieldCount, sb);
+        builder.addField(field);
     }
 
     @Override
@@ -174,14 +162,14 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
     @Override
     public void endRecord() {
         super.endRecord();
-        try {
-            sb.append("}");
-            writer.write(sb.toString());
-            sb.setLength(0);
-            recordCounter.incrementAndGet();
-        } catch (IOException e) {
-            handleException(e);
+        if (format != null) {
+            builder.setFormat(format);
         }
+        if (type != null) {
+            builder.setType(type);
+        }
+        record(builder.buildRecord());
+        builder = Marc.builder();
     }
 
     @Override
@@ -211,86 +199,112 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
      * Format MARC record as key-oriented JSON.
      * @param sb a string builder to append JSON to
      */
+    @SuppressWarnings("unchecked")
     private void toJson(MarcRecord marcRecord, StringBuilder sb) {
+        if (marcRecord.isEmpty()) {
+            return;
+        }
         if (recordCounter.get() > 0) {
             sb.append(jsonlines ? "\n" : ",");
         }
         sb.append("{");
-        int recordFieldCount = 0;
-        if (format != null) {
-            sb.append("\"_FORMAT\":\"").append(escape(format)).append("\"");
-            recordFieldCount++;
-        }
-        if (type != null) {
-            if (recordFieldCount > 0) {
+        int c0 = 0;
+        for (Map.Entry<String, Object> tags : marcRecord.entrySet()) {
+            if (c0 > 0) {
                 sb.append(",");
             }
-            sb.append("\"_TYPE\":\"").append(escape(type)).append("\"");
-            recordFieldCount++;
-        }
-        if (recordFieldCount > 0) {
-            sb.append(",");
-        }
-        sb.append("\"_LEADER\":\"").append(marcRecord.getRecordLabel()).append("\"");
-        recordFieldCount++;
-        for (MarcField field : marcRecord.getFields()) {
-            recordFieldCount = toJson(field, recordFieldCount, sb);
+            String tag = tags.getKey();
+            sb.append("\"").append(tag).append("\":");
+            Object o = tags.getValue();
+            if (!(o instanceof List)) {
+                o = Collections.singletonList(o);
+            }
+            List<?> list = (List<?>) o;
+            if (list.size() > 1) {
+                sb.append("[");
+            }
+            int c1 = 0;
+            for (Object value : list) {
+                if (c1 > 0) {
+                    sb.append(",");
+                }
+                if (value instanceof Map) {
+                    sb.append("{");
+                    int c2 = 0;
+                    for (Map.Entry<String, Object> indicators : ((Map<String, Object>) value).entrySet()) {
+                        if (c2 > 0) {
+                            sb.append(",");
+                        }
+                        String indicator = indicators.getKey();
+                        sb.append("\"").append(indicator).append("\":");
+                        o = indicators.getValue();
+                        if (!(o instanceof List)) {
+                            o = Collections.singletonList(o);
+                        }
+                        List<?> list2 = (List<?>) o;
+                        if (list2.size() > 1) {
+                            sb.append("[");
+                        }
+                        int c3 = 0;
+                        for (Object value2 : list2) {
+                            if (c3 > 0) {
+                                sb.append(",");
+                            }
+                            if (value2 instanceof Map) {
+                                sb.append("{");
+                                Map<String, Object> map = (Map<String, Object>) value2;
+                                int c4 = 0;
+                                for (Map.Entry<String, Object> subfield : map.entrySet()) {
+                                    if (c4 > 0) {
+                                        sb.append(",");
+                                    }
+                                    sb.append("\"").append(subfield.getKey()).append("\":");
+                                    if (subfield.getValue() instanceof List) {
+                                        sb.append("[");
+                                        int c5 = 0;
+                                        for (String s : (List<String>)subfield.getValue()) {
+                                            if (c5 > 0) {
+                                                sb.append(",");
+                                            }
+                                            sb.append("\"").append(escape(s)).append("\"");
+                                            c5++;
+                                        }
+                                        sb.append("]");
+                                    } else {
+                                        sb.append("\"").append(escape(subfield.getValue().toString())).append("\"");
+                                    }
+                                    c4++;
+                                }
+                                sb.append("}");
+                            } else {
+                                sb.append("\"").append(escape(value2.toString())).append("\"");
+                            }
+                            c3++;
+                        }
+                        if (list2.size() > 1) {
+                            sb.append("]");
+                        }
+                        c2++;
+                    }
+                    sb.append("}");
+                } else {
+                    if (value == null) {
+                        sb.append("null");
+                    } else {
+                        sb.append("\"").append(escape(value.toString())).append("\"");
+                    }
+                }
+                c1++;
+            }
+            if (list.size() > 1) {
+                sb.append("]");
+            }
+            c0++;
         }
         sb.append('}');
         if (jsonlines) {
             sb.append("\n");
         }
-    }
-
-    /**
-     * Print a key-oriented JSON represenation of this MARC field.
-     *
-     * @param fieldCount how many MARC field are writte before. Used for emitting a comma
-     *                   if necessary.
-     * @param sb the string builder to attach the JSON representation to.
-     *
-     * @return the new MARC field count. Empty MARC fields not not increase the field count.
-     */
-    private int toJson(MarcField marcField, int fieldCount, StringBuilder sb) {
-        int count = fieldCount;
-        if (marcField.isControl()) {
-            if (count > 0) {
-                sb.append(",");
-            }
-            sb.append("\"").append(marcField.getTag()).append(JSON_1).append(escape(marcField.getValue())).append("\"");
-            count++;
-            return count;
-        } else if (!marcField.isEmpty()) {
-            if (count > 0) {
-                sb.append(",");
-            }
-            String tag = marcField.getTag();
-            String indicator = marcField.getIndicator();
-            if (indicator == null) {
-                indicator = EMPTY_STRING;
-            }
-            sb.append("\"").append(tag).append("\":{\"")
-                    .append(indicator.replace(' ', '_')).append("\":");
-            if (marcField.getSubfields().size() == 1) {
-                MarcField.Subfield subfield = marcField.getSubfields().get(0);
-                sb.append("{\"").append(subfield.getId()).append(JSON_1).append(escape(subfield.getValue())).append("\"}");
-            } else {
-                sb.append("[");
-                StringBuilder subfieldBuilder = new StringBuilder();
-                for (MarcField.Subfield subfield : marcField.getSubfields()) {
-                    if (subfieldBuilder.length() > 0) {
-                        subfieldBuilder.append(",");
-                    }
-                    subfieldBuilder.append("{\"").append(subfield.getId()).append(JSON_1)
-                            .append(escape(subfield.getValue())).append("\"}");
-                }
-                sb.append(subfieldBuilder);
-                sb.append("]");
-            }
-            sb.append("}");
-            count++;
-        }
-        return count;
     }
 
     public Exception getException() {

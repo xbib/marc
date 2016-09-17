@@ -31,6 +31,7 @@ public class ToolTest {
     public void testToolSimple() throws Exception {
         String[] args = {
             "--in", "src/test/resources/org/xbib/marc/chabon.mrc",
+            "--charset", "ANSEL",
             "--out", "build/chabon.mrc.xml"
         };
         exit.expectSystemExitWithStatus(0);
@@ -42,6 +43,7 @@ public class ToolTest {
         String[] args = {
                 "--in", "src/test/resources/org/xbib/marc/summerland.mrc",
                 "--out", "build/summerland.mrc.xml",
+                "--charset", "ANSEL",
                 "--schema", "MARC21",
                 "--stylesheet", "http://www.loc.gov/standards/mods/v3/MARC21slim2MODS3.xsl",
                 "--result", "build/summerland.mods"

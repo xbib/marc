@@ -17,9 +17,7 @@
 package org.xbib.marc;
 
 import static org.xbib.marc.MarcXchangeConstants.BIBLIOGRAPHIC_TYPE;
-import static org.xbib.marc.MarcXchangeConstants.FORMAT_ATTRIBUTE;
 import static org.xbib.marc.MarcXchangeConstants.MARCXCHANGE_FORMAT;
-import static org.xbib.marc.MarcXchangeConstants.TYPE_ATTRIBUTE;
 
 import org.w3c.dom.Document;
 import org.xbib.marc.dialects.aleph.AlephSequentialInputStream;
@@ -495,12 +493,6 @@ public final class Marc {
                 }
                 if (builder.getProperties() != null) {
                     for (Map.Entry<String, Object> entry : builder.getProperties().entrySet()) {
-                        if (FORMAT_ATTRIBUTE.equals(entry.getKey())) {
-                            continue;
-                        }
-                        if (TYPE_ATTRIBUTE.equals(entry.getKey())) {
-                            continue;
-                        }
                         sax.getXMLReader().setProperty(entry.getKey(), entry.getValue());
                     }
                 }
@@ -969,17 +961,12 @@ public final class Marc {
             return this;
         }
 
+        /**
+         * Not used as there is no known input with collection events yet.
+         */
         @Override
         public void beginCollection() {
-            if (listener != null) {
-                listener.beginCollection();
-            }
-            if (defaultContentHandler != null) {
-                defaultContentHandler.beginCollection();
-            }
-            if (marcRecordListener != null) {
-                marcRecordListener.beginCollection();
-            }
+            // not used
         }
 
         @Override
@@ -1042,17 +1029,12 @@ public final class Marc {
             }
         }
 
+        /**
+         * Not used as there is no known input with collection events yet.
+         */
         @Override
         public void endCollection() {
-            if (listener != null) {
-                listener.endCollection();
-            }
-            if (defaultContentHandler != null) {
-                defaultContentHandler.endCollection();
-            }
-            if (marcRecordListener != null) {
-                marcRecordListener.endCollection();
-            }
+            // not used
         }
 
         public Marc.Builder recordLabel(RecordLabel recordLabel) {
