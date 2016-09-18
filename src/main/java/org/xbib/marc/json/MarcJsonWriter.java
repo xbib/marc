@@ -302,9 +302,6 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
             c0++;
         }
         sb.append('}');
-        if (jsonlines) {
-            sb.append("\n");
-        }
     }
 
     public Exception getException() {
