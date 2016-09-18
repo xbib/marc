@@ -119,6 +119,17 @@ public class MarcFieldTransformerTest {
     }
 
     @Test
+    public void testDropTag() {
+        MarcFieldTransformer marcFieldTransformer = MarcFieldTransformer.builder()
+                .ignoreIndicator()
+                .drop("001")
+                .build();
+        MarcField a = MarcField.builder().tag("001").subfield("a", "Hello").subfield("b", "World").build();
+        MarcField b = marcFieldTransformer.transform(a);
+        assertEquals(MarcField.EMPTY, b);
+    }
+
+    @Test
     public void testStringSpec() {
         MarcFieldTransformer marcFieldTransformer = MarcFieldTransformer.builder()
                 .ignoreSubfieldIds()

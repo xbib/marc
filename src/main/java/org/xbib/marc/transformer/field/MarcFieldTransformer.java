@@ -255,11 +255,35 @@ public class MarcFieldTransformer extends LinkedHashMap<String, MarcField> {
 
         public Builder fromTo(String a, String b) {
             String[] from = a.split(Pattern.quote(MarcField.KEY_DELIMITER), -1);
+            MarcField.Builder fromBuilder = MarcField.builder();
+            switch (from.length) {
+                case 1:
+                    fromBuilder.tag(from[0]);
+                    break;
+                case 2:
+                    fromBuilder.tag(from[0]).indicator(from[1]);
+                    break;
+                case 3:
+                    fromBuilder.tag(from[0]).indicator(from[1]).subfields(from[2]);
+                    break;
+                default:
+                    break;
+            }
             String[] to = b.split(Pattern.quote(MarcField.KEY_DELIMITER), -1);
-            MarcField.Builder fromBuilder = MarcField.builder()
-                    .tag(from[0]).indicator(from[1]).subfields(from[2]);
-            MarcField.Builder toBuilder = MarcField.builder()
-                    .tag(to[0]).indicator(to[1]).subfields(to[2]);
+            MarcField.Builder toBuilder = MarcField.builder();
+            switch (to.length) {
+                case 1:
+                    toBuilder.tag(to[0]);
+                    break;
+                case 2:
+                    toBuilder.tag(to[0]).indicator(to[1]);
+                    break;
+                case 3:
+                    toBuilder.tag(to[0]).indicator(to[1]).subfields(to[2]);
+                    break;
+                default:
+                    break;
+            }
             fromTo(fromBuilder.build(), toBuilder.build());
             return this;
         }
@@ -271,8 +295,20 @@ public class MarcFieldTransformer extends LinkedHashMap<String, MarcField> {
 
         public Builder drop(String a) {
             String[] s = a.split(Pattern.quote(MarcField.KEY_DELIMITER), -1);
-            MarcField.Builder builder = MarcField.builder()
-                    .tag(s[0]).indicator(s[1]).subfields(s[2]);
+            MarcField.Builder builder = MarcField.builder();
+            switch (s.length) {
+                case 1:
+                    builder.tag(s[0]);
+                    break;
+                case 2:
+                    builder.tag(s[0]).indicator(s[1]);
+                    break;
+                case 3:
+                    builder.tag(s[0]).indicator(s[1]).subfields(s[2]);
+                    break;
+                default:
+                    break;
+            }
             drop(builder.build());
             return this;
         }
