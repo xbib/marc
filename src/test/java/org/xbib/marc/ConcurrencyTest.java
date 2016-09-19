@@ -20,6 +20,8 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 
 import org.junit.Test;
+import org.xbib.marc.Marc;
+import org.xbib.marc.MarcXchangeConstants;
 import org.xbib.marc.json.MarcJsonWriter;
 import org.xbib.marc.xml.MarcXchangeWriter;
 

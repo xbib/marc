@@ -82,7 +82,7 @@ public class MarcWriterTest extends Assert {
             file.deleteOnExit();
             FileOutputStream out = new FileOutputStream(file);
             MarcValueTransformers marcValueTransformers = new MarcValueTransformers();
-            marcValueTransformers.setMarcValueTransformer("245$10$a", t -> t.replaceAll("Chabon","Chibon"));
+            marcValueTransformers.setMarcValueTransformer("245$10$a", t -> t.replaceAll("Chabon", "Chibon"));
             try (MarcWriter writer = new MarcWriter(out, StandardCharsets.UTF_8)
                     .setMarcValueTransformers(marcValueTransformers)) {
                 Marc.builder()
@@ -98,7 +98,7 @@ public class MarcWriterTest extends Assert {
             xmlFile.deleteOnExit();
             out = new FileOutputStream(xmlFile);
             marcValueTransformers = new MarcValueTransformers();
-            marcValueTransformers.setMarcValueTransformer("245$10$a", t -> t.replaceAll("Chibon","Chabon"));
+            marcValueTransformers.setMarcValueTransformer("245$10$a", t -> t.replaceAll("Chibon", "Chabon"));
             try (MarcXchangeWriter writer = new MarcXchangeWriter(out)
                     .setMarcValueTransformers(marcValueTransformers)) {
                 Marc.builder()
