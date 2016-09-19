@@ -22,6 +22,8 @@ import org.xbib.marc.MarcField;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -31,8 +33,13 @@ import java.util.regex.Pattern;
 public class MarcFieldTransformer extends LinkedHashMap<String, MarcField> {
 
     private static final long serialVersionUID = -3250616818472683245L;
-    // the repeat counter pattern
+
+    private static final Logger logger = Logger.getLogger(MarcFieldTransformer.class.getName());
+
+    // the repeat counter pattern, simple integer
     private static final Pattern REP = Pattern.compile("\\{r\\}");
+    // the two-string numeric repeat counter pattern
+    private static final Pattern NREP = Pattern.compile("\\{n\\}");
     private final boolean ignoreIndicator;
     private final boolean ignoreSubfieldIds;
     private transient MarcField lastReceived;
@@ -114,7 +121,7 @@ public class MarcFieldTransformer extends LinkedHashMap<String, MarcField> {
         if (ignoreIndicator) {
             builder.indicator(marcField.getIndicator());
         } else {
-            builder.indicator(interpolate(newMarcField.getIndicator()));
+            builder.indicator(interpolate(marcField, newMarcField.getIndicator()));
         }
         if (!builder.isEmpty()) {
             if (ignoreSubfieldIds) {
@@ -173,7 +180,7 @@ public class MarcFieldTransformer extends LinkedHashMap<String, MarcField> {
             if (ignoreIndicator) {
                 builder.indicator(marcField.getIndicator());
             } else {
-                builder.indicator(interpolate(newMarcField.getIndicator()));
+                builder.indicator(interpolate(marcField, newMarcField.getIndicator()));
             }
         }
         if (ignoreSubfieldIds) {
@@ -198,15 +205,26 @@ public class MarcFieldTransformer extends LinkedHashMap<String, MarcField> {
     /**
      * Interpolate variables.
      *
+     * @param marcField MARC field
      * @param value the input value
      * @return the interpolated string
      */
-    private String interpolate(String value) {
+    private String interpolate(MarcField marcField, String value) {
         if (value == null) {
             return null;
         }
         Matcher m = REP.matcher(value);
-        return m.find() ? m.replaceAll(Integer.toString(repeatCounter)) : value;
+        if (m.find()) {
+            return m.replaceAll(Integer.toString(repeatCounter));
+        }
+        m = NREP.matcher(value);
+        if (m.find()) {
+            if (repeatCounter > 99) {
+                logger.log(Level.WARNING, "counter > 99, overflow in " + marcField);
+            }
+            return m.replaceAll(String.format("%02d", repeatCounter));
+        }
+        return value;
     }
 
     /**

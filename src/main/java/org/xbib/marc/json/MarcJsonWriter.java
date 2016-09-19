@@ -82,6 +82,10 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
         this.builder = Marc.builder();
     }
 
+    private static String escape(String value) {
+        return value != null ? value.replaceAll("\"", "\\\"") : null;
+    }
+
     public MarcJsonWriter setFatalErrors(boolean fatalErrors) {
         this.fatalErrors = fatalErrors;
         return this;
@@ -197,6 +201,7 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
 
     /**
      * Format MARC record as key-oriented JSON.
+     *
      * @param sb a string builder to append JSON to
      */
     @SuppressWarnings("unchecked")
@@ -216,88 +221,99 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
             String tag = tags.getKey();
             sb.append("\"").append(tag).append("\":");
             Object o = tags.getValue();
-            if (!(o instanceof List)) {
-                o = Collections.singletonList(o);
-            }
-            List<?> list = (List<?>) o;
-            if (list.size() > 1) {
+            if (o instanceof Map) {
+                int c00 = 0;
+                Map<String, Object> repeatMap = (Map<String, Object>) o;
                 sb.append("[");
-            }
-            int c1 = 0;
-            for (Object value : list) {
-                if (c1 > 0) {
-                    sb.append(",");
-                }
-                if (value instanceof Map) {
-                    sb.append("{");
-                    int c2 = 0;
-                    for (Map.Entry<String, Object> indicators : ((Map<String, Object>) value).entrySet()) {
-                        if (c2 > 0) {
+                for (Map.Entry<String, Object> repeats : repeatMap.entrySet()) {
+                    if (c00 > 0) {
+                        sb.append(",");
+                    }
+                    o = repeats.getValue();
+                    if (!(o instanceof List)) {
+                        o = Collections.singletonList(o);
+                    }
+                    List<?> list = (List<?>) o;
+                    if (list.size() > 1) {
+                        sb.append("[");
+                    }
+                    int c1 = 0;
+                    for (Object value : list) {
+                        if (c1 > 0) {
                             sb.append(",");
                         }
-                        String indicator = indicators.getKey();
-                        sb.append("\"").append(indicator).append("\":");
-                        o = indicators.getValue();
-                        if (!(o instanceof List)) {
-                            o = Collections.singletonList(o);
-                        }
-                        List<?> list2 = (List<?>) o;
-                        if (list2.size() > 1) {
-                            sb.append("[");
-                        }
-                        int c3 = 0;
-                        for (Object value2 : list2) {
-                            if (c3 > 0) {
-                                sb.append(",");
-                            }
-                            if (value2 instanceof Map) {
-                                sb.append("{");
-                                Map<String, Object> map = (Map<String, Object>) value2;
-                                int c4 = 0;
-                                for (Map.Entry<String, Object> subfield : map.entrySet()) {
-                                    if (c4 > 0) {
+                        if (value instanceof Map) {
+                            sb.append("{");
+                            int c2 = 0;
+                            for (Map.Entry<String, Object> indicators : ((Map<String, Object>) value).entrySet()) {
+                                if (c2 > 0) {
+                                    sb.append(",");
+                                }
+                                String indicator = indicators.getKey();
+                                sb.append("\"").append(indicator).append("\":");
+                                o = indicators.getValue();
+                                if (!(o instanceof List)) {
+                                    o = Collections.singletonList(o);
+                                }
+                                List<?> list2 = (List<?>) o;
+                                sb.append("[");
+                                int c3 = 0;
+                                for (Object value2 : list2) {
+                                    if (c3 > 0) {
                                         sb.append(",");
                                     }
-                                    sb.append("\"").append(subfield.getKey()).append("\":");
-                                    if (subfield.getValue() instanceof List) {
-                                        sb.append("[");
-                                        int c5 = 0;
-                                        for (String s : (List<String>)subfield.getValue()) {
-                                            if (c5 > 0) {
+                                    if (value2 instanceof Map) {
+                                        Map<String, Object> map = (Map<String, Object>) value2;
+                                        int c4 = 0;
+                                        for (Map.Entry<String, Object> subfield : map.entrySet()) {
+                                            if (c4 > 0) {
                                                 sb.append(",");
                                             }
-                                            sb.append("\"").append(escape(s)).append("\"");
-                                            c5++;
+                                            sb.append("{");
+                                            sb.append("\"").append(subfield.getKey()).append("\":");
+                                            if (subfield.getValue() instanceof List) {
+                                                sb.append("[");
+                                                int c5 = 0;
+                                                for (String s : (List<String>) subfield.getValue()) {
+                                                    if (c5 > 0) {
+                                                        sb.append(",");
+                                                    }
+                                                    sb.append("\"").append(escape(s)).append("\"");
+                                                    c5++;
+                                                }
+                                                sb.append("]");
+                                            } else {
+                                                sb.append("\"").append(escape(subfield.getValue().toString())).append("\"");
+                                            }
+                                            c4++;
+                                            sb.append("}");
                                         }
-                                        sb.append("]");
                                     } else {
-                                        sb.append("\"").append(escape(subfield.getValue().toString())).append("\"");
+                                        sb.append("\"").append(escape(value2.toString())).append("\"");
                                     }
-                                    c4++;
+                                    c3++;
                                 }
-                                sb.append("}");
-                            } else {
-                                sb.append("\"").append(escape(value2.toString())).append("\"");
+                                sb.append("]");
+                                c2++;
                             }
-                            c3++;
+                            sb.append("}");
+                        } else {
+                            if (value == null) {
+                                sb.append("null");
+                            } else {
+                                sb.append("\"").append(escape(value.toString())).append("\"");
+                            }
                         }
-                        if (list2.size() > 1) {
-                            sb.append("]");
-                        }
-                        c2++;
+                        c1++;
                     }
-                    sb.append("}");
-                } else {
-                    if (value == null) {
-                        sb.append("null");
-                    } else {
-                        sb.append("\"").append(escape(value.toString())).append("\"");
+                    if (list.size() > 1) {
+                        sb.append("]");
                     }
+                    c00++;
                 }
-                c1++;
-            }
-            if (list.size() > 1) {
                 sb.append("]");
+            } else {
+                sb.append("\"").append(escape(o.toString())).append("\"");
             }
             c0++;
         }
@@ -306,10 +322,6 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
 
     public Exception getException() {
         return exception;
-    }
-
-    private static String escape(String value) {
-        return value != null ? value.replaceAll("\"", "\\\"") : null;
     }
 
     private void handleException(IOException e) {

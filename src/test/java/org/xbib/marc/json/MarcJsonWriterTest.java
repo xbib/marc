@@ -136,6 +136,7 @@ public class MarcJsonWriterTest {
         String s = "HT016424175.xml";
         InputStream in = getClass().getResource("/org/xbib/marc/dialects/mab/" + s).openStream();
         File file = File.createTempFile(s + ".", ".json");
+        file.deleteOnExit();
         FileOutputStream out = new FileOutputStream(file);
         try (MarcJsonWriter writer = new MarcJsonWriter(out, true)
                 .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)

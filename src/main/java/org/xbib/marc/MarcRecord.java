@@ -35,10 +35,8 @@ import java.util.stream.Collectors;
  */
 public class MarcRecord extends LinkedHashMap<String, Object> {
 
-    private static final long serialVersionUID = 5305809148724342653L;
-
     public static final MarcRecord EMPTY = Marc.builder().buildRecord();
-
+    private static final long serialVersionUID = 5305809148724342653L;
     private final String format;
 
     private final String type;
@@ -49,14 +47,15 @@ public class MarcRecord extends LinkedHashMap<String, Object> {
 
     /**
      * Create a MARC record. Use {@link Marc.Builder} to create a MARC record.
-     * @param format the format of the record
-     * @param type the type
+     *
+     * @param format      the format of the record
+     * @param type        the type
      * @param recordLabel the record label
-     * @param marcFields the MARC field
+     * @param marcFields  the MARC field
      * @param lightweight true if MARC record fields should not be entered into the underlying hash map.
      */
     MarcRecord(String format, String type, RecordLabel recordLabel,
-                       List<MarcField> marcFields, boolean lightweight) {
+               List<MarcField> marcFields, boolean lightweight) {
         super();
         this.format = format;
         this.type = type;
@@ -69,6 +68,7 @@ public class MarcRecord extends LinkedHashMap<String, Object> {
 
     /**
      * Return the MARC record format.
+     *
      * @return the MARC record format
      */
     public String getFormat() {
@@ -77,6 +77,7 @@ public class MarcRecord extends LinkedHashMap<String, Object> {
 
     /**
      * Return the MARC record type.
+     *
      * @return the MARC record type
      */
     public String getType() {
@@ -85,6 +86,7 @@ public class MarcRecord extends LinkedHashMap<String, Object> {
 
     /**
      * Return MARC record label.
+     *
      * @return the MARC record label
      */
     public RecordLabel getRecordLabel() {
@@ -93,6 +95,7 @@ public class MarcRecord extends LinkedHashMap<String, Object> {
 
     /**
      * Return the MARC fields of this record.
+     *
      * @return the MARC field list
      */
     public List<MarcField> getFields() {
@@ -101,6 +104,7 @@ public class MarcRecord extends LinkedHashMap<String, Object> {
 
     /**
      * Return a list of MARC fields of this record where key pattern matches were found.
+     *
      * @param pattern the pattern
      * @return a list of MARC fields
      */
@@ -108,8 +112,10 @@ public class MarcRecord extends LinkedHashMap<String, Object> {
         return marcFields.stream().map(field ->
                 field.matchKey(pattern)).filter(Objects::nonNull).collect(Collectors.toList());
     }
+
     /**
      * Return a list of MARC fields of this record where pattern matches were found.
+     *
      * @param pattern the pattern
      * @return a list of MARC fields
      */
@@ -138,13 +144,21 @@ public class MarcRecord extends LinkedHashMap<String, Object> {
         put(LEADER_TAG, recordLabel.toString());
         for (MarcField marcField : marcFields) {
             String tag = marcField.getTag();
+            int repeat;
+            Map<String, Object> repeatMap;
             if (!containsKey(tag)) {
-                put(tag, new LinkedHashMap<>());
+                repeatMap = new LinkedHashMap<>();
+                repeat = 1;
+                put(tag, repeatMap);
+            } else {
+                repeatMap = (Map<String, Object>) get(tag);
+                repeat = repeatMap.size() + 1;
             }
-            String indicator =  marcField.getIndicator();
+            String indicator = marcField.getIndicator();
             if (indicator != null && !indicator.isEmpty()) {
                 indicator = indicator.replace(' ', '_');
-                Map<String, Object> indicators = (Map<String, Object>) get(tag);
+                Map<String, Object> indicators = new LinkedHashMap<>();
+                repeatMap.put(Integer.toString(repeat), indicators);
                 if (!indicators.containsKey(indicator)) {
                     indicators.put(indicator, new LinkedHashMap<>());
                 }
@@ -164,7 +178,7 @@ public class MarcRecord extends LinkedHashMap<String, Object> {
                     }
                 }
             } else {
-                put(tag, marcField.getValue());
+                repeatMap.put(Integer.toString(repeat), marcField.getValue());
             }
         }
     }
