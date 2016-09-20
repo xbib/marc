@@ -136,6 +136,9 @@ public class MarcField implements Comparable<MarcField> {
     }
 
     public boolean isTagValid() {
+        if (tag == null) {
+            return true;
+        }
         return tag.length() == 3
                 && ((tag.charAt(0) >= '0' && tag.charAt(0) <= '9')
                 || (tag.charAt(0) >= 'A' && tag.charAt(0) <= 'Z'))
@@ -147,6 +150,9 @@ public class MarcField implements Comparable<MarcField> {
 
     public boolean isIndicatorValid() {
         if (isControl()) {
+            return true;
+        }
+        if (indicator == null) {
             return true;
         }
         boolean b = indicator.length() <= 9;
@@ -165,6 +171,9 @@ public class MarcField implements Comparable<MarcField> {
 
     public boolean isSubfieldValid() {
         if (isControl()) {
+            return true;
+        }
+        if (subfieldIds == null) {
             return true;
         }
         boolean b = true;
