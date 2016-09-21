@@ -36,6 +36,7 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.logging.Level;
@@ -79,6 +80,8 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
 
     private final Namespace namespace;
 
+    private final Lock lock;
+
     private Writer writer;
 
     private boolean indent;
@@ -103,13 +106,9 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
 
     private String fileNamePattern;
 
-    private int fileNameCounter;
-
-    private long recordCounter;
+    private AtomicInteger fileNameCounter;
 
     private int splitlimit;
-
-    private final Lock lock = new ReentrantLock();
 
     /**
      * Create a MarcXchange writer on an underlying output stream.
@@ -148,6 +147,7 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
     public MarcXchangeWriter(Writer writer, boolean indent) throws IOException {
         this.writer = writer;
         this.indent = indent;
+        this.lock = new ReentrantLock();
         this.documentStarted = false;
         this.collectionStarted = false;
         eventFactory = XMLEventFactory.newInstance();
@@ -163,10 +163,10 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
      * @throws IOException if writer can not be created
      */
     public MarcXchangeWriter(boolean indent, String fileNamePattern, int splitlimit) throws IOException {
-        this.fileNameCounter = 0;
+        this.fileNameCounter = new AtomicInteger(0);
         this.fileNamePattern = fileNamePattern;
         this.splitlimit = splitlimit;
-        this.recordCounter = 0L;
+        this.lock = new ReentrantLock();
         this.writer = newWriter(fileNamePattern, fileNameCounter);
         this.indent = indent;
         this.documentStarted = false;
@@ -183,30 +183,10 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
      */
     public MarcXchangeWriter(XMLEventConsumer consumer) {
         this.xmlEventConsumer = consumer;
+        this.lock = new ReentrantLock();
         this.eventFactory = XMLEventFactory.newInstance();
         this.namespace = eventFactory.createNamespace("", NAMESPACE_URI);
         this.namespaces = Collections.singletonList(namespace).iterator();
-    }
-
-    private static Writer newWriter(String fileNamePattern, int fileNameCounter) throws IOException {
-        return Files.newBufferedWriter(Paths.get(String.format(fileNamePattern, fileNameCounter)));
-    }
-
-    private void setupEventConsumer(Writer writer, boolean indent) throws IOException {
-        XMLOutputFactory outputFactory = XMLOutputFactory.newInstance();
-        try {
-            outputFactory.setProperty("com.ctc.wstx.useDoubleQuotesInXmlDecl", Boolean.TRUE);
-        } catch (IllegalArgumentException e) {
-            logger.log(Level.FINEST, e.getMessage(), e);
-        }
-        try {
-            this.xmlEventConsumer = indent ?
-                    new IndentingXMLEventWriter(outputFactory.createXMLEventWriter(writer)) :
-                    outputFactory.createXMLEventWriter(writer);
-            this.namespaces = Collections.singletonList(namespace).iterator();
-        } catch (XMLStreamException e) {
-            throw new IOException(e);
-        }
     }
 
     @Override
@@ -406,10 +386,9 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
             if (recordStarted) {
                 xmlEventConsumer.add(eventFactory.createEndElement(RECORD_ELEMENT, namespaces));
                 afterRecord();
-                flush();
                 recordStarted = false;
             }
-        } catch (IOException | XMLStreamException e) {
+        } catch (XMLStreamException e) {
             handleException(new IOException(e));
         }
     }
@@ -445,8 +424,8 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
             if (xmlEventConsumer instanceof XMLEventWriter) {
                 ((XMLEventWriter) xmlEventConsumer).flush();
             }
-            flush();
-        } catch (IOException | XMLStreamException e) {
+            afterRecord();
+        } catch (XMLStreamException e) {
             handleException(new IOException(e));
         } finally {
             lock.unlock();
@@ -486,23 +465,42 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
     }
 
     /**
-     * Split records, if configured.
+     * Split records if configured.
      */
-    protected void afterRecord() {
+    private void afterRecord() {
         if (fileNamePattern != null) {
-            recordCounter++;
-            if (recordCounter > splitlimit) {
+            if (getRecordCounter() % splitlimit == 0) {
                 try {
                     endCollection();
                     writer.close();
-                    writer = newWriter(fileNamePattern, fileNameCounter++);
+                    writer = newWriter(fileNamePattern, fileNameCounter);
                     setupEventConsumer(writer, indent);
                     beginCollection();
-                    recordCounter = 0L;
                 } catch (IOException e) {
                     logger.log(Level.SEVERE, e.getMessage(), e);
                 }
             }
+        }
+    }
+
+    private static Writer newWriter(String fileNamePattern, AtomicInteger fileNameCounter) throws IOException {
+        return Files.newBufferedWriter(Paths.get(String.format(fileNamePattern, fileNameCounter.getAndIncrement())));
+    }
+
+    private void setupEventConsumer(Writer writer, boolean indent) throws IOException {
+        XMLOutputFactory outputFactory = XMLOutputFactory.newInstance();
+        try {
+            outputFactory.setProperty("com.ctc.wstx.useDoubleQuotesInXmlDecl", Boolean.TRUE);
+        } catch (IllegalArgumentException e) {
+            logger.log(Level.FINEST, e.getMessage(), e);
+        }
+        try {
+            this.xmlEventConsumer = indent ?
+                    new IndentingXMLEventWriter(outputFactory.createXMLEventWriter(writer)) :
+                    outputFactory.createXMLEventWriter(writer);
+            this.namespaces = Collections.singletonList(namespace).iterator();
+        } catch (XMLStreamException e) {
+            throw new IOException(e);
         }
     }
 

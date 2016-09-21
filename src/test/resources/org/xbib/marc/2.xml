@@ -1,125 +1,321 @@
 <collection xmlns="info:lc/xmlns/marcxchange-v2">
   <record format="MARC21" type="Bibliographic">
-    <leader>01613cam  2200409 a 4500</leader>
-    <controlfield tag="001">ocn124450154</controlfield>
+    <leader>01215cam  2200313 a 4500</leader>
+    <controlfield tag="001">ocn137458539</controlfield>
     <controlfield tag="003">OCoLC</controlfield>
-    <controlfield tag="005">20070605103524.0</controlfield>
-    <controlfield tag="008">970411s1947    nyu           001 0 rus d</controlfield>
+    <controlfield tag="005">20070605101501.0</controlfield>
+    <controlfield tag="008">900119s1974    maua          100 0 eng d</controlfield>
+    <datafield ind2=" " ind1=" " tag="010">
+      <subfield code="a">   74081739 </subfield>
+    </datafield>
     <datafield ind2=" " ind1=" " tag="040">
-      <subfield code="a">NNC</subfield>
-      <subfield code="c">VXJ</subfield>
-    </datafield>
-    <datafield ind2=" " ind1=" " tag="066">
-      <subfield code="c">(N</subfield>
+      <subfield code="a">MSR</subfield>
+      <subfield code="c">MSR</subfield>
     </datafield>
     <datafield ind2=" " ind1=" " tag="035">
-      <subfield code="a">(OCoLC)124450154</subfield>
+      <subfield code="a">(OCoLC)137458539</subfield>
     </datafield>
     <datafield ind2=" " ind1=" " tag="035">
-      <subfield code="a">(CStRLIN)NYJH97-B3375</subfield>
+      <subfield code="a">(CStRLIN)MOSA90-B178</subfield>
     </datafield>
-    <datafield ind2=" " ind1="1" tag="041">
-      <subfield code="a">rus</subfield>
-      <subfield code="h">yid</subfield>
-    </datafield>
-    <datafield ind2=" " ind1=" " tag="043">
-      <subfield code="a">n-us---</subfield>
+    <datafield ind2=" " ind1=" " tag="050">
+      <subfield code="a">F61</subfield>
+      <subfield code="b">.C71 vol. 48</subfield>
+      <subfield code="a">NK2438.B6</subfield>
     </datafield>
     <datafield ind2=" " ind1=" " tag="079">
-      <subfield code="a">ocm42037006</subfield>
+      <subfield code="a">ocm01364905</subfield>
+      <subfield code="z">ocm06844451</subfield>
     </datafield>
     <datafield ind2=" " ind1=" " tag="090">
-      <subfield code="a">PJ5192.R8</subfield>
-      <subfield code="b">F4</subfield>
+      <subfield code="a">NK2438.B6</subfield>
+      <subfield code="b">B68 1974</subfield>
     </datafield>
     <datafield ind2=" " ind1=" " tag="049">
       <subfield code="a">OCLC</subfield>
     </datafield>
     <datafield ind2="0" ind1="0" tag="245">
-      <subfield code="6">880-01</subfield>
-      <subfield code="a">Evreĭskai͡a poėzii͡a :</subfield>
-      <subfield code="b">antologii͡a /</subfield>
-      <subfield code="c">Leonid Grebnev (L. Faĭnberg).</subfield>
-    </datafield>
-    <datafield ind2="5" ind1="1" tag="246">
-      <subfield code="a">Yiddish poetry</subfield>
+      <subfield code="a">Boston furniture of the eighteenth century :</subfield>
+      <subfield code="b">a conference held by the Colonial Society of Massachusetts, 11 and 12 May 1972.</subfield>
     </datafield>
     <datafield ind2=" " ind1=" " tag="260">
-      <subfield code="6">880-02</subfield>
-      <subfield code="a">Nʹi͡u-Ĭork :</subfield>
-      <subfield code="b">Izd. Soi͡uza russkikh evreev v Nʹi͡u-Iorke,</subfield>
-      <subfield code="c">1947.</subfield>
+      <subfield code="a">Boston :</subfield>
+      <subfield code="b">Colonial Society of Massachusetts ;</subfield>
+      <subfield code="a">[Charlottesville] :</subfield>
+      <subfield code="b">distributed by the University Press of Virginia,</subfield>
+      <subfield code="c">c1974.</subfield>
     </datafield>
     <datafield ind2=" " ind1=" " tag="300">
-      <subfield code="a">240 p. ;</subfield>
-      <subfield code="c">23 cm.</subfield>
+      <subfield code="a">xvi, 316 p. :</subfield>
+      <subfield code="b">ill. ;</subfield>
+      <subfield code="c">25 cm.</subfield>
+    </datafield>
+    <datafield ind2="0" ind1=" " tag="440">
+      <subfield code="a">Publications of the Colonial Society of Massachusetts ;</subfield>
+      <subfield code="v">v. 48</subfield>
     </datafield>
     <datafield ind2=" " ind1=" " tag="500">
-      <subfield code="a">No more published?</subfield>
-    </datafield>
-    <datafield ind2=" " ind1="0" tag="505">
-      <subfield code="a">Tom 1. Amerika.</subfield>
+      <subfield code="a">Bibliography: p. 303-305.</subfield>
     </datafield>
     <datafield ind2=" " ind1=" " tag="500">
       <subfield code="a">Includes index.</subfield>
     </datafield>
-    <datafield ind2=" " ind1=" " tag="590">
-      <subfield code="a">Author's autograph presentation copy to Moses Shifris.</subfield>
+    <datafield ind2="0" ind1=" " tag="650">
+      <subfield code="a">Furniture, Colonial</subfield>
+      <subfield code="z">Massachusetts</subfield>
+      <subfield code="z">Boston</subfield>
+      <subfield code="x">Congresses.</subfield>
     </datafield>
     <datafield ind2="0" ind1=" " tag="650">
-      <subfield code="a">Yiddish poetry</subfield>
-      <subfield code="z">United States.</subfield>
+      <subfield code="a">Furniture, Early American</subfield>
+      <subfield code="z">Massachusetts</subfield>
+      <subfield code="z">Boston</subfield>
+      <subfield code="x">Congresses.</subfield>
     </datafield>
-    <datafield ind2="0" ind1=" " tag="650">
-      <subfield code="a">Yiddish poetry</subfield>
-      <subfield code="x">Translations into Russian</subfield>
-      <subfield code="x">Collections.</subfield>
-    </datafield>
-    <datafield ind2="0" ind1=" " tag="650">
-      <subfield code="a">Russian poetry</subfield>
-      <subfield code="x">Translations from Yiddish</subfield>
-      <subfield code="x">Collections.</subfield>
-    </datafield>
-    <datafield ind2="4" ind1="1" tag="600">
-      <subfield code="6">880-03</subfield>
-      <subfield code="a">Feinberg, Leon,</subfield>
-      <subfield code="d">1897-1969</subfield>
-      <subfield code="x">Presentation inscription to Moses Shifris.</subfield>
-    </datafield>
-    <datafield ind2=" " ind1="1" tag="700">
-      <subfield code="6">880-04</subfield>
-      <subfield code="a">Feinberg, Leon,</subfield>
-      <subfield code="d">1897-1969.</subfield>
+    <datafield ind2=" " ind1="2" tag="710">
+      <subfield code="a">Colonial Society of Massachusetts.</subfield>
     </datafield>
     <datafield ind2=" " ind1=" " tag="852">
-      <subfield code="a">NNJ</subfield>
-      <subfield code="b">PUBL</subfield>
-      <subfield code="h">PJ5192.R8</subfield>
-      <subfield code="i">F4</subfield>
-      <subfield code="t">1</subfield>
-      <subfield code="x">CIN=AMW; OID=UTC</subfield>
+      <subfield code="a">MoSR</subfield>
+      <subfield code="b">STK</subfield>
+      <subfield code="h">NK2438.B6</subfield>
+      <subfield code="i">B68 1974</subfield>
+      <subfield code="x">21260</subfield>
+      <subfield code="x">CIN=MLC; OID=MLC</subfield>
     </datafield>
-    <datafield ind2="0" ind1="0" tag="880">
-      <subfield code="6">245-01/(N</subfield>
-      <subfield code="a">Еврейская поэзия :</subfield>
-      <subfield code="b">антология /</subfield>
-      <subfield code="c">Леонид Гребнев [Л. Файнберг].</subfield>
+    <datafield ind2=" " ind1=" " tag="901">
+      <subfield code="a">R</subfield>
     </datafield>
-    <datafield ind2=" " ind1=" " tag="880">
-      <subfield code="6">260-02/(N</subfield>
-      <subfield code="a">Нью-Йорк :</subfield>
-      <subfield code="b">Изд. Союза русских евреев в Нью-Йорке,</subfield>
-      <subfield code="c">1947.</subfield>
+    <datafield ind2=" " ind1=" " tag="994">
+      <subfield code="a">C0</subfield>
+      <subfield code="b">OCL</subfield>
     </datafield>
-    <datafield ind2="4" ind1="1" tag="880">
-      <subfield code="6">600-03/(N</subfield>
-      <subfield code="a">Файнберг, Леон,</subfield>
-      <subfield code="d">1897-1969.</subfield>
+  </record>
+  <record format="MARC21" type="Bibliographic">
+    <leader>01731cam  2200457 a 4500</leader>
+    <controlfield tag="001">ocn124411460</controlfield>
+    <controlfield tag="003">OCoLC</controlfield>
+    <controlfield tag="005">20070605101501.0</controlfield>
+    <controlfield tag="008">070222s2007    is a     b    001 0ceng d</controlfield>
+    <datafield ind2=" " ind1=" " tag="040">
+      <subfield code="a">NNYI</subfield>
+      <subfield code="c">VXJ</subfield>
     </datafield>
-    <datafield ind2=" " ind1="1" tag="880">
-      <subfield code="6">700-04/(N</subfield>
-      <subfield code="a">Файнберг, Леон,</subfield>
-      <subfield code="d">1897-1969.</subfield>
+    <datafield ind2=" " ind1=" " tag="066">
+      <subfield code="c">(2</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="020">
+      <subfield code="a">9652293865</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="020">
+      <subfield code="a">9789652293862</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="035">
+      <subfield code="a">(OCoLC)124411460</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="035">
+      <subfield code="a">(CStRLIN)NYJH07-B409</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="1" tag="041">
+      <subfield code="a">eng</subfield>
+      <subfield code="h">heb</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="043">
+      <subfield code="a">e-hu---</subfield>
+      <subfield code="a">a-is---</subfield>
+    </datafield>
+    <datafield ind2="0" ind1="0" tag="050">
+      <subfield code="a">DS135.H93</subfield>
+      <subfield code="b">A147313 2007</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="079">
+      <subfield code="a">ocm85564516</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="090">
+      <subfield code="a">DS135.H93</subfield>
+      <subfield code="b">A14513 2007</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="049">
+      <subfield code="a">OCLC</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="1" tag="100">
+      <subfield code="a">Gur, David,</subfield>
+      <subfield code="d">1926-</subfield>
+    </datafield>
+    <datafield ind2="0" ind1="1" tag="240">
+      <subfield code="6">880-01</subfield>
+      <subfield code="a">Aḥim le-hitnagdut ule-hatsalah.</subfield>
+      <subfield code="l">English</subfield>
+    </datafield>
+    <datafield ind2="0" ind1="1" tag="245">
+      <subfield code="a">Brothers for resistance and rescue :</subfield>
+      <subfield code="b">the underground Zionist youth movement in Hungary during World War II /</subfield>
+      <subfield code="c">David Gur ; edited by Eli Netzer ; translated by Pamela Segev &amp; Avri Fischer.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="250">
+      <subfield code="a">Enlarged and revised ed.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="260">
+      <subfield code="a">Jerusalem :</subfield>
+      <subfield code="b">Gefen,</subfield>
+      <subfield code="c">2007.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="300">
+      <subfield code="a">270 p. :</subfield>
+      <subfield code="b">ill. ;</subfield>
+      <subfield code="c">28 p.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="500">
+      <subfield code="a">Introduction by Randolph L. Brahan.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="504">
+      <subfield code="a">Includes bibliographical references (p. 261-264) and index.</subfield>
+    </datafield>
+    <datafield ind2="0" ind1=" " tag="650">
+      <subfield code="a">Jews</subfield>
+      <subfield code="z">Hungary</subfield>
+      <subfield code="v">Biography.</subfield>
+    </datafield>
+    <datafield ind2="0" ind1=" " tag="650">
+      <subfield code="a">Jewish youth</subfield>
+      <subfield code="z">Hungary</subfield>
+      <subfield code="v">Biography.</subfield>
+    </datafield>
+    <datafield ind2="0" ind1=" " tag="650">
+      <subfield code="a">Zionism</subfield>
+      <subfield code="z">Hungary</subfield>
+      <subfield code="x">History</subfield>
+      <subfield code="y">20th century.</subfield>
+    </datafield>
+    <datafield ind2="0" ind1=" " tag="650">
+      <subfield code="a">World War, 1939-1945</subfield>
+      <subfield code="x">Jewish resistance</subfield>
+      <subfield code="z">Hungary.</subfield>
+    </datafield>
+    <datafield ind2="0" ind1=" " tag="650">
+      <subfield code="a">Jews, Hungarian</subfield>
+      <subfield code="z">Israel</subfield>
+      <subfield code="v">Biography.</subfield>
+    </datafield>
+    <datafield ind2="0" ind1=" " tag="650">
+      <subfield code="a">Holocaust survivors</subfield>
+      <subfield code="z">Israel</subfield>
+      <subfield code="v">Biography.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="1" tag="700">
+      <subfield code="a">Netser, Eli.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="1" tag="700">
+      <subfield code="a">Segev, Pamela.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="1" tag="700">
+      <subfield code="a">Fischer, Avri.</subfield>
+    </datafield>
+    <datafield ind2="1" ind1="0" tag="852">
+      <subfield code="a">Library of the Jewish Theological Seminary</subfield>
+      <subfield code="b">JT1</subfield>
+      <subfield code="c">MAIN</subfield>
+      <subfield code="k">OVERSIZE</subfield>
+      <subfield code="h">DS135.H93</subfield>
+      <subfield code="i">A14513 2007</subfield>
+      <subfield code="p">31407002756237</subfield>
+      <subfield code="x">CIN=RL; OID=RL</subfield>
+    </datafield>
+    <datafield ind2="0" ind1="1" tag="880">
+      <subfield code="6">240-01/(2/r</subfield>
+      <subfield code="a">&amp;#x200F;אחים להתנגדות ולהצלה.&amp;#x200F;</subfield>
+      <subfield code="l">&amp;#x200F;English</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="994">
+      <subfield code="a">C0</subfield>
+      <subfield code="b">OCL</subfield>
+    </datafield>
+  </record>
+  <record format="MARC21" type="Bibliographic">
+    <leader>02310cjm  2200349 a 4500</leader>
+    <controlfield tag="001">ocn131225106</controlfield>
+    <controlfield tag="003">OCoLC</controlfield>
+    <controlfield tag="005">20070605101501.0</controlfield>
+    <controlfield tag="007">sd |||gnammned</controlfield>
+    <controlfield tag="008">051219p2004    sa mun g       l    mul d</controlfield>
+    <datafield ind2=" " ind1=" " tag="040">
+      <subfield code="a">CtY</subfield>
+      <subfield code="c">YUS</subfield>
+    </datafield>
+    <datafield ind2="0" ind1="0" tag="028">
+      <subfield code="a">ACM-CD023/3</subfield>
+      <subfield code="b">African Cream Music</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="035">
+      <subfield code="a">(OCoLC)131225106</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="035">
+      <subfield code="a">(CtY)7143913</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="035">
+      <subfield code="a">(CStRLIN)CTYA7143913-R</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="0" tag="041">
+      <subfield code="a">eng</subfield>
+      <subfield code="a">xho</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="043">
+      <subfield code="a">f-sa---</subfield>
+    </datafield>
+    <datafield ind2="4" ind1=" " tag="050">
+      <subfield code="a">ML3760</subfield>
+      <subfield code="b">.W55 2004</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="079">
+      <subfield code="a">ocm64169861</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="090">
+      <subfield code="a">ML3760</subfield>
+      <subfield code="b">.W55 2004 (LC)</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="049">
+      <subfield code="a">OCLC</subfield>
+    </datafield>
+    <datafield ind2="4" ind1="0" tag="245">
+      <subfield code="a">The winds of change</subfield>
+      <subfield code="h">[sound recording] :</subfield>
+      <subfield code="b">[a journey through the key music and moments that gave birth to a free, democratic South Africa].</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="260">
+      <subfield code="a">[South Africa?] :</subfield>
+      <subfield code="b">African Cream Music,</subfield>
+      <subfield code="c">2004.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="300">
+      <subfield code="a">2  sound discs :</subfield>
+      <subfield code="b">digital ;</subfield>
+      <subfield code="c">4 3/4 in. +</subfield>
+      <subfield code="e">1 booklet</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="500">
+      <subfield code="a">Compact discs.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="500">
+      <subfield code="a">Subtitle from booklet.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="511">
+      <subfield code="a">Various artists.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="0" tag="505">
+      <subfield code="a">CD. 1. Nkosi sikelel' iAfrika (Tumelo Maloi) -- Winds of change (Harold Macmillan) -- Zono zam (Dorothy Masuka) -- Nobel Prize Award (Chief Albert Luthuli) -- Zandile (Jazz Ministers) -- Rivonia trial speech (Nelson Mandela) -- Woza ANC (Freedom Choir, ACFC) -- Ag pleez deddy (Jeremy Taylor) -- Kalamazoo (Pops Mohamed) -- Fight to the end (JB Vorster) -- Joyin umkhonto wesizwe (ACFC) -- Burnout (Sipho "Hotstix" Mabuse) -- Total onslaught (PW Botha) -- State of emergency (Amampondo) -- Paradise road (Joy) -- AWB speech (Eugene Terreblanche) -- Slovo no tambo (ACFC) -- Bayeza (Soul Brothers) -- Tsoha/vuka (ACFC) -- Asimbonanga (Jonny Clegg) -- CD. 2. Whispers in the deep (Stimela) -- Thula Sizwe (ACFC) -- Halala Afrika (Johannes Kerkorrel) -- Papa stop the war (Chicco) -- Unbanning speech (FW De Klerk) -- Shosholoza (ACFCA) -- Bring him back home (Hugh Masekela) -- Inauguration speech (Nelson Mandela) -- Man of the world (Yvonne Chaka Chaka) -- Neva again (Prophets of Da City) -- Waar was jy (Skeem) -- I am an African (Thabo Mbeki) -- Power of Africa (Yvonne Chaka Chaka) -- Yehlisan umoya ma-Afrika (Busi Mhlongo) -- Sabela (Sibongile Khumalo) -- Inauguration speech (Nelson Mandela) -- Nkosi sikelel' iAfrika (ACFC).</subfield>
+    </datafield>
+    <datafield ind2="0" ind1=" " tag="650">
+      <subfield code="a">Music</subfield>
+      <subfield code="z">African.</subfield>
+    </datafield>
+    <datafield ind2="0" ind1=" " tag="650">
+      <subfield code="a">Speeches, addresses, etc.</subfield>
+    </datafield>
+    <datafield ind2="1" ind1="0" tag="852">
+      <subfield code="a">CtY</subfield>
+      <subfield code="b">sml</subfield>
+      <subfield code="h">ML3760</subfield>
+      <subfield code="i">.W55 2004 (LC)</subfield>
     </datafield>
     <datafield ind2=" " ind1=" " tag="994">
       <subfield code="a">C0</subfield>

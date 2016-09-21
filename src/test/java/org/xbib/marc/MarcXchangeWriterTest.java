@@ -30,7 +30,7 @@ import java.text.Normalizer;
 /**
  *
  */
-public class SplitMarcTest extends Assert {
+public class MarcXchangeWriterTest extends Assert {
 
     @Test
     public void splitMARC() throws Exception {
@@ -38,7 +38,7 @@ public class SplitMarcTest extends Assert {
         InputStream in = getClass().getResource("/org/xbib/marc//" + s).openStream();
         MarcValueTransformers marcValueTransformers = new MarcValueTransformers();
         marcValueTransformers.setMarcValueTransformer(value -> Normalizer.normalize(value, Normalizer.Form.NFC));
-        MarcXchangeWriter writer = new MarcXchangeWriter(true, "build/%d.xml", 2)
+        MarcXchangeWriter writer = new MarcXchangeWriter(true, "build/%d.xml", 3)
                 .setMarcValueTransformers(marcValueTransformers);
         Marc.builder()
                 .setInputStream(in)
@@ -46,12 +46,16 @@ public class SplitMarcTest extends Assert {
                 .setMarcListener(writer)
                 .build()
                 .writeCollection();
-        File f1 = new File("build/0.xml");
-        assertThat(f1, CompareMatcher.isIdenticalTo(getClass().getResource("0.xml").openStream()));
-        File f2 = new File("build/1.xml");
-        assertThat(f2, CompareMatcher.isIdenticalTo(getClass().getResource("1.xml").openStream()));
-        File f3 = new File("build/2.xml");
-        assertThat(f3, CompareMatcher.isIdenticalTo(getClass().getResource("2.xml").openStream()));
+        File f0 = new File("build/0.xml");
+        assertThat(f0, CompareMatcher.isIdenticalTo(getClass().getResource("0.xml").openStream()));
+        File f1 = new File("build/1.xml");
+        assertThat(f1, CompareMatcher.isIdenticalTo(getClass().getResource("1.xml").openStream()));
+        File f2 = new File("build/2.xml");
+        assertThat(f2, CompareMatcher.isIdenticalTo(getClass().getResource("2.xml").openStream()));
+        File f3 = new File("build/3.xml");
+        assertThat(f3, CompareMatcher.isIdenticalTo(getClass().getResource("3.xml").openStream()));
+        File f4 = new File("build/4.xml");
+        assertFalse(f4.exists());
     }
 
 }

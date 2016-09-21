@@ -32,16 +32,23 @@ import java.io.OutputStreamWriter;
 import java.io.UncheckedIOException;
 import java.io.Writer;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * This Marc Writer is a MarcContentHandler that writes Marc events to JSON.
  */
 public class MarcJsonWriter extends MarcContentHandler implements Flushable, Closeable {
+
+    private static final Logger logger = Logger.getLogger(MarcJsonWriter.class.getName());
 
     public static final String LEADER_TAG = "_LEADER";
 
@@ -49,19 +56,30 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
 
     public static final String TYPE_TAG = "_TYPE";
 
-    private final Lock lock = new ReentrantLock();
-
-    private final BufferedWriter writer;
+    private final Lock lock;
 
     private final StringBuilder sb;
 
+    private BufferedWriter writer;
+
     private Marc.Builder builder;
 
-    private boolean fatalErrors = false;
+    private boolean fatalErrors;
 
     private boolean jsonlines;
 
     private Exception exception;
+
+    private String fileNamePattern;
+
+    private AtomicInteger fileNameCounter;
+
+    private int splitlimit;
+
+    /**
+     * Flag for indicating if writer is at top of file.
+     */
+    private boolean top;
 
     public MarcJsonWriter(OutputStream out) throws IOException {
         this(out, false);
@@ -77,9 +95,23 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
 
     public MarcJsonWriter(Writer writer, boolean jsonlines) throws IOException {
         this.writer = new BufferedWriter(writer);
-        this.sb = new StringBuilder();
         this.jsonlines = jsonlines;
+        this.lock = new ReentrantLock();
+        this.sb = new StringBuilder();
         this.builder = Marc.builder();
+        this.top = true;
+    }
+
+    public MarcJsonWriter(String fileNamePattern, int splitlimit) throws IOException {
+        this.fileNameCounter = new AtomicInteger(0);
+        this.fileNamePattern = fileNamePattern;
+        this.splitlimit = splitlimit;
+        this.writer = newWriter(fileNamePattern, fileNameCounter);
+        this.lock = new ReentrantLock();
+        this.sb = new StringBuilder();
+        this.builder = Marc.builder();
+        this.top = true;
+        this.jsonlines = true;
     }
 
     private static String escape(String value) {
@@ -126,7 +158,6 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
 
     @Override
     public void beginRecord(String format, String type) {
-        super.beginRecord(format, type);
         setFormat(format);
         setType(type);
     }
@@ -156,6 +187,7 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
             writer.write(sb.toString());
             sb.setLength(0);
             recordCounter.incrementAndGet();
+            afterRecord();
         } catch (Exception e) {
             handleException(new IOException(e));
         } finally {
@@ -165,7 +197,6 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
 
     @Override
     public void endRecord() {
-        super.endRecord();
         if (format != null) {
             builder.setFormat(format);
         }
@@ -209,7 +240,9 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
         if (marcRecord.isEmpty()) {
             return;
         }
-        if (recordCounter.get() > 0) {
+        if (top) {
+            top = false;
+        } else {
             sb.append(jsonlines ? "\n" : ",");
         }
         sb.append("{");
@@ -344,4 +377,28 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
     public void flush() throws IOException {
         writer.flush();
     }
+
+    /**
+     * Split records, if configured.
+     */
+    private void afterRecord() {
+        if (fileNamePattern != null) {
+            if (getRecordCounter() % splitlimit == 0) {
+                try {
+                    endCollection();
+                    close();
+                    writer = newWriter(fileNamePattern, fileNameCounter);
+                    top = true;
+                    beginCollection();
+                } catch (IOException e) {
+                    logger.log(Level.SEVERE, e.getMessage(), e);
+                }
+            }
+        }
+    }
+
+    private static BufferedWriter newWriter(String fileNamePattern, AtomicInteger fileNameCounter) throws IOException {
+        return Files.newBufferedWriter(Paths.get(String.format(fileNamePattern, fileNameCounter.getAndIncrement())));
+    }
+
 }

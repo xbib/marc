@@ -31,6 +31,8 @@ import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.text.Normalizer;
+import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  *
@@ -158,8 +160,23 @@ public class MarcTest extends Assert {
                     .build()
                     .writeCollection();
             assertNull(writer.getException());
+            assertEquals(10, writer.getRecordCounter());
         }
         assertThat(file, CompareMatcher.isIdenticalTo(getClass().getResource(s + ".xml").openStream()));
+    }
+
+    @Test
+    public void testRecordStream() throws Exception {
+        String s = "IRMARC8.bin";
+        InputStream in = getClass().getResource(s).openStream();
+        Marc.Builder builder = Marc.builder()
+                .setInputStream(in)
+                .setCharset(StandardCharsets.UTF_8);
+        List<String> recordIDs = builder.recordStream().map(r -> r.get("001").toString()).collect(Collectors.toList());
+        in.close();
+        assertEquals("[{1=ocn132792681}, {1=ocn132786677}, {1=ocn125170297}, {1=ocn137607921}, {1=ocn124081299}, "
+                + "{1=ocn135450843}, {1=ocn137458539}, {1=ocn124411460}, {1=ocn131225106}, {1=ocn124450154}]",
+                recordIDs.toString());
     }
 
     /**

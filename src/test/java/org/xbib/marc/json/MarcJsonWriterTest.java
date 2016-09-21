@@ -16,12 +16,16 @@
  */
 package org.xbib.marc.json;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 import static org.xbib.helper.StreamMatcher.assertStream;
 
 import org.junit.Test;
 import org.xbib.marc.Marc;
 import org.xbib.marc.MarcRecordAdapter;
 import org.xbib.marc.MarcXchangeConstants;
+import org.xbib.marc.transformer.value.MarcValueTransformers;
 import org.xbib.marc.xml.MarcContentHandler;
 
 import java.io.File;
@@ -29,6 +33,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.nio.charset.Charset;
+import java.text.Normalizer;
 
 /**
  *
@@ -156,4 +161,32 @@ public class MarcJsonWriterTest {
         assertStream(s, getClass().getResource("/org/xbib/marc/json/" + s + ".json").openStream(),
                 new FileInputStream(file));
     }
+
+    @Test
+    public void splitMARC() throws Exception {
+        String s = "IRMARC8.bin";
+        InputStream in = getClass().getResource("/org/xbib/marc//" + s).openStream();
+        MarcValueTransformers marcValueTransformers = new MarcValueTransformers();
+        marcValueTransformers.setMarcValueTransformer(value -> Normalizer.normalize(value, Normalizer.Form.NFC));
+        MarcJsonWriter writer = new MarcJsonWriter("build/%d.json", 3);
+        writer.setMarcValueTransformers(marcValueTransformers);
+        Marc.builder()
+                .setInputStream(in)
+                .setCharset(Charset.forName("ANSEL"))
+                .setMarcListener(writer)
+                .build()
+                .writeCollection();
+        assertEquals(10, writer.getRecordCounter());
+        File f0 = new File("build/0.json");
+        assertTrue(f0.exists() && f0.length() == 6022);
+        File f1 = new File("build/1.json");
+        assertTrue(f1.exists() && f1.length() == 7150);
+        File f2 = new File("build/2.json");
+        assertTrue(f2.exists() && f2.length() == 6424);
+        File f3 = new File("build/3.json");
+        assertTrue(f3.exists() && f3.length() == 2114);
+        File f4 = new File("build/4.json");
+        assertFalse(f4.exists());
+    }
+
 }

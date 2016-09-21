@@ -57,19 +57,19 @@ public class MarcContentHandler
 
     private static final Logger logger = Logger.getLogger(MarcContentHandler.class.getName());
 
+    protected final AtomicInteger recordCounter = new AtomicInteger();
+
     protected Deque<MarcField.Builder> stack = new LinkedList<>();
 
     protected Map<String, MarcListener> listeners = new HashMap<>();
 
-    protected MarcListener marcListener;
-
     protected StringBuilder content = new StringBuilder();
+
+    protected MarcListener marcListener;
 
     protected String format;
 
     protected String type;
-
-    protected final AtomicInteger recordCounter = new AtomicInteger();
 
     protected MarcValueTransformers marcValueTransformers;
 
@@ -78,7 +78,6 @@ public class MarcContentHandler
     private boolean isCollection = false;
 
     private List<MarcField> marcFieldList = new LinkedList<>();
-
 
     private Set<String> validNamespaces =
             new HashSet<>(Arrays.asList(MARCXCHANGE_V1_NS_URI, MARCXCHANGE_V2_NS_URI, MARC21_SCHEMA_URI));
@@ -186,31 +185,31 @@ public class MarcContentHandler
 
     @Override
     public void record(MarcRecord marcRecord) {
-        try {
-            beginRecord(marcRecord.getFormat(), marcRecord.getType());
-            leader(marcRecord.getRecordLabel().toString());
-            for (MarcField marcField : marcRecord.getFields()) {
-                field(marcField);
-            }
-            endRecord();
-        } finally {
-            recordCounter.incrementAndGet();
+        beginRecord(marcRecord.getFormat(), marcRecord.getType());
+        leader(marcRecord.getRecordLabel().toString());
+        for (MarcField marcField : marcRecord.getFields()) {
+            field(marcField);
         }
+        endRecord();
     }
 
     @Override
     public void endRecord() {
-        if (marcFieldTransformers != null) {
-            for (MarcField marcField : marcFieldTransformers.transform(marcFieldList)) {
-                if (!marcField.isEmpty() && marcListener != null) {
-                    marcListener.field(marcField);
+        try {
+            if (marcFieldTransformers != null) {
+                for (MarcField marcField : marcFieldTransformers.transform(marcFieldList)) {
+                    if (!marcField.isEmpty() && marcListener != null) {
+                        marcListener.field(marcField);
+                    }
                 }
+                marcFieldTransformers.reset();
+                marcFieldList.clear();
             }
-            marcFieldTransformers.reset();
-            marcFieldList.clear();
-        }
-        if (marcListener != null) {
-            marcListener.endRecord();
+            if (marcListener != null) {
+                marcListener.endRecord();
+            }
+        } finally {
+            recordCounter.incrementAndGet();
         }
     }
 
