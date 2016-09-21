@@ -16,13 +16,26 @@
  */
 package org.xbib.marc;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertThat;
+import static org.junit.Assert.assertTrue;
 import static org.xbib.helper.StreamMatcher.assertStream;
 
 import org.junit.Test;
+import org.xbib.marc.json.MarcJsonWriter;
+import org.xbib.marc.transformer.value.MarcValueTransformers;
+import org.xbib.marc.xml.MarcXchangeWriter;
+import org.xmlunit.matchers.CompareMatcher;
 
 import java.io.ByteArrayInputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
 import java.nio.charset.StandardCharsets;
+import java.text.Normalizer;
 
 /**
  *
@@ -98,5 +111,73 @@ public class ZDBTest {
             sb.append("endRecord").append("\n");
         }
 
+    }
+
+    /**
+     * ZDB MARC Bibliographic.
+     */
+
+    @Test
+    public void testZDBBib() throws Exception {
+        String s = "zdbtitutf8.mrc";
+        InputStream in = getClass().getResource(s).openStream();
+        File file = File.createTempFile(s, ".json");
+        file.deleteOnExit();
+        OutputStream out = new FileOutputStream(file);
+        MarcValueTransformers marcValueTransformers = new MarcValueTransformers();
+        marcValueTransformers.setMarcValueTransformer(value -> Normalizer.normalize(value, Normalizer.Form.NFC));
+        try (MarcJsonWriter writer = new MarcJsonWriter(out, true)
+                .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)
+                .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)
+                .setMarcValueTransformers(marcValueTransformers)) {
+            Marc.builder()
+                    .setInputStream(in)
+                    .setMarcListener(writer)
+                    .build()
+                    .writeCollection();
+            assertNull(writer.getException());
+        }
+    }
+
+    @Test
+    public void testZDBStream() throws IOException {
+        String s = "zdblokutf8.mrc";
+        InputStream in = getClass().getResource(s).openStream();
+        long count = Marc.builder()
+                .setInputStream(in)
+                .setCharset(StandardCharsets.UTF_8)
+                .build().iso2709Stream().chunks().count();
+        in.close();
+        assertEquals(10170L, count);
+
+        in = getClass().getResource(s).openStream();
+        Marc.builder()
+                .setInputStream(in)
+                .setCharset(StandardCharsets.UTF_8)
+                .build().iso2709Stream().chunks()
+                .forEach(chunk -> assertTrue(chunk.data().length() >= 0));
+        in.close();
+    }
+
+    @Test
+    public void testZDBLok() throws Exception {
+        String s = "zdblokutf8.mrc";
+        InputStream in = getClass().getResource(s).openStream();
+        File file = File.createTempFile(s + ".", ".xml");
+        file.deleteOnExit();
+        FileOutputStream out = new FileOutputStream(file);
+        MarcValueTransformers marcValueTransformers = new MarcValueTransformers();
+        marcValueTransformers.setMarcValueTransformer(value -> Normalizer.normalize(value, Normalizer.Form.NFC));
+        try (MarcXchangeWriter writer = new MarcXchangeWriter(out)
+                .setMarcValueTransformers(marcValueTransformers)) {
+            Marc.builder()
+                    .setInputStream(in)
+                    .setCharset(StandardCharsets.UTF_8)
+                    .setMarcListener(writer)
+                    .build()
+                    .writeCollection();
+            assertNull(writer.getException());
+        }
+        assertThat(file, CompareMatcher.isIdenticalTo(getClass().getResource(s + ".xml").openStream()));
     }
 }

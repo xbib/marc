@@ -58,6 +58,9 @@ public class MarcValueTransformers {
         if (transformer != null) {
             MarcField.Builder builder = MarcField.builder();
             builder.tag(field.getTag()).indicator(field.getIndicator());
+            if (field.getValue() != null) {
+                builder.value(transformer.transform(field.getValue()));
+            }
             field.getSubfields().forEach(subfield ->
                     builder.subfield(subfield.getId(), transformer.transform(subfield.getValue())));
             return builder.build();

@@ -178,13 +178,13 @@ public class MarcJsonWriterTest {
                 .writeCollection();
         assertEquals(10, writer.getRecordCounter());
         File f0 = new File("build/0.json");
-        assertTrue(f0.exists() && f0.length() == 6022);
+        assertTrue(f0.exists() && f0.length() == 6015);
         File f1 = new File("build/1.json");
-        assertTrue(f1.exists() && f1.length() == 7150);
+        assertTrue(f1.exists() && f1.length() == 7127);
         File f2 = new File("build/2.json");
-        assertTrue(f2.exists() && f2.length() == 6424);
+        assertTrue(f2.exists() && f2.length() == 6426);
         File f3 = new File("build/3.json");
-        assertTrue(f3.exists() && f3.length() == 2114);
+        assertTrue(f3.exists() && f3.length() == 2110);
         File f4 = new File("build/4.json");
         assertFalse(f4.exists());
     }

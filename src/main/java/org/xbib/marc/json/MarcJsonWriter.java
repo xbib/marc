@@ -21,10 +21,12 @@ import org.xbib.marc.MarcField;
 import org.xbib.marc.MarcListener;
 import org.xbib.marc.MarcRecord;
 import org.xbib.marc.label.RecordLabel;
+import org.xbib.marc.transformer.value.MarcValueTransformers;
 import org.xbib.marc.xml.MarcContentHandler;
 
 import java.io.BufferedWriter;
 import java.io.Closeable;
+import java.io.FileWriter;
 import java.io.Flushable;
 import java.io.IOException;
 import java.io.OutputStream;
@@ -32,8 +34,6 @@ import java.io.OutputStreamWriter;
 import java.io.UncheckedIOException;
 import java.io.Writer;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
@@ -42,6 +42,8 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * This Marc Writer is a MarcContentHandler that writes Marc events to JSON.
@@ -49,6 +51,8 @@ import java.util.logging.Logger;
 public class MarcJsonWriter extends MarcContentHandler implements Flushable, Closeable {
 
     private static final Logger logger = Logger.getLogger(MarcJsonWriter.class.getName());
+
+    private static final int DEFAULT_BUFFER_SIZE = 8192;
 
     public static final String LEADER_TAG = "_LEADER";
 
@@ -76,6 +80,8 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
 
     private int splitlimit;
 
+    private int bufferSize;
+
     /**
      * Flag for indicating if writer is at top of file.
      */
@@ -86,15 +92,20 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
     }
 
     public MarcJsonWriter(OutputStream out, boolean jsonlines) throws IOException {
-        this(new OutputStreamWriter(out, StandardCharsets.UTF_8), jsonlines);
+        this(out, DEFAULT_BUFFER_SIZE, jsonlines);
+    }
+
+    public MarcJsonWriter(OutputStream out, int bufferSize, boolean jsonlines) throws IOException {
+        this(new OutputStreamWriter(out, StandardCharsets.UTF_8), bufferSize, jsonlines);
     }
 
     public MarcJsonWriter(Writer writer) throws IOException {
-        this(writer, false);
+        this(writer, DEFAULT_BUFFER_SIZE, false);
     }
 
-    public MarcJsonWriter(Writer writer, boolean jsonlines) throws IOException {
-        this.writer = new BufferedWriter(writer);
+    public MarcJsonWriter(Writer writer, int bufferSize, boolean jsonlines) throws IOException {
+        this.writer = new BufferedWriter(writer, bufferSize);
+        this.bufferSize = bufferSize;
         this.jsonlines = jsonlines;
         this.lock = new ReentrantLock();
         this.sb = new StringBuilder();
@@ -103,19 +114,20 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
     }
 
     public MarcJsonWriter(String fileNamePattern, int splitlimit) throws IOException {
+        this(fileNamePattern, DEFAULT_BUFFER_SIZE, splitlimit);
+    }
+
+    public MarcJsonWriter(String fileNamePattern, int bufferSize, int splitlimit) throws IOException {
         this.fileNameCounter = new AtomicInteger(0);
         this.fileNamePattern = fileNamePattern;
         this.splitlimit = splitlimit;
-        this.writer = newWriter(fileNamePattern, fileNameCounter);
+        this.writer = newWriter(fileNamePattern, fileNameCounter, bufferSize);
+        this.bufferSize = bufferSize;
         this.lock = new ReentrantLock();
         this.sb = new StringBuilder();
         this.builder = Marc.builder();
         this.top = true;
         this.jsonlines = true;
-    }
-
-    private static String escape(String value) {
-        return value != null ? value.replaceAll("\"", "\\\"") : null;
     }
 
     public MarcJsonWriter setFatalErrors(boolean fatalErrors) {
@@ -126,6 +138,11 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
     @Override
     public MarcJsonWriter setMarcListener(MarcListener listener) {
         super.setMarcListener(listener);
+        return this;
+    }
+
+    public MarcJsonWriter setMarcValueTransformers(MarcValueTransformers marcValueTransformers) {
+        super.setMarcValueTransformers(marcValueTransformers);
         return this;
     }
 
@@ -171,7 +188,11 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
     @Override
     public void field(MarcField field) {
         super.field(field);
-        builder.addField(field);
+        MarcField marcField = field;
+        if (marcValueTransformers != null) {
+            marcField = marcValueTransformers.transformValue(field);
+        }
+        builder.addField(marcField);
     }
 
     @Override
@@ -387,7 +408,7 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
                 try {
                     endCollection();
                     close();
-                    writer = newWriter(fileNamePattern, fileNameCounter);
+                    writer = newWriter(fileNamePattern, fileNameCounter, bufferSize);
                     top = true;
                     beginCollection();
                 } catch (IOException e) {
@@ -397,8 +418,18 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
         }
     }
 
-    private static BufferedWriter newWriter(String fileNamePattern, AtomicInteger fileNameCounter) throws IOException {
-        return Files.newBufferedWriter(Paths.get(String.format(fileNamePattern, fileNameCounter.getAndIncrement())));
+    private static BufferedWriter newWriter(String fileNamePattern, AtomicInteger fileNameCounter, int bufferSize)
+            throws IOException {
+        String s = String.format(fileNamePattern, fileNameCounter.getAndIncrement());
+        return new BufferedWriter(new FileWriter(s), bufferSize);
+    }
+
+    private static final Pattern p = Pattern.compile("\"", Pattern.LITERAL);
+
+    private static final String replacement = "\\\"";
+
+    private static String escape(String value) {
+        return p.matcher(value).replaceAll(Matcher.quoteReplacement(replacement));
     }
 
 }
