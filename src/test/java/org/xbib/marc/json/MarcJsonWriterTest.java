@@ -18,6 +18,7 @@ package org.xbib.marc.json;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 import static org.xbib.helper.StreamMatcher.assertStream;
 
@@ -143,7 +144,7 @@ public class MarcJsonWriterTest {
         File file = File.createTempFile(s + ".", ".json");
         file.deleteOnExit();
         FileOutputStream out = new FileOutputStream(file);
-        try (MarcJsonWriter writer = new MarcJsonWriter(out, true)
+        try (MarcJsonWriter writer = new MarcJsonWriter(out, MarcJsonWriter.Style.LINES)
                 .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)
                 .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)
         ) {
@@ -168,15 +169,17 @@ public class MarcJsonWriterTest {
         InputStream in = getClass().getResource("/org/xbib/marc//" + s).openStream();
         MarcValueTransformers marcValueTransformers = new MarcValueTransformers();
         marcValueTransformers.setMarcValueTransformer(value -> Normalizer.normalize(value, Normalizer.Form.NFC));
-        MarcJsonWriter writer = new MarcJsonWriter("build/%d.json", 3);
-        writer.setMarcValueTransformers(marcValueTransformers);
-        Marc.builder()
-                .setInputStream(in)
-                .setCharset(Charset.forName("ANSEL"))
-                .setMarcListener(writer)
-                .build()
-                .writeCollection();
-        assertEquals(10, writer.getRecordCounter());
+        try (MarcJsonWriter writer = new MarcJsonWriter("build/%d.json", 3)) {
+            writer.setMarcValueTransformers(marcValueTransformers);
+            Marc.builder()
+                    .setInputStream(in)
+                    .setCharset(Charset.forName("ANSEL"))
+                    .setMarcListener(writer)
+                    .build()
+                    .writeCollection();
+            assertEquals(10, writer.getRecordCounter());
+            assertNull(writer.getException());
+        }
         File f0 = new File("build/0.json");
         assertTrue(f0.exists() && f0.length() == 6015);
         File f1 = new File("build/1.json");
@@ -187,6 +190,76 @@ public class MarcJsonWriterTest {
         assertTrue(f3.exists() && f3.length() == 2110);
         File f4 = new File("build/4.json");
         assertFalse(f4.exists());
+    }
+
+    @Test
+    public void elasticsearchBulkFormat() throws Exception {
+        String s = "IRMARC8.bin";
+        InputStream in = getClass().getResource("/org/xbib/marc//" + s).openStream();
+        MarcValueTransformers marcValueTransformers = new MarcValueTransformers();
+        marcValueTransformers.setMarcValueTransformer(value -> Normalizer.normalize(value, Normalizer.Form.NFC));
+        try (MarcJsonWriter writer = new MarcJsonWriter("build/bulk%d.jsonl", 3, MarcJsonWriter.Style.ELASTICSEARCH_BULK)
+                .setIndex("testindex", "testtype")) {
+            writer.setMarcValueTransformers(marcValueTransformers);
+            Marc.builder()
+                    .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)
+                    .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)
+                    .setInputStream(in)
+                    .setCharset(Charset.forName("ANSEL"))
+                    .setMarcListener(writer)
+                    .build()
+                    .writeCollection();
+            assertNull(writer.getException());
+            assertEquals(10, writer.getRecordCounter());
+        }
+        File f0 = new File("build/bulk0.jsonl");
+        assertTrue(f0.exists() && f0.length() == 6295);
+        File f1 = new File("build/bulk1.jsonl");
+        assertTrue(f1.exists() && f1.length() == 7407);
+        File f2 = new File("build/bulk2.jsonl");
+        assertTrue(f2.exists() && f2.length() == 6706);
+        File f3 = new File("build/bulk3.jsonl");
+        assertTrue(f3.exists() && f3.length() == 2204);
+        File f4 = new File("build/bulk4.jsonl");
+        assertFalse(f4.exists());
+    }
+
+    @Test
+    public void elasticsearchBulkFormatCompressed() throws Exception {
+        String s = "IRMARC8.bin";
+        InputStream in = getClass().getResource("/org/xbib/marc//" + s).openStream();
+        MarcValueTransformers marcValueTransformers = new MarcValueTransformers();
+        marcValueTransformers.setMarcValueTransformer(value -> Normalizer.normalize(value, Normalizer.Form.NFC));
+        // split at 3, Elasticsearch bulk format, buffer size 65536, compress = true
+        try (MarcJsonWriter writer = new MarcJsonWriter("build/bulk%d.jsonl.gz", 3,
+                MarcJsonWriter.Style.ELASTICSEARCH_BULK, 65536, true)
+                .setIndex("testindex", "testtype")) {
+            writer.setMarcValueTransformers(marcValueTransformers);
+            Marc.builder()
+                    .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)
+                    .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)
+                    .setInputStream(in)
+                    .setCharset(Charset.forName("ANSEL"))
+                    .setMarcListener(writer)
+                    .build()
+                    .writeCollection();
+            assertNull(writer.getException());
+            assertEquals(10, writer.getRecordCounter());
+            File f0 = new File("build/bulk0.jsonl.gz");
+            assertTrue(f0.exists());
+            assertEquals(2141, f0.length());
+            File f1 = new File("build/bulk1.jsonl.gz");
+            assertTrue(f1.exists());
+            assertEquals(2605, f1.length());
+            File f2 = new File("build/bulk2.jsonl.gz");
+            assertTrue(f2.exists());
+            assertEquals(2667, f2.length());
+            File f3 = new File("build/bulk3.jsonl.gz");
+            assertTrue(f3.exists());
+            assertEquals(1021, f3.length()); // but, it's 1031???
+            File f4 = new File("build/bulk4.jsonl.gz");
+            assertFalse(f4.exists());
+        }
     }
 
 }

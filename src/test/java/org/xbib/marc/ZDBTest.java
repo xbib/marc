@@ -126,7 +126,7 @@ public class ZDBTest {
         OutputStream out = new FileOutputStream(file);
         MarcValueTransformers marcValueTransformers = new MarcValueTransformers();
         marcValueTransformers.setMarcValueTransformer(value -> Normalizer.normalize(value, Normalizer.Form.NFC));
-        try (MarcJsonWriter writer = new MarcJsonWriter(out, true)
+        try (MarcJsonWriter writer = new MarcJsonWriter(out, MarcJsonWriter.Style.LINES)
                 .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)
                 .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)
                 .setMarcValueTransformers(marcValueTransformers)) {
