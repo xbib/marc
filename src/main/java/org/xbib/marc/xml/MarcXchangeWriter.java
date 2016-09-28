@@ -19,8 +19,10 @@ package org.xbib.marc.xml;
 import org.xbib.marc.MarcField;
 import org.xbib.marc.MarcListener;
 import org.xbib.marc.MarcRecord;
+import org.xbib.marc.json.MarcJsonWriter;
 import org.xbib.marc.transformer.value.MarcValueTransformers;
 
+import java.io.BufferedOutputStream;
 import java.io.Closeable;
 import java.io.Flushable;
 import java.io.IOException;
@@ -31,6 +33,7 @@ import java.io.Writer;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Iterator;
@@ -41,6 +44,8 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.zip.Deflater;
+import java.util.zip.GZIPOutputStream;
 
 import javax.xml.XMLConstants;
 import javax.xml.namespace.QName;
@@ -59,6 +64,8 @@ import javax.xml.stream.util.XMLEventConsumer;
 public class MarcXchangeWriter extends MarcContentHandler implements Flushable, Closeable {
 
     private static final Logger logger = Logger.getLogger(MarcXchangeWriter.class.getName());
+
+    private static final int DEFAULT_BUFFER_SIZE = 65536;
 
     private static final String NAMESPACE_URI = MARCXCHANGE_V2_NS_URI;
 
@@ -110,6 +117,10 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
 
     private int splitlimit;
 
+    private int bufferSize;
+
+    private boolean compress;
+
     /**
      * Create a MarcXchange writer on an underlying output stream.
      * @param out the underlying output stream
@@ -147,6 +158,7 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
     public MarcXchangeWriter(Writer writer, boolean indent) throws IOException {
         this.writer = writer;
         this.indent = indent;
+        this.bufferSize = DEFAULT_BUFFER_SIZE;
         this.lock = new ReentrantLock();
         this.documentStarted = false;
         this.collectionStarted = false;
@@ -157,22 +169,27 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
 
     /**
      * Create a MarcXchange writer in "split writer" mode.
-     * @param indent if true, indent MarcXchange output
      * @param fileNamePattern file name pattern
      * @param splitlimit split write limit
+     * @param bufferSize buffer size
+     * @param compress if true, compress MarcXchange output
+     * @param indent if true, indent MarcXchange output
      * @throws IOException if writer can not be created
      */
-    public MarcXchangeWriter(boolean indent, String fileNamePattern, int splitlimit) throws IOException {
+    public MarcXchangeWriter(String fileNamePattern, int splitlimit, int bufferSize, boolean compress, boolean indent)
+            throws IOException {
         this.fileNameCounter = new AtomicInteger(0);
         this.fileNamePattern = fileNamePattern;
         this.splitlimit = splitlimit;
-        this.lock = new ReentrantLock();
-        this.writer = newWriter(fileNamePattern, fileNameCounter);
+        this.bufferSize = bufferSize;
+        this.compress = compress;
         this.indent = indent;
+        this.lock = new ReentrantLock();
         this.documentStarted = false;
         this.collectionStarted = false;
         this.eventFactory = XMLEventFactory.newInstance();
         this.namespace = eventFactory.createNamespace("", NAMESPACE_URI);
+        newWriter(fileNamePattern, fileNameCounter, bufferSize, compress);
         setupEventConsumer(writer, indent);
     }
 
@@ -473,7 +490,7 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
                 try {
                     endCollection();
                     writer.close();
-                    writer = newWriter(fileNamePattern, fileNameCounter);
+                    newWriter(fileNamePattern, fileNameCounter, bufferSize, compress);
                     setupEventConsumer(writer, indent);
                     beginCollection();
                 } catch (IOException e) {
@@ -483,8 +500,15 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
         }
     }
 
-    private static Writer newWriter(String fileNamePattern, AtomicInteger fileNameCounter) throws IOException {
-        return Files.newBufferedWriter(Paths.get(String.format(fileNamePattern, fileNameCounter.getAndIncrement())));
+    private void newWriter(String fileNamePattern, AtomicInteger fileNameCounter,
+                                    int bufferSize, boolean compress)
+            throws IOException {
+        String name = String.format(fileNamePattern, fileNameCounter.getAndIncrement());
+        OutputStream out = Files.newOutputStream(Paths.get(name), StandardOpenOption.CREATE,
+                StandardOpenOption.TRUNCATE_EXISTING);
+        writer = new OutputStreamWriter(compress ?
+                new CompressedOutputStream(out, bufferSize) :
+                new BufferedOutputStream(out, bufferSize), StandardCharsets.UTF_8);
     }
 
     private void setupEventConsumer(Writer writer, boolean indent) throws IOException {
@@ -512,6 +536,17 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
         exception = e;
         if (fatalErrors) {
             throw new UncheckedIOException(e);
+        }
+    }
+
+    /**
+     * A GZIP output stream, modified for best compression.
+     */
+    private static class CompressedOutputStream extends GZIPOutputStream {
+
+        CompressedOutputStream(OutputStream out, int size) throws IOException {
+            super(out, size, true);
+            def.setLevel(Deflater.BEST_COMPRESSION);
         }
     }
 }

@@ -23,9 +23,11 @@ import org.xbib.marc.xml.MarcXchangeWriter;
 import org.xmlunit.matchers.CompareMatcher;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.text.Normalizer;
+import java.util.zip.GZIPInputStream;
 
 /**
  *
@@ -33,19 +35,21 @@ import java.text.Normalizer;
 public class MarcXchangeWriterTest extends Assert {
 
     @Test
-    public void splitMARC() throws Exception {
+    public void splitMarcXchange() throws Exception {
         String s = "IRMARC8.bin";
         InputStream in = getClass().getResource("/org/xbib/marc//" + s).openStream();
         MarcValueTransformers marcValueTransformers = new MarcValueTransformers();
         marcValueTransformers.setMarcValueTransformer(value -> Normalizer.normalize(value, Normalizer.Form.NFC));
-        MarcXchangeWriter writer = new MarcXchangeWriter(true, "build/%d.xml", 3)
-                .setMarcValueTransformers(marcValueTransformers);
-        Marc.builder()
-                .setInputStream(in)
-                .setCharset(Charset.forName("ANSEL"))
-                .setMarcListener(writer)
-                .build()
-                .writeCollection();
+        // fileNamePattern, splitSize, bufferSize, compress, indent
+        try (MarcXchangeWriter writer = new MarcXchangeWriter("build/%d.xml", 3, 65536, false, true)
+                .setMarcValueTransformers(marcValueTransformers)) {
+            Marc.builder()
+                    .setInputStream(in)
+                    .setCharset(Charset.forName("ANSEL"))
+                    .setMarcListener(writer)
+                    .build()
+                    .writeCollection();
+        }
         File f0 = new File("build/0.xml");
         assertThat(f0, CompareMatcher.isIdenticalTo(getClass().getResource("0.xml").openStream()));
         File f1 = new File("build/1.xml");
@@ -58,4 +62,35 @@ public class MarcXchangeWriterTest extends Assert {
         assertFalse(f4.exists());
     }
 
+    @Test
+    public void splitMarcXchangeCompressed() throws Exception {
+        String s = "IRMARC8.bin";
+        InputStream in = getClass().getResource("/org/xbib/marc//" + s).openStream();
+        MarcValueTransformers marcValueTransformers = new MarcValueTransformers();
+        marcValueTransformers.setMarcValueTransformer(value -> Normalizer.normalize(value, Normalizer.Form.NFC));
+        // fileNamePattern, splitSize, bufferSize, compress, indent
+        try (MarcXchangeWriter writer = new MarcXchangeWriter("build/%d.xml.gz", 3, 65536, true, true)
+                .setMarcValueTransformers(marcValueTransformers)) {
+            Marc.builder()
+                    .setInputStream(in)
+                    .setCharset(Charset.forName("ANSEL"))
+                    .setMarcListener(writer)
+                    .build()
+                    .writeCollection();
+        }
+        File f0 = new File("build/0.xml.gz");
+        assertThat(new GZIPInputStream(new FileInputStream(f0)),
+                CompareMatcher.isIdenticalTo(getClass().getResource("0.xml").openStream()));
+        File f1 = new File("build/1.xml.gz");
+        assertThat(new GZIPInputStream(new FileInputStream(f1)),
+                CompareMatcher.isIdenticalTo(getClass().getResource("1.xml").openStream()));
+        File f2 = new File("build/2.xml.gz");
+        assertThat(new GZIPInputStream(new FileInputStream(f2)),
+                CompareMatcher.isIdenticalTo(getClass().getResource("2.xml").openStream()));
+        File f3 = new File("build/3.xml.gz");
+        assertThat(new GZIPInputStream(new FileInputStream(f3)),
+                CompareMatcher.isIdenticalTo(getClass().getResource("3.xml").openStream()));
+        File f4 = new File("build/4.xml.gz");
+        assertFalse(f4.exists());
+    }
 }

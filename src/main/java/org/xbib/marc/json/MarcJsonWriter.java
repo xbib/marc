@@ -505,7 +505,7 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
     }
 
     /**
-     *
+     * A GZIP output stream, modified for best compression.
      */
     private static class CompressedOutputStream extends GZIPOutputStream {
 
