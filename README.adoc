@@ -42,6 +42,8 @@ Provided are writers for XML, stylesheet transformations (MODS), and a JSON writ
 key/value-oriented JSON, suitable for indexing into Elasticsearch. Indexing into Elasticsearch is not
 part of this package.
 
+### ISO 2709 to MarcXchange
+
 Here is a code example for reading from an ISO 2709 stream and writing into a MarcXchange collection.
 
 [source,java]
@@ -55,6 +57,8 @@ try (MarcXchangeWriter writer = new MarcXchangeWriter(out)) {
             .writeCollection();
 }
 ----
+
+### MARC to MODS
 
 Here is an example to create MODS from an ISO 2709 stream
 
@@ -71,6 +75,8 @@ System.setProperty("http.agent", "Java Agent");
 marc.transform(new URL("http://www.loc.gov/standards/mods/v3/MARC21slim2MODS3.xsl"), result);
 ----
 
+### MARC to Aleph sequential
+
 And here is an example showing how records in "Aleph Sequential") can be parsed
 and written into a MarcXchange collection:
 
@@ -86,6 +92,8 @@ try (MarcXchangeWriter writer = new MarcXchangeWriter(out, true)
     marc.wrapIntoCollection(marc.aleph());
 }
 ----
+
+### MARC in Elasticsearch
 
 Another example, writing compressed Elasticsearch bulk format JSON from an ANSEL MARC input stream:
 
