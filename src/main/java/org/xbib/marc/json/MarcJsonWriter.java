@@ -55,15 +55,15 @@ import java.util.zip.GZIPOutputStream;
  */
 public class MarcJsonWriter extends MarcContentHandler implements Flushable, Closeable {
 
-    private static final Logger logger = Logger.getLogger(MarcJsonWriter.class.getName());
-
-    private static final int DEFAULT_BUFFER_SIZE = 65536;
-
     public static final String LEADER_TAG = "_LEADER";
 
     public static final String FORMAT_TAG = "_FORMAT";
 
     public static final String TYPE_TAG = "_TYPE";
+
+    private static final Logger logger = Logger.getLogger(MarcJsonWriter.class.getName());
+
+    private static final int DEFAULT_BUFFER_SIZE = 65536;
 
     private final Lock lock;
 
@@ -451,17 +451,15 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
      * Split records, if configured.
      */
     private void afterRecord() {
-        if (fileNamePattern != null) {
-            if (getRecordCounter() % splitlimit == 0) {
-                try {
-                    endCollection();
-                    close();
-                    newWriter(fileNamePattern, fileNameCounter, bufferSize, compress);
-                    top = true;
-                    beginCollection();
-                } catch (IOException e) {
-                    logger.log(Level.SEVERE, e.getMessage(), e);
-                }
+        if (fileNamePattern != null && getRecordCounter() % splitlimit == 0) {
+            try {
+                endCollection();
+                close();
+                newWriter(fileNamePattern, fileNameCounter, bufferSize, compress);
+                top = true;
+                beginCollection();
+            } catch (IOException e) {
+                logger.log(Level.SEVERE, e.getMessage(), e);
             }
         }
     }
@@ -476,12 +474,17 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
                 new BufferedOutputStream(out, bufferSize), StandardCharsets.UTF_8);
     }
 
-    private static final Pattern p = Pattern.compile("\"", Pattern.LITERAL);
+    private static final Pattern quotePattern = Pattern.compile("\"", Pattern.LITERAL);
 
-    private static final String replacement = "\\\"";
+    private static final String escapeQuote = "\\\"";
+
+    private static final Pattern backslashPattern = Pattern.compile("\\\\");
+
+    private static final String escapeBackslash = "\\\\";
 
     private static String escape(String value) {
-        return p.matcher(value).replaceAll(Matcher.quoteReplacement(replacement));
+        String s = backslashPattern.matcher(value).replaceAll(Matcher.quoteReplacement(escapeBackslash));
+        return quotePattern.matcher(s).replaceAll(Matcher.quoteReplacement(escapeQuote));
     }
 
     private void writeMetaDataLine(MarcRecord marcRecord) {

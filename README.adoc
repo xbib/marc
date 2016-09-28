@@ -1,3 +1,7 @@
+// Use attribute to shorten urls
+:repo: https://github.com/xbib/marc
+:img: {repo}/raw/master/src.jbake/assets/images
+
 # xbib MARC
 
 ## Bibliographic data processing library for Java
@@ -126,6 +130,10 @@ done
 The result is a very basic MARC field based index, which is cumbersome to configure, search and analyze.
 In upcoming projects, I will show how to turn MARC into semantic data with context,
 and indexing such data makes much more sense and is also more fun.
+
+By executing `curl localhost:9200/_search?pretty` you can examine the result.
+
+image:{img}/marcxchange-in-elasticsearch.png[]
 
 ## Bibliographic character sets
 
