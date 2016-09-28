@@ -1,6 +1,6 @@
 // Use attribute to shorten urls
 :repo: https://github.com/xbib/marc
-:img: {repo}/raw/master/src.jbake/assets/images
+:img: {repo}/raw/master/src/jbake/assets/images
 
 # xbib MARC
 
