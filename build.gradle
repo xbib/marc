@@ -1,12 +1,8 @@
 plugins {
-    id "org.sonarqube" version "2.1-rc1"
-    id "org.ajoberstar.github-pages" version "1.5.1"
-    id "org.xbib.gradle.plugin.jbake" version "1.1.0"
+    id "org.sonarqube" version "2.2"
+    id "org.ajoberstar.github-pages" version "1.6.0-rc.1"
+    id "org.xbib.gradle.plugin.jbake" version "1.2.1"
 }
-
-println "Host: " + java.net.InetAddress.getLocalHost()
-println "Gradle: " + gradle.gradleVersion + " JVM: " + org.gradle.internal.jvm.Jvm.current() + " Groovy: " + GroovySystem.getVersion()
-println "Build: group: '${project.group}', name: '${project.name}', version: '${project.version}'"
 
 apply plugin: 'java'
 apply plugin: 'maven'
@@ -35,7 +31,7 @@ targetCompatibility = JavaVersion.VERSION_1_8
 
 [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 tasks.withType(JavaCompile) {
-    options.compilerArgs << "-Xlint:all"
+    options.compilerArgs << "-Xlint:all" << "-profile" << "compact2"
 }
 test {
     classpath += configurations.provided
