@@ -517,12 +517,27 @@ public class MarcField implements Comparable<MarcField> {
         }
 
         /**
+         * Has this MARC field subfields?
+         * @return true if subfields exist
+         */
+        public boolean hasSubfields() {
+            return !subfields.isEmpty();
+        }
+
+        /**
          * Build a MARC field.
          * @return the built MARC field.
          */
         public MarcField build() {
             return new MarcField(tag, indicator, position, length,
                     value, subfields, subfieldIds.toString(), isControl());
+        }
+
+        @Override
+        public String toString() {
+            return "tag=" + tag + ",indicator=" + indicator +
+                    ",value=" + value + ",subfields=" +
+                    subfields;
         }
     }
 

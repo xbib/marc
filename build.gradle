@@ -12,6 +12,9 @@ apply plugin: 'pmd'
 apply plugin: 'checkstyle'
 apply plugin: "jacoco"
 
+group = "org.xbib"
+version = "1.0.5"
+
 configurations {
     wagon
     provided
