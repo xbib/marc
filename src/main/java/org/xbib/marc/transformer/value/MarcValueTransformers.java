@@ -27,6 +27,8 @@ public class MarcValueTransformers {
 
     private final Map<String, MarcValueTransformer> marcValueTransformerMap = new HashMap<>();
 
+    private final Map<String, String> subfieldMap = new HashMap<>();
+
     public MarcValueTransformers setMarcValueTransformer(MarcValueTransformer transformer) {
         this.marcValueTransformerMap.put("_default", transformer);
         return this;
@@ -39,7 +41,13 @@ public class MarcValueTransformers {
      * @return this handler
      */
     public MarcValueTransformers setMarcValueTransformer(String fieldKey, MarcValueTransformer transformer) {
-        this.marcValueTransformerMap.put(fieldKey, transformer);
+        // split into  tag + indicator and subfield IDs
+        int pos = fieldKey.lastIndexOf('$');
+        String tagind = pos > 0 ? fieldKey.substring(0, pos) : fieldKey;
+        String subs = pos > 0 ? fieldKey.substring(pos + 1) : "";
+        this.marcValueTransformerMap.put(tagind, transformer);
+        // subfield IDs
+        this.subfieldMap.put(tagind, subs);
         return this;
     }
 
@@ -49,7 +57,7 @@ public class MarcValueTransformers {
      * @return a new MARC field with transformed values
      */
     public MarcField transformValue(MarcField field) {
-        String key = field.toKey();
+        String key = field.toTagIndicatorKey();
         if (marcValueTransformerMap.isEmpty()) {
             return field;
         }
@@ -61,8 +69,11 @@ public class MarcValueTransformers {
             if (field.getValue() != null) {
                 builder.value(transformer.transform(field.getValue()));
             }
+            // select only subfields configured for this tag
+            String subs = subfieldMap.containsKey(key) ? subfieldMap.get(key) : field.getSubfieldIds();
             field.getSubfields().forEach(subfield ->
-                    builder.subfield(subfield.getId(), transformer.transform(subfield.getValue())));
+                    builder.subfield(subfield.getId(), subs.contains(subfield.getId()) ?
+                                    transformer.transform(subfield.getValue()) : subfield.getValue()));
             return builder.build();
         }
         return field;

@@ -224,13 +224,12 @@ public class MarcField implements Comparable<MarcField> {
 
     /**
      * A MARC field can be denoted by a key, independent of values.
-     * This key is a string, consisting of tag, indicator, subfield IDs, delimited by a dollar sign.
+     * This key is a string, consisting of the tag.
      *
-     * @return the key of this MARC field
+     * @return the tag-based key of this MARC field
      */
-    public String toKey() {
-        return (tag == null ? EMPTY_STRING : tag) + KEY_DELIMITER + (indicator == null ? EMPTY_STRING : indicator) +
-                KEY_DELIMITER + subfieldIds;
+    public String toTagKey() {
+        return tag == null ? EMPTY_STRING : tag;
     }
 
     /**
@@ -244,13 +243,22 @@ public class MarcField implements Comparable<MarcField> {
     }
 
     /**
-     * A MARC field can be denoted by a key, independent of values.
-     * This key is a string, consisting of the tag.
-     *
-     * @return the tag-based key of this MARC field
+     * Return subfield IDs.
+     * @return the subfield ID list as a string.
      */
-    public String toTagKey() {
-        return tag == null ? EMPTY_STRING : tag;
+    public String getSubfieldIds() {
+        return subfieldIds;
+    }
+
+    /**
+     * A MARC field can be denoted by a key, independent of values.
+     * This key is a string, consisting of tag, indicator, subfield IDs, delimited by a dollar sign.
+     *
+     * @return the key of this MARC field
+     */
+    public String toKey() {
+        return (tag == null ? EMPTY_STRING : tag) + KEY_DELIMITER + (indicator == null ? EMPTY_STRING : indicator) +
+                KEY_DELIMITER + subfieldIds;
     }
 
     @Override
