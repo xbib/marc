@@ -31,7 +31,8 @@ configurations {
 
 dependencies {
     testCompile 'junit:junit:4.12'
-    testCompile 'org.xmlunit:xmlunit-matchers:2.2.1'
+    testCompile 'xalan:xalan:2.7.1'
+    testCompile 'org.xmlunit:xmlunit-matchers:2.3.0'
     testCompile 'com.github.stefanbirkner:system-rules:1.16.0'
     testCompile "org.xbib:bibliographic-character-sets:1.0.0"
     wagon 'org.apache.maven.wagon:wagon-ssh-external:2.10'
@@ -45,6 +46,8 @@ tasks.withType(JavaCompile) {
     options.compilerArgs << "-Xlint:all" << "-profile" << "compact2"
 }
 test {
+    // massive heap for for xmlunit DOM comparer
+    jvmArgs '-Xmx2048m'
     testLogging {
         showStandardStreams = true
         exceptionFormat = 'full'

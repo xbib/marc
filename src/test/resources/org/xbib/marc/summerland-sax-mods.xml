@@ -29,14 +29,14 @@
     <abstract type="Summary">Ethan Feld, the worst baseball player in the history of the game, finds himself recruited by a 100-year-old scout to help a band of fairies triumph over an ancient enemy.</abstract>
     <targetAudience authority="marctarget">juvenile</targetAudience>
     <note type="statement of responsibility" altRepGroup="00">Michael Chabon.</note>
-    <subject>
+    <subject authority="lcshac">
         <topic>Fantasy</topic>
     </subject>
-    <subject>
+    <subject authority="lcshac">
         <topic>Baseball</topic>
         <genre>Fiction</genre>
     </subject>
-    <subject>
+    <subject authority="lcshac">
         <topic>Magic</topic>
         <genre>Fiction</genre>
     </subject>
