@@ -24,15 +24,7 @@ import org.xbib.marc.label.RecordLabel;
 import org.xbib.marc.transformer.value.MarcValueTransformers;
 import org.xbib.marc.xml.MarcContentHandler;
 
-import java.io.BufferedOutputStream;
-import java.io.BufferedWriter;
-import java.io.Closeable;
-import java.io.Flushable;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
-import java.io.UncheckedIOException;
-import java.io.Writer;
+import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -64,35 +56,24 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
     private static final Logger logger = Logger.getLogger(MarcJsonWriter.class.getName());
 
     private static final int DEFAULT_BUFFER_SIZE = 65536;
-
+    private static final Pattern quotePattern = Pattern.compile("\"", Pattern.LITERAL);
+    private static final Pattern backslashPattern = Pattern.compile("\\\\");
+    private static final String ESCAPE_QUOTE = "\\\"";
+    private static final String ESCAPE_BACKSLASH = "\\\\";
     private final Lock lock;
-
     private final StringBuilder sb;
-
     private Writer writer;
-
     private Marc.Builder builder;
-
     private boolean fatalErrors;
-
     private Style style;
-
     private Exception exception;
-
     private String fileNamePattern;
-
     private AtomicInteger fileNameCounter;
-
     private int splitlimit;
-
     private int bufferSize;
-
     private boolean compress;
-
     private String index;
-
     private String indexType;
-
     /**
      * Flag for indicating if writer is at top of file.
      */
@@ -147,6 +128,11 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
         newWriter(fileNamePattern, fileNameCounter, bufferSize, compress);
     }
 
+    private static String escape(String value) {
+        String s = backslashPattern.matcher(value).replaceAll(Matcher.quoteReplacement(ESCAPE_BACKSLASH));
+        return quotePattern.matcher(s).replaceAll(Matcher.quoteReplacement(ESCAPE_QUOTE));
+    }
+
     public MarcJsonWriter setIndex(String index, String indexType) {
         this.index = index;
         this.indexType = indexType;
@@ -164,6 +150,7 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
         return this;
     }
 
+    @Override
     public MarcJsonWriter setMarcValueTransformers(MarcValueTransformers marcValueTransformers) {
         super.setMarcValueTransformers(marcValueTransformers);
         return this;
@@ -465,26 +452,13 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
     }
 
     private void newWriter(String fileNamePattern, AtomicInteger fileNameCounter,
-                                            int bufferSize, boolean compress) throws IOException {
+                           int bufferSize, boolean compress) throws IOException {
         String name = String.format(fileNamePattern, fileNameCounter.getAndIncrement());
         OutputStream out = Files.newOutputStream(Paths.get(name), StandardOpenOption.CREATE,
                 StandardOpenOption.TRUNCATE_EXISTING);
         writer = new OutputStreamWriter(compress ?
                 new CompressedOutputStream(out, bufferSize) :
                 new BufferedOutputStream(out, bufferSize), StandardCharsets.UTF_8);
-    }
-
-    private static final Pattern quotePattern = Pattern.compile("\"", Pattern.LITERAL);
-
-    private static final String escapeQuote = "\\\"";
-
-    private static final Pattern backslashPattern = Pattern.compile("\\\\");
-
-    private static final String escapeBackslash = "\\\\";
-
-    private static String escape(String value) {
-        String s = backslashPattern.matcher(value).replaceAll(Matcher.quoteReplacement(escapeBackslash));
-        return quotePattern.matcher(s).replaceAll(Matcher.quoteReplacement(escapeQuote));
     }
 
     private void writeMetaDataLine(MarcRecord marcRecord) {
@@ -508,6 +482,13 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
     }
 
     /**
+     *
+     */
+    public enum Style {
+        ARRAY, LINES, ELASTICSEARCH_BULK
+    }
+
+    /**
      * A GZIP output stream, modified for best compression.
      */
     private static class CompressedOutputStream extends GZIPOutputStream {
@@ -516,13 +497,6 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
             super(out, size, true);
             def.setLevel(Deflater.BEST_COMPRESSION);
         }
-    }
-
-    /**
-     *
-     */
-    public enum Style {
-        ARRAY, LINES, ELASTICSEARCH_BULK
     }
 
 }

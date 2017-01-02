@@ -1,0 +1,15 @@
+org.xbib.marc
+org.xbib.marc.dialects.aleph
+org.xbib.marc.dialects.bibliomondo
+org.xbib.marc.dialects.mab.diskette
+org.xbib.marc.dialects.mab.xml
+org.xbib.marc.dialects.pica
+org.xbib.marc.dialects.sisis
+org.xbib.marc.io
+org.xbib.marc.json
+org.xbib.marc.label
+org.xbib.marc.tools
+org.xbib.marc.transformer
+org.xbib.marc.transformer.field
+org.xbib.marc.transformer.value
+org.xbib.marc.xml

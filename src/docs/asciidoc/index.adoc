@@ -1,0 +1,44 @@
+= MARC bibliographic data processing for Java
+Jörg Prante
+Version 1.0
+:sectnums:
+:toc: preamble
+:toclevels: 4
+:!toc-title: Content
+:experimental:
+:description: MARC bibliographic data processing
+:keywords: MARC, Java,  bibliographic data processing
+:icons: font
+
+== Introduction
+
+This is a Java library for processing bibliographic data in the following formats:
+
+- ISO 2709/Z39.2
+- MARC (USMARC, MARC 21, MARC XML)
+- MarcXchange (ISO 25577:2013)
+- UNIMARC
+- MAB (MAB2, MAB XML)
+- dialects of MARC (Aleph Sequential, Pica, SISIS format)
+
+The motivation of this library is to transport bibliographic data into XML or JSON based formats,
+with the focus on european/german application environment.
+
+The most known and widespread bibliographic data format is MARC, which stands for "machine readable cataloging"
+and was developed by the Library of Congress 1968. Inspired by the success of MARC, several other formats, mostly based
+on MARC, were developed in the 1970s, some very similar, some with significant differences. Most notable
+is the UNIMARC format, developed by IFLA.
+
+MARC does not offer the features of XML or JSON, it is not a document format
+or a format for the Web. MARC is stream-based "structured data", composed of fields in sequential order,
+and was targeted to write records on magnetic tape.
+Today, magnetic tape data distribution service is history. Also, file distribution via FTP, common in the 1990s,
+does not fit well into a highly linked and sophisticated  information infrastructure like the Semantic Web.
+
+== Javadoc
+
+The Javadoc can be found link:javadoc[here].
+
+== Gradle test report
+
+The Gradle test report can be found link:test[here].

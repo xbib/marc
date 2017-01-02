@@ -19,7 +19,9 @@ package org.xbib.marc;
 import org.xbib.marc.label.RecordLabel;
 
 /**
- *
+ * The Marc record adapter collects Marc field events, collects them in a Marc builder,
+ * and sends collected records to a Marc record listener. This is very handy for
+ * redirecting Marc parser to Marc writers that operate record-by-record.
  */
 public class MarcRecordAdapter implements MarcListener {
 

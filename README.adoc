@@ -1,17 +1,19 @@
 // Use attribute to shorten urls
 :repo: https://github.com/xbib/marc
-:img: {repo}/raw/master/src/jbake/assets/images
+:img: {repo}/raw/master/src/docs/asciidoc/img
 
-# xbib MARC
-
-## Bibliographic data processing library for Java
+# MARC Bibliographic data processing library for Java
 
 image:https://api.travis-ci.org/xbib/marc.svg[title="Build status", link="https://travis-ci.org/xbib/marc/"]
-image:https://img.shields.io/sonar/http/nemo.sonarqube.com/org.xbib:marc/coverage.svg?style=flat-square[title="Coverage", link="https://sonarqube.com/dashboard/index?id=org.xbib%3Amarc"]
 image:https://maven-badges.herokuapp.com/maven-central/org.xbib/marc/badge.svg[title="Maven Central", link="http://search.maven.org/#search%7Cga%7C1%7Cxbib%20marc"]
 image:https://img.shields.io/badge/License-Apache%202.0-blue.svg[title="Apache License 2.0", link="https://opensource.org/licenses/Apache-2.0"]
 image:https://img.shields.io/twitter/url/https/twitter.com/xbib.svg?style=social&label=Follow%20%40xbib[title="Twitter", link="https://twitter.com/xbib"]
-image:https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif[title="PayPal", link="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GVHFQYZ9WZ8HG"]
+
+image:https://sonarqube.com/api/badges/gate?key=org.xbib:marc[title="Quality Gate", link="https://sonarqube.com/dashboard/index?id=org.xbib%3Amarc"]
+image:https://sonarqube.com/api/badges/measure?key=org.xbib:marc&metric=coverage[title="Coverage", link="https://sonarqube.com/dashboard/index?id=org.xbib%3Amarc"]
+image:https://sonarqube.com/api/badges/measure?key=org.xbib:marc&metric=vulnerabilities[title="Vulnerabilities", link="https://sonarqube.com/dashboard/index?id=org.xbib%3Amarc"]
+image:https://sonarqube.com/api/badges/measure?key=org.xbib:marc&metric=bugs[title="Bugs", link="https://sonarqube.com/dashboard/index?id=org.xbib%3Amarc"]
+image:https://sonarqube.com/api/badges/measure?key=org.xbib:marc&metric=sqale_debt_ratio[title="Technical debt ratio", link="https://sonarqube.com/dashboard/index?id=org.xbib%3Amarc"]
 
 This is a Java library for processing bibliographic data in the following formats:
 
@@ -164,7 +166,7 @@ it is recommended to use http://github.com/xbib/bibliographic-character-sets if 
 You can use the library with Gradle
 
 ```
-    "org.xbib:marc:1.0.4"
+    "org.xbib:marc:1.0.7"
 ```
 
 or with Maven
@@ -173,7 +175,7 @@ or with Maven
    <dependency>
      <groupId>org.xbib</groupId>
      <artifactId>marc</artifactId>
-     <version>1.0.4</version>
+     <version>1.0.7</version>
    </dependency>
 ```
 
@@ -287,3 +289,5 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
+
+image:https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif[title="PayPal", link="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GVHFQYZ9WZ8HG"]

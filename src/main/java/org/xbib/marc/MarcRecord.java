@@ -67,6 +67,14 @@ public class MarcRecord extends LinkedHashMap<String, Object> {
     }
 
     /**
+     * Return the empty MARC record.
+     * @return empty MARC record
+     */
+    public static MarcRecord emptyRecord() {
+        return EMPTY;
+    }
+
+    /**
      * Return the MARC record format.
      *
      * @return the MARC record format

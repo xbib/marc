@@ -19,7 +19,6 @@ package org.xbib.marc.xml;
 import org.xbib.marc.MarcField;
 import org.xbib.marc.MarcListener;
 import org.xbib.marc.MarcRecord;
-import org.xbib.marc.json.MarcJsonWriter;
 import org.xbib.marc.transformer.value.MarcValueTransformers;
 
 import java.io.BufferedOutputStream;
@@ -108,8 +107,6 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
     private boolean fatalErrors;
 
     private boolean schemaWritten;
-
-    private MarcValueTransformers marcValueTransformers;
 
     private String fileNamePattern;
 
@@ -218,8 +215,9 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
         return this;
     }
 
+    @Override
     public MarcXchangeWriter setMarcValueTransformers(MarcValueTransformers marcValueTransformers) {
-        this.marcValueTransformers = marcValueTransformers;
+        super.setMarcValueTransformers(marcValueTransformers);
         return this;
     }
 
@@ -451,9 +449,8 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
 
     public void startCustomElement(String prefix, String uri, String localname) {
         try {
-            Namespace namespace = eventFactory.createNamespace(prefix, uri);
             xmlEventConsumer.add(eventFactory.createStartElement(prefix, uri, localname, null,
-                    Collections.singletonList(namespace).iterator()));
+                    Collections.singletonList(eventFactory.createNamespace(prefix, uri)).iterator()));
         } catch (XMLStreamException e) {
             handleException(new IOException(e));
         }

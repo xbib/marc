@@ -61,13 +61,3 @@ task sonatypeUpload(type: Upload) {
         }
     }
 }
-
-githubPages {
-    repoUri = 'git@github.com:xbib/marc.git'
-    targetBranch = "gh-pages"
-    pages {
-        from(file('build/jbake')) {
-            into '.'
-        }
-    }
-}

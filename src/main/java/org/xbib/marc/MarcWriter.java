@@ -47,8 +47,6 @@ public class MarcWriter extends MarcContentHandler implements Flushable, Closeab
 
     private final Charset charset;
 
-    private MarcValueTransformers marcValueTransformers;
-
     private boolean fatalErrors;
 
     private Exception exception;
@@ -76,8 +74,9 @@ public class MarcWriter extends MarcContentHandler implements Flushable, Closeab
         this.bytesStreamOutput = new BytesStreamOutput();
     }
 
+    @Override
     public MarcWriter setMarcValueTransformers(MarcValueTransformers marcValueTransformers) {
-        this.marcValueTransformers = marcValueTransformers;
+        super.setMarcValueTransformers(marcValueTransformers);
         return this;
     }
 
