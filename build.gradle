@@ -31,7 +31,7 @@ configurations {
 
 dependencies {
     testCompile 'junit:junit:4.12'
-    testCompile 'xalan:xalan:2.7.1'
+    testCompile 'xalan:xalan:2.7.2'
     testCompile 'org.xmlunit:xmlunit-matchers:2.3.0'
     testCompile 'com.github.stefanbirkner:system-rules:1.16.0'
     testCompile "org.xbib:bibliographic-character-sets:1.0.0"
