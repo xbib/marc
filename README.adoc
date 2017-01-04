@@ -166,7 +166,7 @@ it is recommended to use http://github.com/xbib/bibliographic-character-sets if 
 You can use the library with Gradle
 
 ```
-    "org.xbib:marc:1.0.7"
+    "org.xbib:marc:1.0.8"
 ```
 
 or with Maven
@@ -175,7 +175,7 @@ or with Maven
    <dependency>
      <groupId>org.xbib</groupId>
      <artifactId>marc</artifactId>
-     <version>1.0.7</version>
+     <version>1.0.8</version>
    </dependency>
 ```
 

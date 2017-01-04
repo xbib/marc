@@ -68,6 +68,9 @@ asciidoctor {
 
 javadoc {
     options.destinationDirectory(file("${projectDir}/docs/javadoc"))
+    configure(options) {
+        noTimestamp = true
+    }
 }
 
 task sourcesJar(type: Jar, dependsOn: classes) {

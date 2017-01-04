@@ -20,6 +20,7 @@ import static org.xbib.marc.transformer.field.MarcFieldTransformer.Operator.HEAD
 
 import org.xbib.marc.MarcField;
 
+import java.util.Collection;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.logging.Level;
@@ -311,8 +312,8 @@ public class MarcFieldTransformer extends LinkedHashMap<String, MarcField> {
             return this;
         }
 
-        public Builder drop(String a) {
-            String[] s = a.split(Pattern.quote(MarcField.KEY_DELIMITER), -1);
+        public Builder drop(String drop) {
+            String[] s = drop.split(Pattern.quote(MarcField.KEY_DELIMITER), -1);
             MarcField.Builder builder = MarcField.builder();
             switch (s.length) {
                 case 1:
@@ -328,6 +329,13 @@ public class MarcFieldTransformer extends LinkedHashMap<String, MarcField> {
                     break;
             }
             drop(builder.build());
+            return this;
+        }
+
+        public Builder drop(Collection<String> drops) {
+            for (String drop : drops) {
+                drop(drop);
+            }
             return this;
         }
 
