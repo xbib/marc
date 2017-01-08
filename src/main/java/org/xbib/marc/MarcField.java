@@ -111,6 +111,22 @@ public class MarcField implements Comparable<MarcField> {
     }
 
     /**
+     * Return first subfield or null. Avoids NoSuchElementException of java.util.LinkedList.
+     * @return first subfield or null
+     */
+    public Subfield getFirstSubfield() {
+        return subfields.isEmpty() ? Subfield.EMPTY_SUBFIELD : subfields.getFirst();
+    }
+
+    /**
+     * Return last subfield or null. Avoids NoSuchElementException of java.util.LinkedList.
+     * @return last subfield or null
+     */
+    public Subfield getLastSubfield() {
+        return subfields.isEmpty() ? Subfield.EMPTY_SUBFIELD : subfields.getLast();
+    }
+
+    /**
      * Return the field value of this MAR field. Mostly used for control fields,
      * but also on formats that do not use subfields.
      * @return the field value
@@ -553,6 +569,8 @@ public class MarcField implements Comparable<MarcField> {
      * MARC subfield. A subfield consists of an ID and a value.
      */
     public static class Subfield {
+
+        static final Subfield EMPTY_SUBFIELD = new Subfield(null, null);
 
         private final String id;
 

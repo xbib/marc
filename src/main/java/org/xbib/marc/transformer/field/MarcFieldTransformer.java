@@ -221,7 +221,8 @@ public class MarcFieldTransformer extends LinkedHashMap<String, MarcField> {
         m = NREP.matcher(value);
         if (m.find()) {
             if (repeatCounter > 99) {
-                logger.log(Level.WARNING, "counter > 99, overflow in " + marcField);
+                repeatCounter = 99;
+                logger.log(Level.WARNING, "counter > 99, overflow in %s", marcField);
             }
             return m.replaceAll(String.format("%02d", repeatCounter));
         }

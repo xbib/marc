@@ -16,7 +16,6 @@
  */
 package org.xbib.marc;
 
-import org.junit.Assert;
 import org.junit.Test;
 import org.xbib.marc.io.ReplaceStringInputStream;
 import org.xbib.marc.transformer.value.MarcValueTransformers;
@@ -26,7 +25,6 @@ import org.xmlunit.matchers.CompareMatcher;
 
 import java.io.File;
 import java.io.FileOutputStream;
-import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
@@ -34,10 +32,15 @@ import java.text.Normalizer;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThat;
+import static org.junit.Assert.assertTrue;
+
 /**
  *
  */
-public class MarcTest extends Assert {
+public class MarcTest {
 
     @Test
     public void testProperMarc() throws Exception {

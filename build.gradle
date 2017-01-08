@@ -55,6 +55,13 @@ test {
     reports.html.destination = file("${projectDir}/docs/test")
 }
 
+javadoc {
+    options.destinationDirectory(file("${projectDir}/docs/javadoc"))
+    configure(options) {
+        noTimestamp = true
+    }
+}
+
 asciidoctor {
     backends 'html5'
     outputDir = file("${projectDir}/docs")

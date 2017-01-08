@@ -205,4 +205,21 @@ public class MarcFieldTest extends Assert {
         assertEquals(2, map.size());
     }
 
+    @Test
+    public void testFirstLastSubfields() {
+        MarcField marcField = MarcField.builder()
+                .tag("100")
+                .indicator("  ")
+                .subfield("a", "one")
+                .subfield("d", "two")
+                .subfield("e", "three")
+                .build();
+        assertEquals("one", marcField.getFirstSubfield().getValue());
+        assertEquals("three", marcField.getLastSubfield().getValue());
+
+        marcField = MarcField.builder().tag("100").build();
+        assertNull(marcField.getFirstSubfield().getValue());
+        assertNull(marcField.getLastSubfield().getValue());
+    }
+
 }
