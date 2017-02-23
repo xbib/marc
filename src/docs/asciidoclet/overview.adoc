@@ -1,0 +1,4 @@
+= MARC bibliographic data processing for Java
+Jörg Prante
+Version 1.0
+

@@ -131,15 +131,42 @@ public class MarcFieldTransformersTest {
     }
 
     @Test
-    public void testPeriodicFieldGroups() {
+    public void testSubjectChainTransformation() {
         MarcFieldTransformers transformers = new MarcFieldTransformers();
-        // the "head" transformations which open a new MARC field
         MarcFieldTransformer t0 = MarcFieldTransformer.builder()
                 .ignoreSubfieldIds()
                 .fromTo("902$ 1$9s", "689$0{r}$0s") // transform MAB to MARC21 subject numbering
+                .fromTo("907$ 1$9s", "689$1{r}$0s") // transform MAB to MARC21 subject numbering
                 .drop("903$ 1$a")  // "Permutationsmuster" -> drop
+                .drop("908$ 1$a")  // "Permutationsmuster" -> drop
                 .operator(HEAD)
                 .build();
+        transformers.add(t0);
+        MarcField a1 = MarcField.builder().tag("902").indicator(" 1")
+                .subfield("s", "Alkoholismus").subfield("9", "(DE-588)4001220-7").build();
+        MarcField a2 = MarcField.builder().tag("902").indicator(" 1")
+                .subfield("s", "Notfalltherapie").subfield("9", "(DE-588)4172068-4").build();
+        MarcField a3 = MarcField.builder().tag("903").indicator(" 1")
+                .subfield("a", "21").build();
+        MarcField b1 = MarcField.builder().tag("907").indicator(" 1")
+                .subfield("s", "Sucht").subfield("9", "(DE-588)4058361-2").build();
+        MarcField b2 = MarcField.builder().tag("907").indicator(" 1")
+                .subfield("s", "Notfalltherapie").subfield("9", "(DE-588)4172068-4").build();
+        MarcField b3 = MarcField.builder().tag("908").indicator(" 1")
+                .subfield("a", "21").build();
+        List<MarcField> marcFieldList = Arrays.asList(a1, a2, a3, b1, b2, b3);
+        // create sequence 00, 01, 10, 11
+        assertEquals("[689$00$9s[s=Alkoholismus, 9=(DE-588)4001220-7], " +
+                        "689$01$9s[s=Notfalltherapie, 9=(DE-588)4172068-4], " +
+                        "689$10$9s[s=Sucht, 9=(DE-588)4058361-2], " +
+                        "689$11$9s[s=Notfalltherapie, 9=(DE-588)4172068-4]]",
+                transformers.transform(marcFieldList).toString());
+    }
+
+    @Test
+    public void testPeriodicFieldGroups() {
+        MarcFieldTransformers transformers = new MarcFieldTransformers();
+        // the "head" transformations which open a new MARC field
         MarcFieldTransformer t1 = MarcFieldTransformer.builder()
                 .fromTo("451$ 1$a", "830$ 0$t")
                 .fromTo("461$ 1$a", "830$ 0$t")
@@ -155,7 +182,6 @@ public class MarcFieldTransformersTest {
                 .fromTo("466$ 1$a", "830$ 0$n")
                 .operator(TAIL)
                 .build();
-        transformers.add(t0);
         transformers.add(t1);
         transformers.add(t2);
         MarcField a1 = MarcField.builder().tag("451").indicator(" 1").subfield("a", "Hello World 1").build();

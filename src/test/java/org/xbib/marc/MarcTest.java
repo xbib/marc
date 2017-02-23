@@ -32,8 +32,8 @@ import java.text.Normalizer;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
 

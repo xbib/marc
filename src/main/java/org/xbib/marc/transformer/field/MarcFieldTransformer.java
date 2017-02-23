@@ -70,7 +70,7 @@ public class MarcFieldTransformer extends LinkedHashMap<String, MarcField> {
     }
 
     public void reset() {
-        repeatCounter = -1;
+        repeatCounter = 0;
         lastReceived = null;
         lastBuilt = null;
     }
@@ -274,6 +274,9 @@ public class MarcFieldTransformer extends LinkedHashMap<String, MarcField> {
         }
 
         public Builder fromTo(String a, String b) {
+            if (a == null) {
+                return this;
+            }
             String[] from = a.split(Pattern.quote(MarcField.KEY_DELIMITER), -1);
             MarcField.Builder fromBuilder = MarcField.builder();
             switch (from.length) {
@@ -289,22 +292,26 @@ public class MarcFieldTransformer extends LinkedHashMap<String, MarcField> {
                 default:
                     break;
             }
-            String[] to = b.split(Pattern.quote(MarcField.KEY_DELIMITER), -1);
-            MarcField.Builder toBuilder = MarcField.builder();
-            switch (to.length) {
-                case 1:
-                    toBuilder.tag(to[0]);
-                    break;
-                case 2:
-                    toBuilder.tag(to[0]).indicator(to[1]);
-                    break;
-                case 3:
-                    toBuilder.tag(to[0]).indicator(to[1]).subfields(to[2]);
-                    break;
-                default:
-                    break;
+            if (b != null) {
+                String[] to = b.split(Pattern.quote(MarcField.KEY_DELIMITER), -1);
+                MarcField.Builder toBuilder = MarcField.builder();
+                switch (to.length) {
+                    case 1:
+                        toBuilder.tag(to[0]);
+                        break;
+                    case 2:
+                        toBuilder.tag(to[0]).indicator(to[1]);
+                        break;
+                    case 3:
+                        toBuilder.tag(to[0]).indicator(to[1]).subfields(to[2]);
+                        break;
+                    default:
+                        break;
+                }
+                fromTo(fromBuilder.build(), toBuilder.build());
+            } else {
+                drop(fromBuilder.build());
             }
-            fromTo(fromBuilder.build(), toBuilder.build());
             return this;
         }
 

@@ -35,7 +35,7 @@ import java.util.stream.Collectors;
  */
 public class MarcRecord extends LinkedHashMap<String, Object> {
 
-    public static final MarcRecord EMPTY = Marc.builder().buildRecord();
+    private static final MarcRecord EMPTY = Marc.builder().buildRecord();
     private static final long serialVersionUID = 5305809148724342653L;
     private final String format;
 
@@ -131,7 +131,6 @@ public class MarcRecord extends LinkedHashMap<String, Object> {
         return marcFields.stream().map(field ->
                 field.matchValue(pattern)).filter(Objects::nonNull).collect(Collectors.toList());
     }
-
 
     @Override
     public boolean equals(Object obj) {

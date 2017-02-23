@@ -46,7 +46,7 @@ public class MarcRecordTest extends Assert {
 
     @Test
     public void testEmptyMarcRecord() {
-        MarcRecord marcRecord = MarcRecord.EMPTY;
+        MarcRecord marcRecord = MarcRecord.emptyRecord();
         MarcRecord empty = Marc.builder().buildRecord();
         assertEquals(marcRecord, empty);
     }

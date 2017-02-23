@@ -1,5 +1,7 @@
 package org.xbib.marc;
 
+import static org.junit.Assert.assertThat;
+
 import org.junit.Test;
 import org.xbib.marc.xml.MarcXchangeWriter;
 import org.xmlunit.matchers.CompareMatcher;
@@ -10,8 +12,6 @@ import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
-
-import static org.junit.Assert.assertThat;
 
 /**
  * This test reads ISO 2709 MARC files, werits them to XML, parses XML and writes ISO 2709,

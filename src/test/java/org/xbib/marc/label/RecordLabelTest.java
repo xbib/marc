@@ -160,5 +160,4 @@ public class RecordLabelTest {
         label = RecordLabel.builder().from(s.toCharArray()).build();
         assertEquals(RecordLabel.LENGTH, label.toString().length());
     }
-
 }

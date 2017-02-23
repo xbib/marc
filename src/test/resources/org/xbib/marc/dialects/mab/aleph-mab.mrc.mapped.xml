@@ -227,34 +227,34 @@
       <subfield code="d">616.89</subfield>
       <subfield code="e">DDC22ger</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2=" ">
+    <datafield tag="689" ind1="0" ind2="0">
       <subfield code=" ">Kind</subfield>
       <subfield code="9">(DE-588)4030550-8</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="0">
+    <datafield tag="689" ind1="0" ind2="1">
       <subfield code=" ">Jugend</subfield>
       <subfield code="9">(DE-588)4028859-6</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="1">
+    <datafield tag="689" ind1="0" ind2="2">
       <subfield code=" ">Entwicklungsstörung</subfield>
       <subfield code="9">(DE-588)4014966-3</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="2">
+    <datafield tag="689" ind1="0" ind2="3">
       <subfield code=" ">Psychische Störung</subfield>
       <subfield code="9">(DE-588)4047686-8</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="3">
+    <datafield tag="689" ind1="0" ind2="4">
       <subfield code=" ">Psychopathologie</subfield>
       <subfield code="9">(DE-588)4047724-1</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="4">
+    <datafield tag="689" ind1="0" ind2="5">
       <subfield code=" ">Entwicklungspsychologie</subfield>
       <subfield code="9">(DE-588)4014963-8</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="5">
+    <datafield tag="689" ind1="0" ind2="6">
       <subfield code=" ">Lehrbuch</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="6">
+    <datafield tag="689" ind1="0" ind2="7">
       <subfield code=" ">Online-Publikation</subfield>
     </datafield>
   </record>
@@ -366,11 +366,11 @@
       <subfield code="e">DDC22ger</subfield>
       <subfield code="f">019</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2=" ">
+    <datafield tag="689" ind1="0" ind2="0">
       <subfield code=" ">Personalpsychologie</subfield>
       <subfield code="9">(DE-588)4784219-2</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="0">
+    <datafield tag="689" ind1="0" ind2="1">
       <subfield code=" ">Online-Publikation</subfield>
     </datafield>
   </record>
@@ -498,14 +498,14 @@
       <subfield code="c">519.5</subfield>
       <subfield code="e">DDC22ger</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2=" ">
+    <datafield tag="689" ind1="0" ind2="0">
       <subfield code=" ">Statistik</subfield>
       <subfield code="9">(DE-588)4056995-0</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="0">
+    <datafield tag="689" ind1="0" ind2="1">
       <subfield code=" ">Lehrbuch</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="1">
+    <datafield tag="689" ind1="0" ind2="2">
       <subfield code=" ">Online-Publikation</subfield>
     </datafield>
   </record>
@@ -614,14 +614,14 @@
       <subfield code="c">370.15</subfield>
       <subfield code="e">DDC22ger</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2=" ">
+    <datafield tag="689" ind1="0" ind2="0">
       <subfield code=" ">Pädagogische Psychologie</subfield>
       <subfield code="9">(DE-588)4044321-8</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="0">
+    <datafield tag="689" ind1="0" ind2="1">
       <subfield code=" ">Lehrbuch</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="1">
+    <datafield tag="689" ind1="0" ind2="2">
       <subfield code=" ">Online-Publikation</subfield>
     </datafield>
   </record>
@@ -739,11 +739,11 @@
       <subfield code="e">DDC22ger</subfield>
       <subfield code="f">019</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2=" ">
+    <datafield tag="689" ind1="0" ind2="0">
       <subfield code=" ">Personalpsychologie</subfield>
       <subfield code="9">(DE-588)4784219-2</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="0">
+    <datafield tag="689" ind1="0" ind2="1">
       <subfield code=" ">Online-Publikation</subfield>
     </datafield>
   </record>
@@ -861,14 +861,14 @@
       <subfield code="e">DDC22ger</subfield>
       <subfield code="f">0723</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2=" ">
+    <datafield tag="689" ind1="0" ind2="0">
       <subfield code=" ">Qualitative Sozialforschung</subfield>
       <subfield code="9">(DE-588)4395695-6</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="0">
+    <datafield tag="689" ind1="0" ind2="1">
       <subfield code=" ">Lehrbuch</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="1">
+    <datafield tag="689" ind1="0" ind2="2">
       <subfield code=" ">Online-Publikation</subfield>
     </datafield>
   </record>
@@ -973,15 +973,15 @@
       <subfield code="e">DDC22ger</subfield>
       <subfield code="f">03</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2=" ">
+    <datafield tag="689" ind1="0" ind2="0">
       <subfield code=" ">Pädagogische Psychologie</subfield>
       <subfield code="9">(DE-588)4044321-8</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="0">
+    <datafield tag="689" ind1="0" ind2="1">
       <subfield code=" ">Wörterbuch</subfield>
       <subfield code="9">(DE-588)4066724-8</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="1">
+    <datafield tag="689" ind1="0" ind2="2">
       <subfield code=" ">Online-Publikation</subfield>
       <subfield code="9">(DE-588)4511937-5</subfield>
     </datafield>
@@ -1092,14 +1092,14 @@
       <subfield code="c">364.3</subfield>
       <subfield code="e">DDC22ger</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2=" ">
+    <datafield tag="689" ind1="0" ind2="0">
       <subfield code=" ">Kriminalpsychologie</subfield>
       <subfield code="9">(DE-588)4033186-6</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="0">
+    <datafield tag="689" ind1="0" ind2="1">
       <subfield code=" ">Lehrbuch</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="1">
+    <datafield tag="689" ind1="0" ind2="2">
       <subfield code=" ">Online-Publikation</subfield>
     </datafield>
   </record>
@@ -1212,14 +1212,14 @@
       <subfield code="c">155.2</subfield>
       <subfield code="e">DDC22ger</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2=" ">
+    <datafield tag="689" ind1="0" ind2="0">
       <subfield code=" ">Persönlichkeitspsychologie</subfield>
       <subfield code="9">(DE-588)4075996-9</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="0">
+    <datafield tag="689" ind1="0" ind2="1">
       <subfield code=" ">Lehrbuch</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="1">
+    <datafield tag="689" ind1="0" ind2="2">
       <subfield code=" ">Online-Publikation</subfield>
     </datafield>
   </record>
@@ -1348,16 +1348,16 @@
       <subfield code="e">DDC22ger</subfield>
       <subfield code="f">0285</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2=" ">
+    <datafield tag="689" ind1="0" ind2="0">
       <subfield code=" ">Statistik</subfield>
       <subfield code="9">(DE-588)4056995-0</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="0">
+    <datafield tag="689" ind1="0" ind2="1">
       <subfield code=" ">R</subfield>
       <subfield code="h">Programm</subfield>
       <subfield code="9">(DE-588)4705956-4</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="1">
+    <datafield tag="689" ind1="0" ind2="2">
       <subfield code=" ">Online-Publikation</subfield>
     </datafield>
     <datafield tag="903" ind1=" " ind2=" ">
@@ -1473,11 +1473,11 @@
       <subfield code="c">153.9</subfield>
       <subfield code="e">DDC22ger</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2=" ">
+    <datafield tag="689" ind1="0" ind2="0">
       <subfield code=" ">Intelligenz</subfield>
       <subfield code="9">(DE-588)4027251-5</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="0">
+    <datafield tag="689" ind1="0" ind2="1">
       <subfield code=" ">Online-Publikation</subfield>
     </datafield>
   </record>

@@ -26,16 +26,18 @@ apply plugin: "jacoco"
 apply plugin: 'org.xbib.gradle.plugin.asciidoctor'
 
 configurations {
+    asciidoclet
     wagon
 }
 
 dependencies {
-    testCompile 'junit:junit:4.12'
-    testCompile 'xalan:xalan:2.7.2'
-    testCompile 'org.xmlunit:xmlunit-matchers:2.3.0'
-    testCompile 'com.github.stefanbirkner:system-rules:1.16.0'
-    testCompile "org.xbib:bibliographic-character-sets:1.0.0"
-    wagon 'org.apache.maven.wagon:wagon-ssh-external:2.10'
+    testCompile "junit:junit:${project.property('junit.version')}"
+    testCompile "xalan:xalan:${project.property('xalan.version')}"
+    testCompile "org.xmlunit:xmlunit-matchers:${project.property('xmlunit-matchers.version')}"
+    testCompile "com.github.stefanbirkner:system-rules:${project.property('system-rules.version')}"
+    testCompile "org.xbib:bibliographic-character-sets:${project.property('bibliographic-character-sets.version')}"
+    asciidoclet "org.asciidoctor:asciidoclet:${project.property('asciidoclet.version')}"
+    wagon "org.apache.maven.wagon:wagon-ssh-external:${project.property('wagon-ssh-external.version')}"
 }
 
 sourceCompatibility = JavaVersion.VERSION_1_8
@@ -52,19 +54,10 @@ test {
         showStandardStreams = true
         exceptionFormat = 'full'
     }
-    reports.html.destination = file("${projectDir}/docs/test")
-}
-
-javadoc {
-    options.destinationDirectory(file("${projectDir}/docs/javadoc"))
-    configure(options) {
-        noTimestamp = true
-    }
 }
 
 asciidoctor {
     backends 'html5'
-    outputDir = file("${projectDir}/docs")
     separateOutputDirs = false
     attributes 'source-highlighter': 'coderay',
             toc                 : '',
@@ -74,7 +67,12 @@ asciidoctor {
 }
 
 javadoc {
-    options.destinationDirectory(file("${projectDir}/docs/javadoc"))
+    options.docletpath = configurations.asciidoclet.files.asType(List)
+    options.doclet = 'org.asciidoctor.Asciidoclet'
+    options.overview = "src/docs/asciidoclet/overview.adoc"
+    options.addStringOption "-base-dir", "${projectDir}"
+    options.addStringOption "-attribute",
+            "name=${project.name},version=${project.version},title-link=https://github.com/xbib/${project.name}"
     configure(options) {
         noTimestamp = true
     }
