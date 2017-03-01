@@ -25,6 +25,10 @@ apply plugin: 'checkstyle'
 apply plugin: "jacoco"
 apply plugin: 'org.xbib.gradle.plugin.asciidoctor'
 
+repositories {
+    mavenCentral()
+}
+
 configurations {
     asciidoclet
     wagon
