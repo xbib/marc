@@ -36,7 +36,7 @@ import java.nio.file.Paths;
 public class BiblioMondoInputStreamTest extends Assert {
 
     @Test
-    //@Ignore("skip this because data license is unclear")
+    @Ignore("skip this because data license is unclear")
     public void biblioMondoRecords() throws Exception {
         Path path = Paths.get("/data/fix/DE-380/Stbib_Fernleihe_20150427.MARC");
         Path out = Paths.get("/var/tmp/Stbib_Fernleihe_20150427.marcxchange");
