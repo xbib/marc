@@ -40,6 +40,7 @@ dependencies {
     testCompile "org.xmlunit:xmlunit-matchers:${project.property('xmlunit-matchers.version')}"
     testCompile "com.github.stefanbirkner:system-rules:${project.property('system-rules.version')}"
     testCompile "org.xbib:bibliographic-character-sets:${project.property('bibliographic-character-sets.version')}"
+    testCompile "org.xbib:content-core:${project.property('content-core.version')}"
     asciidoclet "org.asciidoctor:asciidoclet:${project.property('asciidoclet.version')}"
     wagon "org.apache.maven.wagon:wagon-ssh-external:${project.property('wagon-ssh-external.version')}"
 }

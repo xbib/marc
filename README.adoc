@@ -122,7 +122,6 @@ try (MarcJsonWriter writer = new MarcJsonWriter("bulk%d.jsonl.gz", 10000,
             .writeCollection();
 
 }
-
 ----
 
 where the result can be indexed by a simple bash script using `curl`, because our JSON
@@ -147,6 +146,73 @@ and indexing such data makes much more sense and is also more fun.
 By executing `curl localhost:9200/_search?pretty` you can examine the result.
 
 image:{img}/marcxchange-in-elasticsearch.png[]
+
+### Example: finding all ISSNs
+
+This Java program scans through a MARC file, checks for ISSN values, and collects them in
+JSON format (the library `org.xbib:content-core:1.0.7` is used for JSON formatting)
+
+[source,java]
+----
+public void findISSNs() throws IOException {
+    Map<String, List<Map<String, String>>> result = new TreeMap<>();
+    // set up MARC listener
+    MarcListener marcListener = new MarcFieldAdapter() {
+        @Override
+        public void field(MarcField field) {
+            Collection<Map<String, String>> values = field.getSubfields().stream()
+                    .filter(f -> matchISSNField(field, f))
+                    .map(f -> Collections.singletonMap(f.getId(), f.getValue()))
+                    .collect(Collectors.toList());
+            if (!values.isEmpty()) {
+                result.putIfAbsent(field.getTag(), new ArrayList<>());
+                List<Map<String, String>> list = result.get(field.getTag());
+                list.addAll(values);
+                result.put(field.getTag(), list);
+            }
+        }
+    };
+    // read MARC file
+    Marc.builder()
+            .setInputStream(getClass().getResource("issns.mrc").openStream())
+            .setMarcListener(marcListener)
+            .build()
+            .writeCollection();
+    // collect ISSNs
+    List<String> issns = result.values().stream()
+            .map(l -> l.stream()
+                    .map(m -> m.values().iterator().next())
+                    .collect(Collectors.toList()))
+            .flatMap(List::stream)
+            .distinct()
+            .collect(Collectors.toList());
+
+    // JSON output
+    XContentBuilder builder = contentBuilder().prettyPrint()
+            .startObject();
+    for (Map.Entry<String, List<Map<String, String>>> entry : result.entrySet()) {
+        builder.field(entry.getKey(), entry.getValue());
+    }
+    builder.array("issns", issns);
+    builder.endObject();
+
+    logger.log(Level.INFO, builder.string());
+}
+
+private static boolean matchISSNField(MarcField field, MarcField.Subfield subfield) {
+    switch (field.getTag()) {
+        case "011": {
+            return "a".equals(subfield.getId()) || "f".equals(subfield.getId());
+        }
+        case "421":
+        case "451":
+        case "452":
+        case "488":
+            return "x".equals(subfield.getId());
+    }
+    return false;
+}
+----
 
 ## Bibliographic character sets
 
