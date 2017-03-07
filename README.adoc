@@ -143,7 +143,7 @@ The result is a very basic MARC field based index, which is cumbersome to config
 In upcoming projects, I will show how to turn MARC into semantic data with context,
 and indexing such data makes much more sense and is also more fun.
 
-By executing `curl localhost:9200/_search?pretty` you can examine the result.
+By executing `curl localhost:9200/_search?pretty` the result can be examined.
 
 image:{img}/marcxchange-in-elasticsearch.png[]
 
@@ -229,31 +229,87 @@ it is recommended to use http://github.com/xbib/bibliographic-character-sets if 
 
 ## Usage
 
-You can use the library with Gradle
+The library can be used as a Gradle dependency
 
 ```
-    "org.xbib:marc:1.0.8"
+    "org.xbib:marc:1.0.11"
 ```
 
-or with Maven
+or as a Maven dependency
 
 ```
    <dependency>
      <groupId>org.xbib</groupId>
      <artifactId>marc</artifactId>
-     <version>1.0.8</version>
+     <version>1.0.11</version>
    </dependency>
 ```
 
-## Documentation
+## Quick guide for using this project
 
-TODO
+First, install OpenJDK 8. If in doubt, I recommend SDKMan http://sdkman.io/ for easy installation.
+
+Then clone the github repository
+
+[source,bash]
+----
+git clone https://github.com/xbib/marc
+----
+
+Then change directory into `marc` folder and enter
+
+[source,bash]
+----
+./gradlew test -Dtest.single=MarcFieldFilterTest
+----
+
+for executing the ISSN demo.
+
+Gradle takes care of all the setup in the background.
+
+There is also a Java program called `MarcTool` which is thought to run without Gradle
+
+https://github.com/xbib/marc/blob/master/src/main/java/org/xbib/marc/tools/MarcTool.java
+
+It could be extended to include a command for finding ISSNs (essentially, by copying the junit test code into the
+`MarcTool` class, and wiring some suitable arguments into the code).
+
+After
+
+[source,bash]
+----
+./gradlew assemble
+----
+there will find a file called marc-{version}.jar in the build/libs folder. To run this Java program,
+the command would be something like
+
+[source,bash]
+----
+java -cp build/libs/marc-1.0.11.jar org.xbib.marc.tools.MarcTool
+----
+
+MarcTool is not perfect yet (it expects some arguments, if not present,
+it will merely exit with an unfriendly `Exception in thread "main" java.lang.NullPointerException`).
+
+To run the Java program as standalone program, including the JSON format as output, some more jar dependency files
+must be on the runtime class path (e.g. `org.xbib:content-core:1.0.7`, `com.fasterxml.jackson.core:jackson-core:2.8.4`)
+
+In Gradle, the exact dependencies for the JSON format in the junit test class `MarcFieldFilterTest`
+can be found by executing the command
+
+[source,bash]
+----
+./gradlew dependencies
+----
+
+Then, see section `testRuntime`.
 
 ## Issues
 
-The XSLT transformation is broken in Java 8u102. Please use Java 8u92.
+The XSLT transformation is broken in Java 8u102. Please use Java 8u92 if there are
+problems, or use Xerces/Xalan.
 
-All contributions are welcome. If you find bugs, want to comment, or send a pull request,
+All contributions are welcome. Any bug reports, comments, or pull requests are welcome,
 just open an issue at https://github.com/xbib/marc/issues
 
 ## MARC4J
@@ -332,7 +388,7 @@ I am not very familiar with MARC4J, so I appreciate any hints, comments, or corr
 
 | Jar size
 | 447 KB (2.7.0)
-| 142 KB (1.0.0)
+| 150 KB (1.0.11)
 
 |License
 |LGPL
