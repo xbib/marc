@@ -42,7 +42,7 @@ dependencies {
     testCompile "org.xbib:bibliographic-character-sets:${project.property('bibliographic-character-sets.version')}"
     testCompile "org.xbib:content-core:${project.property('content-core.version')}"
     asciidoclet "org.asciidoctor:asciidoclet:${project.property('asciidoclet.version')}"
-    wagon "org.apache.maven.wagon:wagon-ssh-external:${project.property('wagon-ssh-external.version')}"
+    wagon "org.apache.maven.wagon:wagon-ssh:${project.property('wagon-ssh.version')}"
 }
 
 sourceCompatibility = JavaVersion.VERSION_1_8

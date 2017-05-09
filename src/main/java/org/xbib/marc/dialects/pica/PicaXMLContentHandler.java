@@ -89,7 +89,6 @@ public class PicaXMLContentHandler extends MarcContentHandler implements PicaCon
                         tag = value.substring(0, 3);
                         indicator = value.substring(3);
                     }
-
                 }
                 MarcField.Builder builder = MarcField.builder().tag(tag).indicator(indicator);
                 stack.push(builder);
@@ -105,18 +104,23 @@ public class PicaXMLContentHandler extends MarcContentHandler implements PicaCon
                         tag = value.substring(0, 3);
                         indicator = value.substring(3);
                     }
-
                 }
                 MarcField.Builder builder = MarcField.builder().tag(tag).indicator(indicator);
                 stack.push(builder);
                 break;
             }
             case SUBFIELD: {
-                stack.peek().subfield(atts.getValue(CODE_ATTRIBUTE), null);
+                String subfieldId = atts.getValue(CODE_ATTRIBUTE);
+                if (!subfieldId.isEmpty()) {
+                    stack.peek().subfield(subfieldId, null);
+                }
                 break;
             }
             case SUBF_TAG: {
-                stack.peek().subfield(atts.getValue(ID_ATTRIBUTE), null);
+                String subfieldId = atts.getValue(ID_ATTRIBUTE);
+                if (!subfieldId.isEmpty()) {
+                    stack.peek().subfield(subfieldId, null);
+                }
                 break;
             }
             case GLOBAL_TAG:
@@ -146,7 +150,11 @@ public class PicaXMLContentHandler extends MarcContentHandler implements PicaCon
                 break;
             }
             case TAG_ATTRIBUTE: {
-                MarcField marcField = stack.pop().value(content.toString()).build();
+                MarcField.Builder marcFieldBuilder = stack.pop();
+                if (content.length() > 0) {
+                    marcFieldBuilder.value(content.toString());
+                }
+                MarcField marcField = marcFieldBuilder.build();
                 if (marcValueTransformers != null) {
                     marcField = marcValueTransformers.transformValue(marcField);
                 }
@@ -155,7 +163,9 @@ public class PicaXMLContentHandler extends MarcContentHandler implements PicaCon
             }
             case SUBFIELD:
             case SUBF_TAG: {
-                stack.peek().subfieldValue(content.toString());
+                if (content.length() > 0) {
+                    stack.peek().subfieldValue(content.toString());
+                }
                 break;
             }
             case GLOBAL_TAG:
