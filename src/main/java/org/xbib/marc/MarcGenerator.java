@@ -40,6 +40,8 @@ import java.util.List;
  */
 public class MarcGenerator implements ChunkListener<byte[], BytesReference>, Closeable {
 
+    private static final String EMPTY = " ";
+
     private String format;
 
     private String type;
@@ -166,11 +168,12 @@ public class MarcGenerator implements ChunkListener<byte[], BytesReference>, Clo
                         int pos = recordLabel.getIndicatorLength();
                         builder.indicator(this.data.substring(0, pos));
                         if (pos < this.data.length()) {
-                            builder.subfield(" ", this.data.substring(pos));
+                            builder.subfield(recordLabel, EMPTY, this.data.substring(pos));
                         }
                     }
                 } else {
                     boolean found = false;
+                    // try more than one position
                     for (int offset = 1; offset < 5; offset++) {
                         if (directory.containsKey(position + offset)) {
                             position = position + offset;
@@ -202,7 +205,7 @@ public class MarcGenerator implements ChunkListener<byte[], BytesReference>, Clo
                 break;
             }
             case US: /* 1f */{
-                builder.subfield(recordLabel, this.data);
+                builder.subfield(recordLabel, EMPTY, this.data);
                 break;
             }
             default: {

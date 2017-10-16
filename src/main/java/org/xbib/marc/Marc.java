@@ -30,7 +30,6 @@ import org.xbib.marc.io.BufferedSeparatorInputStream;
 import org.xbib.marc.io.BytesReference;
 import org.xbib.marc.io.Chunk;
 import org.xbib.marc.io.ChunkStream;
-import org.xbib.marc.io.InformationSeparator;
 import org.xbib.marc.label.RecordLabel;
 import org.xbib.marc.label.RecordLabelFixer;
 import org.xbib.marc.transformer.MarcTransformer;

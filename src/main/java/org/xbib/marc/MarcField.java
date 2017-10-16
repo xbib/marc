@@ -467,7 +467,7 @@ public class MarcField implements Comparable<MarcField> {
         /**
          * Set subfield with help of record label information from raw data.
          * @param label the record label
-         * @param raw the raw data
+         * @param raw the subfield, including ID and separator
          * @return this builder
          */
         public Builder subfield(RecordLabel label, String raw) {
@@ -477,6 +477,27 @@ public class MarcField implements Comparable<MarcField> {
                 String subfieldId = raw.substring(0, subfieldidlen);
                 subfields.add(new Subfield(subfieldId, raw.substring(subfieldidlen)));
                 subfieldIds.add(subfieldId);
+            }
+            return this;
+        }
+
+        /**
+         * Set synthetic subfield with help of record label information from raw data.
+         * If the len of the subfield ID is zero or undefined, the dummy subfield ID is used.
+         * @param label the record label
+         * @param dummySubfieldId the dummy subfield ID
+         * @param value the subfield value
+         * @return this builder
+         */
+        public Builder subfield(RecordLabel label, String dummySubfieldId, String value) {
+            int len = label.getSubfieldIdentifierLength() - 1;
+            if (len <= 0) {
+                subfields.add(new Subfield(dummySubfieldId, value));
+                subfieldIds.add(dummySubfieldId);
+            } else if (value.length() >= len) {
+                String id = value.substring(0, len);
+                subfields.add(new Subfield(id, value.substring(len)));
+                subfieldIds.add(id);
             }
             return this;
         }

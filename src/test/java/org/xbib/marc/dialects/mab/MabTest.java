@@ -52,6 +52,10 @@ public class MabTest {
 
     private final StringBuilder sb = new StringBuilder();
 
+    /**
+     * Shows how to override erraneous subfield ID length label settings, which is notorious to MAB dialect.
+     * @throws Exception if test faul
+     */
     @Test
     public void testZDB() throws Exception {
         String s = "1217zdbtit.dat";

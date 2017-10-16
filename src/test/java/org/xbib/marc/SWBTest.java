@@ -48,9 +48,7 @@ public class SWBTest {
             try (InputStream in = getClass().getResource(file).openStream()) {
                 Marc.Builder builder = Marc.builder()
                         .setInputStream(in)
-                        .setCharset(Charset.forName("UTF-8"))
-                        .setFormat("Marc21")
-                        .setType("Bibliographic");
+                        .setCharset(Charset.forName("UTF-8"));
                 for (MarcRecord marcRecord : builder.iterable()) {
                     count++;
                 }
