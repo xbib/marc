@@ -30,6 +30,7 @@ import org.xbib.marc.io.BufferedSeparatorInputStream;
 import org.xbib.marc.io.BytesReference;
 import org.xbib.marc.io.Chunk;
 import org.xbib.marc.io.ChunkStream;
+import org.xbib.marc.io.InformationSeparator;
 import org.xbib.marc.label.RecordLabel;
 import org.xbib.marc.label.RecordLabelFixer;
 import org.xbib.marc.transformer.MarcTransformer;
@@ -306,6 +307,7 @@ public final class Marc {
                 count++;
             }
             stream.close();
+            builder.marcGenerator.close();
             if (withCollection) {
                 marcListener.endCollection();
                 if (marcListener instanceof ContentHandler) {
@@ -375,6 +377,7 @@ public final class Marc {
                 l.incrementAndGet();
             });
             stream.close();
+            builder.marcGenerator.close();
             if (withCollection) {
                 marcRecordListener.endCollection();
                 if (marcRecordListener instanceof ContentHandler) {
@@ -557,6 +560,7 @@ public final class Marc {
                 while ((chunk = stream.readChunk()) != null) {
                     marcGenerator.chunk(chunk);
                 }
+                marcGenerator.close();
             } finally {
                 builder.getInputStream().close();
             }
@@ -1085,9 +1089,15 @@ public final class Marc {
                         Chunk<byte[], BytesReference> chunk;
                         while ((chunk = stream.readChunk()) != null) {
                             marcGenerator.chunk(chunk);
-                            if (getMarcRecord() != null) {
+                            MarcRecord marcRecord = getMarcRecord();
+                            if (marcRecord != null) {
                                 return true;
                             }
+                        }
+                        marcGenerator.close();
+                        MarcRecord marcRecord = getMarcRecord();
+                        if (marcRecord != null) {
+                            return true;
                         }
                     } catch (IOException e) {
                         throw new UncheckedIOException(e);
@@ -1097,10 +1107,11 @@ public final class Marc {
 
                 @Override
                 public MarcRecord next() {
-                    if (getMarcRecord() == null) {
+                    MarcRecord marcRecord = getMarcRecord();
+                    if (marcRecord == null) {
                         throw new NoSuchElementException();
                     }
-                    return getMarcRecord();
+                    return marcRecord;
                 }
             };
         }

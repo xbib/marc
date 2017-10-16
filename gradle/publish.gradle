@@ -61,3 +61,8 @@ task sonatypeUpload(type: Upload) {
         }
     }
 }
+
+nexusStaging {
+    packageGroup = "org.xbib"
+}
+

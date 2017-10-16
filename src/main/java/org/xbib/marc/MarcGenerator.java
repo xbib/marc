@@ -29,6 +29,7 @@ import org.xbib.marc.transformer.MarcTransformer;
 import org.xbib.marc.transformer.field.MarcFieldTransformers;
 import org.xbib.marc.transformer.value.MarcValueTransformers;
 
+import java.io.Closeable;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.util.LinkedList;
@@ -37,7 +38,7 @@ import java.util.List;
 /**
  * This chunk listener interprets the chunks from a stream and generates MARC events to a given MARC listener.
  */
-public class MarcGenerator implements ChunkListener<byte[], BytesReference> {
+public class MarcGenerator implements ChunkListener<byte[], BytesReference>, Closeable {
 
     private String format;
 
@@ -140,13 +141,13 @@ public class MarcGenerator implements ChunkListener<byte[], BytesReference> {
             return;
         }
         switch (separator) {
-            case GS: {
+            case GS: /* 1d */ {
                 emitMarcField();
                 emitMarcRecord();
                 newRecord();
                 break;
             }
-            case RS: {
+            case RS: /* 1e */ {
                 emitMarcField();
                 if (directory == null || directory.isEmpty()) {
                     if (marcTransformer != null) {
@@ -200,7 +201,7 @@ public class MarcGenerator implements ChunkListener<byte[], BytesReference> {
                 }
                 break;
             }
-            case US: {
+            case US: /* 1f */{
                 builder.subfield(recordLabel, this.data);
                 break;
             }
@@ -211,6 +212,15 @@ public class MarcGenerator implements ChunkListener<byte[], BytesReference> {
         position += bytesReference.length() + 1;
     }
 
+    /**
+     * This method will emit the last record, if not emitted already.
+     * Useful if chunk streams have no closing record separator.
+     */
+    public void close() throws IOException {
+        if (position > 0) {
+            emitMarcRecord();
+        }
+    }
 
     private void emitMarcField() {
         MarcField marcField = builder.build();

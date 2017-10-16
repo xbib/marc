@@ -1,6 +1,7 @@
 plugins {
-    id "org.sonarqube" version "2.2"
+    id "org.sonarqube" version "2.5"
     id "org.xbib.gradle.plugin.asciidoctor" version "1.5.4.1.0"
+    id "io.codearte.nexus-staging" version "0.7.0"
 }
 
 printf "Host: %s\nOS: %s %s %s\nJVM: %s %s %s %s\nGroovy: %s\nGradle: %s\n" +
@@ -24,6 +25,7 @@ apply plugin: 'pmd'
 apply plugin: 'checkstyle'
 apply plugin: "jacoco"
 apply plugin: 'org.xbib.gradle.plugin.asciidoctor'
+apply plugin: "io.codearte.nexus-staging"
 
 repositories {
     mavenCentral()
@@ -35,12 +37,12 @@ configurations {
 }
 
 dependencies {
+    testCompile "org.xbib:bibliographic-character-sets:${project.property('xbib-bibliographic-character-sets.version')}"
+    testCompile "org.xbib:content-core:${project.property('xbib-content.version')}"
     testCompile "junit:junit:${project.property('junit.version')}"
     testCompile "xalan:xalan:${project.property('xalan.version')}"
     testCompile "org.xmlunit:xmlunit-matchers:${project.property('xmlunit-matchers.version')}"
     testCompile "com.github.stefanbirkner:system-rules:${project.property('system-rules.version')}"
-    testCompile "org.xbib:bibliographic-character-sets:${project.property('bibliographic-character-sets.version')}"
-    testCompile "org.xbib:content-core:${project.property('content-core.version')}"
     asciidoclet "org.asciidoctor:asciidoclet:${project.property('asciidoclet.version')}"
     wagon "org.apache.maven.wagon:wagon-ssh:${project.property('wagon-ssh.version')}"
 }
@@ -81,6 +83,10 @@ javadoc {
     configure(options) {
         noTimestamp = true
     }
+}
+
+clean {
+    delete 'out'
 }
 
 task sourcesJar(type: Jar, dependsOn: classes) {

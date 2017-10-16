@@ -138,28 +138,27 @@ public class MabTest {
 
         // write one record twice to test correct beginCollection/endCollection with two inner parse() calls
         String s = "HT016424175.xml";
-        InputStream in = getClass().getResourceAsStream(s);
         MarcContentHandler contentHandler = new MarcContentHandler();
         contentHandler.addNamespace("http://www.ddb.de/professionell/mabxml/mabxml-1.xsd");
         contentHandler.setFormat("MARC21");
         contentHandler.setType("Bibliographic");
         contentHandler.setMarcListener(writer);
-        Marc marc = Marc.builder()
-                .setInputStream(in)
-                .setCharset(StandardCharsets.UTF_8)
-                .setContentHandler(contentHandler)
-                .build();
-        marc.xmlReader().parse(new InputSource(in));
-        in.close();
-
-        in = getClass().getResourceAsStream(s);
-        marc = Marc.builder()
-                .setInputStream(in)
-                .setCharset(StandardCharsets.UTF_8)
-                .setContentHandler(contentHandler)
-                .build();
-        marc.xmlReader().parse(new InputSource(in));
-        in.close();
+        try (InputStream in = getClass().getResourceAsStream(s)) {
+            Marc marc = Marc.builder()
+                    .setInputStream(in)
+                    .setCharset(StandardCharsets.UTF_8)
+                    .setContentHandler(contentHandler)
+                    .build();
+            marc.xmlReader().parse(new InputSource(in));
+        }
+        try (InputStream in = getClass().getResourceAsStream(s)) {
+            Marc marc = Marc.builder()
+                    .setInputStream(in)
+                    .setCharset(StandardCharsets.UTF_8)
+                    .setContentHandler(contentHandler)
+                    .build();
+            marc.xmlReader().parse(new InputSource(in));
+        }
         writer.endCollection();
         sw.close();
         assertNull(writer.getException());

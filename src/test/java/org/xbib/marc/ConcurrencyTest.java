@@ -48,7 +48,7 @@ public class ConcurrencyTest {
     public void concurrentXmlWrite() throws Exception {
         int n = 16;
         ExecutorService executorService = Executors.newFixedThreadPool(n);
-        String s = "zdblokutf8.mrc"; // 292 records
+        String s = "zdblokutf8.mrc";
         File file = File.createTempFile(s + ".", ".xml");
         file.deleteOnExit();
         FileOutputStream out = new FileOutputStream(file);
@@ -74,7 +74,7 @@ public class ConcurrencyTest {
             writer.endCollection();
             writer.endDocument();
             assertNull(writer.getException());
-            assertEquals(n * 292, writer.getRecordCounter());
+            assertEquals(n * 293, writer.getRecordCounter());
         }
     }
 
@@ -87,7 +87,7 @@ public class ConcurrencyTest {
     public void concurrentJsonArrayWrite() throws Exception {
         int n = 16;
         ExecutorService executorService = Executors.newFixedThreadPool(n);
-        String s = "zdblokutf8.mrc"; // 292 records
+        String s = "zdblokutf8.mrc";
         File file = File.createTempFile(s + ".", ".json");
         file.deleteOnExit();
         FileOutputStream out = new FileOutputStream(file);
@@ -113,7 +113,7 @@ public class ConcurrencyTest {
             writer.endCollection();
             writer.endDocument();
             assertNull(writer.getException());
-            assertEquals(n * 292, writer.getRecordCounter());
+            assertEquals(n * 293, writer.getRecordCounter());
         }
     }
     /**
@@ -125,7 +125,7 @@ public class ConcurrencyTest {
     public void concurrentJsonLinesWrite() throws Exception {
         int n = 16;
         ExecutorService executorService = Executors.newFixedThreadPool(n);
-        String s = "zdblokutf8.mrc"; // 292 records
+        String s = "zdblokutf8.mrc";
         File file = File.createTempFile(s + ".", ".jsonlines");
         file.deleteOnExit();
         FileOutputStream out = new FileOutputStream(file);
@@ -151,7 +151,7 @@ public class ConcurrencyTest {
             writer.endCollection();
             writer.endDocument();
             assertNull(writer.getException());
-            assertEquals(n * 292, writer.getRecordCounter());
+            assertEquals(n * 293, writer.getRecordCounter());
         }
     }
 }
