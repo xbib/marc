@@ -16,6 +16,7 @@
  */
 package org.xbib.marc;
 
+import org.xbib.marc.dialects.mab.MabSubfieldControl;
 import org.xbib.marc.label.RecordLabel;
 
 import java.util.LinkedList;
@@ -32,6 +33,8 @@ public class MarcField implements Comparable<MarcField> {
     public static final String KEY_DELIMITER = "$";
 
     private static final String EMPTY_STRING = "";
+
+    private static final String BLANK_STRING = " ";
 
     private final String tag;
 
@@ -318,6 +321,8 @@ public class MarcField implements Comparable<MarcField> {
 
         private LinkedList<String> subfieldIds;
 
+        private Boolean isControl;
+
         Builder() {
             this.subfields = new LinkedList<>();
             this.subfieldIds = new SubfieldIds();
@@ -349,8 +354,10 @@ public class MarcField implements Comparable<MarcField> {
          * @return this builder
          */
         public Builder indicator(String indicator) {
-            // check if indicators are "-" (like Aleph does). Replace with blank.
-            this.indicator = indicator != null ? indicator.replace('-', ' ') : null;
+            if (indicator != null) {
+                // check if indicators are visible replacements like "-" or "#" . Replace with blank.
+                this.indicator = indicator.replace('-', ' ').replace('#', ' ');
+            }
             return this;
         }
 
@@ -399,7 +406,7 @@ public class MarcField implements Comparable<MarcField> {
         }
 
         /**
-         * Set (non-subfield) value.
+         * Set value for control/data field.
          * @param value the value
          * @return this builder
          */
@@ -409,13 +416,13 @@ public class MarcField implements Comparable<MarcField> {
         }
 
         /**
-         * Set subfield with ID and value.
+         * Set subfield with subfield ID and value.
          * @param subfieldId the subfield ID
          * @param value the subfield value
          * @return this builder
          */
         public Builder subfield(String subfieldId, String value) {
-            this.subfields.add(new Subfield(subfieldId, value));
+            subfields.add(new Subfield(subfieldId, value));
             subfieldIds.add(subfieldId);
             return this;
         }
@@ -426,8 +433,7 @@ public class MarcField implements Comparable<MarcField> {
          * @return this builder
          */
         public Builder subfield(String subfieldId) {
-            this.subfields.add(new Subfield(subfieldId, null));
-            subfieldIds.add(subfieldId);
+            subfield(subfieldId, null);
             return this;
         }
 
@@ -454,75 +460,77 @@ public class MarcField implements Comparable<MarcField> {
         }
 
         /**
-         * Set subfield value to the last subfield which was denoted by a subfield ID.
+         * Set subfield value in the last subfield which was added.
          * @param value the subfield value
          * @return this builder
          */
         public Builder subfieldValue(String value) {
-            Subfield subfield = this.subfields.removeLast();
-            this.subfields.add(new Subfield(subfield.getId(), value));
+            subfields.add(new Subfield(subfields.removeLast().getId(), value));
             return this;
         }
 
-        /**
-         * Set subfield with help of record label information from raw data.
-         * @param label the record label
-         * @param raw the subfield, including ID and separator
-         * @return this builder
-         */
-        public Builder subfield(RecordLabel label, String raw) {
-            // subtract 1 because subfield identifier length includes US separator character
-            int subfieldidlen = label.getSubfieldIdentifierLength() - 1;
-            if (subfieldidlen > 0 && raw.length() >= subfieldidlen) {
-                String subfieldId = raw.substring(0, subfieldidlen);
-                subfields.add(new Subfield(subfieldId, raw.substring(subfieldidlen)));
-                subfieldIds.add(subfieldId);
+        public Builder value(RecordLabel recordLabel, String value) {
+            if (value.length() > 0) {
+                int len = recordLabel.getSubfieldIdentifierLength() - 1; /* minus length of US separator char */
+                boolean createSubfields = len > 0 && value.length() > len;
+                if (createSubfields) {
+                    String id = value.substring(0, len);
+                    String content = value.substring(len);
+                    subfield(id, content);
+                } else {
+                    value(value);
+                }
+            }
+            return this;
+        }
+
+        public Builder value(String format, String type, RecordLabel recordLabel, String value) {
+            if (value.length() > 0) {
+                int len = recordLabel.getSubfieldIdentifierLength() - 1; /* minus length of US separator char */
+                // override in case of MAB, which contains a wild mixture of subfield ID lengths
+                if ("MAB".equals(format) && "Titel".equals(type)) {
+                    len = MabSubfieldControl.getSubfieldIdLen(tag());
+                }
+                boolean canDeriveSubfieldId = len > 0 && value.length() > len;
+                if (canDeriveSubfieldId) {
+                    String id = value.substring(0, len);
+                    String content = value.substring(len);
+                    subfield(id, content);
+                } else {
+                    subfield(BLANK_STRING, value);
+                }
             }
             return this;
         }
 
         /**
-         * Set synthetic subfield with help of record label information from raw data.
-         * If the len of the subfield ID is zero or undefined, the dummy subfield ID is used.
-         * @param label the record label
-         * @param dummySubfieldId the dummy subfield ID
-         * @param value the subfield value
+         * Set a new field with help of a record label from raw data.
+         * @param format the record format
+         * @param type the record type
+         * @param recordLabel the record label
+         * @param raw raw data (tag plus indicator plus value)
          * @return this builder
          */
-        public Builder subfield(RecordLabel label, String dummySubfieldId, String value) {
-            int len = label.getSubfieldIdentifierLength() - 1;
-            if (len <= 0) {
-                subfields.add(new Subfield(dummySubfieldId, value));
-                subfieldIds.add(dummySubfieldId);
-            } else if (value.length() >= len) {
-                String id = value.substring(0, len);
-                subfields.add(new Subfield(id, value.substring(len)));
-                subfieldIds.add(id);
+        public Builder field(String format, String type, RecordLabel recordLabel, String raw) {
+            if (raw.length() >= 3) {
+                tag(raw.substring(0, 3));
             }
-            return this;
-        }
-
-        /**
-         * Set a new data field with help of a record label from raw data.
-         * @param label the record label
-         * @param raw raw data
-         * @return this builder
-         */
-        public Builder field(RecordLabel label, String raw) {
-            this.tag = raw.length() > 2 ? raw.substring(0, 3) : null;
             if (isControl()) {
                 if (raw.length() > 3) {
                     value(raw.substring(3));
                 }
             } else {
-                int pos = 3 + label.getIndicatorLength();
-                this.indicator = raw.length() >= pos ? raw.substring(3, pos) : null;
-                int subfieldidlen = label.getSubfieldIdentifierLength();
+                int pos = 3 + recordLabel.getIndicatorLength();
+                if (raw.length() >= pos) {
+                    indicator(raw.substring(3, pos));
+                    value(format, type, recordLabel, raw.substring(pos));
+                }
+                /*int subfieldidlen = label.getSubfieldIdentifierLength();
                 if (raw.length() >= pos + subfieldidlen) {
                     String subfieldId = raw.substring(pos, pos + subfieldidlen);
                     this.subfields.add(new Subfield(subfieldId, raw.substring(pos + subfieldidlen)));
                     subfieldIds.add(subfieldId);
-                }
+                }*/
             }
             return this;
         }
@@ -545,12 +553,20 @@ public class MarcField implements Comparable<MarcField> {
             return this;
         }
 
+        public Builder setControl(boolean isControl) {
+            this.isControl = isControl;
+            return this;
+        }
+
         /**
          * Is the MARC field a control field?
          * @return true if control field, false if not
          */
         public boolean isControl() {
-            return tag != null && tag.charAt(0) == '0' && tag.charAt(1) == '0';
+            if (isControl == null) {
+                this.isControl = tag != null && tag.charAt(0) == '0' && tag.charAt(1) == '0';
+            }
+            return isControl;
         }
 
         /**
@@ -574,8 +590,11 @@ public class MarcField implements Comparable<MarcField> {
          * @return the built MARC field.
          */
         public MarcField build() {
+            if (isControl == null) {
+                this.isControl = tag != null && tag.charAt(0) == '0' && tag.charAt(1) == '0';
+            }
             return new MarcField(tag, indicator, position, length,
-                    value, subfields, subfieldIds.toString(), isControl());
+                    value, subfields, subfieldIds.toString(), isControl);
         }
 
         @Override

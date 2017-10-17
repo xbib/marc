@@ -40,8 +40,6 @@ import java.util.List;
  */
 public class MarcGenerator implements ChunkListener<byte[], BytesReference>, Closeable {
 
-    private static final String EMPTY = " ";
-
     private String format;
 
     private String type;
@@ -153,22 +151,19 @@ public class MarcGenerator implements ChunkListener<byte[], BytesReference>, Clo
                 emitMarcField();
                 if (directory == null || directory.isEmpty()) {
                     if (marcTransformer != null) {
-                        marcTransformer.transform(builder, recordLabel, this.data);
+                        marcTransformer.transform(builder, recordLabel, data);
                     } else {
-                        builder.field(recordLabel, this.data);
+                        builder.field(format, type, recordLabel, data);
                     }
                 } else if (directory.containsKey(position)) {
                     builder = directory.get(position);
                     if (builder.isControl()) {
-                        builder.value(this.data);
+                        builder.value(data);
                     } else {
-                        // we may have fields which are broken when data is longer
-                        // than indicator length. Then, a subfield delimiter/ID
-                        // is missing, and we insert a blank subfield ID plus the data here.
                         int pos = recordLabel.getIndicatorLength();
-                        builder.indicator(this.data.substring(0, pos));
-                        if (pos < this.data.length()) {
-                            builder.subfield(recordLabel, EMPTY, this.data.substring(pos));
+                        builder.indicator(data.substring(0, pos));
+                        if (pos < data.length()) {
+                            builder.value(data.substring(pos));
                         }
                     }
                 } else {
@@ -179,19 +174,26 @@ public class MarcGenerator implements ChunkListener<byte[], BytesReference>, Clo
                             position = position + offset;
                             builder = directory.get(position);
                             if (builder.isControl()) {
-                                builder.value(this.data);
+                                builder.value(data);
                             } else {
-                                builder.indicator(this.data);
-                            }
+                                int pos = recordLabel.getIndicatorLength();
+                                builder.indicator(data.substring(0, pos));
+                                if (pos < data.length()) {
+                                    builder.value(this.data.substring(pos));
+                                }                            }
                             found = true;
                             break;
                         } else if (directory.containsKey(position - offset)) {
                             position = position - offset;
                             builder = directory.get(position);
                             if (builder.isControl()) {
-                                builder.value(this.data);
+                                builder.value(data);
                             } else {
-                                builder.indicator(this.data);
+                                int pos = recordLabel.getIndicatorLength();
+                                builder.indicator(data.substring(0, pos));
+                                if (pos < data.length()) {
+                                    builder.value(data.substring(pos));
+                                }
                             }
                             found = true;
                             break;
@@ -204,8 +206,8 @@ public class MarcGenerator implements ChunkListener<byte[], BytesReference>, Clo
                 }
                 break;
             }
-            case US: /* 1f */{
-                builder.subfield(recordLabel, EMPTY, this.data);
+            case US: /* 1f */ {
+                builder.value(recordLabel, data);
                 break;
             }
             default: {
@@ -258,10 +260,10 @@ public class MarcGenerator implements ChunkListener<byte[], BytesReference>, Clo
 
     private void newRecord() throws IOException {
         // skip line-feed (OCLC PICA quirk)
-        if (this.data.charAt(0) == '\n') {
-            this.data = data.substring(1);
+        if (data.charAt(0) == '\n') {
+            data = data.substring(1);
         }
-        if (this.data.length() > RecordLabel.LENGTH) {
+        if (data.length() > RecordLabel.LENGTH) {
             // record label + record content = old directory-based format
             this.recordLabel = RecordLabel.builder().from(this.data.substring(0, RecordLabel.LENGTH).toCharArray()).build();
             if (recordLabelFixer != null) {
@@ -274,7 +276,7 @@ public class MarcGenerator implements ChunkListener<byte[], BytesReference>, Clo
             // create directory
             this.directory = new MarcFieldDirectory(recordLabel, this.data);
             if (directory.isEmpty()) {
-                builder.field(recordLabel, this.data.substring(RecordLabel.LENGTH));
+                builder.field(format, type, recordLabel, data.substring(RecordLabel.LENGTH));
             }
         } else if (this.data.length() == RecordLabel.LENGTH) {
             this.recordLabel = RecordLabel.builder().from(this.data.substring(0, RecordLabel.LENGTH).toCharArray()).build();

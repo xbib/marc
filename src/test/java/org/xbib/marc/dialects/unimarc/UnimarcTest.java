@@ -46,7 +46,7 @@ public class UnimarcTest extends Assert {
         File file = File.createTempFile("periouni.", ".xml");
         file.deleteOnExit();
         FileOutputStream out = new FileOutputStream(file);
-        try (MarcXchangeWriter writer = new MarcXchangeWriter(out)
+        try (MarcXchangeWriter writer = new MarcXchangeWriter(out, true)
                 .setFormat("UNIMARC")
                 .setType("Bibliographic")) {
             Marc.builder()

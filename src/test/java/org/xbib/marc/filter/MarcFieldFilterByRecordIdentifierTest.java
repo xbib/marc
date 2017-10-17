@@ -2,6 +2,7 @@ package org.xbib.marc.filter;
 
 import org.junit.Test;
 import org.xbib.content.XContentBuilder;
+import org.xbib.content.json.JsonXContent;
 import org.xbib.marc.Marc;
 import org.xbib.marc.MarcField;
 import org.xbib.marc.MarcFieldAdapter;
@@ -17,8 +18,6 @@ import java.util.TreeMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
-
-import static org.xbib.content.json.JsonXContent.contentBuilder;
 
 /**
  * Demo of collecting ISSNs by record identifier from a MARC file.
@@ -79,7 +78,7 @@ public class MarcFieldFilterByRecordIdentifierTest {
                 .collect(Collectors.toList());
 
         // JSON output
-        XContentBuilder builder = contentBuilder().prettyPrint()
+        XContentBuilder builder = JsonXContent.contentBuilder().prettyPrint()
                 .startObject();
         for (Map.Entry<String, Map<String, List<Map<String, String>>>> entry : result.entrySet()) {
             builder.field(entry.getKey(), entry.getValue());

@@ -270,8 +270,16 @@ public final class Marc {
         wrapIntoCollection(new BufferedSeparatorInputStream(builder.getInputStream()));
     }
 
+    public void writeCollection(String type) throws IOException {
+        wrapIntoCollection(type, new BufferedSeparatorInputStream(builder.getInputStream()));
+    }
+
     public int wrapIntoCollection(ChunkStream<byte[], BytesReference> stream) throws IOException {
-        return wrapFields(stream, true);
+        return wrapFields(BIBLIOGRAPHIC_TYPE, stream, true);
+    }
+
+    public int wrapIntoCollection(String type, ChunkStream<byte[], BytesReference> stream) throws IOException {
+        return wrapFields(type, stream, true);
     }
 
     /**
@@ -282,10 +290,10 @@ public final class Marc {
      * @return the number of chunks in the stream
      * @throws IOException if chunk reading fails
      */
-    public int wrapFields(ChunkStream<byte[], BytesReference> stream,
+    public int wrapFields(String type, ChunkStream<byte[], BytesReference> stream,
                                   boolean withCollection) throws IOException {
         int count = 0;
-        MarcListener marcListener = builder.getMarcListener();
+        MarcListener marcListener = builder.getMarcListener(type);
         if (marcListener == null) {
             return count;
         }
@@ -703,6 +711,10 @@ public final class Marc {
 
         public MarcListener getMarcListener() {
             return listeners.get(BIBLIOGRAPHIC_TYPE);
+        }
+
+        public MarcListener getMarcListener(String type) {
+            return listeners.get(type);
         }
 
         public Map<String, MarcListener> getMarcListeners() {

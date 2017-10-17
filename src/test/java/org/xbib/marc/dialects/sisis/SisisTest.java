@@ -29,6 +29,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.StringWriter;
+import java.io.Writer;
 import java.nio.charset.StandardCharsets;
 
 /**
@@ -45,8 +46,8 @@ public class SisisTest extends Assert {
     public void testSisis() throws Exception {
         String s = "unloaddipl";
         InputStream in = getClass().getResource(s).openStream();
-        StringWriter sw = new StringWriter();
-        try (MarcXchangeWriter writer = new MarcXchangeWriter(sw)
+        Writer out = new StringWriter();
+        try (MarcXchangeWriter writer = new MarcXchangeWriter(out)
                 .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)) {
             Marc marc = Marc.builder()
                     .setInputStream(in)
@@ -56,7 +57,7 @@ public class SisisTest extends Assert {
             long l = marc.wrapIntoCollection(marc.sisis());
             assertEquals(36353, l);
         }
-        assertThat(sw.toString(), CompareMatcher.isIdenticalTo(getClass().getResource(s + ".xml").openStream()));
+        assertThat(out.toString(), CompareMatcher.isIdenticalTo(getClass().getResource(s + ".xml").openStream()));
     }
 
     /**

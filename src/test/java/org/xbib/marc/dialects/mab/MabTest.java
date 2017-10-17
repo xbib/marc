@@ -63,19 +63,18 @@ public class MabTest {
         File file = File.createTempFile(s + ".", ".xml");
         file.deleteOnExit();
         FileOutputStream out = new FileOutputStream(file);
-        try (MarcXchangeWriter writer = new MarcXchangeWriter(out)
+        try (MarcXchangeWriter writer = new MarcXchangeWriter(out, true)
                 .setFormat("MAB")
-                .setType("Bibliographic")) {
+                .setType("Titel")
+        ) {
             Marc.builder()
+                    .setFormat("MAB")
+                    .setType("Titel")
                     .setInputStream(in)
                     .setCharset(Charset.forName("x-MAB"))
-                    .setFormat("MAB")
-                    .setType("Bibliographic")
-                    .setRecordLabelFixer(recordLabel ->
-                            RecordLabel.builder().from(recordLabel).setSubfieldIdentifierLength(0).build())
-                    .setMarcListener(writer)
+                    .setMarcListener("Titel", writer)
                     .build()
-                    .writeCollection();
+                    .writeCollection("Titel");
         }
         assertThat(file, CompareMatcher.isIdenticalTo(getClass().getResource(s + ".xml").openStream()));
     }

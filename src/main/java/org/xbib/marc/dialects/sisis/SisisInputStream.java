@@ -83,7 +83,7 @@ public class SisisInputStream extends PatternInputStream {
         this.marcGenerator = marcGenerator;
         this.bytesStreamOutput = new BytesStreamOutput();
         // this format comes without a record label, create a default one
-        this.label = RecordLabel.builder().setIndicatorLength(2).setSubfieldIdentifierLength(1).build();
+        this.label = RecordLabel.builder().setIndicatorLength(2).setSubfieldIdentifierLength(2).build();
         this.labelEmitted = false;
     }
 
