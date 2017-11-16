@@ -316,7 +316,7 @@ public class MarcFieldTransformer extends LinkedHashMap<String, MarcField> {
         }
 
         public Builder drop(MarcField a) {
-            map.put(getTransformKey(a), MarcField.EMPTY);
+            map.put(getTransformKey(a), MarcField.emptyMarcField());
             return this;
         }
 

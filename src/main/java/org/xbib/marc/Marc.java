@@ -1057,6 +1057,10 @@ public final class Marc {
             return this;
         }
 
+        public RecordLabel getRecordLabel() {
+            return recordLabel;
+        }
+
         public Marc.Builder addField(MarcField marcField) {
             boolean keymatch = keyPattern == null || marcField.matchKey(keyPattern) != null;
             boolean valuematch = valuePattern == null || marcField.matchValue(valuePattern) != null;

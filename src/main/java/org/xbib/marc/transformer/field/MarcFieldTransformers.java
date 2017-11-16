@@ -40,7 +40,7 @@ public class MarcFieldTransformers extends LinkedList<MarcFieldTransformer> {
                 if (key != null) {
                     MarcField transformedMarcField = marcFieldTransformer.
                             transform(op, marcField, key, lastBuilt);
-                    if (!transformedMarcField.equals(MarcField.EMPTY)) {
+                    if (!transformedMarcField.equals(MarcField.emptyMarcField())) {
                         if (op == MarcFieldTransformer.Operator.TAIL && list.size() > 0) {
                             list.removeLast(); // tail operation means to nullify previous result
                         }

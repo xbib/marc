@@ -115,7 +115,7 @@ public class MarcFieldTransformerTest {
                 .build();
         MarcField a = MarcField.builder().tag("001").subfield("a", "Hello").subfield("b", "World").build();
         MarcField b = marcFieldTransformer.transform(a);
-        assertEquals(MarcField.EMPTY, b);
+        assertEquals(MarcField.emptyMarcField(), b);
     }
 
     @Test
@@ -126,7 +126,7 @@ public class MarcFieldTransformerTest {
                 .build();
         MarcField a = MarcField.builder().tag("001").subfield("a", "Hello").subfield("b", "World").build();
         MarcField b = marcFieldTransformer.transform(a);
-        assertEquals(MarcField.EMPTY, b);
+        assertEquals(MarcField.emptyMarcField(), b);
     }
 
     @Test

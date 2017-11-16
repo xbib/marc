@@ -22,13 +22,16 @@ import org.xbib.marc.label.RecordLabel;
 import java.util.LinkedList;
 import java.util.ListIterator;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 /**
  * A MARC field.
  */
 public class MarcField implements Comparable<MarcField> {
 
-    public static final MarcField EMPTY = builder().build();
+    private static final MarcField EMPTY = builder().build();
+
+    private static final Subfield EMPTY_SUBFIELD = new Subfield(null, null);
 
     public static final String KEY_DELIMITER = "$";
 
@@ -73,6 +76,14 @@ public class MarcField implements Comparable<MarcField> {
         return new Builder();
     }
 
+    public static MarcField emptyMarcField() {
+        return EMPTY;
+    }
+
+    public static Subfield emptySubfield() {
+        return EMPTY_SUBFIELD;
+    }
+
     /**
      * Return the MARC field tag.
      * @return the tag
@@ -114,11 +125,27 @@ public class MarcField implements Comparable<MarcField> {
     }
 
     /**
+     * Return all subfields of a given subfield ID. Multiple occurences may occur.
+     * @param subfieldId subfield ID
+     * @return list of subfields
+     */
+    public LinkedList<Subfield> getSubfield(String subfieldId) {
+        return subfields.stream()
+                .filter(subfield -> subfield.getId().equals(subfieldId))
+                .collect(Collectors.toCollection(LinkedList::new));
+    }
+
+    /**
      * Return first subfield or null. Avoids NoSuchElementException of java.util.LinkedList.
      * @return first subfield or null
      */
     public Subfield getFirstSubfield() {
-        return subfields.isEmpty() ? Subfield.EMPTY_SUBFIELD : subfields.getFirst();
+        return subfields.isEmpty() ? MarcField.emptySubfield() : subfields.getFirst();
+    }
+
+    public String getFirstSubfieldValue(String subfieldId) {
+        LinkedList<Subfield> list = getSubfield(subfieldId);
+        return list.isEmpty() ? null : list.getFirst().getValue();
     }
 
     /**
@@ -126,7 +153,12 @@ public class MarcField implements Comparable<MarcField> {
      * @return last subfield or null
      */
     public Subfield getLastSubfield() {
-        return subfields.isEmpty() ? Subfield.EMPTY_SUBFIELD : subfields.getLast();
+        return subfields.isEmpty() ? MarcField.emptySubfield() : subfields.getLast();
+    }
+
+    public String getLastSubfieldValue(String subfieldId) {
+        LinkedList<Subfield> list = getSubfield(subfieldId);
+        return list.isEmpty() ? null : list.getLast().getValue();
     }
 
     /**
@@ -415,6 +447,12 @@ public class MarcField implements Comparable<MarcField> {
             return this;
         }
 
+        public Builder subfield(Subfield subfield) {
+            subfields.add(subfield);
+            subfieldIds.add(subfield.getId());
+            return this;
+        }
+
         /**
          * Set subfield with subfield ID and value.
          * @param subfieldId the subfield ID
@@ -472,8 +510,7 @@ public class MarcField implements Comparable<MarcField> {
         public Builder value(RecordLabel recordLabel, String value) {
             if (value.length() > 0) {
                 int len = recordLabel.getSubfieldIdentifierLength() - 1; /* minus length of US separator char */
-                boolean createSubfields = len > 0 && value.length() > len;
-                if (createSubfields) {
+                if (!isControl() && len > 0 && value.length() > len) {
                     String id = value.substring(0, len);
                     String content = value.substring(len);
                     subfield(id, content);
@@ -525,12 +562,6 @@ public class MarcField implements Comparable<MarcField> {
                     indicator(raw.substring(3, pos));
                     value(format, type, recordLabel, raw.substring(pos));
                 }
-                /*int subfieldidlen = label.getSubfieldIdentifierLength();
-                if (raw.length() >= pos + subfieldidlen) {
-                    String subfieldId = raw.substring(pos, pos + subfieldidlen);
-                    this.subfields.add(new Subfield(subfieldId, raw.substring(pos + subfieldidlen)));
-                    subfieldIds.add(subfieldId);
-                }*/
             }
             return this;
         }
@@ -609,8 +640,6 @@ public class MarcField implements Comparable<MarcField> {
      * MARC subfield. A subfield consists of an ID and a value.
      */
     public static class Subfield {
-
-        static final Subfield EMPTY_SUBFIELD = new Subfield(null, null);
 
         private final String id;
 

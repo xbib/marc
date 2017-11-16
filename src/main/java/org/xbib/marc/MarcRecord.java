@@ -111,14 +111,26 @@ public class MarcRecord extends LinkedHashMap<String, Object> {
     }
 
     /**
+     * Return the MARC fields of this record with a given tag.
+     *
+     * @return the MARC field list matching the given tag.
+     */
+    public List<MarcField> getFields(String tag) {
+        return marcFields.stream().filter(marcField -> marcField.getTag().equals(tag))
+                .collect(Collectors.toList());
+    }
+
+    /**
      * Return a list of MARC fields of this record where key pattern matches were found.
      *
      * @param pattern the pattern
      * @return a list of MARC fields
      */
     public List<MarcField> filterKey(Pattern pattern) {
-        return marcFields.stream().map(field ->
-                field.matchKey(pattern)).filter(Objects::nonNull).collect(Collectors.toList());
+        return marcFields.stream()
+                .map(field -> field.matchKey(pattern))
+                .filter(Objects::nonNull)
+                .collect(Collectors.toList());
     }
 
     /**
