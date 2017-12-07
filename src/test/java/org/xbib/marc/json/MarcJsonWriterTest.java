@@ -260,7 +260,7 @@ public class MarcJsonWriterTest {
     @Test
     public void elasticsearchBulkFormatCompressed() throws Exception {
         String s = "IRMARC8.bin";
-        InputStream in = getClass().getResource("/org/xbib/marc//" + s).openStream();
+        InputStream in = getClass().getResource("/org/xbib/marc/" + s).openStream();
         MarcValueTransformers marcValueTransformers = new MarcValueTransformers();
         marcValueTransformers.setMarcValueTransformer(value -> Normalizer.normalize(value, Normalizer.Form.NFC));
         // split at 3, Elasticsearch bulk format, buffer size 65536, compress = true
@@ -295,4 +295,21 @@ public class MarcJsonWriterTest {
         }
     }
 
+    @Test
+    public void testBundeskunsthalle() throws Exception {
+        String s = "bundeskunsthalle.xml";
+        InputStream in = getClass().getResource("/org/xbib/marc/xml/" + s).openStream();
+        try (MarcJsonWriter writer = new MarcJsonWriter("build/bk-bulk%d.jsonl", 1,
+                MarcJsonWriter.Style.ELASTICSEARCH_BULK)
+                .setIndex("testindex", "testtype")) {
+            Marc.builder()
+                    .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)
+                    .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)
+                    .setInputStream(in)
+                    .setMarcListener(writer)
+                    .build()
+                    .xmlReader().parse();
+            assertNull(writer.getException());
+        }
+    }
 }

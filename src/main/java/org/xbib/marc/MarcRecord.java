@@ -36,7 +36,9 @@ import java.util.stream.Collectors;
 public class MarcRecord extends LinkedHashMap<String, Object> {
 
     private static final MarcRecord EMPTY = Marc.builder().buildRecord();
+
     private static final long serialVersionUID = 5305809148724342653L;
+
     private final String format;
 
     private final String type;
@@ -183,7 +185,9 @@ public class MarcRecord extends LinkedHashMap<String, Object> {
                 }
                 Map<String, Object> subfields = (Map<String, Object>) indicators.get(indicator);
                 for (MarcField.Subfield subfield : marcField.getSubfields()) {
-                    Object subfieldValue = subfields.get(subfield.getId());
+                    String code = subfield.getId();
+                    code = code.replace(' ', '_');
+                    Object subfieldValue = subfields.get(code);
                     if (subfieldValue instanceof List) {
                         List<String> list = (List<String>) subfieldValue;
                         list.add(subfield.getValue());
@@ -191,9 +195,9 @@ public class MarcRecord extends LinkedHashMap<String, Object> {
                         List<String> list = new LinkedList<>();
                         list.add((String) subfieldValue);
                         list.add(subfield.getValue());
-                        subfields.put(subfield.getId(), list);
+                        subfields.put(code, list);
                     } else {
-                        subfields.put(subfield.getId(), subfield.getValue());
+                        subfields.put(code, subfield.getValue());
                     }
                 }
             } else {

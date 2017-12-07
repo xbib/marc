@@ -1,0 +1,70 @@
+<record xmlns="http://www.loc.gov/MARC21/slim" id="_048861" type="Bibliographic" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/MARC21/slim                         http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <leader>00000nam a2200024ui 4500</leader>
+    <controlfield tag="001">048861</controlfield>
+    <controlfield tag="003">DE-Bo412</controlfield>
+    <controlfield tag="005">20020528155543.0</controlfield>
+    <controlfield tag="008">020528s1991    xx ||||      |00||||fre|d</controlfield>
+    <datafield tag="020" ind1=" " ind2=" ">
+        <subfield code="a">2733501968</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+        <subfield code="a">DE-Bo412</subfield>
+        <subfield code="b">ger</subfield>
+        <subfield code="c">DE-Bo412</subfield>
+        <subfield code="e">rakwb</subfield>
+    </datafield>
+    <datafield tag="041" ind1=" " ind2=" ">
+        <subfield code="a">fre</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+        <subfield code="a">Grinfelder, Marie-Hélène.</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="4">
+        <subfield code="a">Les années Supports Surfaces :</subfield>
+        <subfield code="b">1965-1990 /</subfield>
+        <subfield code="c">Marie-Hélène Grinfelder</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+        <subfield code="a">Paris :</subfield>
+        <subfield code="b">Herscher,</subfield>
+        <subfield code="c">1991</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+        <subfield code="a">431 S.:</subfield>
+        <subfield code="b">Ill.</subfield>
+    </datafield>
+    <datafield tag="600" ind1="0" ind2="7">
+        <subfield code="a">Supports.</subfield>
+    </datafield>
+    <datafield tag="600" ind1="0" ind2="7">
+        <subfield code="a">.</subfield>
+        <subfield code=" ">Surfaces &lt;Künstlergemeinschaft&gt;</subfield>
+    </datafield>
+    <datafield tag="648" ind1=" " ind2="7">
+        <subfield code="a">1965-1990.</subfield>
+        <subfield code="2">local</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="7">
+        <subfield code="a">Künstlervereinigung.</subfield>
+        <subfield code="0">(DE-Bo412)ss4165895</subfield>
+        <subfield code="0">(DE-588)4165895-4</subfield>
+        <subfield code="0">(DE-588c)4165895-4</subfield>
+        <subfield code="0">(uri)http://d-nb.info/gnd/4165895-4</subfield>
+        <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="651" ind1=" " ind2="7">
+        <subfield code="a">Frankreich.</subfield>
+        <subfield code="2">local</subfield>
+    </datafield>
+    <datafield tag="850" ind1=" " ind2=" ">
+        <subfield code="a">DE-Bo412</subfield>
+    </datafield>
+    <datafield tag="852" ind1="4" ind2=" ">
+        <subfield code="z">Signatur</subfield>
+        <subfield code="j">Kc 200 Suppor D/1</subfield>
+    </datafield>
+    <datafield tag="852" ind1="8" ind2=" ">
+        <subfield code="z">Inventarnummer</subfield>
+        <subfield code="p">95-247</subfield>
+    </datafield>
+</record>

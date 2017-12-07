@@ -56,23 +56,41 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
     private static final Logger logger = Logger.getLogger(MarcJsonWriter.class.getName());
 
     private static final int DEFAULT_BUFFER_SIZE = 65536;
+
     private static final Pattern quotePattern = Pattern.compile("\"", Pattern.LITERAL);
+
     private static final Pattern backslashPattern = Pattern.compile("\\\\");
+
     private static final String ESCAPE_QUOTE = "\\\"";
+
     private static final String ESCAPE_BACKSLASH = "\\\\";
+
     private final Lock lock;
+
     private final StringBuilder sb;
+
     private Writer writer;
+
     private Marc.Builder builder;
+
     private boolean fatalErrors;
+
     private Style style;
+
     private Exception exception;
+
     private String fileNamePattern;
+
     private AtomicInteger fileNameCounter;
+
     private int splitlimit;
+
     private int bufferSize;
+
     private boolean compress;
+
     private String index;
+
     private String indexType;
     /**
      * Flag for indicating if writer is at top of file.
