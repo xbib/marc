@@ -92,85 +92,85 @@ public class MarcRecordTest extends Assert {
     @Test
     public void testFilterKeyIterable() throws Exception {
         String s = "summerland.mrc";
-        InputStream in = getClass().getResource(s).openStream();
-        Marc.Builder builder = Marc.builder()
-                .setInputStream(in)
-                .setCharset(Charset.forName("ANSEL"));
-        // only single record
-        for (MarcRecord marcRecord : builder.iterable()) {
-            // single 245 field
-            assertEquals(1, marcRecord.filterKey(Pattern.compile("^245.*")).size());
+        try (InputStream in = getClass().getResource(s).openStream()) {
+            Marc.Builder builder = Marc.builder()
+                    .setInputStream(in)
+                    .setCharset(Charset.forName("ANSEL"));
+            // only single record
+            for (MarcRecord marcRecord : builder.iterable()) {
+                // single 245 field
+                assertEquals(1, marcRecord.filterKey(Pattern.compile("^245.*")).size());
+            }
         }
-        in.close();
     }
 
     @Test
     public void testFilterKey() throws Exception {
         String s = "summerland.mrc";
-        InputStream in = getClass().getResource(s).openStream();
-        Marc.Builder builder = Marc.builder()
-                .setInputStream(in)
-                .setCharset(Charset.forName("ANSEL"))
-                .setKeyPattern(Pattern.compile("^245.*"));
-        //  record with single field
-        for (MarcRecord marcRecord : builder.iterable()) {
-            assertEquals(1, marcRecord.getFields().size());
+        try (InputStream in = getClass().getResource(s).openStream()) {
+            Marc.Builder builder = Marc.builder()
+                    .setInputStream(in)
+                    .setCharset(Charset.forName("ANSEL"))
+                    .setKeyPattern(Pattern.compile("^245.*"));
+            //  record with single field
+            for (MarcRecord marcRecord : builder.iterable()) {
+                assertEquals(1, marcRecord.getFields().size());
+            }
         }
-        in.close();
     }
 
     @Test
     public void testFilterValueIterable() throws Exception {
         String s = "summerland.mrc";
-        InputStream in = getClass().getResource(s).openStream();
-        Marc.Builder builder = Marc.builder()
-                .setInputStream(in)
-                .setCharset(Charset.forName("ANSEL"));
-        for (MarcRecord marcRecord : builder.iterable()) {
-            assertEquals(2, marcRecord.filterValue(Pattern.compile(".*?Chabon.*")).size());
+        try (InputStream in = getClass().getResource(s).openStream()) {
+            Marc.Builder builder = Marc.builder()
+                    .setInputStream(in)
+                    .setCharset(Charset.forName("ANSEL"));
+            for (MarcRecord marcRecord : builder.iterable()) {
+                assertEquals(2, marcRecord.filterValue(Pattern.compile(".*?Chabon.*")).size());
+            }
         }
-        in.close();
     }
 
     @Test
     public void testFilterValue() throws Exception {
         String s = "summerland.mrc";
-        InputStream in = getClass().getResource(s).openStream();
-        Marc.Builder builder = Marc.builder()
-                .setInputStream(in)
-                .setCharset(Charset.forName("ANSEL"))
-                .setValuePattern(Pattern.compile(".*?Chabon.*"));
-        for (MarcRecord marcRecord : builder.iterable()) {
-            assertEquals(2, marcRecord.getFields().size());
+        try (InputStream in = getClass().getResource(s).openStream()) {
+            Marc.Builder builder = Marc.builder()
+                    .setInputStream(in)
+                    .setCharset(Charset.forName("ANSEL"))
+                    .setValuePattern(Pattern.compile(".*?Chabon.*"));
+            for (MarcRecord marcRecord : builder.iterable()) {
+                assertEquals(2, marcRecord.getFields().size());
+            }
         }
-        in.close();
     }
 
     @Test
     public void testSequentialIteration() throws Exception {
         String s = "dialects/unimarc/periouni.mrc";
-        InputStream in = getClass().getResource(s).openStream();
-        Marc.Builder builder = Marc.builder()
-                .setInputStream(in).setCharset(StandardCharsets.UTF_8);
-        final AtomicInteger count = new AtomicInteger();
-        // test for loop
-        for (MarcRecord marcRecord : builder.iterable()) {
-            count.incrementAndGet();
+        try (InputStream in = getClass().getResource(s).openStream()) {
+            Marc.Builder builder = Marc.builder()
+                    .setInputStream(in).setCharset(StandardCharsets.UTF_8);
+            final AtomicInteger count = new AtomicInteger();
+            // test for loop
+            for (MarcRecord marcRecord : builder.iterable()) {
+                count.incrementAndGet();
+            }
+            assertEquals(3064, count.get());
         }
-        in.close();
-        assertEquals(3064, count.get());
     }
 
     @Test
     public void testRecordStream() throws Exception {
         String s = "dialects/unimarc/periouni.mrc";
-        InputStream in = getClass().getResource(s).openStream();
-        Marc.Builder builder = Marc.builder()
-                .setInputStream(in)
-                .setCharset(StandardCharsets.UTF_8);
-        long count = builder.recordStream().map(r -> r.get("001")).count();
-        in.close();
-        assertEquals(3064, count);
+        try (InputStream in = getClass().getResource(s).openStream()) {
+            Marc.Builder builder = Marc.builder()
+                    .setInputStream(in)
+                    .setCharset(StandardCharsets.UTF_8);
+            long count = builder.recordStream().map(r -> r.get("001")).count();
+            assertEquals(3064, count);
+        }
     }
 
     /**
@@ -179,47 +179,49 @@ public class MarcRecordTest extends Assert {
     @Test
     public void testIRMARC8AsRecordStream() throws Exception {
         String s = "IRMARC8.bin";
-        InputStream in = getClass().getResource(s).openStream();
-        File file = File.createTempFile(s + ".", ".xml");
-        file.deleteOnExit();
-        FileOutputStream out = new FileOutputStream(file);
-        MarcValueTransformers marcValueTransformers = new MarcValueTransformers();
-        marcValueTransformers.setMarcValueTransformer(value -> Normalizer.normalize(value, Normalizer.Form.NFC));
-        try (MarcXchangeWriter writer = new MarcXchangeWriter(out)
-                .setMarcValueTransformers(marcValueTransformers)) {
-            Marc.builder()
-                    .setInputStream(in)
-                    .setCharset(Charset.forName("ANSEL"))
-                    .setMarcRecordListener(writer)
-                    .build()
-                    .writeRecordCollection();
-            assertNull(writer.getException());
+        try (InputStream in = getClass().getResource(s).openStream()) {
+            File file = File.createTempFile(s + ".", ".xml");
+            file.deleteOnExit();
+            FileOutputStream out = new FileOutputStream(file);
+            MarcValueTransformers marcValueTransformers = new MarcValueTransformers();
+            marcValueTransformers.setMarcValueTransformer(value -> Normalizer.normalize(value, Normalizer.Form.NFC));
+            try (MarcXchangeWriter writer = new MarcXchangeWriter(out)
+                    .setMarcValueTransformers(marcValueTransformers)) {
+                Marc.builder()
+                        .setInputStream(in)
+                        .setCharset(Charset.forName("ANSEL"))
+                        .setMarcRecordListener(writer)
+                        .build()
+                        .writeRecordCollection();
+                assertNull(writer.getException());
+            }
+            assertThat(file, CompareMatcher.isIdenticalTo(getClass().getResource(s + ".xml").openStream()));
         }
-        assertThat(file, CompareMatcher.isIdenticalTo(getClass().getResource(s + ".xml").openStream()));
     }
 
     @Test
     public void testIRMARC8AsLightweightRecordAdapter() throws Exception {
         String s = "IRMARC8.bin";
-        InputStream in = getClass().getResource(s).openStream();
-        File file = File.createTempFile(s + ".", ".xml");
-        file.deleteOnExit();
-        FileOutputStream out = new FileOutputStream(file);
-        MarcValueTransformers marcValueTransformers = new MarcValueTransformers();
-        marcValueTransformers.setMarcValueTransformer(value -> Normalizer.normalize(value, Normalizer.Form.NFC));
-        try (MarcXchangeWriter writer = new MarcXchangeWriter(out)
-                .setMarcValueTransformers(marcValueTransformers)) {
-            writer.startDocument(); // just write XML processing instruction
-            Marc.builder()
-                    .setInputStream(in)
-                    .setCharset(Charset.forName("ANSEL"))
-                    .setMarcListener(new LightweightMarcRecordAdapter(writer))
-                    .build()
-                    .writeCollection();
-            assertNull(writer.getException());
-            writer.endDocument();
+        try (InputStream in = getClass().getResource(s).openStream()) {
+            File file = File.createTempFile(s + ".", ".xml");
+            file.deleteOnExit();
+            FileOutputStream out = new FileOutputStream(file);
+            MarcValueTransformers marcValueTransformers = new MarcValueTransformers();
+            marcValueTransformers.setMarcValueTransformer(value -> Normalizer.normalize(value, Normalizer.Form.NFC));
+            try (MarcXchangeWriter writer = new MarcXchangeWriter(out)
+                    .setMarcValueTransformers(marcValueTransformers)) {
+                writer.startDocument(); // just write XML processing instruction
+                Marc.builder()
+                        .setInputStream(in)
+                        .setCharset(Charset.forName("ANSEL"))
+                        .setMarcListener(new LightweightMarcRecordAdapter(writer))
+                        .build()
+                        .writeCollection();
+                assertNull(writer.getException());
+                writer.endDocument();
+            }
+            assertThat(file, CompareMatcher.isIdenticalTo(getClass().getResource(s + ".xml").openStream()));
         }
-        assertThat(file, CompareMatcher.isIdenticalTo(getClass().getResource(s + ".xml").openStream()));
     }
 
 }

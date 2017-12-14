@@ -16,6 +16,9 @@ public class MabSubfieldControl {
         FIELDS.put("856", 2);
     }
 
+    private MabSubfieldControl() {
+    }
+
     public static Integer getSubfieldIdLen(String tag) {
         return FIELDS.getOrDefault(tag, 0);
     }

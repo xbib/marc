@@ -29,7 +29,7 @@ public class MarcFieldTest extends Assert {
     @Test
     public void testFieldData() {
         MarcField marcField = MarcField.builder().tag("100").indicator("").value("Hello World").build();
-        assertEquals(marcField.getValue(), "Hello World");
+        assertEquals("Hello World", marcField.getValue());
     }
 
     @Test
@@ -159,7 +159,7 @@ public class MarcFieldTest extends Assert {
         MarcField marcField = MarcField.builder()
                 .tag("100")
                 .indicator("0")
-                .subfield("-", null)
+                .subfield("\u007f", null)
                 .build();
         assertFalse(marcField.isSubfieldValid());
     }

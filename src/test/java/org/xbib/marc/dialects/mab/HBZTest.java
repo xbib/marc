@@ -1,5 +1,8 @@
 package org.xbib.marc.dialects.mab;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
 import org.junit.Test;
 import org.xbib.marc.Marc;
 import org.xbib.marc.MarcRecord;
@@ -8,9 +11,6 @@ import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.logging.Logger;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 
 /**
  *

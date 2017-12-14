@@ -29,7 +29,6 @@ import org.xbib.marc.transformer.MarcTransformer;
 import org.xbib.marc.transformer.field.MarcFieldTransformers;
 import org.xbib.marc.transformer.value.MarcValueTransformers;
 
-import java.io.Closeable;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.util.LinkedList;
@@ -38,7 +37,7 @@ import java.util.List;
 /**
  * This chunk listener interprets the chunks from a stream and generates MARC events to a given MARC listener.
  */
-public class MarcGenerator implements ChunkListener<byte[], BytesReference>, Closeable {
+public class MarcGenerator implements ChunkListener<byte[], BytesReference> {
 
     private String format;
 
@@ -180,7 +179,8 @@ public class MarcGenerator implements ChunkListener<byte[], BytesReference>, Clo
                                 builder.indicator(data.substring(0, pos));
                                 if (pos < data.length()) {
                                     builder.value(this.data.substring(pos));
-                                }                            }
+                                }
+                            }
                             found = true;
                             break;
                         } else if (directory.containsKey(position - offset)) {
@@ -221,7 +221,7 @@ public class MarcGenerator implements ChunkListener<byte[], BytesReference>, Clo
      * This method will emit the last record, if not emitted already.
      * Useful if chunk streams have no closing record separator.
      */
-    public void close() throws IOException {
+    public void flush() {
         if (position > 0) {
             emitMarcRecord();
         }

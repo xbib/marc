@@ -25,12 +25,14 @@ import java.util.Map;
  */
 public class MarcValueTransformers {
 
+    private static final String DEFAULT = "_default";
+
     private final Map<String, MarcValueTransformer> marcValueTransformerMap = new HashMap<>();
 
     private final Map<String, String> subfieldMap = new HashMap<>();
 
     public MarcValueTransformers setMarcValueTransformer(MarcValueTransformer transformer) {
-        this.marcValueTransformerMap.put("_default", transformer);
+        this.marcValueTransformerMap.put(DEFAULT, transformer);
         return this;
     }
 
@@ -62,7 +64,7 @@ public class MarcValueTransformers {
             return field;
         }
         final MarcValueTransformer transformer = marcValueTransformerMap.containsKey(key) ?
-                marcValueTransformerMap.get(key) : marcValueTransformerMap.get("_default");
+                marcValueTransformerMap.get(key) : marcValueTransformerMap.get(DEFAULT);
         if (transformer != null) {
             MarcField.Builder builder = MarcField.builder();
             builder.tag(field.getTag()).indicator(field.getIndicator());
@@ -80,7 +82,7 @@ public class MarcValueTransformers {
     }
 
     public String transform(String value) {
-        MarcValueTransformer marcValueTransformer = marcValueTransformerMap.get("_default");
+        MarcValueTransformer marcValueTransformer = marcValueTransformerMap.get(DEFAULT);
         return marcValueTransformer != null ? marcValueTransformer.transform(value) : value;
     }
 }

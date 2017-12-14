@@ -19,8 +19,12 @@ package org.xbib.marc;
 import org.xbib.marc.dialects.mab.MabSubfieldControl;
 import org.xbib.marc.label.RecordLabel;
 
+import java.util.Arrays;
+import java.util.Deque;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.ListIterator;
+import java.util.Set;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
@@ -39,6 +43,21 @@ public class MarcField implements Comparable<MarcField> {
 
     private static final String BLANK_STRING = " ";
 
+    private static final Set<Character> ASCII_GRAPHICS = new HashSet<>(Arrays.asList(
+            '\u0020', '\u0021', '\u0022', '\u0023', '\u0024', '\u0025', '\u0026', '\'',
+            '\u0028', '\u0029', '\u002A', '\u002B', '\u002C', '\u002D', '\u002E', '\u002F',
+            '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
+            '\u003A', '\u003B', '\u003C', '\u003D', '\u003E', '\u003F', '\u0040',
+            'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
+            'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
+            'U', 'V', 'W', 'X', 'Y', 'Z',
+            '\u005B', '\\', '\u005D', '\u005E', '\u005F', '\u0060',
+            'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
+            'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't',
+            'u', 'v', 'w', 'x', 'y', 'z',
+            '\u007B', '\u007C', '\u007D', '\u007E'
+            ));
+
     private final String tag;
 
     private final String indicator;
@@ -51,12 +70,12 @@ public class MarcField implements Comparable<MarcField> {
 
     private final String subfieldIds;
 
-    private final LinkedList<Subfield> subfields;
+    private final Deque<Subfield> subfields;
 
     private final boolean iscontrol;
 
     private MarcField(String tag, String indicator, int position, int length,
-                      String value, LinkedList<Subfield> subfields, String subfieldIds,
+                      String value, Deque<Subfield> subfields, String subfieldIds,
                       boolean iscontrol) {
         this.tag = tag;
         this.indicator = indicator;
@@ -120,7 +139,7 @@ public class MarcField implements Comparable<MarcField> {
      * Return the subfields associated with this MARC field.
      * @return a list of MARC subfields
      */
-    public LinkedList<Subfield> getSubfields() {
+    public Deque<Subfield> getSubfields() {
         return subfields;
     }
 
@@ -129,7 +148,7 @@ public class MarcField implements Comparable<MarcField> {
      * @param subfieldId subfield ID
      * @return list of subfields
      */
-    public LinkedList<Subfield> getSubfield(String subfieldId) {
+    public Deque<Subfield> getSubfield(String subfieldId) {
         return subfields.stream()
                 .filter(subfield -> subfield.getId().equals(subfieldId))
                 .collect(Collectors.toCollection(LinkedList::new));
@@ -144,8 +163,8 @@ public class MarcField implements Comparable<MarcField> {
     }
 
     public String getFirstSubfieldValue(String subfieldId) {
-        LinkedList<Subfield> list = getSubfield(subfieldId);
-        return list.isEmpty() ? null : list.getFirst().getValue();
+        Deque<Subfield> deque = getSubfield(subfieldId);
+        return deque.isEmpty() ? null : deque.getFirst().getValue();
     }
 
     /**
@@ -157,8 +176,8 @@ public class MarcField implements Comparable<MarcField> {
     }
 
     public String getLastSubfieldValue(String subfieldId) {
-        LinkedList<Subfield> list = getSubfield(subfieldId);
-        return list.isEmpty() ? null : list.getLast().getValue();
+        Deque<Subfield> deque = getSubfield(subfieldId);
+        return deque.isEmpty() ? null : deque.getLast().getValue();
     }
 
     /**
@@ -229,13 +248,7 @@ public class MarcField implements Comparable<MarcField> {
         }
         boolean b = true;
         for (int i = 0; i < subfieldIds.length(); i++) {
-            b = subfieldIds.charAt(i) == ' '
-                    || (subfieldIds.charAt(i) >= '0' && subfieldIds.charAt(i) <= '9')
-                    || (subfieldIds.charAt(i) >= 'a' && subfieldIds.charAt(i) <= 'z')
-                    || (subfieldIds.charAt(i) >= 'A' && subfieldIds.charAt(i) <= 'Z') // can appear in german MARC
-                    || subfieldIds.charAt(i) == '$' // can appear in german MARC
-                    || subfieldIds.charAt(i) == '=' // can appear in german MARC
-                    ;
+            b = ASCII_GRAPHICS.contains(subfieldIds.charAt(i));
             if (!b) {
                 break;
             }

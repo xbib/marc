@@ -64,13 +64,15 @@ test {
 }
 
 asciidoctor {
-    backends 'html5'
-    separateOutputDirs = false
-    attributes 'source-highlighter': 'coderay',
-            toc                 : '',
-            idprefix            : '',
-            idseparator         : '-',
-            stylesheet: "${projectDir}/src/docs/asciidoc/css/foundation.css"
+    attributes toc: 'left',
+            doctype: 'book',
+            icons: 'font',
+            encoding: 'utf-8',
+            sectlink: true,
+            sectanchors: true,
+            linkattrs: true,
+            imagesdir: 'img',
+            'source-highlighter': 'coderay'
 }
 
 javadoc {

@@ -5,10 +5,8 @@ Version 1.0
 :toc: preamble
 :toclevels: 4
 :!toc-title: Content
-:experimental:
 :description: MARC bibliographic data processing
 :keywords: MARC, Java,  bibliographic data processing
-:icons: font
 
 == Introduction
 

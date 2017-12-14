@@ -22,25 +22,31 @@ package org.xbib.marc;
 public class MarcFieldAdapter implements  MarcListener {
     @Override
     public void beginCollection() {
+        // empty by design
     }
 
     @Override
     public void beginRecord(String format, String type) {
+        // empty by design
     }
 
     @Override
     public void leader(String label) {
+        // empty by design
     }
 
     @Override
     public void field(MarcField field) {
+        // empty by design
     }
 
     @Override
     public void endRecord() {
+        // empty by design
     }
 
     @Override
     public void endCollection() {
+        // empty by design
     }
 }

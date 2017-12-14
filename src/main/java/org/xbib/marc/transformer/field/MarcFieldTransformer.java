@@ -21,6 +21,7 @@ import static org.xbib.marc.transformer.field.MarcFieldTransformer.Operator.HEAD
 import org.xbib.marc.MarcField;
 
 import java.util.Collection;
+import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.logging.Level;
@@ -131,12 +132,13 @@ public class MarcFieldTransformer extends LinkedHashMap<String, MarcField> {
                     builder.subfield(subfield.getId(), subfield.getValue());
                 }
             } else {
-                // map subfields
-                for (int i = 0; i < marcField.getSubfields().size(); i++) {
-                    if (i < newMarcField.getSubfields().size()) {
-                        builder.subfield(newMarcField.getSubfields().get(i).getId(),
-                                marcField.getSubfields().get(i).getValue());
-                    }
+                // transform subfields
+                Iterator<MarcField.Subfield> subfields = marcField.getSubfields().iterator();
+                Iterator<MarcField.Subfield> newSubfields = newMarcField.getSubfields().iterator();
+                while (subfields.hasNext() && newSubfields.hasNext()) {
+                    MarcField.Subfield subfield = subfields.next();
+                    MarcField.Subfield newSubfield = newSubfields.next();
+                    builder.subfield(newSubfield.getId(), subfield.getValue());
                 }
             }
         }
@@ -192,11 +194,12 @@ public class MarcFieldTransformer extends LinkedHashMap<String, MarcField> {
         } else {
             // get the correct MARC field to map subfield IDs
             MarcField marcField1 = get(key);
-            for (int i = 0; i < marcField.getSubfields().size(); i++) {
-                if (i < marcField1.getSubfields().size()) {
-                    builder.subfield(marcField1.getSubfields().get(i).getId(),
-                            marcField.getSubfields().get(i).getValue());
-                }
+            Iterator<MarcField.Subfield> subfields = marcField.getSubfields().iterator();
+            Iterator<MarcField.Subfield> newSubfields = marcField1.getSubfields().iterator();
+            while (subfields.hasNext() && newSubfields.hasNext()) {
+                MarcField.Subfield subfield = subfields.next();
+                MarcField.Subfield newSubfield = newSubfields.next();
+                builder.subfield(newSubfield.getId(), subfield.getValue());
             }
         }
         lastBuilt = builder.build();

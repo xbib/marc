@@ -89,11 +89,11 @@ public class BufferedSeparatorInputStreamTest {
             listener.chunk(chunk);
         }
         in.close();
-        assertEquals(unitCount, 23);
-        assertEquals(groupCount, 9);
-        assertEquals(dataCount, 389);
-        assertEquals(recordCount, 356);
-        assertEquals(fileCount, 1);
+        assertEquals(23, unitCount);
+        assertEquals(9, groupCount);
+        assertEquals(389, dataCount);
+        assertEquals(356, recordCount);
+        assertEquals(1, fileCount);
     }
 
     @Test

@@ -314,7 +314,7 @@ public final class Marc {
                 count++;
             }
             stream.close();
-            builder.marcGenerator.close();
+            builder.marcGenerator.flush();
             if (withCollection) {
                 marcListener.endCollection();
                 if (marcListener instanceof ContentHandler) {
@@ -384,7 +384,7 @@ public final class Marc {
                 l.incrementAndGet();
             });
             stream.close();
-            builder.marcGenerator.close();
+            builder.marcGenerator.flush();
             if (withCollection) {
                 marcRecordListener.endCollection();
                 if (marcRecordListener instanceof ContentHandler) {
@@ -567,7 +567,7 @@ public final class Marc {
                 while ((chunk = stream.readChunk()) != null) {
                     marcGenerator.chunk(chunk);
                 }
-                marcGenerator.close();
+                marcGenerator.flush();
             } finally {
                 builder.getInputStream().close();
             }
@@ -1100,18 +1100,19 @@ public final class Marc {
                 @Override
                 public boolean hasNext() {
                     try {
-                        setMarcRecord(null);
+                        MarcRecord record;
+                        record(null);
                         Chunk<byte[], BytesReference> chunk;
                         while ((chunk = stream.readChunk()) != null) {
                             marcGenerator.chunk(chunk);
-                            MarcRecord marcRecord = getMarcRecord();
-                            if (marcRecord != null) {
+                            record = getMarcRecord();
+                            if (record != null) {
                                 return true;
                             }
                         }
-                        marcGenerator.close();
-                        MarcRecord marcRecord = getMarcRecord();
-                        if (marcRecord != null) {
+                        marcGenerator.flush();
+                        record = getMarcRecord();
+                        if (record != null) {
                             return true;
                         }
                     } catch (IOException e) {
@@ -1122,11 +1123,11 @@ public final class Marc {
 
                 @Override
                 public MarcRecord next() {
-                    MarcRecord marcRecord = getMarcRecord();
-                    if (marcRecord == null) {
+                    MarcRecord record = getMarcRecord();
+                    if (record == null) {
                         throw new NoSuchElementException();
                     }
-                    return marcRecord;
+                    return record;
                 }
             };
         }
@@ -1156,10 +1157,6 @@ public final class Marc {
         public Marc.Builder chunk(Chunk<byte[], BytesReference> chunk) throws IOException {
             marcGenerator.chunk(chunk);
             return this;
-        }
-
-        private void setMarcRecord(MarcRecord marcRecord) {
-            this.marcRecord = marcRecord;
         }
 
         private MarcRecord getMarcRecord() {

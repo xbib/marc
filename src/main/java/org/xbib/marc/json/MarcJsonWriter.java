@@ -24,7 +24,15 @@ import org.xbib.marc.label.RecordLabel;
 import org.xbib.marc.transformer.value.MarcValueTransformers;
 import org.xbib.marc.xml.MarcContentHandler;
 
-import java.io.*;
+import java.io.BufferedOutputStream;
+import java.io.BufferedWriter;
+import java.io.Closeable;
+import java.io.Flushable;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.io.UncheckedIOException;
+import java.io.Writer;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -97,23 +105,23 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
      */
     private boolean top;
 
-    public MarcJsonWriter(OutputStream out) throws IOException {
+    public MarcJsonWriter(OutputStream out) {
         this(out, Style.ARRAY);
     }
 
-    public MarcJsonWriter(OutputStream out, Style style) throws IOException {
+    public MarcJsonWriter(OutputStream out, Style style) {
         this(out, DEFAULT_BUFFER_SIZE, style);
     }
 
-    public MarcJsonWriter(OutputStream out, int bufferSize, Style style) throws IOException {
+    public MarcJsonWriter(OutputStream out, int bufferSize, Style style) {
         this(new OutputStreamWriter(out, StandardCharsets.UTF_8), style, bufferSize);
     }
 
-    public MarcJsonWriter(Writer writer) throws IOException {
+    public MarcJsonWriter(Writer writer) {
         this(writer, Style.ARRAY, DEFAULT_BUFFER_SIZE);
     }
 
-    public MarcJsonWriter(Writer writer, Style style, int bufferSize) throws IOException {
+    public MarcJsonWriter(Writer writer, Style style, int bufferSize) {
         this.writer = new BufferedWriter(writer, bufferSize);
         this.bufferSize = bufferSize;
         this.style = style;

@@ -45,7 +45,7 @@ public class MarcTool {
     private String stylesheet = null;
     private String result = null;
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         MarcTool marcTool = new MarcTool();
         marcTool.parse(args);
         System.exit(marcTool.run());
@@ -99,39 +99,36 @@ public class MarcTool {
         if (mode == null) {
             mode = "marc2xml";
         }
-        switch (mode) {
-            case "marc2xml": {
-                try (InputStream in = Files.newInputStream(Paths.get(input));
-                     MarcXchangeWriter writer = new MarcXchangeWriter(Files.newBufferedWriter(Paths.get(output)), true)) {
-                    Marc.Builder builder = Marc.builder()
-                            .setInputStream(in)
-                            .setCharset(Charset.forName(charset))
-                            .setMarcListener(writer);
-                    if (schema != null && stylesheet != null && result != null) {
-                        System.setProperty("http.agent", "Java Agent");
-                        builder.setSchema(schema).build().transform(new URL(stylesheet),
-                                        new StreamResult(Files.newBufferedWriter(Paths.get(result))));
-                    } else {
-                        builder.build().writeCollection();
-                    }
-                } catch (Exception e) {
-                    logger.log(Level.SEVERE, e.getMessage(), e);
-                    return 1;
+        if ("marc2xml".equals(mode)) {
+            try (InputStream in = Files.newInputStream(Paths.get(input));
+                 MarcXchangeWriter writer = new MarcXchangeWriter(Files.newBufferedWriter(Paths.get(output)), true)) {
+                Marc.Builder builder = Marc.builder()
+                        .setInputStream(in)
+                        .setCharset(Charset.forName(charset))
+                        .setMarcListener(writer);
+                if (schema != null && stylesheet != null && result != null) {
+                    System.setProperty("http.agent", "Java Agent");
+                    builder.setSchema(schema).build().transform(new URL(stylesheet),
+                                    new StreamResult(Files.newBufferedWriter(Paths.get(result))));
+                } else {
+                    builder.build().writeCollection();
                 }
-                return 0;
+            } catch (Exception e) {
+                logger.log(Level.SEVERE, e.getMessage(), e);
+                return 1;
             }
-            default: {
-                String help = "Usage: " + getClass().getName()
-                        + " --mode [marc2xml] set operation mode\n"
-                        + " --input <path> \n"
-                        + " --output <path> \n"
-                        + " --charset <name> \n"
-                        + " --schema [MARC21|MarcXchange] \n"
-                        + " --stylesheet <URL> \n"
-                        + " --result <path> \n";
-                logger.log(Level.INFO, help);
-                return 0;
-            }
+            return 0;
+        } else {
+            String help = "Usage: " + getClass().getName()
+                    + " --mode [marc2xml] set operation mode\n"
+                    + " --input <path> \n"
+                    + " --output <path> \n"
+                    + " --charset <name> \n"
+                    + " --schema [MARC21|MarcXchange] \n"
+                    + " --stylesheet <URL> \n"
+                    + " --result <path> \n";
+            logger.log(Level.INFO, help);
+            return 0;
         }
     }
 }
