@@ -22,6 +22,7 @@ import org.xbib.marc.Marc;
 import org.xbib.marc.MarcXchangeConstants;
 import org.xmlunit.matchers.CompareMatcher;
 
+import java.io.FileWriter;
 import java.io.InputStream;
 import java.io.StringWriter;
 import java.nio.charset.StandardCharsets;
@@ -42,6 +43,7 @@ public class MarcXMLTest extends Assert {
         String s = "zdb-oai-marc.xml";
         InputStream in = getClass().getResourceAsStream(s);
         StringWriter sw = new StringWriter();
+        //FileWriter sw = new FileWriter(s + "-marcxchange.xml");
         try (MarcXchangeWriter writer = new MarcXchangeWriter(sw, true)
                 .setFormat("MARC21")
                 .setType("Bibliographic")) {
@@ -54,6 +56,7 @@ public class MarcXMLTest extends Assert {
                             .setFormat("MarcXML")
                             .setType("Bibliographic")
                             .addNamespace("http://www.loc.gov/MARC21/slim")
+                            .setTrim(true)
                             .setMarcListener(writer))
                     .build()
                     .xmlReader().parse();

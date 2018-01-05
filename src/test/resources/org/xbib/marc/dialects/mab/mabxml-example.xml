@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datei xmlns="http://www.ddb.de/professionell/mabxml/mabxml-1.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ddb.de/professionell/mabxml/mabxml-1.xsd http://files.d-nb.de/standards/formate/mabxml-1.xsd">
+    <datensatz mabVersion="M2.0" status="n" typ="h" xmlns="http://www.ddb.de/professionell/mabxml/mabxml-1.xsd">
+        <feld ind=" " nr="001">(FR-PaOEC)6bee255b-ar</feld>
+        <feld ind="a" nr="002">20171208</feld>
+        <feld ind=" " nr="004">20171208</feld>
+        <feld ind=" " nr="020">(FR-PaOEC)6bee255b-ar�OECD</feld>
+        <feld ind=" " nr="025">6bee255b-ar</feld>
+        <feld ind=" " nr="030">a|zuc||||||37</feld>
+        <feld ind="b" nr="037">ara</feld>
+        <feld ind=" " nr="050">||||||||g|||||</feld>
+        <feld ind=" " nr="051">m|||||||</feld>
+        <feld ind=" " nr="070">OECD</feld>
+        <feld ind="a" nr="070">HBZ</feld>
+        <feld ind="e" nr="078">
+            <uf code="a">ZDB-164-UNL</uf>
+            <uf code="a">ZDB-164-UNL-ebook</uf>
+        </feld>
+        <feld ind="b" nr="200">OHCHR</feld>
+        <feld ind=" " nr="331"/>
+        <feld ind=" " nr="334">Elektronische Ressource</feld>
+        <feld ind=" " nr="359">OHCHR</feld>
+        <feld ind=" " nr="410">New York</feld>
+        <feld ind=" " nr="412">United Nations</feld>
+        <feld ind="a" nr="425">2017</feld>
+        <feld ind=" " nr="433">75 p.</feld>
+        <feld ind="a" nr="540">ISBN 9789210579391</feld>
+        <feld ind="a" nr="552">10.18356/6bee255b-ar</feld>
+        <feld ind="a" nr="652">
+            <uf code="a">Online-Ressource</uf>
+        </feld>
+        <feld ind="e" nr="655">
+            <uf code="u">http://dx.doi.org/10.18356/6bee255b-ar</uf>
+            <uf code="x">Resolving-System</uf>
+        </feld>
+        <feld ind=" " nr="775">
+            <uf code="i">Parallelausgabe</uf>
+            <uf code="t">Human Rights and Traditional Justice Systems in Africa</uf>
+            <uf code="z">9789210579377</uf>
+        </feld>
+    </datensatz>
+    <datensatz mabVersion="M2.0" status="n" typ="h" xmlns="http://www.ddb.de/professionell/mabxml/mabxml-1.xsd">
+        <feld ind=" " nr="001">(FR-PaOEC)6f8029f6-es</feld>
+        <feld ind="a" nr="002">20171208</feld>
+        <feld ind=" " nr="004">20171208</feld>
+        <feld ind=" " nr="020">(FR-PaOEC)6f8029f6-es�OECD</feld>
+        <feld ind=" " nr="025">6f8029f6-es</feld>
+        <feld ind=" " nr="030">a|zuc||||||37</feld>
+        <feld ind="b" nr="037">spa</feld>
+        <feld ind=" " nr="050">||||||||g|||||</feld>
+        <feld ind=" " nr="051">s|||||||</feld>
+        <feld ind=" " nr="070">OECD</feld>
+        <feld ind="a" nr="070">HBZ</feld>
+        <feld ind="e" nr="078">
+            <uf code="a">ZDB-164-UNL</uf>
+            <uf code="a">ZDB-164-UNL-ebook</uf>
+        </feld>
+        <feld ind="b" nr="200">ECLAC</feld>
+        <feld ind=" " nr="331">Pol�itica Industrial Rural y Fortalecimiento de Cadenas de Valor</feld>
+        <feld ind=" " nr="334">Elektronische Ressource</feld>
+        <feld ind=" " nr="359">ECLAC</feld>
+        <feld ind=" " nr="410">New York</feld>
+        <feld ind=" " nr="412">United Nations</feld>
+        <feld ind="a" nr="425">2017</feld>
+        <feld ind=" " nr="433">240 p.</feld>
+        <feld ind=" " nr="451">ECLAC Books ; no.145</feld>
+        <feld ind="a" nr="452">2411-9385</feld>
+        <feld ind="a" nr="540">ISBN 9789210585897</feld>
+        <feld ind="a" nr="552">10.18356/6f8029f6-es</feld>
+        <feld ind="a" nr="652">
+            <uf code="a">Online-Ressource</uf>
+        </feld>
+        <feld ind="e" nr="655">
+            <uf code="u">http://dx.doi.org/10.18356/6f8029f6-es</uf>
+            <uf code="x">Resolving-System</uf>
+        </feld>
+    </datensatz>
+    <datensatz mabVersion="M2.0" status="n" typ="h" xmlns="http://www.ddb.de/professionell/mabxml/mabxml-1.xsd">
+        <feld ind=" " nr="001">(FR-PaOEC)c78e1213-ar</feld>
+        <feld ind="a" nr="002">20171208</feld>
+        <feld ind=" " nr="004">20171208</feld>
+        <feld ind=" " nr="020">(FR-PaOEC)c78e1213-ar�OECD</feld>
+        <feld ind=" " nr="025">c78e1213-ar</feld>
+        <feld ind=" " nr="030">a|zuc||||||37</feld>
+        <feld ind="b" nr="037">ara</feld>
+        <feld ind=" " nr="050">||||||||g|||||</feld>
+        <feld ind=" " nr="051">m|||||||</feld>
+        <feld ind=" " nr="070">OECD</feld>
+        <feld ind="a" nr="070">HBZ</feld>
+        <feld ind="e" nr="078">
+            <uf code="a">ZDB-164-UNL</uf>
+            <uf code="a">ZDB-164-UNL-ebook</uf>
+        </feld>
+        <feld ind="b" nr="200">DESA</feld>
+        <feld ind=" " nr="331">2017</feld>
+        <feld ind=" " nr="334">Elektronische Ressource</feld>
+        <feld ind=" " nr="359">DESA</feld>
+        <feld ind=" " nr="410">New York</feld>
+        <feld ind=" " nr="412">United Nations</feld>
+        <feld ind="a" nr="425">2017</feld>
+        <feld ind=" " nr="433">62 p.</feld>
+        <feld ind="a" nr="540">ISBN 9789213617182</feld>
+        <feld ind="a" nr="552">10.18356/c78e1213-ar</feld>
+        <feld ind="a" nr="652">
+            <uf code="a">Online-Ressource</uf>
+        </feld>
+        <feld ind="e" nr="655">
+            <uf code="u">http://dx.doi.org/10.18356/c78e1213-ar</uf>
+            <uf code="x">Resolving-System</uf>
+        </feld>
+        <feld ind=" " nr="775">
+            <uf code="i">Parallelausgabe</uf>
+            <uf code="t">, 2017 </uf>
+            <uf code="z">9789213617205</uf>
+        </feld>
+        <feld ind=" " nr="775">
+            <uf code="i">Parallelausgabe</uf>
+            <uf code="t">2017  </uf>
+            <uf code="z">9789213617199</uf>
+        </feld>
+        <feld ind=" " nr="775">
+            <uf code="i">Parallelausgabe</uf>
+            <uf code="t">The Sustainable Development Goals Report 2017</uf>
+            <uf code="z">9789213617151</uf>
+        </feld>
+        <feld ind=" " nr="775">
+            <uf code="i">Parallelausgabe</uf>
+            <uf code="t">Informe de los Objetivos de Desarrollo Sostenible 2017</uf>
+            <uf code="z">9789213617175</uf>
+        </feld>
+        <feld ind=" " nr="775">
+            <uf code="i">Parallelausgabe</uf>
+            <uf code="t">Rapport sur les Objectifs de D�eveloppement Durable 2017</uf>
+            <uf code="z">9789213617168</uf>
+        </feld>
+    </datensatz>
+</datei>

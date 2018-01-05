@@ -73,6 +73,8 @@ public class MarcContentHandler
 
     protected MarcValueTransformers marcValueTransformers;
 
+    protected boolean trim = false;
+
     private MarcFieldTransformers marcFieldTransformers;
 
     private boolean isCollection = false;
@@ -133,6 +135,11 @@ public class MarcContentHandler
      */
     public MarcContentHandler setMarcFieldTransformers(MarcFieldTransformers marcFieldTransformers) {
         this.marcFieldTransformers = marcFieldTransformers;
+        return this;
+    }
+
+    public MarcContentHandler setTrim(boolean trim) {
+        this.trim = trim;
         return this;
     }
 
@@ -357,7 +364,8 @@ public class MarcContentHandler
                 break;
             }
             case SUBFIELD: {
-                stack.peek().subfieldValue(content.toString());
+                String s = content.toString();
+                stack.peek().subfieldValue(trim ? s.trim() : s);
                 break;
             }
             default: {

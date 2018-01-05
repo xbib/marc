@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<collection xmlns="info:lc/xmlns/marcxchange-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="info:lc/xmlns/marcxchange-v2 http://www.loc.gov/standards/iso25577/marcxchange-2-0.xsd">
+<collection xmlns="info:lc/xmlns/marcxchange-v2" xsi:schemaLocation="info:lc/xmlns/marcxchange-v2 http://www.loc.gov/standards/iso25577/marcxchange-2-0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <record format="MARC21" type="Bibliographic">
     <leader>00908nas a2200313 c 4500</leader>
     <controlfield tag="001">1024796043</controlfield>
@@ -7,80 +7,80 @@
     <controlfield tag="005">20120802144841.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120802c20129999gw f||p|r ||| 0||||0ger c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1024796043</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675962-7</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675962-7</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">1241</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">1241</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">ger</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-DE</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">050</subfield>
       <subfield code="a">070</subfield>
       <subfield code="q">DE-101</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">050</subfield>
       <subfield code="a">070</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="090" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="090">
       <subfield code="n">fn</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Alt-Höchst</subfield>
       <subfield code="n">[...]</subfield>
       <subfield code="p">Infobrief</subfield>
       <subfield code="c">Bürgervereinigung Höchster Altstadt</subfield>
     </datafield>
-    <datafield tag="246" ind1="1" ind2="9">
+    <datafield ind2="9" ind1="1" tag="246">
       <subfield code="a">Alt-Höchst / Infobrief</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Frankfurt-Höchst</subfield>
       <subfield code="b">Bürgervereinigung Höchster Altstadt</subfield>
     </datafield>
-    <datafield tag="300" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="300">
       <subfield code="c">30 cm</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">Nachgewiesen 2012 -</subfield>
     </datafield>
-    <datafield tag="363" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="363">
       <subfield code="8">1.1\x</subfield>
       <subfield code="i">2012</subfield>
     </datafield>
-    <datafield tag="515" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="515">
       <subfield code="a">Periodizität: halbjährl.</subfield>
     </datafield>
-    <datafield tag="772" ind1="0" ind2="8">
+    <datafield ind2="8" ind1="0" tag="772">
       <subfield code="i">Beil. zu:</subfield>
       <subfield code="t">Alt-Höchst</subfield>
       <subfield code="w">(DE-600)969378-6</subfield>
       <subfield code="w">(DE-101)015112500</subfield>
     </datafield>
-    <datafield tag="925" ind1="r" ind2=" ">
+    <datafield ind2=" " ind1="r" tag="925">
       <subfield code="a">rb</subfield>
     </datafield>
-    <datafield tag="930" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="930">
       <subfield code="a">Infobrief</subfield>
     </datafield>
   </record>
@@ -91,52 +91,52 @@
     <controlfield tag="005">20120802144628.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120802c20129999gw u||p|r ||| 0||||0ger c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1024795764</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675961-5</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675961-5</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">3238</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">3238</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">ger</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-DE</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">3,61</subfield>
       <subfield code="2">ssgn</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">050</subfield>
       <subfield code="a">320</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Willi-Bleicher-Preis</subfield>
       <subfield code="b">Journalismuspreis der IG Metall Baden-Württemberg</subfield>
       <subfield code="c">IG-Metall Bezirksleitung Baden-Württemberg</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Stuttgart</subfield>
       <subfield code="b">IG-Metall</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">Nachgewiesen 2012 -</subfield>
     </datafield>
-    <datafield tag="710" ind1="2" ind2=" ">
+    <datafield ind2=" " ind1="2" tag="710">
       <subfield code="0">(DE-588)5252909-5</subfield>
       <subfield code="0">(DE-101)952358069</subfield>
       <subfield code="a">Industriegewerkschaft Metall</subfield>
@@ -151,68 +151,68 @@
     <controlfield tag="005">20120802141847.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120802c20129999gw q||p|r ||| 0||||0ger c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1024794741</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675954-8</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675954-8</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">1241</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">1241</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">ger</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-DE</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">610</subfield>
       <subfield code="q">DE-101</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">610</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Akupunktur</subfield>
       <subfield code="b">Medizin auf den Punkt gebracht</subfield>
       <subfield code="c">Deutsche Akademie für Akupunktur, DAA e.V.</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">München</subfield>
       <subfield code="b">Dt. Akad. für Akupunktur</subfield>
     </datafield>
-    <datafield tag="300" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="300">
       <subfield code="c">28 cm</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">Nachgewiesen 2012 -</subfield>
     </datafield>
-    <datafield tag="363" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="363">
       <subfield code="8">1.1\x</subfield>
       <subfield code="i">2012</subfield>
     </datafield>
-    <datafield tag="515" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="515">
       <subfield code="a">Ersch. vierteljährl.</subfield>
     </datafield>
-    <datafield tag="772" ind1="0" ind2="8">
+    <datafield ind2="8" ind1="0" tag="772">
       <subfield code="i">Beil. zu:</subfield>
       <subfield code="t">Akupunktur &amp; Aurikulomedizin</subfield>
       <subfield code="w">(DE-600)2631051-X</subfield>
       <subfield code="w">(DE-101)1015780636</subfield>
     </datafield>
-    <datafield tag="925" ind1="r" ind2=" ">
+    <datafield ind2=" " ind1="r" tag="925">
       <subfield code="a">rb</subfield>
     </datafield>
   </record>
@@ -223,41 +223,41 @@
     <controlfield tag="005">20120802141155.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120802c20129999ck u||m|r ||| 0||||0spa c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1024794520</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675953-6</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675953-6</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">0204</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">0204</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">spa</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XD-CO</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Colección Los Torreones</subfield>
     </datafield>
-    <datafield tag="246" ind1="1" ind2="3">
+    <datafield ind2="3" ind1="1" tag="246">
       <subfield code="i">Nebent.</subfield>
-      <subfield code="a">&#x98;Los&#x9c; Torreones</subfield>
+      <subfield code="a">Los Torreones</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Ibagué</subfield>
       <subfield code="b">Caza de Libros</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">1.2012 -</subfield>
     </datafield>
   </record>
@@ -268,80 +268,80 @@
     <controlfield tag="005">20120802142224.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120802c20129999gw a||p|r ||| 0||||0ger c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1024794466</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675952-4</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675952-4</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">1241</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">1241</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">ger</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-DE</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">580</subfield>
       <subfield code="a">630</subfield>
       <subfield code="a">640</subfield>
       <subfield code="q">DE-101</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">580</subfield>
       <subfield code="a">630</subfield>
       <subfield code="a">640</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="090" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="090">
       <subfield code="n">fn</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Haus - und Kleingarten, sachgerechter Pflanzenschutz ...</subfield>
       <subfield code="c">Hrsg.: Landwirtschaftliches Technologiezentrum Augustenberg (LTZ)</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">[Stuttgart]</subfield>
       <subfield code="b">[Ulmer]</subfield>
     </datafield>
-    <datafield tag="300" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="300">
       <subfield code="c">30 cm</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">2012 -</subfield>
     </datafield>
-    <datafield tag="363" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="363">
       <subfield code="8">1.1\x</subfield>
       <subfield code="i">2012</subfield>
     </datafield>
-    <datafield tag="515" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="515">
       <subfield code="a">Periodizität:  jährl.</subfield>
     </datafield>
-    <datafield tag="772" ind1="0" ind2="8">
+    <datafield ind2="8" ind1="0" tag="772">
       <subfield code="i">Beil. zu:</subfield>
-      <subfield code="t">Obst &amp; Garten &lt;Stuttgart></subfield>
+      <subfield code="t">Obst &amp; Garten &lt;Stuttgart&gt;</subfield>
       <subfield code="w">(DE-600)123377-4</subfield>
       <subfield code="w">(DE-101)010692851</subfield>
     </datafield>
-    <datafield tag="780" ind1="0" ind2="0">
+    <datafield ind2="0" ind1="0" tag="780">
       <subfield code="i">Vorg.:</subfield>
-      <subfield code="t">Pflanzenschutz im Haus- und Kleingarten ... </subfield>
+      <subfield code="t">Pflanzenschutz im Haus- und Kleingarten ...</subfield>
       <subfield code="w">(DE-600)2545666-0</subfield>
       <subfield code="w">(DE-101)1001034139</subfield>
     </datafield>
-    <datafield tag="925" ind1="r" ind2=" ">
+    <datafield ind2=" " ind1="r" tag="925">
       <subfield code="a">ra</subfield>
     </datafield>
   </record>
@@ -352,45 +352,45 @@
     <controlfield tag="005">20120802132127.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120802c20129999|||u||m|r ||| 0||||0ara c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1024791920</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675944-5</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675944-5</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">6999</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">6999</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">ara</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">230</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Dirāsāt fī 'l-adyān</subfield>
     </datafield>
-    <datafield tag="246" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="246">
       <subfield code="a">al-adyān</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Bairūt</subfield>
       <subfield code="b">Dār al-Mašriq</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">1.2012 -</subfield>
     </datafield>
-    <datafield tag="546" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="546">
       <subfield code="a">In arab. Schr., arab.</subfield>
     </datafield>
   </record>
@@ -401,64 +401,64 @@
     <controlfield tag="005">20120802132035.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120802c20129999xx u||p|r ||| 0||||0||| c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">102479170X</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675941-X</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675941-X</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">0001</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">0001</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-RU</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">890</subfield>
       <subfield code="a">910</subfield>
       <subfield code="a">940</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Social'nye i gumanitarnye nauki</subfield>
       <subfield code="b">RŽ ; referativnyj žurnal</subfield>
       <subfield code="n">Otečestvennaja i zarubežnaja literatura</subfield>
       <subfield code="n">Serija 9, Vostokovedenie i afrikanistika</subfield>
       <subfield code="c">Rossijskaja Akademija Nauk, Institut Naučnoj Informacii po Obščestvennym Naukam</subfield>
     </datafield>
-    <datafield tag="246" ind1="1" ind2="9">
+    <datafield ind2="9" ind1="1" tag="246">
       <subfield code="a">Social'nye i gumanitarnye nauki / Otečestvennaja i zarubežnaja literatura / 9</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Moskva</subfield>
       <subfield code="b">[s.n.]</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">2012 -</subfield>
     </datafield>
-    <datafield tag="363" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="363">
       <subfield code="8">1.1\x</subfield>
       <subfield code="i">2012</subfield>
     </datafield>
-    <datafield tag="780" ind1="0" ind2="0">
+    <datafield ind2="0" ind1="0" tag="780">
       <subfield code="i">Vorg.:</subfield>
       <subfield code="t">Social'nye i gumanitarnye nauki / Zarubežnaja literatura / 9</subfield>
       <subfield code="w">(DE-600)1192399-4</subfield>
       <subfield code="w">(DE-101)017196175</subfield>
     </datafield>
-    <datafield tag="930" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="930">
       <subfield code="r">Otečestvennaja i zarubežnaja literatura</subfield>
     </datafield>
-    <datafield tag="930" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="930">
       <subfield code="r">Serija 9, Vostokovedenie i afrikanistika</subfield>
     </datafield>
   </record>
@@ -469,75 +469,75 @@
     <controlfield tag="005">20120802131231.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120802c20129999gw z||m|r ||| 0||||0ger c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1024791513</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675939-1</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675939-1</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">6999</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">6999</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">ger</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-DE</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">000</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="110" ind1="2" ind2=" ">
+    <datafield ind2=" " ind1="2" tag="110">
       <subfield code="0">(DE-588)16166409-X</subfield>
       <subfield code="0">(DE-101)1013960157</subfield>
       <subfield code="a">Internationales Kolleg Morphomata</subfield>
       <subfield code="g">Köln</subfield>
       <subfield code="4">aut</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Morphomata</subfield>
       <subfield code="n">[...]</subfield>
       <subfield code="p">Lectures Cologne</subfield>
       <subfield code="c">Internationales Kolleg Morphomata</subfield>
     </datafield>
-    <datafield tag="246" ind1="1" ind2="9">
+    <datafield ind2="9" ind1="1" tag="246">
       <subfield code="a">Morphomata / Lectures Cologne</subfield>
     </datafield>
-    <datafield tag="246" ind1="1" ind2="3">
+    <datafield ind2="3" ind1="1" tag="246">
       <subfield code="a">Morphomata Lectures Cologne</subfield>
     </datafield>
-    <datafield tag="246" ind1="1" ind2="3">
+    <datafield ind2="3" ind1="1" tag="246">
       <subfield code="a">Morphomata lectures Cologne</subfield>
     </datafield>
-    <datafield tag="246" ind1="1" ind2="3">
+    <datafield ind2="3" ind1="1" tag="246">
       <subfield code="i">Nebent.</subfield>
       <subfield code="a">MLC</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Paderborn</subfield>
       <subfield code="b">Fink</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">1.2012 -</subfield>
     </datafield>
-    <datafield tag="363" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="363">
       <subfield code="8">1.1\x</subfield>
       <subfield code="i">2012</subfield>
     </datafield>
-    <datafield tag="515" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="515">
       <subfield code="a">Ersch. unregelmäßig</subfield>
     </datafield>
-    <datafield tag="930" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="930">
       <subfield code="a">Lectures Cologne</subfield>
     </datafield>
   </record>
@@ -548,80 +548,80 @@
     <controlfield tag="005">20120802130446.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120802c20129999gw z||m|r ||| 0||||0ger c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">102479105X</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675935-4</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675935-4</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">1240</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">1240</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">ger</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-DE</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">230</subfield>
       <subfield code="q">DE-101</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">230</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="110" ind1="2" ind2=" ">
+    <datafield ind2=" " ind1="2" tag="110">
       <subfield code="0">(DE-588)16345568-5</subfield>
       <subfield code="0">(DE-101)1021371572</subfield>
       <subfield code="a">Katholische Hochschule</subfield>
       <subfield code="g">Mainz</subfield>
       <subfield code="4">aut</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Schriftenreihe der KH Mainz</subfield>
       <subfield code="c">Katholische Hochschule Mainz</subfield>
     </datafield>
-    <datafield tag="246" ind1="1" ind2="3">
+    <datafield ind2="3" ind1="1" tag="246">
       <subfield code="i">Nebent.</subfield>
       <subfield code="a">Schriftenreihe</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">St. Ottilien</subfield>
       <subfield code="b">EOS-Verl.</subfield>
     </datafield>
-    <datafield tag="300" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="300">
       <subfield code="c">24 cm</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">6.2012 -</subfield>
     </datafield>
-    <datafield tag="363" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="363">
       <subfield code="8">1.1\x</subfield>
       <subfield code="a">6</subfield>
       <subfield code="i">2012</subfield>
     </datafield>
-    <datafield tag="515" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="515">
       <subfield code="a">Ersch. unregelmäßig</subfield>
     </datafield>
-    <datafield tag="780" ind1="0" ind2="0">
+    <datafield ind2="0" ind1="0" tag="780">
       <subfield code="i">Bis Bd. 5 u.d.T.:</subfield>
-      <subfield code="a">Katholische Fachhochschule &lt;Mainz></subfield>
+      <subfield code="a">Katholische Fachhochschule &lt;Mainz&gt;</subfield>
       <subfield code="t">Schriftenreihe der KFH Mainz</subfield>
       <subfield code="w">(DE-600)2279337-9</subfield>
       <subfield code="w">(DE-101)983880514</subfield>
     </datafield>
-    <datafield tag="925" ind1="r" ind2=" ">
+    <datafield ind2=" " ind1="r" tag="925">
       <subfield code="a">ra</subfield>
     </datafield>
   </record>
@@ -632,64 +632,64 @@
     <controlfield tag="005">20120802124057.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120802c20129999gw m||p|r ||| 0||||0ger c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1024790401</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675926-3</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675926-3</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">0107</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">0107</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">ger</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-DE</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">621.3</subfield>
       <subfield code="a">791</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">530</subfield>
       <subfield code="a">920</subfield>
       <subfield code="2">rpb</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Video</subfield>
       <subfield code="b">TV, Sat,  HiFi, Heimkino, Netzwerke</subfield>
     </datafield>
-    <datafield tag="246" ind1="1" ind2="3">
+    <datafield ind2="3" ind1="1" tag="246">
       <subfield code="i">Nebent.</subfield>
       <subfield code="a">Video-Magazin.de</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Haar bei München</subfield>
       <subfield code="b">WEKA-Media-Publ.</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">2012,9 -</subfield>
     </datafield>
-    <datafield tag="363" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="363">
       <subfield code="8">1.1\x</subfield>
       <subfield code="b">9</subfield>
       <subfield code="i">2012</subfield>
     </datafield>
-    <datafield tag="515" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="515">
       <subfield code="a">Ersch. monatl.</subfield>
     </datafield>
-    <datafield tag="780" ind1="0" ind2="0">
+    <datafield ind2="0" ind1="0" tag="780">
       <subfield code="i">Vorg.:</subfield>
       <subfield code="t">Video-Homevision</subfield>
       <subfield code="w">(DE-600)2458232-3</subfield>
@@ -703,56 +703,56 @@
     <controlfield tag="005">20120802120423.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120802c20129999xx a||p|r ||| 0||||0ger c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1024789349</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675911-1</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675911-1</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">0109</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">0109</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">ger</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-DXDE</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">330</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
-      <subfield code="a">Bericht über die örtliche Prüfung der Eröffnungsbilanz zum 1. Januar ... </subfield>
+    <datafield ind2="0" ind1="1" tag="245">
+      <subfield code="a">Bericht über die örtliche Prüfung der Eröffnungsbilanz zum 1. Januar ...</subfield>
       <subfield code="c">Landeshauptstadt Stuttgart, Rechnungsprüfungsamt</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Stuttgart</subfield>
       <subfield code="b">Landeshauptstadt Stuttgart, Rechnungsprüfungsamt</subfield>
     </datafield>
-    <datafield tag="300" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="300">
       <subfield code="c">30 cm</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">Nachgewiesen 2010(2012) -</subfield>
     </datafield>
-    <datafield tag="363" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="363">
       <subfield code="8">1.1\x</subfield>
       <subfield code="i">2010</subfield>
     </datafield>
-    <datafield tag="515" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="515">
       <subfield code="a">Ersch. jährl.</subfield>
     </datafield>
-    <datafield tag="710" ind1="1" ind2=" ">
+    <datafield ind2=" " ind1="1" tag="710">
       <subfield code="0">(DE-588)5086277-7</subfield>
       <subfield code="0">(DE-101)050862774</subfield>
       <subfield code="a">Stuttgart</subfield>
@@ -766,74 +766,74 @@
     <controlfield tag="005">20120802133625.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120802c20129999gw z||m|r ||| 0||||0ger c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1024789217</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675910-X</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675910-X</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">1140</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">1140</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">ger</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-DE</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">290</subfield>
       <subfield code="q">DE-101</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">290</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Europäisch-jüdische Studien</subfield>
       <subfield code="b">EJSB</subfield>
       <subfield code="n">[...]</subfield>
       <subfield code="p">Beiträge</subfield>
     </datafield>
-    <datafield tag="246" ind1="1" ind2="9">
+    <datafield ind2="9" ind1="1" tag="246">
       <subfield code="a">Europäisch-jüdische Studien / Beiträge</subfield>
     </datafield>
-    <datafield tag="246" ind1="1" ind2="3">
+    <datafield ind2="3" ind1="1" tag="246">
       <subfield code="a">EJSB</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Berlin</subfield>
       <subfield code="a">Boston, Mass.</subfield>
-      <subfield code="b">&#x98;De&#x9c; Gruyter</subfield>
+      <subfield code="b">De Gruyter</subfield>
     </datafield>
-    <datafield tag="300" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="300">
       <subfield code="c">24 cm</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">1.2012 -</subfield>
     </datafield>
-    <datafield tag="363" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="363">
       <subfield code="8">1.1\x</subfield>
       <subfield code="a">1</subfield>
       <subfield code="i">2012</subfield>
     </datafield>
-    <datafield tag="515" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="515">
       <subfield code="a">Ersch. unregelmäßig</subfield>
     </datafield>
-    <datafield tag="925" ind1="r" ind2=" ">
+    <datafield ind2=" " ind1="r" tag="925">
       <subfield code="a">ra</subfield>
     </datafield>
-    <datafield tag="930" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="930">
       <subfield code="a">Beiträge</subfield>
     </datafield>
   </record>
@@ -844,34 +844,34 @@
     <controlfield tag="005">20120802114350.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120802c20129999|||u||p|r ||| 0||||0||| c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1024788172</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675906-8</subfield>
     </datafield>
-    <datafield tag="022" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="022">
       <subfield code="a">2194-7805</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675906-8</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">1241</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">1241</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Astacus astacus</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Rottach-Egern</subfield>
       <subfield code="b">Buchfink GbR</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">Nachgewiesen 2012,1 -</subfield>
     </datafield>
   </record>
@@ -882,68 +882,68 @@
     <controlfield tag="005">20120802113343.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120802c20129999xx a||p|r ||| 0||||0ger c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1024787680</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675904-4</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675904-4</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">0109</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">0109</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">ger</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-DXDE</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">330</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="110" ind1="2" ind2=" ">
+    <datafield ind2=" " ind1="2" tag="110">
       <subfield code="0">(DE-588)2027583-3</subfield>
       <subfield code="0">(DE-101)004843541</subfield>
       <subfield code="a">Stuttgart</subfield>
       <subfield code="4">aut</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Schlußbericht ... über die Prüfung des Jahresabschlusses / Stuttgart</subfield>
       <subfield code="c">Landeshauptstadt Stuttgart, Rechnungsprüfungsamt</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Stuttgart</subfield>
       <subfield code="b">Landeshauptstadt Stuttgart, Rechnungsprüfungsamt</subfield>
     </datafield>
-    <datafield tag="300" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="300">
       <subfield code="c">30 cm</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">2010(2012) -</subfield>
     </datafield>
-    <datafield tag="363" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="363">
       <subfield code="8">1.1\x</subfield>
       <subfield code="i">2010</subfield>
     </datafield>
-    <datafield tag="515" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="515">
       <subfield code="a">Ersch. jährl.</subfield>
     </datafield>
-    <datafield tag="710" ind1="1" ind2=" ">
+    <datafield ind2=" " ind1="1" tag="710">
       <subfield code="0">(DE-588)5086277-7</subfield>
       <subfield code="0">(DE-101)050862774</subfield>
       <subfield code="a">Stuttgart</subfield>
       <subfield code="b">Rechnungsprüfungsamt</subfield>
     </datafield>
-    <datafield tag="780" ind1="0" ind2="0">
+    <datafield ind2="0" ind1="0" tag="780">
       <subfield code="i">Vorg.:</subfield>
       <subfield code="a">Stuttgart</subfield>
       <subfield code="t">Schlußbericht ... über die örtliche Prüfung der Jahresrechnung / Stuttgart</subfield>
@@ -958,54 +958,54 @@
     <controlfield tag="005">20120802113300.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120802c20129999sp u||m|r ||| 0||||0spa c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">102478763X</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675903-2</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675903-2</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">0204</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">0204</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">spa</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-ES</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">340</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Colección de monografías de derecho civil</subfield>
       <subfield code="n">1</subfield>
       <subfield code="p">Persona y familia</subfield>
     </datafield>
-    <datafield tag="246" ind1="1" ind2="9">
+    <datafield ind2="9" ind1="1" tag="246">
       <subfield code="a">Colección de monografías de derecho civil / 1</subfield>
     </datafield>
-    <datafield tag="246" ind1="1" ind2="3">
+    <datafield ind2="3" ind1="1" tag="246">
       <subfield code="i">Nebent.</subfield>
       <subfield code="a">Monografías de derecho civil</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Madrid</subfield>
       <subfield code="b">Ed. Dykinson</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">Nachgewiesen 10.2012 -</subfield>
     </datafield>
-    <datafield tag="930" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="930">
       <subfield code="l">1</subfield>
       <subfield code="a">Persona y familia</subfield>
     </datafield>
@@ -1017,34 +1017,34 @@
     <controlfield tag="005">20120802113038.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120802c20129999|||u||p|r ||| 0||||0||| c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1024787540</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675902-0</subfield>
     </datafield>
-    <datafield tag="022" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="022">
       <subfield code="a">2194-8771</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675902-0</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">1241</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">1241</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Journal of sensors and sensor systems</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Göttingen</subfield>
       <subfield code="b">Copernicus Publ.</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">Nachgewiesen 2012,1 -</subfield>
     </datafield>
   </record>
@@ -1055,86 +1055,86 @@
     <controlfield tag="005">20120802113202.0</controlfield>
     <controlfield tag="007">cr||||||||||||</controlfield>
     <controlfield tag="008">120802c20129999it m||p|o ||| 0||||0ita c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1024787338</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675901-9</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675901-9</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">9001</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">9001</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">ita</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-IT</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">796</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="110" ind1="2" ind2=" ">
+    <datafield ind2=" " ind1="2" tag="110">
       <subfield code="0">(DE-588)1001266-7</subfield>
       <subfield code="0">(DE-101)004008766</subfield>
       <subfield code="a">Club Alpino Italiano</subfield>
       <subfield code="4">aut</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Montagne 360°</subfield>
       <subfield code="h">[Elektronische Ressource]</subfield>
       <subfield code="b">la rivista del Club Alpino Italiano</subfield>
     </datafield>
-    <datafield tag="246" ind1="1" ind2="3">
+    <datafield ind2="3" ind1="1" tag="246">
       <subfield code="a">Montagne 360 gradi</subfield>
     </datafield>
-    <datafield tag="246" ind1="1" ind2="3">
+    <datafield ind2="3" ind1="1" tag="246">
       <subfield code="a">Montagne trecentosessanta gradi</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Milano</subfield>
       <subfield code="b">Club</subfield>
     </datafield>
-    <datafield tag="300" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="300">
       <subfield code="a">Online-Ressource</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">2012 -</subfield>
     </datafield>
-    <datafield tag="363" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="363">
       <subfield code="8">1.1\x</subfield>
       <subfield code="i">2012</subfield>
     </datafield>
-    <datafield tag="515" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="515">
       <subfield code="a">Ersch.monatl</subfield>
     </datafield>
-    <datafield tag="591" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="591">
       <subfield code="a">st: noch keine Titelhistorie eingetragen, weil erst 2013 Volltext verfügbar ist(02-08-12)</subfield>
     </datafield>
-    <datafield tag="775" ind1="0" ind2="8">
+    <datafield ind2="8" ind1="0" tag="775">
       <subfield code="i">Druckausg.</subfield>
       <subfield code="a">Club Alpino Italiano</subfield>
       <subfield code="t">Montagne 360°</subfield>
       <subfield code="w">(DE-600)2666041-6</subfield>
       <subfield code="w">(DE-101)1023185245</subfield>
     </datafield>
-    <datafield tag="780" ind1="0" ind2="0">
+    <datafield ind2="0" ind1="0" tag="780">
       <subfield code="i">Vorg.:</subfield>
       <subfield code="a">Club Alpino Italiano</subfield>
-      <subfield code="t">&#x98;La&#x9c; rivista del Club Alpino Italiano</subfield>
+      <subfield code="t">La rivista del Club Alpino Italiano</subfield>
       <subfield code="w">(DE-600)2669438-4</subfield>
       <subfield code="w">(DE-101)1023824493</subfield>
     </datafield>
-    <datafield tag="856" ind1="4" ind2=" ">
+    <datafield ind2=" " ind1="4" tag="856">
       <subfield code="u">http://www.cai.it/index.php?id=1473&amp;L=0</subfield>
       <subfield code="x">Verlag; Volltext nach einem Jahr verfügbar</subfield>
     </datafield>
@@ -1146,34 +1146,34 @@
     <controlfield tag="005">20120802112406.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120802c20129999|||u||p|r ||| 0||||0||| c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1024787206</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675900-7</subfield>
     </datafield>
-    <datafield tag="022" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="022">
       <subfield code="a">2194-8852</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675900-7</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">1241</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">1241</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Musik &amp; Psyche</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Gießen</subfield>
       <subfield code="b">Psychosozial-Verl.</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">Nachgewiesen 2012,1 -</subfield>
     </datafield>
   </record>
@@ -1184,77 +1184,77 @@
     <controlfield tag="005">20120802105609.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120802c20129999gw b||p|r ||| 0||||0ger c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1024786005</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675893-3</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675893-3</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">1241</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">1241</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">ger</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-DE</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">610</subfield>
       <subfield code="q">DE-101</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">610</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="090" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="090">
       <subfield code="n">fn</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Competence</subfield>
       <subfield code="b">Wissenschaft und Forschung</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Offenbach</subfield>
       <subfield code="b">Health-Care-Com</subfield>
     </datafield>
-    <datafield tag="300" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="300">
       <subfield code="c">28 cm</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">Nachgewiesen 2012 -</subfield>
     </datafield>
-    <datafield tag="363" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="363">
       <subfield code="8">1.1\x</subfield>
       <subfield code="i">2012</subfield>
     </datafield>
-    <datafield tag="515" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="515">
       <subfield code="a">Periodizität: alle zwei Monate</subfield>
     </datafield>
-    <datafield tag="751" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="751">
       <subfield code="0">(DE-588)2021065-6</subfield>
       <subfield code="0">(DE-101)004789385</subfield>
       <subfield code="a">Offenbach, Main</subfield>
       <subfield code="4">dbp</subfield>
       <subfield code="2">gnd</subfield>
     </datafield>
-    <datafield tag="772" ind1="0" ind2="8">
+    <datafield ind2="8" ind1="0" tag="772">
       <subfield code="i">Beil. zu:</subfield>
       <subfield code="t">E-health-com</subfield>
       <subfield code="w">(DE-600)2269168-6</subfield>
       <subfield code="w">(DE-101)983022488</subfield>
     </datafield>
-    <datafield tag="925" ind1="r" ind2=" ">
+    <datafield ind2=" " ind1="r" tag="925">
       <subfield code="a">ra</subfield>
     </datafield>
   </record>
@@ -1265,40 +1265,40 @@
     <controlfield tag="005">20120802105406.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120802c20129999xxuu||m|r ||| 0||||0||| c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1024785890</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675892-1</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675892-1</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">0001</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">0001</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XD-US</subfield>
       <subfield code="c">XA-GB</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">000</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Routledge studies in heritage</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">New York, NY [u.a.]</subfield>
       <subfield code="b">Routledge</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">1.2012 -</subfield>
     </datafield>
   </record>
@@ -1309,85 +1309,85 @@
     <controlfield tag="005">20120802110322.0</controlfield>
     <controlfield tag="007">cr||||||||||||</controlfield>
     <controlfield tag="008">120802c20129999gw f||p|o ||| 0||||0ger c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1024785750</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675890-8</subfield>
     </datafield>
-    <datafield tag="029" ind1="a" ind2="d">
+    <datafield ind2="d" ind1="a" tag="029">
       <subfield code="a">2194-5705</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675890-8</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">9001</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">9001</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">ger</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-DE</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">530</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Entdeckt</subfield>
       <subfield code="h">[Elektronische Ressource]</subfield>
       <subfield code="b">das Forschungsmagazin aus dem HZDR</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Dresden</subfield>
       <subfield code="b">Helmholtz-Zentrum Dresden-Rossendorf</subfield>
     </datafield>
-    <datafield tag="300" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="300">
       <subfield code="a">Online-Ressource</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">1.2012 -</subfield>
     </datafield>
-    <datafield tag="363" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="363">
       <subfield code="8">1.1\x</subfield>
       <subfield code="a">1</subfield>
       <subfield code="i">2012</subfield>
     </datafield>
-    <datafield tag="515" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="515">
       <subfield code="a">2011 nicht ersch.; 2x jährl.</subfield>
     </datafield>
-    <datafield tag="710" ind1="2" ind2=" ">
+    <datafield ind2=" " ind1="2" tag="710">
       <subfield code="0">(DE-588)16102193-1</subfield>
       <subfield code="0">(DE-101)1010237780</subfield>
       <subfield code="a">Helmholtz-Zentrum</subfield>
       <subfield code="g">Dresden</subfield>
     </datafield>
-    <datafield tag="775" ind1="0" ind2="8">
+    <datafield ind2="8" ind1="0" tag="775">
       <subfield code="i">Druckausg.</subfield>
       <subfield code="t">Entdeckt</subfield>
       <subfield code="w">(DE-600)2673671-8</subfield>
       <subfield code="w">(DE-101)102438005X</subfield>
     </datafield>
-    <datafield tag="780" ind1="0" ind2="0">
+    <datafield ind2="0" ind1="0" tag="780">
       <subfield code="i">Vorg.:</subfield>
-      <subfield code="a">Forschungszentrum &lt;Dresden></subfield>
+      <subfield code="a">Forschungszentrum &lt;Dresden&gt;</subfield>
       <subfield code="t">FZD-Journal</subfield>
       <subfield code="w">(DE-600)2608135-0</subfield>
       <subfield code="w">(DE-101)1011693356</subfield>
     </datafield>
-    <datafield tag="856" ind1="4" ind2=" ">
+    <datafield ind2=" " ind1="4" tag="856">
       <subfield code="u">http://www.hzdr.de/db/Cms?pNid=2931</subfield>
       <subfield code="x">Verlag</subfield>
       <subfield code="z">kostenfrei</subfield>
     </datafield>
-    <datafield tag="856" ind1="4" ind2=" ">
+    <datafield ind2=" " ind1="4" tag="856">
       <subfield code="u">http://www.bibliothek.uni-regensburg.de/ezeit/?2675890</subfield>
       <subfield code="x">EZB</subfield>
     </datafield>
@@ -1399,67 +1399,67 @@
     <controlfield tag="005">20120802103602.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120802c20129999gw f||p|r ||| 0||||0ger c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1024785092</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675888-X</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675888-X</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">0929</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">0929</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">ger</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-DE</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">370</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">120</subfield>
       <subfield code="a">130</subfield>
       <subfield code="a">140</subfield>
       <subfield code="2">rpb</subfield>
     </datafield>
-    <datafield tag="110" ind1="2" ind2=" ">
+    <datafield ind2=" " ind1="2" tag="110">
       <subfield code="0">(DE-588)10130985-5</subfield>
       <subfield code="0">(DE-101)978864921</subfield>
       <subfield code="a">Kreisvolkshochschule des Rhein-Lahn-Kreises</subfield>
       <subfield code="g">Ems</subfield>
       <subfield code="4">aut</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Semesterprogramm / Kreisvolkshochschule des Rhein-Lahn-Kreises</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Bad Ems</subfield>
       <subfield code="b">Kreisvolkshochschule</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">2012/13,He./Wi. -</subfield>
     </datafield>
-    <datafield tag="363" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="363">
       <subfield code="8">1.1\x</subfield>
       <subfield code="i">2012/13</subfield>
     </datafield>
-    <datafield tag="515" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="515">
       <subfield code="a">Ersch. halbjährl.</subfield>
     </datafield>
-    <datafield tag="780" ind1="0" ind2="0">
+    <datafield ind2="0" ind1="0" tag="780">
       <subfield code="i">Vorg.:</subfield>
-      <subfield code="a">Kreisvolkshochschule des Rhein-Lahn-Kreises &lt;Ems></subfield>
+      <subfield code="a">Kreisvolkshochschule des Rhein-Lahn-Kreises &lt;Ems&gt;</subfield>
       <subfield code="t">Programmheft / Kreisvolkshochschule des Rhein-Lahn-Kreises</subfield>
       <subfield code="w">(DE-600)2508573-6</subfield>
       <subfield code="w">(DE-101)995778558</subfield>
@@ -1472,56 +1472,56 @@
     <controlfield tag="005">20120802103448.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120802c20129999gw u||p|r ||| 0||||0ger c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1024785017</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675886-6</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675886-6</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">4031</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">4031</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">ger</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-DE</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">370</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="090" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="090">
       <subfield code="n">sc</subfield>
     </datafield>
-    <datafield tag="110" ind1="2" ind2=" ">
+    <datafield ind2=" " ind1="2" tag="110">
       <subfield code="0">(DE-588)1024784592</subfield>
       <subfield code="0">(DE-101)1024784592</subfield>
       <subfield code="a">Labenwolf-Gymnasium</subfield>
       <subfield code="4">aut</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Jahresbericht / Labenwolf-Gymnasium, das musische Gymnasium der Stadt Nürnberg</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Nürnberg</subfield>
       <subfield code="b">[s.n.]</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">2011/2012 -</subfield>
     </datafield>
-    <datafield tag="780" ind1="0" ind2="0">
+    <datafield ind2="0" ind1="0" tag="780">
       <subfield code="i">Vorg.:</subfield>
-      <subfield code="a">Städtisches Labenwolf-Gymnasium &lt;Nürnberg></subfield>
+      <subfield code="a">Städtisches Labenwolf-Gymnasium &lt;Nürnberg&gt;</subfield>
       <subfield code="t">Jahresbericht / Städtisches Labenwolf-Gymnasium Nürnberg</subfield>
       <subfield code="w">(DE-600)1274477-3</subfield>
       <subfield code="w">(DE-101)017856345</subfield>
@@ -1534,61 +1534,61 @@
     <controlfield tag="005">20120802142517.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120802c20129999xx u||p|r ||| 0||||0rus c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1024784665</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675883-0</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675883-0</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">0001</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">0001</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">rus</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-RU</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">020</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="110" ind1="2" ind2=" ">
+    <datafield ind2=" " ind1="2" tag="110">
       <subfield code="0">(DE-588)16093884-3</subfield>
       <subfield code="0">(DE-101)1009079247</subfield>
       <subfield code="a">Prezidentskaja Biblioteka Imeni Borisa Nikolaeviča Elʹzina</subfield>
       <subfield code="g">Sankt Petersburg</subfield>
       <subfield code="4">aut</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Ežegodnyj otčet / Prezidentskaja Biblioteka Imeni B. N. Elʹcina</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Sankt Peterburg</subfield>
       <subfield code="b">[s.n.]</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">2011(2012) -</subfield>
     </datafield>
-    <datafield tag="363" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="363">
       <subfield code="8">1.1\x</subfield>
-      <subfield code="i">2011 </subfield>
+      <subfield code="i">2011</subfield>
     </datafield>
-    <datafield tag="546" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="546">
       <subfield code="a">In kyrill. Schr.; Text russ.</subfield>
     </datafield>
-    <datafield tag="775" ind1="0" ind2="8">
+    <datafield ind2="8" ind1="0" tag="775">
       <subfield code="i">Engl. Ausg.</subfield>
-      <subfield code="a">Prezidentskaja Biblioteka Imeni Borisa Nikolaeviča Elʹzina &lt;Sankt Petersburg></subfield>
+      <subfield code="a">Prezidentskaja Biblioteka Imeni Borisa Nikolaeviča Elʹzina &lt;Sankt Petersburg&gt;</subfield>
       <subfield code="t">Annual report / Boris Yeltsin Presidential Library</subfield>
       <subfield code="w">(DE-600)2654089-7</subfield>
       <subfield code="w">(DE-101)1020468351</subfield>
@@ -1601,34 +1601,34 @@
     <controlfield tag="005">20120802115038.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120802c20129999|||u||p|r ||| 0||||0||| c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1024784533</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675881-7</subfield>
     </datafield>
-    <datafield tag="022" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="022">
       <subfield code="a">2193-7567</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675881-7</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">1241</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">1241</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
-      <subfield code="a">&#x98;Der&#x9c; große Android-App-Guide</subfield>
+    <datafield ind2="0" ind1="1" tag="245">
+      <subfield code="a">Der große Android-App-Guide</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">München</subfield>
       <subfield code="b">Media GmbH</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">Nachgewiesen 2012,1 -</subfield>
     </datafield>
   </record>
@@ -1639,62 +1639,62 @@
     <controlfield tag="005">20120802100826.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120802c20129999gw a||p|r ||| 0||||0ger c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1024783731</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675879-9</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675879-9</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">1141</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">1141</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">ger</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-DE</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">630</subfield>
       <subfield code="q">DE-101</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">630</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Rosenheimer Holzbaupreis</subfield>
       <subfield code="c">RosenheimKreis e.V.</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Rosenheim</subfield>
       <subfield code="b">RosenheimKreis</subfield>
     </datafield>
-    <datafield tag="300" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="300">
       <subfield code="c">30 cm</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">3.2012 -</subfield>
     </datafield>
-    <datafield tag="363" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="363">
       <subfield code="8">1.1\x</subfield>
       <subfield code="a">3</subfield>
       <subfield code="i">2012</subfield>
     </datafield>
-    <datafield tag="515" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="515">
       <subfield code="a">Ersch. jährl.</subfield>
     </datafield>
-    <datafield tag="925" ind1="r" ind2=" ">
+    <datafield ind2=" " ind1="r" tag="925">
       <subfield code="a">rb</subfield>
     </datafield>
   </record>
@@ -1705,82 +1705,82 @@
     <controlfield tag="005">20120802124511.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120802c20129999gw e||n|r l|| 0||||0ger c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1024783170</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675875-1</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675875-1</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">1241</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">1241</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">ger</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-DE</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">350</subfield>
       <subfield code="q">DE-101</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">350</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="110" ind1="2" ind2=" ">
+    <datafield ind2=" " ind1="2" tag="110">
       <subfield code="0">(DE-588)24279-2</subfield>
       <subfield code="0">(DE-101)000242799</subfield>
       <subfield code="a">Grenzach-Wyhlen</subfield>
       <subfield code="4">aut</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
-      <subfield code="a">Info / Grenzach-Wyhlen </subfield>
+    <datafield ind2="0" ind1="1" tag="245">
+      <subfield code="a">Info / Grenzach-Wyhlen</subfield>
       <subfield code="b">amtliches Mitteilungsblatt</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Stockach</subfield>
       <subfield code="b">Primo-Verl.</subfield>
     </datafield>
-    <datafield tag="300" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="300">
       <subfield code="c">30 cm</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">37.2012,14 -</subfield>
     </datafield>
-    <datafield tag="363" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="363">
       <subfield code="8">1.1\x</subfield>
       <subfield code="a">37</subfield>
       <subfield code="i">2012</subfield>
     </datafield>
-    <datafield tag="515" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="515">
       <subfield code="a">Periodizität: vierzehntägl.</subfield>
     </datafield>
-    <datafield tag="751" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="751">
       <subfield code="0">(DE-588)24279-2</subfield>
       <subfield code="0">(DE-101)000242799</subfield>
       <subfield code="a">Grenzach-Wyhlen</subfield>
       <subfield code="4">dbp</subfield>
       <subfield code="2">gnd</subfield>
     </datafield>
-    <datafield tag="780" ind1="0" ind2="0">
+    <datafield ind2="0" ind1="0" tag="780">
       <subfield code="i">Vorg.:</subfield>
       <subfield code="a">Grenzach-Wyhlen</subfield>
       <subfield code="t">Mitteilungsblatt Grenzach-Wyhlen</subfield>
       <subfield code="w">(DE-600)522606-5</subfield>
       <subfield code="w">(DE-101)012785911</subfield>
     </datafield>
-    <datafield tag="925" ind1="r" ind2=" ">
+    <datafield ind2=" " ind1="r" tag="925">
       <subfield code="a">ra</subfield>
     </datafield>
   </record>
@@ -1791,71 +1791,71 @@
     <controlfield tag="005">20120802100135.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120802c20129999gw z||p|r ||| 0||||0ger c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1024783146</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675874-X</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675874-X</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">1241</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">1241</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">ger</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-DE</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">330</subfield>
       <subfield code="q">DE-101</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">330</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="110" ind1="2" ind2=" ">
+    <datafield ind2=" " ind1="2" tag="110">
       <subfield code="0">(DE-588)1024759075</subfield>
       <subfield code="0">(DE-101)1024759075</subfield>
       <subfield code="a">Kreishandwerkerschaft Rureifel</subfield>
       <subfield code="4">aut</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
-      <subfield code="a">&#x98;Das&#x9c; Handwerkerverzeichnis der Kreishandwerkerschaft Rureifel</subfield>
+    <datafield ind2="0" ind1="1" tag="245">
+      <subfield code="a">Das Handwerkerverzeichnis der Kreishandwerkerschaft Rureifel</subfield>
       <subfield code="b">Mitgliederverzeichnis der Innungsfachbetriebe aus dem Bezirk der Kreishandwerkerschaft Rureifel</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Mainz</subfield>
       <subfield code="b">BVS, Verl. für werbewirksame Publ.</subfield>
     </datafield>
-    <datafield tag="300" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="300">
       <subfield code="c">21 cm</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">Aufl. 1.2012 -</subfield>
     </datafield>
-    <datafield tag="363" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="363">
       <subfield code="8">1.1\x</subfield>
       <subfield code="a">1</subfield>
       <subfield code="i">2012</subfield>
     </datafield>
-    <datafield tag="365" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="365">
       <subfield code="b">kart.</subfield>
     </datafield>
-    <datafield tag="515" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="515">
       <subfield code="a">Ersch. unregelmäßig</subfield>
     </datafield>
-    <datafield tag="925" ind1="r" ind2=" ">
+    <datafield ind2=" " ind1="r" tag="925">
       <subfield code="a">ra</subfield>
     </datafield>
   </record>
@@ -1866,52 +1866,52 @@
     <controlfield tag="005">20120802094851.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120802c20129999gw u||m|r ||| 0||||0ger c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1024782808</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675870-2</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675870-2</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">4011</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">4011</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">ger</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-DE</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">700</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="110" ind1="2" ind2=" ">
+    <datafield ind2=" " ind1="2" tag="110">
       <subfield code="0">(DE-588)3021470-1</subfield>
       <subfield code="0">(DE-101)941172449</subfield>
       <subfield code="a">Galerie Rothe</subfield>
       <subfield code="g">Frankfurt, Main</subfield>
       <subfield code="4">aut</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Jahresgabe ... / Galerie Rothe, Frankfurt am Main</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Frankfurt, M.</subfield>
       <subfield code="b">[s.n.]</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">Nachgewiesen 2012 -</subfield>
     </datafield>
-    <datafield tag="363" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="363">
       <subfield code="8">1.1\x</subfield>
       <subfield code="i">2012</subfield>
     </datafield>
@@ -1923,49 +1923,49 @@
     <controlfield tag="005">20120802093026.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120802c20129999pl u||p|r ||| 0||||0eng c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">102478200X</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675867-2</subfield>
     </datafield>
-    <datafield tag="022" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="022">
       <subfield code="a">2084-6096</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675867-2</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">0089</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">0089</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">eng</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-PL</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">660</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Composites theory and practice</subfield>
       <subfield code="b">quarterly ; research journal of the Polish Society of Composite Materials</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Cze̜stochowa</subfield>
       <subfield code="b">[s.n.]</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">12.2012 -</subfield>
     </datafield>
-    <datafield tag="780" ind1="0" ind2="0">
+    <datafield ind2="0" ind1="0" tag="780">
       <subfield code="i">Vorg.:</subfield>
       <subfield code="t">Kompozyty</subfield>
       <subfield code="w">(DE-600)2056168-4</subfield>
@@ -1979,35 +1979,35 @@
     <controlfield tag="005">20120802090718.0</controlfield>
     <controlfield tag="007">cr||||||||||||</controlfield>
     <controlfield tag="008">120802c20129999gw u||m|o ||| 0||||0||| c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1024781097</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675861-1</subfield>
     </datafield>
-    <datafield tag="029" ind1="a" ind2="d">
+    <datafield ind2="d" ind1="a" tag="029">
       <subfield code="a">2191-4907</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675861-1</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">0046</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">0046</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-DE</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">330</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">RessourcenKultur</subfield>
       <subfield code="h">[Elektronische Ressource]</subfield>
       <subfield code="b">Vertrauenskultur, Innovation, Ressourceneffinzienz</subfield>
@@ -2015,46 +2015,46 @@
       <subfield code="p">Sonderausgabe</subfield>
       <subfield code="c">artec, Forschungszentrum Nachhaltigkeit ; Wuppertal Institut</subfield>
     </datafield>
-    <datafield tag="246" ind1="1" ind2="9">
+    <datafield ind2="9" ind1="1" tag="246">
       <subfield code="a">RessourcenKultur [[Elektronische Ressource]]  / Sonderausgabe</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Bremen</subfield>
       <subfield code="b">artec, Forschungszentrum Nachhaltigkeit</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Wuppertal</subfield>
       <subfield code="b">Wuppertal Institut für Klima, Umwelt, Energie</subfield>
     </datafield>
-    <datafield tag="300" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="300">
       <subfield code="a">Online-Ressource</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">1.2012 -</subfield>
     </datafield>
-    <datafield tag="363" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="363">
       <subfield code="8">1.1\x</subfield>
       <subfield code="i">2012</subfield>
     </datafield>
-    <datafield tag="710" ind1="2" ind2=" ">
+    <datafield ind2=" " ind1="2" tag="710">
       <subfield code="0">(DE-588)10077304-7</subfield>
       <subfield code="0">(DE-101)970998066</subfield>
       <subfield code="a">Forschungszentrum Nachhaltigkeit (Artec)</subfield>
       <subfield code="g">Bremen</subfield>
     </datafield>
-    <datafield tag="710" ind1="2" ind2=" ">
+    <datafield ind2=" " ind1="2" tag="710">
       <subfield code="0">(DE-588)6052682-8</subfield>
       <subfield code="0">(DE-101)979168228</subfield>
       <subfield code="a">Wuppertal-Institut für Klima, Umwelt, Energie</subfield>
       <subfield code="b">Forschungsgruppe Nachhaltiges Produzieren und Konsumieren</subfield>
     </datafield>
-    <datafield tag="775" ind1="0" ind2="8">
+    <datafield ind2="8" ind1="0" tag="775">
       <subfield code="i">Druckausg.:</subfield>
       <subfield code="t">RessourcenKultur / Sonderausgabe</subfield>
       <subfield code="w">(DE-600)2675858-1</subfield>
       <subfield code="w">(DE-101)1024780945</subfield>
     </datafield>
-    <datafield tag="930" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="930">
       <subfield code="a">Sonderausgabe</subfield>
     </datafield>
   </record>
@@ -2065,78 +2065,78 @@
     <controlfield tag="005">20120802090821.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120802c20129999gw z||m|r ||| 0||||0||| c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1024780945</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675858-1</subfield>
     </datafield>
-    <datafield tag="022" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="022">
       <subfield code="a">2191-4907</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675858-1</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">0046</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">0046</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-DE</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">330</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">RessourcenKultur</subfield>
       <subfield code="b">Vertrauenskultur, Innovation, Ressourceneffinzienz</subfield>
       <subfield code="n">[...]</subfield>
       <subfield code="p">Sonderausgabe</subfield>
       <subfield code="c">artec, Forschungszentrum Nachhaltigkeit ; Wuppertal Institut</subfield>
     </datafield>
-    <datafield tag="246" ind1="1" ind2="9">
+    <datafield ind2="9" ind1="1" tag="246">
       <subfield code="a">RessourcenKultur / Sonderausgabe</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Bremen</subfield>
       <subfield code="b">artec, Forschungszentrum Nachhaltigkeit</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Wuppertal</subfield>
       <subfield code="b">Wuppertal Institut für Klima, Umwelt, Energie</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">1.2012 -</subfield>
     </datafield>
-    <datafield tag="363" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="363">
       <subfield code="8">1.1\x</subfield>
       <subfield code="i">2012</subfield>
     </datafield>
-    <datafield tag="710" ind1="2" ind2=" ">
+    <datafield ind2=" " ind1="2" tag="710">
       <subfield code="0">(DE-588)10077304-7</subfield>
       <subfield code="0">(DE-101)970998066</subfield>
       <subfield code="a">Forschungszentrum Nachhaltigkeit (Artec)</subfield>
       <subfield code="g">Bremen</subfield>
     </datafield>
-    <datafield tag="710" ind1="2" ind2=" ">
+    <datafield ind2=" " ind1="2" tag="710">
       <subfield code="0">(DE-588)6052682-8</subfield>
       <subfield code="0">(DE-101)979168228</subfield>
       <subfield code="a">Wuppertal-Institut für Klima, Umwelt, Energie</subfield>
       <subfield code="b">Forschungsgruppe Nachhaltiges Produzieren und Konsumieren</subfield>
     </datafield>
-    <datafield tag="775" ind1="0" ind2="8">
+    <datafield ind2="8" ind1="0" tag="775">
       <subfield code="i">Online-Ausg.</subfield>
       <subfield code="t">RessourcenKultur [[Elektronische Ressource]]  / Sonderausgabe</subfield>
       <subfield code="w">(DE-600)2675861-1</subfield>
       <subfield code="w">(DE-101)1024781097</subfield>
     </datafield>
-    <datafield tag="930" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="930">
       <subfield code="a">Sonderausgabe</subfield>
     </datafield>
   </record>
@@ -2147,77 +2147,77 @@
     <controlfield tag="005">20120802085258.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120802c20129999gw a||p|r ||| 0||||0ger c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1024780600</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675854-4</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675854-4</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">1141</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">1141</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">ger</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-DE</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">914.3</subfield>
       <subfield code="q">DE-101</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">914.3</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Ferienzeitung Brandenburg</subfield>
       <subfield code="n">[...]</subfield>
       <subfield code="p">Ruppiner Seenland, Prignitz, Oberhavel</subfield>
     </datafield>
-    <datafield tag="246" ind1="1" ind2="9">
+    <datafield ind2="9" ind1="1" tag="246">
       <subfield code="a">Ferienzeitung Brandenburg / Ruppiner Land, Prignitz, Oberhavel</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Berlin</subfield>
       <subfield code="b">Terra Press GmbH</subfield>
     </datafield>
-    <datafield tag="300" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="300">
       <subfield code="c">34 cm</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">2012 -</subfield>
     </datafield>
-    <datafield tag="363" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="363">
       <subfield code="8">1.1\x</subfield>
       <subfield code="i">2012</subfield>
     </datafield>
-    <datafield tag="365" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="365">
       <subfield code="b">EUR 1.50 (Einzelbd.)</subfield>
     </datafield>
-    <datafield tag="515" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="515">
       <subfield code="a">Ersch. jährl.</subfield>
     </datafield>
-    <datafield tag="780" ind1="0" ind2="0">
+    <datafield ind2="0" ind1="0" tag="780">
       <subfield code="i">Vorg.:</subfield>
       <subfield code="t">Ferienzeitung / Ruppiner Land, Prignitz, Oberhavel</subfield>
       <subfield code="w">(DE-600)2388036-3</subfield>
       <subfield code="w">(DE-101)98573972X</subfield>
     </datafield>
-    <datafield tag="925" ind1="r" ind2=" ">
+    <datafield ind2=" " ind1="r" tag="925">
       <subfield code="a">ra</subfield>
     </datafield>
-    <datafield tag="930" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="930">
       <subfield code="a">Ruppiner Seenland, Prignitz, Oberhavel</subfield>
     </datafield>
   </record>
@@ -2228,73 +2228,73 @@
     <controlfield tag="005">20120802083329.0</controlfield>
     <controlfield tag="007">cr||||||||||||</controlfield>
     <controlfield tag="008">120802c20129999xx u||p|o ||| 0||||0eng c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1024779696</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675850-7</subfield>
     </datafield>
-    <datafield tag="022" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="022">
       <subfield code="a">1800-9581</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675850-7</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">0355</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">0355</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">eng</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-ME</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">330</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Journal of central banking theory and practice</subfield>
       <subfield code="h">[Elektronische Ressource]</subfield>
       <subfield code="c">Central Bank of Montenegro</subfield>
     </datafield>
-    <datafield tag="246" ind1="1" ind2="3">
+    <datafield ind2="3" ind1="1" tag="246">
       <subfield code="i">Nebent.</subfield>
       <subfield code="a">Journal of central banking</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Podgorica</subfield>
       <subfield code="b">[s.n.]</subfield>
     </datafield>
-    <datafield tag="300" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="300">
       <subfield code="a">Online-Ressource</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">1.2012 -</subfield>
     </datafield>
-    <datafield tag="710" ind1="2" ind2=" ">
+    <datafield ind2=" " ind1="2" tag="710">
       <subfield code="0">(DE-588)10130226-5</subfield>
       <subfield code="0">(DE-101)978798600</subfield>
       <subfield code="a">Centralna Banka Crne Gore</subfield>
     </datafield>
-    <datafield tag="775" ind1="0" ind2="8">
+    <datafield ind2="8" ind1="0" tag="775">
       <subfield code="i">Druckausg.</subfield>
       <subfield code="t">Journal of central banking theory and practice</subfield>
       <subfield code="w">(DE-600)2673361-4</subfield>
       <subfield code="w">(DE-101)1024305473</subfield>
     </datafield>
-    <datafield tag="856" ind1="4" ind2=" ">
+    <datafield ind2=" " ind1="4" tag="856">
       <subfield code="u">http://www.cb-mn.org/eng/index.php?bl=journal</subfield>
       <subfield code="x">Verlag</subfield>
       <subfield code="z">kostenfrei</subfield>
     </datafield>
-    <datafield tag="856" ind1="4" ind2=" ">
+    <datafield ind2=" " ind1="4" tag="856">
       <subfield code="u">http://www.bibliothek.uni-regensburg.de/ezeit/?2675850</subfield>
       <subfield code="x">EZB</subfield>
     </datafield>
@@ -2306,141 +2306,141 @@
     <controlfield tag="005">20120802083041.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120801c20129999au w||n|r ||| 0||||0ger c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1024757986</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675787-4</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675787-4</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">4060</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">4060</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">ger</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-AT</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">070</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="090" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="090">
       <subfield code="n">ao</subfield>
       <subfield code="n">lp</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Meine Woche</subfield>
       <subfield code="n">[...]</subfield>
       <subfield code="p">St. Veit</subfield>
     </datafield>
-    <datafield tag="246" ind1="1" ind2="9">
+    <datafield ind2="9" ind1="1" tag="246">
       <subfield code="a">Meine Woche / St. Veit</subfield>
     </datafield>
-    <datafield tag="246" ind1="1" ind2="3">
+    <datafield ind2="3" ind1="1" tag="246">
       <subfield code="a">Meine Woche / Sankt Veit</subfield>
     </datafield>
-    <datafield tag="246" ind1="1" ind2="3">
+    <datafield ind2="3" ind1="1" tag="246">
       <subfield code="i">Nebent.</subfield>
       <subfield code="a">Woche St. Veit</subfield>
     </datafield>
-    <datafield tag="247" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="247">
       <subfield code="a">Kärntner Woche</subfield>
       <subfield code="f">Nebent. d. 1. OG</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Klagenfurt</subfield>
       <subfield code="b">Kärntner Woche Zeitungs-GmbH</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">2012,19(9.Mai) -</subfield>
     </datafield>
-    <datafield tag="363" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="363">
       <subfield code="8">1.1\x</subfield>
       <subfield code="b">19</subfield>
       <subfield code="i">2012</subfield>
     </datafield>
-    <datafield tag="515" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="515">
       <subfield code="a">Periodizität: wöchentl.</subfield>
     </datafield>
-    <datafield tag="751" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="751">
       <subfield code="0">(DE-588)1023732653</subfield>
       <subfield code="0">(DE-101)1023732653</subfield>
       <subfield code="a">Klagenfurt am Wörthersee</subfield>
       <subfield code="4">dbp</subfield>
       <subfield code="2">gnd</subfield>
     </datafield>
-    <datafield tag="751" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="751">
       <subfield code="0">(DE-588)4051627-1</subfield>
       <subfield code="0">(DE-101)04051627X</subfield>
       <subfield code="a">Sankt Veit, Glan</subfield>
       <subfield code="4">dbp</subfield>
       <subfield code="2">gnd</subfield>
     </datafield>
-    <datafield tag="775" ind1="0" ind2="8">
+    <datafield ind2="8" ind1="0" tag="775">
       <subfield code="i">Parallelausg.:</subfield>
       <subfield code="t">Meine Woche / Völkermarkt</subfield>
       <subfield code="w">(DE-600)2675706-0</subfield>
       <subfield code="w">(DE-101)1024749592</subfield>
     </datafield>
-    <datafield tag="775" ind1="0" ind2="8">
+    <datafield ind2="8" ind1="0" tag="775">
       <subfield code="i">Parallelausg.:</subfield>
       <subfield code="t">Meine Woche / Villach</subfield>
       <subfield code="w">(DE-600)2675714-X</subfield>
       <subfield code="w">(DE-101)102475040X</subfield>
     </datafield>
-    <datafield tag="775" ind1="0" ind2="8">
+    <datafield ind2="8" ind1="0" tag="775">
       <subfield code="i">Parallelausg.:</subfield>
       <subfield code="t">Meine Woche / Spittal</subfield>
       <subfield code="w">(DE-600)2675719-9</subfield>
       <subfield code="w">(DE-101)1024750965</subfield>
     </datafield>
-    <datafield tag="775" ind1="0" ind2="8">
+    <datafield ind2="8" ind1="0" tag="775">
       <subfield code="i">Parallelausg.:</subfield>
       <subfield code="t">Meine Woche / Lavanttal</subfield>
       <subfield code="w">(DE-600)2675739-4</subfield>
       <subfield code="w">(DE-101)1024752208</subfield>
     </datafield>
-    <datafield tag="775" ind1="0" ind2="8">
+    <datafield ind2="8" ind1="0" tag="775">
       <subfield code="i">Parallelausg.:</subfield>
       <subfield code="t">Meine Woche / Klagenfurt Land</subfield>
       <subfield code="w">(DE-600)2675740-0</subfield>
       <subfield code="w">(DE-101)1024752410</subfield>
     </datafield>
-    <datafield tag="775" ind1="0" ind2="8">
+    <datafield ind2="8" ind1="0" tag="775">
       <subfield code="i">Parallelausg.:</subfield>
       <subfield code="t">Meine Woche / Klagenfurt</subfield>
       <subfield code="w">(DE-600)2675776-X</subfield>
       <subfield code="w">(DE-101)1024757080</subfield>
     </datafield>
-    <datafield tag="775" ind1="0" ind2="8">
+    <datafield ind2="8" ind1="0" tag="775">
       <subfield code="i">Parallelausg.:</subfield>
       <subfield code="t">Meine Woche / Gailtal</subfield>
       <subfield code="w">(DE-600)2675782-5</subfield>
       <subfield code="w">(DE-101)1024757579</subfield>
     </datafield>
-    <datafield tag="775" ind1="0" ind2="8">
+    <datafield ind2="8" ind1="0" tag="775">
       <subfield code="i">Parallelausg.:</subfield>
       <subfield code="t">Meine Woche / Feldkirchen</subfield>
       <subfield code="w">(DE-600)2675783-7</subfield>
       <subfield code="w">(DE-101)1024757757</subfield>
     </datafield>
-    <datafield tag="780" ind1="0" ind2="0">
+    <datafield ind2="0" ind1="0" tag="780">
       <subfield code="i">Vorg.:</subfield>
       <subfield code="t">Kärntner Woche / Sankt Veit</subfield>
       <subfield code="w">(DE-600)2607761-9</subfield>
       <subfield code="w">(DE-101)1011621029</subfield>
     </datafield>
-    <datafield tag="930" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="930">
       <subfield code="a">St. Veit</subfield>
     </datafield>
   </record>
@@ -2451,74 +2451,74 @@
     <controlfield tag="005">20120802133653.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120731c20129999gw z||m|r ||| 0||||0ger c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">102470310X</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675453-8</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675453-8</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">1140</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">1140</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">ger</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-DE</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">290</subfield>
       <subfield code="q">DE-101</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">290</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Europäisch-jüdische Studien</subfield>
       <subfield code="b">EJSK</subfield>
       <subfield code="n">[...]</subfield>
       <subfield code="p">Kontroversen</subfield>
     </datafield>
-    <datafield tag="246" ind1="1" ind2="9">
+    <datafield ind2="9" ind1="1" tag="246">
       <subfield code="a">Europäisch-jüdische Studien / Kontroversen</subfield>
     </datafield>
-    <datafield tag="246" ind1="1" ind2="3">
+    <datafield ind2="3" ind1="1" tag="246">
       <subfield code="a">EJSK</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Berlin</subfield>
       <subfield code="a">Boston, Mass.</subfield>
-      <subfield code="b">&#x98;De&#x9c; Gruyter</subfield>
+      <subfield code="b">De Gruyter</subfield>
     </datafield>
-    <datafield tag="300" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="300">
       <subfield code="c">24 cm</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">1.2012 -</subfield>
     </datafield>
-    <datafield tag="363" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="363">
       <subfield code="8">1.1\x</subfield>
       <subfield code="a">1</subfield>
       <subfield code="i">2012</subfield>
     </datafield>
-    <datafield tag="515" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="515">
       <subfield code="a">Ersch. unregelmäßig</subfield>
     </datafield>
-    <datafield tag="925" ind1="r" ind2=" ">
+    <datafield ind2=" " ind1="r" tag="925">
       <subfield code="a">ra</subfield>
     </datafield>
-    <datafield tag="930" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="930">
       <subfield code="a">Kontroversen</subfield>
     </datafield>
   </record>
@@ -2529,49 +2529,49 @@
     <controlfield tag="005">20120802103931.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120727c20129999|||a||p|r ||| 0||||0||| c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1024637395</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675128-8</subfield>
     </datafield>
-    <datafield tag="022" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="022">
       <subfield code="a">2235-3089</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675128-8</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(OCoLC)795705686</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">1131</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">9001</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">8,1</subfield>
       <subfield code="2">ssgn</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">940</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Neujahrsblatt des Stadtzürcher Heimatschutzes</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Zürich</subfield>
       <subfield code="b">Stadtzürcher Heimatschutz</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">Nachgewiesen 2012 -</subfield>
     </datafield>
-    <datafield tag="780" ind1="0" ind2="0">
+    <datafield ind2="0" ind1="0" tag="780">
       <subfield code="i">Vorg.:</subfield>
       <subfield code="a">Zürcher Heimatschutz</subfield>
       <subfield code="t">Neujahrsblatt ... des Zürcher Heimatschutzes</subfield>
@@ -2586,56 +2586,56 @@
     <controlfield tag="005">20120802143024.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120727c20129999sz a||p|r ||| 0||||0ger c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1024623688</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2675042-9</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2675042-9</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">1131</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">1141</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">ger</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-CH</subfield>
     </datafield>
-    <datafield tag="110" ind1="2" ind2=" ">
+    <datafield ind2=" " ind1="2" tag="110">
       <subfield code="0">(DE-588)1024795039</subfield>
       <subfield code="0">(DE-101)1024795039</subfield>
       <subfield code="a">ibW Höhere Fachschule Südostschweiz</subfield>
       <subfield code="4">aut</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Jahresbericht der ibW Höhere Fachschule Südostschweiz</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Chur</subfield>
       <subfield code="b">ibW Höhere Fachschule Südostschweiz</subfield>
     </datafield>
-    <datafield tag="300" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="300">
       <subfield code="c">30 cm</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">Nachgewiesen 2011(2012) -</subfield>
     </datafield>
-    <datafield tag="363" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="363">
       <subfield code="8">1.1\x</subfield>
       <subfield code="i">2011</subfield>
     </datafield>
-    <datafield tag="515" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="515">
       <subfield code="a">Ersch. jährl.</subfield>
     </datafield>
-    <datafield tag="925" ind1="r" ind2=" ">
+    <datafield ind2=" " ind1="r" tag="925">
       <subfield code="a">rb</subfield>
     </datafield>
   </record>
@@ -2646,136 +2646,136 @@
     <controlfield tag="005">20120802082416.0</controlfield>
     <controlfield tag="007">co||||||||||||</controlfield>
     <controlfield tag="008">120724c20129999gw z||p|q ||| 0||||0ger c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1024516296</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2674402-8</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2674402-8</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">1241</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">1250</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">ger</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-DE</subfield>
     </datafield>
-    <datafield tag="082" ind1="0" ind2="4">
+    <datafield ind2="4" ind1="0" tag="082">
       <subfield code="8">1\x</subfield>
       <subfield code="a">617.600681</subfield>
       <subfield code="q">DE-101</subfield>
       <subfield code="2">22/ger</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">610</subfield>
       <subfield code="q">DE-101</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">610</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="085" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="085">
       <subfield code="8">1\x</subfield>
       <subfield code="b">617.6</subfield>
     </datafield>
-    <datafield tag="085" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="085">
       <subfield code="8">1\x</subfield>
       <subfield code="z">1</subfield>
       <subfield code="s">0681</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Textvorlagen für die Zahnarztpraxis</subfield>
       <subfield code="h">[Elektronische Ressource]</subfield>
       <subfield code="b">perfekte Mustertexte, Formulare und Checklisten für ein erfolgreiches Praxismanagement</subfield>
     </datafield>
-    <datafield tag="247" ind1="0" ind2="0">
+    <datafield ind2="0" ind1="0" tag="247">
       <subfield code="g">Hauptsacht. vom Behältnis</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Balingen</subfield>
       <subfield code="b">Spitta</subfield>
     </datafield>
-    <datafield tag="300" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="300">
       <subfield code="a">CD-ROMs</subfield>
       <subfield code="c">12 cm, in Behältnis 19 x 14 x 2 cm</subfield>
       <subfield code="e">Booklet</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">1.0.2012 -</subfield>
     </datafield>
-    <datafield tag="363" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="363">
       <subfield code="8">1.1\x</subfield>
       <subfield code="a">1</subfield>
       <subfield code="i">2012</subfield>
     </datafield>
-    <datafield tag="515" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="515">
       <subfield code="a">Ersch. unregelmäßig</subfield>
     </datafield>
-    <datafield tag="538" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="538">
       <subfield code="a">Systemvoraussetzungen: Prozessor: mind. 500 MHz; RAM-Speicher: mind. 128 MB; freie Festplattenkapazität: mind. 250 MB; CD-ROM-Laufwerk; Monitor: 17", 1024 x 768 Pixel; Internet Explorer ab Version 5.0; Windows XP, Windows Vista, Windows 7</subfield>
     </datafield>
-    <datafield tag="650" ind1=" " ind2="7">
+    <datafield ind2="7" ind1=" " tag="650">
       <subfield code="0">(DE-588)4067303-0</subfield>
       <subfield code="0">(DE-101)040673030</subfield>
       <subfield code="a">Zahnarzt</subfield>
       <subfield code="2">gnd</subfield>
     </datafield>
-    <datafield tag="650" ind1=" " ind2="7">
+    <datafield ind2="7" ind1=" " tag="650">
       <subfield code="0">(DE-588)4003167-6</subfield>
       <subfield code="0">(DE-101)040031675</subfield>
       <subfield code="a">Arztpraxis</subfield>
       <subfield code="2">gnd</subfield>
     </datafield>
-    <datafield tag="655" ind1=" " ind2="7">
+    <datafield ind2="7" ind1=" " tag="655">
       <subfield code="a">Formularsammlung</subfield>
       <subfield code="2">gnd</subfield>
     </datafield>
-    <datafield tag="655" ind1=" " ind2="7">
+    <datafield ind2="7" ind1=" " tag="655">
       <subfield code="a">CD-ROM</subfield>
       <subfield code="2">gnd</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="0">
+    <datafield ind2="0" ind1="0" tag="689">
       <subfield code="0">(DE-588)4067303-0</subfield>
       <subfield code="0">(DE-101)040673030</subfield>
       <subfield code="D">s</subfield>
       <subfield code="a">Zahnarzt</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="689">
       <subfield code="0">(DE-588)4003167-6</subfield>
       <subfield code="0">(DE-101)040031675</subfield>
       <subfield code="D">s</subfield>
       <subfield code="a">Arztpraxis</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="2">
+    <datafield ind2="2" ind1="0" tag="689">
       <subfield code="A">f</subfield>
       <subfield code="a">Formularsammlung</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="3">
+    <datafield ind2="3" ind1="0" tag="689">
       <subfield code="A">f</subfield>
       <subfield code="a">CD-ROM</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="689">
       <subfield code="5">DE-101</subfield>
       <subfield code="5">DE-101</subfield>
     </datafield>
-    <datafield tag="780" ind1="0" ind2="0">
+    <datafield ind2="0" ind1="0" tag="780">
       <subfield code="i">Vorg.:</subfield>
       <subfield code="t">Erfolgreiche Mustertexte für die Zahnarztpraxis</subfield>
       <subfield code="w">(DE-600)2375716-4</subfield>
       <subfield code="w">(DE-101)984816984</subfield>
     </datafield>
-    <datafield tag="925" ind1="r" ind2=" ">
+    <datafield ind2=" " ind1="r" tag="925">
       <subfield code="a">ra</subfield>
     </datafield>
   </record>
@@ -2786,85 +2786,85 @@
     <controlfield tag="005">20120802105123.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120719c20129999gw f||p|r ||| 0||||0ger c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">102438005X</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2673671-8</subfield>
     </datafield>
-    <datafield tag="022" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="022">
       <subfield code="a">2194-5705</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2673671-8</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">0014</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">9001</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">ger</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-DE</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">500</subfield>
       <subfield code="a">620</subfield>
       <subfield code="q">DE-101</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">530</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Entdeckt</subfield>
       <subfield code="b">das Forschungsmagazin aus dem HZDR</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Dresden</subfield>
       <subfield code="b">Helmholtz-Zentrum Dresden-Rossendorf</subfield>
     </datafield>
-    <datafield tag="300" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="300">
       <subfield code="c">30 cm</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">Ausg. 1.2012 -</subfield>
     </datafield>
-    <datafield tag="363" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="363">
       <subfield code="8">1.1\x</subfield>
       <subfield code="a">1</subfield>
       <subfield code="i">2012</subfield>
     </datafield>
-    <datafield tag="515" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="515">
       <subfield code="a">2011 nicht ersch.; 2x jährl.</subfield>
     </datafield>
-    <datafield tag="710" ind1="2" ind2=" ">
+    <datafield ind2=" " ind1="2" tag="710">
       <subfield code="0">(DE-588)16102193-1</subfield>
       <subfield code="0">(DE-101)1010237780</subfield>
       <subfield code="a">Helmholtz-Zentrum</subfield>
       <subfield code="g">Dresden</subfield>
     </datafield>
-    <datafield tag="775" ind1="0" ind2="8">
+    <datafield ind2="8" ind1="0" tag="775">
       <subfield code="i">Online-Ausg.</subfield>
       <subfield code="t">Entdeckt</subfield>
       <subfield code="w">(DE-600)2675890-8</subfield>
       <subfield code="w">(DE-101)1024785750</subfield>
     </datafield>
-    <datafield tag="780" ind1="0" ind2="0">
+    <datafield ind2="0" ind1="0" tag="780">
       <subfield code="i">Vorg.:</subfield>
-      <subfield code="a">Forschungszentrum &lt;Dresden></subfield>
+      <subfield code="a">Forschungszentrum &lt;Dresden&gt;</subfield>
       <subfield code="t">FZD-Journal  . das Journal des Forschungszentrums Dresden-Rossendorf</subfield>
       <subfield code="w">(DE-600)2409633-7</subfield>
       <subfield code="w">(DE-101)987511513</subfield>
     </datafield>
-    <datafield tag="925" ind1="r" ind2=" ">
+    <datafield ind2=" " ind1="r" tag="925">
       <subfield code="a">rb</subfield>
     </datafield>
   </record>
@@ -2875,58 +2875,58 @@
     <controlfield tag="005">20120802083328.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120717c20129999xx u||p|r ||| 0||||0eng c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1024305473</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2673361-4</subfield>
     </datafield>
-    <datafield tag="022" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="022">
       <subfield code="a">1800-9581</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2673361-4</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">0206</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">0355</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">eng</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-ME</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">330</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Journal of central banking theory and practice</subfield>
       <subfield code="c">Central Bank of Montenegro</subfield>
     </datafield>
-    <datafield tag="246" ind1="1" ind2="3">
+    <datafield ind2="3" ind1="1" tag="246">
       <subfield code="i">Nebent.</subfield>
       <subfield code="a">Journal of central banking</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Podgorica</subfield>
       <subfield code="b">[s.n.]</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">1.2012 -</subfield>
     </datafield>
-    <datafield tag="710" ind1="2" ind2=" ">
+    <datafield ind2=" " ind1="2" tag="710">
       <subfield code="0">(DE-588)10130226-5</subfield>
       <subfield code="0">(DE-101)978798600</subfield>
       <subfield code="a">Centralna Banka Crne Gore</subfield>
     </datafield>
-    <datafield tag="775" ind1="0" ind2="8">
+    <datafield ind2="8" ind1="0" tag="775">
       <subfield code="i">Online-Ausg.</subfield>
       <subfield code="t">Journal of central banking theory and practice</subfield>
       <subfield code="w">(DE-600)2675850-7</subfield>
@@ -2940,65 +2940,65 @@
     <controlfield tag="005">20120802095112.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120717c20129999gw z||m|r ||| 0||||0ger c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">102428607X</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2673243-9</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2673243-9</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">0046</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">1240</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">ger</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-DE</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">370</subfield>
       <subfield code="q">DE-101</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">370</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Apollon-Schriftenreihe zur Bildungsforschung</subfield>
       <subfield code="c">hrsg. vom Präsidium der Apollon-Hochschule der Gesundheitswirtschaft</subfield>
     </datafield>
-    <datafield tag="246" ind1="1" ind2="3">
+    <datafield ind2="3" ind1="1" tag="246">
       <subfield code="a">Schriftenreihe zur Bildungsforschung</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Bremen</subfield>
       <subfield code="b">Apollon Univ. Press</subfield>
     </datafield>
-    <datafield tag="300" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="300">
       <subfield code="c">22 cm</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">1.2012 -</subfield>
     </datafield>
-    <datafield tag="363" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="363">
       <subfield code="8">1.1\x</subfield>
       <subfield code="a">1</subfield>
       <subfield code="i">2012</subfield>
     </datafield>
-    <datafield tag="515" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="515">
       <subfield code="a">Ersch. unregelmäßig</subfield>
     </datafield>
-    <datafield tag="925" ind1="r" ind2=" ">
+    <datafield ind2=" " ind1="r" tag="925">
       <subfield code="a">ra</subfield>
     </datafield>
   </record>
@@ -3009,100 +3009,100 @@
     <controlfield tag="005">20120802093334.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120712c20129999gw z||p|r ||| 0||||0ger c</controlfield>
-    <datafield tag="015" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="015">
       <subfield code="a">12,B32</subfield>
       <subfield code="2">dnb</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1024193225</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2672793-6</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2672793-6</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">1241</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">9001</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">ger</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-DE</subfield>
     </datafield>
-    <datafield tag="082" ind1="0" ind2="4">
+    <datafield ind2="4" ind1="0" tag="082">
       <subfield code="8">1\x</subfield>
       <subfield code="a">920.043371</subfield>
       <subfield code="q">DE-101</subfield>
       <subfield code="2">22/ger</subfield>
     </datafield>
-    <datafield tag="083" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="083">
       <subfield code="8">2\x</subfield>
       <subfield code="a">920.0434735</subfield>
       <subfield code="q">DE-101</subfield>
       <subfield code="2">22/ger</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">920</subfield>
       <subfield code="q">DE-101</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">050</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="085" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="085">
       <subfield code="8">1\x</subfield>
       <subfield code="b">920</subfield>
     </datafield>
-    <datafield tag="085" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="085">
       <subfield code="8">1\x</subfield>
       <subfield code="z">2</subfield>
       <subfield code="s">43371</subfield>
     </datafield>
-    <datafield tag="085" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="085">
       <subfield code="8">2\x</subfield>
       <subfield code="b">920</subfield>
     </datafield>
-    <datafield tag="085" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="085">
       <subfield code="8">2\x</subfield>
       <subfield code="z">2</subfield>
       <subfield code="s">434735</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Wer ist wer Allgäu-Oberschwaben</subfield>
       <subfield code="b">... Köpfe der Region</subfield>
     </datafield>
-    <datafield tag="246" ind1="1" ind2="3">
+    <datafield ind2="3" ind1="1" tag="246">
       <subfield code="i">Nebent.</subfield>
       <subfield code="a">Wer ist wer in Allgäu-Oberschwaben</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Leutkirch im Allgäu</subfield>
       <subfield code="b">Allgovia media</subfield>
     </datafield>
-    <datafield tag="300" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="300">
       <subfield code="c">21 cm</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">Aufl. 1.2012 -</subfield>
     </datafield>
-    <datafield tag="363" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="363">
       <subfield code="8">1.1\x</subfield>
       <subfield code="a">1</subfield>
       <subfield code="i">2012</subfield>
     </datafield>
-    <datafield tag="515" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="515">
       <subfield code="a">Ersch. unregelmäßig</subfield>
     </datafield>
-    <datafield tag="925" ind1="r" ind2=" ">
+    <datafield ind2=" " ind1="r" tag="925">
       <subfield code="a">rb</subfield>
     </datafield>
   </record>
@@ -3113,50 +3113,50 @@
     <controlfield tag="005">20120802132652.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120712c20129999gw z||m|r ||| 0||||0eng c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1024169979</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2672633-6</subfield>
     </datafield>
-    <datafield tag="022" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="022">
       <subfield code="a">2191-8864</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2672633-6</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">6999</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">1250</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">eng</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-DE</subfield>
       <subfield code="c">XA-CH</subfield>
       <subfield code="c">XA-AT</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">900</subfield>
       <subfield code="a">940</subfield>
       <subfield code="q">DE-101</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">900</subfield>
       <subfield code="a">940</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Eastern and central European studies</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Frankfurt, M.</subfield>
       <subfield code="a">Bern</subfield>
       <subfield code="a">Berlin</subfield>
@@ -3166,21 +3166,21 @@
       <subfield code="a">Wien</subfield>
       <subfield code="b">Lang</subfield>
     </datafield>
-    <datafield tag="300" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="300">
       <subfield code="c">22 cm</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">1.2012 -</subfield>
     </datafield>
-    <datafield tag="363" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="363">
       <subfield code="8">1.1\x</subfield>
       <subfield code="a">1</subfield>
       <subfield code="i">2012</subfield>
     </datafield>
-    <datafield tag="515" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="515">
       <subfield code="a">Ersch. unregelmäßig</subfield>
     </datafield>
-    <datafield tag="925" ind1="r" ind2=" ">
+    <datafield ind2=" " ind1="r" tag="925">
       <subfield code="a">ra</subfield>
     </datafield>
   </record>
@@ -3191,95 +3191,95 @@
     <controlfield tag="005">20120802082902.0</controlfield>
     <controlfield tag="007">cr||||||||||||</controlfield>
     <controlfield tag="008">120628c20129999xxku||p|o ||| 0||||0eng c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1023782529</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2669168-1</subfield>
     </datafield>
-    <datafield tag="022" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="022">
       <subfield code="a">2047-7716</subfield>
     </datafield>
-    <datafield tag="029" ind1="a" ind2="d">
+    <datafield ind2="d" ind1="a" tag="029">
       <subfield code="a">0305-7674</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2669168-1</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">0038</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">9001</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">eng</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-GB</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">10</subfield>
       <subfield code="2">ssgn</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">300</subfield>
       <subfield code="a">390</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Cambridge anthropology</subfield>
       <subfield code="h">[Elektronische Ressource]</subfield>
       <subfield code="b">a journal of the Department of Social Anthropology, Cambridge University</subfield>
     </datafield>
-    <datafield tag="247" ind1="0" ind2="0">
+    <datafield ind2="0" ind1="0" tag="247">
       <subfield code="g">Gesehen am 28.06.12</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Biggleswade</subfield>
       <subfield code="b">Berghahn Journals</subfield>
     </datafield>
-    <datafield tag="260" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="260">
       <subfield code="a">Cambridge</subfield>
       <subfield code="b">Univ.</subfield>
       <subfield code="c">anfangs</subfield>
     </datafield>
-    <datafield tag="300" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="300">
       <subfield code="a">Online-Ressource</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">Nachgewiesen 30.2012 -</subfield>
     </datafield>
-    <datafield tag="363" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="363">
       <subfield code="8">1.1\x</subfield>
       <subfield code="a">30</subfield>
       <subfield code="i">2012</subfield>
     </datafield>
-    <datafield tag="710" ind1="2" ind2=" ">
+    <datafield ind2=" " ind1="2" tag="710">
       <subfield code="0">(DE-588)5350688-1</subfield>
       <subfield code="0">(DE-101)957989180</subfield>
       <subfield code="a">University</subfield>
       <subfield code="g">Cambridge</subfield>
       <subfield code="b">Department of Social Anthropology</subfield>
     </datafield>
-    <datafield tag="775" ind1="0" ind2="8">
+    <datafield ind2="8" ind1="0" tag="775">
       <subfield code="i">Druckausg.</subfield>
       <subfield code="t">Cambridge anthropology</subfield>
       <subfield code="w">(DE-600)8161-9</subfield>
       <subfield code="w">(DE-101)010107126</subfield>
     </datafield>
-    <datafield tag="856" ind1="4" ind2=" ">
+    <datafield ind2=" " ind1="4" tag="856">
       <subfield code="u">http://www.ingentaconnect.com/content/berghahn/ca</subfield>
       <subfield code="x">Agentur</subfield>
     </datafield>
-    <datafield tag="856" ind1="4" ind2=" ">
+    <datafield ind2=" " ind1="4" tag="856">
       <subfield code="u">http://www.journals.berghahnbooks.com/ca</subfield>
       <subfield code="x">Verlag</subfield>
     </datafield>
-    <datafield tag="856" ind1="4" ind2=" ">
+    <datafield ind2=" " ind1="4" tag="856">
       <subfield code="u">http://www.bibliothek.uni-regensburg.de/ezeit/?2669168</subfield>
       <subfield code="x">EZB</subfield>
     </datafield>
@@ -3291,115 +3291,115 @@
     <controlfield tag="005">20120802080054.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120627c20129999gw w||n|r ||| 0||||0ger c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1023737159</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2668915-7</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2668915-7</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">0012</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">0384</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">ger</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-DE</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">230</subfield>
       <subfield code="q">DE-101</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">230</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="090" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="090">
       <subfield code="n">eo</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Katholische SonntagsZeitung</subfield>
       <subfield code="n">[...]</subfield>
       <subfield code="p">Bistum Augsburg</subfield>
       <subfield code="c">im Auftrag des Bischofs von Augsburg</subfield>
     </datafield>
-    <datafield tag="246" ind1="1" ind2="9">
+    <datafield ind2="9" ind1="1" tag="246">
       <subfield code="a">Katholische SonntagsZeitung / Bistum Augsburg</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Augsburg</subfield>
       <subfield code="b">Sankt Ulrich Verlag</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">85.2012,21(26/27.Mai) -</subfield>
     </datafield>
-    <datafield tag="363" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="363">
       <subfield code="8">1.1\x</subfield>
       <subfield code="a">85</subfield>
       <subfield code="b">21</subfield>
       <subfield code="i">2012</subfield>
     </datafield>
-    <datafield tag="515" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="515">
       <subfield code="a">Periodizität: wöchentl.</subfield>
     </datafield>
-    <datafield tag="591" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="591">
       <subfield code="a">Kopie</subfield>
     </datafield>
-    <datafield tag="651" ind1=" " ind2="7">
+    <datafield ind2="7" ind1=" " tag="651">
       <subfield code="0">(DE-588)4003616-9</subfield>
       <subfield code="0">(DE-101)040036162</subfield>
       <subfield code="a">Diözese Augsburg</subfield>
       <subfield code="2">gnd</subfield>
     </datafield>
-    <datafield tag="655" ind1=" " ind2="7">
+    <datafield ind2="7" ind1=" " tag="655">
       <subfield code="a">Zeitschrift</subfield>
       <subfield code="2">gnd</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="0">
+    <datafield ind2="0" ind1="0" tag="689">
       <subfield code="0">(DE-588)4003616-9</subfield>
       <subfield code="0">(DE-101)040036162</subfield>
       <subfield code="D">g</subfield>
       <subfield code="a">Diözese Augsburg</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="689">
       <subfield code="A">f</subfield>
       <subfield code="a">Zeitschrift</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="689">
       <subfield code="5">DE-384</subfield>
       <subfield code="5">DE-604</subfield>
     </datafield>
-    <datafield tag="710" ind1="2" ind2=" ">
+    <datafield ind2=" " ind1="2" tag="710">
       <subfield code="0">(DE-588)1001896-7</subfield>
       <subfield code="0">(DE-101)004012666</subfield>
       <subfield code="a">Diözese</subfield>
       <subfield code="g">Augsburg</subfield>
     </datafield>
-    <datafield tag="751" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="751">
       <subfield code="0">(DE-588)2028044-0</subfield>
       <subfield code="0">(DE-101)004847482</subfield>
       <subfield code="a">Augsburg</subfield>
       <subfield code="4">dbp</subfield>
       <subfield code="2">gnd</subfield>
     </datafield>
-    <datafield tag="780" ind1="0" ind2="0">
+    <datafield ind2="0" ind1="0" tag="780">
       <subfield code="i">Vorg.:</subfield>
-      <subfield code="a">Diözese &lt;Augsburg></subfield>
+      <subfield code="a">Diözese &lt;Augsburg&gt;</subfield>
       <subfield code="t">Katholische SonntagsZeitung für das Bistum Augsburg</subfield>
       <subfield code="w">(DE-600)1158928-0</subfield>
       <subfield code="w">(DE-101)016871790</subfield>
     </datafield>
-    <datafield tag="930" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="930">
       <subfield code="a">Bistum Augsburg</subfield>
     </datafield>
   </record>
@@ -3410,79 +3410,79 @@
     <controlfield tag="005">20120802142210.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120615c20129999gw a||p|r ||| 0||||0ger c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1023412403</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2667188-8</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2667188-8</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">0109</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">1241</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">ger</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-DE</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">330</subfield>
       <subfield code="q">DE-101</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">330</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Nachhaltigkeitsbericht  ... / Mainova</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Frankfurt, M.</subfield>
       <subfield code="b">Mainova</subfield>
     </datafield>
-    <datafield tag="300" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="300">
       <subfield code="c">30 cm</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">2011(2012) -</subfield>
     </datafield>
-    <datafield tag="363" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="363">
       <subfield code="8">1.1\x</subfield>
       <subfield code="i">2011</subfield>
     </datafield>
-    <datafield tag="515" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="515">
       <subfield code="a">Ersch. jährl.</subfield>
     </datafield>
-    <datafield tag="710" ind1="2" ind2=" ">
+    <datafield ind2=" " ind1="2" tag="710">
       <subfield code="0">(DE-588)5335944-6</subfield>
       <subfield code="0">(DE-101)95732460X</subfield>
       <subfield code="a">Mainova-Aktiengesellschaft</subfield>
       <subfield code="g">Frankfurt, Main</subfield>
     </datafield>
-    <datafield tag="780" ind1="0" ind2="0">
+    <datafield ind2="0" ind1="0" tag="780">
       <subfield code="i">Als Vorg. gilt</subfield>
       <subfield code="t">Umweltbericht Verbund Mainova ...</subfield>
       <subfield code="w">(DE-600)2565455-X</subfield>
       <subfield code="w">(DE-101)1004956614</subfield>
     </datafield>
-    <datafield tag="780" ind1="0" ind2="0">
+    <datafield ind2="0" ind1="0" tag="780">
       <subfield code="i">Als Vorg. gilt</subfield>
-      <subfield code="a">Mainova-Aktiengesellschaft &lt;Frankfurt, Main></subfield>
+      <subfield code="a">Mainova-Aktiengesellschaft &lt;Frankfurt, Main&gt;</subfield>
       <subfield code="t">Personalbericht ... / Mainova</subfield>
       <subfield code="w">(DE-600)2387571-9</subfield>
       <subfield code="w">(DE-101)985709820</subfield>
     </datafield>
-    <datafield tag="925" ind1="r" ind2=" ">
+    <datafield ind2=" " ind1="r" tag="925">
       <subfield code="a">rb</subfield>
     </datafield>
   </record>
@@ -3493,152 +3493,152 @@
     <controlfield tag="005">20120802141007.0</controlfield>
     <controlfield tag="007">co||||||||||||</controlfield>
     <controlfield tag="008">120614c20129999gw z||p|q ||| 0||||0ger c</controlfield>
-    <datafield tag="015" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="015">
       <subfield code="a">12,A26</subfield>
       <subfield code="2">dnb</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1023356279</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2666750-2</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2666750-2</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(OCoLC)797190385</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">1241</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">9001</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">ger</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-DE</subfield>
     </datafield>
-    <datafield tag="082" ind1="0" ind2="4">
+    <datafield ind2="4" ind1="0" tag="082">
       <subfield code="8">1\x</subfield>
       <subfield code="a">658.477</subfield>
       <subfield code="q">DE-101</subfield>
       <subfield code="2">22/ger</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">650</subfield>
       <subfield code="q">DE-101</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">360</subfield>
       <subfield code="a">340</subfield>
       <subfield code="a">620</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">TEC 830f</subfield>
       <subfield code="2">stub</subfield>
     </datafield>
-    <datafield tag="085" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="085">
       <subfield code="8">1\x</subfield>
       <subfield code="b">658.477</subfield>
     </datafield>
-    <datafield tag="086" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="086">
       <subfield code="2">z</subfield>
       <subfield code="a">CD4492</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Betriebliches Brandschutzmanagement</subfield>
       <subfield code="h">[Elektronische Ressource]</subfield>
       <subfield code="b">Maßnahmen professionell und branchenspezifisch umsetzen ; Aufgaben und Pflichten kennen und verstehen, Anforderungen umsetzen, Brandschutz korrekt überwachen</subfield>
     </datafield>
-    <datafield tag="247" ind1="0" ind2="0">
+    <datafield ind2="0" ind1="0" tag="247">
       <subfield code="g">Hauptsacht. vom Behältnis</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Kissing</subfield>
       <subfield code="b">WEKA-Media GmbH</subfield>
     </datafield>
-    <datafield tag="300" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="300">
       <subfield code="a">DVDs</subfield>
       <subfield code="c">12 cm, in Behältnis 19 x 14 x 2 cm</subfield>
       <subfield code="e">Beil.</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">2012,5 -</subfield>
     </datafield>
-    <datafield tag="363" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="363">
       <subfield code="8">1.1\x</subfield>
       <subfield code="b">5</subfield>
       <subfield code="i">2012</subfield>
     </datafield>
-    <datafield tag="490" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="490">
       <subfield code="a">WEKA-Praxislösungen</subfield>
     </datafield>
-    <datafield tag="501" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="501">
       <subfield code="a">Darin 2012,5: Archiv - Handbuch für den betrieblichen Brandschutz</subfield>
     </datafield>
-    <datafield tag="515" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="515">
       <subfield code="a">Ersch. unregelmäßig; Druckausg. als Losebl.-Ausg. ersch.</subfield>
     </datafield>
-    <datafield tag="538" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="538">
       <subfield code="a">Systemvoraussetzungen: Windows-PC ab Pentium III (1 GHz) oder vergleichbar; Monitor SVGA (1.024 x 768) oder höher; Betriebssystem Windows 7, Vista oder XP; Speicherplatz ca. 650 MB freier Speicher auf der Festplatte; Arbeitsspeicher ab 1 GB (empfohlen); CD-ROM-/DVD-Laufwerk; Software Adobe Reader, MS Office 2003 (mind. Word, Excel, PowerPoint)</subfield>
     </datafield>
-    <datafield tag="650" ind1=" " ind2="7">
+    <datafield ind2="7" ind1=" " tag="650">
       <subfield code="0">(DE-588)4006138-3</subfield>
       <subfield code="0">(DE-101)040061388</subfield>
       <subfield code="a">Betrieb</subfield>
       <subfield code="2">gnd</subfield>
     </datafield>
-    <datafield tag="650" ind1=" " ind2="7">
+    <datafield ind2="7" ind1=" " tag="650">
       <subfield code="0">(DE-588)4007974-0</subfield>
       <subfield code="0">(DE-101)040079740</subfield>
       <subfield code="a">Brandschutz</subfield>
       <subfield code="2">gnd</subfield>
     </datafield>
-    <datafield tag="655" ind1=" " ind2="7">
+    <datafield ind2="7" ind1=" " tag="655">
       <subfield code="a">CD-ROM</subfield>
       <subfield code="2">gnd</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="0">
+    <datafield ind2="0" ind1="0" tag="689">
       <subfield code="0">(DE-588)4006138-3</subfield>
       <subfield code="0">(DE-101)040061388</subfield>
       <subfield code="D">s</subfield>
       <subfield code="a">Betrieb</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="689">
       <subfield code="0">(DE-588)4007974-0</subfield>
       <subfield code="0">(DE-101)040079740</subfield>
       <subfield code="D">s</subfield>
       <subfield code="a">Brandschutz</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="2">
+    <datafield ind2="2" ind1="0" tag="689">
       <subfield code="A">f</subfield>
       <subfield code="a">CD-ROM</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="689">
       <subfield code="5">DE-101</subfield>
       <subfield code="5">DE-101</subfield>
     </datafield>
-    <datafield tag="770" ind1="0" ind2="8">
+    <datafield ind2="8" ind1="0" tag="770">
       <subfield code="i">Beil.:</subfield>
       <subfield code="t">Betriebliches Brandschutzmanagement / Newsletter</subfield>
       <subfield code="w">(DE-600)2666756-3</subfield>
       <subfield code="w">(DE-101)1023356600</subfield>
     </datafield>
-    <datafield tag="780" ind1="0" ind2="0">
+    <datafield ind2="0" ind1="0" tag="780">
       <subfield code="i">Vorg.:</subfield>
       <subfield code="t">Handbuch für den betrieblichen Brandschutz</subfield>
       <subfield code="w">(DE-600)2196164-5</subfield>
       <subfield code="w">(DE-101)975739751</subfield>
     </datafield>
-    <datafield tag="925" ind1="r" ind2=" ">
+    <datafield ind2=" " ind1="r" tag="925">
       <subfield code="a">ra</subfield>
     </datafield>
   </record>
@@ -3649,79 +3649,79 @@
     <controlfield tag="005">20120802112740.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120608c20129999it m||p|r ||| 0||||0ita c</controlfield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1023185245</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2666041-6</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2666041-6</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">4014</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">9001</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">ita</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-IT</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">31</subfield>
       <subfield code="2">ssgn</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">796</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="110" ind1="2" ind2=" ">
+    <datafield ind2=" " ind1="2" tag="110">
       <subfield code="0">(DE-588)1001266-7</subfield>
       <subfield code="0">(DE-101)004008766</subfield>
       <subfield code="a">Club Alpino Italiano</subfield>
       <subfield code="4">aut</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Montagne 360°</subfield>
       <subfield code="b">la rivista del Club Alpino Italiano</subfield>
     </datafield>
-    <datafield tag="246" ind1="1" ind2="3">
+    <datafield ind2="3" ind1="1" tag="246">
       <subfield code="a">Montagne 360 gradi</subfield>
     </datafield>
-    <datafield tag="246" ind1="1" ind2="3">
+    <datafield ind2="3" ind1="1" tag="246">
       <subfield code="a">Montagne trecentosessanta gradi</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Milano</subfield>
       <subfield code="b">Club</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">2012 -</subfield>
     </datafield>
-    <datafield tag="363" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="363">
       <subfield code="8">1.1\x</subfield>
       <subfield code="i">2012</subfield>
     </datafield>
-    <datafield tag="515" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="515">
       <subfield code="a">Ersch.monatl</subfield>
     </datafield>
-    <datafield tag="775" ind1="0" ind2="8">
+    <datafield ind2="8" ind1="0" tag="775">
       <subfield code="i">Online-Ausg.</subfield>
       <subfield code="a">Club Alpino Italiano</subfield>
       <subfield code="t">Montagne 360°</subfield>
       <subfield code="w">(DE-600)2675901-9</subfield>
       <subfield code="w">(DE-101)1024787338</subfield>
     </datafield>
-    <datafield tag="780" ind1="0" ind2="0">
+    <datafield ind2="0" ind1="0" tag="780">
       <subfield code="i">Vorg.:</subfield>
       <subfield code="a">Club Alpino Italiano</subfield>
-      <subfield code="t">&#x98;La&#x9c; rivista del Club Alpino Italiano</subfield>
+      <subfield code="t">La rivista del Club Alpino Italiano</subfield>
       <subfield code="w">(DE-600)1104600-4</subfield>
       <subfield code="w">(DE-101)016346467</subfield>
     </datafield>
@@ -3733,161 +3733,161 @@
     <controlfield tag="005">20120802093159.0</controlfield>
     <controlfield tag="007">tu</controlfield>
     <controlfield tag="008">120606c20129999gw m||p|r ||| 0||||0ger c</controlfield>
-    <datafield tag="015" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="015">
       <subfield code="a">12,A31</subfield>
       <subfield code="2">dnb</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-101</subfield>
       <subfield code="a">1023092700</subfield>
     </datafield>
-    <datafield tag="016" ind1="7" ind2=" ">
+    <datafield ind2=" " ind1="7" tag="016">
       <subfield code="2">DE-600</subfield>
       <subfield code="a">2665612-7</subfield>
     </datafield>
-    <datafield tag="022" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="022">
       <subfield code="a">2194-4806</subfield>
     </datafield>
-    <datafield tag="029" ind1="a" ind2="a">
+    <datafield ind2="a" ind1="a" tag="029">
       <subfield code="a">2194-4806 = Steuern im Handel</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(DE-599)ZDB2665612-7</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">1241</subfield>
       <subfield code="b">ger</subfield>
       <subfield code="c">DE-101</subfield>
       <subfield code="d">9001</subfield>
     </datafield>
-    <datafield tag="041" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="041">
       <subfield code="a">ger</subfield>
     </datafield>
-    <datafield tag="044" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="044">
       <subfield code="c">XA-DE</subfield>
     </datafield>
-    <datafield tag="082" ind1="0" ind2="4">
+    <datafield ind2="4" ind1="0" tag="082">
       <subfield code="8">1\x</subfield>
       <subfield code="a">343.4306805</subfield>
       <subfield code="q">DE-101</subfield>
       <subfield code="2">22/ger</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">340</subfield>
       <subfield code="a">650</subfield>
       <subfield code="q">DE-101</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="084" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="084">
       <subfield code="a">330</subfield>
       <subfield code="q">DE-600</subfield>
       <subfield code="2">sdnb</subfield>
     </datafield>
-    <datafield tag="085" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="085">
       <subfield code="8">1\x</subfield>
       <subfield code="b">343.068</subfield>
     </datafield>
-    <datafield tag="085" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="085">
       <subfield code="8">1\x</subfield>
       <subfield code="z">1</subfield>
       <subfield code="s">05</subfield>
     </datafield>
-    <datafield tag="085" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="085">
       <subfield code="8">1\x</subfield>
       <subfield code="z">2</subfield>
       <subfield code="s">43</subfield>
     </datafield>
-    <datafield tag="222" ind1=" " ind2="0">
+    <datafield ind2="0" ind1=" " tag="222">
       <subfield code="a">Steuern im Handel</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="a">Steuern im Handel</subfield>
       <subfield code="b">SH ; sicher durch die Betriebsprüfung  und weniger Steuern</subfield>
     </datafield>
-    <datafield tag="246" ind1="1" ind2="3">
+    <datafield ind2="3" ind1="1" tag="246">
       <subfield code="a">SH</subfield>
     </datafield>
-    <datafield tag="260" ind1="3" ind2=" ">
+    <datafield ind2=" " ind1="3" tag="260">
       <subfield code="a">Würzburg</subfield>
       <subfield code="b">IWW-Inst. für Wirtschaftspubl., Verl. Steuern, Recht, Wirtschaft</subfield>
     </datafield>
-    <datafield tag="300" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="300">
       <subfield code="c">30 cm</subfield>
     </datafield>
-    <datafield tag="362" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="362">
       <subfield code="a">2012,1(Juni) -</subfield>
     </datafield>
-    <datafield tag="363" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="363">
       <subfield code="8">1.1\x</subfield>
       <subfield code="i">2012</subfield>
     </datafield>
-    <datafield tag="365" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="365">
       <subfield code="b">EUR 192.00 (jährl.)</subfield>
     </datafield>
-    <datafield tag="515" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="515">
       <subfield code="a">Ersch. monatl.</subfield>
     </datafield>
-    <datafield tag="650" ind1=" " ind2="7">
+    <datafield ind2="7" ind1=" " tag="650">
       <subfield code="0">(DE-588)4023226-8</subfield>
       <subfield code="0">(DE-101)040232263</subfield>
       <subfield code="a">Handelsbetrieb</subfield>
       <subfield code="2">gnd</subfield>
     </datafield>
-    <datafield tag="650" ind1=" " ind2="7">
+    <datafield ind2="7" ind1=" " tag="650">
       <subfield code="0">(DE-588)4006201-6</subfield>
       <subfield code="0">(DE-101)040062015</subfield>
       <subfield code="a">Betriebsprüfung</subfield>
       <subfield code="2">gnd</subfield>
     </datafield>
-    <datafield tag="650" ind1=" " ind2="7">
+    <datafield ind2="7" ind1=" " tag="650">
       <subfield code="0">(DE-588)4116614-0</subfield>
       <subfield code="0">(DE-101)041166140</subfield>
       <subfield code="a">Steuerrecht</subfield>
       <subfield code="2">gnd</subfield>
     </datafield>
-    <datafield tag="651" ind1=" " ind2="7">
+    <datafield ind2="7" ind1=" " tag="651">
       <subfield code="0">(DE-588)4011882-4</subfield>
       <subfield code="0">(DE-101)040118827</subfield>
       <subfield code="a">Deutschland</subfield>
       <subfield code="2">gnd</subfield>
     </datafield>
-    <datafield tag="655" ind1=" " ind2="7">
+    <datafield ind2="7" ind1=" " tag="655">
       <subfield code="a">Zeitschrift</subfield>
       <subfield code="2">gnd</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="0">
+    <datafield ind2="0" ind1="0" tag="689">
       <subfield code="0">(DE-588)4011882-4</subfield>
       <subfield code="0">(DE-101)040118827</subfield>
       <subfield code="D">g</subfield>
       <subfield code="a">Deutschland</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="1">
+    <datafield ind2="1" ind1="0" tag="689">
       <subfield code="0">(DE-588)4023226-8</subfield>
       <subfield code="0">(DE-101)040232263</subfield>
       <subfield code="D">s</subfield>
       <subfield code="a">Handelsbetrieb</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="2">
+    <datafield ind2="2" ind1="0" tag="689">
       <subfield code="0">(DE-588)4006201-6</subfield>
       <subfield code="0">(DE-101)040062015</subfield>
       <subfield code="D">s</subfield>
       <subfield code="a">Betriebsprüfung</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="3">
+    <datafield ind2="3" ind1="0" tag="689">
       <subfield code="0">(DE-588)4116614-0</subfield>
       <subfield code="0">(DE-101)041166140</subfield>
       <subfield code="D">s</subfield>
       <subfield code="a">Steuerrecht</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2="4">
+    <datafield ind2="4" ind1="0" tag="689">
       <subfield code="A">f</subfield>
       <subfield code="a">Zeitschrift</subfield>
     </datafield>
-    <datafield tag="689" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="689">
       <subfield code="5">DE-101</subfield>
       <subfield code="5">DE-101</subfield>
     </datafield>
-    <datafield tag="925" ind1="r" ind2=" ">
+    <datafield ind2=" " ind1="r" tag="925">
       <subfield code="a">ra</subfield>
     </datafield>
   </record>

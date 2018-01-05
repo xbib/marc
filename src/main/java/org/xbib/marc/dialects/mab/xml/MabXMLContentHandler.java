@@ -34,6 +34,10 @@ public class MabXMLContentHandler extends MarcContentHandler implements MabXMLCo
 
     private Set<String> validNamespaces = new HashSet<>(Collections.singletonList(MABXML_NAMESPACE));
 
+    public MabXMLContentHandler() {
+        setTrim(true);
+    }
+
     @Override
     protected String getDefaultFormat() {
         return "MabXML";
@@ -122,7 +126,8 @@ public class MabXMLContentHandler extends MarcContentHandler implements MabXMLCo
                 break;
             }
             case FELD: {
-                MarcField marcField = stack.pop().value(content.toString()).build();
+                String s = content.toString();
+                MarcField marcField = stack.pop().value(trim ? s.trim() : s).build();
                 if (marcValueTransformers != null) {
                     marcField = marcValueTransformers.transformValue(marcField);
                 }
@@ -130,7 +135,8 @@ public class MabXMLContentHandler extends MarcContentHandler implements MabXMLCo
                 break;
             }
             case UF: {
-                stack.peek().subfieldValue(content.toString());
+                String s = content.toString();
+                stack.peek().subfieldValue(trim ? s.trim() : s);
                 break;
             }
             default:

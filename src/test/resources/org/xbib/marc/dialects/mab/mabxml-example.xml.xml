@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="info:lc/xmlns/marcxchange-v2" xsi:schemaLocation="info:lc/xmlns/marcxchange-v2 http://www.loc.gov/standards/iso25577/marcxchange-2-0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <record format="MARC21" type="Bibliographic">
+    <leader>00000     1000000   000 </leader>
+    <controlfield tag="001">(FR-PaOEC)6bee255b-ar</controlfield>
+    <controlfield tag="002">20171208</controlfield>
+    <controlfield tag="004">20171208</controlfield>
+    <datafield ind2=" " ind1=" " tag="020">
+      <subfield code="a">(FR-PaOEC)6bee255b-ar�OECD</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="025">
+      <subfield code="a">6bee255b-ar</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="030">
+      <subfield code="a">a|zuc||||||37</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="b" tag="037">
+      <subfield code="a">ara</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="050">
+      <subfield code="a">||||||||g|||||</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="051">
+      <subfield code="a">m|||||||</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="070">
+      <subfield code="a">OECD</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="a" tag="070">
+      <subfield code="a">HBZ</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="e" tag="078">
+      <subfield code="a">ZDB-164-UNL</subfield>
+      <subfield code="a">ZDB-164-UNL-ebook</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="b" tag="200">
+      <subfield code="a">OHCHR</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="331"></datafield>
+    <datafield ind2=" " ind1=" " tag="334">
+      <subfield code="a">Elektronische Ressource</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="359">
+      <subfield code="a">OHCHR</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="410">
+      <subfield code="a">New York</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="412">
+      <subfield code="a">United Nations</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="a" tag="425">
+      <subfield code="a">2017</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="433">
+      <subfield code="a">75 p.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="a" tag="540">
+      <subfield code="a">ISBN 9789210579391</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="a" tag="552">
+      <subfield code="a">10.18356/6bee255b-ar</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="a" tag="652">
+      <subfield code="a">Online-Ressource</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="e" tag="655">
+      <subfield code="u">http://dx.doi.org/10.18356/6bee255b-ar</subfield>
+      <subfield code="x">Resolving-System</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="775">
+      <subfield code="i">Parallelausgabe</subfield>
+      <subfield code="t">Human Rights and Traditional Justice Systems in Africa</subfield>
+      <subfield code="z">9789210579377</subfield>
+    </datafield>
+  </record>
+  <record format="MARC21" type="Bibliographic">
+    <leader>00000     1000000   000 </leader>
+    <controlfield tag="001">(FR-PaOEC)6f8029f6-es</controlfield>
+    <controlfield tag="002">20171208</controlfield>
+    <controlfield tag="004">20171208</controlfield>
+    <datafield ind2=" " ind1=" " tag="020">
+      <subfield code="a">(FR-PaOEC)6f8029f6-es�OECD</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="025">
+      <subfield code="a">6f8029f6-es</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="030">
+      <subfield code="a">a|zuc||||||37</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="b" tag="037">
+      <subfield code="a">spa</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="050">
+      <subfield code="a">||||||||g|||||</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="051">
+      <subfield code="a">s|||||||</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="070">
+      <subfield code="a">OECD</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="a" tag="070">
+      <subfield code="a">HBZ</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="e" tag="078">
+      <subfield code="a">ZDB-164-UNL</subfield>
+      <subfield code="a">ZDB-164-UNL-ebook</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="b" tag="200">
+      <subfield code="a">ECLAC</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="331">
+      <subfield code="a">Pol�itica Industrial Rural y Fortalecimiento de Cadenas de Valor</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="334">
+      <subfield code="a">Elektronische Ressource</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="359">
+      <subfield code="a">ECLAC</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="410">
+      <subfield code="a">New York</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="412">
+      <subfield code="a">United Nations</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="a" tag="425">
+      <subfield code="a">2017</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="433">
+      <subfield code="a">240 p.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="451">
+      <subfield code="a">ECLAC Books ; no.145</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="a" tag="452">
+      <subfield code="a">2411-9385</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="a" tag="540">
+      <subfield code="a">ISBN 9789210585897</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="a" tag="552">
+      <subfield code="a">10.18356/6f8029f6-es</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="a" tag="652">
+      <subfield code="a">Online-Ressource</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="e" tag="655">
+      <subfield code="u">http://dx.doi.org/10.18356/6f8029f6-es</subfield>
+      <subfield code="x">Resolving-System</subfield>
+    </datafield>
+  </record>
+  <record format="MARC21" type="Bibliographic">
+    <leader>00000     1000000   000 </leader>
+    <controlfield tag="001">(FR-PaOEC)c78e1213-ar</controlfield>
+    <controlfield tag="002">20171208</controlfield>
+    <controlfield tag="004">20171208</controlfield>
+    <datafield ind2=" " ind1=" " tag="020">
+      <subfield code="a">(FR-PaOEC)c78e1213-ar�OECD</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="025">
+      <subfield code="a">c78e1213-ar</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="030">
+      <subfield code="a">a|zuc||||||37</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="b" tag="037">
+      <subfield code="a">ara</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="050">
+      <subfield code="a">||||||||g|||||</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="051">
+      <subfield code="a">m|||||||</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="070">
+      <subfield code="a">OECD</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="a" tag="070">
+      <subfield code="a">HBZ</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="e" tag="078">
+      <subfield code="a">ZDB-164-UNL</subfield>
+      <subfield code="a">ZDB-164-UNL-ebook</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="b" tag="200">
+      <subfield code="a">DESA</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="331">
+      <subfield code="a">2017</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="334">
+      <subfield code="a">Elektronische Ressource</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="359">
+      <subfield code="a">DESA</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="410">
+      <subfield code="a">New York</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="412">
+      <subfield code="a">United Nations</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="a" tag="425">
+      <subfield code="a">2017</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="433">
+      <subfield code="a">62 p.</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="a" tag="540">
+      <subfield code="a">ISBN 9789213617182</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="a" tag="552">
+      <subfield code="a">10.18356/c78e1213-ar</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="a" tag="652">
+      <subfield code="a">Online-Ressource</subfield>
+    </datafield>
+    <datafield ind2=" " ind1="e" tag="655">
+      <subfield code="u">http://dx.doi.org/10.18356/c78e1213-ar</subfield>
+      <subfield code="x">Resolving-System</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="775">
+      <subfield code="i">Parallelausgabe</subfield>
+      <subfield code="t">, 2017</subfield>
+      <subfield code="z">9789213617205</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="775">
+      <subfield code="i">Parallelausgabe</subfield>
+      <subfield code="t">2017</subfield>
+      <subfield code="z">9789213617199</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="775">
+      <subfield code="i">Parallelausgabe</subfield>
+      <subfield code="t">The Sustainable Development Goals Report 2017</subfield>
+      <subfield code="z">9789213617151</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="775">
+      <subfield code="i">Parallelausgabe</subfield>
+      <subfield code="t">Informe de los Objetivos de Desarrollo Sostenible 2017</subfield>
+      <subfield code="z">9789213617175</subfield>
+    </datafield>
+    <datafield ind2=" " ind1=" " tag="775">
+      <subfield code="i">Parallelausgabe</subfield>
+      <subfield code="t">Rapport sur les Objectifs de D�eveloppement Durable 2017</subfield>
+      <subfield code="z">9789213617168</subfield>
+    </datafield>
+  </record>
+</collection>

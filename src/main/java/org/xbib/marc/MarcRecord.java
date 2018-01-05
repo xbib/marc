@@ -184,20 +184,25 @@ public class MarcRecord extends LinkedHashMap<String, Object> {
                     indicators.put(indicator, new LinkedHashMap<>());
                 }
                 Map<String, Object> subfields = (Map<String, Object>) indicators.get(indicator);
-                for (MarcField.Subfield subfield : marcField.getSubfields()) {
-                    String code = subfield.getId();
-                    code = code.replace(' ', '_');
-                    Object subfieldValue = subfields.get(code);
-                    if (subfieldValue instanceof List) {
-                        List<String> list = (List<String>) subfieldValue;
-                        list.add(subfield.getValue());
-                    } else if (subfieldValue instanceof String) {
-                        List<String> list = new LinkedList<>();
-                        list.add((String) subfieldValue);
-                        list.add(subfield.getValue());
-                        subfields.put(code, list);
-                    } else {
-                        subfields.put(code, subfield.getValue());
+                // we may have values instead of subfields, even on non-control fields. See MAB
+                if (marcField.getValue() != null && !marcField.getValue().isEmpty()) {
+                    repeatMap.put(Integer.toString(repeat), marcField.getValue());
+                } else {
+                    for (MarcField.Subfield subfield : marcField.getSubfields()) {
+                        String code = subfield.getId();
+                        code = code.replace(' ', '_');
+                        Object subfieldValue = subfields.get(code);
+                        if (subfieldValue instanceof List) {
+                            List<String> list = (List<String>) subfieldValue;
+                            list.add(subfield.getValue());
+                        } else if (subfieldValue instanceof String) {
+                            List<String> list = new LinkedList<>();
+                            list.add((String) subfieldValue);
+                            list.add(subfield.getValue());
+                            subfields.put(code, list);
+                        } else {
+                            subfields.put(code, subfield.getValue());
+                        }
                     }
                 }
             } else {

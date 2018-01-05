@@ -65,6 +65,7 @@ public class MarcRoundTripTest {
                         .writeCollection();
             }
             // compare both to expected file structure
+
             assertThat(file, CompareMatcher.isIdenticalTo(getClass().getResource(s + ".xml").openStream()));
             assertThat(file2, CompareMatcher.isIdenticalTo(getClass().getResource(s + ".xml").openStream()));
         }
