@@ -1,7 +1,7 @@
 plugins {
     id "org.sonarqube" version "2.6.1"
     id "io.codearte.nexus-staging" version "0.11.0"
-    id "org.xbib.gradle.plugin.asciidoctor" version "1.5.4.1.0"
+    id "org.xbib.gradle.plugin.asciidoctor" version "1.5.6.0.1"
 }
 
 printf "Host: %s\nOS: %s %s %s\nJVM: %s %s %s %s\nGroovy: %s\nGradle: %s\n" +
@@ -44,7 +44,7 @@ dependencies {
     testCompile "org.xmlunit:xmlunit-matchers:${project.property('xmlunit-matchers.version')}"
     testCompile "com.github.stefanbirkner:system-rules:${project.property('system-rules.version')}"
     asciidoclet "org.asciidoctor:asciidoclet:${project.property('asciidoclet.version')}"
-    wagon "org.apache.maven.wagon:wagon-ssh:${project.property('wagon-ssh.version')}"
+    wagon "org.apache.maven.wagon:wagon-ssh:${project.property('wagon.version')}"
 }
 
 sourceCompatibility = JavaVersion.VERSION_1_8
@@ -54,6 +54,7 @@ targetCompatibility = JavaVersion.VERSION_1_8
 tasks.withType(JavaCompile) {
     options.compilerArgs << "-Xlint:all" << "-profile" << "compact2"
 }
+
 test {
     // massive heap for for xmlunit DOM comparer
     jvmArgs '-Xmx2048m'
@@ -95,12 +96,15 @@ task sourcesJar(type: Jar, dependsOn: classes) {
     classifier 'sources'
     from sourceSets.main.allSource
 }
+
 task javadocJar(type: Jar, dependsOn: javadoc) {
     classifier 'javadoc'
 }
+
 artifacts {
     archives sourcesJar, javadocJar
 }
+
 if (project.hasProperty('signing.keyId')) {
     signing {
         sign configurations.archives
