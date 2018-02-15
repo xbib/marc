@@ -1,11 +1,15 @@
+import java.time.ZonedDateTime
+import java.time.format.DateTimeFormatter
+
 plugins {
     id "org.sonarqube" version "2.6.1"
     id "io.codearte.nexus-staging" version "0.11.0"
-    id "org.xbib.gradle.plugin.asciidoctor" version "1.5.6.0.1"
+    id "org.xbib.gradle.plugin.asciidoctor" version "1.6.0.0"
 }
 
-printf "Host: %s\nOS: %s %s %s\nJVM: %s %s %s %s\nGroovy: %s\nGradle: %s\n" +
+printf "Date: %s\nHost: %s\nOS: %s %s %s\nJVM: %s %s %s %s\nGradle: %s Groovy: %s Java: %s\n" +
         "Build: group: ${project.group} name: ${project.name} version: ${project.version}\n",
+        ZonedDateTime.now().format(DateTimeFormatter.ISO_DATE_TIME),
         InetAddress.getLocalHost(),
         System.getProperty("os.name"),
         System.getProperty("os.arch"),
@@ -14,16 +18,11 @@ printf "Host: %s\nOS: %s %s %s\nJVM: %s %s %s %s\nGroovy: %s\nGradle: %s\n" +
         System.getProperty("java.vm.version"),
         System.getProperty("java.vm.vendor"),
         System.getProperty("java.vm.name"),
-        GroovySystem.getVersion(),
-        gradle.gradleVersion
+        gradle.gradleVersion, GroovySystem.getVersion(), JavaVersion.current()
 
 apply plugin: 'java'
 apply plugin: 'maven'
 apply plugin: 'signing'
-apply plugin: 'findbugs'
-apply plugin: 'pmd'
-apply plugin: 'checkstyle'
-apply plugin: "jacoco"
 apply plugin: "io.codearte.nexus-staging"
 apply plugin: 'org.xbib.gradle.plugin.asciidoctor'
 
@@ -43,16 +42,19 @@ dependencies {
     testCompile "xalan:xalan:${project.property('xalan.version')}"
     testCompile "org.xmlunit:xmlunit-matchers:${project.property('xmlunit-matchers.version')}"
     testCompile "com.github.stefanbirkner:system-rules:${project.property('system-rules.version')}"
-    asciidoclet "org.asciidoctor:asciidoclet:${project.property('asciidoclet.version')}"
+    asciidoclet "org.xbib:asciidoclet:${project.property('asciidoclet.version')}"
     wagon "org.apache.maven.wagon:wagon-ssh:${project.property('wagon.version')}"
 }
 
-sourceCompatibility = JavaVersion.VERSION_1_8
+sourceCompatibility = JavaVersion.VERSION_1_9
 targetCompatibility = JavaVersion.VERSION_1_8
 
 [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 tasks.withType(JavaCompile) {
-    options.compilerArgs << "-Xlint:all" << "-profile" << "compact2"
+    options.compilerArgs << "-Xlint:all" // << "-profile" << "compact2"
+    if (JavaVersion.current().java9Compatible) {
+        options.compilerArgs << '--release' << JavaVersion.toVersion(targetCompatibility).majorVersion
+    }
 }
 
 test {
@@ -78,7 +80,7 @@ asciidoctor {
 
 javadoc {
     options.docletpath = configurations.asciidoclet.files.asType(List)
-    options.doclet = 'org.asciidoctor.Asciidoclet'
+    options.doclet = 'org.xbib.asciidoclet.Asciidoclet'
     options.overview = "src/docs/asciidoclet/overview.adoc"
     options.addStringOption "-base-dir", "${projectDir}"
     options.addStringOption "-attribute",
@@ -113,4 +115,4 @@ if (project.hasProperty('signing.keyId')) {
 
 apply from: 'gradle/ext.gradle'
 apply from: 'gradle/publish.gradle'
-apply from: 'gradle/sonarqube.gradle'
+apply from: 'gradle/sourcequality.gradle'

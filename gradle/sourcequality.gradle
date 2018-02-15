@@ -1,10 +1,16 @@
-tasks.withType(FindBugs) {
-    ignoreFailures = true
+/*spotbugs {
+    ignoreFailures = false
+    sourceSets = [sourceSets.main]
+    effort = "max"
+    reportLevel = "high"
+}
+tasks.withType(com.github.spotbugs.SpotBugsTask) {
     reports {
         xml.enabled = false
         html.enabled = true
     }
 }
+
 tasks.withType(Pmd) {
     ignoreFailures = true
     reports {
@@ -26,7 +32,7 @@ jacocoTestReport {
         csv.enabled = false
     }
 }
-
+*/
 sonarqube {
     properties {
         property "sonar.projectName", "${project.group} ${project.name}"
