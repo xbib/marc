@@ -115,6 +115,7 @@ public class MarcRecord extends LinkedHashMap<String, Object> {
     /**
      * Return the MARC fields of this record with a given tag.
      *
+     * @param tag the MARC tag
      * @return the MARC field list matching the given tag.
      */
     public List<MarcField> getFields(String tag) {

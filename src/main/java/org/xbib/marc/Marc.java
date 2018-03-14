@@ -285,6 +285,7 @@ public final class Marc {
     /**
      * Pass a given chunk stream to a MARC generator, chunk by chunk.
      * Can process any MARC streams, not only separator streams.
+     * @param type the MARC record type
      * @param stream a chunk stream
      * @param withCollection true if stream should be wrapped into a collection element
      * @return the number of chunks in the stream

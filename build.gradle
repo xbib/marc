@@ -31,18 +31,16 @@ repositories {
 }
 
 configurations {
-    asciidoclet
     wagon
 }
 
 dependencies {
+    testCompile "org.junit.vintage:junit-vintage-engine:${project.property('junit-vintage.version')}"
     testCompile "org.xbib:bibliographic-character-sets:${project.property('xbib-bibliographic-character-sets.version')}"
     testCompile "org.xbib:content-core:${project.property('xbib-content.version')}"
-    testCompile "junit:junit:${project.property('junit.version')}"
     testCompile "xalan:xalan:${project.property('xalan.version')}"
     testCompile "org.xmlunit:xmlunit-matchers:${project.property('xmlunit-matchers.version')}"
     testCompile "com.github.stefanbirkner:system-rules:${project.property('system-rules.version')}"
-    asciidoclet "org.xbib:asciidoclet:${project.property('asciidoclet.version')}"
     wagon "org.apache.maven.wagon:wagon-ssh:${project.property('wagon.version')}"
 }
 
@@ -76,18 +74,6 @@ asciidoctor {
             linkattrs: true,
             imagesdir: 'img',
             'source-highlighter': 'coderay'
-}
-
-javadoc {
-    options.docletpath = configurations.asciidoclet.files.asType(List)
-    options.doclet = 'org.xbib.asciidoclet.Asciidoclet'
-    options.overview = "src/docs/asciidoclet/overview.adoc"
-    options.addStringOption "-base-dir", "${projectDir}"
-    options.addStringOption "-attribute",
-            "name=${project.name},version=${project.version},title-link=https://github.com/xbib/${project.name}"
-    configure(options) {
-        noTimestamp = true
-    }
 }
 
 clean {

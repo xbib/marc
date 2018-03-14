@@ -55,7 +55,6 @@ public class MarcWriter extends MarcContentHandler implements Flushable, Closeab
      * Create a MarcWriter on an underlying output stream.
      * @param out the underlying output stream
      * @param charset the character set
-     * @throws IOException if writer can not be created
      */
     public MarcWriter(OutputStream out, Charset charset) {
         this(out, charset, DEFAULT_BUFFER_SIZE);
@@ -66,7 +65,6 @@ public class MarcWriter extends MarcContentHandler implements Flushable, Closeab
      * @param out the underlying output stream
      * @param charset the character set
      * @param buffersize the buffer size writing to the underlying output stream
-     * @throws IOException if writer can not be created
      */
     public MarcWriter(OutputStream out, Charset charset, int buffersize) {
         this.out = new SeparatorOutputStream(out, buffersize);

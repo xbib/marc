@@ -269,7 +269,7 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
             sb.append("]");
         }
         if (style == Style.ELASTICSEARCH_BULK) {
-            // finish with line-feed
+            // finish with line-feed "\n", not with System.lineSeparator()
             sb.append("\n");
         }
         try {
@@ -433,6 +433,10 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
 
     public Exception getException() {
         return exception;
+    }
+
+    public void writeLine() throws IOException {
+        writer.write(System.lineSeparator());
     }
 
     private void handleException(IOException e) {

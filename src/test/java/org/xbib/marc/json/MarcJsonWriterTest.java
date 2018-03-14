@@ -312,4 +312,39 @@ public class MarcJsonWriterTest {
             assertNull(writer.getException());
         }
     }
+
+    @Test
+    public void testJsonWriterWithMultipleInput() throws Exception {
+        File file = File.createTempFile("multi.", ".json");
+        file.deleteOnExit();
+        FileOutputStream out = new FileOutputStream(file);
+        try (MarcJsonWriter writer = new MarcJsonWriter(out, MarcJsonWriter.Style.ARRAY)) {
+            writer.beginCollection();
+            try (InputStream inputStream = getClass().getResource("/org/xbib/marc/summerland.mrc").openStream()) {
+                Marc.builder()
+                        .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)
+                        .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)
+                        .setInputStream(inputStream)
+                        .setCharset(Charset.forName("ANSEL"))
+                        .setMarcRecordListener(writer)
+                        .build()
+                        .writeRecords();
+            }
+            writer.writeLine();
+            try (InputStream inputStream = getClass().getResource("/org/xbib/marc/chabon.mrc").openStream()) {
+                Marc.builder()
+                        .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)
+                        .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)
+                        .setInputStream(inputStream)
+                        .setCharset(Charset.forName("ANSEL"))
+                        .setMarcRecordListener(writer)
+                        .build()
+                        .writeRecords();
+            }
+            writer.endCollection();
+        }
+        assertStream("multi", getClass().getResource("/org/xbib/marc/json/multi.json").openStream(),
+                new FileInputStream(file));
+    }
+
 }
