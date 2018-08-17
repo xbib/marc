@@ -45,8 +45,6 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 import java.util.zip.Deflater;
 import java.util.zip.GZIPOutputStream;
 
@@ -64,14 +62,6 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
     private static final Logger logger = Logger.getLogger(MarcJsonWriter.class.getName());
 
     private static final int DEFAULT_BUFFER_SIZE = 65536;
-
-    private static final Pattern quotePattern = Pattern.compile("\"", Pattern.LITERAL);
-
-    private static final Pattern backslashPattern = Pattern.compile("\\\\");
-
-    private static final String ESCAPE_QUOTE = "\\\"";
-
-    private static final String ESCAPE_BACKSLASH = "\\\\";
 
     private final Lock lock;
 
@@ -155,8 +145,38 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
     }
 
     private static String escape(String value) {
-        String s = backslashPattern.matcher(value).replaceAll(Matcher.quoteReplacement(ESCAPE_BACKSLASH));
-        return quotePattern.matcher(s).replaceAll(Matcher.quoteReplacement(ESCAPE_QUOTE));
+
+        final StringBuilder sb = new StringBuilder();
+
+        for (int i = 0; i < value.length(); i++) {
+
+            final char c = value.charAt(i);
+
+            switch (c) {
+                case '"':
+                    sb.append("\\\"");
+
+                    break;
+                case '\\':
+                    sb.append("\\\\");
+
+                    break;
+                default:
+                    if (c < 0x1f) {
+
+                        final String val = "0000" + Integer.toHexString(c);
+
+                        sb.append("\\u")
+                                .append(val.substring(val.length() - 4));
+                    } else {
+                        sb.append(c);
+                    }
+
+                    break;
+            }
+        }
+
+        return sb.toString();
     }
 
     public MarcJsonWriter setIndex(String index, String indexType) {
