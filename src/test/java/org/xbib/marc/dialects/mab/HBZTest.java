@@ -10,14 +10,11 @@ import org.xbib.marc.MarcRecord;
 import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.util.concurrent.atomic.AtomicInteger;
-import java.util.logging.Logger;
 
 /**
  *
  */
 public class HBZTest {
-
-    private static final Logger logger = Logger.getLogger(HBZTest.class.getName());
 
     @Test
     public void testMarcStream() throws Exception {
@@ -54,7 +51,6 @@ public class HBZTest {
                         .setCharset(Charset.forName("x-MAB"));
                 for (MarcRecord marcRecord : builder.iterable()) {
                     count++;
-                    logger.info("record = " + marcRecord);
                 }
             }
             assertEquals(1, count);

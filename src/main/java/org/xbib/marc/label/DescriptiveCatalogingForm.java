@@ -16,6 +16,9 @@
  */
 package org.xbib.marc.label;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  * Descriptive cataloging form
  *
@@ -51,15 +54,35 @@ public enum DescriptiveCatalogingForm {
     AACR2('a'),
     ISBD_PUNCTUATION_OMITTED('c'),
     ISBD_PUNCTUATION_INCLUDED('i'),
-    UNKNOWN('u')
-    ;
+    UNKNOWN('u');
 
-    char ch;
+    private static final Logger logger = Logger.getLogger(DescriptiveCatalogingForm.class.getName());
+
+    private final char ch;
+
     DescriptiveCatalogingForm(char ch) {
         this.ch = ch;
     }
 
     public char getChar() {
         return ch;
+    }
+
+    public static DescriptiveCatalogingForm from(char ch) {
+        switch (ch) {
+            case ' ':
+                return NON_ISBD;
+            case 'a':
+                return AACR2;
+            case 'c':
+                return ISBD_PUNCTUATION_OMITTED;
+            case 'i':
+                return ISBD_PUNCTUATION_INCLUDED;
+            case 'u':
+                return UNKNOWN;
+            default:
+                logger.log(Level.FINEST, "unknown descriptive cataloging form: " + ch);
+                return NON_ISBD;
+        }
     }
 }

@@ -46,7 +46,7 @@ public interface BytesReference {
     int indexOf(byte b, int offset, int len);
 
     /**
-     * Slice the bytes from the <tt>from</tt> index up to <tt>length</tt>.
+     * Slice the bytes from the {@code from} index up to {@code length}.
      *
      * @param from   from
      * @param length length

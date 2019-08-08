@@ -16,6 +16,9 @@
  */
 package org.xbib.marc.label;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  * Multipart resource record level
  * Record level to which a resource pertains and any record dependencies.
@@ -43,15 +46,33 @@ public enum MultipartResourceRecordLevel {
     NOT_SPECIFIED(' '),
     SET('a'),
     PART_WITH_INDEPENDENT_TITLE('b'),
-    PART_WITH_DEPENDENT_TITLE('c')
-    ;
+    PART_WITH_DEPENDENT_TITLE('c');
 
-    char ch;
+    private static final Logger logger = Logger.getLogger(MultipartResourceRecordLevel.class.getName());
+
+    private final char ch;
+
     MultipartResourceRecordLevel(char ch) {
         this.ch = ch;
     }
 
     public char getChar() {
         return ch;
+    }
+
+    public static MultipartResourceRecordLevel from(char ch) {
+        switch (ch) {
+            case ' ':
+                return NOT_SPECIFIED;
+            case 'a':
+                return SET;
+            case 'b':
+                return PART_WITH_INDEPENDENT_TITLE;
+            case 'c':
+                return PART_WITH_DEPENDENT_TITLE;
+            default:
+                logger.log(Level.FINEST, "unknown multipart resource record level: " + ch);
+                return NOT_SPECIFIED;
+        }
     }
 }

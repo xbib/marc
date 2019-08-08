@@ -140,7 +140,7 @@ public class RecordLabelTest {
                 .setDescriptiveCatalogingForm(DescriptiveCatalogingForm.ISBD_PUNCTUATION_INCLUDED)
                 .setMultipartResourceRecordLevel(MultipartResourceRecordLevel.PART_WITH_DEPENDENT_TITLE)
                 .setTypeOfRecord(TypeOfRecord.ARTIFACT)
-                .setTypeOfControl(TypeOfControl.NO_SPECIFIED_TYPE)
+                .setTypeOfControl(TypeOfControl.UNSPECIFIED)
                 .build();
         assertEquals(RecordStatus.DELETED, recordLabel.getRecordStatus());
         assertEquals(BibliographicLevel.INTEGRATING_RESOURCE, recordLabel.getBibliographicLevel());
@@ -148,7 +148,20 @@ public class RecordLabelTest {
         assertEquals(DescriptiveCatalogingForm.ISBD_PUNCTUATION_INCLUDED, recordLabel.getDescriptiveCatalogingForm());
         assertEquals(MultipartResourceRecordLevel.PART_WITH_DEPENDENT_TITLE, recordLabel.getMultipartResourceRecordLevel());
         assertEquals(TypeOfRecord.ARTIFACT, recordLabel.getTypeOfRecord());
-        assertEquals(TypeOfControl.NO_SPECIFIED_TYPE, recordLabel.getTypeOfControl());
+        assertEquals(TypeOfControl.UNSPECIFIED, recordLabel.getTypeOfControl());
+    }
+
+    @Test
+    public void testRecordLabelCharArray() {
+        char[] ch = "01723nam a22004818c 4500".toCharArray();
+        RecordLabel recordLabel = RecordLabel.builder().from(ch).build();
+        assertEquals(RecordStatus.NEW, recordLabel.getRecordStatus());
+        assertEquals(BibliographicLevel.MONOGRAPH, recordLabel.getBibliographicLevel());
+        assertEquals(EncodingLevel.PREPUBLICATION, recordLabel.getEncodingLevel());
+        assertEquals(DescriptiveCatalogingForm.ISBD_PUNCTUATION_OMITTED, recordLabel.getDescriptiveCatalogingForm());
+        assertEquals(MultipartResourceRecordLevel.NOT_SPECIFIED, recordLabel.getMultipartResourceRecordLevel());
+        assertEquals(TypeOfRecord.LANGUAGE_MATERIAL, recordLabel.getTypeOfRecord());
+        assertEquals(TypeOfControl.UNSPECIFIED, recordLabel.getTypeOfControl());
     }
 
     @Test

@@ -18,7 +18,7 @@ package org.xbib.marc.dialects.mab;
 
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertThat;
-import static org.xbib.helper.StreamMatcher.assertStream;
+import static org.xbib.marc.StreamMatcher.assertStream;
 import static org.xbib.marc.transformer.field.MarcFieldTransformer.Operator.HEAD;
 import static org.xbib.marc.transformer.field.MarcFieldTransformer.Operator.TAIL;
 

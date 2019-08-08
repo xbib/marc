@@ -16,6 +16,9 @@
  */
 package org.xbib.marc.label;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  * Bibliographic level
  *
@@ -71,6 +74,7 @@ package org.xbib.marc.label;
  */
 public enum BibliographicLevel {
 
+    UNSPECIFIED(' '),
     MONOGRPAHIC_COMPONENT_PART('a'),
     SERIAL_COMPONENT_PART('b'),
     COLLECTION('c'),
@@ -79,14 +83,22 @@ public enum BibliographicLevel {
     MONOGRAPH('m'),
     SERIAL('s');
 
-    char ch;
+    private static final Logger logger = Logger.getLogger(BibliographicLevel.class.getName());
+
+    private final char ch;
 
     BibliographicLevel(char ch) {
         this.ch = ch;
     }
 
-    static BibliographicLevel from(char ch) {
+    public char getChar() {
+        return ch;
+    }
+
+    public static BibliographicLevel from(char ch) {
         switch (ch) {
+            case ' ':
+                return UNSPECIFIED;
             case 'a':
                 return MONOGRPAHIC_COMPONENT_PART;
             case 'b':
@@ -102,12 +114,8 @@ public enum BibliographicLevel {
             case 's':
                 return SERIAL;
             default:
-                break;
+                logger.log(Level.FINEST, "unknown bibliographic level: " + ch);
+                return UNSPECIFIED;
         }
-        return null;
-    }
-
-    public char getChar() {
-        return ch;
     }
 }

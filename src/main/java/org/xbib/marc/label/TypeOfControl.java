@@ -16,6 +16,9 @@
  */
 package org.xbib.marc.label;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  * Type of control
  *
@@ -30,16 +33,30 @@ package org.xbib.marc.label;
  */
 public enum TypeOfControl {
 
-    NO_SPECIFIED_TYPE(' '),
-    ARCHIVAL('a')
-    ;
+    UNSPECIFIED(' '),
+    ARCHIVAL('a');
 
-    char ch;
+    private static final Logger logger = Logger.getLogger(TypeOfControl.class.getName());
+
+    private final char ch;
+
     TypeOfControl(char ch) {
         this.ch = ch;
     }
 
     public char getChar() {
         return ch;
+    }
+
+    public static TypeOfControl from(char ch) {
+        switch (ch) {
+            case ' ' :
+                return UNSPECIFIED;
+            case 'a' :
+                return ARCHIVAL;
+            default:
+                logger.log(Level.FINEST,"unknown type of control: " + ch);
+                return UNSPECIFIED;
+        }
     }
 }

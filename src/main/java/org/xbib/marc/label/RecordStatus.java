@@ -16,6 +16,9 @@
  */
 package org.xbib.marc.label;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  * Record status
  *
@@ -45,20 +48,29 @@ package org.xbib.marc.label;
  */
 public enum RecordStatus {
 
+    UNKNOWN(' '),
     INCREASE_IN_ENCODING_LEVEL('a'),
     CORRECTED_OR_REVISED('c'),
     DELETED('d'),
     NEW('n'),
     INCREASE_IN_ENCODING_LEVEL_FROM_PREPUBLICATION('p');
 
-    char ch;
+    private static final Logger logger = Logger.getLogger(RecordStatus.class.getName());
+
+    private final char ch;
 
     RecordStatus(char ch) {
         this.ch = ch;
     }
 
-    static RecordStatus from(char ch) {
+    public char getChar() {
+        return ch;
+    }
+
+    public static RecordStatus from(char ch) {
         switch (ch) {
+            case ' ':
+                return UNKNOWN;
             case 'a':
                 return INCREASE_IN_ENCODING_LEVEL;
             case 'c':
@@ -70,12 +82,8 @@ public enum RecordStatus {
             case 'p':
                 return INCREASE_IN_ENCODING_LEVEL_FROM_PREPUBLICATION;
             default:
-                break;
+                logger.log(Level.FINEST,"unknown record status: " + ch);
+                return UNKNOWN;
         }
-        return null;
-    }
-
-    public char getChar() {
-        return ch;
     }
 }

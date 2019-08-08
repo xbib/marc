@@ -502,7 +502,6 @@ public class RecordLabel {
                 label = newLabel;
             }
             System.arraycopy(label, 0, cfix, 0, LENGTH);
-            repair();
             return this;
         }
 
@@ -516,32 +515,28 @@ public class RecordLabel {
             pos = new int[] { 5, 6, 7, 8, 9, 17, 18, 19, 23 };
             for (int i : pos) {
                 if (cfix[i] == '^' || cfix[i] == '-') {
-                    cfix[i] = ' ';
+                    cfix[i] = ' '; // unspecified
                 }
                 // suppress C0 control chars (for XML 1.0 output)
                 if (cfix[i] < 32) {
-                    cfix[i] = ' ';
+                    cfix[i] = ' '; // unspecified
                 }
             }
         }
 
         private void assign() {
-            this.recordLength = Integer.parseInt(new StringBuilder()
-                    .append(cfix[0])
-                    .append(cfix[1])
-                    .append(cfix[2])
-                    .append(cfix[3])
-                    .append(cfix[4]).toString());
+            this.recordLength = Integer.parseInt(String.valueOf(cfix[0]) + cfix[1] + cfix[2] + cfix[3] + cfix[4]);
             this.recordStatus = RecordStatus.from(cfix[5]);
+            this.typeOfRecord = TypeOfRecord.from(cfix[6]);
             this.bibliographicLevel = BibliographicLevel.from(cfix[7]);
+            this.typeOfControl = TypeOfControl.from(cfix[8]);
+            this.encoding = Encoding.from(cfix[9]);
             this.indicatorLength = cfix[10] - '0';
             this.subfieldIdentifierLength = cfix[11] - '0';
-            this.baseAddressOfData = Integer.parseInt(new StringBuilder()
-                    .append(cfix[12])
-                    .append(cfix[13])
-                    .append(cfix[14])
-                    .append(cfix[15])
-                    .append(cfix[16]).toString());
+            this.baseAddressOfData = Integer.parseInt(String.valueOf(cfix[12]) + cfix[13] + cfix[14] + cfix[15] + cfix[16]);
+            this.encodingLevel = EncodingLevel.from(cfix[17]);
+            this.descriptiveCatalogingForm = DescriptiveCatalogingForm.from(cfix[18]);
+            this.multipartResourceRecordLevel = MultipartResourceRecordLevel.from(cfix[19]);
             this.dataFieldLength = cfix[20] - '0';
             this.startingCharacterPositionLength = cfix[21] - '0';
             this.segmentIdentifierLength = cfix[22] - '0';
@@ -552,6 +547,7 @@ public class RecordLabel {
          * @return the record label
          */
         public RecordLabel build() {
+            repair();
             assign();
             return new RecordLabel(this, new String(cfix));
         }

@@ -14,7 +14,7 @@
    limitations under the License.
 
  */
-package org.xbib.helper;
+package org.xbib.marc;
 
 import org.junit.Assert;
 
@@ -37,11 +37,10 @@ public class StreamMatcher extends Assert {
 
     public static void assertStream(String name, InputStream expected, InputStream actual) throws IOException {
         int offset = 0;
-        ReadableByteChannel ch1 = Channels.newChannel(expected);
-        ReadableByteChannel ch2 = Channels.newChannel(actual);
-        ByteBuffer buf1 = ByteBuffer.allocateDirect(4096);
-        ByteBuffer buf2 = ByteBuffer.allocateDirect(4096);
-        try {
+        try (ReadableByteChannel ch1 = Channels.newChannel(expected);
+             ReadableByteChannel ch2 = Channels.newChannel(actual)) {
+            ByteBuffer buf1 = ByteBuffer.allocateDirect(4096);
+            ByteBuffer buf2 = ByteBuffer.allocateDirect(4096);
             while (true) {
                 int n1 = ch1.read(buf1);
                 int n2 = ch2.read(buf2);
@@ -68,9 +67,6 @@ public class StreamMatcher extends Assert {
                 buf2.compact();
                 offset += Math.min(n1, n2);
             }
-        } finally {
-            expected.close();
-            actual.close();
         }
     }
 }

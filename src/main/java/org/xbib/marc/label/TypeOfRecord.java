@@ -16,6 +16,9 @@
  */
 package org.xbib.marc.label;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  * Type of record
  *
@@ -130,6 +133,7 @@ package org.xbib.marc.label;
  */
 public enum TypeOfRecord {
 
+    UNSPECIFIED(' '),
     LANGUAGE_MATERIAL('a'),
     LANGUAGE_MATERIAL_MANUSCRIPT('b'),
     NOTATED_MUSIC('c'),
@@ -145,10 +149,11 @@ public enum TypeOfRecord {
     KIT('o'),
     MIXED_MATERIALS('p'),
     ARTIFACT('r'),
-    LANGUAGE_MATERIAL_MANUSCRIPT_MARC21('t')
-    ;
+    LANGUAGE_MATERIAL_MANUSCRIPT_MARC21('t');
 
-    char ch;
+    private static final Logger logger = Logger.getLogger(TypeOfRecord.class.getName());
+
+    private final char ch;
 
     TypeOfRecord(char ch) {
         this.ch = ch;
@@ -158,4 +163,45 @@ public enum TypeOfRecord {
         return ch;
     }
 
+    static TypeOfRecord from(char ch) {
+        switch (ch) {
+            case ' ':
+                return UNSPECIFIED;
+            case 'a':
+                return LANGUAGE_MATERIAL;
+            case 'b':
+                return LANGUAGE_MATERIAL_MANUSCRIPT;
+            case 'c':
+                return NOTATED_MUSIC;
+            case 'd':
+                return NOTATED_MUSIC_MANUSCRIPT;
+            case 'e':
+                return CARTOGRAPHIC_MATERIAL;
+            case 'f':
+                return CARTOGRAPHIC_MATERIAL_MANUSCRIPT;
+            case 'g':
+                return PROJECTED_MEDIUM;
+            case 'i':
+                return NONMUSICAL_SOUND_RECORDING;
+            case 'j':
+                return MUSICAL_SOUND_RECORDING;
+            case 'k':
+                return PICTURE;
+            case 'l':
+                return ELECTRONIC_RESOURCE;
+            case 'm':
+                return COMPUTER_FILE;
+            case 'o':
+                return KIT;
+            case 'p':
+                return MIXED_MATERIALS;
+            case 'r':
+                return ARTIFACT;
+            case 't':
+                return LANGUAGE_MATERIAL_MANUSCRIPT_MARC21;
+            default:
+                logger.log(Level.FINEST,"unknown type of record: " + ch);
+                return UNSPECIFIED;
+        }
+    }
 }

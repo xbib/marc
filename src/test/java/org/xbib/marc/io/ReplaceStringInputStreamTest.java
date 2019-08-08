@@ -16,7 +16,7 @@
  */
 package org.xbib.marc.io;
 
-import static org.xbib.helper.StreamMatcher.assertStream;
+import static org.xbib.marc.StreamMatcher.assertStream;
 
 import org.junit.Test;
 

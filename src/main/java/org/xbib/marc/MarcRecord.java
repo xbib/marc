@@ -62,7 +62,13 @@ public class MarcRecord extends LinkedHashMap<String, Object> {
         this.format = format;
         this.type = type;
         this.recordLabel = recordLabel;
+        if (recordLabel == null) {
+            throw new NullPointerException("record label must not be null");
+        }
         this.marcFields = marcFields;
+        if (marcFields == null) {
+            throw new NullPointerException("fields must not be null");
+        }
         if (!lightweight) {
             createMap();
         }

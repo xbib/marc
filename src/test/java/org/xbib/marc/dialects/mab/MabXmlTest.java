@@ -1,7 +1,7 @@
 package org.xbib.marc.dialects.mab;
 
 import static org.junit.Assert.assertThat;
-import static org.xbib.helper.StreamMatcher.assertStream;
+import static org.xbib.marc.StreamMatcher.assertStream;
 
 import org.junit.Test;
 import org.xbib.marc.Marc;

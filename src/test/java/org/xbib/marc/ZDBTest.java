@@ -20,7 +20,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
-import static org.xbib.helper.StreamMatcher.assertStream;
+import static org.xbib.marc.StreamMatcher.assertStream;
 
 import org.junit.Test;
 import org.xbib.marc.json.MarcJsonWriter;

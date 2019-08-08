@@ -16,6 +16,9 @@
  */
 package org.xbib.marc.label;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  * Character encoding
  *
@@ -41,12 +44,27 @@ public enum Encoding {
     MARC8(' '),
     UCS_UNICODE('a');
 
-    char ch;
+    private static final Logger logger = Logger.getLogger(Encoding.class.getName());
+
+    private final char ch;
+
     Encoding(char ch) {
         this.ch = ch;
     }
 
     public char getChar() {
         return ch;
+    }
+
+    public static Encoding from(char ch) {
+        switch (ch) {
+            case ' ':
+                return MARC8;
+            case 'a':
+                return UCS_UNICODE;
+            default:
+                logger.log(Level.FINEST, "unknown encoding: " + ch);
+                return MARC8;
+        }
     }
 }

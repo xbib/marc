@@ -16,6 +16,9 @@
  */
 package org.xbib.marc.label;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  * Encoding level
  *
@@ -86,15 +89,45 @@ public enum EncodingLevel {
     MINIMAL('7'),
     PREPUBLICATION('8'),
     UNKNOWN('u'),
-    NOT_APPLICABLE('z')
-    ;
+    NOT_APPLICABLE('z');
 
-    char ch;
+    private static final Logger logger = Logger.getLogger(EncodingLevel.class.getName());
+
+    private final char ch;
+
     EncodingLevel(char ch) {
         this.ch = ch;
     }
 
     public char getChar() {
         return ch;
+    }
+
+    public static EncodingLevel from(char ch) {
+        switch (ch) {
+            case ' ':
+                return FULL;
+            case '1':
+                return FULL_NOT_EXAMINED;
+            case '2':
+                return LESS_THAN_FULL_NOT_EXAMINED;
+            case '3':
+                return ABBREV;
+            case '4':
+                return CORE;
+            case '5':
+                return PARTIAL;
+            case '7':
+                return MINIMAL;
+            case '8':
+                return PREPUBLICATION;
+            case 'u':
+                return UNKNOWN;
+            case 'z':
+                return NOT_APPLICABLE;
+            default:
+                logger.log(Level.FINEST,"unknown encoding level " + ch);
+                return FULL;
+        }
     }
 }

@@ -1,8 +1,0 @@
-ext {
-    user = 'xbib'
-    projectName = 'marc'
-    projectDescription = 'MARC bibliographic data processing library for Java'
-    scmUrl = 'https://github.com/xbib/marc'
-    scmConnection = 'scm:git:git://github.com/xbib/marc.git'
-    scmDeveloperConnection = 'scm:git:git://github.com/xbib/marc.git'
-}
