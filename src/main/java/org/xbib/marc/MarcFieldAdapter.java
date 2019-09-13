@@ -19,7 +19,7 @@ package org.xbib.marc;
 /**
  * A MARC listener with empty methods. Useful for extending.
  */
-public class MarcFieldAdapter implements  MarcListener {
+public class MarcFieldAdapter implements MarcListener {
     @Override
     public void beginCollection() {
         // empty by design

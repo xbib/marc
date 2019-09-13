@@ -55,7 +55,7 @@ public enum TypeOfControl {
             case 'a' :
                 return ARCHIVAL;
             default:
-                logger.log(Level.FINEST,"unknown type of control: " + ch);
+                logger.log(Level.FINEST, "unknown type of control: " + ch);
                 return UNSPECIFIED;
         }
     }

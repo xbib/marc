@@ -200,7 +200,7 @@ public enum TypeOfRecord {
             case 't':
                 return LANGUAGE_MATERIAL_MANUSCRIPT_MARC21;
             default:
-                logger.log(Level.FINEST,"unknown type of record: " + ch);
+                logger.log(Level.FINEST, "unknown type of record: " + ch);
                 return UNSPECIFIED;
         }
     }

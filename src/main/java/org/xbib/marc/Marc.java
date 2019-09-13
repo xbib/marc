@@ -45,8 +45,6 @@ import org.xml.sax.EntityResolver;
 import org.xml.sax.ErrorHandler;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
-import org.xml.sax.SAXNotRecognizedException;
-import org.xml.sax.SAXNotSupportedException;
 import org.xml.sax.XMLReader;
 
 import java.io.IOException;
@@ -278,7 +276,7 @@ public final class Marc {
         return wrapFields(BIBLIOGRAPHIC_TYPE, stream, true);
     }
 
-    public int wrapIntoCollection(String type, ChunkStream<byte[], BytesReference> stream) throws IOException {
+    private int wrapIntoCollection(String type, ChunkStream<byte[], BytesReference> stream) throws IOException {
         return wrapFields(type, stream, true);
     }
 
@@ -358,7 +356,7 @@ public final class Marc {
      * @return the number of chunks in the stream
      * @throws IOException if chunk reading fails
      */
-    public long wrapRecords(ChunkStream<byte[], BytesReference> stream,
+    private long wrapRecords(ChunkStream<byte[], BytesReference> stream,
                             boolean withCollection) throws IOException {
         final AtomicInteger l = new AtomicInteger();
         try {
@@ -415,22 +413,22 @@ public final class Marc {
         }
 
         @Override
-        public void setFeature(String name, boolean value) throws SAXNotRecognizedException, SAXNotSupportedException {
+        public void setFeature(String name, boolean value) {
             builder.setFeature(name, value);
         }
 
         @Override
-        public boolean getFeature(String name) throws SAXNotRecognizedException, SAXNotSupportedException {
+        public boolean getFeature(String name) {
             return builder.getFeature(name);
         }
 
         @Override
-        public void setProperty(String name, Object value) throws SAXNotRecognizedException, SAXNotSupportedException {
+        public void setProperty(String name, Object value) {
             builder.setProperty(name, value);
         }
 
         @Override
-        public Object getProperty(String name) throws SAXNotRecognizedException, SAXNotSupportedException {
+        public Object getProperty(String name) {
             return builder.getProperty(name);
         }
 
@@ -526,7 +524,7 @@ public final class Marc {
         }
 
         @Override
-        public void parse(String systemId) throws IOException, SAXException {
+        public void parse(String systemId) throws IOException {
             parse(new InputSource(systemId));
         }
 
@@ -1096,7 +1094,7 @@ public final class Marc {
                 this.marcGenerator = createGenerator();
             }
             this.marcRecordListener = this;
-            return new Iterator<MarcRecord>() {
+            return new Iterator<>() {
 
                 @Override
                 public boolean hasNext() {
