@@ -347,4 +347,33 @@ public class MarcJsonWriterTest {
                 new FileInputStream(file));
     }
 
+    /**
+     * Test a MARC file which defines an empty subfield for correct JSON output.
+     *
+     * @throws Exception if test fails
+     */
+    @Test
+    public void testMarcRecordWithEmptySubfieldJson() throws Exception {
+        for (String s : new String[]{
+                "rism_190101037.mrc"
+        }) {
+            InputStream in = getClass().getResource("/org/xbib/marc/" + s).openStream();
+            File file = File.createTempFile(s + ".", ".json");
+            file.deleteOnExit();
+            FileOutputStream out = new FileOutputStream(file);
+            try (MarcJsonWriter writer = new MarcJsonWriter(out)
+            ) {
+                Marc.builder()
+                        .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)
+                        .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)
+                        .setInputStream(in)
+                        .setCharset(Charset.forName("ANSEL"))
+                        .setMarcRecordListener(writer)
+                        .build()
+                        .writeRecordCollection();
+            }
+            assertStream(s, getClass().getResource("/org/xbib/marc/json/" + s + ".json").openStream(),
+                    new FileInputStream(file));
+        }
+    }
 }

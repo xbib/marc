@@ -43,11 +43,17 @@ tasks.withType(JavaCompile) {
     }
 }
 
+clean {
+    delete 'out'
+}
+
 test {
     useJUnitPlatform()
-    systemProperty 'java.util.logging.config.file', 'src/test/resources/logging.properties'
+    systemProperty 'java.util.logging.config.file', 
+            project.file('src/test/resources/logging.properties').toString()
     failFast = false
     testLogging {
+        showStandardStreams = true
         events 'STARTED', 'PASSED', 'FAILED', 'SKIPPED'
     }
     afterSuite { desc, result ->

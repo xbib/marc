@@ -523,7 +523,7 @@ public class MarcField implements Comparable<MarcField> {
         public Builder value(RecordLabel recordLabel, String value) {
             if (value.length() > 0) {
                 int len = recordLabel.getSubfieldIdentifierLength() - 1; /* minus length of US separator char */
-                if (!isControl() && len > 0 && value.length() > len) {
+                if (!isControl() && len >= 0 && value.length() >= len) {
                     String id = value.substring(0, len);
                     String content = value.substring(len);
                     subfield(id, content);
