@@ -323,7 +323,7 @@ public class JsonReader<A, O> {
         }
         if (firstDigit != '0') {
             while (true) {
-                if (readDigit()) {
+                if (!readDigit()) {
                     break;
                 }
             }
@@ -341,7 +341,7 @@ public class JsonReader<A, O> {
             throw expected("digit");
         }
         while (true) {
-            if (readDigit()) {
+            if (!readDigit()) {
                 break;
             }
         }
@@ -358,7 +358,7 @@ public class JsonReader<A, O> {
             throw expected("digit");
         }
         while (true) {
-            if (readDigit()) {
+            if (!readDigit()) {
                 break;
             }
         }

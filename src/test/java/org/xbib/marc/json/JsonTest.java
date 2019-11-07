@@ -220,15 +220,8 @@ public class JsonTest extends TestUtil {
     }
 
     @Test
-    public void parsereader() throws IOException {
+    public void parseReader() throws IOException {
         Reader reader = new StringReader("23");
-
         assertEquals(Json.of(23), Json.parse(reader));
     }
-
-    @Test
-    public void parsereaderfailsWithNull() {
-        assertException(NullPointerException.class, null, (RunnableEx) () -> Json.parse((Reader) null));
-    }
-
 }
