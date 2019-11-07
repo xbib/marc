@@ -38,6 +38,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.Collections;
+import java.util.EnumSet;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -65,15 +66,15 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
 
     private final Lock lock;
 
-    private final StringBuilder sb;
-
     private Writer writer;
+
+    private JsonWriter jsonWriter;
 
     private Marc.Builder builder;
 
     private boolean fatalErrors;
 
-    private Style style;
+    private EnumSet<Style> style;
 
     private Exception exception;
 
@@ -96,47 +97,46 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
     private boolean top;
 
     public MarcJsonWriter(OutputStream out) {
-        this(out, Style.ARRAY);
+        this(out, EnumSet.of(Style.ARRAY));
     }
 
-    public MarcJsonWriter(OutputStream out, Style style) {
+    public MarcJsonWriter(OutputStream out, EnumSet<Style> style) {
         this(out, DEFAULT_BUFFER_SIZE, style);
     }
 
-    public MarcJsonWriter(OutputStream out, int bufferSize, Style style) {
+    public MarcJsonWriter(OutputStream out, int bufferSize, EnumSet<Style> style) {
         this(new OutputStreamWriter(out, StandardCharsets.UTF_8), style, bufferSize);
     }
 
     public MarcJsonWriter(Writer writer) {
-        this(writer, Style.ARRAY, DEFAULT_BUFFER_SIZE);
+        this(writer, EnumSet.of(Style.ARRAY), DEFAULT_BUFFER_SIZE);
     }
 
-    public MarcJsonWriter(Writer writer, Style style, int bufferSize) {
+    public MarcJsonWriter(Writer writer, EnumSet<Style> style, int bufferSize) {
         this.writer = new BufferedWriter(writer, bufferSize);
+        this.jsonWriter = new JsonWriter(this.writer);
         this.bufferSize = bufferSize;
         this.style = style;
         this.lock = new ReentrantLock();
-        this.sb = new StringBuilder();
         this.builder = Marc.builder();
         this.top = true;
     }
 
     public MarcJsonWriter(String fileNamePattern, int splitlimit) throws IOException {
-        this(fileNamePattern, splitlimit, Style.LINES, DEFAULT_BUFFER_SIZE, false);
+        this(fileNamePattern, splitlimit, EnumSet.of(Style.LINES), DEFAULT_BUFFER_SIZE, false);
     }
 
-    public MarcJsonWriter(String fileNamePattern, int splitlimit, Style style) throws IOException {
+    public MarcJsonWriter(String fileNamePattern, int splitlimit, EnumSet<Style> style) throws IOException {
         this(fileNamePattern, splitlimit, style, DEFAULT_BUFFER_SIZE, false);
     }
 
-    public MarcJsonWriter(String fileNamePattern, int splitlimit, Style style, int bufferSize, boolean compress)
+    public MarcJsonWriter(String fileNamePattern, int splitlimit, EnumSet<Style> style, int bufferSize, boolean compress)
             throws IOException {
         this.fileNameCounter = new AtomicInteger(0);
         this.fileNamePattern = fileNamePattern;
         this.splitlimit = splitlimit;
         this.bufferSize = bufferSize;
         this.lock = new ReentrantLock();
-        this.sb = new StringBuilder();
         this.builder = Marc.builder();
         this.top = true;
         this.style = style;
@@ -226,8 +226,12 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
 
     @Override
     public void beginCollection() {
-        if (style == Style.ARRAY) {
-            sb.append("[");
+        if (style.contains(Style.ARRAY)) {
+            try {
+                jsonWriter.writeArrayOpen();
+            } catch (IOException e) {
+                handleException(e);
+            }
         }
     }
 
@@ -262,9 +266,11 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
         // would confuse us. Plus, we have our own locking here on record level.
         lock.lock();
         try {
-            toJson(marcRecord, sb);
-            writer.write(sb.toString());
-            sb.setLength(0);
+            if (style.contains(Style.ALLOW_DUPLICATES)) {
+                writeWithDuplicateKeys(marcRecord);
+            } else {
+                writeUnderlyingMap(marcRecord);
+            }
             recordCounter.incrementAndGet();
             afterRecord();
         } catch (Exception e) {
@@ -288,12 +294,20 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
 
     @Override
     public void endCollection() {
-        if (style == Style.ARRAY) {
-            sb.append("]");
+        if (style.contains(Style.ARRAY)) {
+            try {
+                jsonWriter.writeArrayClose();
+            } catch (IOException e) {
+                handleException(e);
+            }
         }
-        if (style == Style.ELASTICSEARCH_BULK) {
+        if (style.contains(Style.ELASTICSEARCH_BULK)) {
             // finish with line-feed "\n", not with System.lineSeparator()
-            sb.append("\n");
+            try {
+                writer.write("\n");
+            } catch (IOException e) {
+                handleException(e);
+            }
         }
         try {
             flush();
@@ -312,36 +326,105 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
     }
 
     /**
-     * Format MARC record as key-oriented JSON.
-     *
-     * @param sb a string builder to append JSON to
+     * Write MARC record using fields, indicators, and subfield structures,
+     * therefore allowing duplicate keys in the output.
+     * @param marcRecord the MARC record
+     * @throws IOException if writing fails
      */
-    @SuppressWarnings("unchecked")
-    private void toJson(MarcRecord marcRecord, StringBuilder sb) {
+    private void writeWithDuplicateKeys(MarcRecord marcRecord) throws IOException {
         if (marcRecord.isEmpty()) {
             return;
         }
         if (top) {
             top = false;
-            if (style == Style.ELASTICSEARCH_BULK) {
+            if (style.contains(Style.ELASTICSEARCH_BULK)) {
                 writeMetaDataLine(marcRecord);
             }
         } else {
-            switch (style) {
-                case ARRAY:
-                    sb.append(",");
-                    break;
-                case LINES:
-                    sb.append("\n");
-                    break;
-                case ELASTICSEARCH_BULK:
-                    sb.append("\n");
-                    writeMetaDataLine(marcRecord);
-                    break;
-                default:
-                    break;
+            if (style.contains(Style.ARRAY)) {
+                jsonWriter.writeArraySeparator();
+            } else if (style.contains(Style.LINES)) {
+                jsonWriter.writeLiteral("\n");
+            } else if (style.contains(Style.ELASTICSEARCH_BULK)) {
+                jsonWriter.writeLiteral("\n");
+                writeMetaDataLine(marcRecord);
             }
         }
+        jsonWriter.writeObjectOpen();
+        jsonWriter.writeMemberName(FORMAT_TAG);
+        jsonWriter.writeMemberSeparator();
+        jsonWriter.writeString(marcRecord.getFormat());
+        jsonWriter.writeObjectSeparator();
+        jsonWriter.writeMemberName(TYPE_TAG);
+        jsonWriter.writeMemberSeparator();
+        jsonWriter.writeString(marcRecord.getType());
+        jsonWriter.writeObjectSeparator();
+        jsonWriter.writeMemberName(LEADER_TAG);
+        jsonWriter.writeMemberSeparator();
+        jsonWriter.writeString(marcRecord.getRecordLabel().toString());
+        jsonWriter.writeObjectSeparator();
+        boolean fieldseparator = false;
+        for (MarcField marcField : marcRecord.getFields()) {
+            if (fieldseparator) {
+                jsonWriter.writeObjectSeparator();
+            }
+            jsonWriter.writeMemberName(marcField.getTag());
+            jsonWriter.writeMemberSeparator();
+            if (marcField.isControl()) {
+                jsonWriter.writeArrayOpen();
+                jsonWriter.writeString(marcField.getValue());
+                jsonWriter.writeArrayClose();
+            } else {
+                jsonWriter.writeObjectOpen();
+                jsonWriter.writeMemberName(marcField.getIndicator().replace(' ', '_'));
+                jsonWriter.writeMemberSeparator();
+                jsonWriter.writeArrayOpen();
+                boolean subfieldseparator = false;
+                for (MarcField.Subfield subfield : marcField.getSubfields()) {
+                    if (subfieldseparator) {
+                        jsonWriter.writeObjectSeparator();
+                    }
+                    jsonWriter.writeObjectOpen();
+                    jsonWriter.writeMemberName(subfield.getId());
+                    jsonWriter.writeMemberSeparator();
+                    jsonWriter.writeString(subfield.getValue());
+                    jsonWriter.writeObjectClose();
+                    subfieldseparator = true;
+                }
+                jsonWriter.writeArrayClose();
+                jsonWriter.writeObjectClose();
+            }
+            fieldseparator = true;
+        }
+        jsonWriter.writeObjectClose();
+    }
+
+    /**
+     * Write MARC record from underlying map as key-oriented JSON.
+     * @param marcRecord the MARC record
+     * @throws IOException if writing fails
+     */
+    @SuppressWarnings("unchecked")
+    private void writeUnderlyingMap(MarcRecord marcRecord) throws IOException {
+        if (marcRecord.isEmpty()) {
+            return;
+        }
+        if (top) {
+            top = false;
+            if (style.contains(Style.ELASTICSEARCH_BULK)) {
+                writeMetaDataLine(marcRecord);
+            }
+        } else {
+            if (style.contains(Style.ARRAY)) {
+                writer.write(",");
+            } else if (style.contains(Style.LINES)) {
+                writer.write("\n");
+            } else if (style.contains(Style.ELASTICSEARCH_BULK)) {
+                writer.write("\n");
+                writeMetaDataLine(marcRecord);
+            }
+        }
+        StringBuilder sb = new StringBuilder();
         sb.append("{");
         int c0 = 0;
         for (Map.Entry<String, Object> tags : marcRecord.entrySet()) {
@@ -452,6 +535,7 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
             c0++;
         }
         sb.append('}');
+        writer.write(sb.toString());
     }
 
     public Exception getException() {
@@ -462,13 +546,6 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
         writer.write(System.lineSeparator());
     }
 
-    private void handleException(IOException e) {
-        exception = e;
-        if (fatalErrors) {
-            throw new UncheckedIOException(e);
-        }
-    }
-
     @Override
     public void close() throws IOException {
         writer.close();
@@ -476,14 +553,6 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
 
     @Override
     public void flush() throws IOException {
-        if (sb.length() > 0) {
-            try {
-                writer.write(sb.toString());
-            } catch (IOException e) {
-                handleException(e);
-            }
-            sb.setLength(0);
-        }
         writer.flush();
     }
 
@@ -512,6 +581,7 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
         writer = new OutputStreamWriter(compress ?
                 new CompressedOutputStream(out, bufferSize) :
                 new BufferedOutputStream(out, bufferSize), StandardCharsets.UTF_8);
+        jsonWriter = new JsonWriter(writer);
     }
 
     private void writeMetaDataLine(MarcRecord marcRecord) {
@@ -526,11 +596,22 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
         }
         id = object.toString();
         if (index != null && indexType != null && id != null) {
-            sb.append("{\"index\":{")
-                    .append("\"_index\":\"").append(index).append("\",")
-                    .append("\"_type\":\"").append(indexType).append("\",")
-                    .append("\"_id\":\"").append(id).append("\"}}")
-                    .append("\n");
+            try {
+                writer.write("{\"index\":{" +
+                        "\"_index\":\"" + index + "\"," +
+                        "\"_type\":\"" + indexType + "\"," +
+                        "\"_id\":\"" + id + "\"}}" +
+                        "\n");
+            } catch (IOException e) {
+                handleException(e);
+            }
+        }
+    }
+
+    private void handleException(IOException e) {
+        exception = e;
+        if (fatalErrors) {
+            throw new UncheckedIOException(e);
         }
     }
 
@@ -538,7 +619,7 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
      *
      */
     public enum Style {
-        ARRAY, LINES, ELASTICSEARCH_BULK
+        ARRAY, LINES, ELASTICSEARCH_BULK, ALLOW_DUPLICATES
     }
 
     /**

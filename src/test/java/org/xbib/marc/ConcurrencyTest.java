@@ -26,6 +26,7 @@ import org.xbib.marc.xml.MarcXchangeWriter;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
+import java.util.EnumSet;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
@@ -129,7 +130,7 @@ public class ConcurrencyTest {
         File file = File.createTempFile(s + ".", ".jsonlines");
         file.deleteOnExit();
         FileOutputStream out = new FileOutputStream(file);
-        try (MarcJsonWriter writer = new MarcJsonWriter(out, MarcJsonWriter.Style.LINES)
+        try (MarcJsonWriter writer = new MarcJsonWriter(out, EnumSet.of(MarcJsonWriter.Style.LINES))
                 .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)
                 .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)
         ) {

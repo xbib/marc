@@ -35,36 +35,12 @@ import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.text.Normalizer;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.EnumSet;
 
 /**
  *
  */
 public class MarcJsonWriterTest {
-
-    private static final Pattern quotePattern = Pattern.compile("\"", Pattern.LITERAL);
-
-    private static final String escapeQuote = "\\\"";
-
-    private static final Pattern backslashPattern = Pattern.compile("\\\\");
-
-    private static final String escapeBackslash = "\\\\";
-
-    private static String escape(String value) {
-        String s = backslashPattern.matcher(value).replaceAll(Matcher.quoteReplacement(escapeBackslash));
-        return quotePattern.matcher(s).replaceAll(Matcher.quoteReplacement(escapeQuote));
-    }
-
-    @Test
-    public void testEscapeJSON() {
-        String s = "\"Hello world\"";
-        String t = escape(s);
-        assertEquals("\\\"Hello world\\\"", t);
-        s = "\\P123";
-        t = escape(s);
-        assertEquals("\\\\P123", t);
-    }
 
     /**
      * {@code }MarcJsonWriter} can receive MARC fields.
@@ -169,7 +145,7 @@ public class MarcJsonWriterTest {
         File file = File.createTempFile(s + ".", ".json");
         file.deleteOnExit();
         FileOutputStream out = new FileOutputStream(file);
-        try (MarcJsonWriter writer = new MarcJsonWriter(out, MarcJsonWriter.Style.LINES)
+        try (MarcJsonWriter writer = new MarcJsonWriter(out, EnumSet.of(MarcJsonWriter.Style.LINES))
                 .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)
                 .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)
         ) {
@@ -227,7 +203,8 @@ public class MarcJsonWriterTest {
         InputStream in = getClass().getResource("/org/xbib/marc//" + s).openStream();
         MarcValueTransformers marcValueTransformers = new MarcValueTransformers();
         marcValueTransformers.setMarcValueTransformer(value -> Normalizer.normalize(value, Normalizer.Form.NFC));
-        try (MarcJsonWriter writer = new MarcJsonWriter("build/bulk%d.jsonl", 3, MarcJsonWriter.Style.ELASTICSEARCH_BULK)
+        try (MarcJsonWriter writer = new MarcJsonWriter("build/bulk%d.jsonl",
+                3, EnumSet.of(MarcJsonWriter.Style.ELASTICSEARCH_BULK))
                 .setIndex("testindex", "testtype")) {
             writer.setMarcValueTransformers(marcValueTransformers);
             Marc.builder()
@@ -264,8 +241,8 @@ public class MarcJsonWriterTest {
         MarcValueTransformers marcValueTransformers = new MarcValueTransformers();
         marcValueTransformers.setMarcValueTransformer(value -> Normalizer.normalize(value, Normalizer.Form.NFC));
         // split at 3, Elasticsearch bulk format, buffer size 65536, compress = true
-        try (MarcJsonWriter writer = new MarcJsonWriter("build/bulk%d.jsonl.gz", 3,
-                MarcJsonWriter.Style.ELASTICSEARCH_BULK, 65536, true)
+        try (MarcJsonWriter writer = new MarcJsonWriter("build/bulk%d.jsonl.gz",
+                3, EnumSet.of(MarcJsonWriter.Style.ELASTICSEARCH_BULK), 65536, true)
                 .setIndex("testindex", "testtype")) {
             writer.setMarcValueTransformers(marcValueTransformers);
             Marc.builder()
@@ -300,7 +277,7 @@ public class MarcJsonWriterTest {
         String s = "bundeskunsthalle.xml";
         InputStream in = getClass().getResource("/org/xbib/marc/xml/" + s).openStream();
         try (MarcJsonWriter writer = new MarcJsonWriter("build/bk-bulk%d.jsonl", 1,
-                MarcJsonWriter.Style.ELASTICSEARCH_BULK)
+                EnumSet.of(MarcJsonWriter.Style.ELASTICSEARCH_BULK))
                 .setIndex("testindex", "testtype")) {
             Marc.builder()
                     .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)
@@ -318,7 +295,7 @@ public class MarcJsonWriterTest {
         File file = File.createTempFile("multi.", ".json");
         file.deleteOnExit();
         FileOutputStream out = new FileOutputStream(file);
-        try (MarcJsonWriter writer = new MarcJsonWriter(out, MarcJsonWriter.Style.ARRAY)) {
+        try (MarcJsonWriter writer = new MarcJsonWriter(out, EnumSet.of(MarcJsonWriter.Style.ARRAY))) {
             writer.beginCollection();
             try (InputStream inputStream = getClass().getResource("/org/xbib/marc/summerland.mrc").openStream()) {
                 Marc.builder()
@@ -373,6 +350,37 @@ public class MarcJsonWriterTest {
                         .writeRecordCollection();
             }
             assertStream(s, getClass().getResource("/org/xbib/marc/json/" + s + ".json").openStream(),
+                    new FileInputStream(file));
+        }
+    }
+
+    /**
+     * Test JSON format that allows duplicate keys. This allows to format MARC in order,
+     * as defined by cataloging rules.
+     *
+     * @throws Exception if test fails
+     */
+    @Test
+    public void testMarcRecordJsonWithDuplicateKeys() throws Exception {
+        for (String s : new String[]{
+                "test_ubl.mrc"
+        }) {
+            InputStream in = getClass().getResource("/org/xbib/marc/" + s).openStream();
+            File file = File.createTempFile(s + ".", ".json");
+            file.deleteOnExit();
+            FileOutputStream out = new FileOutputStream(file);
+            try (MarcJsonWriter writer = new MarcJsonWriter(out, EnumSet.of(MarcJsonWriter.Style.ALLOW_DUPLICATES))
+            ) {
+                Marc.builder()
+                        .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)
+                        .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)
+                        .setInputStream(in)
+                        .setCharset(Charset.forName("ANSEL"))
+                        .setMarcListener(writer)
+                        .build()
+                        .writeCollection();
+            }
+            assertStream(s, getClass().getResource("/org/xbib/marc/json/" + s + ".dupkey.json").openStream(),
                     new FileInputStream(file));
         }
     }

@@ -24,6 +24,9 @@ dependencies {
     testImplementation("com.github.stefanbirkner:system-rules:${project.property('system-rules.version')}") {
         exclude module: 'junit'
     }
+    testImplementation("org.mockito:mockito-core:${project.property('mockito.version')}") {
+        exclude group: 'org.hamcrest'
+    }
 }
 
 compileJava {

@@ -46,3 +46,12 @@ https://github.com/marc4j/marc4j/tree/master/test/resources
 
 and were donated by libraries for testing purpose.
 
+-----------------
+
+The JSON reader/writer classes are derived work from
+
+https://github.com/ralfstx/minimal-json
+
+The original work is based on the MIT License
+
+-----------------

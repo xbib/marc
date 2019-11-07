@@ -18,6 +18,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
+import java.util.EnumSet;
 
 /**
  *
@@ -57,7 +58,7 @@ public class MabXmlTest {
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         try (InputStream in = getClass().getResourceAsStream(s);
              MarcJsonWriter writer = new MarcJsonWriter(out,
-                     10, MarcJsonWriter.Style.ELASTICSEARCH_BULK)
+                     10, EnumSet.of(MarcJsonWriter.Style.ELASTICSEARCH_BULK))
                 .setIndex("testindex", "testtype")) {
             MarcContentHandler contentHandler = new MabXMLContentHandler()
                     .addNamespace("http://www.ddb.de/professionell/mabxml/mabxml-1.xsd")
