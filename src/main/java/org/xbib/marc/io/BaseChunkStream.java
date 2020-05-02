@@ -48,14 +48,6 @@ abstract class BaseChunkStream extends BufferedInputStream implements ChunkStrea
     /**
      * Create a base chunk stream.
      * @param in the underlying input stream
-     */
-    BaseChunkStream(InputStream in) {
-        this(in, DEFAULT_BUFFER_SIZE);
-    }
-
-    /**
-     * Create a base chunk stream.
-     * @param in the underlying input stream
      * @param buffersize the buffer size, default is 8192
      */
     BaseChunkStream(InputStream in, int buffersize) {

@@ -53,8 +53,17 @@ public class BiblioMondoInputStream extends PatternInputStream {
 
     private final BytesStreamOutput bytesStreamOutput;
 
-    public BiblioMondoInputStream(InputStream in, byte[] pattern, MarcGenerator marcGenerator) {
-        super(in, pattern);
+    public BiblioMondoInputStream(InputStream in,
+                                  byte[] pattern,
+                                  MarcGenerator marcGenerator) {
+        this(in, pattern, marcGenerator, 8192);
+    }
+
+    public BiblioMondoInputStream(InputStream in,
+                                  byte[] pattern,
+                                  MarcGenerator marcGenerator,
+                                  int bufferSize) {
+        super(in, pattern, bufferSize);
         this.marcGenerator = marcGenerator;
         this.bytesStreamOutput = new BytesStreamOutput();
     }

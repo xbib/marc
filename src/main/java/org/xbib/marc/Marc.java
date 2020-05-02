@@ -87,6 +87,8 @@ public final class Marc {
 
     private static final byte[] CRLF = { '\r', '\n'};
 
+    private static final int DEFAULT_BUFFER_SIZE = 8192;
+
     private final Builder builder;
 
     private Marc(Builder builder) {
@@ -101,12 +103,17 @@ public final class Marc {
         return new Builder();
     }
 
+    public MarcIso2709Reader iso2709XmlReader() {
+        return iso2709XmlReader(DEFAULT_BUFFER_SIZE);
+    }
+
     /**
      * Return an XML reader on a ISO 2709 input stream.
+     * @param bufferSize buffer size for input stream
      * @return XML reader
      */
-    public MarcIso2709Reader iso2709XmlReader() {
-        return new MarcIso2709Reader(builder);
+    public MarcIso2709Reader iso2709XmlReader(int bufferSize) {
+        return new MarcIso2709Reader(builder, bufferSize);
     }
 
     /**
@@ -137,12 +144,17 @@ public final class Marc {
         xmlEventReader.close();
     }
 
+    public BufferedSeparatorInputStream iso2709Stream() {
+        return iso2709Stream(DEFAULT_BUFFER_SIZE);
+    }
+
     /**
      * Return ISO 2709 stream.
+     * @param bufferSize buffer size
      * @return ISO 2709 stream
      */
-    public BufferedSeparatorInputStream iso2709Stream() {
-        return builder.iso2709Stream();
+    public BufferedSeparatorInputStream iso2709Stream(int bufferSize) {
+        return builder.iso2709Stream(bufferSize);
     }
 
     /**
@@ -224,7 +236,8 @@ public final class Marc {
      * @throws IOException if parsing fails
      */
     public Document document() throws IOException {
-        return new Sax2Dom(iso2709XmlReader(), new InputSource(builder.getInputStream())).document();
+        return new Sax2Dom(iso2709XmlReader(DEFAULT_BUFFER_SIZE),
+                new InputSource(builder.getInputStream())).document();
     }
 
     /**
@@ -260,16 +273,25 @@ public final class Marc {
         }
     }
 
+    public void writeCollection() throws IOException {
+        writeCollection(DEFAULT_BUFFER_SIZE);
+    }
+
     /**
      * Write MARC bibliographic data from seperator stream chunk by chunk to a MARC collection.
+     * @param bufferSize buffer size for the separator input stream
      * @throws IOException if writing fails
      */
-    public void writeCollection() throws IOException {
-        wrapIntoCollection(new BufferedSeparatorInputStream(builder.getInputStream()));
+    public void writeCollection(int bufferSize) throws IOException {
+        wrapIntoCollection(new BufferedSeparatorInputStream(builder.getInputStream(), bufferSize));
     }
 
     public void writeCollection(String type) throws IOException {
-        wrapIntoCollection(type, new BufferedSeparatorInputStream(builder.getInputStream()));
+        writeCollection(type, DEFAULT_BUFFER_SIZE);
+    }
+
+    public void writeCollection(String type, int bufferSize) throws IOException {
+        wrapIntoCollection(type, new BufferedSeparatorInputStream(builder.getInputStream(), bufferSize));
     }
 
     public int wrapIntoCollection(ChunkStream<byte[], BytesReference> stream) throws IOException {
@@ -331,21 +353,31 @@ public final class Marc {
         return count;
     }
 
+    public void writeRecordCollection() throws IOException {
+        writeRecordCollection(DEFAULT_BUFFER_SIZE);
+    }
+
     /**
      * Write MARC bibliographic events from a separator strem, record by record, wrapped into a
      * pair of {@code collection} elements.
+     * @param bufferSize buffer size
      * @throws IOException if writing fails
      */
-    public void writeRecordCollection() throws IOException {
-        wrapRecords(new BufferedSeparatorInputStream(builder.getInputStream()), true);
+    public void writeRecordCollection(int bufferSize) throws IOException {
+        wrapRecords(new BufferedSeparatorInputStream(builder.getInputStream(), bufferSize), true);
+    }
+
+    public void writeRecords() throws IOException {
+        writeRecords(DEFAULT_BUFFER_SIZE);
     }
 
     /**
      * Write MARC bibliographic events from a separator strem, record by record.
+     * @param bufferSize buffer size for separator input stream
      * @throws IOException if writing fails
      */
-    public void writeRecords() throws IOException {
-        wrapRecords(new BufferedSeparatorInputStream(builder.getInputStream()), false);
+    public void writeRecords(int bufferSize) throws IOException {
+        wrapRecords(new BufferedSeparatorInputStream(builder.getInputStream(), bufferSize), false);
     }
 
     /**
@@ -551,8 +583,11 @@ public final class Marc {
      */
     public static class MarcIso2709Reader extends MarcXmlReader {
 
-        private MarcIso2709Reader(Builder builder) {
+        private final int bufferSize;
+
+        private MarcIso2709Reader(Builder builder, int bufferSize) {
             super(builder);
+            this.bufferSize = bufferSize;
         }
 
         @Override
@@ -560,7 +595,8 @@ public final class Marc {
             if (input.getByteStream() == null) {
                 throw new IllegalArgumentException("no input stream found");
             }
-            try (BufferedSeparatorInputStream stream = new BufferedSeparatorInputStream(input.getByteStream())) {
+            try (BufferedSeparatorInputStream stream =
+                         new BufferedSeparatorInputStream(input.getByteStream(), bufferSize)) {
                 MarcGenerator marcGenerator = builder.createGenerator();
                 Chunk<byte[], BytesReference> chunk;
                 while ((chunk = stream.readChunk()) != null) {
@@ -895,10 +931,11 @@ public final class Marc {
 
         /**
          * Create an ISO 2709 stream.
+         * @param bufferSize buffer size
          * @return ISO 2709 stream
          */
-        public BufferedSeparatorInputStream iso2709Stream() {
-            return new BufferedSeparatorInputStream(inputStream);
+        public BufferedSeparatorInputStream iso2709Stream(int bufferSize) {
+            return new BufferedSeparatorInputStream(inputStream, bufferSize);
         }
 
         /**
@@ -1088,7 +1125,7 @@ public final class Marc {
          */
         public Iterator<MarcRecord> recordIterator() {
             if (stream == null) {
-                this.stream = new BufferedSeparatorInputStream(inputStream);
+                this.stream = new BufferedSeparatorInputStream(inputStream, DEFAULT_BUFFER_SIZE);
             }
             if (marcGenerator == null) {
                 this.marcGenerator = createGenerator();

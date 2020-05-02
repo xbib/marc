@@ -38,7 +38,7 @@ public class PatternInputStreamTest {
         byte[] b = "Hello\nWorld".getBytes(StandardCharsets.UTF_8);
         Map<Integer, Integer> map = new LinkedHashMap<>();
         final AtomicInteger count = new AtomicInteger(0);
-        PatternInputStream separatorStream = PatternInputStream.lf(new ByteArrayInputStream(b));
+        PatternInputStream separatorStream = PatternInputStream.lf(new ByteArrayInputStream(b), 1024);
         ChunkListener<byte[], BytesReference> chunkListener =
                 (chunk) -> map.put(count.incrementAndGet(), chunk.data().length());
         Chunk<byte[], BytesReference> chunk;
@@ -55,7 +55,7 @@ public class PatternInputStreamTest {
         byte[] b = "Hello\r\nWorld".getBytes(StandardCharsets.UTF_8);
         Map<Integer, Integer> map = new LinkedHashMap<>();
         final AtomicInteger count = new AtomicInteger(0);
-        PatternInputStream separatorStream = PatternInputStream.crlf(new ByteArrayInputStream(b));
+        PatternInputStream separatorStream = PatternInputStream.crlf(new ByteArrayInputStream(b), 1024);
         ChunkListener<byte[], BytesReference> chunkListener =
                 (chunk) -> map.put(count.incrementAndGet(), chunk.data().length());
         Chunk<byte[], BytesReference> chunk;
@@ -74,7 +74,8 @@ public class PatternInputStreamTest {
                 "Hello\r\nWorld\r\n".getBytes(StandardCharsets.UTF_8)
         };
         for (byte[] b : bytes) {
-            PatternInputStream separatorStream = PatternInputStream.lf(new ByteArrayInputStream(b));
+            PatternInputStream separatorStream =
+                    PatternInputStream.lf(new ByteArrayInputStream(b), 8192);
             long l = separatorStream.chunks().count();
             separatorStream.close();
             assertEquals(2L, l);
@@ -89,7 +90,8 @@ public class PatternInputStreamTest {
         }
         Map<Integer, Integer> map = new LinkedHashMap<>();
         final AtomicInteger count = new AtomicInteger(0);
-        PatternInputStream separatorStream = PatternInputStream.crlf(new ByteArrayInputStream(output.bytes().toBytes()));
+        PatternInputStream separatorStream =
+                PatternInputStream.crlf(new ByteArrayInputStream(output.bytes().toBytes()), 8192);
         ChunkListener<byte[], BytesReference> chunkListener =
                 (chunk) -> map.put(count.incrementAndGet(), chunk.data().length());
         Chunk<byte[], BytesReference> chunk;
@@ -108,7 +110,8 @@ public class PatternInputStreamTest {
             output.write("Hello\r\nWorld\r\n".getBytes(StandardCharsets.UTF_8));
         }
         final AtomicInteger count = new AtomicInteger(0);
-        PatternInputStream separatorStream = PatternInputStream.crlf(new ByteArrayInputStream(output.bytes().toBytes()));
+        PatternInputStream separatorStream =
+                PatternInputStream.crlf(new ByteArrayInputStream(output.bytes().toBytes()), 8192);
         separatorStream.chunks().forEach(chunk -> {
             count.incrementAndGet();
             assertEquals(5, chunk.data().length());

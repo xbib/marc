@@ -43,12 +43,24 @@ public class AlephSequentialInputStream extends PatternInputStream {
 
     private String alephSysNumber;
 
-    public AlephSequentialInputStream(InputStream in, byte[] pattern, MarcGenerator marcGenerator) {
-        super(in, pattern);
+    public AlephSequentialInputStream(InputStream in,
+                                      byte[] pattern,
+                                      MarcGenerator marcGenerator) {
+        this(in, pattern, marcGenerator, 8192);
+    }
+
+    public AlephSequentialInputStream(InputStream in,
+                                      byte[] pattern,
+                                      MarcGenerator marcGenerator,
+                                      int bufferSize) {
+        super(in, pattern, bufferSize);
         this.marcGenerator = marcGenerator;
         this.bytesStreamOutput = new BytesStreamOutput();
         // this format might come without a record label, create a default one
-        this.label = RecordLabel.builder().setIndicatorLength(2).setSubfieldIdentifierLength(1).build();
+        this.label = RecordLabel.builder()
+                .setIndicatorLength(2)
+                .setSubfieldIdentifierLength(1)
+                .build();
     }
 
     @Override

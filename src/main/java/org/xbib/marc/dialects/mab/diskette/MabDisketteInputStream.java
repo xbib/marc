@@ -50,8 +50,19 @@ public class MabDisketteInputStream extends PatternInputStream {
         this(in, pattern, '\u0000', marcGenerator);
     }
 
-    public MabDisketteInputStream(InputStream in, byte[] pattern, char subfieldDelimiter, MarcGenerator marcGenerator) {
-        super(in, pattern);
+    public MabDisketteInputStream(InputStream in,
+                                  byte[] pattern,
+                                  char subfieldDelimiter,
+                                  MarcGenerator marcGenerator) {
+        this(in, pattern, subfieldDelimiter, marcGenerator, 8192);
+    }
+
+    public MabDisketteInputStream(InputStream in,
+                                  byte[] pattern,
+                                  char subfieldDelimiter,
+                                  MarcGenerator marcGenerator,
+                                  int bufferSize) {
+        super(in, pattern, bufferSize);
         this.marcGenerator = marcGenerator;
         this.subfieldDelimiter = subfieldDelimiter;
         this.bytesStreamOutput = new BytesStreamOutput();

@@ -9,6 +9,7 @@ import org.xbib.marc.MarcRecord;
 
 import java.io.InputStream;
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
@@ -26,7 +27,7 @@ public class HBZTest {
             try (InputStream in = getClass().getResource(file).openStream()) {
                 Marc marc = Marc.builder()
                         .setInputStream(in)
-                        .setCharset(Charset.forName("UTF-8"))
+                        .setCharset(StandardCharsets.UTF_8)
                         .build();
                 marc.iso2709Stream().chunks().forEach(chunk -> {
                     count.incrementAndGet();

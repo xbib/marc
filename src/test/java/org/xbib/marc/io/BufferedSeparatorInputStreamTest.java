@@ -83,7 +83,8 @@ public class BufferedSeparatorInputStreamTest {
         };
         String s = "sequential.groupstream";
         InputStream in = getClass().getResource(s).openStream();
-        BufferedSeparatorInputStream bufferedSeparatorInputStream = new BufferedSeparatorInputStream(in);
+        BufferedSeparatorInputStream bufferedSeparatorInputStream =
+                new BufferedSeparatorInputStream(in, 8192);
         Chunk<byte[], BytesReference> chunk;
         while ((chunk = bufferedSeparatorInputStream.readChunk()) != null) {
             listener.chunk(chunk);
@@ -101,7 +102,8 @@ public class BufferedSeparatorInputStreamTest {
         String s = "sequential.groupstream";
         InputStream in = getClass().getResource(s).openStream();
         final AtomicInteger count = new AtomicInteger(0);
-        BufferedSeparatorInputStream bufferedSeparatorInputStream = new BufferedSeparatorInputStream(in);
+        BufferedSeparatorInputStream bufferedSeparatorInputStream =
+                new BufferedSeparatorInputStream(in, 8192);
         ChunkListener<byte[], BytesReference> chunkListener = (chunk) -> count.incrementAndGet();
         Chunk<byte[], BytesReference> chunk;
         while ((chunk = bufferedSeparatorInputStream.readChunk()) != null) {
@@ -117,7 +119,8 @@ public class BufferedSeparatorInputStreamTest {
         Map<Integer, Integer> map2 = new LinkedHashMap<>();
         InputStream in2 = getClass().getResource("/org/xbib/marc/dialects/unimarc/" + s).openStream();
         final AtomicInteger count2 = new AtomicInteger(0);
-        BufferedSeparatorInputStream bufferedSeparatorInputStream = new BufferedSeparatorInputStream(in2);
+        BufferedSeparatorInputStream bufferedSeparatorInputStream =
+                new BufferedSeparatorInputStream(in2, 8192);
         ChunkListener<byte[], BytesReference> chunkListener2 =
                 (chunk2) -> map2.put(count2.incrementAndGet(), chunk2.data().length());
         Chunk<byte[], BytesReference> chunk2;
@@ -151,7 +154,8 @@ public class BufferedSeparatorInputStreamTest {
     public void testChunkCount() throws Exception {
         String s = "periouni.mrc";
         InputStream in = getClass().getResource("/org/xbib/marc/dialects/unimarc/" + s).openStream();
-        BufferedSeparatorInputStream bufferedSeparatorInputStream = new BufferedSeparatorInputStream(in);
+        BufferedSeparatorInputStream bufferedSeparatorInputStream =
+                new BufferedSeparatorInputStream(in, 8192);
         long l = bufferedSeparatorInputStream.chunks().count();
         assertEquals(192247, l);
     }
@@ -162,7 +166,8 @@ public class BufferedSeparatorInputStreamTest {
         Map<Integer, Integer> map = new LinkedHashMap<>();
         InputStream in = getClass().getResource("/org/xbib/marc/" + s).openStream();
         final AtomicInteger count = new AtomicInteger(0);
-        BufferedSeparatorInputStream bufferedSeparatorInputStream = new BufferedSeparatorInputStream(in);
+        BufferedSeparatorInputStream bufferedSeparatorInputStream =
+                new BufferedSeparatorInputStream(in, 8192);
         ChunkListener<byte[], BytesReference> chunkListener =
                 (chunk) -> map.put(count.incrementAndGet(), chunk.data().length());
         Chunk<byte[], BytesReference> chunk;
@@ -174,5 +179,4 @@ public class BufferedSeparatorInputStreamTest {
                 + "31=2, 32=9, 33=9, 34=2, 35=6, 36=9, 37=0}", map.toString());
         in.close();
     }
-
 }

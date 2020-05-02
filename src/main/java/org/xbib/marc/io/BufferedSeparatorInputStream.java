@@ -70,9 +70,10 @@ public class BufferedSeparatorInputStream extends BaseChunkStream {
     /**
      * Create a buffered information separator stream.
      * @param in the underlying input stream
+     * @param bufferSize the buffer size
      */
-    public BufferedSeparatorInputStream(InputStream in) {
-        super(in);
+    public BufferedSeparatorInputStream(InputStream in, int bufferSize) {
+        super(in, bufferSize);
     }
 
     @Override

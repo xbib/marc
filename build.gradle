@@ -27,6 +27,7 @@ dependencies {
     testImplementation("org.mockito:mockito-core:${project.property('mockito.version')}") {
         exclude group: 'org.hamcrest'
     }
+    testImplementation "org.marc4j:marc4j:${project.property('marc4j.version')}"
 }
 
 compileJava {

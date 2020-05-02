@@ -19,6 +19,7 @@ package org.xbib.marc.tools;
 import org.xbib.marc.Marc;
 import org.xbib.marc.xml.MarcXchangeWriter;
 
+import java.io.BufferedInputStream;
 import java.io.InputStream;
 import java.net.URL;
 import java.nio.charset.Charset;
@@ -101,9 +102,10 @@ public class MarcTool {
         }
         if ("marc2xml".equals(mode)) {
             try (InputStream in = Files.newInputStream(Paths.get(input));
+                 BufferedInputStream bufferedInputStream = new BufferedInputStream(in, 65536);
                  MarcXchangeWriter writer = new MarcXchangeWriter(Files.newBufferedWriter(Paths.get(output)), true)) {
                 Marc.Builder builder = Marc.builder()
-                        .setInputStream(in)
+                        .setInputStream(bufferedInputStream)
                         .setCharset(Charset.forName(charset))
                         .setMarcListener(writer);
                 if (schema != null && stylesheet != null && result != null) {
@@ -111,7 +113,7 @@ public class MarcTool {
                     builder.setSchema(schema).build().transform(new URL(stylesheet),
                                     new StreamResult(Files.newBufferedWriter(Paths.get(result))));
                 } else {
-                    builder.build().writeCollection();
+                    builder.build().writeCollection(65536);
                 }
             } catch (Exception e) {
                 logger.log(Level.SEVERE, e.getMessage(), e);

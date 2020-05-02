@@ -52,8 +52,17 @@ public class PicaPlainInputStream extends PatternInputStream {
 
     private boolean started;
 
-    public PicaPlainInputStream(InputStream in, byte[] pattern, MarcGenerator marcGenerator) {
-        super(in, pattern);
+    public PicaPlainInputStream(InputStream in,
+                                byte[] pattern,
+                                MarcGenerator marcGenerator) {
+        this(in, pattern, marcGenerator, 8192);
+    }
+
+    public PicaPlainInputStream(InputStream in,
+                                byte[] pattern,
+                                MarcGenerator marcGenerator,
+                                int bufferSize) {
+        super(in, pattern, bufferSize);
         this.marcGenerator = marcGenerator;
         this.bytesStreamOutput = new BytesStreamOutput();
         this.started = true;

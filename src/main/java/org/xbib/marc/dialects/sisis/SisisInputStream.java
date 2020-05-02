@@ -72,14 +72,24 @@ public class SisisInputStream extends PatternInputStream {
 
     private boolean labelEmitted;
 
+    public SisisInputStream(InputStream in,
+                            byte[] pattern,
+                            MarcGenerator marcGenerator) {
+        this(in, pattern, marcGenerator, 8192);
+    }
+
     /**
      * Create a SISIS input stream.
      * @param in the underlying input stream
      * @param pattern the pattern for the separator
      * @param marcGenerator a MARC generator
+     * @param bufferSize buffer size
      */
-    public SisisInputStream(InputStream in, byte[] pattern, MarcGenerator marcGenerator) {
-        super(in, pattern);
+    public SisisInputStream(InputStream in,
+                            byte[] pattern,
+                            MarcGenerator marcGenerator,
+                            int bufferSize) {
+        super(in, pattern, bufferSize);
         this.marcGenerator = marcGenerator;
         this.bytesStreamOutput = new BytesStreamOutput();
         // this format comes without a record label, create a default one

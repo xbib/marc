@@ -323,7 +323,7 @@ public class MabTest {
         assertThat(file, CompareMatcher.isIdenticalTo(getClass().getResource(s + "-mapped.xml").openStream()));
     }
 
-    private class LOWTransformer implements MarcValueTransformer {
+    private static class LOWTransformer implements MarcValueTransformer {
 
         @Override
         public String transform(String value) {

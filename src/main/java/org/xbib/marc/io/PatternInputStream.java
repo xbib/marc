@@ -39,9 +39,10 @@ public class PatternInputStream extends BaseChunkStream {
      * Create a pattern delimited input stream.
      * @param in the underlying input stream
      * @param pattern the pattern
+     * @param bufferSize buffer size
      */
-    public PatternInputStream(InputStream in, byte[] pattern) {
-        super(in);
+    public PatternInputStream(InputStream in, byte[] pattern, int bufferSize) {
+        super(in, bufferSize);
         requireNonNull(pattern);
         this.pattern = pattern.clone();
     }
@@ -49,19 +50,21 @@ public class PatternInputStream extends BaseChunkStream {
     /**
      * Convenience method to cerate a line-feed pattern separated input stream.
      * @param in the input stream to wrap
+     * @param bufferSize buffer size
      * @return the pattern input stream
      */
-    public static PatternInputStream lf(InputStream in) {
-        return new PatternInputStream(in, LF);
+    public static PatternInputStream lf(InputStream in, int bufferSize) {
+        return new PatternInputStream(in, LF, bufferSize);
     }
 
     /**
      * Convenience method to cerate a carriage-return/line-feed pattern separated input stream.
      * @param in the input stream to wrap
+     * @param bufferSize buffer size
      * @return the pattern input stream
      */
-    public static PatternInputStream crlf(InputStream in) {
-        return new PatternInputStream(in, CRLF);
+    public static PatternInputStream crlf(InputStream in, int bufferSize) {
+        return new PatternInputStream(in, CRLF, bufferSize);
     }
 
     /**
