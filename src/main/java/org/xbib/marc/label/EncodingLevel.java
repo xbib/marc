@@ -126,7 +126,7 @@ public enum EncodingLevel {
             case 'z':
                 return NOT_APPLICABLE;
             default:
-                logger.log(Level.FINEST, "unknown encoding level " + ch);
+                logger.log(Level.FINEST, () -> "unknown encoding level " + ch);
                 return FULL;
         }
     }

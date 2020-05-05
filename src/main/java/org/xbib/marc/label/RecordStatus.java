@@ -82,7 +82,7 @@ public enum RecordStatus {
             case 'p':
                 return INCREASE_IN_ENCODING_LEVEL_FROM_PREPUBLICATION;
             default:
-                logger.log(Level.FINEST, "unknown record status: " + ch);
+                logger.log(Level.FINEST, () -> "unknown record status: " + ch);
                 return UNKNOWN;
         }
     }

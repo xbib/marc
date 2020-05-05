@@ -63,7 +63,7 @@ public enum Encoding {
             case 'a':
                 return UCS_UNICODE;
             default:
-                logger.log(Level.FINEST, "unknown encoding: " + ch);
+                logger.log(Level.FINEST, () -> "unknown encoding: " + ch);
                 return MARC8;
         }
     }

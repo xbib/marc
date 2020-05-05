@@ -71,7 +71,7 @@ public enum MultipartResourceRecordLevel {
             case 'c':
                 return PART_WITH_DEPENDENT_TITLE;
             default:
-                logger.log(Level.FINEST, "unknown multipart resource record level: " + ch);
+                logger.log(Level.FINEST, () -> "unknown multipart resource record level: " + ch);
                 return NOT_SPECIFIED;
         }
     }

@@ -114,7 +114,7 @@ public enum BibliographicLevel {
             case 's':
                 return SERIAL;
             default:
-                logger.log(Level.FINEST, "unknown bibliographic level: " + ch);
+                logger.log(Level.FINEST, () -> "unknown bibliographic level: " + ch);
                 return UNSPECIFIED;
         }
     }

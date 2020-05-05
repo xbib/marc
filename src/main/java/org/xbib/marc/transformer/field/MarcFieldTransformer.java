@@ -225,7 +225,7 @@ public class MarcFieldTransformer extends LinkedHashMap<String, MarcField> {
         if (m.find()) {
             if (repeatCounter > 99) {
                 repeatCounter = 99;
-                logger.log(Level.WARNING, "counter > 99, overflow in %s", marcField);
+                logger.log(Level.WARNING, () -> "counter > 99, overflow in " + marcField);
             }
             return m.replaceAll(String.format("%02d", repeatCounter));
         }
@@ -360,7 +360,6 @@ public class MarcFieldTransformer extends LinkedHashMap<String, MarcField> {
          * @param map a map of mappable tags
          * @return a MARC field tranformer
          */
-        @SuppressWarnings("unchecked")
         public Builder from(Map<String, String> map) {
             for (Map.Entry<String, String> entry : map.entrySet()) {
                 fromTo(entry.getKey(), entry.getValue());

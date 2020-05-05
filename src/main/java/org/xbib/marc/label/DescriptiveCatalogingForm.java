@@ -81,7 +81,7 @@ public enum DescriptiveCatalogingForm {
             case 'u':
                 return UNKNOWN;
             default:
-                logger.log(Level.FINEST, "unknown descriptive cataloging form: " + ch);
+                logger.log(Level.FINEST, () -> "unknown descriptive cataloging form: " + ch);
                 return NON_ISBD;
         }
     }
