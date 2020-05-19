@@ -1,40 +1,21 @@
-/*
-   Copyright 2016 Jörg Prante
-
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
-
- */
 package org.xbib.marc.json;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
-import static org.junit.Assert.assertTrue;
-
-import org.junit.Before;
-import org.junit.Test;
-
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import java.io.IOException;
 import java.io.StringWriter;
 
-/**
- *
- */
-public class JsonNumberTest extends TestUtil {
+public class JsonNumberTest {
 
     private StringWriter output;
+
     private JsonWriter writer;
 
-    @Before
+    @BeforeEach
     public void setUp() {
         output = new StringWriter();
         writer = new JsonWriter(output);
@@ -42,7 +23,7 @@ public class JsonNumberTest extends TestUtil {
 
     @Test
     public void constructorfailsWithNull() {
-        assertException(NullPointerException.class, null, (Runnable) () -> new JsonNumber(null));
+        Assertions.assertThrows(NullPointerException.class, () -> new JsonNumber(null));
     }
 
     @Test
@@ -66,19 +47,25 @@ public class JsonNumberTest extends TestUtil {
         assertEquals(23, new JsonNumber("23").asInt());
     }
 
-    @Test(expected = NumberFormatException.class)
+    @Test
     public void asIntfailsWithExceedingValues() {
-        new JsonNumber("10000000000").asInt();
+        Assertions.assertThrows(NumberFormatException.class, () -> {
+            new JsonNumber("10000000000").asInt();
+        });
     }
 
-    @Test(expected = NumberFormatException.class)
+    @Test
     public void asIntfailsWithExponent() {
-        new JsonNumber("1e5").asInt();
+        Assertions.assertThrows(NumberFormatException.class, () -> {
+            new JsonNumber("1e5").asInt();
+        });
     }
 
-    @Test(expected = NumberFormatException.class)
+    @Test
     public void asIntfailsWithFractional() {
-        new JsonNumber("23.5").asInt();
+        Assertions.assertThrows(NumberFormatException.class, () -> {
+            new JsonNumber("23.5").asInt();
+        });
     }
 
     @Test
@@ -86,19 +73,25 @@ public class JsonNumberTest extends TestUtil {
         assertEquals(23L, new JsonNumber("23").asLong());
     }
 
-    @Test(expected = NumberFormatException.class)
+    @Test
     public void asLongfailsWithExceedingValues() {
-        new JsonNumber("10000000000000000000").asLong();
+        Assertions.assertThrows(NumberFormatException.class, () -> {
+            new JsonNumber("10000000000000000000").asLong();
+        });
     }
 
-    @Test(expected = NumberFormatException.class)
+    @Test
     public void asLongfailsWithExponent() {
-        new JsonNumber("1e5").asLong();
+        Assertions.assertThrows(NumberFormatException.class, () -> {
+            new JsonNumber("1e5").asLong();
+        });
     }
 
-    @Test(expected = NumberFormatException.class)
+    @Test
     public void asLongfailsWithFractional() {
-        new JsonNumber("23.5").asLong();
+        Assertions.assertThrows(NumberFormatException.class, () -> {
+            new JsonNumber("23.5").asLong();
+        });
     }
 
     @Test

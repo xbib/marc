@@ -1,9 +1,8 @@
 package org.xbib.marc.dialects.mab;
 
-import static org.junit.Assert.assertThat;
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.xbib.marc.StreamMatcher.assertStream;
-
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.xbib.marc.Marc;
 import org.xbib.marc.dialects.mab.xml.MabXMLContentHandler;
 import org.xbib.marc.json.MarcJsonWriter;
@@ -11,7 +10,6 @@ import org.xbib.marc.xml.MarcContentHandler;
 import org.xbib.marc.xml.MarcXchangeWriter;
 import org.xml.sax.InputSource;
 import org.xmlunit.matchers.CompareMatcher;
-
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -20,9 +18,6 @@ import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.EnumSet;
 
-/**
- *
- */
 public class MabXmlTest {
 
     @Test

@@ -1,14 +1,12 @@
 package org.xbib.marc.filter;
 
 import static org.xbib.content.json.JsonXContent.contentBuilder;
-
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.xbib.content.XContentBuilder;
 import org.xbib.marc.Marc;
 import org.xbib.marc.MarcField;
 import org.xbib.marc.MarcFieldAdapter;
 import org.xbib.marc.MarcListener;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;

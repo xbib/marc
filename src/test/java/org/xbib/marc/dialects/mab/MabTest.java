@@ -1,28 +1,11 @@
-/*
-   Copyright 2016 Jörg Prante
-
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
-
- */
 package org.xbib.marc.dialects.mab;
 
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertThat;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.xbib.marc.StreamMatcher.assertStream;
 import static org.xbib.marc.transformer.field.MarcFieldTransformer.Operator.HEAD;
 import static org.xbib.marc.transformer.field.MarcFieldTransformer.Operator.TAIL;
-
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.xbib.marc.Marc;
 import org.xbib.marc.MarcField;
 import org.xbib.marc.MarcListener;
@@ -36,7 +19,6 @@ import org.xbib.marc.xml.MarcContentHandler;
 import org.xbib.marc.xml.MarcXchangeWriter;
 import org.xml.sax.InputSource;
 import org.xmlunit.matchers.CompareMatcher;
-
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
@@ -45,9 +27,6 @@ import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.regex.Pattern;
 
-/**
- *
- */
 public class MabTest {
 
     private final StringBuilder sb = new StringBuilder();
@@ -165,7 +144,6 @@ public class MabTest {
         writer.endCollection();
         sw.close();
         assertNull(writer.getException());
-
         assertStream(s,
                 getClass().getResource("HT016424175-combined-keyvalue.txt").openStream(), sb.toString());
         assertThat(sw.toString(),

@@ -1,6 +1,6 @@
 package org.xbib.marc.filter;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.xbib.content.XContentBuilder;
 import org.xbib.content.json.JsonXContent;
 import org.xbib.marc.Marc;

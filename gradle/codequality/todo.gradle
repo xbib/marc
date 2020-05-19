@@ -1,0 +1,39 @@
+
+spotbugs {
+    effort = "max"
+    reportLevel = "low"
+}
+
+tasks.withType(com.github.spotbugs.SpotBugsTask) {
+    ignoreFailures = true
+    reports {
+        xml.enabled = false
+        html.enabled = true
+    }
+}
+
+tasks.withType(Pmd) {
+    ignoreFailures = true
+    reports {
+        xml.enabled = true
+        html.enabled = true
+    }
+}
+tasks.withType(Checkstyle) {
+    ignoreFailures = true
+    reports {
+        xml.enabled = true
+        html.enabled = true
+    }
+}
+
+pmd {
+    toolVersion = '6.11.0'
+    ruleSets = ['category/java/bestpractices.xml']
+}
+
+checkstyle {
+    configFile = rootProject.file('config/checkstyle/checkstyle.xml')
+    ignoreFailures = true
+    showViolations = true
+}

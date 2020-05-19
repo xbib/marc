@@ -1,65 +1,42 @@
-/*
-   Copyright 2016 Jörg Prante
-
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
-
- */
 package org.xbib.marc.json;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
-import static org.junit.Assert.assertTrue;
-
-import org.junit.Before;
-import org.junit.Test;
-
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import java.io.IOException;
 import java.io.StringWriter;
 
-/**
- *
- */
-public class JsonStringTest extends TestUtil {
+public class JsonStringTest {
 
     private StringWriter stringWriter;
+
     private JsonWriter jsonWriter;
 
-    @Before
+    @BeforeEach
     public void setUp() {
         stringWriter = new StringWriter();
         jsonWriter = new JsonWriter(stringWriter);
     }
 
     @Test
-    public void constructor_failsWithNull() {
-        assertException(NullPointerException.class, null, new Runnable() {
-            public void run() {
-                new JsonString(null);
-            }
+    public void constructorFailsWithNull() {
+        Assertions.assertThrows(NullPointerException.class, () -> {
+            new JsonString(null);
         });
     }
 
     @Test
     public void write() throws IOException {
         new JsonString("foo").write(jsonWriter);
-
         assertEquals("\"foo\"", stringWriter.toString());
     }
 
     @Test
-    public void write_escapesStrings() throws IOException {
+    public void writeEscapesStrings() throws IOException {
         new JsonString("foo\\bar").write(jsonWriter);
-
         assertEquals("\"foo\\\\bar\"", stringWriter.toString());
     }
 
@@ -74,41 +51,40 @@ public class JsonStringTest extends TestUtil {
     }
 
     @Test
-    public void equals_trueForSameInstance() {
+    public void equalsTrueForSameInstance() {
         JsonString string = new JsonString("foo");
-
         assertEquals(string, string);
     }
 
     @Test
-    public void equals_trueForEqualStrings() {
+    public void equalsTrueForEqualStrings() {
         assertEquals(new JsonString("foo"), new JsonString("foo"));
     }
 
     @Test
-    public void equals_falseForDifferentStrings() {
+    public void equalsFalseForDifferentStrings() {
         assertNotEquals(new JsonString(""), new JsonString("foo"));
         assertNotEquals(new JsonString("foo"), new JsonString("bar"));
     }
 
     @Test
-    public void equals_falseForNull() {
+    public void equalsFalseForNull() {
         assertNotEquals(null, new JsonString("foo"));
     }
 
     @Test
-    public void equals_falseForSubclass() {
+    public void equalsFalseForSubclass() {
         assertNotEquals(new JsonString("foo"), new JsonString("foo") {
         });
     }
 
     @Test
-    public void hashCode_equalsForEqualStrings() {
+    public void hashCodeEqualsForEqualStrings() {
         assertEquals(new JsonString("foo").hashCode(), new JsonString("foo").hashCode());
     }
 
     @Test
-    public void hashCode_differsForDifferentStrings() {
+    public void hashCodeDiffersForDifferentStrings() {
         assertNotEquals(new JsonString("").hashCode(), new JsonString("foo").hashCode());
         assertNotEquals(new JsonString("foo").hashCode(), new JsonString("bar").hashCode());
     }

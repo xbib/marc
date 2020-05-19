@@ -1,42 +1,22 @@
-/*
-   Copyright 2016 Jörg Prante
-
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
-
- */
 package org.xbib.marc.json;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotEquals;
-import static org.junit.Assert.assertSame;
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertSame;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.inOrder;
 import static org.mockito.Mockito.mock;
-
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.mockito.InOrder;
-
 import java.io.IOException;
 import java.util.ConcurrentModificationException;
 import java.util.Iterator;
 import java.util.List;
 
-/**
- *
- */
-public class JsonArrayTest extends TestUtil {
+public class JsonArrayTest {
 
     private JsonArray array;
 
@@ -48,18 +28,18 @@ public class JsonArrayTest extends TestUtil {
         return array;
     }
 
-    @Before
+    @BeforeEach
     public void setUp() {
         array = new JsonArray();
     }
 
     @Test
-    public void copyConstructorfailsWithNull() {
-        assertException(NullPointerException.class, null, (Runnable) () -> new JsonArray(null));
+    public void copyConstructorFailsWithNull() {
+        Assertions.assertThrows(NullPointerException.class, () -> new JsonArray(null));
     }
 
     @Test
-    public void copyConstructorhasSameValues() {
+    public void copyConstructorHasSameValues() {
         array.add(23);
         JsonArray copy = new JsonArray(array);
         assertEquals(array.values(), copy.values());
@@ -80,7 +60,6 @@ public class JsonArrayTest extends TestUtil {
     @Test
     public void isEmptyisFalseAfterAdd() {
         array.add(true);
-
         assertFalse(array.isEmpty());
     }
 
@@ -109,19 +88,23 @@ public class JsonArrayTest extends TestUtil {
         assertFalse(iterator.hasNext());
     }
 
-    @Test(expected = UnsupportedOperationException.class)
+    @Test
     public void iteratordoesNotAllowModification() {
-        array.add(23);
-        Iterator<JsonValue> iterator = array.iterator();
-        iterator.next();
-        iterator.remove();
+        Assertions.assertThrows(UnsupportedOperationException.class, () -> {
+            array.add(23);
+            Iterator<JsonValue> iterator = array.iterator();
+            iterator.next();
+            iterator.remove();
+        });
     }
 
-    @Test(expected = ConcurrentModificationException.class)
+    @Test
     public void iteratordetectsConcurrentModification() {
-        Iterator<JsonValue> iterator = array.iterator();
-        array.add(23);
-        iterator.next();
+        Assertions.assertThrows(ConcurrentModificationException.class, () -> {
+            Iterator<JsonValue> iterator = array.iterator();
+            array.add(23);
+            iterator.next();
+        });
     }
 
     @Test
@@ -156,9 +139,9 @@ public class JsonArrayTest extends TestUtil {
         assertEquals(Json.of(23), value);
     }
 
-    @Test(expected = IndexOutOfBoundsException.class)
+    @Test
     public void getfailsWithInvalidIndex() {
-        array.get(0);
+        Assertions.assertThrows(IndexOutOfBoundsException.class, () -> array.get(0));
     }
 
     @Test
@@ -258,7 +241,7 @@ public class JsonArrayTest extends TestUtil {
 
     @Test
     public void addjsonfailsWithNull() {
-        assertException(NullPointerException.class, null, (Runnable) () -> array.add((JsonValue) null));
+        Assertions.assertThrows(NullPointerException.class, () -> array.add((JsonValue) null));
     }
 
     @Test
@@ -395,12 +378,14 @@ public class JsonArrayTest extends TestUtil {
     @Test
     public void setJsonFailsWithNull() {
         array.add(false);
-        assertException(NullPointerException.class, null, (Runnable) () -> array.set(0, (JsonValue) null));
+        Assertions.assertThrows(NullPointerException.class, () ->
+                array.set(0, (JsonValue) null));
     }
 
-    @Test(expected = IndexOutOfBoundsException.class)
+    @Test
     public void setjsonfailsWithInvalidIndex() {
-        array.set(0, JsonLiteral.NULL);
+        Assertions.assertThrows(IndexOutOfBoundsException.class, () ->
+                array.set(0, JsonLiteral.NULL));
     }
 
     @Test
@@ -416,9 +401,11 @@ public class JsonArrayTest extends TestUtil {
         assertEquals("[3,4,5]", array.toString());
     }
 
-    @Test(expected = IndexOutOfBoundsException.class)
+    @Test
     public void removefailsWithInvalidIndex() {
-        array.remove(0);
+        Assertions.assertThrows(IndexOutOfBoundsException.class, () ->
+            array.remove(0)
+        );
     }
 
     @Test

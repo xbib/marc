@@ -1,7 +1,7 @@
 package org.xbib.marc.io;
 
-import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 import org.marc4j.MarcPermissiveStreamReader;
 import org.marc4j.MarcReader;
 import org.marc4j.marc.Record;
@@ -18,7 +18,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.zip.GZIPInputStream;
 
-@Ignore
+@Disabled("large file")
 public class UncompressLargeFileTest {
 
     private static final Logger logger = Logger.getLogger(UncompressLargeFileTest.class.getName());

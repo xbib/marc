@@ -1,11 +1,9 @@
 package org.xbib.marc;
 
-import static org.junit.Assert.assertThat;
-
-import org.junit.Test;
+import static org.hamcrest.MatcherAssert.assertThat;
+import org.junit.jupiter.api.Test;
 import org.xbib.marc.xml.MarcXchangeWriter;
 import org.xmlunit.matchers.CompareMatcher;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -65,7 +63,6 @@ public class MarcRoundTripTest {
                         .writeCollection();
             }
             // compare both to expected file structure
-
             assertThat(file, CompareMatcher.isIdenticalTo(getClass().getResource(s + ".xml").openStream()));
             assertThat(file2, CompareMatcher.isIdenticalTo(getClass().getResource(s + ".xml").openStream()));
         }

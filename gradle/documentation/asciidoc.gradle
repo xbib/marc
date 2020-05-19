@@ -1,0 +1,34 @@
+apply plugin: 'org.xbib.gradle.plugin.asciidoctor'
+
+configurations {
+    asciidoclet
+}
+
+dependencies {
+    asciidoclet "org.asciidoctor:asciidoclet:${project.property('asciidoclet.version')}"
+}
+
+/*
+javadoc {
+    options.docletpath = configurations.asciidoclet.files.asType(List)
+    options.doclet = 'org.asciidoctor.Asciidoclet'
+    //options.overview = "src/docs/asciidoclet/overview.adoc"
+    options.addStringOption "-base-dir", "${projectDir}"
+    options.addStringOption "-attribute",
+            "name=${project.name},version=${project.version},title-link=https://github.com/xbib/${project.name}"
+    configure(options) {
+        noTimestamp = true
+    }
+}*/
+
+asciidoctor {
+    attributes 'source-highlighter': 'coderay',
+            toc: 'left',
+            doctype: 'book',
+            icons: 'font',
+            encoding: 'utf-8',
+            sectlink: true,
+            sectanchors: true,
+            linkattrs: true,
+            imagesdir: 'img'
+}

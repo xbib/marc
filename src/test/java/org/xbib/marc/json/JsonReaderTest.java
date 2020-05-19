@@ -1,37 +1,17 @@
-/*
-   Copyright 2016 Jörg Prante
-
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
-
- */
 package org.xbib.marc.json;
 
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.StringStartsWith.startsWith;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertSame;
-import static org.junit.Assert.assertThat;
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertSame;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.xbib.marc.json.Json.parse;
-
-import org.junit.Test;
-
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 import java.io.IOException;
 import java.io.StringReader;
 
-/**
- *
- */
-public class JsonReaderTest extends TestUtil {
+public class JsonReaderTest {
 
     private static String join(String... strings) {
         StringBuilder builder = new StringBuilder();
@@ -41,27 +21,35 @@ public class JsonReaderTest extends TestUtil {
         return builder.toString();
     }
 
-    @Test(expected = NullPointerException.class)
+    @Test
     public void constructorRejectsNullHandler() {
-        new JsonReader<>(null, null);
+        Assertions.assertThrows(NullPointerException.class, () -> {
+            new JsonReader<>(null, null);
+        });
     }
 
-    @Test(expected = NullPointerException.class)
-    public void parseStringrRjectsNull() throws IOException {
-        JsonReader<Object, Object> reader = new JsonReader<>(new StringReader(null), new TestHandler());
-        reader.parse();
+    @Test
+    public void parseStringrRejectsNull() {
+        Assertions.assertThrows(NullPointerException.class, () -> {
+            JsonReader<Object, Object> reader = new JsonReader<>(new StringReader(null), new TestHandler());
+            reader.parse();
+        });
     }
 
-    @Test(expected = NullPointerException.class)
-    public void parseReaderRejectsNull() throws IOException {
-        JsonReader<Object, Object> reader = new JsonReader<>(null, new TestHandler());
-        reader.parse();
+    @Test
+    public void parseReaderRejectsNull() {
+        Assertions.assertThrows(NullPointerException.class, () -> {
+            JsonReader<Object, Object> reader = new JsonReader<>(null, new TestHandler());
+            reader.parse();
+        });
     }
 
-    @Test(expected = IllegalArgumentException.class)
-    public void parseReaderRejectsNegativeBufferSize() throws IOException {
-        JsonReader<Object, Object> reader = new JsonReader<>(new StringReader("[]"), new TestHandler());
-        reader.parse(-1);
+    @Test
+    public void parseReaderRejectsNegativeBufferSize() {
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            JsonReader<Object, Object> reader = new JsonReader<>(new StringReader("[]"), new TestHandler());
+            reader.parse(-1);
+        });
     }
 
     @Test
@@ -72,7 +60,7 @@ public class JsonReaderTest extends TestUtil {
     @Test
     public void parseReaderRejectsEmpty() {
         JsonReader<Object, Object> reader = new JsonReader<>(new StringReader(""), new TestHandler());
-        JsonException exception = assertException(JsonException.class, (RunnableEx) reader::parse);
+        JsonException exception = Assertions.assertThrows(JsonException.class, reader::parse);
         assertThat(exception.getMessage(), startsWith("Unexpected end of input"));
     }
 
@@ -253,7 +241,7 @@ public class JsonReaderTest extends TestUtil {
         final String input = "{\n  \"a\": 23,\n  \"b\": 42,\n}";
         TestHandler handler = new TestHandler();
         JsonReader<Object, Object> reader = new JsonReader<>(new StringReader(input), handler);
-        assertException(JsonException.class, (RunnableEx) () -> reader.parse(3));
+        Assertions.assertThrows(JsonException.class, () -> reader.parse(3));
     }
 
     @Test
@@ -265,7 +253,7 @@ public class JsonReaderTest extends TestUtil {
         final String input = array.toString();
         TestHandler handler = new TestHandler();
         JsonReader<Object, Object> reader = new JsonReader<>(new StringReader(input), handler);
-        JsonException exception = assertException(JsonException.class, (RunnableEx) reader::parse);
+        JsonException exception = Assertions.assertThrows(JsonException.class, reader::parse);
         assertEquals("Nesting too deep", exception.getMessage());
     }
 
@@ -278,7 +266,7 @@ public class JsonReaderTest extends TestUtil {
         final String input = object.toString();
         TestHandler handler = new TestHandler();
         JsonReader<Object, Object> reader = new JsonReader<>(new StringReader(input), handler);
-        JsonException exception = assertException(JsonException.class, (RunnableEx) reader::parse);
+        JsonException exception = Assertions.assertThrows(JsonException.class, reader::parse);
         assertEquals("Nesting too deep", exception.getMessage());
     }
 
@@ -291,7 +279,7 @@ public class JsonReaderTest extends TestUtil {
         final String input = value.toString();
         TestHandler handler = new TestHandler();
         JsonReader<Object, Object> reader = new JsonReader<>(new StringReader(input), handler);
-        JsonException exception = assertException(JsonException.class, (RunnableEx) reader::parse);
+        JsonException exception = Assertions.assertThrows(JsonException.class, reader::parse);
         assertEquals("Nesting too deep", exception.getMessage());
     }
 
@@ -686,8 +674,7 @@ public class JsonReaderTest extends TestUtil {
     private void assertParseException(int offset, String message, final String json) {
         TestHandler handler = new TestHandler();
         JsonReader<Object, Object> reader = new JsonReader<>(new StringReader(json), handler);
-
-        JsonException exception = assertException(JsonException.class, (Runnable) () -> {
+        JsonException exception = Assertions.assertThrows(JsonException.class, () -> {
             try {
                 reader.parse();
             } catch (IOException e) {

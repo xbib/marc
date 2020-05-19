@@ -1,17 +1,13 @@
 package org.xbib.marc;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-
-import org.junit.Test;
-
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Test;
 import java.io.InputStream;
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.util.concurrent.atomic.AtomicInteger;
 
-/**
- *
- */
 public class SWBTest {
 
     @Test
@@ -48,7 +44,7 @@ public class SWBTest {
             try (InputStream in = getClass().getResource(file).openStream()) {
                 Marc.Builder builder = Marc.builder()
                         .setInputStream(in)
-                        .setCharset(Charset.forName("UTF-8"));
+                        .setCharset(StandardCharsets.UTF_8);
                 for (MarcRecord marcRecord : builder.iterable()) {
                     count++;
                 }

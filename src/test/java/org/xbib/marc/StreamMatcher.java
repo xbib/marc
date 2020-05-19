@@ -16,8 +16,7 @@
  */
 package org.xbib.marc;
 
-import org.junit.Assert;
-
+import static org.junit.jupiter.api.Assertions.fail;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -29,7 +28,7 @@ import java.nio.charset.StandardCharsets;
 /**
  *
  */
-public class StreamMatcher extends Assert {
+public class StreamMatcher {
 
     public static void assertStream(String name, InputStream expected, String actual) throws IOException {
         assertStream(name, expected, new ByteArrayInputStream(actual.getBytes(StandardCharsets.UTF_8)));

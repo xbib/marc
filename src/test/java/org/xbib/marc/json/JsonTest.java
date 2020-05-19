@@ -1,35 +1,15 @@
-/*
-   Copyright 2016 Jörg Prante
-
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
-
- */
 package org.xbib.marc.json;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertSame;
-import static org.junit.Assert.assertTrue;
-
-import org.junit.Test;
-
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertSame;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 import java.io.IOException;
 import java.io.Reader;
 import java.io.StringReader;
 
-/**
- *
- */
-public class JsonTest extends TestUtil {
+public class JsonTest {
 
     @Test
     public void literalConstants() {
@@ -72,14 +52,15 @@ public class JsonTest extends TestUtil {
     @Test
     public void valueFloatFailsWithInfinity() {
         String message = "Infinite and NaN values not permitted in JSON";
-        assertException(IllegalArgumentException.class, message,
-                (Runnable) () -> Json.of(Float.POSITIVE_INFINITY));
+        Assertions.assertThrows(IllegalArgumentException.class,
+                () ->  Json.of(Float.POSITIVE_INFINITY), message);
     }
 
     @Test
     public void valuefloatfailsWithNaN() {
         String message = "Infinite and NaN values not permitted in JSON";
-        assertException(IllegalArgumentException.class, message, (Runnable) () -> Json.of(Float.NaN));
+        Assertions.assertThrows(IllegalArgumentException.class,
+                () -> Json.of(Float.NaN), message);
     }
 
     @Test
@@ -100,13 +81,15 @@ public class JsonTest extends TestUtil {
     @Test
     public void valuedoublefailsWithInfinity() {
         String message = "Infinite and NaN values not permitted in JSON";
-        assertException(IllegalArgumentException.class, message, (Runnable) () -> Json.of(Double.POSITIVE_INFINITY));
+        Assertions.assertThrows(IllegalArgumentException.class,
+                () -> Json.of(Double.POSITIVE_INFINITY), message);
     }
 
     @Test
     public void valuedoublefailsWithNaN() {
         String message = "Infinite and NaN values not permitted in JSON";
-        assertException(IllegalArgumentException.class, message, (Runnable) () -> Json.of(Double.NaN));
+        Assertions.assertThrows(IllegalArgumentException.class,
+                () -> Json.of(Double.NaN), message);
     }
 
     @Test
@@ -140,7 +123,7 @@ public class JsonTest extends TestUtil {
 
     @Test
     public void arrayintfailsWithNull() {
-        assertException(NullPointerException.class, null, (Runnable) () -> Json.array((int[]) null));
+        Assertions.assertThrows(NullPointerException.class, () -> Json.array((int[]) null));
     }
 
     @Test
@@ -151,7 +134,7 @@ public class JsonTest extends TestUtil {
 
     @Test
     public void arraylongfailsWithNull() {
-        assertException(NullPointerException.class, null, (Runnable) () -> Json.array((long[]) null));
+        Assertions.assertThrows(NullPointerException.class, () -> Json.array((long[]) null));
     }
 
     @Test
@@ -162,7 +145,7 @@ public class JsonTest extends TestUtil {
 
     @Test
     public void arrayfloatfailsWithNull() {
-        assertException(NullPointerException.class, null, (Runnable) () -> Json.array((float[]) null));
+        Assertions.assertThrows(NullPointerException.class, () -> Json.array((float[]) null));
     }
 
     @Test
@@ -173,7 +156,7 @@ public class JsonTest extends TestUtil {
 
     @Test
     public void arraydoublefailsWithNull() {
-        assertException(NullPointerException.class, null, (Runnable) () -> Json.array((double[]) null));
+        Assertions.assertThrows(NullPointerException.class, () -> Json.array((double[]) null));
     }
 
     @Test
@@ -184,7 +167,7 @@ public class JsonTest extends TestUtil {
 
     @Test
     public void arraybooleanfailsWithNull() {
-        assertException(NullPointerException.class, null, (Runnable) () -> Json.array((boolean[]) null));
+        Assertions.assertThrows(NullPointerException.class, () -> Json.array((boolean[]) null));
     }
 
     @Test
@@ -195,7 +178,7 @@ public class JsonTest extends TestUtil {
 
     @Test
     public void arraystringfailsWithNull() {
-        assertException(NullPointerException.class, null, (Runnable) () -> Json.array((String[]) null));
+        Assertions.assertThrows(NullPointerException.class, () -> Json.array((String[]) null));
     }
 
     @Test
@@ -210,13 +193,7 @@ public class JsonTest extends TestUtil {
 
     @Test
     public void parsestringfailsWithNull() {
-        assertException(NullPointerException.class, null, (Runnable) () -> {
-            try {
-                Json.parse((String) null);
-            } catch (IOException e) {
-                //
-            }
-        });
+        Assertions.assertThrows(NullPointerException.class, () -> Json.parse((String) null));
     }
 
     @Test

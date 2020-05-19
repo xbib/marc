@@ -1,28 +1,11 @@
-/*
-   Copyright 2016 Jörg Prante
-
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
-
- */
 package org.xbib.marc.xml;
 
-import org.junit.Assert;
-import org.junit.Test;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.junit.jupiter.api.Assertions.assertNull;
+import org.junit.jupiter.api.Test;
 import org.xbib.marc.Marc;
 import org.xbib.marc.MarcXchangeConstants;
 import org.xmlunit.matchers.CompareMatcher;
-
-import java.io.FileWriter;
 import java.io.InputStream;
 import java.io.StringWriter;
 import java.nio.charset.StandardCharsets;
@@ -30,7 +13,7 @@ import java.nio.charset.StandardCharsets;
 /**
  *
  */
-public class MarcXMLTest extends Assert {
+public class MarcXMLTest {
 
     /**
      * Parsing MARC XML embedded in OAI response from DNB/ZDB.
@@ -66,7 +49,6 @@ public class MarcXMLTest extends Assert {
         }
         assertThat(sw.toString(),
                 CompareMatcher.isIdenticalTo(getClass().getResource(s + "-marcxchange.xml").openStream()));
-
     }
 
     /**

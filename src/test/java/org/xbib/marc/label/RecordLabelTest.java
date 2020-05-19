@@ -1,24 +1,8 @@
-/*
-   Copyright 2016 Jörg Prante
-
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
-
- */
 package org.xbib.marc.label;
 
-import static org.junit.Assert.assertEquals;
-
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 /**
  *
@@ -37,10 +21,12 @@ public class RecordLabelTest {
         assertEquals(2, recordLabel.getIndicatorLength());
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void testIllegalIndicatorLength() {
-        RecordLabel recordLabel = RecordLabel.builder().setIndicatorLength(10).build();
-        assertEquals(10, recordLabel.getIndicatorLength());
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            RecordLabel recordLabel = RecordLabel.builder().setIndicatorLength(10).build();
+            assertEquals(10, recordLabel.getIndicatorLength());
+        });
     }
 
     @Test
@@ -49,15 +35,19 @@ public class RecordLabelTest {
         assertEquals(2, recordLabel.getSubfieldIdentifierLength());
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void testIllegalSubfieldIdentifierLength() {
-        RecordLabel recordLabel = RecordLabel.builder().setSubfieldIdentifierLength(10).build();
-        assertEquals(10, recordLabel.getSubfieldIdentifierLength());
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            RecordLabel recordLabel = RecordLabel.builder().setSubfieldIdentifierLength(10).build();
+            assertEquals(10, recordLabel.getSubfieldIdentifierLength());
+        });
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void testNegativeMaxRecordLength() {
-        RecordLabel recordLabel = RecordLabel.builder().setRecordLength(-1).build();
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            RecordLabel recordLabel = RecordLabel.builder().setRecordLength(-1).build();
+        });
     }
 
     @Test
@@ -66,9 +56,11 @@ public class RecordLabelTest {
         assertEquals(9999, recordLabel.getRecordLength());
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void testOverflowRecordLength() {
-        RecordLabel recordLabel = RecordLabel.builder().setRecordLength(10000).build();
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            RecordLabel recordLabel = RecordLabel.builder().setRecordLength(10000).build();
+        });
     }
 
     @Test
@@ -83,10 +75,12 @@ public class RecordLabelTest {
         assertEquals(5, recordLabel.getDataFieldLength());
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void testIllegalDataFieldLength() {
-        RecordLabel recordLabel = RecordLabel.builder().setDataFieldLength(10).build();
-        assertEquals(10, recordLabel.getDataFieldLength());
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            RecordLabel recordLabel = RecordLabel.builder().setDataFieldLength(10).build();
+            assertEquals(10, recordLabel.getDataFieldLength());
+        });
     }
 
     @Test
@@ -95,10 +89,12 @@ public class RecordLabelTest {
         assertEquals(4, recordLabel.getStartingCharacterPositionLength());
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void testIllegalStartingCharacterPositionLength() {
-        RecordLabel recordLabel = RecordLabel.builder().setStartingCharacterPositionLength(10).build();
-        assertEquals(10, recordLabel.getStartingCharacterPositionLength());
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            RecordLabel recordLabel = RecordLabel.builder().setStartingCharacterPositionLength(10).build();
+            assertEquals(10, recordLabel.getStartingCharacterPositionLength());
+        });
     }
 
     @Test
@@ -107,10 +103,12 @@ public class RecordLabelTest {
         assertEquals(2, recordLabel.getSegmentIdentifierLength());
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void testIllegalSegmentIdentifierLength() {
-        RecordLabel recordLabel = RecordLabel.builder().setSegmentIdentifierLength(10).build();
-        assertEquals(10, recordLabel.getSegmentIdentifierLength());
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            RecordLabel recordLabel = RecordLabel.builder().setSegmentIdentifierLength(10).build();
+            assertEquals(10, recordLabel.getSegmentIdentifierLength());
+        });
     }
 
     @Test

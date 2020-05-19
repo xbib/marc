@@ -1,15 +1,11 @@
 package org.xbib.marc.transformer;
 
-import static org.junit.Assert.assertEquals;
-
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
 import org.xbib.marc.MarcField;
 import org.xbib.marc.transformer.value.MarcValueTransformer;
 import org.xbib.marc.transformer.value.MarcValueTransformers;
 
-/**
- *
- */
 public class MarcValueTransformerTest {
 
     @Test

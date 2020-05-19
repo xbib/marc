@@ -1,0 +1,64 @@
+
+apply plugin: "de.marcphilipp.nexus-publish"
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+            artifact sourcesJar
+            artifact javadocJar
+            pom {
+                name = project.name
+                description = rootProject.ext.description
+                url = rootProject.ext.url
+                inceptionYear = rootProject.ext.inceptionYear
+                packaging = 'jar'
+                organization {
+                    name = 'xbib'
+                    url = 'https://xbib.org'
+                }
+                developers {
+                    developer {
+                        id = 'jprante'
+                        name = 'Jörg Prante'
+                        email = 'joergprante@gmail.com'
+                        url = 'https://github.com/jprante'
+                    }
+                }
+                scm {
+                    url = rootProject.ext.scmUrl
+                    connection = rootProject.ext.scmConnection
+                    developerConnection = rootProject.ext.scmDeveloperConnection
+                }
+                issueManagement {
+                    system = rootProject.ext.issueManagementSystem
+                    url = rootProject.ext.issueManagementUrl
+                }
+                licenses {
+                    license {
+                        name = rootProject.ext.licenseName
+                        url = rootProject.ext.licenseUrl
+                        distribution = 'repo'
+                    }
+                }
+            }
+        }
+    }
+}
+
+if (project.hasProperty("signing.keyId")) {
+    apply plugin: 'signing'
+    signing {
+        sign publishing.publications.mavenJava
+    }
+}
+
+nexusPublishing {
+    repositories {
+        sonatype {
+            username = project.property('ossrhUsername')
+            password = project.property('ossrhPassword')
+            packageGroup = "org.xbib"
+        }
+    }
+}

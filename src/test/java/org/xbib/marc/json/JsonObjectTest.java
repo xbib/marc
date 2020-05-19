@@ -1,45 +1,25 @@
-/*
-   Copyright 2016 Jörg Prante
-
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
-
- */
 package org.xbib.marc.json;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertSame;
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.assertSame;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.inOrder;
 import static org.mockito.Mockito.mock;
-
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.mockito.InOrder;
-
 import java.io.IOException;
 import java.util.ConcurrentModificationException;
 import java.util.Iterator;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-/**
- *
- */
-public class JsonObjectTest extends TestUtil {
+public class JsonObjectTest {
 
     private JsonObject object;
 
@@ -51,21 +31,20 @@ public class JsonObjectTest extends TestUtil {
         return object;
     }
 
-    @Before
+    @BeforeEach
     public void setUp() {
         object = new JsonObject();
     }
 
     @Test
     public void copyConstructorfailsWithNull() {
-        assertException(NullPointerException.class, null, (Runnable) () -> new JsonObject(null));
+        Assertions.assertThrows(NullPointerException.class, () -> new JsonObject(null));
     }
 
     @Test
     public void copyConstructorhasSameValues() {
         object.add("foo", 23);
         JsonObject copy = new JsonObject(object);
-
         assertEquals(object.names(), copy.names());
         assertSame(object.get("foo"), copy.get("foo"));
     }
@@ -74,7 +53,6 @@ public class JsonObjectTest extends TestUtil {
     public void copyConstructorworksOnSafeCopy() {
         JsonObject copy = new JsonObject(object);
         object.add("foo", 23);
-
         assertTrue(copy.isEmpty());
     }
 
@@ -86,7 +64,6 @@ public class JsonObjectTest extends TestUtil {
     @Test
     public void isEmptyfalseAfterAdd() {
         object.add("a", true);
-
         assertFalse(object.isEmpty());
     }
 
@@ -98,7 +75,6 @@ public class JsonObjectTest extends TestUtil {
     @Test
     public void sizeoneAfterAdd() {
         object.add("a", true);
-
         assertEquals(1, object.size());
     }
 
@@ -106,7 +82,6 @@ public class JsonObjectTest extends TestUtil {
     public void keyRepetitionallowsMultipleEntries() {
         object.add("a", true);
         object.add("a", "value");
-
         assertEquals(2, object.size());
     }
 
@@ -114,7 +89,6 @@ public class JsonObjectTest extends TestUtil {
     public void keyRepetitiongetsLastEntry() {
         object.add("a", true);
         object.add("a", "value");
-
         assertEquals("value", object.getString("a", "missing"));
     }
 
@@ -122,11 +96,9 @@ public class JsonObjectTest extends TestUtil {
     public void keyRepetitionequalityConsidersRepetitions() {
         object.add("a", true);
         object.add("a", "value");
-
         JsonObject onlyFirstProperty = new JsonObject();
         onlyFirstProperty.add("a", true);
         assertNotEquals(onlyFirstProperty, object);
-
         JsonObject bothProperties = new JsonObject();
         bothProperties.add("a", true);
         bothProperties.add("a", "value");
@@ -141,7 +113,6 @@ public class JsonObjectTest extends TestUtil {
     @Test
     public void namescontainsNameAfterAdd() {
         object.add("foo", true);
-
         List<String> names = object.names();
         assertEquals(1, names.size());
         assertEquals("foo", names.get(0));
@@ -150,18 +121,17 @@ public class JsonObjectTest extends TestUtil {
     @Test
     public void namesreflectsChanges() {
         List<String> names = object.names();
-
         object.add("foo", true);
-
         assertEquals(1, names.size());
         assertEquals("foo", names.get(0));
     }
 
-    @Test(expected = UnsupportedOperationException.class)
+    @Test
     public void namespreventsModification() {
-        List<String> names = object.names();
-
-        names.add("foo");
+        Assertions.assertThrows(UnsupportedOperationException.class, () -> {
+            List<String> names = object.names();
+            names.add("foo");
+        });
     }
 
     @Test
@@ -193,30 +163,37 @@ public class JsonObjectTest extends TestUtil {
         assertEquals(new JsonObject.Member("b", JsonLiteral.FALSE), iterator.next());
     }
 
-    @Test(expected = NoSuchElementException.class)
+    @Test
     public void iteratornextFailsAtEnd() {
-        Iterator<JsonObject.Member> iterator = object.iterator();
-        iterator.next();
+        Assertions.assertThrows(NoSuchElementException.class, () -> {
+            Iterator<JsonObject.Member> iterator = object.iterator();
+            iterator.next();
+
+        });
     }
 
-    @Test(expected = UnsupportedOperationException.class)
+    @Test
     public void iteratordoesNotAllowModification() {
-        object.add("a", 23);
-        Iterator<JsonObject.Member> iterator = object.iterator();
-        iterator.next();
-        iterator.remove();
+        Assertions.assertThrows(UnsupportedOperationException.class, () -> {
+            object.add("a", 23);
+            Iterator<JsonObject.Member> iterator = object.iterator();
+            iterator.next();
+            iterator.remove();
+        });
     }
 
-    @Test(expected = ConcurrentModificationException.class)
+    @Test
     public void iteratordetectsConcurrentModification() {
-        Iterator<JsonObject.Member> iterator = object.iterator();
-        object.add("a", 23);
-        iterator.next();
+        Assertions.assertThrows(ConcurrentModificationException.class, () -> {
+            Iterator<JsonObject.Member> iterator = object.iterator();
+            object.add("a", 23);
+            iterator.next();
+        });
     }
 
     @Test
     public void getfailsWithNullName() {
-        assertException(NullPointerException.class, null, (Runnable) () -> object.get(null));
+        Assertions.assertThrows(NullPointerException.class, () -> object.get(null));
     }
 
     @Test
@@ -310,13 +287,12 @@ public class JsonObjectTest extends TestUtil {
 
     @Test
     public void addfailsWithNullName() {
-        assertException(NullPointerException.class, "name is null", (Runnable) () -> object.add(null, 23));
+        Assertions.assertThrows(NullPointerException.class, () ->  object.add(null, 23));
     }
 
     @Test
     public void addint() {
         object.add("a", 23);
-
         assertEquals("{\"a\":23}", object.toString());
     }
 
@@ -328,7 +304,6 @@ public class JsonObjectTest extends TestUtil {
     @Test
     public void addlong() {
         object.add("a", 23L);
-
         assertEquals("{\"a\":23}", object.toString());
     }
 
@@ -340,7 +315,6 @@ public class JsonObjectTest extends TestUtil {
     @Test
     public void addfloat() {
         object.add("a", 3.14f);
-
         assertEquals("{\"a\":3.14}", object.toString());
     }
 
@@ -352,7 +326,6 @@ public class JsonObjectTest extends TestUtil {
     @Test
     public void adddouble() {
         object.add("a", 3.14d);
-
         assertEquals("{\"a\":3.14}", object.toString());
     }
 
@@ -364,7 +337,6 @@ public class JsonObjectTest extends TestUtil {
     @Test
     public void addboolean() {
         object.add("a", true);
-
         assertEquals("{\"a\":true}", object.toString());
     }
 
@@ -376,14 +348,12 @@ public class JsonObjectTest extends TestUtil {
     @Test
     public void addstring() {
         object.add("a", "foo");
-
         assertEquals("{\"a\":\"foo\"}", object.toString());
     }
 
     @Test
     public void addstringtoleratesNull() {
         object.add("a", (String) null);
-
         assertEquals("{\"a\":null}", object.toString());
     }
 
@@ -395,21 +365,18 @@ public class JsonObjectTest extends TestUtil {
     @Test
     public void addjsonNull() {
         object.add("a", JsonLiteral.NULL);
-
         assertEquals("{\"a\":null}", object.toString());
     }
 
     @Test
     public void addjsonArray() {
         object.add("a", new JsonArray());
-
         assertEquals("{\"a\":[]}", object.toString());
     }
 
     @Test
     public void addjsonObject() {
         object.add("a", new JsonObject());
-
         assertEquals("{\"a\":{}}", object.toString());
     }
 
@@ -420,16 +387,15 @@ public class JsonObjectTest extends TestUtil {
 
     @Test
     public void addjsonfailsWithNull() {
-        assertException(NullPointerException.class, "value is null", (Runnable) () -> object.add("a", (JsonValue) null));
+        Assertions.assertThrows(NullPointerException.class, () ->
+                object.add("a", (JsonValue) null));
     }
 
     @Test
     public void addjsonnestedArray() {
         JsonArray innerArray = new JsonArray();
         innerArray.add(23);
-
         object.add("a", innerArray);
-
         assertEquals("{\"a\":[23]}", object.toString());
     }
 
@@ -437,9 +403,7 @@ public class JsonObjectTest extends TestUtil {
     public void addjsonnestedArraymodifiedAfterAdd() {
         JsonArray innerArray = new JsonArray();
         object.add("a", innerArray);
-
         innerArray.add(23);
-
         assertEquals("{\"a\":[23]}", object.toString());
     }
 
@@ -447,9 +411,7 @@ public class JsonObjectTest extends TestUtil {
     public void addjsonnestedObject() {
         JsonObject innerObject = new JsonObject();
         innerObject.add("a", 23);
-
         object.add("a", innerObject);
-
         assertEquals("{\"a\":{\"a\":23}}", object.toString());
     }
 
@@ -457,16 +419,13 @@ public class JsonObjectTest extends TestUtil {
     public void addjsonnestedObjectmodifiedAfterAdd() {
         JsonObject innerObject = new JsonObject();
         object.add("a", innerObject);
-
         innerObject.add("a", 23);
-
         assertEquals("{\"a\":{\"a\":23}}", object.toString());
     }
 
     @Test
     public void setint() {
         object.set("a", 23);
-
         assertEquals("{\"a\":23}", object.toString());
     }
 
@@ -478,7 +437,6 @@ public class JsonObjectTest extends TestUtil {
     @Test
     public void setlong() {
         object.set("a", 23L);
-
         assertEquals("{\"a\":23}", object.toString());
     }
 
@@ -589,7 +547,7 @@ public class JsonObjectTest extends TestUtil {
 
     @Test
     public void removefailsWithNullName() {
-        assertException(NullPointerException.class, null, (Runnable) () -> object.remove(null));
+        Assertions.assertThrows(NullPointerException.class, () -> object.remove(null));
     }
 
     @Test
@@ -645,7 +603,7 @@ public class JsonObjectTest extends TestUtil {
 
     @Test
     public void mergefailsWithNull() {
-        assertException(NullPointerException.class, null, (Runnable) () -> object.merge(null));
+        Assertions.assertThrows(NullPointerException.class, () -> object.merge(null));
     }
 
     @Test
