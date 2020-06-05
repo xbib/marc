@@ -23,7 +23,7 @@ import java.io.InputStream;
  * Interface for stream token handlers.
  */
 @FunctionalInterface
-interface StreamTokenHandler {
+public interface StreamTokenHandler {
     /**
      * Process token.
      * @param token the token

@@ -24,7 +24,7 @@ import java.util.Arrays;
  * Controls the formatting of the JSON output. Use one of the available constants.
  */
 @FunctionalInterface
-interface JsonWriterConfig {
+public interface JsonWriterConfig {
 
     JsonWriter createWriter(Writer writer);
 

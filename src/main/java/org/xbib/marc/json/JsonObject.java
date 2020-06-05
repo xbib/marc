@@ -57,7 +57,7 @@ import java.util.Objects;
  * may lead to an inconsistent state.
  * </p>
  */
-class JsonObject extends JsonValue implements Iterable<JsonObject.Member> {
+public class JsonObject extends JsonValue implements Iterable<JsonObject.Member> {
 
     private final List<String> names;
 
@@ -68,7 +68,7 @@ class JsonObject extends JsonValue implements Iterable<JsonObject.Member> {
     /**
      * Creates a new empty JsonObject.
      */
-    JsonObject() {
+    public JsonObject() {
         names = new ArrayList<>();
         values = new ArrayList<>();
         table = new HashIndexTable();
@@ -674,12 +674,12 @@ class JsonObject extends JsonValue implements Iterable<JsonObject.Member> {
     /**
      * Represents a member of a JSON object, a pair of a name and a value.
      */
-    static class Member {
+    public static class Member {
 
         private final String name;
         private final JsonValue value;
 
-        Member(String name, JsonValue value) {
+        public Member(String name, JsonValue value) {
             this.name = name;
             this.value = value;
         }

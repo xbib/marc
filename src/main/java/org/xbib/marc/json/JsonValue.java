@@ -49,11 +49,7 @@ import java.io.StringWriter;
  * appropriate target type.
  * </p>
  */
-abstract class JsonValue {
-
-    JsonValue() {
-        // prevent subclasses outside of this package
-    }
+public abstract class JsonValue {
 
     /**
      * Detects whether this value represents a JSON object. If this is the case, this value is an

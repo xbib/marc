@@ -15,6 +15,6 @@ module org.xbib.marc {
     exports org.xbib.marc.transformer.field;
     exports org.xbib.marc.transformer.value;
     exports org.xbib.marc.xml;
+    requires transitive java.xml;
     requires java.logging;
-    requires java.xml;
 }

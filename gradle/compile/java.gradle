@@ -33,3 +33,11 @@ task javadocJar(type: Jar, dependsOn: javadoc) {
 artifacts {
     archives sourcesJar, javadocJar
 }
+
+tasks.withType(JavaCompile) {
+    options.compilerArgs << '-Xlint:all'
+}
+
+javadoc {
+    options.addStringOption('Xdoclint:none', '-quiet')
+}
