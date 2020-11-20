@@ -2,18 +2,22 @@ package org.xbib.marc.xml;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 import org.xbib.marc.Marc;
+import org.xbib.marc.MarcRecord;
+import org.xbib.marc.MarcRecordListener;
 import org.xbib.marc.MarcXchangeConstants;
 import org.xmlunit.matchers.CompareMatcher;
 import java.io.InputStream;
 import java.io.StringWriter;
 import java.nio.charset.StandardCharsets;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
  *
  */
-public class MarcXMLTest {
+public class DNBSRUMarcXMLTest {
 
     /**
      * Parsing MARC XML embedded in OAI response from DNB/ZDB.
@@ -91,5 +95,72 @@ public class MarcXMLTest {
         }
         assertThat(sw.toString(),
                 CompareMatcher.isIdenticalTo(getClass().getResource(s + "-marcxchange.xml").openStream()));
+    }
+
+    @Test
+    public void testSRUMarcXmlPlus1() throws Exception {
+        String s = "zdb-sru-marcxmlplus1.xml";
+        InputStream in = getClass().getResourceAsStream(s);
+        StringWriter sw = new StringWriter();
+        //FileWriter sw = new FileWriter("zdb-sru-marcxmlplus1.xml-marcxchange.xml");
+        try (MarcXchangeWriter writer = new MarcXchangeWriter(sw, true)
+                .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)) {
+            writer.startDocument();
+            writer.startCustomElement("custom", "http://foobar", "root");
+            Marc.builder()
+                    .setInputStream(in)
+                    .setCharset(StandardCharsets.UTF_8)
+                    .setContentHandler(new MarcContentHandler()
+                            .setFormat("MarcXML")
+                            .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)
+                            .addNamespace("http://www.loc.gov/MARC21/slim")
+                            .setMarcListener(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE, writer)
+                            .setMarcListener(MarcXchangeConstants.HOLDINGS_TYPE, writer))
+                    .build()
+                    .xmlReader().parse();
+            writer.endCustomElement("custom", "http://foobar", "root");
+            writer.endDocument();
+            assertNull(writer.getException());
+        }
+        sw.close();
+        assertThat(sw.toString(),
+                CompareMatcher.isIdenticalTo(getClass().getResource(s + "-marcxchange.xml").openStream()));
+    }
+
+    @Test
+    public void testSRUMarcXmlPlus1RecordListener() throws Exception {
+        String s = "zdb-sru-marcxmlplus1.xml";
+        InputStream in = getClass().getResourceAsStream(s);
+        AtomicBoolean found = new AtomicBoolean();
+        MarcContentHandler marcListener = new MarcContentHandler();
+        MarcRecordListener marcRecordListener = new MarcRecordListener() {
+            @Override
+            public void beginCollection() {
+            }
+
+            @Override
+            public void record(MarcRecord marcRecord) {
+                found.set(true);
+            }
+
+            @Override
+            public void endCollection() {
+            }
+        };
+        // attach record listener
+        marcListener.setMarcRecordListener(marcRecordListener);
+        Marc.builder()
+                .setInputStream(in)
+                .setCharset(StandardCharsets.UTF_8)
+                .setContentHandler(new MarcContentHandler()
+                        .setFormat("MarcXML")
+                        .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)
+                        .addNamespace("http://www.loc.gov/MARC21/slim")
+                        .setMarcListener(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE, marcListener)
+                        .setMarcListener(MarcXchangeConstants.HOLDINGS_TYPE,marcListener))
+                .build()
+                .xmlReader()
+                .parse();
+        assertTrue(found.get());
     }
 }

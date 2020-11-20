@@ -19,6 +19,7 @@ package org.xbib.marc.xml;
 import org.xbib.marc.MarcField;
 import org.xbib.marc.MarcListener;
 import org.xbib.marc.MarcRecord;
+import org.xbib.marc.MarcRecordListener;
 import org.xbib.marc.transformer.value.MarcValueTransformers;
 
 import java.io.BufferedOutputStream;
@@ -229,6 +230,11 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
     @Override
     public MarcXchangeWriter setMarcListener(MarcListener listener) {
         super.setMarcListener(listener);
+        return this;
+    }
+
+    public MarcXchangeWriter setMarcRecordListener(MarcRecordListener recordListener) {
+        super.setMarcRecordListener(recordListener);
         return this;
     }
 

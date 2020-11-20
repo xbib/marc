@@ -576,6 +576,10 @@ public final class Marc {
                 builder.getMarcListener().endCollection();
             }
         }
+
+        public void parseRecords() throws IOException {
+
+        }
     }
 
     /**

@@ -67,9 +67,13 @@ public class MarcContentHandler
 
     protected MarcListener marcListener;
 
+    protected MarcRecordListener marcRecordListener;
+
     protected String format;
 
     protected String type;
+
+    protected String label;
 
     protected MarcValueTransformers marcValueTransformers;
 
@@ -79,9 +83,9 @@ public class MarcContentHandler
 
     private boolean isCollection = false;
 
-    private List<MarcField> marcFieldList = new LinkedList<>();
+    private final List<MarcField> marcFieldList = new LinkedList<>();
 
-    private Set<String> validNamespaces =
+    private final Set<String> validNamespaces =
             new HashSet<>(Arrays.asList(MARCXCHANGE_V1_NS_URI, MARCXCHANGE_V2_NS_URI, MARC21_SCHEMA_URI));
 
     protected String getDefaultFormat() {
@@ -110,6 +114,16 @@ public class MarcContentHandler
      */
     public MarcContentHandler setMarcListener(MarcListener listener) {
         this.listeners.put(this.type, listener);
+        return this;
+    }
+
+    /**
+     * Set MARC record listener..
+     * @param listener the MARC  recordlistener
+     * @return this handler
+     */
+    public MarcContentHandler setMarcRecordListener(MarcRecordListener listener) {
+        this.marcRecordListener = listener;
         return this;
     }
 
@@ -151,12 +165,18 @@ public class MarcContentHandler
         if (marcListener != null) {
             marcListener.beginCollection();
         }
+        if (marcRecordListener != null) {
+            marcRecordListener.beginCollection();
+        }
     }
 
     @Override
     public void endCollection() {
         if (marcListener != null) {
             marcListener.endCollection();
+        }
+        if (marcRecordListener != null) {
+            marcRecordListener.endCollection();
         }
     }
 
@@ -170,6 +190,7 @@ public class MarcContentHandler
 
     @Override
     public void leader(String label) {
+        this.label = label;
         if (marcListener != null) {
             marcListener.leader(label);
         }
@@ -177,16 +198,10 @@ public class MarcContentHandler
 
     @Override
     public void field(MarcField marcField) {
-        MarcField field = marcField;
         if (marcValueTransformers != null) {
-            field = marcValueTransformers.transformValue(field);
-        }
-        if (marcFieldTransformers != null) {
-            marcFieldList.add(marcField);
+            marcFieldList.add(marcValueTransformers.transformValue(marcField));
         } else {
-            if (!marcField.isEmpty() && marcListener != null) {
-                marcListener.field(field);
-            }
+            marcFieldList.add(marcField);
         }
     }
 
@@ -203,20 +218,38 @@ public class MarcContentHandler
     @Override
     public void endRecord() {
         try {
-            if (marcFieldTransformers != null) {
-                for (MarcField marcField : marcFieldTransformers.transform(marcFieldList)) {
-                    if (!marcField.isEmpty() && marcListener != null) {
-                        marcListener.field(marcField);
+            if (marcListener != null) {
+                if (marcFieldTransformers != null) {
+                    for (MarcField marcField : marcFieldTransformers.transform(marcFieldList)) {
+                        if (!marcField.isEmpty()) {
+                            marcListener.field(marcField);
+                        }
+                    }
+                } else {
+                    for (MarcField marcField : marcFieldList) {
+                        if (!marcField.isEmpty()) {
+                            marcListener.field(marcField);
+                        }
                     }
                 }
-                marcFieldTransformers.reset();
-                marcFieldList.clear();
-            }
-            if (marcListener != null) {
                 marcListener.endRecord();
+            }
+            if (marcRecordListener != null) {
+                if (label == null) {
+                    logger.log(Level.WARNING, "label is null, skipping record");
+                } else {
+                    MarcRecord marcRecord = new MarcRecord(getFormat(), getType(),
+                            RecordLabel.builder().from(label).build(),
+                            marcFieldList, false);
+                    marcRecordListener.record(marcRecord);
+                }
             }
         } finally {
             recordCounter.incrementAndGet();
+            if (marcFieldTransformers != null) {
+                marcFieldTransformers.reset();
+            }
+            marcFieldList.clear();
         }
     }
 

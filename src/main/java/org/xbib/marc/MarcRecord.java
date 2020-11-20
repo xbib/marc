@@ -56,7 +56,7 @@ public class MarcRecord extends LinkedHashMap<String, Object> {
      * @param marcFields  the MARC field
      * @param lightweight true if MARC record fields should not be entered into the underlying hash map.
      */
-    MarcRecord(String format, String type, RecordLabel recordLabel,
+    public MarcRecord(String format, String type, RecordLabel recordLabel,
                List<MarcField> marcFields, boolean lightweight) {
         super();
         this.format = format;

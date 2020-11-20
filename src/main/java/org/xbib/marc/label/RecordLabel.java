@@ -481,6 +481,10 @@ public class RecordLabel {
             return this;
         }
 
+        public Builder from(String label) {
+            return from(label.toCharArray());
+        }
+
         /**
          * Parse given record label.
          * @param recordLabel the record label
@@ -493,9 +497,7 @@ public class RecordLabel {
             } else if (label.length < LENGTH) {
                 // fill with blanks
                 char[] ch = new char[LENGTH - label.length];
-                for (int i = 0; i < ch.length; i++) {
-                    ch[i] = ' ';
-                }
+                Arrays.fill(ch, ' ');
                 char[] newLabel = new char[LENGTH];
                 System.arraycopy(label, 0, newLabel, 0, label.length);
                 System.arraycopy(ch, 0, newLabel, label.length, ch.length);
