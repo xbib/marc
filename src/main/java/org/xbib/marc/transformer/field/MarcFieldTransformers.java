@@ -31,6 +31,7 @@ public class MarcFieldTransformers extends LinkedList<MarcFieldTransformer> {
         LinkedList<MarcField> list = new LinkedList<>();
         // lastBuilt allows us to access the last MarcField built across different MarcFieldTransformer
         MarcField lastBuilt = null;
+        // critial area - marc fields must not change here - so we can not reuse transformes by multiple threads
         for (MarcField marcField : marcFields) {
             boolean found = false;
             String key;

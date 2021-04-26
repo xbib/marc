@@ -362,9 +362,9 @@ public class MarcField implements Comparable<MarcField> {
 
         private String value;
 
-        private LinkedList<Subfield> subfields;
+        private final LinkedList<Subfield> subfields;
 
-        private LinkedList<String> subfieldIds;
+        private final LinkedList<String> subfieldIds;
 
         private Boolean isControl;
 
@@ -516,7 +516,10 @@ public class MarcField implements Comparable<MarcField> {
          * @return this builder
          */
         public Builder subfieldValue(String value) {
-            subfields.add(new Subfield(subfields.removeLast().getId(), value));
+            if (!subfields.isEmpty()) {
+                String id = subfields.removeLast().getId();
+                subfields.add(new Subfield(id, value));
+            }
             return this;
         }
 
@@ -590,7 +593,8 @@ public class MarcField implements Comparable<MarcField> {
             this.position = field.getPosition();
             this.length = field.getLength();
             this.value = field.getValue();
-            this.subfields = new LinkedList<>(field.getSubfields());
+            this.subfields.clear();
+            this.subfields.addAll(field.getSubfields());
             for (Subfield subfield : subfields) {
                 subfieldIds.add(subfield.getId());
             }

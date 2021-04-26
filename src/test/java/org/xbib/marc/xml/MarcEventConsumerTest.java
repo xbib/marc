@@ -8,6 +8,7 @@ import org.xmlunit.matchers.CompareMatcher;
 import java.io.InputStream;
 import java.io.StringWriter;
 import java.nio.charset.StandardCharsets;
+import javax.xml.stream.XMLInputFactory;
 
 /**
  *
@@ -44,7 +45,7 @@ public class MarcEventConsumerTest {
                 .setFormat("AlephXML")
                 .setType("Bibliographic")
                 .build()
-                .parseEvents(consumer);
+                .parseEvents(XMLInputFactory.newFactory(), consumer);
         writer.endCollection();
         writer.endDocument();
         sw.close();

@@ -1,8 +1,9 @@
 package org.xbib.marc.tools;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
 
+@Disabled("system exit ends testing?")
 public class ToolTest {
 
     @Test

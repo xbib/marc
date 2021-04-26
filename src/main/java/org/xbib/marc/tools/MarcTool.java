@@ -29,6 +29,7 @@ import java.util.Objects;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.stream.StreamResult;
 
 /**
@@ -110,8 +111,9 @@ public class MarcTool {
                         .setMarcListener(writer);
                 if (schema != null && stylesheet != null && result != null) {
                     System.setProperty("http.agent", "Java Agent");
-                    builder.setSchema(schema).build().transform(new URL(stylesheet),
-                                    new StreamResult(Files.newBufferedWriter(Paths.get(result))));
+                    builder.setSchema(schema).build().transform(TransformerFactory.newInstance(),
+                            new URL(stylesheet),
+                            new StreamResult(Files.newBufferedWriter(Paths.get(result))));
                 } else {
                     builder.build().writeCollection(65536);
                 }

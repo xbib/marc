@@ -180,13 +180,14 @@ public class MarcToModsTest {
         StringWriter sw = new StringWriter();
         Result result = new StreamResult(sw);
         System.setProperty("http.agent", "Java Agent");
-        marc.transform(new URL("http://www.loc.gov/standards/mods/v3/MARC21slim2MODS3.xsl"), result);
+        marc.transform(TransformerFactory.newInstance(),
+                new URL("http://www.loc.gov/standards/mods/v3/MARC21slim2MODS3.xsl"), result);
         assertThat(sw.toString(),
                 CompareMatcher.isIdenticalTo(getClass().getResource("summerland-mods-loc-goc.xml").openStream()));
     }
 
 
-    private class ClasspathResourceURIResolver implements URIResolver {
+    private static class ClasspathResourceURIResolver implements URIResolver {
         @Override
         public Source resolve(String href, String base) throws TransformerException {
             return new StreamSource(getClass().getResourceAsStream(href));

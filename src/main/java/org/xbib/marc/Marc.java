@@ -126,18 +126,18 @@ public final class Marc {
 
     /**
      * Run XML stream parser over an XML input stream, with an XML event consumer.
+     * @param xmlInputFactory the XML input factory
      * @param consumer the XML event consumer
      * @throws XMLStreamException if parsing fails
      */
-    public void parseEvents(MarcXchangeEventConsumer consumer) throws XMLStreamException {
+    public void parseEvents(XMLInputFactory xmlInputFactory, MarcXchangeEventConsumer consumer) throws XMLStreamException {
         Objects.requireNonNull(consumer);
         if (builder.getMarcListeners() != null) {
             for (Map.Entry<String, MarcListener> entry : builder.getMarcListeners().entrySet()) {
                 consumer.setMarcListener(entry.getKey(), entry.getValue());
             }
         }
-        XMLInputFactory inputFactory = XMLInputFactory.newInstance();
-        XMLEventReader xmlEventReader = inputFactory.createXMLEventReader(builder.getInputStream());
+        XMLEventReader xmlEventReader = xmlInputFactory.createXMLEventReader(builder.getInputStream());
         while (xmlEventReader.hasNext()) {
             consumer.add(xmlEventReader.nextEvent());
         }
@@ -238,16 +238,6 @@ public final class Marc {
     public Document document() throws IOException {
         return new Sax2Dom(iso2709XmlReader(DEFAULT_BUFFER_SIZE),
                 new InputSource(builder.getInputStream())).document();
-    }
-
-    /**
-     * Transform W3C document of the record in the ISO 2709 input stream by an XSL stylesheet.
-     * @param stylesheetUrl the URL of the stylesheet
-     * @param result the result of the transformation
-     * @throws IOException if transformation fails
-     */
-    public void transform(URL stylesheetUrl, Result result) throws IOException {
-        transform(TransformerFactory.newInstance(), stylesheetUrl, result);
     }
 
     /**
@@ -440,6 +430,8 @@ public final class Marc {
 
         protected final Builder builder;
 
+        protected SAXParser saxParser;
+
         private MarcXmlReader(Builder builder) {
             this.builder = builder;
         }
@@ -504,6 +496,11 @@ public final class Marc {
             return builder.getContentHandler();
         }
 
+        public MarcXmlReader setSaxParser(SAXParser saxParser) {
+            this.saxParser = saxParser;
+            return this;
+        }
+
         /**
          * Parse MARC XML via SAX.
          *
@@ -524,21 +521,23 @@ public final class Marc {
                 builder.setContentHandler(handler);
             }
             try {
-                SAXParserFactory factory = SAXParserFactory.newInstance();
-                factory.setNamespaceAware(true);
-                SAXParser sax = factory.newSAXParser();
+                if (saxParser == null) {
+                    SAXParserFactory factory = SAXParserFactory.newInstance();
+                    factory.setNamespaceAware(true);
+                    saxParser = factory.newSAXParser();
+                }
                 if (builder.getFeatures() != null) {
                     for (Map.Entry<String, Boolean> entry : builder.getFeatures().entrySet()) {
-                        sax.getXMLReader().setFeature(entry.getKey(), entry.getValue());
+                        saxParser.getXMLReader().setFeature(entry.getKey(), entry.getValue());
                     }
                 }
                 if (builder.getProperties() != null) {
                     for (Map.Entry<String, Object> entry : builder.getProperties().entrySet()) {
-                        sax.getXMLReader().setProperty(entry.getKey(), entry.getValue());
+                        saxParser.getXMLReader().setProperty(entry.getKey(), entry.getValue());
                     }
                 }
-                sax.getXMLReader().setContentHandler(builder.getContentHandler());
-                sax.getXMLReader().parse(inputSource);
+                saxParser.getXMLReader().setContentHandler(builder.getContentHandler());
+                saxParser.getXMLReader().parse(inputSource);
             } catch (SAXException | ParserConfigurationException e) {
                 throw new IOException(e);
             } finally {
@@ -628,9 +627,9 @@ public final class Marc {
 
         private InverseMarcContentHandler defaultContentHandler;
 
-        private Map<String, Boolean> features = new HashMap<>();
+        private final Map<String, Boolean> features = new HashMap<>();
 
-        private Map<String, Object> properties = new HashMap<>();
+        private final Map<String, Object> properties = new HashMap<>();
 
         private Map<String, MarcListener> listeners = new HashMap<>();
 
