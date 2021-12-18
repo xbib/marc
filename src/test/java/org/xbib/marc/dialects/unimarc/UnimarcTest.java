@@ -23,15 +23,15 @@ public class UnimarcTest {
     @Test
     public void testPerioUni() throws Exception {
         String s = "periouni.mrc";
-        InputStream in = getClass().getResource(s).openStream();
         File file = File.createTempFile("periouni.", ".xml");
         file.deleteOnExit();
         FileOutputStream out = new FileOutputStream(file);
         try (MarcXchangeWriter writer = new MarcXchangeWriter(out, true)
                 .setFormat("UNIMARC")
-                .setType("Bibliographic")) {
+                .setType("Bibliographic");
+             InputStream inputStream = getClass().getResource(s).openStream()) {
             Marc.builder()
-                    .setInputStream(in)
+                    .setInputStream(inputStream)
                     .setCharset(StandardCharsets.UTF_8)
                     .setMarcListener(writer)
                     .build()
