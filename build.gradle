@@ -1,7 +1,7 @@
 plugins {
     id "de.marcphilipp.nexus-publish" version "0.4.0"
     id "io.codearte.nexus-staging" version "0.21.1"
-    id "org.xbib.gradle.plugin.asciidoctor" version "1.6.0.1"
+    id "org.xbib.gradle.plugin.asciidoctor" version "2.5.2.1"
 }
 
 wrapper {
@@ -28,7 +28,7 @@ apply plugin: 'java-library'
 
 dependencies {
     testImplementation "org.xbib:bibliographic-character-sets:${project.property('xbib-bibliographic-character-sets.version')}"
-    testImplementation "org.xbib:content-core:${project.property('xbib-content.version')}"
+    testImplementation "org.xbib:content-json:${project.property('xbib-content.version')}"
     testImplementation "xalan:xalan:${project.property('xalan.version')}"
     testImplementation "org.xmlunit:xmlunit-matchers:${project.property('xmlunit-matchers.version')}"
     testImplementation("com.github.stefanbirkner:system-rules:${project.property('system-rules.version')}") {

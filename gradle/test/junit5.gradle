@@ -1,5 +1,5 @@
 
-def junitVersion = project.hasProperty('junit.version')?project.property('junit.version'):'5.7.0'
+def junitVersion = project.hasProperty('junit.version')?project.property('junit.version'):'5.8.2'
 def hamcrestVersion = project.hasProperty('hamcrest.version')?project.property('hamcrest.version'):'2.2'
 
 dependencies {

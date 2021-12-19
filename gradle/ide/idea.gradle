@@ -6,8 +6,3 @@ idea {
         testOutputDir file('build/classes/java/test')
     }
 }
-
-if (project.convention.findPlugin(JavaPluginConvention)) {
-    //sourceSets.main.output.classesDirs = file("build/classes/java/main")
-    //sourceSets.test.output.classesDirs = file("build/classes/java/test")
-}
