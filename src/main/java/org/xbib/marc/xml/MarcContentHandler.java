@@ -119,11 +119,11 @@ public class MarcContentHandler
 
     /**
      * Set MARC record listener..
-     * @param listener the MARC  recordlistener
+     * @param marcRecordListener the MARC recordlistener
      * @return this handler
      */
-    public MarcContentHandler setMarcRecordListener(MarcRecordListener listener) {
-        this.marcRecordListener = listener;
+    public MarcContentHandler setMarcRecordListener(MarcRecordListener marcRecordListener) {
+        this.marcRecordListener = marcRecordListener;
         return this;
     }
 
@@ -161,7 +161,7 @@ public class MarcContentHandler
     public void beginCollection() {
         // early setup of MARC listener, even before beginRecord(format, type), it works only
         // if type is set to this handler.
-        this.marcListener = listeners.get(this.type);
+        marcListener = listeners.get(this.type);
         if (marcListener != null) {
             marcListener.beginCollection();
         }
@@ -286,7 +286,7 @@ public class MarcContentHandler
         }
         switch (localName) {
             case COLLECTION: {
-                if (!isCollection) {
+                if (!isCollection) {;
                     beginCollection();
                     isCollection = true;
                 }
@@ -485,6 +485,6 @@ public class MarcContentHandler
     }
 
     protected boolean isNamespace(String uri) {
-        return validNamespaces.contains(uri);
+        return uri.isEmpty() || validNamespaces.contains(uri);
     }
 }

@@ -63,6 +63,7 @@ public enum MultipartResourceRecordLevel {
     public static MultipartResourceRecordLevel from(char ch) {
         switch (ch) {
             case ' ':
+            case '#':
                 return NOT_SPECIFIED;
             case 'a':
                 return SET;

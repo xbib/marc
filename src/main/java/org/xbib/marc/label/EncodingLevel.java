@@ -106,6 +106,7 @@ public enum EncodingLevel {
     public static EncodingLevel from(char ch) {
         switch (ch) {
             case ' ':
+            case '#':
                 return FULL;
             case '1':
                 return FULL_NOT_EXAMINED;
@@ -125,6 +126,14 @@ public enum EncodingLevel {
                 return UNKNOWN;
             case 'z':
                 return NOT_APPLICABLE;
+            case 'I':
+                return LESS_THAN_FULL_NOT_EXAMINED;
+            case 'K':
+                return LESS_THAN_FULL_NOT_EXAMINED;
+            case 'M':
+                return LESS_THAN_FULL_NOT_EXAMINED;
+            case 'U':
+                return UNKNOWN;
             default:
                 logger.log(Level.FINEST, () -> "unknown encoding level " + ch);
                 return FULL;

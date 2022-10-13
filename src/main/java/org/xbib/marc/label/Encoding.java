@@ -59,6 +59,7 @@ public enum Encoding {
     public static Encoding from(char ch) {
         switch (ch) {
             case ' ':
+            case '#':
                 return MARC8;
             case 'a':
                 return UCS_UNICODE;

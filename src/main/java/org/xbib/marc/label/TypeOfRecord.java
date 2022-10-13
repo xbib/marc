@@ -166,6 +166,7 @@ public enum TypeOfRecord {
     static TypeOfRecord from(char ch) {
         switch (ch) {
             case ' ':
+            case '#':
                 return UNSPECIFIED;
             case 'a':
                 return LANGUAGE_MATERIAL;

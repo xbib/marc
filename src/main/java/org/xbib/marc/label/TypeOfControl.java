@@ -50,9 +50,10 @@ public enum TypeOfControl {
 
     public static TypeOfControl from(char ch) {
         switch (ch) {
-            case ' ' :
+            case ' ':
+            case '#':
                 return UNSPECIFIED;
-            case 'a' :
+            case 'a':
                 return ARCHIVAL;
             default:
                 logger.log(Level.FINEST, () -> "unknown type of control: " + ch);
