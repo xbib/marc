@@ -16,9 +16,11 @@
  */
 package org.xbib.marc.transformer.value;
 
-/**
- */
 public class Xml10MarcValueCleaner implements MarcValueTransformer {
+
+    public Xml10MarcValueCleaner() {
+    }
+
     @Override
     public String transform(String string) {
         StringBuilder sb = new StringBuilder();

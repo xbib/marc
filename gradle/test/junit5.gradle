@@ -1,12 +1,9 @@
 
-def junitVersion = project.hasProperty('junit.version')?project.property('junit.version'):'5.8.2'
-def hamcrestVersion = project.hasProperty('hamcrest.version')?project.property('hamcrest.version'):'2.2'
-
 dependencies {
-    testImplementation "org.junit.jupiter:junit-jupiter-api:${junitVersion}"
-    testImplementation "org.junit.jupiter:junit-jupiter-params:${junitVersion}"
-    testImplementation "org.hamcrest:hamcrest-library:${hamcrestVersion}"
-    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${junitVersion}"
+    testImplementation libs.junit.jupiter.api
+    testImplementation libs.junit.jupiter.params
+    testImplementation libs.hamcrest
+    testRuntimeOnly libs.junit.jupiter.engine
 }
 
 test {
@@ -24,17 +21,6 @@ test {
                     "${result.skippedTestCount} skipped"
         }
     }
-    jvmArgs '-Xmx2048m',
-            '--add-exports=java.base/jdk.internal.misc=ALL-UNNAMED',
-            '--add-exports=java.base/jdk.internal.ref=ALL-UNNAMED',
-            '--add-exports=java.base/sun.nio.ch=ALL-UNNAMED',
-            '--add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED',
-            '--add-exports=jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED',
-            '--add-opens=jdk.compiler/com.sun.tools.javac=ALL-UNNAMED',
-            '--add-opens=java.base/java.lang=ALL-UNNAMED',
-            '--add-opens=java.base/java.lang.reflect=ALL-UNNAMED',
-            '--add-opens=java.base/java.io=ALL-UNNAMED',
-            '--add-opens=java.base/java.nio=ALL-UNNAMED',
-            '--add-opens=java.base/java.util=ALL-UNNAMED'
+    jvmArgs '-Xmx2048m'
     systemProperty 'java.util.logging.config.file', 'src/test/resources/logging.properties'
 }

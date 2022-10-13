@@ -16,14 +16,13 @@
  */
 package org.xbib.marc.dialects.pica;
 
+import java.util.HashSet;
 import org.xbib.marc.MarcField;
 import org.xbib.marc.label.RecordLabel;
 import org.xbib.marc.xml.MarcContentHandler;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 
-import java.util.Arrays;
-import java.util.HashSet;
 import java.util.Set;
 
 /**
@@ -32,8 +31,12 @@ import java.util.Set;
  */
 public class PicaXMLContentHandler extends MarcContentHandler implements PicaConstants {
 
-    private Set<String> validNamespaces =
-            new HashSet<>(Arrays.asList(PICAXML_NAMESPACE, SRW_PICAXML_NAMESPACE));
+    private final Set<String> validNamespaces;
+
+    public PicaXMLContentHandler() {
+        this.validNamespaces = new HashSet<>();
+        this.validNamespaces.addAll(Set.of(PICAXML_NAMESPACE, SRW_PICAXML_NAMESPACE));
+    }
 
     @Override
     protected String getDefaultFormat() {

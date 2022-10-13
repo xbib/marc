@@ -5,7 +5,7 @@ plugins {
 }
 
 wrapper {
-    gradleVersion = "${rootProject.property('gradle.wrapper.version')}"
+    gradleVersion = libs.versions.gradle.get()
     distributionType = Wrapper.DistributionType.ALL
 }
 
@@ -27,17 +27,17 @@ ext {
 apply plugin: 'java-library'
 
 dependencies {
-    testImplementation "org.xbib:bibliographic-character-sets:${project.property('xbib-bibliographic-character-sets.version')}"
-    testImplementation "org.xbib:content-json:${project.property('xbib-content.version')}"
-    testImplementation "xalan:xalan:${project.property('xalan.version')}"
-    testImplementation "org.xmlunit:xmlunit-matchers:${project.property('xmlunit-matchers.version')}"
-    testImplementation("com.github.stefanbirkner:system-rules:${project.property('system-rules.version')}") {
+    testImplementation libs.charactersets
+    testImplementation libs.json
+    testImplementation libs.xalan
+    testImplementation libs.xmlunit
+    testImplementation (libs.system.rules) {
         exclude module: 'junit'
     }
-    testImplementation("org.mockito:mockito-core:${project.property('mockito.version')}") {
+    testImplementation(libs.mockito) {
         exclude group: 'org.hamcrest'
     }
-    testImplementation "org.marc4j:marc4j:${project.property('marc4j.version')}"
+    testImplementation libs.marc4j
 }
 
 apply from: rootProject.file('gradle/ide/idea.gradle')

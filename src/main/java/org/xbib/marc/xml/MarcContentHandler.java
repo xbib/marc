@@ -16,6 +16,7 @@
  */
 package org.xbib.marc.xml;
 
+import java.util.HashSet;
 import org.xbib.marc.MarcField;
 import org.xbib.marc.MarcListener;
 import org.xbib.marc.MarcRecord;
@@ -35,10 +36,8 @@ import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;
 
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.Deque;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
@@ -57,13 +56,13 @@ public class MarcContentHandler
 
     private static final Logger logger = Logger.getLogger(MarcContentHandler.class.getName());
 
-    protected final AtomicInteger recordCounter = new AtomicInteger();
+    protected final AtomicInteger recordCounter;
 
-    protected Deque<MarcField.Builder> stack = new LinkedList<>();
+    protected Deque<MarcField.Builder> stack;
 
-    protected Map<String, MarcListener> listeners = new HashMap<>();
+    protected Map<String, MarcListener> listeners;
 
-    protected StringBuilder content = new StringBuilder();
+    protected StringBuilder content;
 
     protected MarcListener marcListener;
 
@@ -77,16 +76,25 @@ public class MarcContentHandler
 
     protected MarcValueTransformers marcValueTransformers;
 
-    protected boolean trim = false;
+    protected boolean trim;
 
     private MarcFieldTransformers marcFieldTransformers;
 
-    private boolean isCollection = false;
+    private boolean isCollection;
 
-    private final List<MarcField> marcFieldList = new LinkedList<>();
+    private List<MarcField> marcFieldList;
 
-    private final Set<String> validNamespaces =
-            new HashSet<>(Arrays.asList(MARCXCHANGE_V1_NS_URI, MARCXCHANGE_V2_NS_URI, MARC21_SCHEMA_URI));
+    private final Set<String> validNamespaces;
+
+    public MarcContentHandler() {
+        this.recordCounter = new AtomicInteger();
+        this.stack = new LinkedList<>();
+        this.listeners = new HashMap<>();
+        this.content = new StringBuilder();
+        this.marcFieldList = new LinkedList<>();
+        this.validNamespaces = new HashSet<>();
+        this.validNamespaces.addAll(Set.of(MARCXCHANGE_V1_NS_URI, MARCXCHANGE_V2_NS_URI, MARC21_SCHEMA_URI));
+    }
 
     protected String getDefaultFormat() {
         return MARC21_FORMAT;
@@ -249,7 +257,7 @@ public class MarcContentHandler
             if (marcFieldTransformers != null) {
                 marcFieldTransformers.reset();
             }
-            marcFieldList.clear();
+            marcFieldList = new LinkedList<>();
         }
     }
 

@@ -25,7 +25,7 @@ import static org.junit.jupiter.api.Assertions.fail;
 
 /**
  * This class is original inspired from project {@code system-rules},
- * rewrite it to JUnit5. It is a JUnit Jupiter extension that allows
+ * rewritten to JUnit5. It is a JUnit Jupiter extension that allows
  * in-test specification of expected {@code System.exit(...)} calls.
  */
 @Target({TYPE, METHOD})

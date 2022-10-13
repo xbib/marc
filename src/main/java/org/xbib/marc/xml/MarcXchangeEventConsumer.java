@@ -16,16 +16,15 @@
  */
 package org.xbib.marc.xml;
 
+import java.util.HashSet;
 import org.xbib.marc.MarcField;
 import org.xbib.marc.MarcListener;
 import org.xbib.marc.MarcXchangeConstants;
 import org.xbib.marc.label.RecordLabel;
 import org.xbib.marc.transformer.value.MarcValueTransformers;
 
-import java.util.Arrays;
 import java.util.Deque;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Map;
@@ -45,22 +44,31 @@ import javax.xml.stream.util.XMLEventConsumer;
  */
 public class MarcXchangeEventConsumer implements XMLEventConsumer, MarcXchangeConstants, MarcListener {
 
-    private Deque<MarcField.Builder> stack = new LinkedList<>();
+    private final Deque<MarcField.Builder> stack;
 
-    private Map<String, MarcListener> listeners = new HashMap<>();
+    private final Map<String, MarcListener> listeners;
 
     private MarcValueTransformers marcValueTransformers;
 
     private MarcListener listener;
 
-    private StringBuilder content = new StringBuilder();
+    private final StringBuilder content;
 
-    private String format = MARC21_FORMAT;
+    private String format;
 
-    private String type = BIBLIOGRAPHIC_TYPE;
+    private String type;
 
-    private Set<String> validNamespaces =
-            new HashSet<>(Arrays.asList(MARCXCHANGE_V1_NS_URI, MARCXCHANGE_V2_NS_URI, MARC21_SCHEMA_URI));
+    private final Set<String> validNamespaces;
+
+    public MarcXchangeEventConsumer() {
+        this.stack = new LinkedList<>();
+        this.listeners = new HashMap<>();
+        this.content = new StringBuilder();
+        this.format = MARC21_FORMAT;
+        this.type = BIBLIOGRAPHIC_TYPE;
+        this.validNamespaces = new HashSet<>();
+        this.validNamespaces.addAll(Set.of(MARCXCHANGE_V1_NS_URI, MARCXCHANGE_V2_NS_URI, MARC21_SCHEMA_URI));
+    }
 
     public MarcXchangeEventConsumer setMarcListener(String type, MarcListener listener) {
         this.listeners.put(type, listener);

@@ -51,6 +51,9 @@ import java.io.StringWriter;
  */
 public abstract class JsonValue {
 
+    public JsonValue() {
+    }
+
     /**
      * Detects whether this value represents a JSON object. If this is the case, this value is an
      * instance of {@link JsonObject}.

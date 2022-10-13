@@ -21,11 +21,11 @@ import org.xbib.marc.MarcField;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
- */
+@SuppressWarnings("serial")
 public class MarcFieldTransformers extends LinkedList<MarcFieldTransformer> {
 
-    private static final long serialVersionUID = 2704484673464559115L;
+    public MarcFieldTransformers() {
+    }
 
     public List<MarcField> transform(List<MarcField> marcFields) {
         LinkedList<MarcField> list = new LinkedList<>();

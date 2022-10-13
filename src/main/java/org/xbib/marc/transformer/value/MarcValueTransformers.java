@@ -21,15 +21,18 @@ import org.xbib.marc.MarcField;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- */
 public class MarcValueTransformers {
 
     private static final String DEFAULT = "_default";
 
-    private final Map<String, MarcValueTransformer> marcValueTransformerMap = new HashMap<>();
+    private final Map<String, MarcValueTransformer> marcValueTransformerMap;
 
-    private final Map<String, String> subfieldMap = new HashMap<>();
+    private final Map<String, String> subfieldMap;
+
+    public MarcValueTransformers() {
+        marcValueTransformerMap = new HashMap<>();
+        subfieldMap = new HashMap<>();
+    }
 
     public MarcValueTransformers setMarcValueTransformer(MarcValueTransformer transformer) {
         this.marcValueTransformerMap.put(DEFAULT, transformer);

@@ -39,13 +39,23 @@ public class MarcTool {
 
     private static final Logger logger = Logger.getLogger(MarcTool.class.getName());
 
-    private String mode = null;
-    private String input = null;
-    private String output = null;
-    private String charset = "UTF-8";
-    private String schema = null;
-    private String stylesheet = null;
-    private String result = null;
+    private String mode;
+
+    private String input;
+
+    private String output;
+
+    private String charset;
+
+    private String schema;
+
+    private String stylesheet;
+
+    private String result;
+
+    public MarcTool() {
+        this.charset = "UTF-8";
+    }
 
     public static void main(String[] args) {
         MarcTool marcTool = new MarcTool();

@@ -16,12 +16,12 @@
  */
 package org.xbib.marc.json;
 
-/**
- *
- */
 public class JsonDefaultHandler implements JsonHandler<JsonArray, JsonObject> {
 
     protected JsonValue value;
+
+    public JsonDefaultHandler() {
+    }
 
     public JsonValue getValue() {
         return value;
