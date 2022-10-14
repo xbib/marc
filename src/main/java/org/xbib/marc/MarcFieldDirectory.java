@@ -24,9 +24,8 @@ import java.util.TreeMap;
 /**
  *
  */
+@SuppressWarnings("serial")
 public class MarcFieldDirectory extends TreeMap<Integer, MarcField.Builder> {
-
-    private static final long serialVersionUID = 4339262603982720001L;
 
     public MarcFieldDirectory(RecordLabel label, String encodedDirectory) throws IOException {
         super();

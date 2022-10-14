@@ -515,11 +515,6 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
     private void setupEventConsumer(Writer writer, boolean indent) throws IOException {
         XMLOutputFactory outputFactory = XMLOutputFactory.newInstance();
         try {
-            outputFactory.setProperty("com.ctc.wstx.useDoubleQuotesInXmlDecl", Boolean.TRUE);
-        } catch (IllegalArgumentException e) {
-            logger.log(Level.FINEST, e.getMessage(), e);
-        }
-        try {
             this.xmlEventConsumer = indent ?
                     new IndentingXMLEventWriter(outputFactory.createXMLEventWriter(writer)) :
                     outputFactory.createXMLEventWriter(writer);

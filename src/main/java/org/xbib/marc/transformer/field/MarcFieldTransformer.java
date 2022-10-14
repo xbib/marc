@@ -32,9 +32,8 @@ import java.util.regex.Pattern;
 /**
  *
  */
+@SuppressWarnings("serial")
 public class MarcFieldTransformer extends LinkedHashMap<String, MarcField> {
-
-    private static final long serialVersionUID = -3250616818472683245L;
 
     private static final Logger logger = Logger.getLogger(MarcFieldTransformer.class.getName());
 
@@ -47,7 +46,7 @@ public class MarcFieldTransformer extends LinkedHashMap<String, MarcField> {
     private transient MarcField lastReceived;
     private transient MarcField lastBuilt;
     private int repeatCounter;
-    private Operator operator;
+    private final Operator operator;
 
     private MarcFieldTransformer(Map<String, MarcField> map, boolean ignoreIndicator, boolean ignoreSubfieldIds,
                                  Operator operator) {

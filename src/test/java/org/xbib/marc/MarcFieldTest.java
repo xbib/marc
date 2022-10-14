@@ -160,7 +160,7 @@ public class MarcFieldTest {
                 .subfield("d", null)
                 .subfield("e", null)
                 .build();
-        assertEquals("901$  $ade", marcField.toKey());
+        assertEquals("901$__$ade", marcField.toKey());
     }
 
     @Test

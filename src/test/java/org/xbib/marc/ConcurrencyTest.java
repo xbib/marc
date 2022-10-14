@@ -43,10 +43,10 @@ public class ConcurrencyTest {
             writer.startDocument();
             writer.beginCollection();
             for (int i = 0; i < n; i++) {
-                InputStream in = getClass().getResource(s).openStream();
+                InputStream inputStream = getClass().getResource(s).openStream();
                 executorService.submit(() -> {
                     Marc.builder()
-                            .setInputStream(in)
+                            .setInputStream(inputStream)
                             .setMarcRecordListener(writer)
                             .build()
                             .writeRecords();

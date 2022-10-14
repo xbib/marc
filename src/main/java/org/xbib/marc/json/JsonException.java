@@ -16,9 +16,8 @@
  */
 package org.xbib.marc.json;
 
+@SuppressWarnings("serial")
 public class JsonException extends RuntimeException {
-
-    private static final long serialVersionUID = -3386151672072419281L;
 
     JsonException(Throwable throwable) {
         super(throwable);

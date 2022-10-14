@@ -33,11 +33,10 @@ import java.util.stream.Collectors;
 /**
  * A MARC record. This is an extended MARC record augmented with MarcXchange information.
  */
+@SuppressWarnings("serial")
 public class MarcRecord extends LinkedHashMap<String, Object> {
 
     private static final MarcRecord EMPTY = Marc.builder().buildRecord();
-
-    private static final long serialVersionUID = 5305809148724342653L;
 
     private final String format;
 
@@ -184,7 +183,6 @@ public class MarcRecord extends LinkedHashMap<String, Object> {
             }
             String indicator = marcField.getIndicator();
             if (indicator != null && !indicator.isEmpty()) {
-                indicator = indicator.replace(' ', '_');
                 Map<String, Object> indicators = new LinkedHashMap<>();
                 repeatMap.put(Integer.toString(repeat), indicators);
                 if (!indicators.containsKey(indicator)) {
@@ -197,7 +195,6 @@ public class MarcRecord extends LinkedHashMap<String, Object> {
                 } else {
                     for (MarcField.Subfield subfield : marcField.getSubfields()) {
                         String code = subfield.getId();
-                        code = code.replace(' ', '_');
                         Object subfieldValue = subfields.get(code);
                         if (subfieldValue instanceof List) {
                             List<String> list = (List<String>) subfieldValue;

@@ -7,7 +7,10 @@ import org.xbib.marc.Marc;
 import org.xmlunit.matchers.CompareMatcher;
 import java.io.InputStream;
 import java.io.StringWriter;
+import java.io.Writer;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import javax.xml.stream.XMLInputFactory;
 
 /**
@@ -34,11 +37,9 @@ public class MarcEventConsumerTest {
         writer.setFormat("AlephXML").setType("Bibliographic");
         writer.startDocument();
         writer.beginCollection();
-
         MarcXchangeEventConsumer consumer = new MarcXchangeEventConsumer();
         consumer.setMarcListener(writer);
         consumer.addNamespace("http://www.ddb.de/professionell/mabxml/mabxml-1.xsd");
-
         Marc.builder()
                 .setInputStream(in)
                 .setCharset(StandardCharsets.UTF_8)

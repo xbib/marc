@@ -268,7 +268,7 @@ public class MarcContentHandler
 
     @Override
     public void startDocument() throws SAXException {
-        stack.clear();
+        stack = new LinkedList<>();
     }
 
     @Override

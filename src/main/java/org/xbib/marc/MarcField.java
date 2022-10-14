@@ -43,6 +43,11 @@ public class MarcField implements Comparable<MarcField> {
 
     private static final String BLANK_STRING = " ";
 
+    private static final char UNDERSCORE = '_';
+
+    private static final String UNDERSCORE_STRING = "_";
+    private static final String EMPTY_TAG = "___";
+
     private static final Set<Character> ASCII_GRAPHICS = new HashSet<>(Arrays.asList(
             '\u0020', '\u0021', '\u0022', '\u0023', '\u0024', '\u0025', '\u0026', '\'',
             '\u0028', '\u0029', '\u002A', '\u002B', '\u002C', '\u002D', '\u002E', '\u002F',
@@ -207,8 +212,10 @@ public class MarcField implements Comparable<MarcField> {
 
     public boolean isTagValid() {
         if (tag == null) {
+            // we allow no tag
             return true;
         }
+        // only tags of length 3 are supposed to be valid
         return tag.length() == 3
                 && ((tag.charAt(0) >= '0' && tag.charAt(0) <= '9')
                 || (tag.charAt(0) >= 'A' && tag.charAt(0) <= 'Z'))
@@ -220,18 +227,20 @@ public class MarcField implements Comparable<MarcField> {
 
     public boolean isIndicatorValid() {
         if (isControl()) {
+            // ignore indicator check for control fields
             return true;
         }
         if (indicator == null) {
+            // we allow no indicator
             return true;
         }
         boolean b = indicator.length() <= 9;
         for (int i = 0; i < indicator.length(); i++) {
-            b = indicator.charAt(i) == ' '
+            b = indicator.charAt(i) == UNDERSCORE
                     || (indicator.charAt(i) >= '0' && indicator.charAt(i) <= '9')
                     || (indicator.charAt(i) >= 'a' && indicator.charAt(i) <= 'z')
                     || (indicator.charAt(i) >= 'A' && indicator.charAt(i) <= 'Z')
-                    || indicator.charAt(i) == '@'; // for our PICA hack
+                    || indicator.charAt(i) == '@'; // must be valid, for PICA dialect
             if (!b) {
                 break;
             }
@@ -241,9 +250,11 @@ public class MarcField implements Comparable<MarcField> {
 
     public boolean isSubfieldValid() {
         if (isControl()) {
+            // for control fields, there are no subfields, disable check
             return true;
         }
         if (subfieldIds == null) {
+            // we allow no subfield ids
             return true;
         }
         boolean b = true;
@@ -256,6 +267,10 @@ public class MarcField implements Comparable<MarcField> {
         return b;
     }
 
+    /**
+     * Checks if the field has a valid tag (if present), a valid indicator (if present), and a valid subfield (if present).
+     * @return true if valid
+     */
     public boolean isValid() {
         return isTagValid() && isIndicatorValid() && isSubfieldValid();
     }
@@ -381,7 +396,19 @@ public class MarcField implements Comparable<MarcField> {
          * @return this builder
          */
         public Builder tag(String tag) {
-            this.tag = tag;
+            if (tag != null) {
+                // We have inconsistent use of tag symbols as placeholders for a "blank space"
+                // and we need to fix it here for consistency.
+                this.tag = tag
+                        .replace('-', UNDERSCORE)
+                        .replace('#', UNDERSCORE)
+                        .replace('.', UNDERSCORE)
+                        .replace(' ', UNDERSCORE);
+            }
+            // do not allow null or empty tags
+            if (this.tag == null || this.tag.isEmpty()) {
+                this.tag = EMPTY_TAG;
+            }
             return this;
         }
 
@@ -400,8 +427,21 @@ public class MarcField implements Comparable<MarcField> {
          */
         public Builder indicator(String indicator) {
             if (indicator != null) {
-                // check if indicators are visible replacements like "-" or "#" . Replace with blank.
-                this.indicator = indicator.replace('-', ' ').replace('#', ' ');
+                // We have inconsistent use of indicator symbols as placeholders for a "blank space"
+                // and we need to fix it here for consistency.
+                // Check if indicators are artifacts like "-" or "#" or '.' or ' '.
+                // Replace with underscore. This preserves better usage and visibility.
+                // Especially the dot. The dot will break Elasticsearch indexing with an exception.
+                // If you do not like underscores, replace them by a space character in your application.
+                this.indicator = indicator
+                        .replace('-', UNDERSCORE)
+                        .replace('#', UNDERSCORE)
+                        .replace('.', UNDERSCORE)
+                        .replace(' ', UNDERSCORE);
+            }
+            // we do not allow an empty indicator. Elasticsearch field names require a length > 0.
+            if (this.indicator != null && this.indicator.isEmpty()) {
+                this.indicator = UNDERSCORE_STRING;
             }
             return this;
         }
@@ -612,7 +652,7 @@ public class MarcField implements Comparable<MarcField> {
          */
         public boolean isControl() {
             if (isControl == null) {
-                this.isControl = tag != null && tag.charAt(0) == '0' && tag.charAt(1) == '0';
+                this.isControl = tag != null && tag.length() >= 2 && tag.charAt(0) == '0' && tag.charAt(1) == '0';
             }
             return isControl;
         }
@@ -638,18 +678,13 @@ public class MarcField implements Comparable<MarcField> {
          * @return the built MARC field.
          */
         public MarcField build() {
-            if (isControl == null) {
-                this.isControl = tag != null && tag.charAt(0) == '0' && tag.charAt(1) == '0';
-            }
             return new MarcField(tag, indicator, position, length,
-                    value, subfields, subfieldIds.toString(), isControl);
+                    value, subfields, subfieldIds.toString(), isControl());
         }
 
         @Override
         public String toString() {
-            return "tag=" + tag + ",indicator=" + indicator +
-                    ",value=" + value + ",subfields=" +
-                    subfields;
+            return "tag=" + tag + ",indicator=" + indicator + ",value=" + value + ",subfields=" + subfields;
         }
     }
 
@@ -658,12 +693,24 @@ public class MarcField implements Comparable<MarcField> {
      */
     public static class Subfield {
 
-        private final String id;
+        private String id;
 
         private final String value;
 
         private Subfield(String id, String value) {
-            this.id = id;
+            if (id != null) {
+                // We have inconsistent use of subfield id symbols as placeholders for a "blank space"
+                // and we need to fix it here for consistency.
+                this.id = id
+                        .replace('-', UNDERSCORE)
+                        .replace('#', UNDERSCORE)
+                        .replace('.', UNDERSCORE)
+                        .replace(' ', UNDERSCORE);
+            }
+            // we do not allow an empty subfield id. Elasticsearch field names require a length > 0.
+            if (this.id != null && this.id.isEmpty()) {
+                this.id = UNDERSCORE_STRING;
+            }
             this.value = value;
         }
 
@@ -689,9 +736,8 @@ public class MarcField implements Comparable<MarcField> {
         }
     }
 
+    @SuppressWarnings("serial")
     private static class SubfieldIds extends LinkedList<String> {
-
-        private static final long serialVersionUID = 7016733919690084153L;
 
         /**
          * Insertion sort. This is considered faster than sorting afterwards,
