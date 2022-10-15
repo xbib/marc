@@ -1,18 +1,15 @@
 package org.xbib.marc;
 
-import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+import java.io.IOException;
 import org.junit.jupiter.api.Test;
 import org.xbib.marc.label.RecordLabel;
 import org.xbib.marc.transformer.value.MarcValueTransformers;
 import org.xbib.marc.xml.MarcXchangeWriter;
-import org.xmlunit.matchers.CompareMatcher;
 
-import java.io.File;
-import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
@@ -20,9 +17,6 @@ import java.text.Normalizer;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.regex.Pattern;
 
-/**
- *
- */
 public class MarcRecordTest {
 
     @Test
@@ -165,42 +159,33 @@ public class MarcRecordTest {
      * Test MarcXchangeWriter as record listener. Result must be the same as with field listener.
      */
     @Test
-    public void testIRMARC8AsRecordStream() throws Exception {
-        String s = "IRMARC8.bin";
-        try (InputStream in = getClass().getResource(s).openStream()) {
-            File file = File.createTempFile(s + ".", ".xml");
-            file.deleteOnExit();
-            FileOutputStream out = new FileOutputStream(file);
+    public void testIRMARC8AsRecordStream() throws IOException {
+        StreamMatcher.xmlMatch(getClass(),"IRMARC8.bin", ".xml", (inputStream, outputStream) -> {
             MarcValueTransformers marcValueTransformers = new MarcValueTransformers();
             marcValueTransformers.setMarcValueTransformer(value -> Normalizer.normalize(value, Normalizer.Form.NFC));
-            try (MarcXchangeWriter writer = new MarcXchangeWriter(out)
+            try (MarcXchangeWriter writer = new MarcXchangeWriter(outputStream)
                     .setMarcValueTransformers(marcValueTransformers)) {
                 Marc.builder()
-                        .setInputStream(in)
+                        .setInputStream(inputStream)
                         .setCharset(Charset.forName("ANSEL"))
                         .setMarcRecordListener(writer)
                         .build()
                         .writeRecordCollection();
                 assertNull(writer.getException());
             }
-            assertThat(file, CompareMatcher.isIdenticalTo(getClass().getResource(s + ".xml").openStream()));
-        }
+        });
     }
 
     @Test
     public void testIRMARC8AsLightweightRecordAdapter() throws Exception {
-        String s = "IRMARC8.bin";
-        try (InputStream in = getClass().getResource(s).openStream()) {
-            File file = File.createTempFile(s + ".", ".xml");
-            file.deleteOnExit();
-            FileOutputStream out = new FileOutputStream(file);
+        StreamMatcher.xmlMatch(getClass(),"IRMARC8.bin", ".xml", (inputStream, outputStream) -> {
             MarcValueTransformers marcValueTransformers = new MarcValueTransformers();
             marcValueTransformers.setMarcValueTransformer(value -> Normalizer.normalize(value, Normalizer.Form.NFC));
-            try (MarcXchangeWriter writer = new MarcXchangeWriter(out)
+            try (MarcXchangeWriter writer = new MarcXchangeWriter(outputStream)
                     .setMarcValueTransformers(marcValueTransformers)) {
                 writer.startDocument(); // just write XML processing instruction
                 Marc.builder()
-                        .setInputStream(in)
+                        .setInputStream(inputStream)
                         .setCharset(Charset.forName("ANSEL"))
                         .setMarcListener(new LightweightMarcRecordAdapter(writer))
                         .build()
@@ -208,7 +193,6 @@ public class MarcRecordTest {
                 assertNull(writer.getException());
                 writer.endDocument();
             }
-            assertThat(file, CompareMatcher.isIdenticalTo(getClass().getResource(s + ".xml").openStream()));
-        }
+        });
     }
 }

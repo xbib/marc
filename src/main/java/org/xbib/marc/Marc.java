@@ -1,18 +1,17 @@
-/*
-   Copyright 2016 Jörg Prante
-
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
-
+/**
+ *  Copyright 2016-2022 Jörg Prante <joergprante@gmail.com>
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *      <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
  */
 package org.xbib.marc;
 
@@ -619,7 +618,7 @@ public final class Marc {
 
         private InputStream inputStream;
 
-        private Charset charset = StandardCharsets.UTF_8;
+        private Charset charset;
 
         private String schema;
 
@@ -627,11 +626,11 @@ public final class Marc {
 
         private InverseMarcContentHandler defaultContentHandler;
 
-        private final Map<String, Boolean> features = new HashMap<>();
+        private final Map<String, Boolean> features;
 
-        private final Map<String, Object> properties = new HashMap<>();
+        private final Map<String, Object> properties;
 
-        private Map<String, MarcListener> listeners = new HashMap<>();
+        private final Map<String, MarcListener> listeners;
 
         private MarcListener listener;
 
@@ -643,11 +642,13 @@ public final class Marc {
 
         private MarcFieldTransformers marcFieldTransformers;
 
+        private MarcFieldValidator validator;
+
         private String format;
 
         private String type;
 
-        private boolean fatalErrors = false;
+        private boolean fatalErrors;
 
         private MarcRecordListener marcRecordListener;
 
@@ -668,8 +669,21 @@ public final class Marc {
         private Pattern valuePattern;
 
         private Builder() {
+            this.charset = StandardCharsets.UTF_8;
             this.recordLabel = RecordLabel.EMPTY;
             this.marcFieldList = new LinkedList<>();
+            this.features = new HashMap<>();
+            this.properties = new HashMap<>();
+            this.listeners = new HashMap<>();
+            this.validator = MarcField.DEFAULT_VALIDATOR;
+        }
+
+        public Builder setValidator(MarcFieldValidator validator) {
+            this.validator = validator;
+            if (marcGenerator != null) {
+                marcGenerator.setValidator(validator);
+            }
+            return this;
         }
 
         public Builder setFormat(String format) {
@@ -860,6 +874,7 @@ public final class Marc {
          */
         public MarcGenerator createGenerator() {
             this.marcGenerator = new MarcGenerator()
+                    .setValidator(validator)
                     .setFormat(format)
                     .setType(type)
                     .setCharset(charset)

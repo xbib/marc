@@ -15,41 +15,17 @@
  */
 package org.xbib.marc;
 
-/**
- * A MARC listener with empty methods. Useful for extending.
- */
-public class MarcFieldAdapter implements MarcListener {
+public interface MarcFieldValidator {
 
-    public MarcFieldAdapter() {
-    }
+    String validateTag(String tag);
 
-    @Override
-    public void beginCollection() {
-        // empty by design
-    }
+    String validateIndicator(String indicator);
 
-    @Override
-    public void beginRecord(String format, String type) {
-        // empty by design
-    }
+    String validateSubfieldId(String subfieldId);
 
-    @Override
-    public void leader(String label) {
-        // empty by design
-    }
+    boolean isTagValid(String tag);
 
-    @Override
-    public void field(MarcField field) {
-        // empty by design
-    }
+    boolean isIndicatorValid(String indicator);
 
-    @Override
-    public void endRecord() {
-        // empty by design
-    }
-
-    @Override
-    public void endCollection() {
-        // empty by design
-    }
+    boolean isSubfieldIdValid(String subfieldId);
 }

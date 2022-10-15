@@ -1,15 +1,12 @@
 package org.xbib.marc.transformer;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 import org.xbib.marc.MarcField;
 import org.xbib.marc.transformer.field.MarcFieldTransformer;
-import java.util.HashMap;
 import java.util.Map;
 
-/**
- *
- */
 public class MarcFieldTransformerTest {
 
     @Test
@@ -95,7 +92,10 @@ public class MarcFieldTransformerTest {
                 .ignoreSubfieldIds()
                 .drop(MarcField.builder().tag("001").build())
                 .build();
-        MarcField a = MarcField.builder().tag("001").subfield("a", "Hello").subfield("b", "World").build();
+        MarcField a = MarcField.builder().tag("001")
+                .subfield("a", "Hello")
+                .subfield("b", "World")
+                .build();
         MarcField b = marcFieldTransformer.transform(a);
         assertEquals(MarcField.emptyMarcField(), b);
     }
@@ -162,13 +162,13 @@ public class MarcFieldTransformerTest {
 
     @Test
     public void testFromMap() {
-        Map<String, String> map = new HashMap<>();
-        map.put("001$$a", "002$$b");
-        map.put("003$$a", "002$$b");
+        Map<String, String> map = Map.of("001$$a", "002$$b","003$$a", "002$$b");
         MarcFieldTransformer marcFieldTransformer = MarcFieldTransformer.builder()
                 .from(map)
                 .build();
         MarcField a = MarcField.builder().tag("001").subfield("a", "Hello World").build();
+        assertEquals("001$$a", a.toKey());
+        assertTrue(marcFieldTransformer.containsKey(a.toKey()));
         MarcField b = marcFieldTransformer.transform(a);
         assertEquals("002$$b[b=Hello World]", b.toString());
         MarcField a1 = MarcField.builder().tag("003").subfield("a", "Hello World").build();

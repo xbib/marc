@@ -1,0 +1,249 @@
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+    <ListRecords>
+        <record>
+            <header>
+                <identifier>aleph-publish:018117852</identifier>
+            </header>
+            <metadata>
+                <record xmlns="http://www.ddb.de/professionell/mabxml/mabxml-1.xsd">
+                    <leader>------M2.01200024------h</leader>
+                    <controlfield tag="LDR">------M2.01200024------h</controlfield>
+                    <controlfield tag="FMT">MH</controlfield>
+                    <datafield tag="001" ind1="-" ind2="1">
+                        <subfield code="a">HT016424175</subfield>
+                    </datafield>
+                    <datafield tag="002" ind1="a" ind2="1">
+                        <subfield code="a">20100705</subfield>
+                    </datafield>
+                    <datafield tag="026" ind1="-" ind2="1">
+                        <subfield code="a">HBZHT016424175</subfield>
+                    </datafield>
+                    <controlfield tag="030">a|1uc||||||1|</controlfield>
+                    <datafield tag="036" ind1="a" ind2="1">
+                        <subfield code="a">DE</subfield>
+                    </datafield>
+                    <datafield tag="037" ind1="b" ind2="1">
+                        <subfield code="a">lat</subfield>
+                    </datafield>
+                    <controlfield tag="050">a|||||||||||||</controlfield>
+                    <controlfield tag="051">am||||||</controlfield>
+                    <datafield tag="070" ind1="-" ind2="1">
+                        <subfield code="a">575</subfield>
+                    </datafield>
+                    <datafield tag="080" ind1="-" ind2="1">
+                        <subfield code="a">60</subfield>
+                    </datafield>
+                    <datafield tag="100" ind1="-" ind2="1">
+                        <subfield code="p">Hildegardis</subfield>
+                        <subfield code="c">Bingensis</subfield>
+                        <subfield code="d">1098-1179</subfield>
+                        <subfield code="9">(DE-588)118550993</subfield>
+                    </datafield>
+                    <datafield tag="101" ind1="-" ind2="1">
+                        <subfield code="p">Hildegard</subfield>
+                        <subfield code="d">1098-1179</subfield>
+                    </datafield>
+                    <datafield tag="101" ind1="-" ind2="1">
+                        <subfield code="p">Hildegard</subfield>
+                        <subfield code="c">Heilige, 1098-1179</subfield>
+                        <subfield code="d">1098-1179</subfield>
+                    </datafield>
+                    <datafield tag="101" ind1="-" ind2="1">
+                        <subfield code="p">Hildegard</subfield>
+                        <subfield code="c">Sankt</subfield>
+                        <subfield code="d">1098-1179</subfield>
+                    </datafield>
+                    <datafield tag="101" ind1="-" ind2="1">
+                        <subfield code="p">Hildegardis</subfield>
+                        <subfield code="c">Sancta</subfield>
+                        <subfield code="d">1098-1179</subfield>
+                    </datafield>
+                    <datafield tag="101" ind1="-" ind2="1">
+                        <subfield code="p">Hildegardis</subfield>
+                        <subfield code="c">Abbatissa</subfield>
+                        <subfield code="d">1098-1179</subfield>
+                    </datafield>
+                    <datafield tag="101" ind1="-" ind2="1">
+                        <subfield code="p">Hildegarde</subfield>
+                        <subfield code="c">Sainte</subfield>
+                        <subfield code="d">1098-1179</subfield>
+                    </datafield>
+                    <datafield tag="101" ind1="-" ind2="1">
+                        <subfield code="p">Ildegarda</subfield>
+                        <subfield code="c">de Bingen</subfield>
+                        <subfield code="d">1098-1179</subfield>
+                    </datafield>
+                    <datafield tag="101" ind1="-" ind2="1">
+                        <subfield code="p">Hildegardis</subfield>
+                        <subfield code="c">de Monte Sancti Ruperti</subfield>
+                        <subfield code="d">1098-1179</subfield>
+                    </datafield>
+                    <datafield tag="101" ind1="-" ind2="1">
+                        <subfield code="p">Hildegard</subfield>
+                        <subfield code="c">die Heilige</subfield>
+                        <subfield code="d">1098-1179</subfield>
+                    </datafield>
+                    <datafield tag="101" ind1="-" ind2="1">
+                        <subfield code="p">Hildegardis</subfield>
+                        <subfield code="c">de Bingen</subfield>
+                        <subfield code="d">1098-1179</subfield>
+                    </datafield>
+                    <datafield tag="101" ind1="-" ind2="1">
+                        <subfield code="p">Hildegardt</subfield>
+                        <subfield code="d">1098-1179</subfield>
+                    </datafield>
+                    <datafield tag="101" ind1="-" ind2="1">
+                        <subfield code="p">Hildegardis</subfield>
+                        <subfield code="d">1098-1179</subfield>
+                    </datafield>
+                    <datafield tag="101" ind1="-" ind2="1">
+                        <subfield code="p">Bingen, Hildegard &lt;&lt;von>></subfield>
+                        <subfield code="d">1098-1179</subfield>
+                    </datafield>
+                    <datafield tag="101" ind1="-" ind2="1">
+                        <subfield code="p">Hildegard</subfield>
+                        <subfield code="c">of Bingen</subfield>
+                        <subfield code="d">1098-1179</subfield>
+                    </datafield>
+                    <datafield tag="101" ind1="-" ind2="1">
+                        <subfield code="p">Hildegardis</subfield>
+                        <subfield code="c">Sancta Abatissa</subfield>
+                        <subfield code="d">1098-1179</subfield>
+                    </datafield>
+                    <datafield tag="101" ind1="-" ind2="1">
+                        <subfield code="p">Ildegarda</subfield>
+                        <subfield code="c">Santa</subfield>
+                        <subfield code="d">1098-1179</subfield>
+                    </datafield>
+                    <datafield tag="101" ind1="-" ind2="1">
+                        <subfield code="p">Ildegarda</subfield>
+                        <subfield code="c">Sant'</subfield>
+                        <subfield code="d">1098-1179</subfield>
+                    </datafield>
+                    <datafield tag="101" ind1="-" ind2="1">
+                        <subfield code="p">Hildegardis</subfield>
+                        <subfield code="c">Abbess</subfield>
+                        <subfield code="d">1098-1179</subfield>
+                    </datafield>
+                    <datafield tag="101" ind1="-" ind2="1">
+                        <subfield code="p">Hildegard</subfield>
+                        <subfield code="c">Heilige</subfield>
+                        <subfield code="d">1098-1179</subfield>
+                    </datafield>
+                    <datafield tag="101" ind1="-" ind2="1">
+                        <subfield code="p">Hildegarde</subfield>
+                        <subfield code="c">de Bingen</subfield>
+                        <subfield code="d">1098-1179</subfield>
+                    </datafield>
+                    <datafield tag="101" ind1="-" ind2="1">
+                        <subfield code="p">Ildegarda</subfield>
+                        <subfield code="c">di Bingen</subfield>
+                        <subfield code="d">1098-1179</subfield>
+                    </datafield>
+                    <datafield tag="101" ind1="-" ind2="1">
+                        <subfield code="p">Hildegardis</subfield>
+                        <subfield code="c">Abatissa</subfield>
+                        <subfield code="d">1098-1179</subfield>
+                    </datafield>
+                    <datafield tag="101" ind1="-" ind2="1">
+                        <subfield code="p">Hildegarda</subfield>
+                        <subfield code="c">di Bingen</subfield>
+                        <subfield code="d">1098-1179</subfield>
+                    </datafield>
+                    <datafield tag="101" ind1="-" ind2="1">
+                        <subfield code="p">Hildegarda</subfield>
+                        <subfield code="c">de Bingen</subfield>
+                        <subfield code="d">1098-1179</subfield>
+                    </datafield>
+                    <datafield tag="101" ind1="-" ind2="1">
+                        <subfield code="p">Hildegard</subfield>
+                        <subfield code="c">Bingeniläinen</subfield>
+                        <subfield code="d">1098-1179</subfield>
+                    </datafield>
+                    <datafield tag="101" ind1="-" ind2="1">
+                        <subfield code="p">Childegard</subfield>
+                        <subfield code="c">ot Bingen</subfield>
+                        <subfield code="d">1098-1179</subfield>
+                    </datafield>
+                    <datafield tag="101" ind1="-" ind2="1">
+                        <subfield code="p">Bingen, Childegard &lt;&lt;ot>></subfield>
+                        <subfield code="d">1098-1179</subfield>
+                    </datafield>
+                    <datafield tag="101" ind1="-" ind2="1">
+                        <subfield code="p">Bingen, Hildegarde &lt;&lt;de>></subfield>
+                        <subfield code="d">1098-1179</subfield>
+                    </datafield>
+                    <datafield tag="101" ind1="-" ind2="1">
+                        <subfield code="p">Hildegard</subfield>
+                        <subfield code="c">von Bingen</subfield>
+                        <subfield code="d">1098-1179</subfield>
+                    </datafield>
+                    <datafield tag="101" ind1="-" ind2="1">
+                        <subfield code="p">Hildegardis von Bingen</subfield>
+                        <subfield code="d">1098-1179</subfield>
+                    </datafield>
+                    <datafield tag="101" ind1="-" ind2="1">
+                        <subfield code="p">Hildegard</subfield>
+                        <subfield code="c">Sainte</subfield>
+                        <subfield code="d">1098-1179</subfield>
+                    </datafield>
+                    <datafield tag="101" ind1="-" ind2="1">
+                        <subfield code="p">Hildegardis</subfield>
+                        <subfield code="c">de Alemannia</subfield>
+                        <subfield code="d">1098-1179</subfield>
+                    </datafield>
+                    <datafield tag="104" ind1="b" ind2="1">
+                        <subfield code="p">Escot, Pozzi</subfield>
+                        <subfield code="d">1933-</subfield>
+                        <subfield code="b">[Bearb.]</subfield>
+                        <subfield code="9">(DE-588)128917687</subfield>
+                    </datafield>
+                    <datafield tag="105" ind1="-" ind2="1">
+                        <subfield code="p">Pozzi Escot, Olga</subfield>
+                        <subfield code="d">1933-</subfield>
+                    </datafield>
+                    <datafield tag="304" ind1="b" ind2="1">
+                        <subfield code="a">Unde quocumque</subfield>
+                    </datafield>
+                    <datafield tag="331" ind1="-" ind2="1">
+                        <subfield code="a">Unde quocumque</subfield>
+                    </datafield>
+                    <datafield tag="334" ind1="-" ind2="1">
+                        <subfield code="a">Musikdruck</subfield>
+                    </datafield>
+                    <datafield tag="359" ind1="-" ind2="1">
+                        <subfield code="a">Hildegard von Bingen</subfield>
+                    </datafield>
+                    <datafield tag="425" ind1="-" ind2="1">
+                        <subfield code="a">c 1994</subfield>
+                    </datafield>
+                    <datafield tag="425" ind1="a" ind2="1">
+                        <subfield code="a">1994</subfield>
+                    </datafield>
+                    <datafield tag="503" ind1="a" ind2="1">
+                        <subfield code="a">Transkription der mittelalterlichen Neumen in moderne Notation</subfield>
+                    </datafield>
+                    <datafield tag="516" ind1="-" ind2="1">
+                        <subfield code="a">Melodien mit unterlegtem Text</subfield>
+                    </datafield>
+                    <datafield tag="590" ind1="-" ind2="1">
+                        <subfield code="a">&lt;&lt;The>> Ursula Antiphons ... [Musikdruck]</subfield>
+                    </datafield>
+                    <datafield tag="591" ind1="-" ind2="1">
+                        <subfield code="a">Hildegard von Bingen</subfield>
+                    </datafield>
+                    <datafield tag="594" ind1="-" ind2="1">
+                        <subfield code="a">[Kassel]</subfield>
+                    </datafield>
+                    <datafield tag="595" ind1="-" ind2="1">
+                        <subfield code="a">1994</subfield>
+                    </datafield>
+                    <datafield tag="599" ind1="-" ind2="1">
+                        <subfield code="a">HT016424145</subfield>
+                    </datafield>
+                    <controlfield tag="SYS">018117852</controlfield>
+                </record>
+            </metadata>
+        </record>
+    </ListRecords>
+</OAI-PMH>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<collection xmlns="info:lc/xmlns/marcxchange-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="info:lc/xmlns/marcxchange-v2 http://www.loc.gov/standards/iso25577/marcxchange-2-0.xsd">
+<collection xmlns="info:lc/xmlns/marcxchange-v2" xsi:schemaLocation="info:lc/xmlns/marcxchange-v2 http://www.loc.gov/standards/iso25577/marcxchange-2-0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <record format="MARC21" type="Bibliographic">
     <leader>01969cam  2200529 i 4500</leader>
     <controlfield tag="001">u6015439</controlfield>
     <controlfield tag="003">SIRSI</controlfield>
     <controlfield tag="005">20131218125548.0</controlfield>
     <controlfield tag="008">130329s2013    ru            000 1 ruso </controlfield>
-    <datafield tag="010" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="010">
       <subfield code="a">  2013403212</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">DLC</subfield>
       <subfield code="b">eng</subfield>
       <subfield code="e">rda</subfield>
@@ -22,146 +22,146 @@
       <subfield code="d">ZCU</subfield>
       <subfield code="d">STF</subfield>
     </datafield>
-    <datafield tag="066" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="066">
       <subfield code="c">(N</subfield>
     </datafield>
-    <datafield tag="019" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="019">
       <subfield code="a">846680176</subfield>
     </datafield>
-    <datafield tag="020" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="020">
       <subfield code="a">9785699626076</subfield>
     </datafield>
-    <datafield tag="020" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="020">
       <subfield code="a">5699626077</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(OCoLC)846683294</subfield>
       <subfield code="z">(OCoLC)846680176</subfield>
     </datafield>
-    <datafield tag="042" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="042">
       <subfield code="a">pcc</subfield>
     </datafield>
-    <datafield tag="043" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="043">
       <subfield code="a">e-ur---</subfield>
     </datafield>
-    <datafield tag="050" ind1="0" ind2="0">
+    <datafield ind2="0" ind1="0" tag="050">
       <subfield code="a">PG3479.4.U485</subfield>
       <subfield code="b">V67 2013</subfield>
     </datafield>
-    <datafield tag="082" ind1="0" ind2="4">
+    <datafield ind2="4" ind1="0" tag="082">
       <subfield code="a">891.7</subfield>
       <subfield code="2">23</subfield>
     </datafield>
-    <datafield tag="049" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="049">
       <subfield code="a">VA@@</subfield>
     </datafield>
-    <datafield tag="100" ind1="1" ind2=" ">
+    <datafield ind2=" " ind1="1" tag="100">
       <subfield code="6">880-01</subfield>
       <subfield code="a">Buĭda, I͡Uriĭ.</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="6">880-02</subfield>
       <subfield code="a">Vor, shpion i ubiĭt͡sa /</subfield>
       <subfield code="c">I͡Uriĭ Buĭda.</subfield>
     </datafield>
-    <datafield tag="264" ind1=" " ind2="1">
+    <datafield ind2="1" ind1=" " tag="264">
       <subfield code="6">880-03</subfield>
       <subfield code="a">Moskva :</subfield>
       <subfield code="b">ĖKSMO,</subfield>
       <subfield code="c">2013.</subfield>
     </datafield>
-    <datafield tag="300" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="300">
       <subfield code="a">314 pages ;</subfield>
       <subfield code="c">21 cm.</subfield>
     </datafield>
-    <datafield tag="336" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="336">
       <subfield code="a">text</subfield>
       <subfield code="2">rdacontent</subfield>
     </datafield>
-    <datafield tag="337" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="337">
       <subfield code="a">unmediated</subfield>
       <subfield code="2">rdamedia</subfield>
     </datafield>
-    <datafield tag="338" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="338">
       <subfield code="a">volume</subfield>
       <subfield code="2">rdacarrier</subfield>
     </datafield>
-    <datafield tag="490" ind1="1" ind2=" ">
+    <datafield ind2=" " ind1="1" tag="490">
       <subfield code="6">880-04</subfield>
       <subfield code="a">Bolʹshai͡a literatura. Proza I͡Urii͡a Buĭdy</subfield>
     </datafield>
-    <datafield tag="651" ind1=" " ind2="0">
+    <datafield ind2="0" ind1=" " tag="651">
       <subfield code="a">Soviet Union</subfield>
       <subfield code="x">Social conditions</subfield>
       <subfield code="y">1945-1991</subfield>
       <subfield code="v">Fiction.</subfield>
     </datafield>
-    <datafield tag="650" ind1=" " ind2="0">
+    <datafield ind2="0" ind1=" " tag="650">
       <subfield code="a">Authorship</subfield>
       <subfield code="v">Fiction.</subfield>
     </datafield>
-    <datafield tag="653" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="653">
       <subfield code="a">Prose. Prose fiction.</subfield>
     </datafield>
-    <datafield tag="653" ind1="0" ind2=" ">
+    <datafield ind2=" " ind1="0" tag="653">
       <subfield code="a">Russian literature.</subfield>
     </datafield>
-    <datafield tag="655" ind1=" " ind2="7">
+    <datafield ind2="7" ind1=" " tag="655">
       <subfield code="a">Psychological fiction.</subfield>
       <subfield code="2">lcsh</subfield>
     </datafield>
-    <datafield tag="655" ind1=" " ind2="0">
+    <datafield ind2="0" ind1=" " tag="655">
       <subfield code="a">Psychological fiction.</subfield>
     </datafield>
-    <datafield tag="655" ind1=" " ind2="0">
+    <datafield ind2="0" ind1=" " tag="655">
       <subfield code="a">Russian language materials.</subfield>
     </datafield>
-    <datafield tag="800" ind1="1" ind2=" ">
+    <datafield ind2=" " ind1="1" tag="800">
       <subfield code="a">Buĭda, I͡Uriĭ.</subfield>
       <subfield code="t">Bolʹshai͡a literatura.</subfield>
       <subfield code="p">Proza I͡Urii͡a Buĭdy.</subfield>
     </datafield>
-    <datafield tag="830" ind1=" " ind2="0">
+    <datafield ind2="0" ind1=" " tag="830">
       <subfield code="6">880-05</subfield>
       <subfield code="a">Bolʹshai͡a literatura. Proza I͡Urii͡a Buĭdy.</subfield>
     </datafield>
-    <datafield tag="880" ind1="1" ind2=" ">
+    <datafield ind2=" " ind1="1" tag="880">
       <subfield code="6">100-01/(N</subfield>
       <subfield code="a">Буйда, Юрий.</subfield>
     </datafield>
-    <datafield tag="880" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="880">
       <subfield code="6">245-02/(N</subfield>
       <subfield code="a">Вор, шпион и убийца /</subfield>
       <subfield code="c">Юрий Буйда.</subfield>
     </datafield>
-    <datafield tag="880" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="880">
       <subfield code="6">260-00/(N</subfield>
       <subfield code="a">Москва :</subfield>
       <subfield code="b">Эксмо,</subfield>
       <subfield code="c">2013.</subfield>
     </datafield>
-    <datafield tag="880" ind1=" " ind2="1">
+    <datafield ind2="1" ind1=" " tag="880">
       <subfield code="6">264-03/(N</subfield>
       <subfield code="a">Москва :</subfield>
       <subfield code="b">ЭКСМО,</subfield>
       <subfield code="c">2013.</subfield>
     </datafield>
-    <datafield tag="880" ind1="1" ind2=" ">
+    <datafield ind2=" " ind1="1" tag="880">
       <subfield code="6">490-04/(N</subfield>
       <subfield code="a">Большая литература. Проза Юрия Буйды.</subfield>
     </datafield>
-    <datafield tag="880" ind1=" " ind2="0">
+    <datafield ind2="0" ind1=" " tag="880">
       <subfield code="6">830-05/(N</subfield>
       <subfield code="a">Большая литература. Проза Юрия Буйды.</subfield>
     </datafield>
-    <datafield tag="994" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="994">
       <subfield code="a">C0</subfield>
       <subfield code="b">VA@</subfield>
     </datafield>
-    <datafield tag="596" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="596">
       <subfield code="a">2</subfield>
     </datafield>
-    <datafield tag="999" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="999">
       <subfield code="a">PG3479.4 .U485 V67 2013</subfield>
       <subfield code="w">LC</subfield>
       <subfield code="c">1</subfield>
@@ -185,112 +185,112 @@
     <controlfield tag="003">SIRSI</controlfield>
     <controlfield tag="005">20110414115648.0</controlfield>
     <controlfield tag="008">101102s2010    ru            000 1 rus  </controlfield>
-    <datafield tag="010" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="010">
       <subfield code="a">  2010522867</subfield>
     </datafield>
-    <datafield tag="020" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="020">
       <subfield code="a">9785699456116</subfield>
     </datafield>
-    <datafield tag="020" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="020">
       <subfield code="a">5699456112</subfield>
     </datafield>
-    <datafield tag="035" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">(OCoLC)673667835</subfield>
     </datafield>
-    <datafield tag="040" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="040">
       <subfield code="a">DLC</subfield>
       <subfield code="c">DLC</subfield>
       <subfield code="d">SXP</subfield>
       <subfield code="d">EVIEW</subfield>
       <subfield code="d">UEICP</subfield>
     </datafield>
-    <datafield tag="042" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="042">
       <subfield code="a">pcc</subfield>
     </datafield>
-    <datafield tag="050" ind1="0" ind2="0">
+    <datafield ind2="0" ind1="0" tag="050">
       <subfield code="a">PG3485.7.U225</subfield>
       <subfield code="b">S57 2010</subfield>
     </datafield>
-    <datafield tag="066" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="066">
       <subfield code="c">(N</subfield>
     </datafield>
-    <datafield tag="082" ind1="0" ind2="4">
+    <datafield ind2="4" ind1="0" tag="082">
       <subfield code="a">891.73/42</subfield>
       <subfield code="2">22</subfield>
     </datafield>
-    <datafield tag="100" ind1="1" ind2=" ">
+    <datafield ind2=" " ind1="1" tag="100">
       <subfield code="6">880-03</subfield>
       <subfield code="a">Rubina, Dina.</subfield>
     </datafield>
-    <datafield tag="245" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="245">
       <subfield code="6">880-01</subfield>
       <subfield code="a">Sindrom Petrushki :</subfield>
       <subfield code="b">roman /</subfield>
       <subfield code="c">Dina Rubina.</subfield>
     </datafield>
-    <datafield tag="260" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="260">
       <subfield code="6">880-02</subfield>
       <subfield code="a">Moskva :</subfield>
       <subfield code="b">Ėksmo,</subfield>
       <subfield code="c">2010.</subfield>
     </datafield>
-    <datafield tag="260" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="260">
       <subfield code="6">880-04</subfield>
       <subfield code="a">Moskva :</subfield>
       <subfield code="b">ĖKSMO,</subfield>
       <subfield code="c">2010.</subfield>
     </datafield>
-    <datafield tag="300" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="300">
       <subfield code="a">427 p. ;</subfield>
       <subfield code="c">21 cm.</subfield>
     </datafield>
-    <datafield tag="650" ind1=" " ind2="0">
+    <datafield ind2="0" ind1=" " tag="650">
       <subfield code="a">Dolls</subfield>
       <subfield code="v">Fiction.</subfield>
     </datafield>
-    <datafield tag="650" ind1=" " ind2="0">
+    <datafield ind2="0" ind1=" " tag="650">
       <subfield code="a">Conduct of life</subfield>
       <subfield code="v">Fiction.</subfield>
     </datafield>
-    <datafield tag="650" ind1=" " ind2="0">
+    <datafield ind2="0" ind1=" " tag="650">
       <subfield code="a">Suspense fiction.</subfield>
     </datafield>
-    <datafield tag="650" ind1=" " ind2="0">
+    <datafield ind2="0" ind1=" " tag="650">
       <subfield code="a">Psychological fiction.</subfield>
     </datafield>
-    <datafield tag="880" ind1="1" ind2=" ">
+    <datafield ind2=" " ind1="1" tag="880">
       <subfield code="6">100-03/(N</subfield>
       <subfield code="a">Рубина, Дина.</subfield>
     </datafield>
-    <datafield tag="880" ind1="1" ind2="0">
+    <datafield ind2="0" ind1="1" tag="880">
       <subfield code="6">245-01/(N</subfield>
       <subfield code="a">Синдром Петрушки :</subfield>
       <subfield code="b">роман /</subfield>
       <subfield code="c">Дина РубинА</subfield>
     </datafield>
-    <datafield tag="880" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="880">
       <subfield code="6">260-02/(N</subfield>
       <subfield code="a">Москва :</subfield>
       <subfield code="b">ЭКсмо,</subfield>
       <subfield code="c">2010.</subfield>
     </datafield>
-    <datafield tag="880" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="880">
       <subfield code="6">260-04/(N</subfield>
       <subfield code="a">Москва :</subfield>
       <subfield code="b">ЭКСМО,</subfield>
       <subfield code="c">2010.</subfield>
     </datafield>
-    <datafield tag="994" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="994">
       <subfield code="a">Z0</subfield>
       <subfield code="b">VA@</subfield>
     </datafield>
-    <datafield tag="970" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="970">
       <subfield code="a">Marcive</subfield>
     </datafield>
-    <datafield tag="596" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="596">
       <subfield code="a">2</subfield>
     </datafield>
-    <datafield tag="999" ind1=" " ind2=" ">
+    <datafield ind2=" " ind1=" " tag="999">
       <subfield code="a">PG3485.7 .U225 S57 2010</subfield>
       <subfield code="w">LC</subfield>
       <subfield code="c">1</subfield>

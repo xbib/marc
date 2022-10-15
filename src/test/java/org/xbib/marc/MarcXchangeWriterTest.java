@@ -1,3 +1,18 @@
+/**
+ *  Copyright 2016-2022 Jörg Prante <joergprante@gmail.com>
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *      <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ */
 package org.xbib.marc;
 
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -13,22 +28,19 @@ import java.nio.charset.Charset;
 import java.text.Normalizer;
 import java.util.zip.GZIPInputStream;
 
-/**
- *
- */
 public class MarcXchangeWriterTest {
 
     @Test
     public void splitMarcXchange() throws Exception {
         String s = "IRMARC8.bin";
-        InputStream in = getClass().getResource("/org/xbib/marc//" + s).openStream();
+        InputStream inputStream = getClass().getResource("/org/xbib/marc//" + s).openStream();
         MarcValueTransformers marcValueTransformers = new MarcValueTransformers();
         marcValueTransformers.setMarcValueTransformer(value -> Normalizer.normalize(value, Normalizer.Form.NFC));
         // fileNamePattern, splitSize, bufferSize, compress, indent
         try (MarcXchangeWriter writer = new MarcXchangeWriter("build/%d.xml", 3, 65536, false, true)
                 .setMarcValueTransformers(marcValueTransformers)) {
             Marc.builder()
-                    .setInputStream(in)
+                    .setInputStream(inputStream)
                     .setCharset(Charset.forName("ANSEL"))
                     .setMarcListener(writer)
                     .build()
@@ -49,14 +61,14 @@ public class MarcXchangeWriterTest {
     @Test
     public void splitMarcXchangeCompressed() throws Exception {
         String s = "IRMARC8.bin";
-        InputStream in = getClass().getResource("/org/xbib/marc//" + s).openStream();
+        InputStream inputStream = getClass().getResource("/org/xbib/marc//" + s).openStream();
         MarcValueTransformers marcValueTransformers = new MarcValueTransformers();
         marcValueTransformers.setMarcValueTransformer(value -> Normalizer.normalize(value, Normalizer.Form.NFC));
         // fileNamePattern, splitSize, bufferSize, compress, indent
         try (MarcXchangeWriter writer = new MarcXchangeWriter("build/%d.xml.gz", 3, 65536, true, true)
                 .setMarcValueTransformers(marcValueTransformers)) {
             Marc.builder()
-                    .setInputStream(in)
+                    .setInputStream(inputStream)
                     .setCharset(Charset.forName("ANSEL"))
                     .setMarcListener(writer)
                     .build()

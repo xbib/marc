@@ -21,9 +21,6 @@ import org.xbib.marc.label.RecordLabel;
 import java.io.IOException;
 import java.util.TreeMap;
 
-/**
- *
- */
 @SuppressWarnings("serial")
 public class MarcFieldDirectory extends TreeMap<Integer, MarcField.Builder> {
 

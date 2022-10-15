@@ -1,3 +1,18 @@
+/**
+ *  Copyright 2016-2022 Jörg Prante <joergprante@gmail.com>
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *      <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ */
 package org.xbib.marc;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -7,9 +22,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 import java.util.TreeSet;
 
-/**
- *
- */
 public class MarcFieldTest {
 
     @Test
@@ -93,7 +105,7 @@ public class MarcFieldTest {
     }
 
     @Test
-    public void testEmptyIndicatorWithSubfields() {
+    public void testNoIndicatorWithSubfields() {
         MarcField marcField = MarcField.builder()
                 .tag("016")
                 .subfield("1", null)
@@ -114,18 +126,48 @@ public class MarcFieldTest {
                 .build();
         assertTrue(marcField.isTagValid());
         assertTrue(marcField.isIndicatorValid());
-        assertTrue(marcField.isSubfieldValid());
+        assertTrue(marcField.areAllSubfieldsValid());
     }
 
     @Test
-    public void testInvalidTag() {
+    public void testEmptySubfield() {
         MarcField marcField = MarcField.builder()
-                .tag("---")
+                .tag("100")
+                .subfield("") // should be converted to a blank subfield ID by default
+                .build();
+        assertTrue(marcField.areAllSubfieldsValid());
+        assertTrue(marcField.isValid());
+    }
+
+    @Test
+    public void testEmptyIndicator() {
+        MarcField marcField = MarcField.builder()
+                .tag("100")
+                .indicator("") // should be converted to a blank indicator by default
+                .build();
+        assertTrue(marcField.isIndicatorValid());
+        assertTrue(marcField.isValid());
+    }
+
+    @Test
+    public void testEmptyTag() {
+        MarcField marcField = MarcField.builder()
+                .tag("") // should be converted to a blank tag by default
+                .build();
+        assertEquals("   ", marcField.getTag());
+        assertTrue(marcField.isTagValid());
+        assertTrue(marcField.isValid());
+    }
+
+    @Test
+    public void testInvalidTagConversion() {
+        MarcField marcField = MarcField.builder()
+                .tag("---") // dashes are converted to blanks by default
                 .subfield("1", null)
                 .subfield("2", null)
                 .subfield("3", null)
                 .build();
-        assertFalse(marcField.isTagValid());
+        assertTrue(marcField.isTagValid());
     }
 
     @Test
@@ -147,7 +189,7 @@ public class MarcFieldTest {
                 .indicator("0")
                 .subfield("\u007f", null)
                 .build();
-        assertFalse(marcField.isSubfieldValid());
+        assertFalse(marcField.areAllSubfieldsValid());
     }
 
     // 901  =, 901  a=98502599, 901  d=0, 901  e=14, 901  =f, 901  =h]
@@ -160,7 +202,7 @@ public class MarcFieldTest {
                 .subfield("d", null)
                 .subfield("e", null)
                 .build();
-        assertEquals("901$__$ade", marcField.toKey());
+        assertEquals("901$  $ade", marcField.toKey());
     }
 
     @Test
@@ -180,7 +222,7 @@ public class MarcFieldTest {
         int h2 = m2.hashCode();
         assertEquals(h1, h2);
         int cmp = m1.compareTo(m2);
-        assertTrue(cmp == 0);
+        assertEquals(0, cmp);
         m1 = MarcField.builder().tag("001").indicator("  ").subfield('a').build();
         m2 = MarcField.builder().tag("002").indicator("  ").subfield('a').build();
         cmp = m1.compareTo(m2);

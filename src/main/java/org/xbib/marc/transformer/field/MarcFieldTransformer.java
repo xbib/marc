@@ -39,16 +39,25 @@ public class MarcFieldTransformer extends LinkedHashMap<String, MarcField> {
 
     // the repeat counter pattern, simple integer
     private static final Pattern REP = Pattern.compile("\\{r\\}");
+
     // the two-string numeric repeat counter pattern
     private static final Pattern NREP = Pattern.compile("\\{n\\}");
+
     private final boolean ignoreIndicator;
+
     private final boolean ignoreSubfieldIds;
+
     private transient MarcField lastReceived;
+
     private transient MarcField lastBuilt;
+
     private int repeatCounter;
+
     private final Operator operator;
 
-    private MarcFieldTransformer(Map<String, MarcField> map, boolean ignoreIndicator, boolean ignoreSubfieldIds,
+    private MarcFieldTransformer(Map<String, MarcField> map,
+                                 boolean ignoreIndicator,
+                                 boolean ignoreSubfieldIds,
                                  Operator operator) {
         super(map);
         this.ignoreIndicator = ignoreIndicator;
@@ -78,6 +87,7 @@ public class MarcFieldTransformer extends LinkedHashMap<String, MarcField> {
     public String getTransformKey(MarcField marcField) {
         String key = ignoreIndicator ? marcField.toTagKey() : ignoreSubfieldIds ?
                 marcField.toTagIndicatorKey() : marcField.toKey();
+        logger.log(Level.INFO, "the transform key is " + key);
         return containsKey(key) ? key : null;
     }
 
@@ -104,6 +114,7 @@ public class MarcFieldTransformer extends LinkedHashMap<String, MarcField> {
     }
 
     public MarcField head(MarcField marcField, String key) {
+        logger.log(Level.INFO, "marcfield = " + marcField + " key = " + key);
         if (key == null) {
             return marcField;
         }
@@ -279,33 +290,51 @@ public class MarcFieldTransformer extends LinkedHashMap<String, MarcField> {
             if (a == null) {
                 return this;
             }
-            String[] from = a.split(Pattern.quote(MarcField.KEY_DELIMITER), -1);
+            String[] from = a.split(Pattern.quote(MarcField.DELIMITER), -1);
             MarcField.Builder fromBuilder = MarcField.builder();
             switch (from.length) {
                 case 1:
                     fromBuilder.tag(from[0]);
                     break;
                 case 2:
-                    fromBuilder.tag(from[0]).indicator(from[1]);
+                    fromBuilder.tag(from[0]);
+                    if (!from[1].isEmpty()) {
+                        fromBuilder.indicator(from[1]);
+                    }
                     break;
                 case 3:
-                    fromBuilder.tag(from[0]).indicator(from[1]).subfields(from[2]);
+                    fromBuilder.tag(from[0]);
+                    if (!from[1].isEmpty()) {
+                        fromBuilder.indicator(from[1]);
+                    }
+                    if (!from[2].isEmpty()) {
+                        fromBuilder.subfields(from[2]);
+                    }
                     break;
                 default:
                     break;
             }
             if (b != null) {
-                String[] to = b.split(Pattern.quote(MarcField.KEY_DELIMITER), -1);
+                String[] to = b.split(Pattern.quote(MarcField.DELIMITER), -1);
                 MarcField.Builder toBuilder = MarcField.builder();
                 switch (to.length) {
                     case 1:
                         toBuilder.tag(to[0]);
                         break;
                     case 2:
-                        toBuilder.tag(to[0]).indicator(to[1]);
+                        toBuilder.tag(to[0]);
+                        if (!to[1].isEmpty()) {
+                            toBuilder.indicator(to[1]);
+                        }
                         break;
                     case 3:
-                        toBuilder.tag(to[0]).indicator(to[1]).subfields(to[2]);
+                        toBuilder.tag(to[0]);
+                        if (!to[1].isEmpty()) {
+                            toBuilder.indicator(to[1]);
+                        }
+                        if (!to[2].isEmpty()) {
+                            toBuilder.subfields(to[2]);
+                        }
                         break;
                     default:
                         break;
@@ -323,7 +352,7 @@ public class MarcFieldTransformer extends LinkedHashMap<String, MarcField> {
         }
 
         public Builder drop(String drop) {
-            String[] s = drop.split(Pattern.quote(MarcField.KEY_DELIMITER), -1);
+            String[] s = drop.split(Pattern.quote(MarcField.DELIMITER), -1);
             MarcField.Builder builder = MarcField.builder();
             switch (s.length) {
                 case 1:

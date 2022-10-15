@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/mods/v3" version="3.6" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd">
+<?xml version="1.0" encoding="UTF-8"?><mods xmlns="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-6.xsd" version="3.6">
     <titleInfo>
         <title>Summerland</title>
     </titleInfo>
@@ -20,7 +20,7 @@
         <issuance>monographic</issuance>
     </originInfo>
     <language>
-        <languageTerm authority="iso639-2b" type="code">eng</languageTerm>
+        <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
     </language>
     <physicalDescription>
         <form authority="marcform">print</form>

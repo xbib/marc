@@ -1,6 +1,20 @@
+/**
+ *  Copyright 2016-2022 Jörg Prante <joergprante@gmail.com>
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *      <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ */
 package org.xbib.marc;
 
-import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -9,19 +23,12 @@ import org.xbib.marc.io.ReplaceStringInputStream;
 import org.xbib.marc.transformer.value.MarcValueTransformers;
 import org.xbib.marc.transformer.value.Xml10MarcValueCleaner;
 import org.xbib.marc.xml.MarcXchangeWriter;
-import org.xmlunit.matchers.CompareMatcher;
-import java.io.File;
-import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.text.Normalizer;
 import java.util.List;
-import java.util.stream.Collectors;
 
-/**
- *
- */
 public class MarcTest {
 
     @Test
@@ -31,19 +38,16 @@ public class MarcTest {
                 "chabon.mrc",
                 "chabon-loc.mrc"
         }) {
-            InputStream in = getClass().getResource(s).openStream();
-            File file = File.createTempFile(s + ".", ".xml");
-            file.deleteOnExit();
-            FileOutputStream out = new FileOutputStream(file);
-            try (MarcXchangeWriter writer = new MarcXchangeWriter(out)) {
-                Marc.builder()
-                        .setInputStream(in)
-                        .setCharset(Charset.forName("ANSEL"))
-                        .setMarcListener(writer)
-                        .build()
-                        .writeCollection();
-            }
-            assertThat(file, CompareMatcher.isIdenticalTo(getClass().getResource(s + ".xml").openStream()));
+            StreamMatcher.xmlMatch(getClass(), s, ".xml", (inputStream, outputStream) -> {
+                try (MarcXchangeWriter writer = new MarcXchangeWriter(outputStream)) {
+                    Marc.builder()
+                            .setInputStream(inputStream)
+                            .setCharset(Charset.forName("ANSEL"))
+                            .setMarcListener(writer)
+                            .build()
+                            .writeCollection();
+                }
+            });
         }
     }
 
@@ -54,22 +58,19 @@ public class MarcTest {
                 "makrtest.mrc",
                 "brkrtest.mrc"
         }) {
-            InputStream in = getClass().getResource(s).openStream();
-            File file = File.createTempFile(s + ".", ".xml");
-            file.deleteOnExit();
-            FileOutputStream out = new FileOutputStream(file);
-            MarcValueTransformers marcValueTransformers = new MarcValueTransformers();
-            marcValueTransformers.setMarcValueTransformer(value -> Normalizer.normalize(value, Normalizer.Form.NFC));
-            try (MarcXchangeWriter writer = new MarcXchangeWriter(out)
-                    .setMarcValueTransformers(marcValueTransformers)) {
-                Marc.builder()
-                        .setInputStream(in)
-                        .setCharset(Charset.forName("ANSEL"))
-                        .setMarcListener(writer)
-                        .build()
-                        .writeCollection();
-            }
-            assertThat(file, CompareMatcher.isIdenticalTo(getClass().getResource(s + ".xml").openStream()));
+            StreamMatcher.xmlMatch(getClass(), s, ".xml", (inputStream, outputStream) -> {
+                MarcValueTransformers marcValueTransformers = new MarcValueTransformers();
+                marcValueTransformers.setMarcValueTransformer(value -> Normalizer.normalize(value, Normalizer.Form.NFC));
+                try (MarcXchangeWriter writer = new MarcXchangeWriter(outputStream)
+                        .setMarcValueTransformers(marcValueTransformers)) {
+                    Marc.builder()
+                            .setInputStream(inputStream)
+                            .setCharset(Charset.forName("ANSEL"))
+                            .setMarcListener(writer)
+                            .build()
+                            .writeCollection();
+                }
+            });
         }
     }
 
@@ -86,42 +87,36 @@ public class MarcTest {
                 // result is invalid XML. Fix later.
                 //"bad-characters-in-various-fields.mrc"
         }) {
-            InputStream in = getClass().getResource(s).openStream();
-            File file = File.createTempFile(s + ".", ".xml");
-            file.deleteOnExit();
-            FileOutputStream out = new FileOutputStream(file);
-            MarcValueTransformers marcValueTransformers = new MarcValueTransformers();
-            marcValueTransformers.setMarcValueTransformer(new Xml10MarcValueCleaner());
-            try (MarcXchangeWriter writer = new MarcXchangeWriter(out, true)
-                    .setMarcValueTransformers(marcValueTransformers)) {
-                Marc.builder()
-                        .setInputStream(in)
-                        .setCharset(Charset.forName("ANSEL"))
-                        .setMarcListener(writer)
-                        .build()
-                        .writeCollection();
-            }
-            assertThat(file, CompareMatcher.isIdenticalTo(getClass().getResource(s + ".xml").openStream()));
+            StreamMatcher.xmlMatch(getClass(), s, ".xml", (inputStream, outputStream) -> {
+                MarcValueTransformers marcValueTransformers = new MarcValueTransformers();
+                marcValueTransformers.setMarcValueTransformer(new Xml10MarcValueCleaner());
+                try (MarcXchangeWriter writer = new MarcXchangeWriter(outputStream, true)
+                        .setMarcValueTransformers(marcValueTransformers)) {
+                    Marc.builder()
+                            .setInputStream(inputStream)
+                            .setCharset(Charset.forName("ANSEL"))
+                            .setMarcListener(writer)
+                            .build()
+                            .writeCollection();
+                }
+            });
         }
     }
 
     @Test
     public void testAMS() throws Exception {
         String s = "amstransactions.mrc";
-        InputStream in = getClass().getResource(s).openStream();
-        File file = File.createTempFile(s + ".", ".xml");
-        file.deleteOnExit();
-        FileOutputStream out = new FileOutputStream(file);
-        try (MarcXchangeWriter writer = new MarcXchangeWriter(out)) {
-            Marc.builder()
-                    .setInputStream(in)
-                    .setCharset(StandardCharsets.UTF_8)
-                    .setMarcListener(writer)
-                    .build()
-                    .writeCollection();
-            assertNull(writer.getException());
-        }
-        assertThat(file, CompareMatcher.isIdenticalTo(getClass().getResource(s + ".xml").openStream()));
+        StreamMatcher.xmlMatch(getClass(), s, ".xml", (inputStream, outputStream) -> {
+            try (MarcXchangeWriter writer = new MarcXchangeWriter(outputStream)) {
+                Marc.builder()
+                        .setInputStream(inputStream)
+                        .setCharset(StandardCharsets.UTF_8)
+                        .setMarcListener(writer)
+                        .build()
+                        .writeCollection();
+                assertNull(writer.getException());
+            }
+        });
     }
 
     /**
@@ -130,38 +125,35 @@ public class MarcTest {
     @Test
     public void testIRMARC8() throws Exception {
         String s = "IRMARC8.bin";
-        InputStream in = getClass().getResource(s).openStream();
-        File file = File.createTempFile(s + ".", ".xml");
-        file.deleteOnExit();
-        FileOutputStream out = new FileOutputStream(file);
-        MarcValueTransformers marcValueTransformers = new MarcValueTransformers();
-        marcValueTransformers.setMarcValueTransformer(value -> Normalizer.normalize(value, Normalizer.Form.NFC));
-        try (MarcXchangeWriter writer = new MarcXchangeWriter(out)
-                .setMarcValueTransformers(marcValueTransformers)) {
-            Marc.builder()
-                    .setInputStream(in)
-                    .setCharset(Charset.forName("ANSEL"))
-                    .setMarcListener(writer)
-                    .build()
-                    .writeCollection();
-            assertNull(writer.getException());
-            assertEquals(10, writer.getRecordCounter());
-        }
-        assertThat(file, CompareMatcher.isIdenticalTo(getClass().getResource(s + ".xml").openStream()));
+        StreamMatcher.xmlMatch(getClass(), s, ".xml", (inputStream, outputStream) -> {
+            MarcValueTransformers marcValueTransformers = new MarcValueTransformers();
+            marcValueTransformers.setMarcValueTransformer(value -> Normalizer.normalize(value, Normalizer.Form.NFC));
+            try (MarcXchangeWriter writer = new MarcXchangeWriter(outputStream)
+                    .setMarcValueTransformers(marcValueTransformers)) {
+                Marc.builder()
+                        .setInputStream(inputStream)
+                        .setCharset(Charset.forName("ANSEL"))
+                        .setMarcListener(writer)
+                        .build()
+                        .writeCollection();
+                assertNull(writer.getException());
+                assertEquals(10, writer.getRecordCounter());
+            }
+        });
     }
 
     @Test
     public void testRecordStream() throws Exception {
         String s = "IRMARC8.bin";
-        InputStream in = getClass().getResource(s).openStream();
-        Marc.Builder builder = Marc.builder()
-                .setInputStream(in)
-                .setCharset(StandardCharsets.UTF_8);
-        List<String> recordIDs = builder.recordStream().map(r -> r.get("001").toString()).collect(Collectors.toList());
-        in.close();
-        assertEquals("[{1=ocn132792681}, {1=ocn132786677}, {1=ocn125170297}, {1=ocn137607921}, {1=ocn124081299}, "
-                + "{1=ocn135450843}, {1=ocn137458539}, {1=ocn124411460}, {1=ocn131225106}, {1=ocn124450154}]",
-                recordIDs.toString());
+        try (InputStream inputStream = getClass().getResource(s).openStream()) {
+            Marc.Builder builder = Marc.builder()
+                    .setInputStream(inputStream)
+                    .setCharset(StandardCharsets.UTF_8);
+            List<String> recordIDs = builder.recordStream().map(r -> r.get("001").toString()).toList();
+            assertEquals("[{1=ocn132792681}, {1=ocn132786677}, {1=ocn125170297}, {1=ocn137607921}, {1=ocn124081299}, "
+                            + "{1=ocn135450843}, {1=ocn137458539}, {1=ocn124411460}, {1=ocn131225106}, {1=ocn124450154}]",
+                    recordIDs.toString());
+        }
     }
 
     /**
@@ -174,25 +166,23 @@ public class MarcTest {
         for (String s : new String[]{
                 "cyrillic_capital_e.mrc"
         }) {
-            InputStream in = getClass().getResource(s).openStream();
-            // repair file by replacing \u001f after escape sequence for cyrillic
-            ReplaceStringInputStream rin = new ReplaceStringInputStream(in, "\u001b(N\u001f", "\u001b(N|");
-            File file = File.createTempFile(s + ".", ".xml");
-            file.deleteOnExit();
-            FileOutputStream out = new FileOutputStream(file);
-            MarcValueTransformers marcValueTransformers = new MarcValueTransformers();
-            marcValueTransformers.setMarcValueTransformer(value -> Normalizer.normalize(value, Normalizer.Form.NFC));
-            try (MarcXchangeWriter writer = new MarcXchangeWriter(out, true)
-                    .setMarcValueTransformers(marcValueTransformers)) {
-                Marc.builder()
-                        .setInputStream(rin)
-                        .setCharset(Charset.forName("ANSEL"))
-                        .setMarcListener(writer)
-                        .build()
-                        .writeCollection();
-                assertNull(writer.getException());
-            }
-            assertThat(file, CompareMatcher.isIdenticalTo(getClass().getResource(s + ".xml").openStream()));
+            StreamMatcher.xmlMatch(getClass(), s, ".xml", (inputStream, outputStream) -> {
+                // repair file by replacing \u001f after escape sequence for cyrillic
+                ReplaceStringInputStream replaceStringInputStream =
+                        new ReplaceStringInputStream(inputStream, "\u001b(N\u001f", "\u001b(N|");
+                MarcValueTransformers marcValueTransformers = new MarcValueTransformers();
+                marcValueTransformers.setMarcValueTransformer(value -> Normalizer.normalize(value, Normalizer.Form.NFC));
+                try (MarcXchangeWriter writer = new MarcXchangeWriter(outputStream, true)
+                        .setMarcValueTransformers(marcValueTransformers)) {
+                    Marc.builder()
+                            .setInputStream(replaceStringInputStream)
+                            .setCharset(Charset.forName("ANSEL"))
+                            .setMarcListener(writer)
+                            .build()
+                            .writeCollection();
+                    assertNull(writer.getException());
+                }
+            });
         }
     }
 
@@ -201,20 +191,17 @@ public class MarcTest {
         for (String s : new String[]{
                 "oclc_63111280_export_as_UTF8_from_connexion.mrc"
         }) {
-            InputStream in = getClass().getResource(s).openStream();
-            File file = File.createTempFile(s + ".", ".xml");
-            file.deleteOnExit();
-            FileOutputStream out = new FileOutputStream(file);
-            try (MarcXchangeWriter writer = new MarcXchangeWriter(out)) {
-                Marc.builder()
-                        .setInputStream(in)
-                        .setCharset(StandardCharsets.UTF_8)
-                        .setMarcListener(writer)
-                        .build()
-                        .writeCollection();
-                assertNull(writer.getException());
-            }
-            assertThat(file, CompareMatcher.isIdenticalTo(getClass().getResource(s + ".xml").openStream()));
+            StreamMatcher.xmlMatch(getClass(), s, ".xml", (inputStream, outputStream) -> {
+                try (MarcXchangeWriter writer = new MarcXchangeWriter(outputStream)) {
+                    Marc.builder()
+                            .setInputStream(inputStream)
+                            .setCharset(StandardCharsets.UTF_8)
+                            .setMarcListener(writer)
+                            .build()
+                            .writeCollection();
+                    assertNull(writer.getException());
+                }
+            });
         }
     }
 
@@ -223,20 +210,17 @@ public class MarcTest {
         for (String s : new String[]{
                 "oclc_63111280_export_as_UTF8_from_connexion.mrc"
         }) {
-            InputStream in = getClass().getResource(s).openStream();
-            File file = File.createTempFile(s + ".", ".xml");
-            file.deleteOnExit();
-            FileOutputStream out = new FileOutputStream(file);
-            try (MarcXchangeWriter writer = new MarcXchangeWriter(out, true)) {
-                Marc.builder()
-                        .setInputStream(in)
-                        .setCharset(StandardCharsets.UTF_8)
-                        .setMarcListener(writer)
-                        .build()
-                        .writeCollection();
-                assertNull(writer.getException());
-            }
-            assertThat(file, CompareMatcher.isIdenticalTo(getClass().getResource(s + ".indented.xml").openStream()));
+            StreamMatcher.xmlMatch(getClass(), s, ".indented.xml", (inputStream, outputStream) -> {
+                try (MarcXchangeWriter writer = new MarcXchangeWriter(outputStream, true)) {
+                    Marc.builder()
+                            .setInputStream(inputStream)
+                            .setCharset(StandardCharsets.UTF_8)
+                            .setMarcListener(writer)
+                            .build()
+                            .writeCollection();
+                    assertNull(writer.getException());
+                }
+            });
         }
     }
 
@@ -247,13 +231,14 @@ public class MarcTest {
     @Test
     public void dumpMarc() throws Exception {
         StringBuilder sb = new StringBuilder();
-        String s  = "185258.mrc";
-        InputStream in = getClass().getResource(s).openStream();
+        String s = "185258.mrc";
+        try (InputStream inputStream = getClass().getResource(s).openStream()) {
             Marc marc = Marc.builder()
-                    .setInputStream(in)
+                    .setInputStream(inputStream)
                     .setCharset(Charset.forName("ANSEL"))
                     .build();
-        marc.iso2709Stream().chunks().forEach(chunk -> sb.append(chunk.toString()).append("\n"));
+            marc.iso2709Stream().chunks().forEach(chunk -> sb.append(chunk.toString()).append("\n"));
+        }
         assertTrue(sb.length() > 0);
     }
 }

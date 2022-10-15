@@ -1,18 +1,17 @@
-/*
-   Copyright 2016 Jörg Prante
-
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
-
+/**
+ *  Copyright 2016-2022 Jörg Prante <joergprante@gmail.com>
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *      <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
  */
 package org.xbib.marc;
 
@@ -67,12 +66,17 @@ public class MarcGenerator implements ChunkListener<byte[], BytesReference> {
 
     private MarcField.Builder builder;
 
-    private List<MarcField> marcFieldList;
+    private final List<MarcField> marcFieldList;
 
     public MarcGenerator() {
         this.builder = MarcField.builder();
         this.position = 0;
         this.marcFieldList = new LinkedList<>();
+    }
+
+    public MarcGenerator setValidator(MarcFieldValidator validator) {
+        this.builder.setValidator(validator);
+        return this;
     }
 
     public MarcGenerator setFormat(String format) {
@@ -265,7 +269,7 @@ public class MarcGenerator implements ChunkListener<byte[], BytesReference> {
         }
         if (data.length() > RecordLabel.LENGTH) {
             // record label + record content = old directory-based format
-            this.recordLabel = RecordLabel.builder().from(this.data.substring(0, RecordLabel.LENGTH).toCharArray()).build();
+            recordLabel = RecordLabel.builder().from(this.data.substring(0, RecordLabel.LENGTH).toCharArray()).build();
             if (recordLabelFixer != null) {
                 this.recordLabel = recordLabelFixer.fix(recordLabel);
             }
@@ -273,18 +277,17 @@ public class MarcGenerator implements ChunkListener<byte[], BytesReference> {
                 marcListener.beginRecord(format, type);
                 marcListener.leader(recordLabel.toString());
             }
-            // create directory
-            this.directory = new MarcFieldDirectory(recordLabel, this.data);
+            directory = new MarcFieldDirectory(recordLabel, this.data);
             if (directory.isEmpty()) {
                 builder.field(format, type, recordLabel, data.substring(RecordLabel.LENGTH));
             }
         } else if (this.data.length() == RecordLabel.LENGTH) {
-            this.recordLabel = RecordLabel.builder().from(this.data.substring(0, RecordLabel.LENGTH).toCharArray()).build();
+            recordLabel = RecordLabel.builder().from(this.data.substring(0, RecordLabel.LENGTH).toCharArray()).build();
             if (recordLabelFixer != null) {
                 this.recordLabel = recordLabelFixer.fix(recordLabel);
             }
             // record label only = new format without directory
-            this.directory = new MarcFieldDirectory(recordLabel, this.data);
+            directory = new MarcFieldDirectory(recordLabel, this.data);
             if (directory.isEmpty()) {
                 if (marcListener != null) {
                     marcListener.beginRecord(format, type);

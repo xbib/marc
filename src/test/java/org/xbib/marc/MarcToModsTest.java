@@ -25,9 +25,6 @@ import javax.xml.transform.sax.SAXSource;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 
-/**
- *
- */
 public class MarcToModsTest {
 
     @Test

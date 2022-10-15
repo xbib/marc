@@ -1,30 +1,25 @@
-/*
-   Copyright 2016 Jörg Prante
-
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
-
+/**
+ *  Copyright 2016-2022 Jörg Prante <joergprante@gmail.com>
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *      <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
  */
 package org.xbib.marc;
 
 import org.xbib.marc.dialects.mab.MabSubfieldControl;
 import org.xbib.marc.label.RecordLabel;
 
-import java.util.Arrays;
 import java.util.Deque;
-import java.util.HashSet;
 import java.util.LinkedList;
-import java.util.ListIterator;
-import java.util.Set;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
@@ -33,63 +28,20 @@ import java.util.stream.Collectors;
  */
 public class MarcField implements Comparable<MarcField> {
 
-    private static final MarcField EMPTY = builder().build();
+    private static final MarcField EMPTY_FIELD = builder().build();
 
     private static final Subfield EMPTY_SUBFIELD = new Subfield(null, null);
 
-    public static final String KEY_DELIMITER = "$";
-
     private static final String EMPTY_STRING = "";
 
-    private static final String BLANK_STRING = " ";
+    public static final MarcFieldValidator DEFAULT_VALIDATOR = new StrictMarcFieldValidator();
 
-    private static final char UNDERSCORE = '_';
+    public static final String DELIMITER = "$";
 
-    private static final String UNDERSCORE_STRING = "_";
-    private static final String EMPTY_TAG = "___";
+    private final Builder builder;
 
-    private static final Set<Character> ASCII_GRAPHICS = new HashSet<>(Arrays.asList(
-            '\u0020', '\u0021', '\u0022', '\u0023', '\u0024', '\u0025', '\u0026', '\'',
-            '\u0028', '\u0029', '\u002A', '\u002B', '\u002C', '\u002D', '\u002E', '\u002F',
-            '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
-            '\u003A', '\u003B', '\u003C', '\u003D', '\u003E', '\u003F', '\u0040',
-            'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
-            'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
-            'U', 'V', 'W', 'X', 'Y', 'Z',
-            '\u005B', '\\', '\u005D', '\u005E', '\u005F', '\u0060',
-            'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
-            'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't',
-            'u', 'v', 'w', 'x', 'y', 'z',
-            '\u007B', '\u007C', '\u007D', '\u007E'
-            ));
-
-    private final String tag;
-
-    private final String indicator;
-
-    private final int position;
-
-    private final int length;
-
-    private final String value;
-
-    private final String subfieldIds;
-
-    private final Deque<Subfield> subfields;
-
-    private final boolean iscontrol;
-
-    private MarcField(String tag, String indicator, int position, int length,
-                      String value, Deque<Subfield> subfields, String subfieldIds,
-                      boolean iscontrol) {
-        this.tag = tag;
-        this.indicator = indicator;
-        this.position = position;
-        this.length = length;
-        this.value = value;
-        this.subfields = subfields;
-        this.subfieldIds = subfieldIds;
-        this.iscontrol = iscontrol;
+    private MarcField(Builder builder) {
+        this.builder = builder;
     }
 
     /**
@@ -101,7 +53,7 @@ public class MarcField implements Comparable<MarcField> {
     }
 
     public static MarcField emptyMarcField() {
-        return EMPTY;
+        return EMPTY_FIELD;
     }
 
     public static Subfield emptySubfield() {
@@ -113,7 +65,7 @@ public class MarcField implements Comparable<MarcField> {
      * @return the tag
      */
     public String getTag() {
-        return tag;
+        return builder.tag;
     }
 
     /**
@@ -121,7 +73,7 @@ public class MarcField implements Comparable<MarcField> {
      * @return the indicator
      */
     public String getIndicator() {
-        return indicator;
+        return builder.indicator;
     }
 
     /**
@@ -129,7 +81,7 @@ public class MarcField implements Comparable<MarcField> {
      * @return position
      */
     public int getPosition() {
-        return position;
+        return builder.position;
     }
 
     /**
@@ -137,7 +89,7 @@ public class MarcField implements Comparable<MarcField> {
      * @return the MARC field length
      */
     public int getLength() {
-        return length;
+        return builder.length;
     }
 
     /**
@@ -145,7 +97,7 @@ public class MarcField implements Comparable<MarcField> {
      * @return a list of MARC subfields
      */
     public Deque<Subfield> getSubfields() {
-        return subfields;
+        return builder.subfields;
     }
 
     /**
@@ -154,7 +106,7 @@ public class MarcField implements Comparable<MarcField> {
      * @return list of subfields
      */
     public Deque<Subfield> getSubfield(String subfieldId) {
-        return subfields.stream()
+        return builder.subfields.stream()
                 .filter(subfield -> subfield.getId().equals(subfieldId))
                 .collect(Collectors.toCollection(LinkedList::new));
     }
@@ -164,7 +116,7 @@ public class MarcField implements Comparable<MarcField> {
      * @return first subfield or null
      */
     public Subfield getFirstSubfield() {
-        return subfields.isEmpty() ? MarcField.emptySubfield() : subfields.getFirst();
+        return builder.subfields.isEmpty() ? emptySubfield() : builder.subfields.getFirst();
     }
 
     public String getFirstSubfieldValue(String subfieldId) {
@@ -177,7 +129,7 @@ public class MarcField implements Comparable<MarcField> {
      * @return last subfield or null
      */
     public Subfield getLastSubfield() {
-        return subfields.isEmpty() ? MarcField.emptySubfield() : subfields.getLast();
+        return builder.subfields.isEmpty() ? emptySubfield() : builder.subfields.getLast();
     }
 
     public String getLastSubfieldValue(String subfieldId) {
@@ -191,7 +143,7 @@ public class MarcField implements Comparable<MarcField> {
      * @return the field value
      */
     public String getValue() {
-        return value;
+        return builder.value;
     }
 
     /**
@@ -199,7 +151,7 @@ public class MarcField implements Comparable<MarcField> {
      * @return true if control field, false if not
      */
     public boolean isControl() {
-        return iscontrol;
+        return builder.isControl();
     }
 
     /**
@@ -207,64 +159,31 @@ public class MarcField implements Comparable<MarcField> {
      * @return true if MARC field is empty, false if not
      */
     public boolean isEmpty() {
-        return tag == null;
+        return builder.tag == null;
     }
 
     public boolean isTagValid() {
-        if (tag == null) {
-            // we allow no tag
-            return true;
-        }
-        // only tags of length 3 are supposed to be valid
-        return tag.length() == 3
-                && ((tag.charAt(0) >= '0' && tag.charAt(0) <= '9')
-                || (tag.charAt(0) >= 'A' && tag.charAt(0) <= 'Z'))
-                && ((tag.charAt(1) >= '0' && tag.charAt(1) <= '9')
-                || (tag.charAt(1) >= 'A' && tag.charAt(1) <= 'Z'))
-                && ((tag.charAt(2) >= '0' && tag.charAt(2) <= '9')
-                || (tag.charAt(2) >= 'A' && tag.charAt(2) <= 'Z'));
+        return builder.validator.isTagValid(builder.tag);
     }
 
     public boolean isIndicatorValid() {
-        if (isControl()) {
+        if (builder.isControl()) {
             // ignore indicator check for control fields
             return true;
         }
-        if (indicator == null) {
+        if (builder.indicator == null) {
             // we allow no indicator
             return true;
         }
-        boolean b = indicator.length() <= 9;
-        for (int i = 0; i < indicator.length(); i++) {
-            b = indicator.charAt(i) == UNDERSCORE
-                    || (indicator.charAt(i) >= '0' && indicator.charAt(i) <= '9')
-                    || (indicator.charAt(i) >= 'a' && indicator.charAt(i) <= 'z')
-                    || (indicator.charAt(i) >= 'A' && indicator.charAt(i) <= 'Z')
-                    || indicator.charAt(i) == '@'; // must be valid, for PICA dialect
-            if (!b) {
-                break;
-            }
-        }
-        return b;
+        return builder.validator.isIndicatorValid(builder.indicator);
     }
 
-    public boolean isSubfieldValid() {
+    public boolean areAllSubfieldsValid() {
         if (isControl()) {
             // for control fields, there are no subfields, disable check
             return true;
         }
-        if (subfieldIds == null) {
-            // we allow no subfield ids
-            return true;
-        }
-        boolean b = true;
-        for (int i = 0; i < subfieldIds.length(); i++) {
-            b = ASCII_GRAPHICS.contains(subfieldIds.charAt(i));
-            if (!b) {
-                break;
-            }
-        }
-        return b;
+        return builder.subfields.stream().allMatch(s -> builder.validator.isSubfieldIdValid(s.getId()));
     }
 
     /**
@@ -272,7 +191,7 @@ public class MarcField implements Comparable<MarcField> {
      * @return true if valid
      */
     public boolean isValid() {
-        return isTagValid() && isIndicatorValid() && isSubfieldValid();
+        return isTagValid() && isIndicatorValid() && areAllSubfieldsValid();
     }
 
     /**
@@ -290,10 +209,10 @@ public class MarcField implements Comparable<MarcField> {
      * @return thhis MARC field if pattern matches, or null if not
      */
     public MarcField matchValue(Pattern pattern) {
-        if (value != null && pattern.matcher(value).matches()) {
+        if (builder.value != null && pattern.matcher(builder.value).matches()) {
             return this;
         }
-        for (Subfield subfield : subfields) {
+        for (Subfield subfield : builder.subfields) {
             if (pattern.matcher(subfield.getValue()).matches()) {
                 return this;
             }
@@ -308,7 +227,7 @@ public class MarcField implements Comparable<MarcField> {
      * @return the tag-based key of this MARC field
      */
     public String toTagKey() {
-        return tag == null ? EMPTY_STRING : tag;
+        return builder.tag == null ? EMPTY_STRING : builder.tag;
     }
 
     /**
@@ -318,15 +237,7 @@ public class MarcField implements Comparable<MarcField> {
      * @return the tag/indicator-based key of this MARC field
      */
     public String toTagIndicatorKey() {
-        return (tag == null ? EMPTY_STRING : tag) + KEY_DELIMITER + (indicator == null ? EMPTY_STRING : indicator);
-    }
-
-    /**
-     * Return subfield IDs.
-     * @return the subfield ID list as a string.
-     */
-    public String getSubfieldIds() {
-        return subfieldIds;
+        return toTagKey() + DELIMITER + (builder.indicator == null ? EMPTY_STRING : builder.indicator);
     }
 
     /**
@@ -336,8 +247,15 @@ public class MarcField implements Comparable<MarcField> {
      * @return the key of this MARC field
      */
     public String toKey() {
-        return (tag == null ? EMPTY_STRING : tag) + KEY_DELIMITER + (indicator == null ? EMPTY_STRING : indicator) +
-                KEY_DELIMITER + subfieldIds;
+        return toTagIndicatorKey() + DELIMITER + getSubfieldIds();
+    }
+
+    /**
+     * Return subfield IDs.
+     * @return the subfield ID list as a string.
+     */
+    public String getSubfieldIds() {
+        return builder.subfields.stream().map(Subfield::getId).sorted().collect(Collectors.joining());
     }
 
     @Override
@@ -362,32 +280,34 @@ public class MarcField implements Comparable<MarcField> {
     }
 
     /**
-     * MARC field builder. The builder accepts all information required for building
-     * a new MARC field.
+     * MARC field builder.
+     * The builder accepts all information required for building a new MARC field.
      */
     public static class Builder {
+
+        private static final String BLANK_STRING = " ";
 
         private String tag;
 
         private String indicator;
 
+        private String value;
+
         private int position;
 
         private int length;
 
-        private String value;
-
         private final LinkedList<Subfield> subfields;
-
-        private final LinkedList<String> subfieldIds;
 
         private Boolean isControl;
 
+        private MarcFieldValidator validator;
+
         Builder() {
             this.subfields = new LinkedList<>();
-            this.subfieldIds = new SubfieldIds();
             this.position = -1;
             this.length = -1;
+            this.validator = DEFAULT_VALIDATOR;
         }
 
         /**
@@ -396,19 +316,7 @@ public class MarcField implements Comparable<MarcField> {
          * @return this builder
          */
         public Builder tag(String tag) {
-            if (tag != null) {
-                // We have inconsistent use of tag symbols as placeholders for a "blank space"
-                // and we need to fix it here for consistency.
-                this.tag = tag
-                        .replace('-', UNDERSCORE)
-                        .replace('#', UNDERSCORE)
-                        .replace('.', UNDERSCORE)
-                        .replace(' ', UNDERSCORE);
-            }
-            // do not allow null or empty tags
-            if (this.tag == null || this.tag.isEmpty()) {
-                this.tag = EMPTY_TAG;
-            }
+            this.tag = validator.validateTag(tag);
             return this;
         }
 
@@ -426,23 +334,7 @@ public class MarcField implements Comparable<MarcField> {
          * @return this builder
          */
         public Builder indicator(String indicator) {
-            if (indicator != null) {
-                // We have inconsistent use of indicator symbols as placeholders for a "blank space"
-                // and we need to fix it here for consistency.
-                // Check if indicators are artifacts like "-" or "#" or '.' or ' '.
-                // Replace with underscore. This preserves better usage and visibility.
-                // Especially the dot. The dot will break Elasticsearch indexing with an exception.
-                // If you do not like underscores, replace them by a space character in your application.
-                this.indicator = indicator
-                        .replace('-', UNDERSCORE)
-                        .replace('#', UNDERSCORE)
-                        .replace('.', UNDERSCORE)
-                        .replace(' ', UNDERSCORE);
-            }
-            // we do not allow an empty indicator. Elasticsearch field names require a length > 0.
-            if (this.indicator != null && this.indicator.isEmpty()) {
-                this.indicator = UNDERSCORE_STRING;
-            }
+            this.indicator = validator.validateIndicator(indicator);
             return this;
         }
 
@@ -491,7 +383,8 @@ public class MarcField implements Comparable<MarcField> {
         }
 
         /**
-         * Set value for control/data field.
+         * Set value. The value is used for control/data fields.
+         *
          * @param value the value
          * @return this builder
          */
@@ -502,7 +395,6 @@ public class MarcField implements Comparable<MarcField> {
 
         public Builder subfield(Subfield subfield) {
             subfields.add(subfield);
-            subfieldIds.add(subfield.getId());
             return this;
         }
 
@@ -513,13 +405,13 @@ public class MarcField implements Comparable<MarcField> {
          * @return this builder
          */
         public Builder subfield(String subfieldId, String value) {
-            subfields.add(new Subfield(subfieldId, value));
-            subfieldIds.add(subfieldId);
+            String id = validator.validateSubfieldId(subfieldId);
+            subfields.add(new Subfield(id, value));
             return this;
         }
 
         /**
-         * Set subfield ID.
+         * Add subfield ID without a value.
          * @param subfieldId the subfield ID
          * @return this builder
          */
@@ -529,7 +421,7 @@ public class MarcField implements Comparable<MarcField> {
         }
 
         /**
-         * Set subfield ID.
+         * Add subfield ID.
          * @param subfieldId the subfield ID
          * @return this builder
          */
@@ -584,7 +476,7 @@ public class MarcField implements Comparable<MarcField> {
                 if ("MAB".equals(format) && "Titel".equals(type)) {
                     len = MabSubfieldControl.getSubfieldIdLen(tag());
                 }
-                boolean canDeriveSubfieldId = len > 0 && value.length() > len;
+                boolean canDeriveSubfieldId = value.length() > len && len > 0;
                 if (canDeriveSubfieldId) {
                     String id = value.substring(0, len);
                     String content = value.substring(len);
@@ -598,6 +490,7 @@ public class MarcField implements Comparable<MarcField> {
 
         /**
          * Set a new field with help of a record label from raw data.
+         *
          * @param format the record format
          * @param type the record type
          * @param recordLabel the record label
@@ -623,7 +516,7 @@ public class MarcField implements Comparable<MarcField> {
         }
 
         /**
-         * Copy a MARC field.
+         * Copy a MARC field into this builder.
          * @param field the MARC field to copy
          * @return this builder
          */
@@ -635,19 +528,17 @@ public class MarcField implements Comparable<MarcField> {
             this.value = field.getValue();
             this.subfields.clear();
             this.subfields.addAll(field.getSubfields());
-            for (Subfield subfield : subfields) {
-                subfieldIds.add(subfield.getId());
-            }
             return this;
         }
 
-        public Builder setControl(boolean isControl) {
-            this.isControl = isControl;
+        public Builder setValidator(MarcFieldValidator validator) {
+            this.validator = validator;
             return this;
         }
 
         /**
          * Is the MARC field a control field?
+         *
          * @return true if control field, false if not
          */
         public boolean isControl() {
@@ -678,8 +569,7 @@ public class MarcField implements Comparable<MarcField> {
          * @return the built MARC field.
          */
         public MarcField build() {
-            return new MarcField(tag, indicator, position, length,
-                    value, subfields, subfieldIds.toString(), isControl());
+            return new MarcField(this);
         }
 
         @Override
@@ -693,24 +583,12 @@ public class MarcField implements Comparable<MarcField> {
      */
     public static class Subfield {
 
-        private String id;
+        private final String id;
 
         private final String value;
 
         private Subfield(String id, String value) {
-            if (id != null) {
-                // We have inconsistent use of subfield id symbols as placeholders for a "blank space"
-                // and we need to fix it here for consistency.
-                this.id = id
-                        .replace('-', UNDERSCORE)
-                        .replace('#', UNDERSCORE)
-                        .replace('.', UNDERSCORE)
-                        .replace(' ', UNDERSCORE);
-            }
-            // we do not allow an empty subfield id. Elasticsearch field names require a length > 0.
-            if (this.id != null && this.id.isEmpty()) {
-                this.id = UNDERSCORE_STRING;
-            }
+            this.id = id;
             this.value = value;
         }
 
@@ -735,43 +613,4 @@ public class MarcField implements Comparable<MarcField> {
             return id + "=" + value;
         }
     }
-
-    @SuppressWarnings("serial")
-    private static class SubfieldIds extends LinkedList<String> {
-
-        /**
-         * Insertion sort. This is considered faster than sorting afterwards,
-         * especially for short lists (we have << 10 subfields at average in a field).
-         * @param string the string to insert
-         * @return true if collection changed
-         */
-        @Override
-        public boolean add(String string) {
-            ListIterator<String> it = listIterator();
-            boolean added = false;
-            while (it.hasNext()) {
-                if (it.next().compareTo(string) > 0) {
-                    it.previous();
-                    it.add(string);
-                    added = true;
-                    break;
-                }
-            }
-            if (!added) {
-                it.add(string);
-            }
-            return true;
-        }
-
-        @Override
-        public String toString() {
-            // comma-less appearance
-            StringBuilder sb = new StringBuilder();
-            for (String s : this) {
-                sb.append(s);
-            }
-            return sb.toString();
-        }
-    }
-
 }
