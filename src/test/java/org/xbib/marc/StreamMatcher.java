@@ -16,7 +16,6 @@
 package org.xbib.marc;
 
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -85,7 +84,7 @@ public class StreamMatcher {
                 assertStream("step 2 " + path2, path2, cl.getResource(resourceName).openStream());
                 logger.log(Level.INFO, "step 2: success");
             } finally {
-                //Files.delete(path2);
+                Files.delete(path2);
             }
         } finally {
             Files.delete(path1);
@@ -103,7 +102,6 @@ public class StreamMatcher {
              OutputStream outputStream2 = Files.newOutputStream(path2)) {
             producer1.produce(inputStream1, outputStream1);
             producer2.produce(inputStream2, outputStream2);
-            //assertStream("comparing " + path1 + " and " + path2, path1, path2);
             assertThat("XML check of " + path1, path1, CompareMatcher.isIdenticalTo(cl.getResource(resourceName + suffix1).openStream()));
             assertThat("XML check of " + path2, path2, CompareMatcher.isIdenticalTo(cl.getResource(resourceName + suffix2).openStream()));
         } finally {
@@ -120,6 +118,7 @@ public class StreamMatcher {
             producer.produce(inputStream, outputStream);
         }
     }
+
     public static void assertStream(String name, Path path1, Path path2) throws IOException {
         assertStream(name, Files.newInputStream(path1), Files.newInputStream(path2));
     }
