@@ -86,7 +86,6 @@ public class MarcFieldTransformer extends LinkedHashMap<String, MarcField> {
     public String getTransformKey(MarcField marcField) {
         String key = ignoreIndicator ? marcField.toTagKey() : ignoreSubfieldIds ?
                 marcField.toTagIndicatorKey() : marcField.toKey();
-        logger.log(Level.INFO, "the transform key is " + key);
         return containsKey(key) ? key : null;
     }
 
@@ -113,7 +112,6 @@ public class MarcFieldTransformer extends LinkedHashMap<String, MarcField> {
     }
 
     public MarcField head(MarcField marcField, String key) {
-        logger.log(Level.INFO, "marcfield = " + marcField + " key = " + key);
         if (key == null) {
             return marcField;
         }
