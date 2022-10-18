@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+    <marc:record>
+        <marc:leader>00000nam a2200000uu 4500</marc:leader>
+        <marc:controlfield tag="001">(DE-447)EMARCHITECTS - BURST��003 North Haven . MASAHARU TAKASAKI - Tenchi House Nagoya . JYRKI TASA - House Moby Dick Espoo . CHRIS TATE  Forest House Titirangi . TEZUKA ARCHITECTS - Pitched Roof House Nagano . TNA - Ring House Karuizawa, Nagano/  Mosaic House Tokyo . VO TRONG NGHIA - Stacking Green Ho Chi Minh City . WEBER l HUMMEL - Huse u Erlangen . WILLIAMS AND TSIEN - Shelter Island House Shelter Island . ZECC - Stairway to Heaven Utrecht . ZHANG LEI - Brick House 01 Nanjing/ Concrete Slit House Nanjing . PETER ZUMTHOR - Single-Family Hose Jenaz</marc:controlfield>
+        <marc:controlfield tag="003">DE-1020</marc:controlfield>
+        <marc:controlfield tag="005">20200401000000.0</marc:controlfield>
+        <marc:controlfield tag="008">200401s2014    gw ||||  |||| 00||| ger|c</marc:controlfield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">9783473327218</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">3473327212</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="040" ind1=" " ind2=" ">
+            <marc:subfield code="a">DE-1020</marc:subfield>
+            <marc:subfield code="b">ger</marc:subfield>
+            <marc:subfield code="c">DE-605</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1=" " ind2=" ">
+            <marc:subfield code="a">Weltraum</marc:subfield>
+            <marc:subfield code="b">[mit ausklappbaren Entdecker-Seiten ; 8 - 12 Jahre]</marc:subfield>
+            <marc:subfield code="c">[Text und Konzept: Stefan Greschik. Ill.: Jochen Windecker. Comic-Ill.: Billa Spiegelhauer. Fachl. Beratung:
+                Richard Bräucker]</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="1">
+            <marc:subfield code="a">Ravensburg</marc:subfield>
+            <marc:subfield code="b">Ravensburger Buchverl.</marc:subfield>
+            <marc:subfield code="c">2014</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">54 S.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="924" ind1=" " ind2=" ">
+            <marc:subfield code="b">DE-1020</marc:subfield>
+            <marc:subfield code="c">NRW</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+    <marc:record>
+        <marc:leader>00000nam a2200000uu 4500</marc:leader>
+        <marc:controlfield tag="001">(DE-1020)E998535454</marc:controlfield>
+        <marc:controlfield tag="003">DE-1020</marc:controlfield>
+        <marc:controlfield tag="005">20200401000000.0</marc:controlfield>
+        <marc:controlfield tag="008">200401s2014    gw ||||  |||| 00||| ger|c</marc:controlfield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">9783473328888</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="020" ind1=" " ind2=" ">
+            <marc:subfield code="a">347332888X</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="040" ind1=" " ind2=" ">
+            <marc:subfield code="a">DE-1020</marc:subfield>
+            <marc:subfield code="b">ger</marc:subfield>
+            <marc:subfield code="c">DE-605</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="100" ind1="1" ind2=" ">
+            <marc:subfield code="a">Nieländer, Peter</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="245" ind1=" " ind2=" ">
+            <marc:subfield code="a">Rund um den Fußball</marc:subfield>
+            <marc:subfield code="c">[Ill. und Text: Peter Nieländer]</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="264" ind1=" " ind2="1">
+            <marc:subfield code="a">Ravensburg</marc:subfield>
+            <marc:subfield code="b">Ravensburger Buchverl.</marc:subfield>
+            <marc:subfield code="c">2014</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="300" ind1=" " ind2=" ">
+            <marc:subfield code="a">[16] S.</marc:subfield>
+        </marc:datafield>
+        <marc:datafield tag="924" ind1=" " ind2=" ">
+            <marc:subfield code="b">DE-1020</marc:subfield>
+            <marc:subfield code="c">NRW</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>
