@@ -249,4 +249,22 @@ public class MarcFieldTest {
         assertNull(marcField.getFirstSubfield().getValue());
         assertNull(marcField.getLastSubfield().getValue());
     }
+
+    @Test
+    public void testMarcFieldFromKey() {
+        MarcField marcField = MarcField.builder().key("100.__.a", "\\.", "Hello World").build();
+        assertFalse(marcField.isControl());
+        assertEquals("100", marcField.getTag());
+        assertEquals("  ", marcField.getIndicator());
+        assertEquals("Hello World", marcField.getFirstSubfieldValue("a"));
+        marcField = MarcField.builder().key("001._._", "\\.", "123").build();
+        assertTrue(marcField.isControl());
+        assertEquals("001", marcField.getTag());
+        assertEquals(" ", marcField.getIndicator());
+        assertEquals("123", marcField.getFirstSubfieldValue(" "));
+        marcField = MarcField.builder().key("001", "\\.", "123").build();
+        assertTrue(marcField.isControl());
+        assertEquals("001", marcField.getTag());
+        assertEquals("123", marcField.getValue());
+    }
 }

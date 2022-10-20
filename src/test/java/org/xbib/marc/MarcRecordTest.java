@@ -29,6 +29,7 @@ import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.text.Normalizer;
+import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.regex.Pattern;
 
@@ -209,5 +210,14 @@ public class MarcRecordTest {
                 writer.endDocument();
             }
         });
+    }
+
+    @Test
+    public void testMarcRecordFromMap() {
+        Map<String, Object> map = Map.of("001", "123",
+                "100", Map.of("_", Map.of("a", "Hello World")));
+        MarcRecord marcRecord = MarcRecord.from(map);
+        assertEquals("123", marcRecord.getFields().stream().filter(m -> m.getTag().equals("001")).findFirst().get().getValue());
+        assertEquals("Hello World", marcRecord.getFields().stream().filter(m -> m.getTag().equals("100")).findFirst().get().getFirstSubfieldValue("a"));
     }
 }

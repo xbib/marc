@@ -21,11 +21,13 @@ import static org.xbib.marc.json.MarcJsonWriter.TYPE_TAG;
 
 import org.xbib.marc.label.RecordLabel;
 
+import java.util.Collection;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
+import java.util.function.BiConsumer;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
@@ -37,13 +39,18 @@ public class MarcRecord extends LinkedHashMap<String, Object> {
 
     private static final MarcRecord EMPTY_RECORD = Marc.builder().buildRecord();
 
-    private final String format;
+    private String format;
 
-    private final String type;
+    private String type;
 
-    private final transient RecordLabel recordLabel;
+    private transient RecordLabel recordLabel;
 
     private final transient List<MarcField> marcFields;
+
+    private MarcRecord(Map<String, Object> map) {
+        super(map);
+        this.marcFields = new LinkedList<>();
+    }
 
     /**
      * Create a MARC record. Use {@link Marc.Builder} to create a MARC record.
@@ -54,8 +61,11 @@ public class MarcRecord extends LinkedHashMap<String, Object> {
      * @param marcFields  the MARC field
      * @param lightweight true if MARC record fields should not be entered into the underlying hash map.
      */
-    public MarcRecord(String format, String type, RecordLabel recordLabel,
-               List<MarcField> marcFields, boolean lightweight) {
+    public MarcRecord(String format,
+                      String type,
+                      RecordLabel recordLabel,
+                      List<MarcField> marcFields,
+                      boolean lightweight) {
         super();
         this.format = format;
         this.type = type;
@@ -64,9 +74,6 @@ public class MarcRecord extends LinkedHashMap<String, Object> {
             throw new NullPointerException("record label must not be null");
         }
         this.marcFields = marcFields;
-        if (marcFields == null) {
-            throw new NullPointerException("fields must not be null");
-        }
         if (!lightweight) {
             createMap();
         }
@@ -78,6 +85,33 @@ public class MarcRecord extends LinkedHashMap<String, Object> {
      */
     public static MarcRecord emptyRecord() {
         return EMPTY_RECORD;
+    }
+
+    public static MarcRecord from(Map<String, Object> map) {
+        return from(map, FORMAT_TAG, TYPE_TAG, LEADER_TAG, RecordLabel.EMPTY);
+    }
+
+    public static MarcRecord from(Map<String, Object> map,
+                                  String formatTag,
+                                  String typeTag,
+                                  String leaderTag,
+                                  RecordLabel recordLabel) {
+        MarcRecord marcRecord = new MarcRecord(map);
+        marcRecord.parseMap(map, ".", "", (key, value) -> {
+            marcRecord.marcFields.add(MarcField.builder().key(key, "\\.", value.toString()).build());
+        });
+        if (map.containsKey(formatTag)) {
+            marcRecord.format = map.get(formatTag).toString();
+        }
+        if ( map.containsKey(typeTag)) {
+            marcRecord.type = map.get(typeTag).toString();
+        }
+        if (map.containsKey(leaderTag)) {
+            marcRecord.recordLabel = RecordLabel.builder().from(map.get(leaderTag).toString()).build();
+        } else {
+            marcRecord.recordLabel = recordLabel;
+        }
+        return marcRecord;
     }
 
     /**
@@ -212,5 +246,25 @@ public class MarcRecord extends LinkedHashMap<String, Object> {
                 repeatMap.put(Integer.toString(repeat), marcField.getValue());
             }
         }
+    }
+
+    @SuppressWarnings("unchecked")
+    private void parseMap(Map<String, Object> source, String separator, String prefix, BiConsumer<String, Object> consumer) {
+        source.forEach((k, v) -> {
+            if (v instanceof Map) {
+                parseMap((Map<String, Object>) v, separator, prefix + k + separator, consumer);
+            } else if (v instanceof Collection) {
+                Collection<Object> collection = (Collection<Object>) v;
+                for (Object object : collection) {
+                    if (object instanceof Map) {
+                        parseMap((Map<String, Object>) object, separator, prefix + k + separator, consumer);
+                    } else {
+                        consumer.accept(prefix + k, object);
+                    }
+                }
+            } else {
+                consumer.accept(prefix + k, v);
+            }
+        });
     }
 }

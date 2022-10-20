@@ -531,6 +531,57 @@ public class MarcField implements Comparable<MarcField> {
             return this;
         }
 
+        /**
+         * A key is a compact representation of tag/indicator/value
+         * @param key
+         * @return
+         */
+        public Builder key(String key, String separator, String value) {
+            String[] s = key.split(separator);
+            switch (s.length) {
+                case 3: {
+                    tag(s[0]);
+                    String indicator = s[1].replace('_', ' ');
+                    if (indicator.isEmpty()) {
+                        indicator(" ");
+                    } else {
+                        indicator(indicator);
+                    }
+                    String subfieldId = s[2].replace('_', ' ');
+                    if (subfieldId.isEmpty()) {
+                        subfield(" ", value);
+                    } else {
+                        subfield(subfieldId, value);
+                    }
+                    break;
+                }
+                case 2: {
+                    tag(s[0]);
+                    String indicator = s[1].replace('_', ' ');
+                    if (indicator.isEmpty()) {
+                        indicator(" ");
+                    } else {
+                        indicator(indicator);
+                    }
+                    value(value);
+                    break;
+                }
+                case 1: {
+                    tag(s[0]);
+                    value(value);
+                    break;
+                }
+                case 0: {
+                    tag(key);
+                    value(value);
+                    break;
+                }
+                default:
+                    throw new IllegalArgumentException("key specification is invalid: " + key + " length = " + s.length);
+            }
+            return this;
+        }
+
         public Builder setValidator(MarcFieldValidator validator) {
             this.validator = validator;
             return this;
