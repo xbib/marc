@@ -1,19 +1,5 @@
-// Use attribute to shorten urls
-:repo: https://github.com/xbib/marc
-:img: {repo}/raw/master/src/docs/asciidoc/img
 
 # MARC Bibliographic data processing library for Java
-
-image:https://api.travis-ci.org/xbib/marc.svg[title="Build status", link="https://travis-ci.org/xbib/marc/"]
-image:https://maven-badges.herokuapp.com/maven-central/org.xbib/marc/badge.svg[title="Maven Central", link="http://search.maven.org/#search%7Cga%7C1%7Cxbib%20marc"]
-image:https://img.shields.io/badge/License-Apache%202.0-blue.svg[title="Apache License 2.0", link="https://opensource.org/licenses/Apache-2.0"]
-image:https://img.shields.io/twitter/url/https/twitter.com/xbib.svg?style=social&label=Follow%20%40xbib[title="Twitter", link="https://twitter.com/xbib"]
-
-image:https://sonarqube.com/api/badges/gate?key=org.xbib:marc[title="Quality Gate", link="https://sonarqube.com/dashboard/index?id=org.xbib%3Amarc"]
-image:https://sonarqube.com/api/badges/measure?key=org.xbib:marc&metric=coverage[title="Coverage", link="https://sonarqube.com/dashboard/index?id=org.xbib%3Amarc"]
-image:https://sonarqube.com/api/badges/measure?key=org.xbib:marc&metric=vulnerabilities[title="Vulnerabilities", link="https://sonarqube.com/dashboard/index?id=org.xbib%3Amarc"]
-image:https://sonarqube.com/api/badges/measure?key=org.xbib:marc&metric=bugs[title="Bugs", link="https://sonarqube.com/dashboard/index?id=org.xbib%3Amarc"]
-image:https://sonarqube.com/api/badges/measure?key=org.xbib:marc&metric=sqale_debt_ratio[title="Technical debt ratio", link="https://sonarqube.com/dashboard/index?id=org.xbib%3Amarc"]
 
 This is a Java library for processing bibliographic data in the following formats:
 
@@ -51,8 +37,7 @@ part of this package.
 
 Here is a code example for reading from an ISO 2709 stream and writing into a MarcXchange collection.
 
-[source,java]
-----
+```
 try (MarcXchangeWriter writer = new MarcXchangeWriter(out)) {
     Marc.builder()
             .setInputStream(in)
@@ -61,14 +46,13 @@ try (MarcXchangeWriter writer = new MarcXchangeWriter(out)) {
             .build()
             .writeCollection();
 }
-----
+```
 
 ### MARC to MODS
 
 Here is an example to create MODS from an ISO 2709 stream
 
-[source,java]
-----
+```
 Marc marc = Marc.builder()
         .setInputStream(marcInputStream)
         .setCharset(Charset.forName("ANSEL"))
@@ -78,15 +62,14 @@ StringWriter sw = new StringWriter();
 Result result = new StreamResult(sw);
 System.setProperty("http.agent", "Java Agent");
 marc.transform(new URL("http://www.loc.gov/standards/mods/v3/MARC21slim2MODS3.xsl"), result);
-----
+```
 
 ### MARC to Aleph sequential
 
 And here is an example showing how records in "Aleph Sequential") can be parsed
 and written into a MarcXchange collection:
 
-[source,java]
-----
+```
 try (MarcXchangeWriter writer = new MarcXchangeWriter(out, true)
         .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)) {
     Marc marc = Marc.builder()
@@ -96,14 +79,13 @@ try (MarcXchangeWriter writer = new MarcXchangeWriter(out, true)
             .build();
     marc.wrapIntoCollection(marc.aleph());
 }
-----
+```
 
 ### MARC in Elasticsearch
 
 Another example, writing compressed Elasticsearch bulk format JSON from an ANSEL MARC input stream:
 
-[source,java]
-----
+```
 MarcValueTransformers marcValueTransformers = new MarcValueTransformers();
 // normalize ANSEL diacritics
 marcValueTransformers.setMarcValueTransformer(value -> Normalizer.normalize(value, Normalizer.Form.NFC));
@@ -122,13 +104,12 @@ try (MarcJsonWriter writer = new MarcJsonWriter("bulk%d.jsonl.gz", 10000,
             .writeCollection();
 
 }
-----
+```
 
 where the result can be indexed by a simple bash script using `curl`, because our JSON
 format is compatible to Elasticsearch JSON (which is a key/value format serializable JSON).
 
-[source,bash]
-----
+```
 #!/usr/bin/env bash
 # This example file sends compressed JSON lines formatted files to Elasticsearch bulk endpoint
 # It assumes the index settings and the mappings are already created and configured.
@@ -137,7 +118,7 @@ for f in bulk*.jsonl.gz; do
   curl -XPOST -H "Accept-Encoding: gzip" -H "Content-Encoding: gzip" \
    --data-binary @$f --compressed localhost:9200/_bulk
 done
-----
+```
 
 The result is a very basic MARC field based index, which is cumbersome to configure, search and analyze.
 In upcoming projects, I will show how to turn MARC into semantic data with context,
@@ -145,15 +126,14 @@ and indexing such data makes much more sense and is also more fun.
 
 By executing `curl localhost:9200/_search?pretty` the result can be examined.
 
-image:{img}/marcxchange-in-elasticsearch.png[]
+![](https://github.com/xbib/marc/raw/master/src/docs/asciidoc/img/marcxchange-in-elasticsearch.png)
 
 ### Example: finding all ISSNs
 
 This Java program scans through a MARC file, checks for ISSN values, and collects them in
 JSON format (the library `org.xbib:content-core:1.0.7` is used for JSON formatting)
 
-[source,java]
-----
+```
 public void findISSNs() throws IOException {
     Map<String, List<Map<String, String>>> result = new TreeMap<>();
     // set up MARC listener
@@ -212,7 +192,7 @@ private static boolean matchISSNField(MarcField field, MarcField.Subfield subfie
     }
     return false;
 }
-----
+```
 
 ## Bibliographic character sets
 
@@ -232,7 +212,7 @@ it is recommended to use http://github.com/xbib/bibliographic-character-sets if 
 The library can be used as a Gradle dependency
 
 ```
-    "org.xbib:marc:1.0.11"
+    "org.xbib:marc:2.8.0"
 ```
 
 or as a Maven dependency
@@ -251,17 +231,15 @@ First, install OpenJDK 8. If in doubt, I recommend SDKMan http://sdkman.io/ for 
 
 Then clone the github repository
 
-[source,bash]
-----
+```
 git clone https://github.com/xbib/marc
-----
+```
 
 Then change directory into `marc` folder and enter
 
-[source,bash]
-----
+```
 ./gradlew test -Dtest.single=MarcFieldFilterTest
-----
+```
 
 for executing the ISSN demo.
 
@@ -276,17 +254,16 @@ It could be extended to include a command for finding ISSNs (essentially, by cop
 
 After
 
-[source,bash]
-----
+```
 ./gradlew assemble
-----
+```
+
 there will find a file called marc-{version}.jar in the build/libs folder. To run this Java program,
 the command would be something like
 
-[source,bash]
-----
+```
 java -cp build/libs/marc-1.0.11.jar org.xbib.marc.tools.MarcTool
-----
+```
 
 MarcTool is not perfect yet (it expects some arguments, if not present,
 it will merely exit with an unfriendly `Exception in thread "main" java.lang.NullPointerException`).
@@ -297,10 +274,9 @@ must be on the runtime class path (e.g. `org.xbib:content-core:1.0.7`, `com.fast
 In Gradle, the exact dependencies for the JSON format in the junit test class `MarcFieldFilterTest`
 can be found by executing the command
 
-[source,bash]
-----
+```
 ./gradlew dependencies
-----
+```
 
 Then, see section `testRuntime`.
 
@@ -323,82 +299,29 @@ implements modern Java features into the MARC4J code base.
 For the curious, I tried to compile a feature comparison table to highlight some differences.
 I am not very familiar with MARC4J, so I appreciate any hints, comments, or corrections.
 
-.Feature comparison of MARC4J to xbib MARC
-|===
-| |MARC4J | xbib MARC
+Feature comparison of MARC4J to xbib MARC
 
-|started by
-|Bas Peters
-|Jörg Prante
-
-|Project start
-|2001
-|2016
-
-|Java
-|Java 5
-|Java 8
-
-|Build
-|Ant
-|Gradle
-
-|Supported formats
-| ISO 2709/Z39.2,
-  MARC (USMARC, MARC 21, MARC XML),
-  tries to parse MARC-like formats with a "permissive" parser
-| ISO 2709/Z39.2,
-  MARC (USMARC, MARC 21, MARC XML),
-  MarcXchange (ISO 25577:2013),
-  UNIMARC,
-  MAB (MAB2, MAB XML),
-  dialects of MARC (Aleph Sequential, Pica, SISIS format)
-
-| Bibliographic character set support
-| builtin, auto-detectable
-| dynamically, via Java `Charset` API, no autodetection
-
-| Processing
-| iterator-based
-| iterator-based, iterable-based, Java 8 streams for fields, records
-
-| Transformations
-|
-| on-the-fly, pattern-based filtering for tags/values, field key mapping, field value transformations
-
-| Cleaning
-|
-| substitute invalid characters with a pattern replacement input stream
-
-| Statistics
-|
-| can count tag/indicator/subfield combination occurences
-
-| Concurrency support
-|
-| can write to handlers record by record, provides a `MarcRecordAdapter` to turn MARC field events into record events
-
-| JUnit test coverage
-|
-| extensive testing over all MARC dialects, >80% code coverage
-
-| Source Quality Profile
-|
-| https://sonarqube.com/overview?id=1109967[Sonarqube]
-
-| Jar size
-| 447 KB (2.7.0)
-| 150 KB (1.0.11)
-
-|License
-|LGPL
-|Apache
-
-|===
+|                                     | MARC4J                                                                                                         | xbib MARC                                                                                                                                                             |
+|-------------------------------------|----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------| 
+| started by                          | Bas Peters                                                                                                     | Jörg Prante                                                                                                                                                           |
+| Project start                       | 2001                                                                                                           | 2016                                                                                                                                                                  |
+| Java                                | Java 5                                                                                                         | Java 17+                                                                                                                                                              |
+| Build                               | Ant                                                                                                            | Gradle                                                                                                                                                                |
+| Supported formats                   | ISO 2709/Z39.2,  MARC (USMARC, MARC 21, MARC XML), tries to parse MARC-like formats with a "permissive" parser | ISO 2709/Z39.2, MARC (USMARC, MARC 21, MARC XML), MarcXchange (ISO 25577:2013), UNIMARC, MAB (MAB2, MAB XML), dialects of MARC (Aleph Sequential, Pica, SISIS format) |
+| Bibliographic character set support | builtin, auto-detectable                                                                                       | dynamically, via Java `Charset` API, no autodetection                                                                                                                 |
+| Processing                          | iterator-based                                                                                                 | iterator-based, iterable-based, Java 8 streams for fields, records                                                                                                    |
+| Transformations                     |                                                                                                                | on-the-fly, pattern-based filtering for tags/values, field key mapping, field value transformations                                                                   |
+| Cleaning                            |                                                                                                                | substitute invalid characters with a pattern replacement input stream                                                                                                 |
+| Statistics                          |                                                                                                                | can count tag/indicator/subfield combination occurences                                                                                                               |
+| Concurrency support                 |                                                                                                                | can write to handlers record by record, provides a `MarcRecordAdapter` to turn MARC field events into record events                                                   | 
+| JUnit test coverage                 |                                                                                                                | extensive testing over all MARC dialects, >80% code coverage                                                                                                          |
+| Source Quality Profile              |                                                                                                                |                                                                                                                                                                       |
+| Jar size                            | 447 KB (2.7.0)                                                                                                 | 150 KB (1.0.11), 194 KB (2.8.0)                                                                                                                                       |
+| License                             | LGPL                                                                                                           | Apache                                                                                                                                                                |
 
 # License
 
-Copyright (C) 2016 Jörg Prante
+Copyright (C) 2016-2022 Jörg Prante
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -411,5 +334,3 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
-
-image:https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif[title="PayPal", link="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GVHFQYZ9WZ8HG"]
