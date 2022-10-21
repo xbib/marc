@@ -51,6 +51,7 @@ public enum TypeOfControl {
         switch (ch) {
             case ' ':
             case '#':
+            case '0':
                 return UNSPECIFIED;
             case 'a':
                 return ARCHIVAL;

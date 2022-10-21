@@ -126,7 +126,7 @@ public class MabXMLContentHandler extends MarcContentHandler implements MabXMLCo
             }
             case FELD: {
                 String s = content.toString();
-                MarcField marcField = stack.pop().value(trim ? s.trim() : s).build();
+                MarcField marcField = stack.pop().value(isTrim ? s.trim() : s).build();
                 if (marcValueTransformers != null) {
                     marcField = marcValueTransformers.transformValue(marcField);
                 }
@@ -135,7 +135,7 @@ public class MabXMLContentHandler extends MarcContentHandler implements MabXMLCo
             }
             case UF: {
                 String s = content.toString();
-                stack.peek().subfieldValue(trim ? s.trim() : s);
+                stack.peek().subfieldValue(isTrim ? s.trim() : s);
                 break;
             }
             default:

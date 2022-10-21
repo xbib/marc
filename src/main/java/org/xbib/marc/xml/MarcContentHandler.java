@@ -75,7 +75,7 @@ public class MarcContentHandler
 
     protected MarcValueTransformers marcValueTransformers;
 
-    protected boolean trim;
+    protected boolean isTrim;
 
     private MarcFieldTransformers marcFieldTransformers;
 
@@ -84,6 +84,8 @@ public class MarcContentHandler
     private List<MarcField> marcFieldList;
 
     private final Set<String> validNamespaces;
+
+    private boolean isStableFieldOrder;
 
     public MarcContentHandler() {
         this.recordCounter = new AtomicInteger();
@@ -160,7 +162,12 @@ public class MarcContentHandler
     }
 
     public MarcContentHandler setTrim(boolean trim) {
-        this.trim = trim;
+        this.isTrim = trim;
+        return this;
+    }
+
+    public MarcContentHandler setStableFieldOrder(boolean stableFieldOrder) {
+        this.isStableFieldOrder = stableFieldOrder;
         return this;
     }
 
@@ -247,7 +254,7 @@ public class MarcContentHandler
                 } else {
                     MarcRecord marcRecord = new MarcRecord(getFormat(), getType(),
                             RecordLabel.builder().from(label).build(),
-                            marcFieldList, false);
+                            marcFieldList, false, isStableFieldOrder);
                     marcRecordListener.record(marcRecord);
                 }
             }
@@ -405,7 +412,7 @@ public class MarcContentHandler
             }
             case SUBFIELD: {
                 String s = content.toString();
-                stack.peek().subfieldValue(trim ? s.trim() : s);
+                stack.peek().subfieldValue(isTrim ? s.trim() : s);
                 break;
             }
             default: {
