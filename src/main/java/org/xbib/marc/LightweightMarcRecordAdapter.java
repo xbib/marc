@@ -15,13 +15,10 @@
  */
 package org.xbib.marc;
 
-/**
- *
- */
 public class LightweightMarcRecordAdapter extends MarcRecordAdapter {
 
     public LightweightMarcRecordAdapter(MarcRecordListener marcRecordListener) {
-        super(marcRecordListener);
+        super(marcRecordListener, false);
         this.builder = Marc.builder().lightweightRecord();
     }
 

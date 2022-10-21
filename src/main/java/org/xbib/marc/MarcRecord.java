@@ -26,18 +26,20 @@ import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-import java.util.Objects;
+import java.util.Set;
+import java.util.TreeMap;
 import java.util.function.BiConsumer;
+import java.util.function.Predicate;
 import java.util.regex.Pattern;
-import java.util.stream.Collectors;
 
 /**
  * A MARC record. This is an extended MARC record augmented with MarcXchange information.
  */
-@SuppressWarnings("serial")
-public class MarcRecord extends LinkedHashMap<String, Object> {
+public class MarcRecord implements Map<String, Object> {
 
     private static final MarcRecord EMPTY_RECORD = Marc.builder().buildRecord();
+
+    private final Map<String, Object> delegate;
 
     private String format;
 
@@ -47,8 +49,8 @@ public class MarcRecord extends LinkedHashMap<String, Object> {
 
     private final transient List<MarcField> marcFields;
 
-    private MarcRecord(Map<String, Object> map) {
-        super(map);
+    private MarcRecord(Map<String, Object> delegate) {
+        this.delegate = delegate;
         this.marcFields = new LinkedList<>();
     }
 
@@ -65,8 +67,8 @@ public class MarcRecord extends LinkedHashMap<String, Object> {
                       String type,
                       RecordLabel recordLabel,
                       List<MarcField> marcFields,
-                      boolean lightweight) {
-        super();
+                      boolean lightweight,
+                      boolean stable) {
         this.format = format;
         this.type = type;
         this.recordLabel = recordLabel;
@@ -74,9 +76,7 @@ public class MarcRecord extends LinkedHashMap<String, Object> {
             throw new NullPointerException("record label must not be null");
         }
         this.marcFields = marcFields;
-        if (!lightweight) {
-            createMap();
-        }
+        this.delegate = lightweight ? Map.of() : createMap(stable);
     }
 
     /**
@@ -97,9 +97,8 @@ public class MarcRecord extends LinkedHashMap<String, Object> {
                                   String leaderTag,
                                   RecordLabel recordLabel) {
         MarcRecord marcRecord = new MarcRecord(map);
-        marcRecord.parseMap(map, ".", "", (key, value) -> {
-            marcRecord.marcFields.add(MarcField.builder().key(key, "\\.", value.toString()).build());
-        });
+        marcRecord.parseMap(map, ".", "", (key, value) ->
+                marcRecord.marcFields.add(MarcField.builder().key(key, "\\.", value.toString()).build()));
         if (map.containsKey(formatTag)) {
             marcRecord.format = map.get(formatTag).toString();
         }
@@ -151,38 +150,134 @@ public class MarcRecord extends LinkedHashMap<String, Object> {
     }
 
     /**
-     * Return the MARC fields of this record with a given tag.
+     * Filter the MARC fields of this record with a given tag.
      *
      * @param tag the MARC tag
-     * @return the MARC field list matching the given tag.
      */
-    public List<MarcField> getFields(String tag) {
-        return marcFields.stream().filter(marcField -> marcField.getTag().equals(tag))
-                .collect(Collectors.toList());
+    public void filter(String tag, MarcFieldHandler handler) {
+        filter(marcField -> marcField.getTag().equals(tag), handler);
     }
 
-    /**
-     * Return a list of MARC fields of this record where key pattern matches were found.
-     *
-     * @param pattern the pattern
-     * @return a list of MARC fields
-     */
-    public List<MarcField> filterKey(Pattern pattern) {
-        return marcFields.stream()
-                .map(field -> field.matchKey(pattern))
-                .filter(Objects::nonNull)
-                .collect(Collectors.toList());
+    public void filter(String tag, String indicator, MarcFieldHandler handler) {
+        filter(marcField -> marcField.getTag().equals(tag) && marcField.getIndicator().equals(indicator), handler);
     }
 
-    /**
-     * Return a list of MARC fields of this record where pattern matches were found.
-     *
-     * @param pattern the pattern
-     * @return a list of MARC fields
-     */
-    public List<MarcField> filterValue(Pattern pattern) {
-        return marcFields.stream().map(field ->
-                field.matchValue(pattern)).filter(Objects::nonNull).collect(Collectors.toList());
+    public void filter(String tag, String indicator, String subfieldId, MarcFieldHandler handler) {
+        filter(marcField -> marcField.getTag().equals(tag) &&
+                marcField.getIndicator().equals(indicator) &&
+                marcField.getSubfieldIds().contains(subfieldId), handler);
+    }
+
+    public void filter(Pattern pattern, MarcFieldHandler handler) {
+        filter(field -> field.matchesKey(pattern), handler);
+    }
+
+    public void filter(Predicate<? super MarcField> predicate, MarcFieldHandler handler) {
+        marcFields.stream().filter(predicate).forEach(handler::field);
+    }
+
+    public void filterFirst(Predicate<? super MarcField> predicate, MarcFieldHandler handler) {
+        marcFields.stream().filter(predicate).findFirst().ifPresent(handler::field);
+    }
+
+    public MarcField getFirst(String tag) {
+        return getFirst(marcField -> marcField.getTag().equals(tag));
+    }
+
+    public MarcField getFirst(String tag, String indicator) {
+        return getFirst(marcField -> marcField.getTag().equals(tag) && marcField.getIndicator().equals(indicator));
+    }
+
+    public MarcField getFirst(String tag, String indicator, String subfieldId) {
+        return getFirst(marcField -> marcField.getTag().equals(tag) &&
+                marcField.getIndicator().equals(indicator) &&
+                marcField.getSubfieldIds().contains(subfieldId));
+    }
+
+    public MarcField getFirst(Predicate<? super MarcField> predicate) {
+        final MarcField[] array = new MarcField[1];
+        filterFirst(predicate, marcField -> array[0] = marcField);
+        return array[0];
+    }
+
+    public List<MarcField> getAll(String tag) {
+        return getAll(marcField -> marcField.getTag().equals(tag));
+    }
+
+    public List<MarcField> getAll(String tag, String indicator) {
+        return getAll(marcField -> marcField.getTag().equals(tag) && marcField.getIndicator().equals(indicator));
+    }
+
+    public List<MarcField> getAll(String tag, String indicator, String subfieldId) {
+        return getAll(marcField -> marcField.getTag().equals(tag) &&
+                marcField.getIndicator().equals(indicator) &&
+                marcField.getSubfieldIds().contains(subfieldId));
+    }
+
+    public List<MarcField> getAll(Predicate<? super MarcField> predicate) {
+        List<MarcField> list = new LinkedList<>();
+        filter(predicate, list::add);
+        return list;
+    }
+
+    @Override
+    public int size() {
+        return delegate.size();
+    }
+
+    @Override
+    public boolean isEmpty() {
+        return delegate.isEmpty();
+    }
+
+    @Override
+    public boolean containsKey(Object key) {
+        return delegate.containsKey(key);
+    }
+
+    @Override
+    public boolean containsValue(Object value) {
+        return delegate.containsValue(value);
+    }
+
+    @Override
+    public Object get(Object key) {
+        return delegate.get(key);
+    }
+
+    @Override
+    public Object put(String key, Object value) {
+        return delegate.put(key, value);
+    }
+
+    @Override
+    public Object remove(Object key) {
+        return delegate.remove(key);
+    }
+
+    @Override
+    public void putAll(Map<? extends String, ?> m) {
+        delegate.putAll(m);
+    }
+
+    @Override
+    public void clear() {
+        delegate.clear();
+    }
+
+    @Override
+    public Set<String> keySet() {
+        return delegate.keySet();
+    }
+
+    @Override
+    public Collection<Object> values() {
+        return delegate.values();
+    }
+
+    @Override
+    public Set<Entry<String, Object>> entrySet() {
+        return delegate.entrySet();
     }
 
     @Override
@@ -197,21 +292,26 @@ public class MarcRecord extends LinkedHashMap<String, Object> {
         return (recordLabel.toString() + marcFields.toString()).hashCode();
     }
 
+    public String toString() {
+        return delegate.toString();
+    }
+
     @SuppressWarnings("unchecked")
-    private void createMap() {
-        put(FORMAT_TAG, format);
-        put(TYPE_TAG, type);
-        put(LEADER_TAG, recordLabel.toString());
+    private Map<String, Object> createMap(boolean stable) {
+        Map<String, Object> map = stable ? new TreeMap<>() : new LinkedHashMap<>();
+        map.put(FORMAT_TAG, format);
+        map.put(TYPE_TAG, type);
+        map.put(LEADER_TAG, recordLabel.toString());
         for (MarcField marcField : marcFields) {
             String tag = marcField.getTag();
             int repeat;
             Map<String, Object> repeatMap;
-            if (!containsKey(tag)) {
+            if (!map.containsKey(tag)) {
                 repeatMap = new LinkedHashMap<>();
                 repeat = 1;
-                put(tag, repeatMap);
+                map.put(tag, repeatMap);
             } else {
-                repeatMap = (Map<String, Object>) get(tag);
+                repeatMap = (Map<String, Object>) map.get(tag);
                 repeat = repeatMap.size() + 1;
             }
             String indicator = marcField.getIndicator();
@@ -246,6 +346,7 @@ public class MarcRecord extends LinkedHashMap<String, Object> {
                 repeatMap.put(Integer.toString(repeat), marcField.getValue());
             }
         }
+        return map;
     }
 
     @SuppressWarnings("unchecked")

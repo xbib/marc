@@ -16,7 +16,7 @@
 package org.xbib.marc;
 
 /**
- * Interface for catching MARC records.
+ * Interface for handling MARC records in collections.
  */
 public interface MarcRecordListener {
 

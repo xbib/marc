@@ -662,7 +662,9 @@ public final class Marc {
 
         private MarcGenerator marcGenerator;
 
-        private boolean islightweightRecord;
+        private boolean isLightweightRecord;
+
+        private boolean isStableFieldOrder;
 
         private Pattern keyPattern;
 
@@ -1116,8 +1118,8 @@ public final class Marc {
         }
 
         public Marc.Builder addField(MarcField marcField) {
-            boolean keymatch = keyPattern == null || marcField.matchKey(keyPattern) != null;
-            boolean valuematch = valuePattern == null || marcField.matchValue(valuePattern) != null;
+            boolean keymatch = keyPattern == null || marcField.matchesKey(keyPattern);
+            boolean valuematch = valuePattern == null || marcField.matchesValue(valuePattern);
             if (keymatch && valuematch) {
                 this.marcFieldList.add(marcField);
             }
@@ -1125,7 +1127,12 @@ public final class Marc {
         }
 
         public Marc.Builder lightweightRecord() {
-            this.islightweightRecord = true;
+            this.isLightweightRecord = true;
+            return this;
+        }
+
+        public Marc.Builder stableFieldOrder() {
+            this.isStableFieldOrder = true;
             return this;
         }
 
@@ -1134,7 +1141,7 @@ public final class Marc {
          * @return MARC record
          */
         public MarcRecord buildRecord() {
-            return new MarcRecord(format, type, recordLabel, marcFieldList, islightweightRecord);
+            return new MarcRecord(format, type, recordLabel, marcFieldList, isLightweightRecord, isStableFieldOrder);
         }
 
         /**

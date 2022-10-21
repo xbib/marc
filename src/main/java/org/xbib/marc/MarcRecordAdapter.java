@@ -28,9 +28,15 @@ public class MarcRecordAdapter implements MarcListener {
 
     protected Marc.Builder builder;
 
-    public MarcRecordAdapter(MarcRecordListener marcRecordListener) {
+    private boolean isStableFieldOrder;
+
+    public MarcRecordAdapter(MarcRecordListener marcRecordListener, boolean isStableFieldOrder) {
         this.marcRecordListener = marcRecordListener;
         this.builder = Marc.builder();
+        this.isStableFieldOrder = isStableFieldOrder;
+        if (isStableFieldOrder) {
+            this.builder.stableFieldOrder();
+        }
     }
 
     @Override
@@ -58,6 +64,9 @@ public class MarcRecordAdapter implements MarcListener {
     public void endRecord() {
         marcRecordListener.record(builder.buildRecord());
         builder = Marc.builder();
+        if (isStableFieldOrder) {
+            builder.stableFieldOrder();
+        }
     }
 
     @Override

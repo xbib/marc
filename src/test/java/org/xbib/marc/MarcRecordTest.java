@@ -21,6 +21,8 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import java.io.IOException;
 import org.junit.jupiter.api.Test;
+import org.xbib.content.XContentBuilder;
+import org.xbib.content.json.JsonXContent;
 import org.xbib.marc.label.RecordLabel;
 import org.xbib.marc.transformer.value.MarcValueTransformers;
 import org.xbib.marc.xml.MarcXchangeWriter;
@@ -29,7 +31,10 @@ import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.text.Normalizer;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.regex.Pattern;
 
@@ -97,7 +102,10 @@ public class MarcRecordTest {
             // only single record
             for (MarcRecord marcRecord : builder.iterable()) {
                 // single 245 field
-                assertEquals(1, marcRecord.filterKey(Pattern.compile("^245.*")).size());
+                List<MarcField> list = new ArrayList<>();
+                Pattern pattern = Pattern.compile("^245.*");
+                marcRecord.filter(field -> pattern.matcher(field.getTag()).matches(), list::add);
+                assertEquals(1, list.size());
             }
         }
     }
@@ -113,19 +121,6 @@ public class MarcRecordTest {
             //  record with single field
             for (MarcRecord marcRecord : builder.iterable()) {
                 assertEquals(1, marcRecord.getFields().size());
-            }
-        }
-    }
-
-    @Test
-    public void testFilterValueIterable() throws Exception {
-        String s = "summerland.mrc";
-        try (InputStream in = getClass().getResource(s).openStream()) {
-            Marc.Builder builder = Marc.builder()
-                    .setInputStream(in)
-                    .setCharset(Charset.forName("ANSEL"));
-            for (MarcRecord marcRecord : builder.iterable()) {
-                assertEquals(2, marcRecord.filterValue(Pattern.compile(".*?Chabon.*")).size());
             }
         }
     }
@@ -219,5 +214,25 @@ public class MarcRecordTest {
         MarcRecord marcRecord = MarcRecord.from(map);
         assertEquals("123", marcRecord.getFields().stream().filter(m -> m.getTag().equals("001")).findFirst().get().getValue());
         assertEquals("Hello World", marcRecord.getFields().stream().filter(m -> m.getTag().equals("100")).findFirst().get().getFirstSubfieldValue("a"));
+    }
+
+    @Test
+    public void testMarcRecordFromMapAsMap() throws IOException {
+        Map<String, Object> map = new TreeMap<>(Map.of("001", "123",
+                "100", Map.of("_", Map.of("a", "Hello World"))));
+        MarcRecord marcRecord = MarcRecord.from(map);
+        assertEquals("{001=123, 100={_={a=Hello World}}}", marcRecord.toString());
+        XContentBuilder builder = JsonXContent.contentBuilder();
+        builder.map(marcRecord);
+        assertEquals("{\"001\":\"123\",\"100\":{\"_\":{\"a\":\"Hello World\"}}}", builder.string());
+    }
+
+    @Test
+    public void testMarcRecordFilter() {
+        Map<String, Object> map = Map.of("001", "123",
+                "100", Map.of("_", Map.of("a", "Hello World")));
+        MarcRecord marcRecord = MarcRecord.from(map);
+        marcRecord.filter("001", field -> assertEquals("123", field.getValue()));
+        marcRecord.filter("100", field -> assertEquals("Hello World", field.getFirstSubfieldValue("a")));
     }
 }

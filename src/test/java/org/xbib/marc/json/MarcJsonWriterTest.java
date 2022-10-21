@@ -56,6 +56,7 @@ public class MarcJsonWriterTest {
                         .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)
                 ) {
                     Marc.builder()
+                            .stableFieldOrder()
                             .setInputStream(inputStream)
                             .setCharset(Charset.forName("ANSEL"))
                             .setMarcListener(writer)
@@ -78,10 +79,11 @@ public class MarcJsonWriterTest {
                 "chabon.mrc",
                 "chabon-loc.mrc"
         }) {
-            StreamMatcher.fileMatch(getClass(), s, ".json", (inputStream, outputStream) -> {
+            StreamMatcher.fileMatch(getClass(), s, ".record.json", (inputStream, outputStream) -> {
                 try (MarcJsonWriter writer = new MarcJsonWriter(outputStream)
                 ) {
                     Marc.builder()
+                            .stableFieldOrder()
                             .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)
                             .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)
                             .setInputStream(inputStream)
@@ -107,14 +109,14 @@ public class MarcJsonWriterTest {
                 "chabon.mrc",
                 "chabon-loc.mrc"
         }) {
-            StreamMatcher.fileMatch(getClass(), s, ".json", (inputStream, outputStream) -> {
+            StreamMatcher.fileMatch(getClass(), s, ".record.adapter.json", (inputStream, outputStream) -> {
                 try (MarcJsonWriter writer = new MarcJsonWriter(outputStream)) {
                     Marc.builder()
                             .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)
                             .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)
                             .setInputStream(inputStream)
                             .setCharset(Charset.forName("ANSEL"))
-                            .setMarcListener(new MarcRecordAdapter(writer))
+                            .setMarcListener(new MarcRecordAdapter(writer, true))
                             .build()
                             .writeCollection();
                 }
@@ -134,7 +136,7 @@ public class MarcJsonWriterTest {
                 contentHandler.addNamespace("http://www.ddb.de/professionell/mabxml/mabxml-1.xsd");
                 contentHandler.setFormat("MARC21");
                 contentHandler.setType("Bibliographic");
-                contentHandler.setMarcListener(new MarcRecordAdapter(writer));
+                contentHandler.setMarcListener(new MarcRecordAdapter(writer, true));
                 Marc.builder()
                         .setInputStream(inputStream)
                         .setContentHandler(contentHandler)

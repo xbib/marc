@@ -199,8 +199,8 @@ public class MarcField implements Comparable<MarcField> {
      * @param pattern the pattern
      * @return this MARC field if pattern macthes, otherwise null
      */
-    public MarcField matchKey(Pattern pattern) {
-        return pattern.matcher(toTagIndicatorKey()).matches() ? this : null;
+    public boolean matchesKey(Pattern pattern) {
+        return pattern.matcher(toTagIndicatorKey()).matches();
     }
 
     /**
@@ -208,16 +208,16 @@ public class MarcField implements Comparable<MarcField> {
      * @param pattern the pattern to match
      * @return thhis MARC field if pattern matches, or null if not
      */
-    public MarcField matchValue(Pattern pattern) {
+    public boolean matchesValue(Pattern pattern) {
         if (builder.value != null && pattern.matcher(builder.value).matches()) {
-            return this;
+            return true;
         }
         for (Subfield subfield : builder.subfields) {
             if (pattern.matcher(subfield.getValue()).matches()) {
-                return this;
+                return true;
             }
         }
-        return null;
+        return false;
     }
 
     /**
