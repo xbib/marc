@@ -20,6 +20,7 @@ import org.xbib.marc.label.RecordLabel;
 
 import java.util.Deque;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
@@ -533,10 +534,10 @@ public class MarcField implements Comparable<MarcField> {
 
         /**
          * A key is a compact representation of tag/indicator/value
-         * @param key
-         * @return
+         * @param key the key as string
+         * @return this builder
          */
-        public Builder key(String key, String separator, String value) {
+        public Builder key(String key, String separator, Object value) {
             String[] s = key.split(separator);
             switch (s.length) {
                 case 3: {
@@ -547,11 +548,19 @@ public class MarcField implements Comparable<MarcField> {
                     } else {
                         indicator(indicator);
                     }
-                    String subfieldId = s[2].replace('_', ' ');
-                    if (subfieldId.isEmpty()) {
-                        subfield(" ", value);
+                    String subfieldIds = s[2].replace('_', ' ');
+                    if (subfieldIds.isEmpty()) {
+                        subfield(" ", value.toString());
                     } else {
-                        subfield(subfieldId, value);
+                        if (value instanceof List) {
+                            List<Object> list = (List) value;
+                            char[] ch = subfieldIds.toCharArray();
+                            for (int i = 0; i < list.size(); i++) {
+                                subfield(ch[i]).value(list.get(i).toString());
+                            }
+                        } else {
+                            subfield(subfieldIds, value.toString());
+                        }
                     }
                     break;
                 }
@@ -563,17 +572,17 @@ public class MarcField implements Comparable<MarcField> {
                     } else {
                         indicator(indicator);
                     }
-                    value(value);
+                    value(value.toString());
                     break;
                 }
                 case 1: {
                     tag(s[0]);
-                    value(value);
+                    value(value.toString());
                     break;
                 }
                 case 0: {
                     tag(key);
-                    value(value);
+                    value(value.toString());
                     break;
                 }
                 default:

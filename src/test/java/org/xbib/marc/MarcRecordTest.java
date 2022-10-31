@@ -36,6 +36,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import java.util.regex.Pattern;
 
 public class MarcRecordTest {
@@ -215,6 +217,18 @@ public class MarcRecordTest {
         assertEquals("123", marcRecord.getFields().stream().filter(m -> m.getTag().equals("001")).findFirst().get().getValue());
         assertEquals("Hello World", marcRecord.getFields().stream().filter(m -> m.getTag().equals("100")).findFirst().get().getFirstSubfieldValue("a"));
     }
+
+    @Test
+    public void testMarcRecordFromMapNested() {
+        Map<String, Object> map = Map.of("016", Map.of("7_", List.of(Map.of("2", "DE-101", "a", "010000151"), Map.of("2", "DE-600", "a", "23-1"))));
+        MarcRecord marcRecord = MarcRecord.from(map);
+        Logger.getLogger("").log(Level.INFO, "marcrecord = " + marcRecord);
+        Logger.getLogger("").log(Level.INFO, "marcrecord fields = " + marcRecord.getFields());
+        marcRecord.filter(f -> "016".equals(f.getTag()), f-> {
+                    Logger.getLogger("").log(Level.INFO, "f = " + f);
+        });
+    }
+
 
     @Test
     public void testMarcRecordFromMapAsMap() throws IOException {
