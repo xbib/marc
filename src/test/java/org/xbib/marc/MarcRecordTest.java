@@ -32,9 +32,11 @@ import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.text.Normalizer;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
+import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -220,15 +222,26 @@ public class MarcRecordTest {
 
     @Test
     public void testMarcRecordFromMapNested() {
-        Map<String, Object> map = Map.of("016", Map.of("7_", List.of(Map.of("2", "DE-101", "a", "010000151"), Map.of("2", "DE-600", "a", "23-1"))));
+        Map<String, Object> map = Map.of("001", "123",
+                "100", Map.of("_", Map.of("a", "Hello World")),
+                "016", Map.of("7_", List.of(Map.of("2", "DE-101", "a", "010000151"), Map.of("2", "DE-600", "a", "23-1"))));
         MarcRecord marcRecord = MarcRecord.from(map);
-        Logger.getLogger("").log(Level.INFO, "marcrecord = " + marcRecord);
-        Logger.getLogger("").log(Level.INFO, "marcrecord fields = " + marcRecord.getFields());
-        marcRecord.filter(f -> "016".equals(f.getTag()), f-> {
-                    Logger.getLogger("").log(Level.INFO, "f = " + f);
+        assertEquals("123", marcRecord.getFields().stream()
+                .filter(m -> m.getTag().equals("001")).findFirst().get().getValue());
+        assertEquals("Hello World", marcRecord.getFields().stream()
+                .filter(m -> m.getTag().equals("100")).findFirst().get().getFirstSubfieldValue("a"));
+        assertEquals(4,  marcRecord.getFields().size());
+        List<MarcField> list = new LinkedList<>();
+        marcRecord.filter(f -> "016".equals(f.getTag()), list::add);
+        assertEquals(2, list.size());
+        AtomicBoolean match = new AtomicBoolean();
+        marcRecord.filter(f -> "016".equals(f.getTag()) && "7 ".equals(f.getIndicator()), f -> {
+            if ("DE-600".equals(f.getFirstSubfieldValue("2"))) {
+                match.set("23-1".equals(f.getFirstSubfieldValue("a")));
+            }
         });
+        assertTrue(match.get());
     }
-
 
     @Test
     public void testMarcRecordFromMapAsMap() throws IOException {

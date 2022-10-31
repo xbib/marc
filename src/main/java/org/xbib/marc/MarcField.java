@@ -18,9 +18,10 @@ package org.xbib.marc;
 import org.xbib.marc.dialects.mab.MabSubfieldControl;
 import org.xbib.marc.label.RecordLabel;
 
+import java.util.Collection;
 import java.util.Deque;
 import java.util.LinkedList;
-import java.util.List;
+import java.util.Map;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
@@ -537,30 +538,25 @@ public class MarcField implements Comparable<MarcField> {
          * @param key the key as string
          * @return this builder
          */
+        @SuppressWarnings("unchecked")
         public Builder key(String key, String separator, Object value) {
             String[] s = key.split(separator);
             switch (s.length) {
-                case 3: {
+                case 0: {
+                    // is that even possible?
+                    tag(key);
+                    value(value.toString());
+                    break;
+                }
+                case 1: {
                     tag(s[0]);
-                    String indicator = s[1].replace('_', ' ');
-                    if (indicator.isEmpty()) {
-                        indicator(" ");
-                    } else {
-                        indicator(indicator);
-                    }
-                    String subfieldIds = s[2].replace('_', ' ');
-                    if (subfieldIds.isEmpty()) {
-                        subfield(" ", value.toString());
-                    } else {
-                        if (value instanceof List) {
-                            List<Object> list = (List) value;
-                            char[] ch = subfieldIds.toCharArray();
-                            for (int i = 0; i < list.size(); i++) {
-                                subfield(ch[i]).value(list.get(i).toString());
-                            }
-                        } else {
-                            subfield(subfieldIds, value.toString());
+                    if (value instanceof Collection) {
+                        Collection<Map.Entry<String, Object>> collection = (Collection<Map.Entry<String, Object>>) value;
+                        for (Map.Entry<String, Object> entry : collection) {
+                            tag(entry.getKey()).value(entry.getValue().toString());
                         }
+                    } else {
+                        value(value.toString());
                     }
                     break;
                 }
@@ -572,17 +568,36 @@ public class MarcField implements Comparable<MarcField> {
                     } else {
                         indicator(indicator);
                     }
-                    value(value.toString());
+                    if (value instanceof Collection) {
+                        Collection<Map.Entry<String, Object>> collection = (Collection<Map.Entry<String, Object>>) value;
+                        for (Map.Entry<String, Object> entry : collection) {
+                            subfield(entry.getKey(), entry.getValue().toString());
+                        }
+                    } else {
+                        value(value.toString());
+                    }
                     break;
                 }
-                case 1: {
+                case 3: {
                     tag(s[0]);
-                    value(value.toString());
-                    break;
-                }
-                case 0: {
-                    tag(key);
-                    value(value.toString());
+                    String indicator = s[1].replace('_', ' ');
+                    if (indicator.isEmpty()) {
+                        indicator(" ");
+                    } else {
+                        indicator(indicator);
+                    }
+                    String subfieldIds = s[2].replace('_', ' ');
+                    if (subfieldIds.isEmpty()) {
+                        subfieldIds = " ";
+                    }
+                    if (value instanceof Collection) {
+                        Collection<Map.Entry<String, Object>> collection = (Collection<Map.Entry<String, Object>>) value;
+                        for (Map.Entry<String, Object> entry : collection) {
+                            subfield(entry.getKey(), entry.getValue().toString());
+                        }
+                    } else {
+                        subfield(subfieldIds, value.toString());
+                    }
                     break;
                 }
                 default:

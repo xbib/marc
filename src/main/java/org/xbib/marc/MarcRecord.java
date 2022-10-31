@@ -30,8 +30,6 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.function.BiConsumer;
 import java.util.function.Predicate;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import java.util.regex.Pattern;
 
 /**
@@ -99,15 +97,8 @@ public class MarcRecord implements Map<String, Object> {
                                   String leaderTag,
                                   RecordLabel recordLabel) {
         MarcRecord marcRecord = new MarcRecord(map);
-        marcRecord.parseMap(map, ".", "", (key, value) -> {
-            if (value instanceof Collection<?>) {
-                MarcField.Builder builder = MarcField.builder().key(key);
-                ((Collection<Map.Entry<String, Object>>) value).forEach(e -> builder.subfield(e.getKey(), e.getValue().toString()));
-                marcRecord.marcFields.add(builder.build());
-            } else {
-                marcRecord.marcFields.add(MarcField.builder().key(key, "\\.", value.toString()).build());
-            }
-        });
+        marcRecord.parseMap(map, ".", "", (key, value) ->
+            marcRecord.marcFields.add(MarcField.builder().key(key, "\\.", value).build()));
         if (map.containsKey(formatTag)) {
             marcRecord.format = map.get(formatTag).toString();
         }
@@ -359,26 +350,28 @@ public class MarcRecord implements Map<String, Object> {
     }
 
     @SuppressWarnings("unchecked")
-    private void parseMap(Map<String, Object> source, String separator, String prefix,
+    private void parseMap(Map<String, Object> source,
+                          String separator, String prefix,
                           BiConsumer<String, Object> consumer) {
+        List<Map.Entry<String, Object>> list = new LinkedList<>();
         source.forEach((k, v) -> {
             if (v instanceof Map) {
                 parseMap((Map<String, Object>) v, separator, prefix + k + separator, consumer);
             } else if (v instanceof Collection) {
                 Collection<Object> collection = (Collection<Object>) v;
-                List<Map.Entry<String, Object>> list = new LinkedList<>();
                 for (Object object : collection) {
                     if (object instanceof Map) {
-                        parseMap((Map<String, Object>) object, separator, prefix + k + separator, (a,b) -> list.add(Map.entry(a,b)));
+                        parseMap((Map<String, Object>) object, separator, prefix + k + separator, consumer);
                     } else {
-                        list.add(Map.entry(prefix + k, object));
+                        list.add(Map.entry(k, object));
                     }
                 }
-                Logger.getLogger("").log(Level.INFO, "list = " + list);
-                consumer.accept(prefix + k, list);
             } else {
-                consumer.accept(prefix + k, v);
+                list.add(Map.entry(k, v));
             }
         });
+        if (!list.isEmpty()) {
+            consumer.accept(prefix, list);
+        }
     }
 }
