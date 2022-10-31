@@ -31,9 +31,6 @@ dependencies {
     testImplementation libs.json
     testImplementation libs.xalan
     testImplementation libs.xmlunit
-    testImplementation (libs.system.rules) {
-        exclude module: 'junit'
-    }
     testImplementation(libs.mockito) {
         exclude group: 'org.hamcrest'
     }

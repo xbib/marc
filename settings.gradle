@@ -13,7 +13,6 @@ dependencyResolutionManagement {
             library('json', 'org.xbib', 'content-json').version('4.0.0')
             library('xalan', 'xalan', 'xalan').version('2.7.2')
             library('xmlunit', 'org.xmlunit', 'xmlunit-matchers').version('2.8.4')
-            library('system-rules', 'com.github.stefanbirkner', 'system-rules').version('1.19.0')
             library('mockito', 'org.mockito', 'mockito-core').version('3.3.3')
             library('marc4j', 'org.marc4j', 'marc4j').version('2.9.2')
         }

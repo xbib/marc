@@ -108,7 +108,7 @@ public class MarcRecordTest {
                 // single 245 field
                 List<MarcField> list = new ArrayList<>();
                 Pattern pattern = Pattern.compile("^245.*");
-                marcRecord.filter(field -> pattern.matcher(field.getTag()).matches(), list::add);
+                marcRecord.all(field -> pattern.matcher(field.getTag()).matches(), list::add);
                 assertEquals(1, list.size());
             }
         }
@@ -232,10 +232,10 @@ public class MarcRecordTest {
                 .filter(m -> m.getTag().equals("100")).findFirst().get().getFirstSubfieldValue("a"));
         assertEquals(4,  marcRecord.getFields().size());
         List<MarcField> list = new LinkedList<>();
-        marcRecord.filter(f -> "016".equals(f.getTag()), list::add);
+        marcRecord.all(f -> "016".equals(f.getTag()), list::add);
         assertEquals(2, list.size());
         AtomicBoolean match = new AtomicBoolean();
-        marcRecord.filter(f -> "016".equals(f.getTag()) && "7 ".equals(f.getIndicator()), f -> {
+        marcRecord.all(f -> "016".equals(f.getTag()) && "7 ".equals(f.getIndicator()), f -> {
             if ("DE-600".equals(f.getFirstSubfieldValue("2"))) {
                 match.set("23-1".equals(f.getFirstSubfieldValue("a")));
             }
@@ -259,7 +259,7 @@ public class MarcRecordTest {
         Map<String, Object> map = Map.of("001", "123",
                 "100", Map.of("_", Map.of("a", "Hello World")));
         MarcRecord marcRecord = MarcRecord.from(map);
-        marcRecord.filter("001", field -> assertEquals("123", field.getValue()));
-        marcRecord.filter("100", field -> assertEquals("Hello World", field.getFirstSubfieldValue("a")));
+        marcRecord.all("001", field -> assertEquals("123", field.getValue()));
+        marcRecord.all("100", field -> assertEquals("Hello World", field.getFirstSubfieldValue("a")));
     }
 }
