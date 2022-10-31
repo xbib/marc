@@ -150,74 +150,201 @@ public class MarcRecord implements Map<String, Object> {
     }
 
     /**
-     * Filter the MARC fields of this record with a given tag.
+     * Filter all MARC fields of this record with a given tag.
      *
      * @param tag the MARC tag
+     * @param handler the handler
      */
-    public void filter(String tag, MarcFieldHandler handler) {
-        filter(marcField -> marcField.getTag().equals(tag), handler);
+    public void all(String tag, MarcFieldHandler handler) {
+        all(marcField -> marcField.getTag().equals(tag), handler);
     }
 
-    public void filter(String tag, String indicator, MarcFieldHandler handler) {
-        filter(marcField -> marcField.getTag().equals(tag) && marcField.getIndicator().equals(indicator), handler);
+    /**
+     * Filter all MARC fields of this record with a given tag and indicator.
+     * @param tag the tag
+     * @param indicator the indicator
+     * @param handler the handler
+     */
+    public void all(String tag, String indicator, MarcFieldHandler handler) {
+        all(marcField -> marcField.getTag().equals(tag) && marcField.getIndicator().equals(indicator), handler);
     }
 
-    public void filter(String tag, String indicator, String subfieldId, MarcFieldHandler handler) {
-        filter(marcField -> marcField.getTag().equals(tag) &&
+    /**
+     * Filter all MARC fields of this record with a given tag and indicator and subfield ID.
+     * @param tag the tag
+     * @param indicator the indicator
+     * @param subfieldId the subfield ID
+     * @param handler the handler
+     */
+    public void all(String tag, String indicator, String subfieldId, MarcFieldHandler handler) {
+        all(marcField -> marcField.getTag().equals(tag) &&
                 marcField.getIndicator().equals(indicator) &&
                 marcField.getSubfieldIds().contains(subfieldId), handler);
     }
 
-    public void filter(Pattern pattern, MarcFieldHandler handler) {
-        filter(field -> field.matchesKey(pattern), handler);
+    /**
+     * Filter all MARC fields of this record with a given key pattern.
+     * @param pattern a pattern that must match the key
+     * @param handler the handler
+     */
+    public void all(Pattern pattern, MarcFieldHandler handler) {
+        all(field -> field.matchesKey(pattern), handler);
     }
 
-    public void filter(Predicate<? super MarcField> predicate, MarcFieldHandler handler) {
+    /**
+     * Filter all MARC fields of this record that satisfy a given predicate.
+     * @param predicate the predicate
+     * @param handler the handler
+     */
+    public void all(Predicate<? super MarcField> predicate, MarcFieldHandler handler) {
         marcFields.stream().filter(predicate).forEach(handler::field);
     }
 
-    public void filterFirst(Predicate<? super MarcField> predicate, MarcFieldHandler handler) {
-        marcFields.stream().filter(predicate).findFirst().ifPresent(handler::field);
-    }
-
-    public MarcField getFirst(String tag) {
-        return getFirst(marcField -> marcField.getTag().equals(tag));
-    }
-
-    public MarcField getFirst(String tag, String indicator) {
-        return getFirst(marcField -> marcField.getTag().equals(tag) && marcField.getIndicator().equals(indicator));
-    }
-
-    public MarcField getFirst(String tag, String indicator, String subfieldId) {
-        return getFirst(marcField -> marcField.getTag().equals(tag) &&
-                marcField.getIndicator().equals(indicator) &&
-                marcField.getSubfieldIds().contains(subfieldId));
-    }
-
-    public MarcField getFirst(Predicate<? super MarcField> predicate) {
-        final MarcField[] array = new MarcField[1];
-        filterFirst(predicate, marcField -> array[0] = marcField);
-        return array[0];
-    }
-
+    /**
+     * Return all MARC fields of this record with a given tag and indicator.
+     * @param tag the tag
+     * @return a list of MARC fields
+     */
     public List<MarcField> getAll(String tag) {
         return getAll(marcField -> marcField.getTag().equals(tag));
     }
 
+    /**
+     * Return all MARC fields of this record with a given tag and indicator.
+     * @param tag the tag
+     * @param indicator the indicator
+     * @return a list of MARC fields
+     */
     public List<MarcField> getAll(String tag, String indicator) {
         return getAll(marcField -> marcField.getTag().equals(tag) && marcField.getIndicator().equals(indicator));
     }
 
+    /**
+     * Return all MARC fields of this record with a given tagm indicator, and subfield ID.
+     * @param tag the tag
+     * @param indicator the indicator
+     * @param subfieldId the subfield ID
+     * @return a list of MARC fields
+     */
     public List<MarcField> getAll(String tag, String indicator, String subfieldId) {
         return getAll(marcField -> marcField.getTag().equals(tag) &&
                 marcField.getIndicator().equals(indicator) &&
                 marcField.getSubfieldIds().contains(subfieldId));
     }
 
+    /**
+     * Return all MARC fields of this record that satisfy a given predicate.
+     * @param predicate the predicate
+     * @return a list of MARC fields
+     */
     public List<MarcField> getAll(Predicate<? super MarcField> predicate) {
         List<MarcField> list = new LinkedList<>();
-        filter(predicate, list::add);
+        all(predicate, list::add);
         return list;
+    }
+
+    /**
+     * Filter for the first MARC field of this record with a given tag.
+     * @param tag the MARC tag
+     * @param handler the handler
+     */
+    public void first(String tag, MarcFieldHandler handler) {
+        first(marcField -> marcField.getTag().equals(tag), handler);
+    }
+
+    /**
+     * Filter for the first MARC field of this record with a given tag and indicator.
+     * @param tag the MARC tag
+     * @param indicator the indicator
+     * @param handler the handler
+     */
+    public void first(String tag, String indicator, MarcFieldHandler handler) {
+        first(marcField -> marcField.getTag().equals(tag) && marcField.getIndicator().equals(indicator), handler);
+    }
+
+    /**
+     * Filter for the first MARC field of this record with a given tag and indicator and subfield ID.
+     * @param tag the tag
+     * @param indicator the indicator
+     * @param subfieldId the subfield ID
+     * @param handler the handler
+     */
+    public void first(String tag, String indicator, String subfieldId, MarcFieldHandler handler) {
+        first(marcField -> marcField.getTag().equals(tag) &&
+                marcField.getIndicator().equals(indicator) &&
+                marcField.getSubfieldIds().contains(subfieldId), handler);
+    }
+
+    /**
+     * Filter the first MARC field of this record that satisfies a given predicate.
+     * @param predicate the predicate
+     * @param handler the handler
+     */
+    public void first(Predicate<? super MarcField> predicate, MarcFieldHandler handler) {
+        marcFields.stream().filter(predicate).findFirst().ifPresent(handler::field);
+    }
+
+    /**
+     * Return the first MARC field of this record with a given tag.
+     * @param tag the tag
+     * @return the MARC field or null
+     */
+    public MarcField getFirst(String tag) {
+        return getFirst(marcField -> marcField.getTag().equals(tag));
+    }
+
+    /**
+     * Return the first MARC field of this record with a given tag and indicator.
+     * @param tag the tag
+     * @param indicator the indicator
+     * @return the MARC field or null
+     */
+    public MarcField getFirst(String tag, String indicator) {
+        return getFirst(marcField -> marcField.getTag().equals(tag) && marcField.getIndicator().equals(indicator));
+    }
+
+    /**
+     * Return the first MARC field of this record with a given tag and indicator and subfield ID.
+     * @param tag the tag
+     * @param indicator the indicator
+     * @param subfieldId the subfield ID
+     * @return the MARC field or null
+     */
+    public MarcField getFirst(String tag, String indicator, String subfieldId) {
+        return getFirst(marcField -> marcField.getTag().equals(tag) &&
+                marcField.getIndicator().equals(indicator) &&
+                marcField.getSubfieldIds().contains(subfieldId));
+    }
+
+    /**
+     * Return the first MARC field of this record that satisfies a given predicate.
+     * @param predicate the predicate
+     * @return the MARC field or null
+     */
+    public MarcField getFirst(Predicate<? super MarcField> predicate) {
+        final MarcField[] array = new MarcField[1];
+        first(predicate, marcField -> array[0] = marcField);
+        return array[0];
+    }
+
+    /**
+     * Filter any MARC field of this record that satisfies a given predicate.
+     * @param predicate the predicate
+     * @param handler the handler
+     */
+    public void any(Predicate<? super MarcField> predicate, MarcFieldHandler handler) {
+        marcFields.stream().filter(predicate).findAny().ifPresent(handler::field);
+    }
+
+    /**
+     * Get any MARC field of this record that satisfies a given predicate.
+     * @param predicate the predicate
+     * @return the MARC field or null
+     */
+    public MarcField getAny(Predicate<? super MarcField> predicate) {
+        final MarcField[] array = new MarcField[1];
+        any(predicate, marcField -> array[0] = marcField);
+        return array[0];
     }
 
     @Override
