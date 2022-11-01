@@ -18,9 +18,11 @@ package org.xbib.marc;
 import org.xbib.marc.dialects.mab.MabSubfieldControl;
 import org.xbib.marc.label.RecordLabel;
 
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Deque;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
@@ -534,22 +536,30 @@ public class MarcField implements Comparable<MarcField> {
         }
 
         /**
-         * A key is a compact representation of tag/indicator/value
+         * A key is a compact representation of tag/indicator/value that are separated by a separator.
          * @param key the key as string
+         * @param separator the separator in the key
+         * @param value the value
          * @return this builder
          */
-        @SuppressWarnings("unchecked")
         public Builder key(String key, String separator, Object value) {
-            String[] s = key.split(separator);
-            switch (s.length) {
+            return key(Arrays.asList(key.split(separator)), value);
+        }
+
+        @SuppressWarnings("unchecked")
+        public Builder key(List<String> key, Object value) {
+            switch (key.size()) {
                 case 0: {
-                    // is that even possible?
-                    tag(key);
-                    value(value.toString());
+                    if (value instanceof Collection) {
+                        Collection<Map.Entry<String, Object>> collection = (Collection<Map.Entry<String, Object>>) value;
+                        for (Map.Entry<String, Object> entry : collection) {
+                            tag(entry.getKey()).value(entry.getValue().toString());
+                        }
+                    }
                     break;
                 }
                 case 1: {
-                    tag(s[0]);
+                    tag(key.get(0));
                     if (value instanceof Collection) {
                         Collection<Map.Entry<String, Object>> collection = (Collection<Map.Entry<String, Object>>) value;
                         for (Map.Entry<String, Object> entry : collection) {
@@ -561,8 +571,8 @@ public class MarcField implements Comparable<MarcField> {
                     break;
                 }
                 case 2: {
-                    tag(s[0]);
-                    String indicator = s[1].replace('_', ' ');
+                    tag(key.get(0));
+                    String indicator = key.get(1).replace('_', ' ');
                     if (indicator.isEmpty()) {
                         indicator(" ");
                     } else {
@@ -579,14 +589,14 @@ public class MarcField implements Comparable<MarcField> {
                     break;
                 }
                 case 3: {
-                    tag(s[0]);
-                    String indicator = s[1].replace('_', ' ');
+                    tag(key.get(0));
+                    String indicator = key.get(1).replace('_', ' ');
                     if (indicator.isEmpty()) {
                         indicator(" ");
                     } else {
                         indicator(indicator);
                     }
-                    String subfieldIds = s[2].replace('_', ' ');
+                    String subfieldIds = key.get(2).replace('_', ' ');
                     if (subfieldIds.isEmpty()) {
                         subfieldIds = " ";
                     }
@@ -601,7 +611,7 @@ public class MarcField implements Comparable<MarcField> {
                     break;
                 }
                 default:
-                    throw new IllegalArgumentException("key specification is invalid: " + key + " length = " + s.length);
+                    throw new IllegalArgumentException("key specification is invalid: " + key);
             }
             return this;
         }

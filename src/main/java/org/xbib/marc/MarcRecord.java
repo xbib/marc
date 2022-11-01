@@ -22,6 +22,7 @@ import static org.xbib.marc.json.MarcJsonWriter.TYPE_TAG;
 import org.xbib.marc.label.RecordLabel;
 
 import java.util.Collection;
+import java.util.Deque;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -30,6 +31,8 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.function.BiConsumer;
 import java.util.function.Predicate;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import java.util.regex.Pattern;
 
 /**
@@ -97,12 +100,12 @@ public class MarcRecord implements Map<String, Object> {
                                   String leaderTag,
                                   RecordLabel recordLabel) {
         MarcRecord marcRecord = new MarcRecord(map);
-        marcRecord.parseMap(map, ".", "", (key, value) ->
-            marcRecord.marcFields.add(MarcField.builder().key(key, "\\.", value).build()));
+        marcRecord.parseMap(map, "", new LinkedList<>(), (key, value) ->
+            marcRecord.marcFields.add(MarcField.builder().key(key, value).build()));
         if (map.containsKey(formatTag)) {
             marcRecord.format = map.get(formatTag).toString();
         }
-        if ( map.containsKey(typeTag)) {
+        if (map.containsKey(typeTag)) {
             marcRecord.type = map.get(typeTag).toString();
         }
         if (map.containsKey(leaderTag)) {
@@ -478,17 +481,21 @@ public class MarcRecord implements Map<String, Object> {
 
     @SuppressWarnings("unchecked")
     private void parseMap(Map<String, Object> source,
-                          String separator, String prefix,
-                          BiConsumer<String, Object> consumer) {
+                          String prefix,
+                          LinkedList<String> key,
+                          BiConsumer<List<String>, Object> consumer) {
+        if (!prefix.isEmpty()) {
+            key.addLast(prefix);
+        }
         List<Map.Entry<String, Object>> list = new LinkedList<>();
         source.forEach((k, v) -> {
             if (v instanceof Map) {
-                parseMap((Map<String, Object>) v, separator, prefix + k + separator, consumer);
+                parseMap((Map<String, Object>) v, k, key, consumer);
             } else if (v instanceof Collection) {
                 Collection<Object> collection = (Collection<Object>) v;
                 for (Object object : collection) {
                     if (object instanceof Map) {
-                        parseMap((Map<String, Object>) object, separator, prefix + k + separator, consumer);
+                        parseMap((Map<String, Object>) object, k, key, consumer);
                     } else {
                         list.add(Map.entry(k, object));
                     }
@@ -498,7 +505,10 @@ public class MarcRecord implements Map<String, Object> {
             }
         });
         if (!list.isEmpty()) {
-            consumer.accept(prefix, list);
+            consumer.accept(key, list);
+        }
+        if (!prefix.isEmpty()) {
+            key.removeLast();
         }
     }
 }
