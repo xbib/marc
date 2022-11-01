@@ -10,7 +10,7 @@ dependencyResolutionManagement {
             library('junit-jupiter-engine', 'org.junit.jupiter', 'junit-jupiter-engine').versionRef('junit')
             library('hamcrest', 'org.hamcrest', 'hamcrest-library').version('2.2')
             library('charactersets', 'org.xbib', 'bibliographic-character-sets').version('2.0.0')
-            library('json', 'org.xbib', 'content-json').version('4.0.0')
+            library('json', 'org.xbib', 'content-json').version('5.0.1')
             library('xalan', 'xalan', 'xalan').version('2.7.2')
             library('xmlunit', 'org.xmlunit', 'xmlunit-matchers').version('2.8.4')
             library('mockito', 'org.mockito', 'mockito-core').version('3.3.3')

@@ -22,7 +22,6 @@ import static org.xbib.marc.json.MarcJsonWriter.TYPE_TAG;
 import org.xbib.marc.label.RecordLabel;
 
 import java.util.Collection;
-import java.util.Deque;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -31,8 +30,6 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.function.BiConsumer;
 import java.util.function.Predicate;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import java.util.regex.Pattern;
 
 /**
