@@ -37,8 +37,10 @@ artifacts {
 
 tasks.withType(JavaCompile) {
     options.compilerArgs << '-Xlint:all'
+    options.encoding = 'UTF-8'
 }
 
-javadoc {
+tasks.withType(Javadoc) {
     options.addStringOption('Xdoclint:none', '-quiet')
+    options.encoding = 'UTF-8'
 }

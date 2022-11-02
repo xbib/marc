@@ -30,6 +30,8 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.function.BiConsumer;
 import java.util.function.Predicate;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import java.util.regex.Pattern;
 
 /**
@@ -484,18 +486,26 @@ public class MarcRecord implements Map<String, Object> {
         if (!prefix.isEmpty()) {
             key.addLast(prefix);
         }
-        List<Map.Entry<String, Object>> list = new LinkedList<>();
+        LinkedList<Map.Entry<String, Object>> list = new LinkedList<>();
         source.forEach((k, v) -> {
             if (v instanceof Map) {
                 parseMap((Map<String, Object>) v, k, key, consumer);
             } else if (v instanceof Collection) {
                 Collection<Object> collection = (Collection<Object>) v;
+                // join into a single map if we have a collection of plain maps
+                Map<String, Object> map = new LinkedHashMap<>();
                 for (Object object : collection) {
                     if (object instanceof Map) {
-                        parseMap((Map<String, Object>) object, k, key, consumer);
+                        Map<String, Object> m = (Map<String, Object>) object;
+                        if (!join(map, m)) {
+                            parseMap(m, k, key, consumer);
+                        }
                     } else {
                         list.add(Map.entry(k, object));
                     }
+                }
+                if (!map.isEmpty()) {
+                    parseMap(map, k, key, consumer);
                 }
             } else {
                 list.add(Map.entry(k, v));
@@ -506,6 +516,48 @@ public class MarcRecord implements Map<String, Object> {
         }
         if (!prefix.isEmpty()) {
             key.removeLast();
+        }
+    }
+
+    @SuppressWarnings("unchecked")
+    private static boolean join(Map<String, Object> map1, Map<String, Object> map2) {
+        if (isPlainMap(map2)) {
+            String key2 = map2.keySet().iterator().next();
+            Object value2 = map2.values().iterator().next();
+            // collapse values into a single key
+            if (map1.containsKey(key2)) {
+                Object value1 = map1.get(key2);
+                Collection<Object> collection;
+                if (value1 instanceof Collection) {
+                    collection = (Collection<Object>) value1;
+                    collection.add(value2);
+                } else {
+                    collection = new LinkedList<>();
+                    collection.add(value1);
+                    collection.add(value2);
+                }
+                map1.put(key2, collection);
+            } else {
+                map1.put(key2, value2);
+            }
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    /**
+     * A "plain" map is a map with exactly one element where the element value is not a map or a collection.
+     * This technique is used in Elasticsearch for repeating values with (possibly) the same key.
+     * @param map the map to be tested
+     * @return true if map is a plain map
+     */
+    private static boolean isPlainMap(Map<String, Object> map) {
+        if (map.size() == 1) {
+            Object object = map.values().iterator().next();
+            return !(object instanceof Map) && !(object instanceof Collection<?>);
+        } else {
+            return false;
         }
     }
 }

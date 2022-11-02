@@ -38,8 +38,6 @@ import java.util.Map;
 import java.util.TreeMap;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import java.util.regex.Pattern;
 
 public class MarcRecordTest {
@@ -222,6 +220,7 @@ public class MarcRecordTest {
 
     @Test
     public void testMarcRecordFromMapNested() {
+        // test if we can have more than one map in a list
         Map<String, Object> map = Map.of("001", "123",
                 "100", Map.of("_", Map.of("a", "Hello World")),
                 "016", Map.of("7_", List.of(Map.of("2", "DE-101", "a", "010000151"), Map.of("2", "DE-600", "a", "23-1"))));
@@ -241,6 +240,50 @@ public class MarcRecordTest {
             }
         });
         assertTrue(match.get());
+    }
+
+    @Test
+    public void testMarcRecordFromMapsWithJoinedPlainMaps() {
+        // test if we can collapse "plain" subfield maps into a common MARC field
+        // 016=[{7_=[{2=DE-101}, {a=010000151}]}, {7_=[{2=DE-600}, {a=23-1}]}]
+        Map<String, Object> f1 = Map.of("7_", List.of(Map.of("2", "DE-101"), Map.of("a", "010000151")));
+        Map<String, Object> f2 = Map.of("7_", List.of(Map.of("2", "DE-600"), Map.of("a", "23-1")));
+        Map<String, Object> map = Map.of("016", List.of(f1, f2));
+        MarcRecord marcRecord = MarcRecord.from(map);
+        List<MarcField> list = new LinkedList<>();
+        marcRecord.all(f -> "016".equals(f.getTag()), list::add);
+        assertEquals(2, list.size());
+        AtomicBoolean match = new AtomicBoolean();
+        marcRecord.all(f -> "016".equals(f.getTag()) && "7 ".equals(f.getIndicator()), f -> {
+            if ("DE-600".equals(f.getFirstSubfieldValue("2"))) {
+                match.set("23-1".equals(f.getFirstSubfieldValue("a")));
+            }
+        });
+        assertTrue(match.get());
+    }
+
+    @Test
+    public void testMarcRecordFromMapsWithSameSubfieldId() {
+        // 016=[{7_=[{a=foo}, {a=bar}}]
+        Map<String, Object> f1 = Map.of("7_", List.of(Map.of("a", "foo"), Map.of("a", "bar")));
+        Map<String, Object> map = Map.of("016", List.of(f1));
+        MarcRecord marcRecord = MarcRecord.from(map);
+        // we must have a single 016 field
+        List<MarcField> list = new LinkedList<>();
+        marcRecord.all(f -> "016".equals(f.getTag()), list::add);
+        assertEquals(1, list.size());
+        // we count for occurences of "foo" and "bar", both must exist
+        AtomicInteger count = new AtomicInteger();
+        marcRecord.all(f -> "016".equals(f.getTag()) && "7 ".equals(f.getIndicator()), f ->
+                f.getSubfield("a").forEach(sf -> {
+                    if ("foo".equals(sf.getValue())) {
+                        count.incrementAndGet();
+                    }
+                    if ("bar".equals(sf.getValue())) {
+                        count.incrementAndGet();
+                    }
+                }));
+        assertEquals(2, count.get());
     }
 
     @Test
