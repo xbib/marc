@@ -24,6 +24,8 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.function.BinaryOperator;
+import java.util.function.Supplier;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
@@ -102,6 +104,37 @@ public class MarcField implements Comparable<MarcField> {
      */
     public Deque<Subfield> getSubfields() {
         return builder.subfields;
+    }
+
+    /**
+     * Return the subfields of this MARC field as Map. Attention: this works only if there are unique subfield IDs.
+     * @return the subfields as map
+     */
+    public Map<String, Object> getSubfieldsAsMap() {
+        return builder.subfields.stream().collect(Collectors.toMap(Subfield::getId, Subfield::getValue));
+    }
+
+    /**
+     * Return the subfields of this MARC field as Map. Attention: this works only if there are unique subfield IDs.
+     * @param mergeFunction the merge function
+     * @param supplier the supplier
+     * @return the subfields as map
+     */
+    public Map<String, Object> getSubfieldsAsMap(BinaryOperator<Object> mergeFunction, Supplier<Map<String, Object>> supplier) {
+        return builder.subfields.stream().collect(Collectors.toMap(Subfield::getId, Subfield::getValue,
+                mergeFunction, supplier));
+    }
+
+    /**
+     * Collect subfield values of a specified collection of subfield IDs.
+     * @param subfieldIds the given collection of subfield IDs
+     * @return the list of subfield values
+     */
+    public List<String> getSubfieldValues(Collection<String> subfieldIds) {
+        return builder.subfields.stream()
+                .filter(subfield -> subfieldIds.contains(subfield.getId()))
+                .map(Subfield::getValue)
+                .collect(Collectors.toList());
     }
 
     /**
