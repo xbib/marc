@@ -73,7 +73,7 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
 
     private boolean fatalErrors;
 
-    private EnumSet<Style> style;
+    private final EnumSet<Style> style;
 
     private Exception exception;
 
@@ -83,7 +83,7 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
 
     private int splitlimit;
 
-    private int bufferSize;
+    private final int bufferSize;
 
     private boolean compress;
 
@@ -141,44 +141,6 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
         this.style = style;
         this.compress = compress;
         newWriter(fileNamePattern, fileNameCounter, bufferSize, compress);
-    }
-
-    private static String escape(String value) {
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < value.length(); i++) {
-            char c = value.charAt(i);
-            switch (c) {
-                case '"':
-                    sb.append("\\\"");
-                    break;
-                case '\\':
-                    sb.append("\\\\");
-                    break;
-                case '\b':
-                    sb.append("\\b");
-                    break;
-                case '\f':
-                    sb.append("\\f");
-                    break;
-                case '\n':
-                    sb.append("\\n");
-                    break;
-                case '\r':
-                    sb.append("\\r");
-                    break;
-                case '\t':
-                    sb.append("\\t");
-                    break;
-                default:
-                    if (c < 0x1f) {
-                        sb.append("\\u").append(String.format("%04x", (int) c));
-                    } else {
-                        sb.append(c);
-                    }
-                    break;
-            }
-        }
-        return sb.toString();
     }
 
     public MarcJsonWriter setIndex(String index, String indexType) {
@@ -375,7 +337,7 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
                 jsonWriter.writeArrayClose();
             } else {
                 jsonWriter.writeObjectOpen();
-                jsonWriter.writeMemberName(marcField.getIndicator().replace(' ', '_'));
+                jsonWriter.writeMemberName(marcField.getIndicator());
                 jsonWriter.writeMemberSeparator();
                 jsonWriter.writeArrayOpen();
                 boolean subfieldseparator = false;
@@ -399,7 +361,7 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
     }
 
     /**
-     * Write MARC record from underlying map as key-oriented JSON.
+     * Write MARC record from underlying map as key-oriented JSON. Use repeat maps to create lists.
      * @param marcRecord the MARC record
      * @throws IOException if writing fails
      */
@@ -583,15 +545,16 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
         jsonWriter = new JsonWriter(writer);
     }
 
+    @SuppressWarnings("unchecked")
     private void writeMetaDataLine(MarcRecord marcRecord) {
         String id;
         Object object = marcRecord.get("001");
         // step down to indicator/subfield ID levels if possible, get first value, assuming single field/value in 001
         if (object instanceof Map) {
-            object = ((Map) object).values().iterator().next();
+            object = ((Map<String, Object>) object).values().iterator().next();
         }
         if (object instanceof Map) {
-            object = ((Map) object).values().iterator().next();
+            object = ((Map<String, Object>) object).values().iterator().next();
         }
         id = object.toString();
         if (index != null && indexType != null && id != null) {
@@ -612,6 +575,44 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
         if (fatalErrors) {
             throw new UncheckedIOException(e);
         }
+    }
+
+    private static String escape(String value) {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < value.length(); i++) {
+            char c = value.charAt(i);
+            switch (c) {
+                case '"':
+                    sb.append("\\\"");
+                    break;
+                case '\\':
+                    sb.append("\\\\");
+                    break;
+                case '\b':
+                    sb.append("\\b");
+                    break;
+                case '\f':
+                    sb.append("\\f");
+                    break;
+                case '\n':
+                    sb.append("\\n");
+                    break;
+                case '\r':
+                    sb.append("\\r");
+                    break;
+                case '\t':
+                    sb.append("\\t");
+                    break;
+                default:
+                    if (c < 0x1f) {
+                        sb.append("\\u").append(String.format("%04x", (int) c));
+                    } else {
+                        sb.append(c);
+                    }
+                    break;
+            }
+        }
+        return sb.toString();
     }
 
     /**

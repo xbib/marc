@@ -21,6 +21,7 @@ import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.net.URL;
 import java.nio.ByteBuffer;
 import java.nio.channels.Channels;
 import java.nio.channels.ReadableByteChannel;
@@ -91,31 +92,15 @@ public class StreamMatcher {
         }
     }
 
-    public static void compareTwoXmls(Class<?> cl, String resourceName,
-                                      String suffix1, Producer producer1,
-                                      String suffix2, Producer producer2) throws IOException {
-        Path path1 = Files.createTempFile(resourceName, suffix1);
-        Path path2 = Files.createTempFile(resourceName, suffix2);
-        try (InputStream inputStream1 = cl.getResource(resourceName).openStream();
-             OutputStream outputStream1 = Files.newOutputStream(path1);
-             InputStream inputStream2 = Files.newInputStream(path1);
-             OutputStream outputStream2 = Files.newOutputStream(path2)) {
-            producer1.produce(inputStream1, outputStream1);
-            producer2.produce(inputStream2, outputStream2);
-            assertThat("XML check of " + path1, path1, CompareMatcher.isIdenticalTo(cl.getResource(resourceName + suffix1).openStream()));
-            assertThat("XML check of " + path2, path2, CompareMatcher.isIdenticalTo(cl.getResource(resourceName + suffix2).openStream()));
-        } finally {
-            Files.delete(path1);
-            Files.delete(path2);
-        }
-    }
-
     public static void generate(Class<?> cl, String resourceName, String suffix, Producer producer) throws IOException {
         Path path = Paths.get("src/test/resources", cl.getPackageName().replace('.', '/'), resourceName + suffix);
         logger.log(Level.INFO, "path = " + path);
-        try (InputStream inputStream = cl.getResource(resourceName).openStream();
-             OutputStream outputStream = Files.newOutputStream(path)) {
-            producer.produce(inputStream, outputStream);
+        URL url = cl.getResource(resourceName);
+        if (url != null) {
+            try (InputStream inputStream = url.openStream();
+                 OutputStream outputStream = Files.newOutputStream(path)) {
+                producer.produce(inputStream, outputStream);
+            }
         }
     }
 

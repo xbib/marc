@@ -47,15 +47,13 @@ public class StrictMarcFieldValidator implements MarcFieldValidator {
     public String validateTag(String tagCandidate) {
         String tag = tagCandidate;
         if (tag != null) {
-            // We have inconsistent use of tag symbols as placeholders for a "blank space"
-            // and we need to fix it here for consistency.
-            tag = tag.replace('-', BLANK)
-                    .replace('#', BLANK)
-                    .replace('.', BLANK)
-                    .replace('_', BLANK);
             // do not allow empty tags
             if (tag.isEmpty()) {
                 tag = BLANK_TAG;
+            } else {
+                // We have inconsistent use of tag symbols as placeholders for a "blank space"
+                // and we need to fix it here for consistency.
+                tag = tag.replaceAll("[-#.^_]", BLANK_STRING);
             }
         }
         return tag;
@@ -65,16 +63,13 @@ public class StrictMarcFieldValidator implements MarcFieldValidator {
     public String validateIndicator(String indicatorCandidate) {
         String indicator = indicatorCandidate;
         if (indicator != null) {
-            // We have inconsistent use of indicator symbols as placeholders for a "blank space"
-            // and we need to fix it here for consistency.
-            indicator = indicator
-                    .replace('-', BLANK)
-                    .replace('#', BLANK)
-                    .replace('.', BLANK)
-                    .replace('_', BLANK);
             // we do not allow an empty indicator. Elasticsearch field names require a length > 0.
             if (indicator.isEmpty()) {
                 indicator = BLANK_STRING;
+            } else {
+                // We have inconsistent use of indicator symbols as placeholders for a "blank space"
+                // and we need to fix it here for consistency.
+                indicator = indicator.replaceAll("[-#.^_]", BLANK_STRING);
             }
         }
         return indicator;
@@ -84,15 +79,13 @@ public class StrictMarcFieldValidator implements MarcFieldValidator {
     public String validateSubfieldId(String subfieldIdCandidate) {
         String id = subfieldIdCandidate;
         if (id != null) {
-            // We have inconsistent use of subfield id symbols as placeholders for a "blank space"
-            // and we need to fix it here for consistency.
-            id = id.replace('-', BLANK)
-                    .replace('#', BLANK)
-                    .replace('.', BLANK)
-                    .replace('_', BLANK);
             // we do not allow an empty subfield id. Elasticsearch field names require a length > 0.
             if (id.isEmpty()) {
                 id = BLANK_STRING;
+            } else {
+                // We have inconsistent use of subfield id symbols as placeholders for a "blank space"
+                // and we need to fix it here for consistency.
+                id = id.replaceAll("[-#.^_]", BLANK_STRING);
             }
         }
         return id;

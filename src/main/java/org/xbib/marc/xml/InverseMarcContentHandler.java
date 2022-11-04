@@ -133,19 +133,7 @@ public class InverseMarcContentHandler implements MarcListener, MarcXchangeConst
                 attrs.addAttribute(EMPTY_STRING, TAG_ATTRIBUTE, prefix(TAG_ATTRIBUTE), CDATA, field.getTag());
                 contentHandler.startElement(nsUri, CONTROLFIELD, prefix(CONTROLFIELD), attrs);
                 String value = field.getValue();
-                if (value != null && !value.isEmpty()) {
-                    switch (field.getTag()) {
-                        case "006":
-                        case "007":
-                        case "008":
-                            // fix wrong fill characters here
-                            value = value.replace('^', '|');
-                            break;
-                        default:
-                            break;
-                    }
-                    contentHandler.characters(value.toCharArray(), 0, value.length());
-                }
+                contentHandler.characters(value.toCharArray(), 0, value.length());
                 contentHandler.endElement(nsUri, CONTROLFIELD, prefix(CONTROLFIELD));
             } else {
                 String tag = field.getTag();

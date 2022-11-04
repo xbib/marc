@@ -352,8 +352,7 @@ public class MarcJsonWriterTest {
                 "test_ubl.mrc"
         }) {
             StreamMatcher.fileMatch(getClass(), s, ".json", (inputStream, outputStream) -> {
-                try (MarcJsonWriter writer = new MarcJsonWriter(outputStream, EnumSet.of(MarcJsonWriter.Style.ALLOW_DUPLICATES))
-                ) {
+                try (MarcJsonWriter writer = new MarcJsonWriter(outputStream, EnumSet.of(MarcJsonWriter.Style.ALLOW_DUPLICATES))) {
                     Marc.builder()
                             .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)
                             .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)
