@@ -22,6 +22,8 @@ import static org.xbib.marc.json.MarcJsonWriter.TYPE_TAG;
 import org.xbib.marc.label.RecordLabel;
 
 import java.util.Collection;
+import java.util.Collections;
+import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -30,8 +32,6 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.function.BiConsumer;
 import java.util.function.Predicate;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import java.util.regex.Pattern;
 
 /**
@@ -41,7 +41,7 @@ public class MarcRecord implements Map<String, Object> {
 
     private static final MarcRecord EMPTY_RECORD = Marc.builder().buildRecord();
 
-    private final Map<String, Object> delegate;
+    private Map<String, Object> delegate;
 
     private String format;
 
@@ -78,7 +78,7 @@ public class MarcRecord implements Map<String, Object> {
             throw new NullPointerException("record label must not be null");
         }
         this.marcFields = marcFields;
-        this.delegate = lightweight ? Map.of() : createMap(stable);
+        this.delegate = lightweight ? Map.of() : createMapFromMarcFields(stable);
     }
 
     /**
@@ -90,17 +90,32 @@ public class MarcRecord implements Map<String, Object> {
     }
 
     public static MarcRecord from(Map<String, Object> map) {
-        return from(map, FORMAT_TAG, TYPE_TAG, LEADER_TAG, RecordLabel.EMPTY);
+        return from(map, MarcField.DEFAULT_VALIDATOR,
+                FORMAT_TAG, TYPE_TAG, LEADER_TAG, RecordLabel.EMPTY, Collections.emptyList());
+    }
+
+    public static MarcRecord from(Map<String, Object> map, Collection<String> privateTags) {
+        return from(map, MarcField.DEFAULT_VALIDATOR,
+                FORMAT_TAG, TYPE_TAG, LEADER_TAG, RecordLabel.EMPTY, privateTags);
     }
 
     public static MarcRecord from(Map<String, Object> map,
+                                  MarcFieldValidator validator,
                                   String formatTag,
                                   String typeTag,
                                   String leaderTag,
-                                  RecordLabel recordLabel) {
+                                  RecordLabel recordLabel,
+                                  Collection<String> privateTags) {
         MarcRecord marcRecord = new MarcRecord(map);
-        marcRecord.parseMap(map, "", new LinkedList<>(), (key, value) ->
-            marcRecord.marcFields.add(MarcField.builder().key(key, value).build()));
+        Set<String> forbidden = new HashSet<>(privateTags);
+        forbidden.add(formatTag);
+        forbidden.add(typeTag);
+        forbidden.add(leaderTag);
+        marcRecord.parseMap(map, "", new LinkedList<>(), forbidden, (key, value) ->
+            marcRecord.marcFields.add(MarcField.builder()
+                    .setValidator(validator)
+                    .key(key, value)
+                    .build()));
         if (map.containsKey(formatTag)) {
             marcRecord.format = map.get(formatTag).toString();
         }
@@ -349,6 +364,10 @@ public class MarcRecord implements Map<String, Object> {
         return array[0];
     }
 
+    public void rebuildMap() {
+        this.delegate = createMapFromMarcFields(true);
+    }
+
     @Override
     public int size() {
         return delegate.size();
@@ -426,7 +445,7 @@ public class MarcRecord implements Map<String, Object> {
     }
 
     @SuppressWarnings("unchecked")
-    private Map<String, Object> createMap(boolean stable) {
+    private Map<String, Object> createMapFromMarcFields(boolean stable) {
         Map<String, Object> map = stable ? new TreeMap<>() : new LinkedHashMap<>();
         map.put(FORMAT_TAG, format);
         map.put(TYPE_TAG, type);
@@ -482,33 +501,37 @@ public class MarcRecord implements Map<String, Object> {
     private void parseMap(Map<String, Object> source,
                           String prefix,
                           LinkedList<String> key,
+                          Set<String> forbidden,
                           BiConsumer<List<String>, Object> consumer) {
         if (!prefix.isEmpty()) {
             key.addLast(prefix);
         }
         LinkedList<Map.Entry<String, Object>> list = new LinkedList<>();
         source.forEach((k, v) -> {
-            if (v instanceof Map) {
-                parseMap((Map<String, Object>) v, k, key, consumer);
-            } else if (v instanceof Collection) {
-                Collection<Object> collection = (Collection<Object>) v;
-                // join into a single map if we have a collection of plain maps
-                Map<String, Object> map = new LinkedHashMap<>();
-                for (Object object : collection) {
-                    if (object instanceof Map) {
-                        Map<String, Object> m = (Map<String, Object>) object;
-                        if (!join(map, m)) {
-                            parseMap(m, k, key, consumer);
+            // skip our forbidden keys
+            if (!forbidden.contains(k)) {
+                if (v instanceof Map) {
+                    parseMap((Map<String, Object>) v, k, key, forbidden, consumer);
+                } else if (v instanceof Collection) {
+                    Collection<Object> collection = (Collection<Object>) v;
+                    // join into a single map if we have a collection of plain maps
+                    Map<String, Object> map = new LinkedHashMap<>();
+                    for (Object object : collection) {
+                        if (object instanceof Map) {
+                            Map<String, Object> m = (Map<String, Object>) object;
+                            if (!join(map, m)) {
+                                parseMap(m, k, key, forbidden, consumer);
+                            }
+                        } else {
+                            list.add(Map.entry(k, object));
                         }
-                    } else {
-                        list.add(Map.entry(k, object));
                     }
+                    if (!map.isEmpty()) {
+                        parseMap(map, k, key, forbidden, consumer);
+                    }
+                } else {
+                    list.add(Map.entry(k, v));
                 }
-                if (!map.isEmpty()) {
-                    parseMap(map, k, key, consumer);
-                }
-            } else {
-                list.add(Map.entry(k, v));
             }
         });
         if (!list.isEmpty()) {

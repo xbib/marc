@@ -42,6 +42,10 @@ public class MarcField implements Comparable<MarcField> {
 
     public static final MarcFieldValidator DEFAULT_VALIDATOR = new StrictMarcFieldValidator();
 
+    public static final MarcFieldValidator STRICT_VALIDATOR = new StrictMarcFieldValidator();
+
+    public static final MarcFieldValidator PERMISSIVE_VALIDATOR = new PermissiveMarcFieldValidator();
+
     public static final String DELIMITER = "$";
 
     private final Builder builder;
@@ -605,7 +609,7 @@ public class MarcField implements Comparable<MarcField> {
                 }
                 case 2: {
                     tag(key.get(0));
-                    String indicator = key.get(1).replace('_', ' ');
+                    String indicator = key.get(1);
                     if (indicator.isEmpty()) {
                         indicator(" ");
                     } else {
@@ -623,13 +627,13 @@ public class MarcField implements Comparable<MarcField> {
                 }
                 case 3: {
                     tag(key.get(0));
-                    String indicator = key.get(1).replace('_', ' ');
+                    String indicator = key.get(1);
                     if (indicator.isEmpty()) {
                         indicator(" ");
                     } else {
                         indicator(indicator);
                     }
-                    String subfieldIds = key.get(2).replace('_', ' ');
+                    String subfieldIds = key.get(2);
                     if (subfieldIds.isEmpty()) {
                         subfieldIds = " ";
                     }
