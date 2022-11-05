@@ -1,0 +1,15 @@
+
+tasks.withType(Pmd) {
+    ignoreFailures = true
+    reports {
+        xml.getRequired().set(true)
+        html.getRequired().set(true)
+    }
+}
+
+pmd {
+    ignoreFailures = true
+    consoleOutput = false
+    toolVersion = "6.51.0"
+    ruleSetFiles = rootProject.files('gradle/quality/pmd/category/java/bestpractices.xml')
+}

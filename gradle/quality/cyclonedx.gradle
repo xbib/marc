@@ -1,0 +1,11 @@
+cyclonedxBom {
+    includeConfigs = [ 'runtimeClasspath' ]
+    skipConfigs = [ 'compileClasspath', 'testCompileClasspath' ]
+    projectType = "library"
+    schemaVersion = "1.4"
+    destination = file("build/reports")
+    outputName = "bom"
+    outputFormat = "json"
+    includeBomSerialNumber = true
+    componentVersion = "2.0.0"
+}

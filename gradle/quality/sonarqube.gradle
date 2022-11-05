@@ -1,0 +1,10 @@
+/*
+sonarqube {
+    properties {
+        property "sonar.projectName", "${project.group} ${project.name}"
+        property "sonar.sourceEncoding", "UTF-8"
+        property "sonar.tests", "src/test/java"
+        property "sonar.scm.provider", "git"
+    }
+}
+*/

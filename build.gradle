@@ -2,6 +2,10 @@ plugins {
     id "de.marcphilipp.nexus-publish" version "0.4.0"
     id "io.codearte.nexus-staging" version "0.21.1"
     id "org.xbib.gradle.plugin.asciidoctor" version "2.5.2.1"
+    id "org.cyclonedx.bom" version "1.7.2"
+    id "com.github.spotbugs" version "5.0.13"
+    id "checkstyle"
+    id "pmd"
 }
 
 wrapper {
@@ -41,3 +45,7 @@ apply from: rootProject.file('gradle/ide/idea.gradle')
 apply from: rootProject.file('gradle/compile/java.gradle')
 apply from: rootProject.file('gradle/test/junit5.gradle')
 apply from: rootProject.file('gradle/publishing/publication.gradle')
+apply from: rootProject.file('gradle/quality/cyclonedx.gradle')
+apply from: rootProject.file('gradle/quality/spotbugs.gradle')
+apply from: rootProject.file('gradle/quality/checkstyle.gradle')
+apply from: rootProject.file('gradle/quality/pmd.gradle')

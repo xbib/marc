@@ -1,0 +1,13 @@
+
+spotbugs {
+    effort = "max"
+    reportLevel = "low"
+    ignoreFailures = true
+}
+
+spotbugsMain {
+    reports {
+        xml.getRequired().set(false)
+        html.getRequired().set(true)
+    }
+}
