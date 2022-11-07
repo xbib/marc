@@ -64,8 +64,8 @@ public class MarcRecordTest {
                 .addField(MarcField.builder().tag("100").indicator(" ")
                         .subfield("a", "Hello").subfield("b", "World").build())
                 .buildRecord();
-        // format, type, leader, 001, 100 are in the record map
-        assertEquals(5, marcRecord.size());
+        // label, 001, 100 are in the record map
+        assertEquals(3, marcRecord.size());
         assertEquals(2, marcRecord.getFields().size());
         marcRecord = Marc.builder()
                 .lightweightRecord()

@@ -56,8 +56,8 @@ public class MabXmlTest {
     public void testMabXml2JsonExample() throws Exception {
         String s = "mabxml-example.xml";
         StreamMatcher.fileMatch(getClass(), s, ".jsonl", (inputStream, outputStream) -> {
-            try (MarcJsonWriter writer = new MarcJsonWriter(outputStream,
-                    10, EnumSet.of(MarcJsonWriter.Style.ELASTICSEARCH_BULK))
+            try (MarcJsonWriter writer = new MarcJsonWriter(outputStream, 10)
+                    .setStyle(EnumSet.of(MarcJsonWriter.Style.ELASTICSEARCH_BULK))
                     .setIndex("testindex", "testtype")) {
                 MarcContentHandler contentHandler = new MabXMLContentHandler()
                         .addNamespace("http://www.ddb.de/professionell/mabxml/mabxml-1.xsd")

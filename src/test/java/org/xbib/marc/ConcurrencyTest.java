@@ -126,7 +126,8 @@ public class ConcurrencyTest {
         File file = File.createTempFile(s + ".", ".jsonlines");
         file.deleteOnExit();
         FileOutputStream out = new FileOutputStream(file);
-        try (MarcJsonWriter writer = new MarcJsonWriter(out, EnumSet.of(MarcJsonWriter.Style.LINES))
+        try (MarcJsonWriter writer = new MarcJsonWriter(out)
+                .setStyle(EnumSet.of(MarcJsonWriter.Style.LINES))
                 .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)
                 .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)
         ) {

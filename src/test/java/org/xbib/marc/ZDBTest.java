@@ -69,12 +69,13 @@ public class ZDBTest {
     }
 
     @Test
-    public void testZDBBib() throws Exception {
+    public void testZDBBibAsJson() throws Exception {
         String s = "zdbtitutf8.mrc";
         StreamMatcher.fileMatch(getClass(), s, ".json", (inputStream, outputStream) -> {
             MarcValueTransformers marcValueTransformers = new MarcValueTransformers();
             marcValueTransformers.setMarcValueTransformer(value -> Normalizer.normalize(value, Normalizer.Form.NFC));
-            try (MarcJsonWriter writer = new MarcJsonWriter(outputStream, EnumSet.of(MarcJsonWriter.Style.LINES))
+            try (MarcJsonWriter writer = new MarcJsonWriter(outputStream)
+                    .setStyle(EnumSet.of(MarcJsonWriter.Style.LINES))
                     .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)
                     .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)
                     .setMarcValueTransformers(marcValueTransformers)) {

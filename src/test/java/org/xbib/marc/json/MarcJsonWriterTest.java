@@ -20,12 +20,17 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.xbib.marc.StreamMatcher.assertStream;
+
+import java.io.IOException;
 import java.io.OutputStream;
+import java.io.StringWriter;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import org.junit.jupiter.api.Test;
 import org.xbib.marc.Marc;
+import org.xbib.marc.MarcField;
+import org.xbib.marc.MarcRecord;
 import org.xbib.marc.MarcRecordAdapter;
 import org.xbib.marc.MarcXchangeConstants;
 import org.xbib.marc.StreamMatcher;
@@ -35,6 +40,10 @@ import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.text.Normalizer;
 import java.util.EnumSet;
+import java.util.List;
+import java.util.Map;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class MarcJsonWriterTest {
 
@@ -128,7 +137,8 @@ public class MarcJsonWriterTest {
     public void testAlephPublishRecordAdapterJson() throws Exception {
         String s = "HT016424175.xml";
         StreamMatcher.fileMatch(getClass(), s, ".json", (inputStream, outputStream) -> {
-            try (MarcJsonWriter writer = new MarcJsonWriter(outputStream, EnumSet.of(MarcJsonWriter.Style.LINES))
+            try (MarcJsonWriter writer = new MarcJsonWriter(outputStream)
+                    .setStyle(EnumSet.of(MarcJsonWriter.Style.LINES))
                     .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)
                     .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)
             ) {
@@ -165,16 +175,16 @@ public class MarcJsonWriterTest {
         }
         Path f0 = Paths.get("build/0.json");
         assertTrue(Files.exists(f0));
-        assertEquals(6015, Files.size(f0));
+        assertEquals(5931, Files.size(f0));
         Path f1 = Paths.get("build/1.json");
         assertTrue(Files.exists(f1));
-        assertEquals(7130, Files.size(f1));
+        assertEquals(7046, Files.size(f1));
         Path f2 = Paths.get("build/2.json");
         assertTrue(Files.exists(f2));
-        assertEquals(6426, Files.size(f2));
+        assertEquals(6342, Files.size(f2));
         Path f3 = Paths.get("build/3.json");
         assertTrue(Files.exists(f3));
-        assertEquals(2110, Files.size(f3));
+        assertEquals(2082, Files.size(f3));
         Path f4 = Paths.get("build/4.json");
         assertFalse(Files.exists(f4));
     }
@@ -185,8 +195,8 @@ public class MarcJsonWriterTest {
         InputStream in = getClass().getResource("/org/xbib/marc/" + s).openStream();
         MarcValueTransformers marcValueTransformers = new MarcValueTransformers();
         marcValueTransformers.setMarcValueTransformer(value -> Normalizer.normalize(value, Normalizer.Form.NFC));
-        try (MarcJsonWriter writer = new MarcJsonWriter("build/bulk%d.jsonl",
-                3, EnumSet.of(MarcJsonWriter.Style.ELASTICSEARCH_BULK))
+        try (MarcJsonWriter writer = new MarcJsonWriter("build/bulk%d.jsonl", 3)
+                .setStyle(EnumSet.of(MarcJsonWriter.Style.ELASTICSEARCH_BULK))
                 .setIndex("testindex", "testtype")) {
             writer.setMarcValueTransformers(marcValueTransformers);
             Marc.builder()
@@ -230,8 +240,8 @@ public class MarcJsonWriterTest {
         MarcValueTransformers marcValueTransformers = new MarcValueTransformers();
         marcValueTransformers.setMarcValueTransformer(value -> Normalizer.normalize(value, Normalizer.Form.NFC));
         // split at 3, Elasticsearch bulk format, buffer size 65536, compress = true
-        try (MarcJsonWriter writer = new MarcJsonWriter("build/bulk%d.jsonl.gz",
-                3, EnumSet.of(MarcJsonWriter.Style.ELASTICSEARCH_BULK), 65536, true)
+        try (MarcJsonWriter writer = new MarcJsonWriter("build/bulk%d.jsonl.gz", 3, 65536, true)
+                .setStyle(EnumSet.of(MarcJsonWriter.Style.ELASTICSEARCH_BULK))
                 .setIndex("testindex", "testtype")) {
             writer.setMarcValueTransformers(marcValueTransformers);
             Marc.builder()
@@ -249,13 +259,13 @@ public class MarcJsonWriterTest {
             assertEquals(2142, Files.size(f0));
             Path f1 = Paths.get("build/bulk1.jsonl.gz");
             assertTrue(Files.exists(f1));
-            assertEquals(2608, Files.size(f1));
+            assertEquals(2606, Files.size(f1));
             Path f2 = Paths.get("build/bulk2.jsonl.gz");
             assertTrue(Files.exists(f2));
-            assertEquals(2666, Files.size(f2));
+            assertEquals(2664, Files.size(f2));
             Path f3 = Paths.get("build/bulk3.jsonl.gz");
             assertTrue(Files.exists(f3));
-            assertEquals(1020, Files.size(f3));
+            assertEquals(1023, Files.size(f3));
             Path f4 = Paths.get("build/bulk4.jsonl.gz");
             assertFalse(Files.exists(f4));
         }
@@ -265,8 +275,8 @@ public class MarcJsonWriterTest {
     public void testBundeskunsthalle() throws Exception {
         String s = "bundeskunsthalle.xml";
         InputStream in = getClass().getResource("/org/xbib/marc/xml/" + s).openStream();
-        try (MarcJsonWriter writer = new MarcJsonWriter("build/bk-bulk%d.jsonl", 1,
-                EnumSet.of(MarcJsonWriter.Style.ELASTICSEARCH_BULK))
+        try (MarcJsonWriter writer = new MarcJsonWriter("build/bk-bulk%d.jsonl", 1)
+                .setStyle(EnumSet.of(MarcJsonWriter.Style.ELASTICSEARCH_BULK))
                 .setIndex("testindex", "testtype")) {
             Marc.builder()
                     .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)
@@ -282,8 +292,8 @@ public class MarcJsonWriterTest {
     @Test
     public void testJsonWriterWithMultipleInput() throws Exception {
         Path path = Files.createTempFile("multi.", ".json");
-        try (OutputStream outputStream = Files.newOutputStream(path);
-                MarcJsonWriter writer = new MarcJsonWriter(outputStream, EnumSet.of(MarcJsonWriter.Style.ARRAY))) {
+        try (MarcJsonWriter writer = new MarcJsonWriter(Files.newOutputStream(path))
+                        .setStyle(EnumSet.of(MarcJsonWriter.Style.ARRAY))) {
             writer.beginCollection();
             try (InputStream inputStream = getClass().getResource("/org/xbib/marc/summerland.mrc").openStream()) {
                 Marc.builder()
@@ -307,9 +317,9 @@ public class MarcJsonWriterTest {
                         .writeRecords();
             }
             writer.endCollection();
+        } finally {
             assertStream("multi", Files.newInputStream(path),
                     getClass().getResource("/org/xbib/marc/json/multi.json").openStream());
-        } finally {
             Files.delete(path);
         }
     }
@@ -352,7 +362,8 @@ public class MarcJsonWriterTest {
                 "test_ubl.mrc"
         }) {
             StreamMatcher.fileMatch(getClass(), s, ".json", (inputStream, outputStream) -> {
-                try (MarcJsonWriter writer = new MarcJsonWriter(outputStream, EnumSet.of(MarcJsonWriter.Style.ALLOW_DUPLICATES))) {
+                try (MarcJsonWriter writer = new MarcJsonWriter(outputStream)
+                        .setStyle(EnumSet.of(MarcJsonWriter.Style.ALLOW_DUPLICATES))) {
                     Marc.builder()
                             .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)
                             .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)
@@ -364,5 +375,54 @@ public class MarcJsonWriterTest {
                 }
             });
         }
+    }
+
+    @Test
+    public void testMarcRecordJsonFromMap() throws IOException {
+        Map<String, Object> f1 = Map.of("7_", List.of(Map.of("2", "DE-101"), Map.of("a", "010000151")));
+        Map<String, Object> f2 = Map.of("7_", List.of(Map.of("2", "DE-600"), Map.of("a", "23-1")));
+        Map<String, Object> map = Map.of("016", List.of(f1, f2));
+        MarcRecord marcRecord = MarcRecord.from(map);
+        StringWriter stringWriter = new StringWriter();
+        // read from the underlying map, effectively ignoring the MARC field created
+        try (MarcJsonWriter writer = new MarcJsonWriter(stringWriter)) {
+            writer.record(marcRecord);
+        }
+        // leader, format, type may be missing. Werdo not know if there are duplicate JSON keys or not.
+        assertEquals("{\"016\":\"[{7_=[{2=DE-101}, {a=010000151}]}, {7_=[{2=DE-600}, {a=23-1}]}]\"}", stringWriter.toString());
+    }
+
+    @Test
+    public void testMarcRecordToJsonWithAddedFields() throws IOException {
+        Map<String, Object> f1 = Map.of("7_", List.of(Map.of("2", "DE-101"), Map.of("a", "010000151")));
+        Map<String, Object> f2 = Map.of("7_", List.of(Map.of("2", "DE-600"), Map.of("a", "23-1")));
+        Map<String, Object> map = Map.of("016", List.of(f1, f2));
+        // we have a map and transfer it to the MARC record
+        MarcRecord marcRecord = MarcRecord.from(map);
+        marcRecord.getFields().add(MarcField.builder().tag("001").value("abc").build());
+        // doing the magic, create a new stable treemap from the MARC record fields, overridung our given map
+        marcRecord.rebuildMap();
+        StringWriter stringWriter = new StringWriter();
+        // read from the underlying map
+        try (MarcJsonWriter writer = new MarcJsonWriter(stringWriter)) {
+            writer.record(marcRecord);
+        }
+        assertEquals("{\"001\":[\"abc\"],\"016\":[{\"7 \":[{\"2\":\"DE-101\"},{\"a\":\"010000151\"}]},{\"7 \":[{\"2\":\"DE-600\"},{\"a\":\"23-1\"}]}]}", stringWriter.toString());
+    }
+
+    @Test
+    public void testMarcRecordJsonFromMapAllowDuplicates() throws IOException {
+        Map<String, Object> f1 = Map.of("7_", List.of(Map.of("2", "DE-101"), Map.of("a", "010000151")));
+        Map<String, Object> f2 = Map.of("7_", List.of(Map.of("2", "DE-600"), Map.of("a", "23-1")));
+        Map<String, Object> map = Map.of("016", List.of(f1, f2));
+        MarcRecord marcRecord = MarcRecord.from(map);
+        StringWriter stringWriter = new StringWriter();
+        // ALLOW_DUPLICATES reads from the fields of the MARC record
+        try (MarcJsonWriter writer = new MarcJsonWriter(stringWriter)
+                        .setStyle(EnumSet.of(MarcJsonWriter.Style.ALLOW_DUPLICATES))) {
+            writer.record(marcRecord);
+        }
+        // leader is not written if empty, format and type may be null, JSON key duplicates are allowed. The MARC field structure will be lost.
+        assertEquals("{\"016\":{\"7 \":[{\"2\":\"DE-101\"},{\"a\":\"010000151\"}]},\"016\":{\"7 \":[{\"2\":\"DE-600\"},{\"a\":\"23-1\"}]}}", stringWriter.toString());
     }
 }

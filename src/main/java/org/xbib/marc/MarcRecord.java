@@ -447,9 +447,6 @@ public class MarcRecord implements Map<String, Object> {
     @SuppressWarnings("unchecked")
     private Map<String, Object> createMapFromMarcFields(boolean stable) {
         Map<String, Object> map = stable ? new TreeMap<>() : new LinkedHashMap<>();
-        map.put(FORMAT_TAG, format);
-        map.put(TYPE_TAG, type);
-        map.put(LEADER_TAG, recordLabel.toString());
         for (MarcField marcField : marcFields) {
             String tag = marcField.getTag();
             int repeat;
@@ -493,6 +490,15 @@ public class MarcRecord implements Map<String, Object> {
             } else {
                 repeatMap.put(Integer.toString(repeat), marcField.getValue());
             }
+        }
+        if (format != null) {
+            map.put(FORMAT_TAG, format);
+        }
+        if (type != null) {
+            map.put(TYPE_TAG, type);
+        }
+        if (recordLabel != null && !RecordLabel.EMPTY.equals(recordLabel)) {
+            map.put(LEADER_TAG, recordLabel.toString());
         }
         return map;
     }

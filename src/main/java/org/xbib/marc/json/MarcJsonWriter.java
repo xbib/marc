@@ -73,7 +73,7 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
 
     private boolean fatalErrors;
 
-    private final EnumSet<Style> style;
+    private EnumSet<Style> style;
 
     private Exception exception;
 
@@ -96,40 +96,36 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
     private boolean top;
 
     public MarcJsonWriter(OutputStream out) {
-        this(out, EnumSet.of(Style.ARRAY));
+        this(out, DEFAULT_BUFFER_SIZE);
+        this.style = EnumSet.of(Style.ARRAY);
     }
 
-    public MarcJsonWriter(OutputStream out, EnumSet<Style> style) {
-        this(out, DEFAULT_BUFFER_SIZE, style);
-    }
-
-    public MarcJsonWriter(OutputStream out, int bufferSize, EnumSet<Style> style) {
-        this(new OutputStreamWriter(out, StandardCharsets.UTF_8), style, bufferSize);
+    public MarcJsonWriter(OutputStream out, int bufferSize) {
+        this(new OutputStreamWriter(out, StandardCharsets.UTF_8), bufferSize);
     }
 
     public MarcJsonWriter(Writer writer) {
-        this(writer, EnumSet.of(Style.ARRAY), DEFAULT_BUFFER_SIZE);
+        this(writer, DEFAULT_BUFFER_SIZE);
+        this.style = EnumSet.of(Style.ARRAY);
     }
 
-    public MarcJsonWriter(Writer writer, EnumSet<Style> style, int bufferSize) {
+    public MarcJsonWriter(Writer writer, int bufferSize) {
         this.writer = new BufferedWriter(writer, bufferSize);
         this.jsonWriter = new JsonWriter(this.writer);
         this.bufferSize = bufferSize;
-        this.style = style;
         this.lock = new ReentrantLock();
         this.builder = Marc.builder();
         this.top = true;
     }
 
     public MarcJsonWriter(String fileNamePattern, int splitlimit) throws IOException {
-        this(fileNamePattern, splitlimit, EnumSet.of(Style.LINES), DEFAULT_BUFFER_SIZE, false);
+        this(fileNamePattern, splitlimit, DEFAULT_BUFFER_SIZE, false);
+        this.style = EnumSet.of(Style.LINES);
     }
 
-    public MarcJsonWriter(String fileNamePattern, int splitlimit, EnumSet<Style> style) throws IOException {
-        this(fileNamePattern, splitlimit, style, DEFAULT_BUFFER_SIZE, false);
-    }
-
-    public MarcJsonWriter(String fileNamePattern, int splitlimit, EnumSet<Style> style, int bufferSize, boolean compress)
+    public MarcJsonWriter(String fileNamePattern,
+                          int splitlimit,
+                          int bufferSize, boolean compress)
             throws IOException {
         this.fileNameCounter = new AtomicInteger(0);
         this.fileNamePattern = fileNamePattern;
@@ -138,9 +134,13 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
         this.lock = new ReentrantLock();
         this.builder = Marc.builder();
         this.top = true;
-        this.style = style;
         this.compress = compress;
         newWriter(fileNamePattern, fileNameCounter, bufferSize, compress);
+    }
+
+    public MarcJsonWriter setStyle(EnumSet<Style> style) {
+        this.style = style;
+        return this;
     }
 
     public MarcJsonWriter setIndex(String index, String indexType) {
@@ -312,18 +312,24 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
             }
         }
         jsonWriter.writeObjectOpen();
-        jsonWriter.writeMemberName(FORMAT_TAG);
-        jsonWriter.writeMemberSeparator();
-        jsonWriter.writeString(marcRecord.getFormat());
-        jsonWriter.writeObjectSeparator();
-        jsonWriter.writeMemberName(TYPE_TAG);
-        jsonWriter.writeMemberSeparator();
-        jsonWriter.writeString(marcRecord.getType());
-        jsonWriter.writeObjectSeparator();
-        jsonWriter.writeMemberName(LEADER_TAG);
-        jsonWriter.writeMemberSeparator();
-        jsonWriter.writeString(marcRecord.getRecordLabel().toString());
-        jsonWriter.writeObjectSeparator();
+        if (marcRecord.getFormat() != null) {
+            jsonWriter.writeMemberName(FORMAT_TAG);
+            jsonWriter.writeMemberSeparator();
+            jsonWriter.writeString(marcRecord.getFormat());
+            jsonWriter.writeObjectSeparator();
+        }
+        if (marcRecord.getType() != null) {
+            jsonWriter.writeMemberName(TYPE_TAG);
+            jsonWriter.writeMemberSeparator();
+            jsonWriter.writeString(marcRecord.getType());
+            jsonWriter.writeObjectSeparator();
+        }
+        if (!RecordLabel.EMPTY.equals(marcRecord.getRecordLabel())) {
+            jsonWriter.writeMemberName(LEADER_TAG);
+            jsonWriter.writeMemberSeparator();
+            jsonWriter.writeString(marcRecord.getRecordLabel().toString());
+            jsonWriter.writeObjectSeparator();
+        }
         boolean fieldseparator = false;
         for (MarcField marcField : marcRecord.getFields()) {
             if (fieldseparator) {
