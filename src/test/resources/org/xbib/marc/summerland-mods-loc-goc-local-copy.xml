@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><mods xmlns="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd" version="3.4">
+<titleInfo>
+<title>Summerland</title>
+</titleInfo>
+<name type="personal" usage="primary">
+<namePart>Chabon, Michael.</namePart>
+</name>
+<typeOfResource>text</typeOfResource>
+<originInfo>
+<place>
+<placeTerm type="code" authority="marccountry">nyu</placeTerm>
+</place>
+<place>
+<placeTerm type="text">New York</placeTerm>
+</place>
+<publisher>Miramax Books/Hyperion Books for Children</publisher>
+<dateIssued>c2002</dateIssued>
+<dateIssued encoding="marc">2002</dateIssued>
+<edition>1st ed.</edition>
+<issuance>monographic</issuance>
+<frequency/>
+</originInfo>
+<language>
+<languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+</language>
+<physicalDescription>
+<form authority="marcform">print</form>
+<extent>500 p. ; 22 cm.</extent>
+</physicalDescription>
+<abstract>Ethan Feld, the worst baseball player in the history of the game, finds himself recruited by a 100-year-old scout to help a band of fairies triumph over an ancient enemy.</abstract>
+<targetAudience authority="marctarget">juvenile</targetAudience>
+<subject authority="lcshac">
+<topic>Fantasy</topic>
+</subject>
+<subject authority="lcshac">
+<topic>Baseball</topic>
+<genre>Fiction</genre>
+</subject>
+<subject authority="lcshac">
+<topic>Magic</topic>
+<genre>Fiction</genre>
+</subject>
+<identifier type="isbn">0786808772</identifier>
+<identifier type="isbn">0786816155 (pbk.)</identifier>
+<recordInfo>
+<descriptionStandard>aacr</descriptionStandard>
+<recordContentSource authority="marcorg">DLC</recordContentSource>
+<recordCreationDate encoding="marc">020805</recordCreationDate>
+<recordChangeDate encoding="iso8601">20030616111422.0</recordChangeDate>
+<recordIdentifier>12883376</recordIdentifier>
+<recordOrigin>Converted from MARCXML to MODS version 3.4 using MARC21slim2MODS3-4.xsl
+				(Revision 1.70)</recordOrigin>
+</recordInfo>
+</mods>

@@ -1,7 +1,13 @@
 pluginManagement {
     repositories {
         mavenLocal()
-        mavenCentral()
+        mavenCentral {
+            metadataSources {
+                mavenPom()
+                artifact()
+                ignoreGradleMetadataRedirection()
+            }
+        }
         gradlePluginPortal()
     }
 }
