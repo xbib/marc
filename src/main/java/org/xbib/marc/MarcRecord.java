@@ -49,11 +49,10 @@ public class MarcRecord implements Map<String, Object> {
 
     private transient RecordLabel recordLabel;
 
-    private final transient List<MarcField> marcFields;
+    private transient List<MarcField> marcFields;
 
     private MarcRecord(Map<String, Object> delegate) {
         this.delegate = delegate;
-        this.marcFields = new LinkedList<>();
     }
 
     /**
@@ -107,6 +106,7 @@ public class MarcRecord implements Map<String, Object> {
                                   RecordLabel recordLabel,
                                   Collection<String> privateTags) {
         MarcRecord marcRecord = new MarcRecord(map);
+        marcRecord.marcFields = new LinkedList<>();
         Set<String> forbidden = new HashSet<>(privateTags);
         forbidden.add(formatTag);
         forbidden.add(typeTag);
@@ -214,7 +214,9 @@ public class MarcRecord implements Map<String, Object> {
      * @param handler the handler
      */
     public void all(Predicate<? super MarcField> predicate, MarcFieldHandler handler) {
-        marcFields.stream().filter(predicate).forEach(handler::field);
+        if (marcFields != null) {
+            marcFields.stream().filter(predicate).forEach(handler::field);
+        }
     }
 
     /**
@@ -298,7 +300,9 @@ public class MarcRecord implements Map<String, Object> {
      * @param handler the handler
      */
     public void first(Predicate<? super MarcField> predicate, MarcFieldHandler handler) {
-        marcFields.stream().filter(predicate).findFirst().ifPresent(handler::field);
+        if (marcFields != null) {
+            marcFields.stream().filter(predicate).findFirst().ifPresent(handler::field);
+        }
     }
 
     /**
@@ -350,7 +354,9 @@ public class MarcRecord implements Map<String, Object> {
      * @param handler the handler
      */
     public void any(Predicate<? super MarcField> predicate, MarcFieldHandler handler) {
-        marcFields.stream().filter(predicate).findAny().ifPresent(handler::field);
+        if (marcFields != null) {
+            marcFields.stream().filter(predicate).findAny().ifPresent(handler::field);
+        }
     }
 
     /**
@@ -437,7 +443,7 @@ public class MarcRecord implements Map<String, Object> {
 
     @Override
     public int hashCode() {
-        return (recordLabel.toString() + marcFields.toString()).hashCode();
+        return (recordLabel.toString() + (marcFields != null ? marcFields.toString() : "")).hashCode();
     }
 
     public String toString() {
@@ -447,6 +453,9 @@ public class MarcRecord implements Map<String, Object> {
     @SuppressWarnings("unchecked")
     private Map<String, Object> createMapFromMarcFields(boolean stable) {
         Map<String, Object> map = stable ? new TreeMap<>() : new LinkedHashMap<>();
+        if (marcFields == null) {
+            return map;
+        }
         for (MarcField marcField : marcFields) {
             String tag = marcField.getTag();
             int repeat;

@@ -22,13 +22,15 @@ jar {
 }
 
 task sourcesJar(type: Jar, dependsOn: classes) {
+    dependsOn classes
     classifier 'sources'
     from sourceSets.main.allSource
 }
 
 task javadocJar(type: Jar, dependsOn: javadoc) {
+    dependsOn javadoc
     classifier 'javadoc'
-    from sourceSets.main.allSource
+    from javadoc.destinationDir
 }
 
 artifacts {
