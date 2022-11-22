@@ -458,18 +458,31 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
                                                     if (c5 > 0) {
                                                         sb.append(",");
                                                     }
-                                                    sb.append("\"").append(escape(s)).append("\"");
+                                                    if (s != null) {
+                                                        sb.append("\"").append(escape(s)).append("\"");
+                                                    } else {
+                                                        sb.append("null");
+                                                    }
                                                     c5++;
                                                 }
                                                 sb.append("]");
                                             } else {
-                                                sb.append("\"").append(escape(subfield.getValue().toString())).append("\"");
+                                                Object object = subfield.getValue();
+                                                if (object != null) {
+                                                    sb.append("\"").append(escape(object.toString())).append("\"");
+                                                } else {
+                                                    sb.append("null");
+                                                }
                                             }
                                             c4++;
                                             sb.append("}");
                                         }
                                     } else {
-                                        sb.append("\"").append(escape(value2.toString())).append("\"");
+                                        if (value2 != null) {
+                                            sb.append("\"").append(escape(value2.toString())).append("\"");
+                                        } else {
+                                            sb.append("null");
+                                        }
                                     }
                                     c3++;
                                 }
@@ -478,10 +491,10 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
                             }
                             sb.append("}");
                         } else {
-                            if (value == null) {
-                                sb.append("null");
-                            } else {
+                            if (value != null) {
                                 sb.append("\"").append(escape(value.toString())).append("\"");
+                            } else {
+                                sb.append("null");
                             }
                         }
                         c1++;
@@ -493,10 +506,10 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
                 }
                 sb.append("]");
             } else {
-                if (o == null) {
-                    sb.append("null");
-                } else {
+                if (o != null) {
                     sb.append("\"").append(escape(o.toString())).append("\"");
+                } else {
+                    sb.append("null");
                 }
             }
             c0++;
