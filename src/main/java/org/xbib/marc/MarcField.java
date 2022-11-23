@@ -452,6 +452,20 @@ public class MarcField implements Comparable<MarcField> {
         }
 
         /**
+         * Convenience method to add a subfield only if the value is not null.
+         * @param subfieldId the dubfield ID
+         * @param value the subfield value
+         * @return this builder
+         */
+        public Builder subfieldIfNotNull(String subfieldId, String value) {
+            if (value != null) {
+                String id = validator.validateSubfieldId(subfieldId);
+                subfields.add(new Subfield(id, value));
+            }
+            return this;
+        }
+
+        /**
          * Add subfield ID without a value.
          * @param subfieldId the subfield ID
          * @return this builder
