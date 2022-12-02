@@ -489,18 +489,24 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
     }
 
     /**
-     * Split records if configured.
+     * Split records if configured. A splitlimit of -1 prevents splitting.
      */
     private void afterRecord() {
-        if (fileNamePattern != null && getRecordCounter() % splitlimit == 0) {
-            try {
-                endCollection();
-                writer.close();
-                newWriter(fileNamePattern, fileNameCounter, bufferSize, compress);
-                setupEventConsumer(writer, indent);
-                beginCollection();
-            } catch (IOException e) {
-                logger.log(Level.SEVERE, e.getMessage(), e);
+        if (fileNamePattern != null) {
+            if (splitlimit != -1) {
+                if (getRecordCounter() % splitlimit == 0) {
+                    try {
+                        endCollection();
+                        endDocument();
+                        writer.close();
+                        newWriter(fileNamePattern, fileNameCounter, bufferSize, compress);
+                        setupEventConsumer(writer, indent);
+                        startDocument();
+                        beginCollection();
+                    } catch (IOException e) {
+                        logger.log(Level.SEVERE, e.getMessage(), e);
+                    }
+                }
             }
         }
     }
