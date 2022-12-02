@@ -343,7 +343,7 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
             if (exception != null) {
                 return;
             }
-            if (field.isControl() && field.getValue() != null) {
+            if (field.isControl()) {
                 Iterator<Attribute> attrs =
                         Collections.singletonList(eventFactory.createAttribute(TAG_ATTRIBUTE,
                                 transform(field.getTag()))).iterator();
@@ -351,6 +351,12 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
                 String value = field.getValue();
                 if (value != null && !value.isEmpty()) {
                     xmlEventConsumer.add(eventFactory.createCharacters(transform(value)));
+                } else {
+                    // the control field is disguised as a data field, try lookup value in first subfield of " "
+                    value = field.getFirstSubfieldValue(" ");
+                    if (value != null && !value.isEmpty()) {
+                        xmlEventConsumer.add(eventFactory.createCharacters(transform(value)));
+                    }
                 }
                 xmlEventConsumer.add(eventFactory.createEndElement(CONTROLFIELD_ELEMENT, namespaces));
             } else if (!field.isEmpty()) {
@@ -369,9 +375,9 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
                     // "There is one restriction. A special mode (identifier length = 0) of ISO 2709 operates with
                     // data fields without subfields. In the MarcXchange schema subfields are required,
                     // i.e. identifier length = 0 is not supported."
-                    // We support it! A subfield ID of length 0 will be substituted by "a"
+                    // But we support it! A subfield ID of length 0 will be substituted by blank (" ").
                     if (code.isEmpty()) {
-                        code = "a";
+                        code = " ";
                     }
                     List<Attribute> subfieldattrs = new LinkedList<>();
                     subfieldattrs.add(eventFactory.createAttribute(CODE_ATTRIBUTE, transform(code)));
@@ -382,9 +388,9 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
                 }
                 String value = field.getValue();
                 if (value != null && !value.isEmpty()) {
-                    // if we have data in a datafield, create subfield "a" with data
+                    // if we have data in a datafield, create subfield blank (" ") with data
                     attrs = new LinkedList<>();
-                    attrs.add(eventFactory.createAttribute(CODE_ATTRIBUTE, "a"));
+                    attrs.add(eventFactory.createAttribute(CODE_ATTRIBUTE, " "));
                     xmlEventConsumer.add(eventFactory.createStartElement(SUBFIELD_ELEMENT, attrs.iterator(), namespaces));
                     xmlEventConsumer.add(eventFactory.createCharacters(transform(value)));
                     xmlEventConsumer.add(eventFactory.createEndElement(SUBFIELD_ELEMENT, namespaces));
@@ -444,7 +450,6 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
             if (xmlEventConsumer instanceof XMLEventWriter) {
                 ((XMLEventWriter) xmlEventConsumer).flush();
             }
-            afterRecord();
         } catch (XMLStreamException e) {
             handleException(new IOException(e));
         } finally {

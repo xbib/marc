@@ -131,7 +131,6 @@ public class MarcToModsTest {
                 }
             });
             transformer.transform(source, streamResult);
-            marcInputStream.close();
             xslInputStream.close();
             assertThat(out.toByteArray(),
                     CompareMatcher.isIdenticalTo(getClass().getResource("summerland-sax-mods.xml").openStream()));
@@ -178,7 +177,6 @@ public class MarcToModsTest {
                 }
             });
             transformer.transform(source, streamResult);
-            marcInputStream.close();
             xslInputStream.close();
             assertThat(out.toByteArray(),
                     CompareMatcher.isIdenticalTo(getClass().getResource("summerland-dom-mods.xml").openStream()));

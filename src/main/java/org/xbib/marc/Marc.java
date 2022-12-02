@@ -52,6 +52,7 @@ import java.io.UncheckedIOException;
 import java.net.URL;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -664,7 +665,7 @@ public final class Marc {
 
         private boolean isLightweightRecord;
 
-        private boolean isStableFieldOrder;
+        private Comparator<String> comparator;
 
         private Pattern keyPattern;
 
@@ -1131,8 +1132,8 @@ public final class Marc {
             return this;
         }
 
-        public Marc.Builder stableFieldOrder() {
-            this.isStableFieldOrder = true;
+        public Marc.Builder comparator(Comparator<String> comparator) {
+            this.comparator = comparator;
             return this;
         }
 
@@ -1141,7 +1142,7 @@ public final class Marc {
          * @return MARC record
          */
         public MarcRecord buildRecord() {
-            return new MarcRecord(format, type, recordLabel, marcFieldList, isLightweightRecord, isStableFieldOrder);
+            return new MarcRecord(format, type, recordLabel, marcFieldList, isLightweightRecord, comparator);
         }
 
         /**

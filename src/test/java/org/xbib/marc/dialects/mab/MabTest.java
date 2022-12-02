@@ -43,8 +43,11 @@ import org.xml.sax.InputSource;
 import org.xmlunit.matchers.CompareMatcher;
 import java.io.InputStream;
 import java.io.StringWriter;
+import java.io.Writer;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.regex.Pattern;
 
 public class MabTest {
@@ -158,6 +161,9 @@ public class MabTest {
             assertNull(writer.getException());
         }
         sw.close();
+        //try (Writer writer = Files.newBufferedWriter(Paths.get("HT016424175-combined.xml"))) {
+        //    writer.write(sw.toString());
+        //}
         assertStream(s, new ByteArrayInputStream(outputStream.toByteArray()),
                 getClass().getResource("HT016424175.xml.combined.txt").openStream());
         assertThat(sw.toString(),

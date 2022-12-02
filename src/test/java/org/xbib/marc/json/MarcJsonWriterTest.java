@@ -39,6 +39,7 @@ import org.xbib.marc.xml.MarcContentHandler;
 import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.text.Normalizer;
+import java.util.Comparator;
 import java.util.EnumSet;
 import java.util.List;
 import java.util.Map;
@@ -65,7 +66,7 @@ public class MarcJsonWriterTest {
                         .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)
                 ) {
                     Marc.builder()
-                            .stableFieldOrder()
+                            .comparator(Comparator.naturalOrder())
                             .setInputStream(inputStream)
                             .setCharset(Charset.forName("ANSEL"))
                             .setMarcListener(writer)
@@ -92,7 +93,7 @@ public class MarcJsonWriterTest {
                 try (MarcJsonWriter writer = new MarcJsonWriter(outputStream)
                 ) {
                     Marc.builder()
-                            .stableFieldOrder()
+                            .comparator(Comparator.naturalOrder())
                             .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)
                             .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)
                             .setInputStream(inputStream)
@@ -125,7 +126,7 @@ public class MarcJsonWriterTest {
                             .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)
                             .setInputStream(inputStream)
                             .setCharset(Charset.forName("ANSEL"))
-                            .setMarcListener(new MarcRecordAdapter(writer, true))
+                            .setMarcListener(new MarcRecordAdapter(writer, Comparator.naturalOrder()))
                             .build()
                             .writeCollection();
                 }
@@ -146,7 +147,7 @@ public class MarcJsonWriterTest {
                 contentHandler.addNamespace("http://www.ddb.de/professionell/mabxml/mabxml-1.xsd");
                 contentHandler.setFormat("MARC21");
                 contentHandler.setType("Bibliographic");
-                contentHandler.setMarcListener(new MarcRecordAdapter(writer, true));
+                contentHandler.setMarcListener(new MarcRecordAdapter(writer, Comparator.naturalOrder()));
                 Marc.builder()
                         .setInputStream(inputStream)
                         .setContentHandler(contentHandler)

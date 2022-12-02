@@ -15,6 +15,7 @@
  */
 package org.xbib.marc.xml;
 
+import java.util.Comparator;
 import java.util.HashSet;
 import org.xbib.marc.MarcField;
 import org.xbib.marc.MarcListener;
@@ -85,7 +86,7 @@ public class MarcContentHandler
 
     private final Set<String> validNamespaces;
 
-    private boolean isStableFieldOrder;
+    private Comparator<String> comparator;
 
     public MarcContentHandler() {
         this.recordCounter = new AtomicInteger();
@@ -166,8 +167,8 @@ public class MarcContentHandler
         return this;
     }
 
-    public MarcContentHandler setStableFieldOrder(boolean stableFieldOrder) {
-        this.isStableFieldOrder = stableFieldOrder;
+    public MarcContentHandler setComparator(Comparator<String> comparator) {
+        this.comparator = comparator;
         return this;
     }
 
@@ -254,7 +255,7 @@ public class MarcContentHandler
                 } else {
                     MarcRecord marcRecord = new MarcRecord(getFormat(), getType(),
                             RecordLabel.builder().from(label).build(),
-                            marcFieldList, false, isStableFieldOrder);
+                            marcFieldList, false, comparator);
                     marcRecordListener.record(marcRecord);
                 }
             }

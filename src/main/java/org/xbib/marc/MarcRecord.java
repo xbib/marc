@@ -23,6 +23,7 @@ import org.xbib.marc.label.RecordLabel;
 
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
@@ -63,13 +64,14 @@ public class MarcRecord implements Map<String, Object> {
      * @param recordLabel the record label
      * @param marcFields  the MARC field
      * @param lightweight true if MARC record fields should not be entered into the underlying hash map.
+     * @param comparator  a tag comparator for the underlying map
      */
     public MarcRecord(String format,
                       String type,
                       RecordLabel recordLabel,
                       List<MarcField> marcFields,
                       boolean lightweight,
-                      boolean stable) {
+                      Comparator<String> comparator) {
         this.format = format;
         this.type = type;
         this.recordLabel = recordLabel;
@@ -77,7 +79,7 @@ public class MarcRecord implements Map<String, Object> {
             throw new NullPointerException("record label must not be null");
         }
         this.marcFields = marcFields;
-        this.delegate = lightweight ? Map.of() : createMapFromMarcFields(stable);
+        this.delegate = lightweight ? Map.of() : createMapFromMarcFields(comparator);
     }
 
     /**
@@ -371,7 +373,11 @@ public class MarcRecord implements Map<String, Object> {
     }
 
     public void rebuildMap() {
-        this.delegate = createMapFromMarcFields(true);
+        this.delegate = createMapFromMarcFields(Comparator.naturalOrder());
+    }
+
+    public void rebuildFields(Comparator<MarcField> comparator) {
+        this.marcFields.sort(comparator);
     }
 
     @Override
@@ -451,8 +457,8 @@ public class MarcRecord implements Map<String, Object> {
     }
 
     @SuppressWarnings("unchecked")
-    private Map<String, Object> createMapFromMarcFields(boolean stable) {
-        Map<String, Object> map = stable ? new TreeMap<>() : new LinkedHashMap<>();
+    private Map<String, Object> createMapFromMarcFields(Comparator<String> comparator) {
+        Map<String, Object> map = comparator!= null ? new TreeMap<>(comparator) : new LinkedHashMap<>();
         if (marcFields == null) {
             return map;
         }
