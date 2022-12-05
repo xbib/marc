@@ -15,14 +15,36 @@
  */
 package org.xbib.marc;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
 import org.junit.jupiter.api.Test;
 import org.xbib.marc.transformer.value.MarcValueTransformers;
 import org.xbib.marc.xml.MarcXchangeWriter;
+
+import java.io.ByteArrayOutputStream;
+import java.io.StringWriter;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
+import java.util.Map;
+import java.util.TreeMap;
 
 public class MarcWriterTest {
+
+    @Test
+    public void testMarcWriter() throws Exception {
+        Map<String, Object> map = new TreeMap<>(Map.of("001", "123",
+                "100", Map.of("_", Map.of("a", "Hello World"))));
+        MarcRecord marcRecord = MarcRecord.from(map);
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+        try (MarcWriter writer = new MarcWriter(outputStream, StandardCharsets.UTF_8)) {
+            writer.startDocument();
+            writer.record(marcRecord);
+            writer.endDocument();
+            assertNull(writer.getException());
+        }
+        assertEquals("\u001D00000     0000000   000 \u001E100 \u001FaHello World\u001E001123\u001D\u001C",
+                outputStream.toString(StandardCharsets.UTF_8));
+    }
 
     @Test
     public void testUtf8MarcWriter() throws Exception {
