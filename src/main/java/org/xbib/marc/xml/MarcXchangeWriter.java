@@ -82,7 +82,7 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
 
     private static final QName SUBFIELD_ELEMENT = new QName(NAMESPACE_URI, SUBFIELD, "");
 
-    private final XMLEventFactory eventFactory;
+    protected final XMLEventFactory eventFactory;
 
     private final Namespace namespace;
 
@@ -304,10 +304,7 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
                 String realtype = getType() != null ? getType() : type != null ? type : getDefaultType();
                 attrs.add(eventFactory.createAttribute(TYPE_ATTRIBUTE, realtype));
                 if (!schemaWritten) {
-                    attrs.add(eventFactory.createAttribute("xmlns:xsi",
-                            XMLConstants.W3C_XML_SCHEMA_INSTANCE_NS_URI));
-                    attrs.add(eventFactory.createAttribute("xsi:schemaLocation",
-                            NAMESPACE_URI + " " + NAMESPACE_SCHEMA_LOCATION));
+                    writeSchema(attrs);
                     schemaWritten = true;
                 }
                 xmlEventConsumer.add(eventFactory.createStartElement(RECORD_ELEMENT, attrs.iterator(), namespaces));
@@ -486,6 +483,13 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
 
     public Exception getException() {
         return exception;
+    }
+
+    protected void writeSchema(List<Attribute> attrs) throws XMLStreamException {
+        attrs.add(eventFactory.createAttribute("xmlns:xsi",
+                XMLConstants.W3C_XML_SCHEMA_INSTANCE_NS_URI));
+        attrs.add(eventFactory.createAttribute("xsi:schemaLocation",
+                NAMESPACE_URI + " " + NAMESPACE_SCHEMA_LOCATION));
     }
 
     /**

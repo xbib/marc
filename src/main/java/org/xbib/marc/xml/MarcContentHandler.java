@@ -22,6 +22,7 @@ import org.xbib.marc.MarcListener;
 import org.xbib.marc.MarcRecord;
 import org.xbib.marc.MarcRecordListener;
 import org.xbib.marc.MarcXchangeConstants;
+import org.xbib.marc.MarcXmlConstants;
 import org.xbib.marc.label.RecordLabel;
 import org.xbib.marc.transformer.field.MarcFieldTransformers;
 import org.xbib.marc.transformer.value.MarcValueTransformers;
@@ -51,7 +52,7 @@ import java.util.logging.Logger;
  * and fires events to a Marc listener.
  */
 public class MarcContentHandler
-        implements  MarcXchangeConstants, MarcListener, MarcRecordListener,
+        implements MarcXmlConstants, MarcXchangeConstants, MarcListener, MarcRecordListener,
         EntityResolver, DTDHandler, ContentHandler, ErrorHandler {
 
     private static final Logger logger = Logger.getLogger(MarcContentHandler.class.getName());
