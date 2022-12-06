@@ -15,6 +15,7 @@
  */
 package org.xbib.marc.xml;
 
+import java.util.ArrayList;
 import org.xbib.marc.MarcField;
 import org.xbib.marc.MarcListener;
 import org.xbib.marc.MarcRecord;
@@ -33,7 +34,6 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -160,7 +160,7 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
         this.documentStarted = false;
         this.collectionStarted = false;
         eventFactory = XMLEventFactory.newInstance();
-        namespace = eventFactory.createNamespace("", NAMESPACE_URI);
+        namespace = createNameSpace();
         setupEventConsumer(writer, indent);
     }
 
@@ -185,7 +185,7 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
         this.documentStarted = false;
         this.collectionStarted = false;
         this.eventFactory = XMLEventFactory.newInstance();
-        this.namespace = eventFactory.createNamespace("", NAMESPACE_URI);
+        this.namespace = createNameSpace();
         newWriter(fileNamePattern, fileNameCounter, bufferSize, compress);
         setupEventConsumer(writer, indent);
     }
@@ -199,7 +199,7 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
         this.xmlEventConsumer = consumer;
         this.lock = new ReentrantLock();
         this.eventFactory = XMLEventFactory.newInstance();
-        this.namespace = eventFactory.createNamespace("", NAMESPACE_URI);
+        this.namespace = createNameSpace();
         this.namespaces = Collections.singletonList(namespace).iterator();
     }
 
@@ -275,12 +275,12 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
         }
         try {
             if (!collectionStarted) {
-                Iterator<Attribute> attrs = schemaWritten ? null : Arrays.asList(
-                        eventFactory.createAttribute("xmlns:xsi",
-                                XMLConstants.W3C_XML_SCHEMA_INSTANCE_NS_URI),
-                        eventFactory.createAttribute("xsi:schemaLocation",
-                                NAMESPACE_URI + " " + NAMESPACE_SCHEMA_LOCATION)
-                ).iterator();
+                Iterator<Attribute> attrs = null;
+                if (!schemaWritten) {
+                    List<Attribute> list = new ArrayList<>();
+                    writeSchema(list);
+                    attrs = list.iterator();
+                }
                 xmlEventConsumer.add(eventFactory.createStartElement(COLLECTION_ELEMENT, attrs, namespaces));
                 schemaWritten = true;
                 collectionStarted = true;
@@ -483,6 +483,10 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
 
     public Exception getException() {
         return exception;
+    }
+
+    protected Namespace createNameSpace() {
+        return eventFactory.createNamespace("", NAMESPACE_URI);
     }
 
     protected void writeSchema(List<Attribute> attrs) throws XMLStreamException {

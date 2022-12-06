@@ -9,6 +9,7 @@ import java.util.List;
 import javax.xml.XMLConstants;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.events.Attribute;
+import javax.xml.stream.events.Namespace;
 import javax.xml.stream.util.XMLEventConsumer;
 
 public class MarcXmlWriter extends MarcXchangeWriter {
@@ -57,6 +58,10 @@ public class MarcXmlWriter extends MarcXchangeWriter {
 
     public MarcXmlWriter(XMLEventConsumer consumer) {
         super(consumer);
+    }
+
+    protected Namespace createNameSpace() {
+        return eventFactory.createNamespace("", NAMESPACE_URI);
     }
 
     @Override
