@@ -1058,7 +1058,7 @@ public final class Marc {
         }
 
         @Override
-        public void leader(String value) {
+        public void leader(RecordLabel value) {
             if (listener != null) {
                 listener.leader(value);
             }
@@ -1066,7 +1066,7 @@ public final class Marc {
                 defaultContentHandler.leader(value);
             }
             if (marcRecordListener != null) {
-                recordLabel(RecordLabel.builder().from(value.toCharArray()).build());
+                recordLabel(value);
             }
         }
 

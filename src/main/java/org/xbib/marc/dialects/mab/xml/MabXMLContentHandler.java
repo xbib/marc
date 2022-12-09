@@ -78,7 +78,7 @@ public class MabXMLContentHandler extends MarcContentHandler implements MabXMLCo
                 // create leader
                 RecordLabel recordLabel = RecordLabel.builder().setIndicatorLength(1).setSubfieldIdentifierLength(0)
                         .build();
-                leader(recordLabel.toString());
+                leader(recordLabel);
                 break;
             }
             case FELD: {

@@ -275,7 +275,7 @@ public class MarcGenerator implements ChunkListener<byte[], BytesReference> {
             }
             if (marcListener != null) {
                 marcListener.beginRecord(format, type);
-                marcListener.leader(recordLabel.toString());
+                marcListener.leader(recordLabel);
             }
             directory = new MarcFieldDirectory(recordLabel, this.data);
             if (directory.isEmpty()) {
@@ -291,7 +291,7 @@ public class MarcGenerator implements ChunkListener<byte[], BytesReference> {
             if (directory.isEmpty()) {
                 if (marcListener != null) {
                     marcListener.beginRecord(format, type);
-                    marcListener.leader(recordLabel.toString());
+                    marcListener.leader(recordLabel);
                 }
             } else {
                 builder = MarcField.builder();

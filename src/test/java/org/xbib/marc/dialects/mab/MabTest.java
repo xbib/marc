@@ -43,11 +43,8 @@ import org.xml.sax.InputSource;
 import org.xmlunit.matchers.CompareMatcher;
 import java.io.InputStream;
 import java.io.StringWriter;
-import java.io.Writer;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.regex.Pattern;
 
 public class MabTest {
@@ -348,9 +345,9 @@ public class MabTest {
         }
 
         @Override
-        public void leader(String label) {
+        public void leader(RecordLabel label) {
             try {
-                writer.append("leader=").append(label).append("\n");
+                writer.append("leader=").append(label.toString()).append("\n");
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }

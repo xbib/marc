@@ -19,6 +19,7 @@ import org.xbib.marc.io.BytesStreamOutput;
 import org.xbib.marc.io.DefaultChunk;
 import org.xbib.marc.io.InformationSeparator;
 import org.xbib.marc.io.SeparatorOutputStream;
+import org.xbib.marc.label.RecordLabel;
 import org.xbib.marc.transformer.value.MarcValueTransformers;
 import org.xbib.marc.xml.MarcContentHandler;
 
@@ -126,7 +127,7 @@ public class MarcWriter extends MarcContentHandler implements Flushable, Closeab
     }
 
     @Override
-    public void leader(String label) {
+    public void leader(RecordLabel label) {
         super.leader(label);
         if (exception != null) {
             return;
@@ -136,7 +137,7 @@ public class MarcWriter extends MarcContentHandler implements Flushable, Closeab
         }
         try {
             bytesStreamOutput.reset();
-            bytesStreamOutput.write(label.getBytes(StandardCharsets.ISO_8859_1));
+            bytesStreamOutput.write(label.toString().getBytes(StandardCharsets.ISO_8859_1));
             out.chunk(new DefaultChunk(InformationSeparator.GS, bytesStreamOutput.bytes()));
         } catch (IOException e) {
             handleException(e);

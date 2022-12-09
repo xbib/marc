@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <collection xmlns="info:lc/xmlns/marcxchange-v2" xsi:schemaLocation="info:lc/xmlns/marcxchange-v2 http://www.loc.gov/standards/iso25577/marcxchange-2-0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <record format="MARC21" type="Bibliographic">
-    <leader>01685cam a2200421Ia 4500</leader>
+    <leader>00000cam a2200421Ia 4500</leader>
     <controlfield tag="001">ocm63111280 </controlfield>
     <controlfield tag="003">OCoLC</controlfield>
     <controlfield tag="005">20150710113452.0</controlfield>

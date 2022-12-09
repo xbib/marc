@@ -30,7 +30,7 @@ public class MarcRecordAdapter implements MarcListener {
 
     protected Marc.Builder builder;
 
-    private Comparator<String> comparator;
+    private final Comparator<String> comparator;
 
     public MarcRecordAdapter(MarcRecordListener marcRecordListener, Comparator<String> comparator) {
         this.marcRecordListener = marcRecordListener;
@@ -51,8 +51,8 @@ public class MarcRecordAdapter implements MarcListener {
     }
 
     @Override
-    public void leader(String label) {
-        builder.recordLabel(RecordLabel.builder().from(label.toCharArray()).build());
+    public void leader(RecordLabel label) {
+        builder.recordLabel(label);
     }
 
     @Override

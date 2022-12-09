@@ -119,7 +119,7 @@ public class MarcXchangeEventConsumer implements XMLEventConsumer, MarcXchangeCo
     }
 
     @Override
-    public void leader(String label) {
+    public void leader(RecordLabel label) {
         if (listener != null) {
             listener.leader(label);
         }
@@ -237,7 +237,7 @@ public class MarcXchangeEventConsumer implements XMLEventConsumer, MarcXchangeCo
                     break;
                 }
                 case LEADER: {
-                    leader(RecordLabel.builder().from(content.toString().toCharArray()).build().toString());
+                    leader(RecordLabel.builder().from(content.toString().toCharArray()).build());
                     break;
                 }
                 case CONTROLFIELD: {

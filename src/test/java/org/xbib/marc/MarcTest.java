@@ -157,7 +157,7 @@ public class MarcTest {
     }
 
     /**
-     * Ther may be faulty input streams that contain information separators at the wrong place.
+     * There may be faulty input streams that contain information separators at the wrong place.
      * For the problem, see {@code org.marc4j.test.PermissiveReaderTest#testCyrillicEFix()}.
      * @throws Exception if test fails
      */

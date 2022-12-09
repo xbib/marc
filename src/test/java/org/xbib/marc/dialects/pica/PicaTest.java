@@ -22,6 +22,7 @@ import org.xbib.marc.Marc;
 import org.xbib.marc.MarcField;
 import org.xbib.marc.MarcListener;
 import org.xbib.marc.MarcXchangeConstants;
+import org.xbib.marc.label.RecordLabel;
 import org.xbib.marc.xml.MarcXchangeWriter;
 import org.xmlunit.matchers.CompareMatcher;
 import java.io.File;
@@ -93,7 +94,7 @@ public class PicaTest {
                 }
 
                 @Override
-                public void leader(String label) {
+                public void leader(RecordLabel label) {
                     sb.append("leader=").append(label).append("\n");
                 }
 

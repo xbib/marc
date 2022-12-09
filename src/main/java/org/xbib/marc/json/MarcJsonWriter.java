@@ -203,9 +203,9 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
     }
 
     @Override
-    public void leader(String label) {
+    public void leader(RecordLabel label) {
         super.leader(label);
-        builder.recordLabel(RecordLabel.builder().from(label.toCharArray()).build());
+        builder.recordLabel(label);
     }
 
     @Override

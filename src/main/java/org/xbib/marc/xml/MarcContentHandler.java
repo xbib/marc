@@ -73,7 +73,7 @@ public class MarcContentHandler
 
     protected String type;
 
-    protected String label;
+    protected RecordLabel label;
 
     protected MarcValueTransformers marcValueTransformers;
 
@@ -205,7 +205,7 @@ public class MarcContentHandler
     }
 
     @Override
-    public void leader(String label) {
+    public void leader(RecordLabel label) {
         this.label = label;
         if (marcListener != null) {
             marcListener.leader(label);
@@ -224,7 +224,7 @@ public class MarcContentHandler
     @Override
     public void record(MarcRecord marcRecord) {
         beginRecord(marcRecord.getFormat(), marcRecord.getType());
-        leader(marcRecord.getRecordLabel().toString());
+        leader(marcRecord.getRecordLabel());
         for (MarcField marcField : marcRecord.getFields()) {
             field(marcField);
         }
@@ -393,7 +393,7 @@ public class MarcContentHandler
                 break;
             }
             case LEADER: {
-                leader(RecordLabel.builder().from(content.toString().toCharArray()).build().toString());
+                leader(RecordLabel.builder().from(content.toString().toCharArray()).build());
                 break;
             }
             case CONTROLFIELD: {

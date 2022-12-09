@@ -20,6 +20,7 @@ import org.xbib.marc.MarcField;
 import org.xbib.marc.MarcListener;
 import org.xbib.marc.MarcRecord;
 import org.xbib.marc.MarcRecordListener;
+import org.xbib.marc.label.RecordLabel;
 import org.xbib.marc.transformer.value.MarcValueTransformers;
 
 import java.io.BufferedOutputStream;
@@ -281,7 +282,7 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
                     writeSchema(list);
                     attrs = list.iterator();
                 }
-                xmlEventConsumer.add(eventFactory.createStartElement(COLLECTION_ELEMENT, attrs, namespaces));
+                xmlEventConsumer.add(eventFactory.createStartElement(getCollectionElement(), attrs, namespaces));
                 schemaWritten = true;
                 collectionStarted = true;
             }
@@ -307,7 +308,7 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
                     writeSchema(attrs);
                     schemaWritten = true;
                 }
-                xmlEventConsumer.add(eventFactory.createStartElement(RECORD_ELEMENT, attrs.iterator(), namespaces));
+                xmlEventConsumer.add(eventFactory.createStartElement(getRecordElement(), attrs.iterator(), namespaces));
                 recordStarted = true;
             }
         } catch (XMLStreamException e) {
@@ -316,7 +317,7 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
     }
 
     @Override
-    public void leader(String label) {
+    public void leader(RecordLabel label) {
         super.leader(label);
         if (exception != null) {
             return;
@@ -325,9 +326,13 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
             return;
         }
         try {
-            xmlEventConsumer.add(eventFactory.createStartElement(LEADER_ELEMENT, null, namespaces));
-            xmlEventConsumer.add(eventFactory.createCharacters(label));
-            xmlEventConsumer.add(eventFactory.createEndElement(LEADER_ELEMENT, namespaces));
+            xmlEventConsumer.add(eventFactory.createStartElement(getLeaderElement(), null, namespaces));
+            RecordLabel recordLabel = RecordLabel.builder()
+                    .from(label)
+                    .setRecordLength(0) // reset record length, does not make sense in XML
+                    .build();
+            xmlEventConsumer.add(eventFactory.createCharacters(recordLabel.toString()));
+            xmlEventConsumer.add(eventFactory.createEndElement(getLeaderElement(), namespaces));
         } catch (XMLStreamException e) {
             handleException(new IOException(e));
         }
@@ -344,7 +349,7 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
                 Iterator<Attribute> attrs =
                         Collections.singletonList(eventFactory.createAttribute(TAG_ATTRIBUTE,
                                 transform(field.getTag()))).iterator();
-                xmlEventConsumer.add(eventFactory.createStartElement(CONTROLFIELD_ELEMENT, attrs, namespaces));
+                xmlEventConsumer.add(eventFactory.createStartElement(getControlfieldElement(), attrs, namespaces));
                 String value = field.getValue();
                 if (value != null && !value.isEmpty()) {
                     xmlEventConsumer.add(eventFactory.createCharacters(transform(value)));
@@ -355,7 +360,7 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
                         xmlEventConsumer.add(eventFactory.createCharacters(transform(value)));
                     }
                 }
-                xmlEventConsumer.add(eventFactory.createEndElement(CONTROLFIELD_ELEMENT, namespaces));
+                xmlEventConsumer.add(eventFactory.createEndElement(getControlfieldElement(), namespaces));
             } else if (!field.isEmpty()) {
                 String tag = field.getTag();
                 String indicator = field.getIndicator();
@@ -365,7 +370,7 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
                 attrs.add(eventFactory.createAttribute(TAG_ATTRIBUTE, transform(tag)));
                 attrs.add(eventFactory.createAttribute(IND_ATTRIBUTE + "1", transform(ind1)));
                 attrs.add(eventFactory.createAttribute(IND_ATTRIBUTE + "2", transform(ind2)));
-                xmlEventConsumer.add(eventFactory.createStartElement(DATAFIELD_ELEMENT, attrs.iterator(), namespaces));
+                xmlEventConsumer.add(eventFactory.createStartElement(getDatafieldElement(), attrs.iterator(), namespaces));
                 for (MarcField.Subfield subfield : field.getSubfields()) {
                     String code = subfield.getId();
                     // From https://www.loc.gov/standards/iso25577/ISO_DIS_25577_2(E)070727.doc
@@ -378,21 +383,21 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
                     }
                     List<Attribute> subfieldattrs = new LinkedList<>();
                     subfieldattrs.add(eventFactory.createAttribute(CODE_ATTRIBUTE, transform(code)));
-                    xmlEventConsumer.add(eventFactory.createStartElement(SUBFIELD_ELEMENT,
+                    xmlEventConsumer.add(eventFactory.createStartElement(getSubfieldElement(),
                             subfieldattrs.iterator(), namespaces));
                     xmlEventConsumer.add(eventFactory.createCharacters(transform(subfield.getValue())));
-                    xmlEventConsumer.add(eventFactory.createEndElement(SUBFIELD_ELEMENT, namespaces));
+                    xmlEventConsumer.add(eventFactory.createEndElement(getSubfieldElement(), namespaces));
                 }
                 String value = field.getValue();
                 if (value != null && !value.isEmpty()) {
                     // if we have data in a datafield, create subfield blank (" ") with data
                     attrs = new LinkedList<>();
                     attrs.add(eventFactory.createAttribute(CODE_ATTRIBUTE, " "));
-                    xmlEventConsumer.add(eventFactory.createStartElement(SUBFIELD_ELEMENT, attrs.iterator(), namespaces));
+                    xmlEventConsumer.add(eventFactory.createStartElement(getSubfieldElement(), attrs.iterator(), namespaces));
                     xmlEventConsumer.add(eventFactory.createCharacters(transform(value)));
-                    xmlEventConsumer.add(eventFactory.createEndElement(SUBFIELD_ELEMENT, namespaces));
+                    xmlEventConsumer.add(eventFactory.createEndElement(getSubfieldElement(), namespaces));
                 }
-                xmlEventConsumer.add(eventFactory.createEndElement(DATAFIELD_ELEMENT, namespaces));
+                xmlEventConsumer.add(eventFactory.createEndElement(getDatafieldElement(), namespaces));
             }
         } catch (XMLStreamException e) {
             handleException(new IOException(e));
@@ -407,7 +412,7 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
         }
         try {
             if (recordStarted) {
-                xmlEventConsumer.add(eventFactory.createEndElement(RECORD_ELEMENT, namespaces));
+                xmlEventConsumer.add(eventFactory.createEndElement(getRecordElement(), namespaces));
                 afterRecord();
                 recordStarted = false;
             }
@@ -424,7 +429,7 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
         }
         try {
             if (collectionStarted) {
-                xmlEventConsumer.add(eventFactory.createEndElement(COLLECTION_ELEMENT, namespaces));
+                xmlEventConsumer.add(eventFactory.createEndElement(getCollectionElement(), namespaces));
                 collectionStarted = false;
             }
             if (xmlEventConsumer instanceof XMLEventWriter) {
@@ -494,6 +499,30 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
                 XMLConstants.W3C_XML_SCHEMA_INSTANCE_NS_URI));
         attrs.add(eventFactory.createAttribute("xsi:schemaLocation",
                 NAMESPACE_URI + " " + NAMESPACE_SCHEMA_LOCATION));
+    }
+
+    protected QName getCollectionElement() {
+        return COLLECTION_ELEMENT;
+    }
+
+    protected QName getRecordElement() {
+        return RECORD_ELEMENT;
+    }
+
+    protected QName getLeaderElement() {
+        return LEADER_ELEMENT;
+    }
+
+    protected QName getControlfieldElement() {
+        return CONTROLFIELD_ELEMENT;
+    }
+
+    protected QName getDatafieldElement() {
+        return DATAFIELD_ELEMENT;
+    }
+
+    protected QName getSubfieldElement() {
+        return SUBFIELD_ELEMENT;
     }
 
     /**

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <collection xmlns="info:lc/xmlns/marcxchange-v2">
   <record format="MARC21" type="Bibliographic">
-    <leader>01613cam  2200409 a 4500</leader>
+    <leader>00000cam  2200409 a 4500</leader>
     <controlfield tag="001">ocn124450154</controlfield>
     <controlfield tag="003">OCoLC</controlfield>
     <controlfield tag="005">20070605103524.0</controlfield>

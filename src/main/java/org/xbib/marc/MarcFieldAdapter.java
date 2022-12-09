@@ -15,6 +15,8 @@
  */
 package org.xbib.marc;
 
+import org.xbib.marc.label.RecordLabel;
+
 /**
  * A MARC listener with empty methods. Useful for extending.
  */
@@ -34,7 +36,7 @@ public class MarcFieldAdapter implements MarcListener {
     }
 
     @Override
-    public void leader(String label) {
+    public void leader(RecordLabel label) {
         // empty by design
     }
 

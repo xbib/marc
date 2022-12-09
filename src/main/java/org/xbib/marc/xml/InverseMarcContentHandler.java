@@ -18,6 +18,7 @@ package org.xbib.marc.xml;
 import org.xbib.marc.MarcField;
 import org.xbib.marc.MarcListener;
 import org.xbib.marc.MarcXchangeConstants;
+import org.xbib.marc.label.RecordLabel;
 import org.xml.sax.ContentHandler;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.AttributesImpl;
@@ -115,10 +116,11 @@ public class InverseMarcContentHandler implements MarcListener, MarcXchangeConst
     }
 
     @Override
-    public void leader(String label) {
+    public void leader(RecordLabel label) {
         try {
             contentHandler.startElement(nsUri, LEADER, prefix(LEADER), EMPTY_ATTRIBUTES);
-            contentHandler.characters(label.toCharArray(), 0, label.length());
+            String leader = label.toString();
+            contentHandler.characters(leader.toCharArray(), 0, leader.length());
             contentHandler.endElement(nsUri, LEADER, prefix(LEADER));
         } catch (SAXException e) {
             handleException(new IOException(e));

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <collection xmlns="info:lc/xmlns/marcxchange-v2" xsi:schemaLocation="info:lc/xmlns/marcxchange-v2 http://www.loc.gov/standards/iso25577/marcxchange-2-0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <record format="MARC21" type="Bibliographic">
-    <leader>01626cam  2200445 a 4500</leader>
+    <leader>00000cam  2200445 a 4500</leader>
     <controlfield tag="001">ocn132792681</controlfield>
     <controlfield tag="003">OCoLC</controlfield>
     <controlfield tag="005">20070605101501.0</controlfield>
@@ -132,7 +132,7 @@
     </datafield>
   </record>
   <record format="MARC21" type="Bibliographic">
-    <leader>01914cam  2200493 a 4500</leader>
+    <leader>00000cam  2200493 a 4500</leader>
     <controlfield tag="001">ocn132786677</controlfield>
     <controlfield tag="003">OCoLC</controlfield>
     <controlfield tag="005">20070605101501.0</controlfield>
@@ -272,7 +272,7 @@
     </datafield>
   </record>
   <record format="MARC21" type="Bibliographic">
-    <leader>01246nam  2200373 a 4500</leader>
+    <leader>00000nam  2200373 a 4500</leader>
     <controlfield tag="001">ocn125170297</controlfield>
     <controlfield tag="003">OCoLC</controlfield>
     <controlfield tag="005">20070605101501.0</controlfield>

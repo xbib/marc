@@ -1,6 +1,6 @@
 <collection xmlns="info:lc/xmlns/marcxchange-v2" xsi:schemaLocation="info:lc/xmlns/marcxchange-v2 http://www.loc.gov/standards/iso25577/marcxchange-2-0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <record format="MARC21" type="Bibliographic">
-    <leader>00860vM2.01200024   000h</leader>
+    <leader>00000vM2.01200024   000h</leader>
     <datafield ind2=" " ind1=" " tag="LDR">
       <subfield code=" ">00860vM2.01200024------h</subfield>
     </datafield>

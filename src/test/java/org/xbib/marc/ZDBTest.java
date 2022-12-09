@@ -23,6 +23,7 @@ import java.io.OutputStreamWriter;
 import java.nio.charset.Charset;
 import org.junit.jupiter.api.Test;
 import org.xbib.marc.json.MarcJsonWriter;
+import org.xbib.marc.label.RecordLabel;
 import org.xbib.marc.transformer.value.MarcValueTransformers;
 import org.xbib.marc.xml.MarcXchangeWriter;
 import java.io.IOException;
@@ -156,9 +157,9 @@ public class ZDBTest {
         }
 
         @Override
-        public void leader(String label) {
+        public void leader(RecordLabel label) {
             try {
-                writer.append("leader=").append(label).append("\n");
+                writer.append("leader=").append(label.toString()).append("\n");
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }

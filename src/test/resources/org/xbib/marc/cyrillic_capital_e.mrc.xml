@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <collection xmlns="info:lc/xmlns/marcxchange-v2" xsi:schemaLocation="info:lc/xmlns/marcxchange-v2 http://www.loc.gov/standards/iso25577/marcxchange-2-0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <record format="MARC21" type="Bibliographic">
-    <leader>01969cam  2200529 i 4500</leader>
+    <leader>00000cam  2200529 i 4500</leader>
     <controlfield tag="001">u6015439</controlfield>
     <controlfield tag="003">SIRSI</controlfield>
     <controlfield tag="005">20131218125548.0</controlfield>
@@ -180,7 +180,7 @@
     </datafield>
   </record>
   <record format="MARC21" type="Bibliographic">
-    <leader>01232cam  2200385 a 4500</leader>
+    <leader>00000cam  2200385 a 4500</leader>
     <controlfield tag="001">u5278992</controlfield>
     <controlfield tag="003">SIRSI</controlfield>
     <controlfield tag="005">20110414115648.0</controlfield>

@@ -7,6 +7,7 @@ import java.io.Writer;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
 import javax.xml.XMLConstants;
+import javax.xml.namespace.QName;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.events.Attribute;
 import javax.xml.stream.events.Namespace;
@@ -17,6 +18,18 @@ public class MarcXmlWriter extends MarcXchangeWriter {
     private static final String NAMESPACE_URI = MARCXML_NS_URI;
 
     private static final String NAMESPACE_SCHEMA_LOCATION = MARCXML_SCHEMA_LOCATION;
+
+    private static final QName COLLECTION_ELEMENT = new QName(NAMESPACE_URI, COLLECTION, "");
+
+    private static final QName RECORD_ELEMENT = new QName(NAMESPACE_URI, RECORD, "");
+
+    private static final QName LEADER_ELEMENT = new QName(NAMESPACE_URI, LEADER, "");
+
+    private static final QName CONTROLFIELD_ELEMENT = new QName(NAMESPACE_URI, CONTROLFIELD, "");
+
+    private static final QName DATAFIELD_ELEMENT = new QName(NAMESPACE_URI, DATAFIELD, "");
+
+    private static final QName SUBFIELD_ELEMENT = new QName(NAMESPACE_URI, SUBFIELD, "");
 
     public MarcXmlWriter(OutputStream out) throws IOException {
         super(out);
@@ -70,5 +83,29 @@ public class MarcXmlWriter extends MarcXchangeWriter {
                 XMLConstants.W3C_XML_SCHEMA_INSTANCE_NS_URI));
         attrs.add(eventFactory.createAttribute("xsi:schemaLocation",
                 NAMESPACE_URI + " " + NAMESPACE_SCHEMA_LOCATION));
+    }
+
+    protected QName getCollectionElement() {
+        return COLLECTION_ELEMENT;
+    }
+
+    protected QName getRecordElement() {
+        return RECORD_ELEMENT;
+    }
+
+    protected QName getLeaderElement() {
+        return LEADER_ELEMENT;
+    }
+
+    protected QName getControlfieldElement() {
+        return CONTROLFIELD_ELEMENT;
+    }
+
+    protected QName getDatafieldElement() {
+        return DATAFIELD_ELEMENT;
+    }
+
+    protected QName getSubfieldElement() {
+        return SUBFIELD_ELEMENT;
     }
 }

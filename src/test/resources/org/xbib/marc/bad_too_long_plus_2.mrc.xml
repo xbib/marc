@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <collection xmlns="info:lc/xmlns/marcxchange-v2" xsi:schemaLocation="info:lc/xmlns/marcxchange-v2 http://www.loc.gov/standards/iso25577/marcxchange-2-0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <record format="MARC21" type="Bibliographic">
-    <leader>23375nas  22182291  450 </leader>
+    <leader>00000nas  22182291  450 </leader>
     <controlfield tag="001">360944</controlfield>
     <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">360944</subfield>
@@ -14292,7 +14292,7 @@
     </datafield>
   </record>
   <record format="MARC21" type="Bibliographic">
-    <leader>01307cam  2200349 a 450 </leader>
+    <leader>00000cam  2200349 a 450 </leader>
     <controlfield tag="001">360945</controlfield>
     <datafield ind2=" " ind1=" " tag="035">
       <subfield code="a">360945</subfield>
@@ -14398,7 +14398,7 @@
     </datafield>
   </record>
   <record format="MARC21" type="Bibliographic">
-    <leader>01207nam  2200301 a 450 </leader>
+    <leader>00000nam  2200301 a 450 </leader>
     <controlfield tag="001">360946</controlfield>
     <datafield ind2=" " ind1=" " tag="020">
       <subfield code="a">2070373851</subfield>

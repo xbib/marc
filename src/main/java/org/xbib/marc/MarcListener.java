@@ -15,6 +15,8 @@
  */
 package org.xbib.marc;
 
+import org.xbib.marc.label.RecordLabel;
+
 /**
  * The MarcListener is an interface for catching events while
  * reading from ISO 2709 / MARC format family streams.
@@ -54,7 +56,7 @@ public interface MarcListener {
      *
      * @param label the label
      */
-    void leader(String label);
+    void leader(RecordLabel label);
 
     /**
      * A field.

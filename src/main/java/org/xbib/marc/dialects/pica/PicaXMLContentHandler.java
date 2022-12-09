@@ -78,7 +78,7 @@ public class PicaXMLContentHandler extends MarcContentHandler implements PicaCon
                 // create leader
                 RecordLabel recordLabel = RecordLabel.builder().setIndicatorLength(1)
                         .setSubfieldIdentifierLength(0).build();
-                leader(recordLabel.toString());
+                leader(recordLabel);
                 break;
             }
             case DATAFIELD: {
