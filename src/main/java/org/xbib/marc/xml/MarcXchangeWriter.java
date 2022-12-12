@@ -346,21 +346,22 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
                 return;
             }
             if (field.isControl()) {
-                Iterator<Attribute> attrs =
-                        Collections.singletonList(eventFactory.createAttribute(TAG_ATTRIBUTE,
-                                transform(field.getTag()))).iterator();
-                xmlEventConsumer.add(eventFactory.createStartElement(getControlfieldElement(), attrs, namespaces));
                 String value = field.getValue();
-                if (value != null && !value.isEmpty()) {
-                    xmlEventConsumer.add(eventFactory.createCharacters(transform(value)));
-                } else {
+                if (value == null || value.isEmpty()) {
                     // the control field is disguised as a data field, try lookup value in first subfield of " "
                     value = field.getFirstSubfieldValue(" ");
-                    if (value != null && !value.isEmpty()) {
-                        xmlEventConsumer.add(eventFactory.createCharacters(transform(value)));
+                    // still no value? Then it is some exotic like MAB with subfield "a"?
+                    if (value == null || value.isEmpty()) {
+                        value = field.getFirstSubfieldValue("a");
                     }
                 }
-                xmlEventConsumer.add(eventFactory.createEndElement(getControlfieldElement(), namespaces));
+                if (value != null && !value.isEmpty()) {
+                    Iterator<Attribute> attrs = Collections.singletonList(eventFactory.createAttribute(TAG_ATTRIBUTE,
+                            transform(field.getTag()))).iterator();
+                    xmlEventConsumer.add(eventFactory.createStartElement(getControlfieldElement(), attrs, namespaces));
+                    xmlEventConsumer.add(eventFactory.createCharacters(transform(value)));
+                    xmlEventConsumer.add(eventFactory.createEndElement(getControlfieldElement(), namespaces));
+                }
             } else if (!field.isEmpty()) {
                 String tag = field.getTag();
                 String indicator = field.getIndicator();
@@ -372,6 +373,12 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
                 attrs.add(eventFactory.createAttribute(IND_ATTRIBUTE + "2", transform(ind2)));
                 xmlEventConsumer.add(eventFactory.createStartElement(getDatafieldElement(), attrs.iterator(), namespaces));
                 for (MarcField.Subfield subfield : field.getSubfields()) {
+                    String value = subfield.getValue();
+                    // we skip null values because XML event consumer will fail on length() with NPE.
+                    // we do not skip empty values because of subfield ID transport in MAB or UNIMARC.
+                    if (value == null) {
+                        continue;
+                    }
                     String code = subfield.getId();
                     // From https://www.loc.gov/standards/iso25577/ISO_DIS_25577_2(E)070727.doc
                     // "There is one restriction. A special mode (identifier length = 0) of ISO 2709 operates with
@@ -385,7 +392,7 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
                     subfieldattrs.add(eventFactory.createAttribute(CODE_ATTRIBUTE, transform(code)));
                     xmlEventConsumer.add(eventFactory.createStartElement(getSubfieldElement(),
                             subfieldattrs.iterator(), namespaces));
-                    xmlEventConsumer.add(eventFactory.createCharacters(transform(subfield.getValue())));
+                    xmlEventConsumer.add(eventFactory.createCharacters(transform(value)));
                     xmlEventConsumer.add(eventFactory.createEndElement(getSubfieldElement(), namespaces));
                 }
                 String value = field.getValue();

@@ -159,6 +159,12 @@ public class MarcRecord implements Map<String, Object> {
         return recordLabel;
     }
 
+    public void filterFields(Predicate<? super MarcField> predicate) {
+        if (marcFields != null) {
+            marcFields = marcFields.stream().filter(predicate).toList();
+        }
+    }
+
     /**
      * Return the MARC fields of this record.
      *
@@ -376,7 +382,7 @@ public class MarcRecord implements Map<String, Object> {
         this.delegate = createMapFromMarcFields(Comparator.naturalOrder());
     }
 
-    public void rebuildFields(Comparator<MarcField> comparator) {
+    public void sortFields(Comparator<MarcField> comparator) {
         this.marcFields.sort(comparator);
     }
 

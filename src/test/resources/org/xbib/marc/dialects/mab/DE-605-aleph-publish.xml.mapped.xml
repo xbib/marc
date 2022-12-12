@@ -7,8 +7,8 @@
     <datafield ind2=" " ind1=" " tag="FMT">
       <subfield code=" ">MH</subfield>
     </datafield>
-    <controlfield tag="001"></controlfield>
-    <controlfield tag="002"></controlfield>
+    <controlfield tag="001">HT004330420</controlfield>
+    <controlfield tag="002">19921110</controlfield>
     <datafield ind2=" " ind1=" " tag="030">
       <subfield code=" ">a|1uc||||||17</subfield>
     </datafield>

@@ -715,6 +715,16 @@ public class MarcField implements Comparable<MarcField> {
     }
 
     /**
+     * Helper method to create a subfield.
+     * @param id the subfield ID
+     * @param value the subfeild value
+     * @return the subfield
+     */
+    public static Subfield subfield(String id, String value) {
+        return new Subfield(id, value);
+    }
+
+    /**
      * MARC subfield. A subfield consists of an ID and a value.
      */
     public static class Subfield {
