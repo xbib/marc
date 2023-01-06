@@ -19,6 +19,8 @@ import static org.xbib.marc.json.MarcJsonWriter.FORMAT_TAG;
 import static org.xbib.marc.json.MarcJsonWriter.LEADER_TAG;
 import static org.xbib.marc.json.MarcJsonWriter.TYPE_TAG;
 
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 import org.xbib.marc.label.RecordLabel;
 
 import java.util.Collection;
@@ -159,9 +161,45 @@ public class MarcRecord implements Map<String, Object> {
         return recordLabel;
     }
 
-    public void filterFields(Predicate<? super MarcField> predicate) {
+    public void filterFields(Comparator<MarcField> comparator) {
         if (marcFields != null) {
-            marcFields = marcFields.stream().filter(predicate).toList();
+            Stream<MarcField> stream = marcFields.stream();
+            if (comparator != null) {
+                stream = stream.sorted(comparator);
+            }
+            marcFields = stream.toList();
+        }
+    }
+
+    public void filterFields(Predicate<? super MarcField> predicate,
+                             Comparator<MarcField> comparator) {
+        if (marcFields != null) {
+            Stream<MarcField> stream = marcFields.stream();
+            if (predicate != null) {
+                stream = stream.filter(predicate);
+            }
+            if (comparator != null) {
+                stream = stream.sorted(comparator);
+            }
+            marcFields = stream.toList();
+        }
+    }
+
+    public void filterFields(Predicate<? super MarcField> predicate,
+                             Stream<MarcField> marcFieldStream,
+                             Comparator<MarcField> comparator) {
+        if (marcFields != null) {
+            Stream<MarcField> stream = marcFields.stream();
+            if (predicate != null) {
+                stream = stream.filter(predicate);
+            }
+            if (marcFieldStream != null) {
+                stream = Stream.concat(stream, marcFieldStream);
+            }
+            if (comparator != null) {
+                stream = stream.sorted(comparator);
+            }
+            marcFields = stream.toList();
         }
     }
 
@@ -380,10 +418,6 @@ public class MarcRecord implements Map<String, Object> {
 
     public void rebuildMap() {
         this.delegate = createMapFromMarcFields(Comparator.naturalOrder());
-    }
-
-    public void sortFields(Comparator<MarcField> comparator) {
-        this.marcFields.sort(comparator);
     }
 
     @Override
