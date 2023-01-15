@@ -19,7 +19,9 @@ import static org.xbib.marc.json.MarcJsonWriter.FORMAT_TAG;
 import static org.xbib.marc.json.MarcJsonWriter.LEADER_TAG;
 import static org.xbib.marc.json.MarcJsonWriter.TYPE_TAG;
 
-import java.util.stream.Collectors;
+import java.io.InputStream;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.util.stream.Stream;
 import org.xbib.marc.label.RecordLabel;
 
@@ -132,6 +134,10 @@ public class MarcRecord implements Map<String, Object> {
             marcRecord.recordLabel = recordLabel;
         }
         return marcRecord;
+    }
+
+    public static Iterable<MarcRecord> from(InputStream inputStream, Charset charset) {
+        return Marc.builder().setInputStream(inputStream).setCharset(charset).iterable();
     }
 
     /**
