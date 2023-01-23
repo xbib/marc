@@ -20,6 +20,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
+import java.util.Set;
 import java.util.TreeSet;
 
 public class MarcFieldTest {
@@ -182,16 +183,6 @@ public class MarcFieldTest {
         assertFalse(marcField.isIndicatorValid());
     }
 
-    @Test
-    public void testInvalidSubfield() {
-        MarcField marcField = MarcField.builder()
-                .tag("100")
-                .indicator("0")
-                .subfield("\u007f", null)
-                .build();
-        assertFalse(marcField.areAllSubfieldsValid());
-    }
-
     // 901  =, 901  a=98502599, 901  d=0, 901  e=14, 901  =f, 901  =h]
     @Test
     public void testBeginEndFields() {
@@ -261,10 +252,40 @@ public class MarcFieldTest {
         assertTrue(marcField.isControl());
         assertEquals("001", marcField.getTag());
         assertEquals(" ", marcField.getIndicator());
-        assertEquals("123", marcField.getFirstSubfieldValue(" "));
+        assertEquals("123", marcField.getFirstSubfieldValue("_")); // _ is allowed!
         marcField = MarcField.builder().key("001", "\\.", "123").build();
         assertTrue(marcField.isControl());
         assertEquals("001", marcField.getTag());
         assertEquals("123", marcField.getValue());
     }
+
+    @Test
+    public void testMarcSubfieldIds() {
+        for (Character ch : ASCII_GRAPHICS) {
+            if (ch == '.') {
+                ch  = ' '; // special rule because of Elasticsearch
+            }
+            MarcField marcField = MarcField.builder()
+                    .tag("100")
+                    .indicator("  ")
+                    .subfield(Character.toString(ch), "Hello World " + ch)
+                    .build();
+            assertEquals("Hello World " + ch, marcField.getSubfield(Character.toString(ch)).getFirst().getValue());
+        }
+    }
+
+    private static final Set<Character> ASCII_GRAPHICS = Set.of(
+            '\u0020', '\u0021', '\u0022', '\u0023', '\u0024', '\u0025', '\u0026', '\'',
+            '\u0028', '\u0029', '\u002A', '\u002B', '\u002C', '\u002D', '\u002E', '\u002F',
+            '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
+            '\u003A', '\u003B', '\u003C', '\u003D', '\u003E', '\u003F', '\u0040',
+            'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
+            'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
+            'U', 'V', 'W', 'X', 'Y', 'Z',
+            '\u005B', '\\', '\u005D', '\u005E', '\u005F', '\u0060',
+            'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
+            'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't',
+            'u', 'v', 'w', 'x', 'y', 'z',
+            '\u007B', '\u007C', '\u007D', '\u007E'
+    );
 }

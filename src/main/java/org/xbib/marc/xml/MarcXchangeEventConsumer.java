@@ -61,6 +61,8 @@ public class MarcXchangeEventConsumer implements XMLEventConsumer, MarcXchangeCo
 
     private boolean endRecordReached;
 
+    private long numberOfRecords;
+
     public MarcXchangeEventConsumer() {
         this.stack = new LinkedList<>();
         this.marcListeners = new HashMap<>();
@@ -70,6 +72,7 @@ public class MarcXchangeEventConsumer implements XMLEventConsumer, MarcXchangeCo
         this.validNamespaces = new HashSet<>();
         this.validNamespaces.addAll(Set.of(MARCXCHANGE_V1_NS_URI, MARCXCHANGE_V2_NS_URI, MARC21_SCHEMA_URI));
         this.endRecordReached = false;
+        this.numberOfRecords = -1L;
     }
 
     public MarcXchangeEventConsumer setMarcListener(String type, MarcListener listener) {
@@ -143,6 +146,7 @@ public class MarcXchangeEventConsumer implements XMLEventConsumer, MarcXchangeCo
     @Override
     public void add(XMLEvent event) throws XMLStreamException {
         if (event.isStartElement()) {
+            content.setLength(0);
             StartElement element = (StartElement) event;
             String uri = element.getName().getNamespaceURI();
             if (!validNamespaces.contains(uri)) {
@@ -193,7 +197,6 @@ public class MarcXchangeEventConsumer implements XMLEventConsumer, MarcXchangeCo
             if (thistype == null) {
                 thistype = this.type;
             }
-            content.setLength(0);
             switch (localName) {
                 case COLLECTION -> {
                     beginCollection();
@@ -220,11 +223,18 @@ public class MarcXchangeEventConsumer implements XMLEventConsumer, MarcXchangeCo
             }
         } else if (event.isEndElement()) {
             EndElement element = (EndElement) event;
-            String uri = element.getName().getNamespaceURI();
-            if (!validNamespaces.contains(uri)) {
+            // hack for SRU numberOfRecords
+            String localName = element.getName().getLocalPart();
+            if ("numberOfRecords".equals(localName)) {
+                try {
+                    this.numberOfRecords = Long.parseLong(content.toString());
+                } catch (NumberFormatException e) {
+                    // ignore
+                }
+            }
+            if (!validNamespaces.contains(element.getName().getNamespaceURI())) {
                 return;
             }
-            String localName = element.getName().getLocalPart();
             switch (localName) {
                 case COLLECTION -> {
                     endCollection();
@@ -283,6 +293,10 @@ public class MarcXchangeEventConsumer implements XMLEventConsumer, MarcXchangeCo
 
     public void resetEndRecordReached() {
         endRecordReached = false;
+    }
+
+    public long getNumberOfRecords() {
+        return numberOfRecords;
     }
 
     private MarcField transformValue(MarcField field) {

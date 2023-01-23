@@ -19,6 +19,9 @@ import java.util.Set;
 
 public class StrictMarcFieldValidator implements MarcFieldValidator {
 
+    /**
+     * See <a href="https://www.loc.gov/marc/specifications/specrecstruc.html#varifields">MARC variables in fields</a>.
+     */
     private static final Set<Character> ASCII_GRAPHICS = Set.of(
             '\u0020', '\u0021', '\u0022', '\u0023', '\u0024', '\u0025', '\u0026', '\'',
             '\u0028', '\u0029', '\u002A', '\u002B', '\u002C', '\u002D', '\u002E', '\u002F',
@@ -33,8 +36,6 @@ public class StrictMarcFieldValidator implements MarcFieldValidator {
             'u', 'v', 'w', 'x', 'y', 'z',
             '\u007B', '\u007C', '\u007D', '\u007E'
     );
-
-    private static final char BLANK = ' ';
 
     private static final String BLANK_STRING = " ";
 
@@ -82,11 +83,13 @@ public class StrictMarcFieldValidator implements MarcFieldValidator {
             // we do not allow an empty subfield id. Elasticsearch field names require a length > 0.
             if (id.isEmpty()) {
                 id = BLANK_STRING;
-            } else {
-                // We have inconsistent use of subfield id symbols as placeholders for a "blank space"
-                // and we need to fix it here for consistency.
-                id = id.replaceAll("[-#.^_]", BLANK_STRING);
             }
+            // we do not allow characters that are not in the graphics definition
+            if (id.length() == 1 && !ASCII_GRAPHICS.contains(id.charAt(0))) {
+                id = BLANK_STRING;
+            }
+            // sorry, but we must disallow . because of Elasticsearch.
+            id = id.replaceAll("\\.", BLANK_STRING);
         }
         return id;
     }

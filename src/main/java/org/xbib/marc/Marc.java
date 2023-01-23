@@ -1230,11 +1230,11 @@ public final class Marc {
             return this;
         }
 
-        public Iterator<MarcRecord> xmlRecordIterator() {
+        public MarcRecordIterator xmlRecordIterator() {
             return xmlRecordIterator(new MarcXchangeEventConsumer());
         }
 
-        public Iterator<MarcRecord> xmlRecordIterator(MarcXchangeEventConsumer consumer) {
+        public MarcRecordIterator xmlRecordIterator(MarcXchangeEventConsumer consumer) {
             XMLEventReader xmlEventReader;
             try {
                 xmlEventReader = XMLInputFactory.newFactory().createXMLEventReader(inputStream);
@@ -1256,7 +1256,12 @@ public final class Marc {
                 }
             }, Comparator.naturalOrder());
             consumer.setMarcListener(marcRecordAdapter);
-            return new Iterator<>() {
+            return new MarcRecordIterator() {
+                @Override
+                public long getTotalNumberOfRecords() {
+                    return consumer.getNumberOfRecords();
+                }
+
                 @Override
                 public boolean hasNext() {
                     try {

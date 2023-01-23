@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zs:searchRetrieveResponse xmlns:zs="http://www.loc.gov/zing/srw/"><zs:version>1.1</zs:version><zs:numberOfRecords>5</zs:numberOfRecords><zs:records><zs:record><zs:recordSchema/><zs:recordPacking>xml</zs:recordPacking><zs:recordData><record xmlns="http://www.loc.gov/MARC21/slim" format="MARC21" type="Bibliographic">
+    <leader>00000nam a2200373 cb4500</leader>
+    <controlfield tag="001">HT014020783</controlfield>
+    <controlfield tag="003">DE-605</controlfield>
+    <controlfield tag="005">00000000000000.0</controlfield>
+    <controlfield tag="007">t</controlfield>
+    <controlfield tag="008">040517s1982    gw ad||  |||| 00||| ger d</controlfield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="a">3506374419</subfield>
+      <subfield code="9">3-506-37441-9</subfield>
+    </datafield>
+    <datafield tag="024" ind1="8" ind2=" ">
+      <subfield code="a">Best.-Nr. 37441</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)74557806</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-599)HBZHT014020783</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-605</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="e">rakwb</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">ger</subfield>
+    </datafield>
+    <datafield tag="044" ind1=" " ind2=" ">
+      <subfield code="a">gw</subfield>
+      <subfield code="c">DE</subfield>
+    </datafield>
+    <datafield tag="245" ind1="0" ind2="0">
+      <subfield code="a">Informatik</subfield>
+      <subfield code="c">Manfred Prante ; Wolfgang Tofahrn</subfield>
+    </datafield>
+    <datafield tag="246" ind1="1" ind2="0">
+      <subfield code="a">Schulbuch Schöningh</subfield>
+    </datafield>
+    <datafield tag="250" ind1=" " ind2=" ">
+      <subfield code="a">[Nachdr.]</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Paderborn</subfield>
+      <subfield code="b">Schöningh</subfield>
+      <subfield code="c">[19]82</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">240 S.</subfield>
+      <subfield code="b">Ill., graph. Darst.</subfield>
+    </datafield>
+    <datafield tag="385" ind1=" " ind2=" ">
+      <subfield code="0">(DE-588)4053369-4</subfield>
+      <subfield code="a">Schüler</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="490" ind1="1" ind2=" ">
+      <subfield code="a">Schöninghbuch</subfield>
+      <subfield code="v">37441</subfield>
+    </datafield>
+    <datafield tag="650" ind1="0" ind2="7">
+      <subfield code="a">Informatik</subfield>
+      <subfield code="0">(DE-588)4026894-9</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="0">(DE-588)4053458-3</subfield>
+      <subfield code="a">Schulbuch</subfield>
+      <subfield code="2">gnd-content</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2=" ">
+      <subfield code="5">DE-605</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="0">
+      <subfield code="a">Informatik</subfield>
+      <subfield code="0">(DE-588)4026894-9</subfield>
+      <subfield code="D">s</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Prante, Manfred</subfield>
+      <subfield code="e">Sonstige</subfield>
+      <subfield code="4">oth</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Tofahrn, Wolfgang</subfield>
+      <subfield code="e">Sonstige</subfield>
+      <subfield code="4">oth</subfield>
+    </datafield>
+    <datafield tag="830" ind1=" " ind2="0">
+      <subfield code="a">Schöninghbuch</subfield>
+      <subfield code="v">37441</subfield>
+      <subfield code="w">(DE-605)HT003053914</subfield>
+    </datafield>
+    <datafield tag="924" ind1="0" ind2=" ">
+      <subfield code="9">466</subfield>
+      <subfield code="b">DE-466</subfield>
+      <subfield code="c">NRW</subfield>
+      <subfield code="d">c</subfield>
+      <subfield code="f">keine Angabe</subfield>
+      <subfield code="g">TSD4165</subfield>
+    </datafield>
+    <datafield tag="924" ind1="0" ind2=" ">
+      <subfield code="9">5</subfield>
+      <subfield code="b">DE-5</subfield>
+      <subfield code="c">NRW</subfield>
+      <subfield code="d">d</subfield>
+      <subfield code="f">keine ILL</subfield>
+      <subfield code="g">PRA</subfield>
+      <subfield code="h">DE-5-14</subfield>
+      <subfield code="h">00070015</subfield>
+    </datafield>
+    <datafield tag="924" ind1="0" ind2=" ">
+      <subfield code="9">466</subfield>
+      <subfield code="b">DE-466</subfield>
+      <subfield code="c">NRW</subfield>
+      <subfield code="f">30</subfield>
+      <subfield code="h">40</subfield>
+      <subfield code="i">TSD4165</subfield>
+    </datafield>
+    <datafield tag="960" ind1=" " ind2="0">
+      <subfield code="a">(DE-605)HBZ01-012633043</subfield>
+    </datafield>
+  </record></zs:recordData><zs:recordPosition>1</zs:recordPosition></zs:record><zs:record><zs:recordSchema/><zs:recordPacking>xml</zs:recordPacking><zs:recordData><record xmlns="http://www.loc.gov/MARC21/slim" format="MARC21" type="Bibliographic">
+    <leader>00000nam a2200541 c 4500</leader>
+    <controlfield tag="001">BT000072798</controlfield>
+    <controlfield tag="003">DE-605</controlfield>
+    <controlfield tag="005">19960816        </controlfield>
+    <controlfield tag="007">t</controlfield>
+    <controlfield tag="008">960816s1987       ab||  |||| 00||| und d</controlfield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="a">3883395900</subfield>
+      <subfield code="9">3-88339-590-0</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)1069846308</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-599)HBZBT000072798</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-605</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="e">rakwb</subfield>
+    </datafield>
+    <datafield tag="041" ind1=" " ind2=" ">
+      <subfield code="a">und</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+      <subfield code="a">Grafschaft Mark</subfield>
+      <subfield code="2">nwbib</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+      <subfield code="a">Bergbaugeschichte</subfield>
+      <subfield code="2">nwbib</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Bader, Karl Heinz</subfield>
+      <subfield code="e">Verfasser</subfield>
+      <subfield code="4">aut</subfield>
+    </datafield>
+    <datafield tag="245" ind1="0" ind2="0">
+      <subfield code="a">250 [Zweihundertfünfzig] Jahre märkischer Steinkohlenbergbau</subfield>
+      <subfield code="b">e. Beitr. zur Geschichte d. Bergbaus, d. Bergverwaltung u. d. Stadt Bochum</subfield>
+      <subfield code="c">unter Mitarb. von Manfred Prante.</subfield>
+    </datafield>
+    <datafield tag="246" ind1="1" ind2=" ">
+      <subfield code="a">250 Jahre märkischer Steinkohlenbergbau</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Bochum</subfield>
+      <subfield code="b">Studienverl. Brockmeyer</subfield>
+      <subfield code="c">1987</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">232 S.</subfield>
+      <subfield code="b">Ill., Kt.</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">Bochum, Bergbaugeschichte</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">Mark (Grafschaft), Bergbaugeschichte</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">Steinkohlenbergbau, Bochum</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">Bergbaugeschichte, Bochum</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">Steinkohlenbergbau, Mark (Grafschaft)</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">Bochum, Steinkohlenbergbau</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">Mark (Grafschaft), Steinkohlenbergbau</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2=" ">
+      <subfield code="5">DE-605</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="0">
+      <subfield code="a">Mark (Grafschaft), Bergbaugeschichte</subfield>
+      <subfield code="A"/>
+    </datafield>
+    <datafield tag="689" ind1="1" ind2=" ">
+      <subfield code="5">DE-605</subfield>
+    </datafield>
+    <datafield tag="689" ind1="1" ind2="0">
+      <subfield code="a">Bochum, Bergbaugeschichte</subfield>
+      <subfield code="A"/>
+    </datafield>
+    <datafield tag="689" ind1="2" ind2=" ">
+      <subfield code="5">DE-605</subfield>
+    </datafield>
+    <datafield tag="689" ind1="2" ind2="0">
+      <subfield code="a">Mark (Grafschaft), Steinkohlenbergbau</subfield>
+      <subfield code="A"/>
+    </datafield>
+    <datafield tag="689" ind1="3" ind2=" ">
+      <subfield code="5">DE-605</subfield>
+    </datafield>
+    <datafield tag="689" ind1="3" ind2="0">
+      <subfield code="a">Bochum, Steinkohlenbergbau</subfield>
+      <subfield code="A"/>
+    </datafield>
+    <datafield tag="689" ind1="4" ind2=" ">
+      <subfield code="5">DE-605</subfield>
+    </datafield>
+    <datafield tag="689" ind1="4" ind2="0">
+      <subfield code="a">Bergbaugeschichte, Bochum</subfield>
+      <subfield code="A"/>
+    </datafield>
+    <datafield tag="689" ind1="5" ind2=" ">
+      <subfield code="5">DE-605</subfield>
+    </datafield>
+    <datafield tag="689" ind1="5" ind2="0">
+      <subfield code="a">Steinkohlenbergbau, Mark (Grafschaft)</subfield>
+      <subfield code="A"/>
+    </datafield>
+    <datafield tag="689" ind1="6" ind2=" ">
+      <subfield code="5">DE-605</subfield>
+    </datafield>
+    <datafield tag="689" ind1="6" ind2="0">
+      <subfield code="a">Steinkohlenbergbau, Bochum</subfield>
+      <subfield code="A"/>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Röttger, Karl</subfield>
+      <subfield code="e">Verfasser</subfield>
+      <subfield code="4">aut</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Prante, Manfred</subfield>
+      <subfield code="e">Sonstige</subfield>
+      <subfield code="4">oth</subfield>
+    </datafield>
+    <datafield tag="924" ind1="0" ind2=" ">
+      <subfield code="9">Sol 1</subfield>
+      <subfield code="b">DE-Sol1</subfield>
+      <subfield code="c">NRW</subfield>
+      <subfield code="d">d</subfield>
+      <subfield code="f">keine ILL</subfield>
+      <subfield code="g">MA 3072</subfield>
+    </datafield>
+    <datafield tag="960" ind1=" " ind2="0">
+      <subfield code="a">(DE-605)HBZ01-011119359</subfield>
+    </datafield>
+    <datafield tag="960" ind1="1" ind2=" ">
+      <subfield code="n">NWBib</subfield>
+    </datafield>
+  </record></zs:recordData><zs:recordPosition>2</zs:recordPosition></zs:record><zs:record><zs:recordSchema/><zs:recordPacking>xml</zs:recordPacking><zs:recordData><record xmlns="http://www.loc.gov/MARC21/slim" format="MARC21" type="Bibliographic">
+    <leader>00000nam a2200481 cb4500</leader>
+    <controlfield tag="001">HT000319070</controlfield>
+    <controlfield tag="003">DE-605</controlfield>
+    <controlfield tag="005">20100302        </controlfield>
+    <controlfield tag="007">t</controlfield>
+    <controlfield tag="008">990714s1978    gw ad||  |||| 00||| ger d</controlfield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="a">3506374419</subfield>
+      <subfield code="9">3-506-37441-9</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(OCoLC)256357573</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+      <subfield code="a">(DE-599)HBZHT000319070</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-605</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="e">rakwb</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">ger</subfield>
+    </datafield>
+    <datafield tag="044" ind1=" " ind2=" ">
+      <subfield code="a">gw</subfield>
+      <subfield code="c">DE</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+      <subfield code="a">120</subfield>
+      <subfield code="2">rpb</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+      <subfield code="a">107</subfield>
+      <subfield code="2">rpb</subfield>
+    </datafield>
+    <datafield tag="084" ind1=" " ind2=" ">
+      <subfield code="a">820</subfield>
+      <subfield code="2">rpb</subfield>
+    </datafield>
+    <datafield tag="245" ind1="0" ind2="0">
+      <subfield code="a">Informatik</subfield>
+      <subfield code="c">Manfred Prante ; Wolfgang Tofahrn</subfield>
+    </datafield>
+    <datafield tag="246" ind1="1" ind2="0">
+      <subfield code="a">Schulbuch Schöningh</subfield>
+    </datafield>
+    <datafield tag="250" ind1=" " ind2=" ">
+      <subfield code="a">1. Dr.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Paderborn</subfield>
+      <subfield code="b">Schöningh</subfield>
+      <subfield code="c">1978</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">240 S.</subfield>
+      <subfield code="b">Ill., graph. Darst.</subfield>
+    </datafield>
+    <datafield tag="385" ind1=" " ind2=" ">
+      <subfield code="0">(DE-588)4053369-4</subfield>
+      <subfield code="a">Schüler</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="490" ind1="1" ind2=" ">
+      <subfield code="a">Schöninghbuch</subfield>
+      <subfield code="v">37441</subfield>
+    </datafield>
+    <datafield tag="650" ind1="0" ind2="7">
+      <subfield code="a">Informatik</subfield>
+      <subfield code="0">(DE-588)4026894-9</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="0">(DE-588)4053458-3</subfield>
+      <subfield code="a">Schulbuch</subfield>
+      <subfield code="2">gnd-content</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2=" ">
+      <subfield code="5">DE-605</subfield>
+    </datafield>
+    <datafield tag="689" ind1="0" ind2="0">
+      <subfield code="a">Informatik</subfield>
+      <subfield code="0">(DE-588)4026894-9</subfield>
+      <subfield code="D">s</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Prante, Manfred</subfield>
+      <subfield code="e">Sonstige</subfield>
+      <subfield code="4">oth</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Tofahrn, Wolfgang</subfield>
+      <subfield code="e">Sonstige</subfield>
+      <subfield code="4">oth</subfield>
+    </datafield>
+    <datafield tag="830" ind1=" " ind2="0">
+      <subfield code="a">Schöninghbuch</subfield>
+      <subfield code="v">37441</subfield>
+      <subfield code="w">(DE-605)HT003053914</subfield>
+    </datafield>
+    <datafield tag="924" ind1="0" ind2=" ">
+      <subfield code="9">121</subfield>
+      <subfield code="b">DE-121</subfield>
+      <subfield code="c">NRW</subfield>
+      <subfield code="d">c</subfield>
+      <subfield code="f">10</subfield>
+      <subfield code="g">80 A 1963</subfield>
+    </datafield>
+    <datafield tag="924" ind1="0" ind2=" ">
+      <subfield code="9">6</subfield>
+      <subfield code="b">DE-6</subfield>
+      <subfield code="c">NRW</subfield>
+      <subfield code="d">c</subfield>
+      <subfield code="f">keine Angabe</subfield>
+      <subfield code="g">2D 617</subfield>
+    </datafield>
+    <datafield tag="924" ind1="0" ind2=" ">
+      <subfield code="9">708</subfield>
+      <subfield code="b">DE-708</subfield>
+      <subfield code="c">NRW</subfield>
+      <subfield code="d">c</subfield>
+      <subfield code="f">Keine Angabe</subfield>
+      <subfield code="g">TQF/PRA</subfield>
+    </datafield>
+    <datafield tag="924" ind1="0" ind2=" ">
+      <subfield code="9">82</subfield>
+      <subfield code="b">DE-82</subfield>
+      <subfield code="c">NRW</subfield>
+      <subfield code="d">c</subfield>
+      <subfield code="f">keine Angabe</subfield>
+      <subfield code="g">BF7065</subfield>
+    </datafield>
+    <datafield tag="924" ind1="0" ind2=" ">
+      <subfield code="9">361</subfield>
+      <subfield code="b">DE-361</subfield>
+      <subfield code="c">NRW</subfield>
+      <subfield code="d">c</subfield>
+      <subfield code="f">ILL Kopie+Ausl.</subfield>
+      <subfield code="g">HI100 P899</subfield>
+      <subfield code="h">10I_M</subfield>
+    </datafield>
+    <datafield tag="924" ind1="0" ind2=" ">
+      <subfield code="9">465</subfield>
+      <subfield code="b">DE-465</subfield>
+      <subfield code="c">NRW</subfield>
+      <subfield code="d">b</subfield>
+      <subfield code="f">Präsenzbestand</subfield>
+      <subfield code="g">QKS1721_d</subfield>
+      <subfield code="h">D94</subfield>
+    </datafield>
+    <datafield tag="924" ind1="0" ind2=" ">
+      <subfield code="9">465</subfield>
+      <subfield code="b">DE-465</subfield>
+      <subfield code="c">NRW</subfield>
+      <subfield code="d">c</subfield>
+      <subfield code="f">Ausleihbestand</subfield>
+      <subfield code="g">QKS1721_d</subfield>
+      <subfield code="h">D95</subfield>
+    </datafield>
+    <datafield tag="924" ind1="0" ind2=" ">
+      <subfield code="9">929</subfield>
+      <subfield code="b">DE-929</subfield>
+      <subfield code="c">NRW</subfield>
+      <subfield code="d">c</subfield>
+      <subfield code="f">ILL Ausleihe</subfield>
+      <subfield code="g">2010/931</subfield>
+      <subfield code="h">00000000</subfield>
+    </datafield>
+    <datafield tag="924" ind1="0" ind2=" ">
+      <subfield code="9">38</subfield>
+      <subfield code="b">DE-38</subfield>
+      <subfield code="c">NRW</subfield>
+      <subfield code="d">d</subfield>
+      <subfield code="f">keine ILL</subfield>
+      <subfield code="g">315/4H85</subfield>
+      <subfield code="h">DE-38-315</subfield>
+      <subfield code="h">00315001</subfield>
+    </datafield>
+    <datafield tag="924" ind1="0" ind2=" ">
+      <subfield code="9">361</subfield>
+      <subfield code="b">DE-361</subfield>
+      <subfield code="c">NRW</subfield>
+      <subfield code="d">c</subfield>
+      <subfield code="f">item_08</subfield>
+      <subfield code="g">HI100 P899</subfield>
+      <subfield code="j">10I_Mono</subfield>
+    </datafield>
+    <datafield tag="924" ind1="0" ind2=" ">
+      <subfield code="9">708</subfield>
+      <subfield code="b">DE-708</subfield>
+      <subfield code="c">NRW</subfield>
+      <subfield code="d">c</subfield>
+      <subfield code="f">10</subfield>
+      <subfield code="h">00</subfield>
+      <subfield code="i">TQF/PRA</subfield>
+    </datafield>
+    <datafield tag="924" ind1="0" ind2=" ">
+      <subfield code="9">82</subfield>
+      <subfield code="b">DE-82</subfield>
+      <subfield code="c">NRW</subfield>
+      <subfield code="f">Standard</subfield>
+      <subfield code="i">BF7065</subfield>
+      <subfield code="j">MAGAZIN_4</subfield>
+    </datafield>
+    <datafield tag="960" ind1=" " ind2="0">
+      <subfield code="a">(DE-605)HBZ01-005825501</subfield>
+    </datafield>
+  </record></zs:recordData><zs:recordPosition>3</zs:recordPosition></zs:record><zs:record><zs:recordSchema/><zs:recordPacking>xml</zs:recordPacking><zs:recordData><record xmlns="http://www.loc.gov/MARC21/slim" format="MARC21" type="Bibliographic">
+    <leader>00000nam a2200000uu 4500</leader>
+    <controlfield tag="001">(DE-E15)000003552</controlfield>
+    <controlfield tag="003">DE-E15</controlfield>
+    <controlfield tag="005">20220523000000.0</controlfield>
+    <controlfield tag="008">220523s1987    gw ||||  |||| 00||| ger|c</controlfield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-E15</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="c">DE-605</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Bader, Karl-Heinz</subfield>
+    </datafield>
+    <datafield tag="245" ind1=" " ind2=" ">
+      <subfield code="a">250  Jahre märkischer Steinkohlenbergbau</subfield>
+      <subfield code="b">Ein Beitrag zur Geschichte des Bergbaus, der Bergverwaltung und der Stadt Bochum</subfield>
+      <subfield code="c">Karl-Heinz Bader ; Karl Röttger. Unter Mitarbeit von Manfred Prante</subfield>
+    </datafield>
+    <datafield tag="264" ind1=" " ind2="1">
+      <subfield code="a">Bochum</subfield>
+      <subfield code="b">Brockmeyer</subfield>
+      <subfield code="c">1987</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">232 S.</subfield>
+      <subfield code="b">Ill., graph. Darst.</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Prante, Manfred [Mitarb.]</subfield>
+    </datafield>
+    <datafield tag="705" ind1="1" ind2=" ">
+      <subfield code="a">Röttger, Karl</subfield>
+    </datafield>
+    <datafield tag="924" ind1=" " ind2=" ">
+      <subfield code="b">DE-E15</subfield>
+      <subfield code="c">NRW</subfield>
+    </datafield>
+  </record></zs:recordData><zs:recordPosition>4</zs:recordPosition></zs:record><zs:record><zs:recordSchema/><zs:recordPacking>xml</zs:recordPacking><zs:recordData><record xmlns="http://www.loc.gov/MARC21/slim" format="MARC21" type="Bibliographic">
+    <leader>00000nam a2200000uu 4500</leader>
+    <controlfield tag="001">(DE-131)0358674</controlfield>
+    <controlfield tag="003">DE-131</controlfield>
+    <controlfield tag="005">20220519000000.0</controlfield>
+    <controlfield tag="008">220519s1978    gw ||||  |||| 00||| ger|c</controlfield>
+    <datafield tag="020" ind1=" " ind2=" ">
+      <subfield code="a">3506374419</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">DE-131</subfield>
+      <subfield code="b">ger</subfield>
+      <subfield code="c">DE-605</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Prante, Manfred</subfield>
+    </datafield>
+    <datafield tag="245" ind1=" " ind2=" ">
+      <subfield code="a">Informatik</subfield>
+      <subfield code="c">Manfred Prante ; Wolfgang Tofahrn</subfield>
+    </datafield>
+    <datafield tag="264" ind1=" " ind2="1">
+      <subfield code="a">Paderborn</subfield>
+      <subfield code="b">Schöningh</subfield>
+      <subfield code="c">1978</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+      <subfield code="a">240 S.</subfield>
+      <subfield code="b">zahlr. graph. Darst.</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+      <subfield code="a">Auf d. Rücken: Prante-Tofahrn.</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+      <subfield code="a">Tofahrn, Wolfgang</subfield>
+    </datafield>
+    <datafield tag="924" ind1=" " ind2=" ">
+      <subfield code="b">DE-131</subfield>
+      <subfield code="c">NRW</subfield>
+    </datafield>
+  </record></zs:recordData><zs:recordPosition>5</zs:recordPosition></zs:record></zs:records></zs:searchRetrieveResponse>

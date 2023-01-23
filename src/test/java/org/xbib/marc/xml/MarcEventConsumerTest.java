@@ -21,6 +21,7 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 import org.junit.jupiter.api.Test;
 import org.xbib.marc.Marc;
 import org.xbib.marc.MarcRecord;
+import org.xbib.marc.MarcRecordIterator;
 import org.xmlunit.matchers.CompareMatcher;
 import java.io.InputStream;
 import java.io.StringWriter;
@@ -126,5 +127,24 @@ public class MarcEventConsumerTest {
             count.incrementAndGet();
         }
         assertEquals(1, count.get());
+    }
+
+    @Test
+    public void testSRUXMLIterable() {
+        String s = "lvi.xml";
+        InputStream in = getClass().getResourceAsStream(s);
+        AtomicInteger count = new AtomicInteger();
+        MarcXchangeEventConsumer consumer = new MarcXchangeEventConsumer();
+        MarcRecordIterator iterator = Marc.builder()
+                .setInputStream(in)
+                .setCharset(StandardCharsets.UTF_8)
+                .xmlRecordIterator(consumer);
+        while (iterator.hasNext()) {
+            MarcRecord marcRecord = iterator.next();
+            logger.log(Level.INFO, marcRecord.toString());
+            count.incrementAndGet();
+        }
+        assertEquals(5, count.get());
+        assertEquals(5L, iterator.getTotalNumberOfRecords());
     }
 }
