@@ -21,7 +21,6 @@ import static org.xbib.marc.json.MarcJsonWriter.TYPE_TAG;
 
 import java.io.InputStream;
 import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
 import java.util.stream.Stream;
 import org.xbib.marc.label.RecordLabel;
 

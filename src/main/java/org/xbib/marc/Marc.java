@@ -1203,7 +1203,7 @@ public final class Marc {
         }
 
         /**
-         * This methods creates a Java 8 stream of MARC records.
+         * This methods creates a stream of MARC records.
          * @return a stream of records
          */
         public Stream<MarcRecord> recordStream() {
