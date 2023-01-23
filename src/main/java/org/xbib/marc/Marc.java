@@ -125,12 +125,12 @@ public final class Marc {
     }
 
     /**
-     * Run XML stream parser over an XML input stream, with an XML event consumer.
+     * Run XML stream parser over an XML input stream with an XML event consumer.
      * @param xmlInputFactory the XML input factory
      * @param consumer the XML event consumer
      * @throws XMLStreamException if parsing fails
      */
-    public void parseEvents(XMLInputFactory xmlInputFactory, MarcXchangeEventConsumer consumer) throws XMLStreamException {
+    public void parse(XMLInputFactory xmlInputFactory, MarcXchangeEventConsumer consumer) throws XMLStreamException {
         Objects.requireNonNull(consumer);
         if (builder.getMarcListeners() != null) {
             for (Map.Entry<String, MarcListener> entry : builder.getMarcListeners().entrySet()) {
@@ -142,6 +142,19 @@ public final class Marc {
             consumer.add(xmlEventReader.nextEvent());
         }
         xmlEventReader.close();
+    }
+
+    public void parseNextRecord(XMLEventReader xmlEventReader, MarcXchangeEventConsumer consumer) throws XMLStreamException {
+        Objects.requireNonNull(consumer);
+        if (builder.getMarcListeners() != null) {
+            for (Map.Entry<String, MarcListener> entry : builder.getMarcListeners().entrySet()) {
+                consumer.setMarcListener(entry.getKey(), entry.getValue());
+            }
+        }
+        while (xmlEventReader.hasNext() && !consumer.isEndRecordReached()) {
+            consumer.add(xmlEventReader.nextEvent());
+        }
+        consumer.resetEndRecordReached();
     }
 
     public BufferedSeparatorInputStream iso2709Stream() {
@@ -574,10 +587,6 @@ public final class Marc {
             if (withCollection) {
                 builder.getMarcListener().endCollection();
             }
-        }
-
-        public void parseRecords() throws IOException {
-
         }
     }
 
@@ -1219,6 +1228,75 @@ public final class Marc {
         public Marc.Builder chunk(Chunk<byte[], BytesReference> chunk) throws IOException {
             marcGenerator.chunk(chunk);
             return this;
+        }
+
+        public Iterator<MarcRecord> xmlRecordIterator() {
+            return xmlRecordIterator(new MarcXchangeEventConsumer());
+        }
+
+        public Iterator<MarcRecord> xmlRecordIterator(MarcXchangeEventConsumer consumer) {
+            XMLEventReader xmlEventReader;
+            try {
+                xmlEventReader = XMLInputFactory.newFactory().createXMLEventReader(inputStream);
+            } catch (XMLStreamException e) {
+                throw new IllegalStateException(e);
+            }
+            final MarcRecordAdapter marcRecordAdapter = new MarcRecordAdapter(new MarcRecordListener() {
+                @Override
+                public void beginCollection() {
+                }
+
+                @Override
+                public void record(MarcRecord record) {
+                    marcRecord = record;
+                }
+
+                @Override
+                public void endCollection() {
+                }
+            }, Comparator.naturalOrder());
+            consumer.setMarcListener(marcRecordAdapter);
+            return new Iterator<>() {
+                @Override
+                public boolean hasNext() {
+                    try {
+                        MarcRecord record;
+                        record(null);
+                        while (xmlEventReader.hasNext() && !consumer.isEndRecordReached()) {
+                            consumer.add(xmlEventReader.nextEvent());
+                        }
+                        consumer.resetEndRecordReached();
+                        record = getMarcRecord();
+                        if (record != null) {
+                            return true;
+                        }
+                    } catch (XMLStreamException e) {
+                        throw new IllegalStateException(e);
+                    }
+                    return false;
+                }
+
+                @Override
+                public MarcRecord next() {
+                    MarcRecord record = getMarcRecord();
+                    if (record == null) {
+                        throw new NoSuchElementException();
+                    }
+                    return record;
+                }
+            };
+        }
+
+        /**
+         * For easy {@code for} statements.
+         * @return iterable
+         */
+        public Iterable<MarcRecord> xmlIterable() {
+            return this::xmlRecordIterator;
+        }
+
+        public Stream<MarcRecord> xmlRecordStream() {
+            return StreamSupport.stream(xmlIterable().spliterator(), false);
         }
 
         private MarcRecord getMarcRecord() {

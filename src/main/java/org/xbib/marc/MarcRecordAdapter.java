@@ -18,6 +18,7 @@ package org.xbib.marc;
 import org.xbib.marc.label.RecordLabel;
 
 import java.util.Comparator;
+import java.util.Objects;
 
 /**
  * The Marc record adapter collects Marc field events, collects them in a Marc builder,
@@ -33,6 +34,7 @@ public class MarcRecordAdapter implements MarcListener {
     private final Comparator<String> comparator;
 
     public MarcRecordAdapter(MarcRecordListener marcRecordListener, Comparator<String> comparator) {
+        Objects.requireNonNull(marcRecordListener);
         this.marcRecordListener = marcRecordListener;
         this.builder = Marc.builder();
         this.comparator = comparator;

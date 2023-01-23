@@ -16,19 +16,27 @@
 package org.xbib.marc.xml;
 
 import static org.hamcrest.MatcherAssert.assertThat;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
 import org.junit.jupiter.api.Test;
 import org.xbib.marc.Marc;
+import org.xbib.marc.MarcRecord;
 import org.xmlunit.matchers.CompareMatcher;
 import java.io.InputStream;
 import java.io.StringWriter;
 import java.nio.charset.StandardCharsets;
+import java.util.Iterator;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.xml.stream.XMLInputFactory;
 
 /**
  *
  */
 public class MarcEventConsumerTest {
+
+    private static final Logger logger = Logger.getLogger(MarcEventConsumerTest.class.getName());
 
     /**
      * Parsing XML by STAX (streaming XML) from Aleph publishing interface (hbz dialect).
@@ -58,7 +66,7 @@ public class MarcEventConsumerTest {
                 .setFormat("AlephXML")
                 .setType("Bibliographic")
                 .build()
-                .parseEvents(XMLInputFactory.newFactory(), consumer);
+                .parse(XMLInputFactory.newFactory(), consumer);
         writer.endCollection();
         writer.endDocument();
         sw.close();
@@ -72,17 +80,51 @@ public class MarcEventConsumerTest {
         InputStream in = getClass().getResourceAsStream(s);
         MarcXchangeEventConsumer consumer = new MarcXchangeEventConsumer();
         consumer.addNamespace("http://www.ddb.de/professionell/mabxml/mabxml-1.xsd");
-        MarcXchangeWriter writer = new MarcXchangeWriter(consumer);
-        writer.setFormat("AlephXML").setType("Bibliographic");
-        writer.startDocument();
-        Marc.builder()
+        try (MarcXchangeWriter writer = new MarcXchangeWriter(consumer)) {
+            writer.setFormat("AlephXML").setType("Bibliographic");
+            writer.startDocument();
+            Marc.builder()
+                    .setInputStream(in)
+                    .setCharset(StandardCharsets.UTF_8)
+                    .setFormat("AlephXML")
+                    .setType("Bibliographic")
+                    .build()
+                    .writeCollection();
+            writer.endDocument();
+            assertNull(writer.getException());
+        }
+    }
+
+    @Test
+    public void testXmlIterable() {
+        String s = "chabon.mrc.xml";
+        InputStream in = getClass().getResourceAsStream(s);
+        AtomicInteger count = new AtomicInteger();
+        for (MarcRecord marcRecord : Marc.builder()
                 .setInputStream(in)
                 .setCharset(StandardCharsets.UTF_8)
-                .setFormat("AlephXML")
-                .setType("Bibliographic")
-                .build()
-                .writeCollection();
-        writer.endDocument();
-        assertNull(writer.getException());
+                .xmlIterable()) {
+            logger.log(Level.INFO, marcRecord.toString());
+            count.incrementAndGet();
+        }
+        assertEquals(2, count.get());
+    }
+
+    @Test
+    public void testXmlIterator() {
+        String s = "HT016424175.xml";
+        InputStream in = getClass().getResourceAsStream(s);
+        MarcXchangeEventConsumer consumer = new MarcXchangeEventConsumer();
+        consumer.addNamespace("http://www.ddb.de/professionell/mabxml/mabxml-1.xsd");
+        Iterator<MarcRecord> iterator = Marc.builder()
+                .setInputStream(in)
+                .setCharset(StandardCharsets.UTF_8)
+                .xmlRecordIterator(consumer);
+        AtomicInteger count = new AtomicInteger();
+        while (iterator.hasNext()) {
+            logger.log(Level.INFO, iterator.next().toString());
+            count.incrementAndGet();
+        }
+        assertEquals(1, count.get());
     }
 }
