@@ -300,10 +300,14 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
         try {
             if (!recordStarted) {
                 List<Attribute> attrs = new LinkedList<>();
-                String realformat = getFormat() != null ? getFormat() : format != null ? format : getDefaultFormat();
-                attrs.add(eventFactory.createAttribute(FORMAT_ATTRIBUTE, realformat));
-                String realtype = getType() != null ? getType() : type != null ? type : getDefaultType();
-                attrs.add(eventFactory.createAttribute(TYPE_ATTRIBUTE, realtype));
+                if (createFormatAttribute()) {
+                    String realformat = getFormat() != null ? getFormat() : format != null ? format : getDefaultFormat();
+                    attrs.add(eventFactory.createAttribute(FORMAT_ATTRIBUTE, realformat));
+                }
+                if (createTypeAttribute()) {
+                    String realtype = getType() != null ? getType() : type != null ? type : getDefaultType();
+                    attrs.add(eventFactory.createAttribute(TYPE_ATTRIBUTE, realtype));
+                }
                 if (!schemaWritten) {
                     writeSchema(attrs);
                     schemaWritten = true;
@@ -373,6 +377,7 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
                 String ind2 = indicator != null && indicator.length() > 1 ? indicator.substring(1, 2) : " ";
                 List<Attribute> attrs = new LinkedList<>();
                 attrs.add(eventFactory.createAttribute(TAG_ATTRIBUTE, transform(tag)));
+                // not full MarcXchange indicators
                 attrs.add(eventFactory.createAttribute(IND_ATTRIBUTE + "1", transform(ind1)));
                 attrs.add(eventFactory.createAttribute(IND_ATTRIBUTE + "2", transform(ind2)));
                 xmlEventConsumer.add(eventFactory.createStartElement(getDatafieldElement(), attrs.iterator(), namespaces));
@@ -503,6 +508,14 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
 
     protected Namespace createNameSpace() {
         return eventFactory.createNamespace("", NAMESPACE_URI);
+    }
+
+    protected boolean createFormatAttribute() {
+        return true;
+    }
+
+    protected boolean createTypeAttribute() {
+        return true;
     }
 
     protected void writeSchema(List<Attribute> attrs) throws XMLStreamException {

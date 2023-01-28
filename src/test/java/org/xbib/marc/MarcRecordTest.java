@@ -20,6 +20,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import java.io.IOException;
+import java.time.LocalDate;
 import org.junit.jupiter.api.Test;
 import org.xbib.content.XContentBuilder;
 import org.xbib.content.json.JsonXContent;
@@ -103,7 +104,9 @@ public class MarcRecordTest {
                     .setCharset(Charset.forName("ANSEL"));
             // only single record
             for (MarcRecord marcRecord : builder.iterable()) {
-                // single 245 field
+                assertEquals(LocalDate.of(2002, 8, 5), marcRecord.getCreationDate());
+                assertEquals(LocalDate.of(2003, 6, 16), marcRecord.getLastModificationDate());
+                // check if single 245 field
                 List<MarcField> list = new ArrayList<>();
                 Pattern pattern = Pattern.compile("^245.*");
                 marcRecord.all(field -> pattern.matcher(field.getTag()).matches(), list::add);

@@ -73,8 +73,19 @@ public class MarcXmlWriter extends MarcXchangeWriter {
         super(consumer);
     }
 
+    @Override
     protected Namespace createNameSpace() {
         return eventFactory.createNamespace("", NAMESPACE_URI);
+    }
+
+    @Override
+    protected boolean createFormatAttribute() {
+        return false;
+    }
+
+    @Override
+    protected boolean createTypeAttribute() {
+        return false;
     }
 
     @Override
@@ -85,26 +96,32 @@ public class MarcXmlWriter extends MarcXchangeWriter {
                 NAMESPACE_URI + " " + NAMESPACE_SCHEMA_LOCATION));
     }
 
+    @Override
     protected QName getCollectionElement() {
         return COLLECTION_ELEMENT;
     }
 
+    @Override
     protected QName getRecordElement() {
         return RECORD_ELEMENT;
     }
 
+    @Override
     protected QName getLeaderElement() {
         return LEADER_ELEMENT;
     }
 
+    @Override
     protected QName getControlfieldElement() {
         return CONTROLFIELD_ELEMENT;
     }
 
+    @Override
     protected QName getDatafieldElement() {
         return DATAFIELD_ELEMENT;
     }
 
+    @Override
     protected QName getSubfieldElement() {
         return SUBFIELD_ELEMENT;
     }

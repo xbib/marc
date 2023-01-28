@@ -21,6 +21,8 @@ import static org.xbib.marc.json.MarcJsonWriter.TYPE_TAG;
 
 import java.io.InputStream;
 import java.nio.charset.Charset;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.stream.Stream;
 import org.xbib.marc.label.RecordLabel;
 
@@ -44,6 +46,10 @@ import java.util.regex.Pattern;
 public class MarcRecord implements Map<String, Object> {
 
     private static final MarcRecord EMPTY_RECORD = Marc.builder().buildRecord();
+
+    private static final DateTimeFormatter field5DateFormat = DateTimeFormatter.ofPattern("yyyyMMdd");
+
+    private static final DateTimeFormatter field8DateFormat = DateTimeFormatter.ofPattern("yyMMdd");
 
     private Map<String, Object> delegate;
 
@@ -164,6 +170,26 @@ public class MarcRecord implements Map<String, Object> {
      */
     public RecordLabel getRecordLabel() {
         return recordLabel;
+    }
+
+    public LocalDate getCreationDate() {
+        if (marcFields != null) {
+            String value = getFirst("008").getValue();
+            if (value != null && value.length() >= 6) {
+                return LocalDate.parse(value.substring(0, 6), field8DateFormat);
+            }
+        }
+        return null;
+    }
+
+    public LocalDate getLastModificationDate() {
+        if (marcFields != null) {
+            String value = getFirst("005").getValue();
+            if (value != null && value.length() >= 8) {
+                return LocalDate.parse(value.substring(0, 8), field5DateFormat);
+            }
+        }
+        return null;
     }
 
     public void filterFields(Comparator<MarcField> comparator) {
@@ -422,7 +448,11 @@ public class MarcRecord implements Map<String, Object> {
     }
 
     public void rebuildMap() {
-        this.delegate = createMapFromMarcFields(Comparator.naturalOrder());
+        rebuildMap(Comparator.naturalOrder());
+    }
+
+    public void rebuildMap(Comparator<String> comparator) {
+        this.delegate = createMapFromMarcFields(comparator);
     }
 
     @Override
