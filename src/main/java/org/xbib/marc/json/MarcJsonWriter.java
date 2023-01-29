@@ -67,7 +67,7 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
 
     private Writer writer;
 
-    private JsonWriter jsonWriter;
+    private JsonBuilder jsonBuilder;
 
     private Marc.Builder builder;
 
@@ -90,6 +90,7 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
     private String index;
 
     private String indexType;
+
     /**
      * Flag for indicating if writer is at top of file.
      */
@@ -111,7 +112,7 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
 
     public MarcJsonWriter(Writer writer, int bufferSize) {
         this.writer = new BufferedWriter(writer, bufferSize);
-        this.jsonWriter = new JsonWriter(this.writer);
+        this.jsonBuilder = new JsonBuilder(this.writer);
         this.bufferSize = bufferSize;
         this.lock = new ReentrantLock();
         this.builder = Marc.builder();
@@ -141,6 +142,10 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
     public MarcJsonWriter setStyle(EnumSet<Style> style) {
         this.style = style;
         return this;
+    }
+
+    public JsonBuilder getJsonBuilder() {
+        return jsonBuilder;
     }
 
     public MarcJsonWriter setIndex(String index, String indexType) {
@@ -182,14 +187,20 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
 
     @Override
     public void startDocument() {
-        // nothing to do here
+        if (style.contains(Style.EMBEDDED_RECORD)) {
+            try {
+                jsonBuilder.beginMap();
+            } catch (IOException e) {
+                handleException(e);
+            }
+        }
     }
 
     @Override
     public void beginCollection() {
         if (style.contains(Style.ARRAY)) {
             try {
-                jsonWriter.writeArrayOpen();
+                jsonBuilder.beginCollection();
             } catch (IOException e) {
                 handleException(e);
             }
@@ -257,13 +268,13 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
     public void endCollection() {
         if (style.contains(Style.ARRAY)) {
             try {
-                jsonWriter.writeArrayClose();
+                jsonBuilder.endCollection();
             } catch (IOException e) {
                 handleException(e);
             }
         }
         if (style.contains(Style.ELASTICSEARCH_BULK)) {
-            // finish with line-feed "\n", not with System.lineSeparator()
+            // finish with line-feed "\n", not with System.lineSeparator() !!!
             try {
                 writer.write("\n");
             } catch (IOException e) {
@@ -279,11 +290,23 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
 
     @Override
     public void endDocument() {
-        try {
-            flush();
-        } catch (IOException e) {
-            handleException(e);
+        if (style.contains(Style.EMBEDDED_RECORD)) {
+            try {
+                jsonBuilder.endMap();
+            } catch (IOException e) {
+                handleException(e);
+            }
+        } else {
+            try {
+                flush();
+            } catch (IOException e) {
+                handleException(e);
+            }
         }
+    }
+
+    public void write(Map<String, Object> map) {
+
     }
 
     /**
@@ -303,67 +326,47 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
             }
         } else {
             if (style.contains(Style.ARRAY)) {
-                jsonWriter.writeArraySeparator();
+                writer.write(",");
             } else if (style.contains(Style.LINES)) {
-                jsonWriter.writeLiteral("\n");
+                writer.append(System.lineSeparator());
             } else if (style.contains(Style.ELASTICSEARCH_BULK)) {
-                jsonWriter.writeLiteral("\n");
+                writer.append(System.lineSeparator());
                 writeMetaDataLine(marcRecord);
             }
         }
-        jsonWriter.writeObjectOpen();
+        if (!style.contains(Style.EMBEDDED_RECORD)) {
+            jsonBuilder.beginMap();
+        }
         if (marcRecord.getFormat() != null) {
-            jsonWriter.writeMemberName(FORMAT_TAG);
-            jsonWriter.writeMemberSeparator();
-            jsonWriter.writeString(marcRecord.getFormat());
-            jsonWriter.writeObjectSeparator();
+            jsonBuilder.buildKey(FORMAT_TAG).buildValue(marcRecord.getFormat());
         }
         if (marcRecord.getType() != null) {
-            jsonWriter.writeMemberName(TYPE_TAG);
-            jsonWriter.writeMemberSeparator();
-            jsonWriter.writeString(marcRecord.getType());
-            jsonWriter.writeObjectSeparator();
+            jsonBuilder.buildKey(TYPE_TAG).buildValue(marcRecord.getType());
         }
         if (!RecordLabel.EMPTY.equals(marcRecord.getRecordLabel())) {
-            jsonWriter.writeMemberName(LEADER_TAG);
-            jsonWriter.writeMemberSeparator();
-            jsonWriter.writeString(marcRecord.getRecordLabel().toString());
-            jsonWriter.writeObjectSeparator();
+            jsonBuilder.buildKey(LEADER_TAG).buildValue(marcRecord.getRecordLabel().toString());
         }
-        boolean fieldseparator = false;
         for (MarcField marcField : marcRecord.getFields()) {
-            if (fieldseparator) {
-                jsonWriter.writeObjectSeparator();
-            }
-            jsonWriter.writeMemberName(marcField.getTag());
-            jsonWriter.writeMemberSeparator();
+            jsonBuilder.buildKey(marcField.getTag());
             if (marcField.isControl()) {
-                jsonWriter.writeArrayOpen();
-                jsonWriter.writeString(marcField.getValue());
-                jsonWriter.writeArrayClose();
+                jsonBuilder.buildValue(marcField.recoverControlFieldValue());
             } else {
-                jsonWriter.writeObjectOpen();
-                jsonWriter.writeMemberName(marcField.getIndicator());
-                jsonWriter.writeMemberSeparator();
-                jsonWriter.writeArrayOpen();
-                boolean subfieldseparator = false;
+                jsonBuilder.beginMap();
+                jsonBuilder.buildKey(marcField.getIndicator());
+                jsonBuilder.beginCollection();
                 for (MarcField.Subfield subfield : marcField.getSubfields()) {
-                    if (subfieldseparator) {
-                        jsonWriter.writeObjectSeparator();
-                    }
-                    jsonWriter.writeObjectOpen();
-                    jsonWriter.writeMemberName(subfield.getId());
-                    jsonWriter.writeMemberSeparator();
-                    jsonWriter.writeString(subfield.getValue());
-                    jsonWriter.writeObjectClose();
-                    subfieldseparator = true;
+                    jsonBuilder.beginMap();
+                    jsonBuilder.buildKey(subfield.getId());
+                    jsonBuilder.buildValue(subfield.getValue());
+                    jsonBuilder.endMap();
                 }
-                jsonWriter.writeArrayClose();
-                jsonWriter.writeObjectClose();
+                jsonBuilder.endCollection();
+                jsonBuilder.endMap();
             }
-            fieldseparator = true;
         }
-        jsonWriter.writeObjectClose();
+        if (!style.contains(Style.EMBEDDED_RECORD)) {
+            jsonBuilder.endMap();
+        }
     }
 
     /**
@@ -385,14 +388,16 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
             if (style.contains(Style.ARRAY)) {
                 writer.write(",");
             } else if (style.contains(Style.LINES)) {
-                writer.write("\n");
+                writer.write(System.lineSeparator());
             } else if (style.contains(Style.ELASTICSEARCH_BULK)) {
-                writer.write("\n");
+                writer.write(System.lineSeparator());
                 writeMetaDataLine(marcRecord);
             }
         }
         StringBuilder sb = new StringBuilder();
-        sb.append("{");
+        if (!style.contains(Style.EMBEDDED_RECORD)) {
+            sb.append("{");
+        }
         int c0 = 0;
         for (Map.Entry<String, Object> tags : marcRecord.entrySet()) {
             if (c0 > 0) {
@@ -514,7 +519,9 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
             }
             c0++;
         }
-        sb.append('}');
+        if (!style.contains(Style.EMBEDDED_RECORD)) {
+            sb.append('}');
+        }
         writer.write(sb.toString());
     }
 
@@ -561,7 +568,8 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
         writer = new OutputStreamWriter(compress ?
                 new CompressedOutputStream(out, bufferSize) :
                 new BufferedOutputStream(out, bufferSize), StandardCharsets.UTF_8);
-        jsonWriter = new JsonWriter(writer);
+        //jsonWriter = new JsonWriter(writer);
+        jsonBuilder = new JsonBuilder(writer);
     }
 
     @SuppressWarnings("unchecked")
@@ -582,7 +590,7 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
                         "\"_index\":\"" + index + "\"," +
                         "\"_type\":\"" + indexType + "\"," +
                         "\"_id\":\"" + id + "\"}}" +
-                        "\n");
+                        System.lineSeparator());
             } catch (IOException e) {
                 handleException(e);
             }
@@ -601,34 +609,20 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
         for (int i = 0; i < value.length(); i++) {
             char c = value.charAt(i);
             switch (c) {
-                case '"':
-                    sb.append("\\\"");
-                    break;
-                case '\\':
-                    sb.append("\\\\");
-                    break;
-                case '\b':
-                    sb.append("\\b");
-                    break;
-                case '\f':
-                    sb.append("\\f");
-                    break;
-                case '\n':
-                    sb.append("\\n");
-                    break;
-                case '\r':
-                    sb.append("\\r");
-                    break;
-                case '\t':
-                    sb.append("\\t");
-                    break;
-                default:
+                case '"' -> sb.append("\\\"");
+                case '\\' -> sb.append("\\\\");
+                case '\b' -> sb.append("\\b");
+                case '\f' -> sb.append("\\f");
+                case '\n' -> sb.append("\\n");
+                case '\r' -> sb.append("\\r");
+                case '\t' -> sb.append("\\t");
+                default -> {
                     if (c < 0x1f) {
                         sb.append("\\u").append(String.format("%04x", (int) c));
                     } else {
                         sb.append(c);
                     }
-                    break;
+                }
             }
         }
         return sb.toString();
@@ -638,7 +632,11 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
      *
      */
     public enum Style {
-        ARRAY, LINES, ELASTICSEARCH_BULK, ALLOW_DUPLICATES
+        ARRAY,
+        LINES,
+        ELASTICSEARCH_BULK,
+        ALLOW_DUPLICATES,
+        EMBEDDED_RECORD
     }
 
     /**
@@ -651,5 +649,4 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
             def.setLevel(Deflater.BEST_COMPRESSION);
         }
     }
-
 }

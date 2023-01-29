@@ -350,19 +350,7 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
                 return;
             }
             if (field.isControl()) {
-                String value = field.getValue();
-                if (value == null || value.isEmpty()) {
-                    // the control field is disguised as a data field, try lookup value in first subfield of "_"
-                    value = field.getFirstSubfieldValue("_");
-                    // if no value, maybe " "?
-                    if (value == null || value.isEmpty()) {
-                        value = field.getFirstSubfieldValue(" ");
-                    }
-                    // still no value? Then it is some exotic like MAB with subfield "a"?
-                    if (value == null || value.isEmpty()) {
-                        value = field.getFirstSubfieldValue("a");
-                    }
-                }
+                String value = field.recoverControlFieldValue();
                 if (value != null && !value.isEmpty()) {
                     Iterator<Attribute> attrs = Collections.singletonList(eventFactory.createAttribute(TAG_ATTRIBUTE,
                             transform(field.getTag()))).iterator();

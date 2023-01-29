@@ -174,7 +174,7 @@ public class MarcRecord implements Map<String, Object> {
 
     public LocalDate getCreationDate() {
         if (marcFields != null) {
-            String value = getFirst("008").getValue();
+            String value = getFirst("008").recoverControlFieldValue();
             if (value != null && value.length() >= 6) {
                 return LocalDate.parse(value.substring(0, 6), field8DateFormat);
             }
@@ -184,7 +184,7 @@ public class MarcRecord implements Map<String, Object> {
 
     public LocalDate getLastModificationDate() {
         if (marcFields != null) {
-            String value = getFirst("005").getValue();
+            String value = getFirst("005").recoverControlFieldValue();
             if (value != null && value.length() >= 8) {
                 return LocalDate.parse(value.substring(0, 8), field5DateFormat);
             }

@@ -188,6 +188,28 @@ public class MarcField implements Comparable<MarcField> {
     }
 
     /**
+     * Return a "top most" value, useful for recovering a control field value from
+     * hierarchical structures like JSON formats.
+     * @return the value
+     */
+    public String recoverControlFieldValue() {
+        String value = getValue();
+        if (value == null || value.isEmpty()) {
+            // the control field is disguised as a data field, try lookup value in first subfield of "_"
+            value = getFirstSubfieldValue("_");
+            // if no value, maybe blank " "?
+            if (value == null || value.isEmpty()) {
+                value = getFirstSubfieldValue(" ");
+            }
+            // still no value? Then it is some exotic like MAB with subfield "a"?
+            if (value == null || value.isEmpty()) {
+                value = getFirstSubfieldValue("a");
+            }
+        }
+        return value;
+    }
+
+    /**
      * Returns if this MARC field is a control field.
      * @return true if control field, false if not
      */
