@@ -23,6 +23,8 @@ import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeFormatterBuilder;
+import java.time.temporal.ChronoField;
 import java.util.stream.Stream;
 import org.xbib.marc.label.RecordLabel;
 
@@ -47,9 +49,13 @@ public class MarcRecord implements Map<String, Object> {
 
     private static final MarcRecord EMPTY_RECORD = Marc.builder().buildRecord();
 
-    private static final DateTimeFormatter field5DateFormat = DateTimeFormatter.ofPattern("yyyyMMdd");
+    private static final DateTimeFormatter DATE_FORMAT = DateTimeFormatter.ofPattern("yyyyMMdd");
 
-    private static final DateTimeFormatter field8DateFormat = DateTimeFormatter.ofPattern("yyMMdd");
+    private static final DateTimeFormatter SHORT_DATE_FORMAT =
+            new DateTimeFormatterBuilder()
+                    .appendValueReduced(ChronoField.YEAR_OF_ERA, 2, 2, LocalDate.now().minusYears(75))
+                    .appendPattern("MMdd")
+                    .toFormatter();
 
     private Map<String, Object> delegate;
 
@@ -176,7 +182,7 @@ public class MarcRecord implements Map<String, Object> {
         if (marcFields != null) {
             String value = getFirst("008").recoverControlFieldValue();
             if (value != null && value.length() >= 6) {
-                return LocalDate.parse(value.substring(0, 6), field8DateFormat);
+                return LocalDate.parse(value.substring(0, 6), SHORT_DATE_FORMAT);
             }
         }
         return null;
@@ -186,7 +192,7 @@ public class MarcRecord implements Map<String, Object> {
         if (marcFields != null) {
             String value = getFirst("005").recoverControlFieldValue();
             if (value != null && value.length() >= 8) {
-                return LocalDate.parse(value.substring(0, 8), field5DateFormat);
+                return LocalDate.parse(value.substring(0, 8), DATE_FORMAT);
             }
         }
         return null;
