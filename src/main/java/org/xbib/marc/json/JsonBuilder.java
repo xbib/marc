@@ -156,6 +156,10 @@ public class JsonBuilder {
         return appendable.toString();
     }
 
+    void patchOpenMapState() {
+        state.first = false;
+    }
+
     private void beginKey(String k) throws IOException {
         if (state.first) {
             state.first = false;

@@ -312,6 +312,8 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
     /**
      * Write MARC record using fields, indicators, and subfield structures,
      * therefore allowing duplicate keys in the output.
+     * Duplicate keys are rejected by Elasticsearch.
+     *
      * @param marcRecord the MARC record
      * @throws IOException if writing fails
      */
@@ -371,6 +373,8 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
 
     /**
      * Write MARC record from underlying map as key-oriented JSON. Use repeat maps to create lists.
+     * Because no duplicate keyes are generated, this is the variant for Elasticsearch.
+     *
      * @param marcRecord the MARC record
      * @throws IOException if writing fails
      */
@@ -521,6 +525,8 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
         }
         if (!style.contains(Style.EMBEDDED_RECORD)) {
             sb.append('}');
+        } else {
+            jsonBuilder.patchOpenMapState();
         }
         writer.write(sb.toString());
     }
