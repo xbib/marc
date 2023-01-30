@@ -104,8 +104,8 @@ public class MarcRecordTest {
                     .setCharset(Charset.forName("ANSEL"));
             // only single record
             for (MarcRecord marcRecord : builder.iterable()) {
-                assertEquals(LocalDate.of(2002, 8, 5), marcRecord.getCreationDate());
-                assertEquals(LocalDate.of(2003, 6, 16), marcRecord.getLastModificationDate());
+                assertEquals(LocalDate.of(2002, 8, 5), marcRecord.getCreationDate(LocalDate.now()));
+                assertEquals(LocalDate.of(2003, 6, 16), marcRecord.getLastModificationDate(LocalDate.now()));
                 // check if single 245 field
                 List<MarcField> list = new ArrayList<>();
                 Pattern pattern = Pattern.compile("^245.*");

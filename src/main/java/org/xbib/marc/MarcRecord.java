@@ -21,6 +21,7 @@ import static org.xbib.marc.json.MarcJsonWriter.TYPE_TAG;
 
 import java.io.InputStream;
 import java.nio.charset.Charset;
+import java.time.DateTimeException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeFormatterBuilder;
@@ -178,24 +179,38 @@ public class MarcRecord implements Map<String, Object> {
         return recordLabel;
     }
 
-    public LocalDate getCreationDate() {
+    public LocalDate getCreationDate(LocalDate defaultDate) {
         if (marcFields != null) {
-            String value = getFirst("008").recoverControlFieldValue();
-            if (value != null && value.length() >= 6) {
-                return LocalDate.parse(value.substring(0, 6), SHORT_DATE_FORMAT);
+            MarcField marcField = getFirst("008");
+            if (marcField != null) {
+                String value = marcField.recoverControlFieldValue();
+                if (value != null && value.length() >= 6 && value.substring(0, 6).matches("\\d+")) {
+                    try {
+                        return LocalDate.parse(value.substring(0, 6), SHORT_DATE_FORMAT);
+                    } catch (DateTimeException e) {
+                        return defaultDate;
+                    }
+                }
             }
         }
-        return null;
+        return defaultDate;
     }
 
-    public LocalDate getLastModificationDate() {
+    public LocalDate getLastModificationDate(LocalDate defaultDate) {
         if (marcFields != null) {
-            String value = getFirst("005").recoverControlFieldValue();
-            if (value != null && value.length() >= 8) {
-                return LocalDate.parse(value.substring(0, 8), DATE_FORMAT);
+            MarcField marcField = getFirst("005");
+            if (marcField != null) {
+                String value = marcField.recoverControlFieldValue();
+                if (value != null && value.length() >= 8 && value.substring(0, 8).matches("\\d+")) {
+                    try {
+                        return LocalDate.parse(value.substring(0, 8), DATE_FORMAT);
+                    } catch (DateTimeException e) {
+                        return defaultDate;
+                    }
+                }
             }
         }
-        return null;
+        return defaultDate;
     }
 
     public void filterFields(Comparator<MarcField> comparator) {
