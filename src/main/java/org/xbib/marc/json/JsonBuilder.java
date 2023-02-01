@@ -36,6 +36,10 @@ public class JsonBuilder {
         this.state = new State(null, 0, Structure.DOCSTART, true);
     }
 
+    public static JsonBuilder builder() {
+        return new JsonBuilder();
+    }
+
     public JsonBuilder beginCollection() throws IOException {
         this.state = new State(state, state.level + 1, Structure.COLLECTION, true);
         appendable.append('[');
