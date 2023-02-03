@@ -119,6 +119,8 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
 
     private boolean compress;
 
+    private boolean isClosed;
+
     /**
      * Create a MarcXchange writer on an underlying output stream.
      * @param out the underlying output stream
@@ -487,7 +489,12 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
 
     @Override
     public void close() throws IOException {
+        isClosed = true;
         writer.close();
+    }
+
+    public boolean isClosed() {
+        return isClosed;
     }
 
     public Exception getException() {

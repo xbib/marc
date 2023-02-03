@@ -117,43 +117,31 @@ public class IndentingXMLEventWriter implements XMLEventWriter {
     @Override
     public void add(XMLEvent event) throws XMLStreamException {
         switch (event.getEventType()) {
-            case XMLStreamConstants.CHARACTERS:
-            case XMLStreamConstants.CDATA:
-            case XMLStreamConstants.SPACE: {
+            case XMLStreamConstants.CHARACTERS, XMLStreamConstants.CDATA, XMLStreamConstants.SPACE -> {
                 out.add(event);
                 afterData();
-                return;
             }
-            case XMLStreamConstants.START_ELEMENT: {
+            case XMLStreamConstants.START_ELEMENT -> {
                 beforeStartElement();
                 out.add(event);
                 afterStartElement();
-                return;
             }
-
-            case XMLStreamConstants.END_ELEMENT: {
+            case XMLStreamConstants.END_ELEMENT -> {
                 beforeEndElement();
                 out.add(event);
                 afterEndElement();
-                return;
             }
-            case XMLStreamConstants.START_DOCUMENT:
-            case XMLStreamConstants.PROCESSING_INSTRUCTION:
-            case XMLStreamConstants.COMMENT:
-            case XMLStreamConstants.DTD: {
+            case XMLStreamConstants.START_DOCUMENT, XMLStreamConstants.PROCESSING_INSTRUCTION, XMLStreamConstants.COMMENT, XMLStreamConstants.DTD -> {
                 beforeMarkup();
                 out.add(event);
                 afterMarkup();
-                return;
             }
-            case XMLStreamConstants.END_DOCUMENT: {
+            case XMLStreamConstants.END_DOCUMENT -> {
                 out.add(event);
-                break;
             }
-            default: {
+            default -> {
                 out.add(event);
                 afterEndDocument();
-                break;
             }
         }
     }
@@ -220,12 +208,7 @@ public class IndentingXMLEventWriter implements XMLEventWriter {
 
     private String getIndent(int depth, int size) {
         final int length = depth * size;
-        String indent = indentCache.get(length);
-        if (indent == null) {
-            indent = LINE_SEPARATOR + repeat(' ', length);
-            indentCache.put(length, indent);
-        }
-        return indent;
+        return indentCache.computeIfAbsent(length, l -> LINE_SEPARATOR + repeat(' ', l));
     }
 
     private enum State {
