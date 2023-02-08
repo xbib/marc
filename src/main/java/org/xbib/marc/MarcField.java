@@ -211,10 +211,15 @@ public class MarcField implements Comparable<MarcField> {
 
     /**
      * Returns if this MARC field is a control field.
+     * We invoke the isControl() function in the builder because the variable might have to be evaluated.
      * @return true if control field, false if not
      */
     public boolean isControl() {
         return builder.isControl();
+    }
+
+    public boolean isControlFieldsDisabled() {
+        return builder.disableControlFields;
     }
 
     /**

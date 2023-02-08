@@ -15,7 +15,6 @@
  */
 package org.xbib.marc.xml;
 
-import java.util.ArrayList;
 import org.xbib.marc.MarcField;
 import org.xbib.marc.MarcListener;
 import org.xbib.marc.MarcRecord;
@@ -23,6 +22,15 @@ import org.xbib.marc.MarcRecordListener;
 import org.xbib.marc.label.RecordLabel;
 import org.xbib.marc.transformer.value.MarcValueTransformers;
 
+import javax.xml.XMLConstants;
+import javax.xml.namespace.QName;
+import javax.xml.stream.XMLEventFactory;
+import javax.xml.stream.XMLEventWriter;
+import javax.xml.stream.XMLOutputFactory;
+import javax.xml.stream.XMLStreamException;
+import javax.xml.stream.events.Attribute;
+import javax.xml.stream.events.Namespace;
+import javax.xml.stream.util.XMLEventConsumer;
 import java.io.BufferedOutputStream;
 import java.io.Closeable;
 import java.io.Flushable;
@@ -35,6 +43,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -46,16 +55,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.zip.Deflater;
 import java.util.zip.GZIPOutputStream;
-
-import javax.xml.XMLConstants;
-import javax.xml.namespace.QName;
-import javax.xml.stream.XMLEventFactory;
-import javax.xml.stream.XMLEventWriter;
-import javax.xml.stream.XMLOutputFactory;
-import javax.xml.stream.XMLStreamException;
-import javax.xml.stream.events.Attribute;
-import javax.xml.stream.events.Namespace;
-import javax.xml.stream.util.XMLEventConsumer;
 
 /**
  * This MarcXchange Writer writes MarcXchange events to a StaX XML output stream or XML event consumer.

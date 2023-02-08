@@ -15,10 +15,6 @@
  */
 package org.xbib.marc;
 
-import static org.xbib.marc.io.InformationSeparator.GS;
-import static org.xbib.marc.io.InformationSeparator.RS;
-import static org.xbib.marc.io.InformationSeparator.US;
-
 import org.xbib.marc.io.BytesReference;
 import org.xbib.marc.io.Chunk;
 import org.xbib.marc.io.ChunkListener;
@@ -32,6 +28,10 @@ import java.io.IOException;
 import java.nio.charset.Charset;
 import java.util.LinkedList;
 import java.util.List;
+
+import static org.xbib.marc.io.InformationSeparator.GS;
+import static org.xbib.marc.io.InformationSeparator.RS;
+import static org.xbib.marc.io.InformationSeparator.US;
 
 /**
  * This chunk listener interprets the chunks from a stream and generates MARC events to a given MARC listener.
@@ -125,6 +125,11 @@ public class MarcGenerator implements ChunkListener<byte[], BytesReference> {
 
     public MarcGenerator setFatalErrors(boolean fatalerrors) {
         this.fatalerrors = fatalerrors;
+        return this;
+    }
+
+    public MarcGenerator disableControlFields() {
+        builder.disableControlFields();
         return this;
     }
 

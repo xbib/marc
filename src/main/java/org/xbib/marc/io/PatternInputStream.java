@@ -15,11 +15,11 @@
  */
 package org.xbib.marc.io;
 
-import static java.util.Objects.requireNonNull;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Arrays;
+
+import static java.util.Objects.requireNonNull;
 
 /**
  * A buffered input stream that is organized in chunks separated by byte array patterns.

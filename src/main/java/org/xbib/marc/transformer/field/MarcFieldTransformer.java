@@ -15,8 +15,6 @@
  */
 package org.xbib.marc.transformer.field;
 
-import static org.xbib.marc.transformer.field.MarcFieldTransformer.Operator.HEAD;
-
 import org.xbib.marc.MarcField;
 
 import java.util.Collection;
@@ -27,6 +25,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import static org.xbib.marc.transformer.field.MarcFieldTransformer.Operator.HEAD;
 
 /**
  *

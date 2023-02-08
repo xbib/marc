@@ -15,9 +15,7 @@
  */
 package org.xbib.marc;
 
-import static org.xbib.marc.json.MarcJsonWriter.FORMAT_TAG;
-import static org.xbib.marc.json.MarcJsonWriter.LEADER_TAG;
-import static org.xbib.marc.json.MarcJsonWriter.TYPE_TAG;
+import org.xbib.marc.label.RecordLabel;
 
 import java.io.InputStream;
 import java.nio.charset.Charset;
@@ -26,9 +24,6 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeFormatterBuilder;
 import java.time.temporal.ChronoField;
-import java.util.stream.Stream;
-import org.xbib.marc.label.RecordLabel;
-
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
@@ -42,6 +37,11 @@ import java.util.TreeMap;
 import java.util.function.BiConsumer;
 import java.util.function.Predicate;
 import java.util.regex.Pattern;
+import java.util.stream.Stream;
+
+import static org.xbib.marc.json.MarcJsonWriter.FORMAT_TAG;
+import static org.xbib.marc.json.MarcJsonWriter.LEADER_TAG;
+import static org.xbib.marc.json.MarcJsonWriter.TYPE_TAG;
 
 /**
  * A MARC record. This is an extended MARC record augmented with MarcXchange information.

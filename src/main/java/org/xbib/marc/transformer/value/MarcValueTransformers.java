@@ -69,6 +69,9 @@ public class MarcValueTransformers {
                 marcValueTransformerMap.get(key) : marcValueTransformerMap.get(DEFAULT);
         if (transformer != null) {
             MarcField.Builder builder = MarcField.builder();
+            if (field.isControlFieldsDisabled()) {
+                builder.disableControlFields();
+            }
             builder.tag(field.getTag()).indicator(field.getIndicator());
             if (field.getValue() != null) {
                 builder.value(transformer.transform(field.getValue()));

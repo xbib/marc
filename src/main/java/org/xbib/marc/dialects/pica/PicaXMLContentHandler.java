@@ -15,13 +15,13 @@
  */
 package org.xbib.marc.dialects.pica;
 
-import java.util.HashSet;
 import org.xbib.marc.MarcField;
 import org.xbib.marc.label.RecordLabel;
 import org.xbib.marc.xml.MarcContentHandler;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 
+import java.util.HashSet;
 import java.util.Set;
 
 /**

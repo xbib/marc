@@ -15,9 +15,6 @@
  */
 package org.xbib.marc;
 
-import static org.xbib.marc.MarcXchangeConstants.BIBLIOGRAPHIC_TYPE;
-import static org.xbib.marc.MarcXchangeConstants.MARCXCHANGE_FORMAT;
-
 import org.w3c.dom.Document;
 import org.xbib.marc.dialects.aleph.AlephSequentialInputStream;
 import org.xbib.marc.dialects.bibliomondo.BiblioMondoInputStream;
@@ -46,6 +43,17 @@ import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.parsers.SAXParser;
+import javax.xml.parsers.SAXParserFactory;
+import javax.xml.stream.XMLEventReader;
+import javax.xml.stream.XMLInputFactory;
+import javax.xml.stream.XMLStreamException;
+import javax.xml.transform.Result;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamSource;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.UncheckedIOException;
@@ -65,17 +73,8 @@ import java.util.regex.Pattern;
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.parsers.SAXParser;
-import javax.xml.parsers.SAXParserFactory;
-import javax.xml.stream.XMLEventReader;
-import javax.xml.stream.XMLInputFactory;
-import javax.xml.stream.XMLStreamException;
-import javax.xml.transform.Result;
-import javax.xml.transform.TransformerException;
-import javax.xml.transform.TransformerFactory;
-import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamSource;
+import static org.xbib.marc.MarcXchangeConstants.BIBLIOGRAPHIC_TYPE;
+import static org.xbib.marc.MarcXchangeConstants.MARCXCHANGE_FORMAT;
 
 /**
  * A MARC instance for top-level fluent API style access to the most viable methods of
@@ -680,6 +679,8 @@ public final class Marc {
 
         private Pattern valuePattern;
 
+        private boolean disableControlFields;
+
         private Builder() {
             this.charset = StandardCharsets.UTF_8;
             this.recordLabel = RecordLabel.EMPTY;
@@ -855,6 +856,11 @@ public final class Marc {
             return this;
         }
 
+        public Builder disableControlFields() {
+            this.disableControlFields = true;
+            return this;
+        }
+
         /**
          * Set XML content handler.
          * @param contentHandler the XML content handler
@@ -864,6 +870,9 @@ public final class Marc {
             if (contentHandler instanceof MarcContentHandler) {
                 MarcContentHandler marcContentHandler = (MarcContentHandler) contentHandler;
                 marcContentHandler.setMarcFieldTransformers(marcFieldTransformers);
+                if (disableControlFields) {
+                    marcContentHandler.disabledControlFields();
+                }
             }
             this.defaultContentHandler = new InverseMarcContentHandler(contentHandler);
             defaultContentHandler.setSchema(schema);
@@ -896,6 +905,9 @@ public final class Marc {
                     .setMarcTransformer(marcTransformer)
                     .setMarcFieldTransformers(marcFieldTransformers)
                     .setMarcValueTransformers(marcValueTransformers);
+            if (disableControlFields) {
+                marcGenerator.disableControlFields();
+            }
             return marcGenerator;
         }
 

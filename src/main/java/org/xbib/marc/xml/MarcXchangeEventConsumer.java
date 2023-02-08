@@ -15,19 +15,11 @@
  */
 package org.xbib.marc.xml;
 
-import java.util.HashSet;
 import org.xbib.marc.MarcField;
 import org.xbib.marc.MarcListener;
 import org.xbib.marc.MarcXchangeConstants;
 import org.xbib.marc.label.RecordLabel;
 import org.xbib.marc.transformer.value.MarcValueTransformers;
-
-import java.util.Deque;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.Map;
-import java.util.Set;
 
 import javax.xml.namespace.QName;
 import javax.xml.stream.XMLStreamException;
@@ -37,6 +29,13 @@ import javax.xml.stream.events.EndElement;
 import javax.xml.stream.events.StartElement;
 import javax.xml.stream.events.XMLEvent;
 import javax.xml.stream.util.XMLEventConsumer;
+import java.util.Deque;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * The MarcXchange event consumer listens to StaX events and converts them to MarcXchange events.
@@ -62,6 +61,8 @@ public class MarcXchangeEventConsumer implements XMLEventConsumer, MarcXchangeCo
     private boolean endRecordReached;
 
     private long numberOfRecords;
+
+    private boolean disabledControlFields;
 
     public MarcXchangeEventConsumer() {
         this.stack = new LinkedList<>();
@@ -92,6 +93,11 @@ public class MarcXchangeEventConsumer implements XMLEventConsumer, MarcXchangeCo
 
     public MarcXchangeEventConsumer setMarcValueTransformers(MarcValueTransformers marcValueTransformers) {
         this.marcValueTransformers = marcValueTransformers;
+        return this;
+    }
+
+    public MarcXchangeEventConsumer disableControlFields() {
+        this.disabledControlFields = true;
         return this;
     }
 
@@ -206,10 +212,12 @@ public class MarcXchangeEventConsumer implements XMLEventConsumer, MarcXchangeCo
                     setType(thistype);
                     beginRecord(thisformat, thistype);
                 }
-                case LEADER -> {
-                }
                 case CONTROLFIELD, DATAFIELD -> {
-                    MarcField.Builder builder = MarcField.builder().tag(tag);
+                    MarcField.Builder builder = MarcField.builder();
+                    if (disabledControlFields) {
+                        builder.disableControlFields();
+                    }
+                    builder.tag(tag);
                     if (max > 0) {
                         builder.indicator(sb.substring(min - 1, max));
                     }

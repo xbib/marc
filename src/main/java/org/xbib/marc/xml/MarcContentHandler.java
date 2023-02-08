@@ -15,8 +15,6 @@
  */
 package org.xbib.marc.xml;
 
-import java.util.Comparator;
-import java.util.HashSet;
 import org.xbib.marc.MarcField;
 import org.xbib.marc.MarcListener;
 import org.xbib.marc.MarcRecord;
@@ -37,8 +35,10 @@ import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;
 
 import java.io.IOException;
+import java.util.Comparator;
 import java.util.Deque;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
@@ -90,6 +90,8 @@ public class MarcContentHandler
     private final Set<String> validNamespaces;
 
     private Comparator<String> comparator;
+
+    private boolean disabledControlFields;
 
     public MarcContentHandler() {
         this.recordCounter = new AtomicInteger();
@@ -172,6 +174,11 @@ public class MarcContentHandler
 
     public MarcContentHandler setComparator(Comparator<String> comparator) {
         this.comparator = comparator;
+        return this;
+    }
+
+    public MarcContentHandler disabledControlFields() {
+        this.disabledControlFields = true;
         return this;
     }
 
@@ -360,7 +367,11 @@ public class MarcContentHandler
                         }
                     }
                 }
-                MarcField.Builder builder = MarcField.builder().tag(tag);
+                MarcField.Builder builder = MarcField.builder();
+                if (disabledControlFields) {
+                    builder.disableControlFields();
+                }
+                builder.tag(tag);
                 if (max > 0) {
                     builder.indicator(sb.substring(min - 1, max));
                 }

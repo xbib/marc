@@ -18,6 +18,8 @@ package org.xbib.marc.tools;
 import org.xbib.marc.Marc;
 import org.xbib.marc.xml.MarcXchangeWriter;
 
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.stream.StreamResult;
 import java.io.BufferedInputStream;
 import java.io.InputStream;
 import java.net.URL;
@@ -27,9 +29,6 @@ import java.nio.file.Paths;
 import java.util.Objects;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
-import javax.xml.transform.TransformerFactory;
-import javax.xml.transform.stream.StreamResult;
 
 /**
  * Command line tool.
