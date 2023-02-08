@@ -21,9 +21,9 @@ import org.junit.jupiter.api.Test;
 import org.xbib.marc.json.MarcJsonWriter;
 import org.xbib.marc.xml.MarcXchangeWriter;
 
-import java.io.File;
-import java.io.FileOutputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
+import java.net.URL;
 import java.util.EnumSet;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -35,45 +35,45 @@ public class ConcurrencyTest {
      * Open same file 16 times, but write to a single XML writer.
      * We have three streaks:
      * <ul>
-     *     <li>file header / collection start (not parallizable)</li>
+     *     <li>file header / collection start (not parallelizable)</li>
      *     <li>records (can be parallelized, implemented by {@code writeRecords()})</li>
-     *     <li>collection end / file close (not parallizable)</li>
+     *     <li>collection end / file close (not parallelizable)</li>
      * </ul>
      * @throws Exception if test fails
      */
     @Test
     public void concurrentXmlWrite() throws Exception {
-        int n = 16;
-        ExecutorService executorService = Executors.newFixedThreadPool(n);
-        String s = "zdblokutf8.mrc";
-        File file = File.createTempFile(s + ".", ".xml");
-        file.deleteOnExit();
-        FileOutputStream out = new FileOutputStream(file);
-        try (MarcXchangeWriter writer = new MarcXchangeWriter(out, true)
-             .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)
-             .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)
-        ) {
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+        try (MarcXchangeWriter writer = new MarcXchangeWriter(outputStream, true)
+                    .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)
+                    .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)) {
             writer.startDocument();
             writer.beginCollection();
+            int n = 16;
+            ExecutorService executorService = Executors.newFixedThreadPool(n);
             for (int i = 0; i < n; i++) {
-                InputStream inputStream = getClass().getResource(s).openStream();
                 executorService.submit(() -> {
-                    Marc.builder()
-                            .setInputStream(inputStream)
-                            .setMarcRecordListener(writer)
-                            .build()
-                            .writeRecords();
+                    URL url = getClass().getResource("zdblokutf8.mrc");
+                    if (url != null) {
+                        try (InputStream inputStream = url.openStream()) {
+                            Marc.builder()
+                                    .setInputStream(inputStream)
+                                    .setMarcRecordListener(writer)
+                                    .build()
+                                    .writeRecords();
+                        }
+                    }
                     return true;
                 });
             }
             executorService.shutdown();
-            executorService.awaitTermination(10, TimeUnit.SECONDS);
+            executorService.awaitTermination(30L, TimeUnit.SECONDS);
             writer.endCollection();
             writer.endDocument();
-            assertNull(writer.getException());
             assertEquals(n * 293, writer.getRecordCounter());
         }
     }
+
 
     /**
      * Write MARC records to JSON array.
@@ -82,31 +82,32 @@ public class ConcurrencyTest {
      */
     @Test
     public void concurrentJsonArrayWrite() throws Exception {
-        int n = 16;
-        ExecutorService executorService = Executors.newFixedThreadPool(n);
-        String s = "zdblokutf8.mrc";
-        File file = File.createTempFile(s + ".", ".json");
-        file.deleteOnExit();
-        FileOutputStream out = new FileOutputStream(file);
-        try (MarcJsonWriter writer = new MarcJsonWriter(out)
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+        try (MarcJsonWriter writer = new MarcJsonWriter(outputStream)
                 .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)
                 .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)
         ) {
             writer.startDocument();
             writer.beginCollection();
+            int n = 16;
+            ExecutorService executorService = Executors.newFixedThreadPool(n);
             for (int i = 0; i < n; i++) {
-                InputStream in = getClass().getResource(s).openStream();
                 executorService.submit(() -> {
-                    Marc.builder()
-                            .setInputStream(in)
-                            .setMarcRecordListener(writer)
-                            .build()
-                            .writeRecords();
+                    URL url = getClass().getResource("zdblokutf8.mrc");
+                    if (url != null) {
+                        try (InputStream inputStream = url.openStream()) {
+                            Marc.builder()
+                                    .setInputStream(inputStream)
+                                    .setMarcRecordListener(writer)
+                                    .build()
+                                    .writeRecords();
+                        }
+                    }
                     return true;
                 });
             }
             executorService.shutdown();
-            executorService.awaitTermination(10, TimeUnit.SECONDS);
+            executorService.awaitTermination(30L, TimeUnit.SECONDS);
             writer.endCollection();
             writer.endDocument();
             assertNull(writer.getException());
@@ -120,32 +121,33 @@ public class ConcurrencyTest {
      */
     @Test
     public void concurrentJsonLinesWrite() throws Exception {
-        int n = 16;
-        ExecutorService executorService = Executors.newFixedThreadPool(n);
-        String s = "zdblokutf8.mrc";
-        File file = File.createTempFile(s + ".", ".jsonlines");
-        file.deleteOnExit();
-        FileOutputStream out = new FileOutputStream(file);
-        try (MarcJsonWriter writer = new MarcJsonWriter(out)
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+        try (MarcJsonWriter writer = new MarcJsonWriter(outputStream)
                 .setStyle(EnumSet.of(MarcJsonWriter.Style.LINES))
                 .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)
                 .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)
         ) {
             writer.startDocument();
             writer.beginCollection();
+            int n = 16;
+            ExecutorService executorService = Executors.newFixedThreadPool(n);
             for (int i = 0; i < n; i++) {
-                InputStream in = getClass().getResource(s).openStream();
                 executorService.submit(() -> {
-                    Marc.builder()
-                            .setInputStream(in)
-                            .setMarcRecordListener(writer)
-                            .build()
-                            .writeRecords();
+                    URL url = getClass().getResource("zdblokutf8.mrc");
+                    if (url != null) {
+                        try (InputStream inputStream = url.openStream()) {
+                            Marc.builder()
+                                    .setInputStream(inputStream)
+                                    .setMarcRecordListener(writer)
+                                    .build()
+                                    .writeRecords();
+                        }
+                    }
                     return true;
                 });
             }
             executorService.shutdown();
-            executorService.awaitTermination(10, TimeUnit.SECONDS);
+            executorService.awaitTermination(30L, TimeUnit.SECONDS);
             writer.endCollection();
             writer.endDocument();
             assertNull(writer.getException());

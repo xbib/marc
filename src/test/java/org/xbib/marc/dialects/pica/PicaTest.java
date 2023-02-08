@@ -15,118 +15,185 @@
  */
 package org.xbib.marc.dialects.pica;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.xbib.marc.StreamMatcher.assertStream;
 import org.junit.jupiter.api.Test;
 import org.xbib.marc.Marc;
 import org.xbib.marc.MarcField;
 import org.xbib.marc.MarcListener;
 import org.xbib.marc.MarcXchangeConstants;
+import org.xbib.marc.StreamMatcher;
 import org.xbib.marc.label.RecordLabel;
 import org.xbib.marc.xml.MarcXchangeWriter;
-import org.xmlunit.matchers.CompareMatcher;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.InputStream;
+
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 
 public class PicaTest {
 
     @Test
     public void testPicaBinary() throws Exception {
-        String s = "pica.binary";
-        InputStream in = getClass().getResource(s).openStream();
-        File file = File.createTempFile(s + ".", ".xml");
-        file.deleteOnExit();
-        FileOutputStream out = new FileOutputStream(file);
-        try (MarcXchangeWriter writer = new MarcXchangeWriter(out, true)) {
-            Marc marc = Marc.builder()
-                    .setInputStream(in)
-                    .setCharset(StandardCharsets.UTF_8)
-                    .setMarcListener(writer)
-                    .build();
-            marc.wrapIntoCollection(marc.pica());
-        }
-        assertThat(file, CompareMatcher.isIdenticalTo(getClass().getResource(s + ".xml").openStream()));
+        StreamMatcher.fileMatch(getClass(), "pica.binary", ".xml", (inputStream, outputStream) -> {
+            try (MarcXchangeWriter writer = new MarcXchangeWriter(outputStream, true)) {
+                Marc marc = Marc.builder()
+                        .setInputStream(inputStream)
+                        .setCharset(StandardCharsets.UTF_8)
+                        .setMarcListener(writer)
+                        .build();
+                marc.wrapIntoCollection(marc.pica());
+            }
+        });
     }
 
     @Test
     public void testPicaPlain() throws Exception {
-        for (String s : new String[]{
-                "pica.plain",
-                "bgb.example"
-        }) {
-            InputStream in = getClass().getResource(s).openStream();
-            File file = File.createTempFile(s + ".", ".xml");
-            file.deleteOnExit();
-            FileOutputStream out = new FileOutputStream(file);
-            try (MarcXchangeWriter writer = new MarcXchangeWriter(out, true)
+        StreamMatcher.fileMatch(getClass(), "pica.plain", ".xml", (inputStream, outputStream) -> {
+            try (MarcXchangeWriter writer = new MarcXchangeWriter(outputStream, true)
                     .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)
                     .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)
             ) {
                 Marc marc = Marc.builder()
-                        .setInputStream(in)
+                        .setInputStream(inputStream)
                         .setCharset(StandardCharsets.UTF_8)
                         .setMarcListener(writer)
                         .build();
                 marc.wrapIntoCollection(marc.picaPlain());
             }
-            assertThat(file, CompareMatcher.isIdenticalTo(getClass().getResource(s + ".xml").openStream()));
-        }
+        });
     }
 
     @Test
-    public void testPicaXML() throws Exception {
-        for (String s : new String[]{
-                "zdb-oai-bib.xml",
-                "sru_picaxml.xml"
-        }) {
-            InputStream in = getClass().getResourceAsStream(s);
-            StringBuilder sb = new StringBuilder();
+    public void testBgbExample() throws Exception {
+        StreamMatcher.fileMatch(getClass(), "bgb.example", ".xml", (inputStream, outputStream) -> {
+            try (MarcXchangeWriter writer = new MarcXchangeWriter(outputStream, true)
+                    .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)
+                    .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)
+            ) {
+                Marc marc = Marc.builder()
+                        .setInputStream(inputStream)
+                        .setCharset(StandardCharsets.UTF_8)
+                        .setMarcListener(writer)
+                        .build();
+                marc.wrapIntoCollection(marc.picaPlain());
+            }
+        });
+    }
 
-            MarcListener listener = new MarcListener() {
-                @Override
-                public void beginCollection() {
-                }
+    @Test
+    public void testZdbOaiBibXml() throws Exception {
+        StreamMatcher.fileMatch(getClass(), "zdb-oai-bib.xml", "-keyvalue.txt", (inputStream, outputStream) -> {
+            try (Listener listener = new Listener(outputStream, StandardCharsets.UTF_8)) {
+                PicaXMLContentHandler contentHandler = new PicaXMLContentHandler();
+                contentHandler.setFormat("Pica");
+                contentHandler.setType("XML");
+                contentHandler.setMarcListener(listener);
+                Marc marc = Marc.builder()
+                        .setInputStream(inputStream)
+                        .setContentHandler(contentHandler)
+                        .build();
+                marc.xmlReader().parse();
+            }
+        });
+    }
 
-                @Override
-                public void endCollection() {
-                }
+    @Test
+    public void testSruPicaXml() throws Exception {
+        StreamMatcher.fileMatch(getClass(), "sru_picaxml.xml", "-keyvalue.txt", (inputStream, outputStream) -> {
+            try (Listener listener = new Listener(outputStream, StandardCharsets.UTF_8)) {
+                PicaXMLContentHandler contentHandler = new PicaXMLContentHandler();
+                contentHandler.setFormat("Pica");
+                contentHandler.setType("XML");
+                contentHandler.setMarcListener(listener);
+                Marc marc = Marc.builder()
+                        .setInputStream(inputStream)
+                        .setContentHandler(contentHandler)
+                        .build();
+                marc.xmlReader().parse();
+            }
+        });
+    }
 
-                @Override
-                public void leader(RecordLabel label) {
-                    sb.append("leader=").append(label).append("\n");
-                }
+    @Test
+    public void testDE1a() throws IOException {
+        StreamMatcher.fileMatch(getClass(), "DE-1a.pp.xml", ".xml", (inputStream, outputStream) -> {
+            // we can not simply write MarcXchange out of Pica. We will fix it later.
+            try (MarcXchangeWriter writer = new MarcXchangeWriter(outputStream, true)
+                    .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)
+                    .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)
+            ) {
+                PicaXMLContentHandler contentHandler = new PicaXMLContentHandler();
+                contentHandler.setFormat("Pica");
+                contentHandler.setType("XML");
+                contentHandler.setMarcListener(writer);
+                Marc marc = Marc.builder()
+                        .setInputStream(inputStream)
+                        .setContentHandler(contentHandler)
+                        .build();
+                marc.xmlReader().parse();
+            }
+        });
+    }
 
-                @Override
-                public void beginRecord(String format, String type) {
-                    sb.append("beginRecord\n")
-                            .append("format=").append(format).append("\n")
-                            .append("type=").append(type).append("\n");
-                }
 
-                @Override
-                public void field(MarcField field) {
-                    sb.append("field=").append(field).append("\n");
-                }
+    private static class Listener implements MarcListener, AutoCloseable {
 
-                @Override
-                public void endRecord() {
-                    sb.append("endRecord\n");
-                }
+        private final BufferedWriter writer;
 
-            };
-            PicaXMLContentHandler contentHandler = new PicaXMLContentHandler();
-            contentHandler.setFormat("Pica");
-            contentHandler.setType("XML");
-            contentHandler.setMarcListener(listener);
-            Marc marc = Marc.builder()
-                    .setInputStream(in)
-                    .setContentHandler(contentHandler)
-                    .build();
-            marc.xmlReader().parse();
-            assertStream(s, getClass().getResource(s + "-keyvalue.txt").openStream(),
-                    sb.toString());
+        Listener(OutputStream outputStream, Charset charset) {
+            this.writer = new BufferedWriter(new OutputStreamWriter(outputStream, charset));
+        }
+
+        @Override
+        public void beginCollection() {
+        }
+
+        @Override
+        public void endCollection() {
+        }
+
+        @Override
+        public void beginRecord(String format, String type) {
+            try {
+                writer.append("beginRecord").append("\n");
+                writer.append("format=").append(format).append("\n");
+                writer.append("type=").append(type).append("\n");
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
+
+        @Override
+        public void leader(RecordLabel label) {
+            try {
+                writer.append("leader=").append(label.toString()).append("\n");
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
+
+        @Override
+        public void field(MarcField field) {
+            try {
+                writer.append("field=").append(field.toString()).append("\n");
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
+
+        @Override
+        public void endRecord() {
+            try {
+                writer.append("endRecord").append("\n");
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
+
+        @Override
+        public void close() throws IOException {
+            writer.close();
         }
     }
 }

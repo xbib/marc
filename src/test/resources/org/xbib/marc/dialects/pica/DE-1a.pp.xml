@@ -1,0 +1,169 @@
+<?xml version="1.0" ?>
+<ppxml:record xmlns:ppxml="http://www.oclcpica.org/xmlns/ppxml-1.0">
+        <ppxml:global opacflag="" status="">
+            <ppxml:tag id="00900004" occ=""></ppxml:tag>
+            <ppxml:tag id="001A" occ="">
+                <ppxml:subf id="0">9006:18-11-99</ppxml:subf>
+            </ppxml:tag>
+            <ppxml:tag id="001B" occ="">
+                <ppxml:subf id="0">9006:11-02-20</ppxml:subf>
+                <ppxml:subf id="t">16:54:10.000</ppxml:subf>
+            </ppxml:tag>
+            <ppxml:tag id="001D" occ="">
+                <ppxml:subf id="0">9999:27-05-05</ppxml:subf>
+            </ppxml:tag>
+            <ppxml:tag id="001U" occ="">
+                <ppxml:subf id="0">utf8</ppxml:subf>
+            </ppxml:tag>
+            <ppxml:tag id="001X" occ="">
+                <ppxml:subf id="0">0</ppxml:subf>
+            </ppxml:tag>
+            <ppxml:tag id="002@" occ="">
+                <ppxml:subf id="0">Tw</ppxml:subf>
+            </ppxml:tag>
+            <ppxml:tag id="003@" occ="">
+                <ppxml:subf id="0">009000046</ppxml:subf>
+            </ppxml:tag>
+            <ppxml:tag id="008H" occ="">
+                <ppxml:subf id="a">101005-0</ppxml:subf>
+                <ppxml:subf id="b">AK001</ppxml:subf>
+                <ppxml:subf id="d">1a</ppxml:subf>
+                <ppxml:subf id="e">DE-1a</ppxml:subf>
+                <ppxml:subf id="f">SBBPK</ppxml:subf>
+            </ppxml:tag>
+            <ppxml:tag id="009Q" occ="">
+                <ppxml:subf id="u">http://www.staatsbibliothek-berlin.de</ppxml:subf>
+                <ppxml:subf id="z">A</ppxml:subf>
+            </ppxml:tag>
+            <ppxml:tag id="009Q" occ="">
+                <ppxml:subf id="u">http://stabikat.de</ppxml:subf>
+                <ppxml:subf id="z">B</ppxml:subf>
+            </ppxml:tag>
+            <ppxml:tag id="009Q" occ="">
+                <ppxml:subf id="u">http://staatsbibliothek-berlin.de/service/auskunft/</ppxml:subf>
+                <ppxml:subf id="x">Online-Auskunft</ppxml:subf>
+                <ppxml:subf id="z">W</ppxml:subf>
+            </ppxml:tag>
+            <ppxml:tag id="009Q" occ="">
+                <ppxml:subf id="u">https://staatsbibliothek-berlin.de/vor-ort/opening-hours/</ppxml:subf>
+                <ppxml:subf id="x">O&#776;ffnungszeiten besonderer Bereiche</ppxml:subf>
+                <ppxml:subf id="z">W</ppxml:subf>
+            </ppxml:tag>
+            <ppxml:tag id="029@" occ="">
+                <ppxml:subf id="a">SBB-PK, Potsdamer Stra&#223;e</ppxml:subf>
+                <ppxml:subf id="4">a</ppxml:subf>
+            </ppxml:tag>
+            <ppxml:tag id="029@" occ="">
+                <ppxml:subf id="a">Berlin SBB Haus Potsdamer Str</ppxml:subf>
+                <ppxml:subf id="4">c</ppxml:subf>
+            </ppxml:tag>
+            <ppxml:tag id="029A" occ="">
+                <ppxml:subf id="a">Staatsbibliothek zu Berlin - Preu&#223;ischer Kulturbesitz, Haus Potsdamer Stra&#223;e</ppxml:subf>
+            </ppxml:tag>
+            <ppxml:tag id="032P" occ="">
+                <ppxml:subf id="a">Potsdamer Str. 33</ppxml:subf>
+                <ppxml:subf id="b">Berlin</ppxml:subf>
+                <ppxml:subf id="d">DE</ppxml:subf>
+                <ppxml:subf id="e">10785</ppxml:subf>
+                <ppxml:subf id="f">Berlin</ppxml:subf>
+                <ppxml:subf id="i">Mo-Sa 8.00-22.00</ppxml:subf>
+                <ppxml:subf id="j">Servicezeiten und O&#776;ffnungszeiten besonderer Bereiche s. Link &quot;O&#776;ffnungszeiten besonderer Bereiche&quot;</ppxml:subf>
+                <ppxml:subf id="k">13.37063</ppxml:subf>
+                <ppxml:subf id="l">52.50771</ppxml:subf>
+                <ppxml:subf id="n">11000000</ppxml:subf>
+                <ppxml:subf id="p">j</ppxml:subf>
+                <ppxml:subf id="2">S</ppxml:subf>
+            </ppxml:tag>
+            <ppxml:tag id="032P" occ="">
+                <ppxml:subf id="b">Berlin</ppxml:subf>
+                <ppxml:subf id="d">DE</ppxml:subf>
+                <ppxml:subf id="e">10772</ppxml:subf>
+                <ppxml:subf id="f">Berlin</ppxml:subf>
+                <ppxml:subf id="p">j</ppxml:subf>
+                <ppxml:subf id="2">P</ppxml:subf>
+            </ppxml:tag>
+            <ppxml:tag id="035B" occ="">
+                <ppxml:subf id="a">S</ppxml:subf>
+                <ppxml:subf id="c">j</ppxml:subf>
+                <ppxml:subf id="d">49</ppxml:subf>
+                <ppxml:subf id="e">30</ppxml:subf>
+                <ppxml:subf id="f">2 66-433888</ppxml:subf>
+                <ppxml:subf id="g">49</ppxml:subf>
+                <ppxml:subf id="h">30</ppxml:subf>
+                <ppxml:subf id="i">2 66-333501</ppxml:subf>
+                <ppxml:subf id="k">info@sbb.spk-berlin.de</ppxml:subf>
+                <ppxml:subf id="l">Auskunft</ppxml:subf>
+            </ppxml:tag>
+            <ppxml:tag id="035B" occ="">
+                <ppxml:subf id="a">W</ppxml:subf>
+                <ppxml:subf id="b">Benutzung</ppxml:subf>
+                <ppxml:subf id="c">j</ppxml:subf>
+                <ppxml:subf id="k">benutzung.h2@sbb.spk-berlin.de</ppxml:subf>
+            </ppxml:tag>
+            <ppxml:tag id="035D" occ="">
+                <ppxml:subf id="a">B 3</ppxml:subf>
+            </ppxml:tag>
+            <ppxml:tag id="035D" occ="">
+                <ppxml:subf id="a">He 201</ppxml:subf>
+                <ppxml:subf id="b">DE-He201</ppxml:subf>
+            </ppxml:tag>
+            <ppxml:tag id="035E" occ="">
+                <ppxml:subf id="a">H</ppxml:subf>
+                <ppxml:subf id="b">s</ppxml:subf>
+                <ppxml:subf id="c">0011</ppxml:subf>
+                <ppxml:subf id="e">GBV</ppxml:subf>
+                <ppxml:subf id="f">11</ppxml:subf>
+                <ppxml:subf id="g">07</ppxml:subf>
+                <ppxml:subf id="h">10</ppxml:subf>
+                <ppxml:subf id="l">CC0</ppxml:subf>
+            </ppxml:tag>
+            <ppxml:tag id="035G" occ="">
+                <ppxml:subf id="a">Recht</ppxml:subf>
+                <ppxml:subf id="a">Orientalistik</ppxml:subf>
+                <ppxml:subf id="a">Osteuropa</ppxml:subf>
+                <ppxml:subf id="a">Ostasien</ppxml:subf>
+                <ppxml:subf id="a">Afrika</ppxml:subf>
+                <ppxml:subf id="a">Amtsdruckschriften</ppxml:subf>
+                <ppxml:subf id="a">Handschriften</ppxml:subf>
+                <ppxml:subf id="a">Karten</ppxml:subf>
+                <ppxml:subf id="a">Geistes- und Sozialwissenschaften</ppxml:subf>
+            </ppxml:tag>
+            <ppxml:tag id="035H" occ="">
+                <ppxml:subf id="a">FID-INTRECHT-DE-1a / FID internationale und interdisziplina&#776;re Rechtsforschung (ab 2014)</ppxml:subf>
+                <ppxml:subf id="a">FID-ASIEN-DE-1a / FID Asien &#8211; CrossAsia (ab 2016)</ppxml:subf>
+                <ppxml:subf id="a">FID-KARTEN-DE-1a / FID Kartographie und Geobasisdaten (ab 2016)</ppxml:subf>
+                <ppxml:subf id="a">FID-SLAW-DE-1a / FID Slawistik (ab 2016)</ppxml:subf>
+                <ppxml:subf id="a">SSG 2 / Rechtswissenschaft (bis einschlie&#223;lich 2015)</ppxml:subf>
+                <ppxml:subf id="a">SSG 6,25 / Ost- und Su&#776;dostasien (bis einschlie&#223;lich 2015)</ppxml:subf>
+                <ppxml:subf id="a">SSG 7,39 / Slawistik (bis einschlie&#223;lich 2015)</ppxml:subf>
+                <ppxml:subf id="a">SSG 14,1 / Vero&#776;ffentlichungen zur Kartographie (bis einschlie&#223;lich 2015)</ppxml:subf>
+                <ppxml:subf id="a">SSG 27 / Parlamentsschriften (bis einschlie&#223;lich 2015)</ppxml:subf>
+                <ppxml:subf id="a">SSG 28,1 / Topographische Karten (bis einschlie&#223;lich 2015)</ppxml:subf>
+            </ppxml:tag>
+            <ppxml:tag id="035I" occ="">
+                <ppxml:subf id="a">BER</ppxml:subf>
+                <ppxml:subf id="b">U&#776;LV</ppxml:subf>
+                <ppxml:subf id="c">GBV</ppxml:subf>
+                <ppxml:subf id="d">Kalliope</ppxml:subf>
+                <ppxml:subf id="e">l</ppxml:subf>
+                <ppxml:subf id="g">V</ppxml:subf>
+            </ppxml:tag>
+            <ppxml:tag id="035K" occ="">
+                <ppxml:subf id="a">S</ppxml:subf>
+                <ppxml:subf id="b">A</ppxml:subf>
+            </ppxml:tag>
+            <ppxml:tag id="035O" occ="">
+                <ppxml:subf id="a">FZL DE-622</ppxml:subf>
+            </ppxml:tag>
+            <ppxml:tag id="047A" occ="">
+                <ppxml:subf id="a">UNO- und UNESCO-Deposita&#776;rbibliothek. U&#776;bernommene Bibliothek: B 3 (Bibliothek der ehemaligen Preu&#223;ischen Geologischen Landesanstalt)</ppxml:subf>
+            </ppxml:tag>
+            <ppxml:tag id="050C" occ="">
+                <ppxml:subf id="a">ABZ eingetragen 15062015</ppxml:subf>
+                <ppxml:subf id="5">DE-601</ppxml:subf>
+            </ppxml:tag>
+            <ppxml:tag id="050D" occ="">
+                <ppxml:subf id="a">ANF2020; DE-1a 30-05-07 L SSG 6,20 K Tel.; ZRB 25-07-13 SSG gepru&#776;ft, 7.40 gestrichen, sonst ok; ZRB 17-10-13 N EZB-ID (Rol); ZRB 02-11-16 SSG(s) mit 2015 abgeschlossen; ZRB 18-01-17 DE-He201 u&#776;bernommen; Auftragsbesta&#776;tigung: 11.02.2020 um 16.03</ppxml:subf>
+            </ppxml:tag>
+        </ppxml:global>
+    </ppxml:record>

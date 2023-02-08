@@ -1,0 +1,197 @@
+<record xmlns="info:lc/xmlns/marcxchange-v2" format="MarcXchange" xsi:schemaLocation="info:lc/xmlns/marcxchange-v2 http://www.loc.gov/standards/iso25577/marcxchange-2-0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="Bibliographic">
+  <leader>00000     1000000   000 </leader>
+  <datafield ind2="0" ind1="0" tag="009"></datafield>
+  <datafield ind2=" " ind1="A" tag="001">
+    <subfield code="0">9006:18-11-99</subfield>
+    <subfield code=" ">9006:18-11-99</subfield>
+  </datafield>
+  <datafield ind2=" " ind1="B" tag="001">
+    <subfield code="0">9006:11-02-20</subfield>
+    <subfield code="t">16:54:10.000</subfield>
+    <subfield code=" ">16:54:10.000</subfield>
+  </datafield>
+  <datafield ind2=" " ind1="D" tag="001">
+    <subfield code="0">9999:27-05-05</subfield>
+    <subfield code=" ">9999:27-05-05</subfield>
+  </datafield>
+  <datafield ind2=" " ind1="U" tag="001">
+    <subfield code="0">utf8</subfield>
+    <subfield code=" ">utf8</subfield>
+  </datafield>
+  <datafield ind2=" " ind1="X" tag="001">
+    <subfield code="0">0</subfield>
+    <subfield code=" ">0</subfield>
+  </datafield>
+  <datafield ind2=" " ind1="@" tag="002">
+    <subfield code="0">Tw</subfield>
+    <subfield code=" ">Tw</subfield>
+  </datafield>
+  <datafield ind2=" " ind1="@" tag="003">
+    <subfield code="0">009000046</subfield>
+    <subfield code=" ">009000046</subfield>
+  </datafield>
+  <datafield ind2=" " ind1="H" tag="008">
+    <subfield code="a">101005-0</subfield>
+    <subfield code="b">AK001</subfield>
+    <subfield code="d">1a</subfield>
+    <subfield code="e">DE-1a</subfield>
+    <subfield code="f">SBBPK</subfield>
+    <subfield code=" ">SBBPK</subfield>
+  </datafield>
+  <datafield ind2=" " ind1="Q" tag="009">
+    <subfield code="u">http://www.staatsbibliothek-berlin.de</subfield>
+    <subfield code="z">A</subfield>
+    <subfield code=" ">A</subfield>
+  </datafield>
+  <datafield ind2=" " ind1="Q" tag="009">
+    <subfield code="u">http://stabikat.de</subfield>
+    <subfield code="z">B</subfield>
+    <subfield code=" ">B</subfield>
+  </datafield>
+  <datafield ind2=" " ind1="Q" tag="009">
+    <subfield code="u">http://staatsbibliothek-berlin.de/service/auskunft/</subfield>
+    <subfield code="x">Online-Auskunft</subfield>
+    <subfield code="z">W</subfield>
+    <subfield code=" ">W</subfield>
+  </datafield>
+  <datafield ind2=" " ind1="Q" tag="009">
+    <subfield code="u">https://staatsbibliothek-berlin.de/vor-ort/opening-hours/</subfield>
+    <subfield code="x">Öffnungszeiten besonderer Bereiche</subfield>
+    <subfield code="z">W</subfield>
+    <subfield code=" ">W</subfield>
+  </datafield>
+  <datafield ind2=" " ind1="@" tag="029">
+    <subfield code="a">SBB-PK, Potsdamer Straße</subfield>
+    <subfield code="4">a</subfield>
+    <subfield code=" ">a</subfield>
+  </datafield>
+  <datafield ind2=" " ind1="@" tag="029">
+    <subfield code="a">Berlin SBB Haus Potsdamer Str</subfield>
+    <subfield code="4">c</subfield>
+    <subfield code=" ">c</subfield>
+  </datafield>
+  <datafield ind2=" " ind1="A" tag="029">
+    <subfield code="a">Staatsbibliothek zu Berlin - Preußischer Kulturbesitz, Haus Potsdamer Straße</subfield>
+    <subfield code=" ">Staatsbibliothek zu Berlin - Preußischer Kulturbesitz, Haus Potsdamer Straße</subfield>
+  </datafield>
+  <datafield ind2=" " ind1="P" tag="032">
+    <subfield code="a">Potsdamer Str. 33</subfield>
+    <subfield code="b">Berlin</subfield>
+    <subfield code="d">DE</subfield>
+    <subfield code="e">10785</subfield>
+    <subfield code="f">Berlin</subfield>
+    <subfield code="i">Mo-Sa 8.00-22.00</subfield>
+    <subfield code="j">Servicezeiten und Öffnungszeiten besonderer Bereiche s. Link "Öffnungszeiten besonderer Bereiche"</subfield>
+    <subfield code="k">13.37063</subfield>
+    <subfield code="l">52.50771</subfield>
+    <subfield code="n">11000000</subfield>
+    <subfield code="p">j</subfield>
+    <subfield code="2">S</subfield>
+    <subfield code=" ">S</subfield>
+  </datafield>
+  <datafield ind2=" " ind1="P" tag="032">
+    <subfield code="b">Berlin</subfield>
+    <subfield code="d">DE</subfield>
+    <subfield code="e">10772</subfield>
+    <subfield code="f">Berlin</subfield>
+    <subfield code="p">j</subfield>
+    <subfield code="2">P</subfield>
+    <subfield code=" ">P</subfield>
+  </datafield>
+  <datafield ind2=" " ind1="B" tag="035">
+    <subfield code="a">S</subfield>
+    <subfield code="c">j</subfield>
+    <subfield code="d">49</subfield>
+    <subfield code="e">30</subfield>
+    <subfield code="f">2 66-433888</subfield>
+    <subfield code="g">49</subfield>
+    <subfield code="h">30</subfield>
+    <subfield code="i">2 66-333501</subfield>
+    <subfield code="k">info@sbb.spk-berlin.de</subfield>
+    <subfield code="l">Auskunft</subfield>
+    <subfield code=" ">Auskunft</subfield>
+  </datafield>
+  <datafield ind2=" " ind1="B" tag="035">
+    <subfield code="a">W</subfield>
+    <subfield code="b">Benutzung</subfield>
+    <subfield code="c">j</subfield>
+    <subfield code="k">benutzung.h2@sbb.spk-berlin.de</subfield>
+    <subfield code=" ">benutzung.h2@sbb.spk-berlin.de</subfield>
+  </datafield>
+  <datafield ind2=" " ind1="D" tag="035">
+    <subfield code="a">B 3</subfield>
+    <subfield code=" ">B 3</subfield>
+  </datafield>
+  <datafield ind2=" " ind1="D" tag="035">
+    <subfield code="a">He 201</subfield>
+    <subfield code="b">DE-He201</subfield>
+    <subfield code=" ">DE-He201</subfield>
+  </datafield>
+  <datafield ind2=" " ind1="E" tag="035">
+    <subfield code="a">H</subfield>
+    <subfield code="b">s</subfield>
+    <subfield code="c">0011</subfield>
+    <subfield code="e">GBV</subfield>
+    <subfield code="f">11</subfield>
+    <subfield code="g">07</subfield>
+    <subfield code="h">10</subfield>
+    <subfield code="l">CC0</subfield>
+    <subfield code=" ">CC0</subfield>
+  </datafield>
+  <datafield ind2=" " ind1="G" tag="035">
+    <subfield code="a">Recht</subfield>
+    <subfield code="a">Orientalistik</subfield>
+    <subfield code="a">Osteuropa</subfield>
+    <subfield code="a">Ostasien</subfield>
+    <subfield code="a">Afrika</subfield>
+    <subfield code="a">Amtsdruckschriften</subfield>
+    <subfield code="a">Handschriften</subfield>
+    <subfield code="a">Karten</subfield>
+    <subfield code="a">Geistes- und Sozialwissenschaften</subfield>
+    <subfield code=" ">Geistes- und Sozialwissenschaften</subfield>
+  </datafield>
+  <datafield ind2=" " ind1="H" tag="035">
+    <subfield code="a">FID-INTRECHT-DE-1a / FID internationale und interdisziplinäre Rechtsforschung (ab 2014)</subfield>
+    <subfield code="a">FID-ASIEN-DE-1a / FID Asien – CrossAsia (ab 2016)</subfield>
+    <subfield code="a">FID-KARTEN-DE-1a / FID Kartographie und Geobasisdaten (ab 2016)</subfield>
+    <subfield code="a">FID-SLAW-DE-1a / FID Slawistik (ab 2016)</subfield>
+    <subfield code="a">SSG 2 / Rechtswissenschaft (bis einschließlich 2015)</subfield>
+    <subfield code="a">SSG 6,25 / Ost- und Südostasien (bis einschließlich 2015)</subfield>
+    <subfield code="a">SSG 7,39 / Slawistik (bis einschließlich 2015)</subfield>
+    <subfield code="a">SSG 14,1 / Veröffentlichungen zur Kartographie (bis einschließlich 2015)</subfield>
+    <subfield code="a">SSG 27 / Parlamentsschriften (bis einschließlich 2015)</subfield>
+    <subfield code="a">SSG 28,1 / Topographische Karten (bis einschließlich 2015)</subfield>
+    <subfield code=" ">SSG 28,1 / Topographische Karten (bis einschließlich 2015)</subfield>
+  </datafield>
+  <datafield ind2=" " ind1="I" tag="035">
+    <subfield code="a">BER</subfield>
+    <subfield code="b">ÜLV</subfield>
+    <subfield code="c">GBV</subfield>
+    <subfield code="d">Kalliope</subfield>
+    <subfield code="e">l</subfield>
+    <subfield code="g">V</subfield>
+    <subfield code=" ">V</subfield>
+  </datafield>
+  <datafield ind2=" " ind1="K" tag="035">
+    <subfield code="a">S</subfield>
+    <subfield code="b">A</subfield>
+    <subfield code=" ">A</subfield>
+  </datafield>
+  <datafield ind2=" " ind1="O" tag="035">
+    <subfield code="a">FZL DE-622</subfield>
+    <subfield code=" ">FZL DE-622</subfield>
+  </datafield>
+  <datafield ind2=" " ind1="A" tag="047">
+    <subfield code="a">UNO- und UNESCO-Depositärbibliothek. Übernommene Bibliothek: B 3 (Bibliothek der ehemaligen Preußischen Geologischen Landesanstalt)</subfield>
+    <subfield code=" ">UNO- und UNESCO-Depositärbibliothek. Übernommene Bibliothek: B 3 (Bibliothek der ehemaligen Preußischen Geologischen Landesanstalt)</subfield>
+  </datafield>
+  <datafield ind2=" " ind1="C" tag="050">
+    <subfield code="a">ABZ eingetragen 15062015</subfield>
+    <subfield code="5">DE-601</subfield>
+    <subfield code=" ">DE-601</subfield>
+  </datafield>
+  <datafield ind2=" " ind1="D" tag="050">
+    <subfield code="a">ANF2020; DE-1a 30-05-07 L SSG 6,20 K Tel.; ZRB 25-07-13 SSG geprüft, 7.40 gestrichen, sonst ok; ZRB 17-10-13 N EZB-ID (Rol); ZRB 02-11-16 SSG(s) mit 2015 abgeschlossen; ZRB 18-01-17 DE-He201 übernommen; Auftragsbestätigung: 11.02.2020 um 16.03</subfield>
+    <subfield code=" ">ANF2020; DE-1a 30-05-07 L SSG 6,20 K Tel.; ZRB 25-07-13 SSG geprüft, 7.40 gestrichen, sonst ok; ZRB 17-10-13 N EZB-ID (Rol); ZRB 02-11-16 SSG(s) mit 2015 abgeschlossen; ZRB 18-01-17 DE-He201 übernommen; Auftragsbestätigung: 11.02.2020 um 16.03</subfield>
+  </datafield>
+</record>

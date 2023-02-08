@@ -379,5 +379,4 @@ public class MabTest {
             writer.close();
         }
     }
-
 }

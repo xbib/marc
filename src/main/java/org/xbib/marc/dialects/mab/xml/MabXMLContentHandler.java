@@ -31,7 +31,7 @@ import java.util.Set;
  */
 public class MabXMLContentHandler extends MarcContentHandler implements MabXMLConstants {
 
-    private Set<String> validNamespaces = new HashSet<>(Collections.singletonList(MABXML_NAMESPACE));
+    private final Set<String> validNamespaces = new HashSet<>(Collections.singletonList(MABXML_NAMESPACE));
 
     public MabXMLContentHandler() {
         setTrim(true);
@@ -56,15 +56,15 @@ public class MabXMLContentHandler extends MarcContentHandler implements MabXMLCo
     @Override
     public void startElement(String uri, String localName, String qName, Attributes atts) throws SAXException {
         content.setLength(0);
+        inelement = true;
         if (!isNamespace(uri)) {
             return;
         }
         switch (localName) {
-            case DATEI: {
+            case DATEI -> {
                 beginCollection();
-                break;
             }
-            case DATENSATZ: {
+            case DATENSATZ -> {
                 String type = null;
                 for (int i = 0; i < atts.getLength(); i++) {
                     if (TYP.equals(atts.getLocalName(i))) {
@@ -79,9 +79,8 @@ public class MabXMLContentHandler extends MarcContentHandler implements MabXMLCo
                 RecordLabel recordLabel = RecordLabel.builder().setIndicatorLength(1).setSubfieldIdentifierLength(0)
                         .build();
                 leader(recordLabel);
-                break;
             }
-            case FELD: {
+            case FELD -> {
                 String tag = null;
                 StringBuilder sb = new StringBuilder();
                 sb.setLength(atts.getLength());
@@ -99,47 +98,42 @@ public class MabXMLContentHandler extends MarcContentHandler implements MabXMLCo
                 MarcField.Builder builder = MarcField.builder().tag(tag);
                 builder.indicator(sb.toString());
                 stack.push(builder);
-                break;
             }
-            case UF: {
+            case UF -> {
                 stack.peek().subfield(atts.getValue(CODE_ATTRIBUTE), null);
-                break;
             }
-            default:
-                break;
+            default -> {
+            }
         }
     }
 
     @Override
     public void endElement(String uri, String localName, String qName) throws SAXException {
+        inelement = false;
         if (!isNamespace(uri)) {
             return;
         }
         switch (localName) {
-            case DATEI: {
+            case DATEI -> {
                 endCollection();
-                break;
             }
-            case DATENSATZ: {
+            case DATENSATZ -> {
                 endRecord();
-                break;
             }
-            case FELD: {
+            case FELD -> {
                 String s = content.toString();
                 MarcField marcField = stack.pop().value(isTrim ? s.trim() : s).build();
                 if (marcValueTransformers != null) {
                     marcField = marcValueTransformers.transformValue(marcField);
                 }
                 field(marcField);
-                break;
             }
-            case UF: {
+            case UF -> {
                 String s = content.toString();
                 stack.peek().subfieldValue(isTrim ? s.trim() : s);
-                break;
             }
-            default:
-                break;
+            default -> {
+            }
         }
         content.setLength(0);
     }

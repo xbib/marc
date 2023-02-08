@@ -338,8 +338,7 @@ public class MarcField implements Comparable<MarcField> {
 
     @Override
     public String toString() {
-        return toKey() + (getValue() != null && !getValue().isEmpty() ? getValue() : "")
-                + (!getSubfields().isEmpty() ? getSubfields() : "");
+        return toKey() + (builder.hasSubfields() ? getSubfields() : getValue());
     }
 
     /**
@@ -363,6 +362,8 @@ public class MarcField implements Comparable<MarcField> {
         private final LinkedList<Subfield> subfields;
 
         private Boolean isControl;
+
+        private boolean disableControlFields;
 
         private MarcFieldValidator validator;
 
@@ -622,16 +623,15 @@ public class MarcField implements Comparable<MarcField> {
         @SuppressWarnings("unchecked")
         public Builder key(List<String> key, Object value) {
             switch (key.size()) {
-                case 0: {
+                case 0 -> {
                     if (value instanceof Collection) {
                         Collection<Map.Entry<String, Object>> collection = (Collection<Map.Entry<String, Object>>) value;
                         for (Map.Entry<String, Object> entry : collection) {
                             tag(entry.getKey()).value(entry.getValue().toString());
                         }
                     }
-                    break;
                 }
-                case 1: {
+                case 1 -> {
                     tag(key.get(0));
                     if (value instanceof Collection) {
                         Collection<Map.Entry<String, Object>> collection = (Collection<Map.Entry<String, Object>>) value;
@@ -641,9 +641,8 @@ public class MarcField implements Comparable<MarcField> {
                     } else {
                         value(value.toString());
                     }
-                    break;
                 }
-                case 2: {
+                case 2 -> {
                     tag(key.get(0));
                     String indicator = key.get(1);
                     if (indicator.isEmpty()) {
@@ -659,9 +658,8 @@ public class MarcField implements Comparable<MarcField> {
                     } else {
                         value(value.toString());
                     }
-                    break;
                 }
-                case 3: {
+                case 3 -> {
                     tag(key.get(0));
                     String indicator = key.get(1);
                     if (indicator.isEmpty()) {
@@ -681,10 +679,8 @@ public class MarcField implements Comparable<MarcField> {
                     } else {
                         subfield(subfieldIds, value.toString());
                     }
-                    break;
                 }
-                default:
-                    throw new IllegalArgumentException("key specification is invalid: " + key);
+                default -> throw new IllegalArgumentException("key specification is invalid: " + key);
             }
             return this;
         }
@@ -695,11 +691,23 @@ public class MarcField implements Comparable<MarcField> {
         }
 
         /**
+         * For some MARC dialects, we may want to disable control field logic completely.
+         * @return this builder
+         */
+        public Builder disableControlFields() {
+            this.disableControlFields = true;
+            return this;
+        }
+
+        /**
          * Is the MARC field a control field?
          *
          * @return true if control field, false if not
          */
         public boolean isControl() {
+            if (disableControlFields) {
+                return false;
+            }
             if (isControl == null) {
                 this.isControl = tag != null && tag.length() >= 2 && tag.charAt(0) == '0' && tag.charAt(1) == '0';
             }

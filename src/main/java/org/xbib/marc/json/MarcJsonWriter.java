@@ -305,10 +305,6 @@ public class MarcJsonWriter extends MarcContentHandler implements Flushable, Clo
         }
     }
 
-    public void write(Map<String, Object> map) {
-
-    }
-
     /**
      * Write MARC record using fields, indicators, and subfield structures,
      * therefore allowing duplicate keys in the output.

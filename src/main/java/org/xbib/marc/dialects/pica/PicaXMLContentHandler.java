@@ -69,6 +69,7 @@ public class PicaXMLContentHandler extends MarcContentHandler implements PicaCon
     @Override
     public void startElement(String uri, String localName, String qName, Attributes atts) throws SAXException {
         content.setLength(0);
+        inelement = true;
         if (!isNamespace(uri)) {
             return;
         }
@@ -92,7 +93,10 @@ public class PicaXMLContentHandler extends MarcContentHandler implements PicaCon
                         indicator = value.substring(3);
                     }
                 }
-                MarcField.Builder builder = MarcField.builder().tag(tag).indicator(indicator);
+                MarcField.Builder builder = MarcField.builder()
+                        .disableControlFields()
+                        .tag(tag)
+                        .indicator(indicator);
                 stack.push(builder);
                 break;
             }
@@ -107,7 +111,10 @@ public class PicaXMLContentHandler extends MarcContentHandler implements PicaCon
                         indicator = value.substring(3);
                     }
                 }
-                MarcField.Builder builder = MarcField.builder().tag(tag).indicator(indicator);
+                MarcField.Builder builder = MarcField.builder()
+                        .disableControlFields()
+                        .tag(tag)
+                        .indicator(indicator);
                 stack.push(builder);
                 break;
             }
@@ -134,7 +141,8 @@ public class PicaXMLContentHandler extends MarcContentHandler implements PicaCon
     }
 
     @Override
-    public void endElement(String uri, String localName, String qName) throws SAXException {
+    public void endElement(String uri, String localName, String qName) {
+        inelement = false;
         if (!isNamespace(uri)) {
             return;
         }
@@ -175,7 +183,6 @@ public class PicaXMLContentHandler extends MarcContentHandler implements PicaCon
             default:
                 throw new IllegalArgumentException("unknown end element: " + uri + " " + localName + " " + qName);
         }
-        content.setLength(0);
     }
 
     @Override

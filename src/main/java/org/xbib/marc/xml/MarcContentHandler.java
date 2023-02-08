@@ -65,6 +65,8 @@ public class MarcContentHandler
 
     protected StringBuilder content;
 
+    protected boolean inelement;
+
     protected MarcListener marcListener;
 
     protected MarcRecordListener marcRecordListener;
@@ -297,18 +299,19 @@ public class MarcContentHandler
     @Override
     public void startElement(String uri, String localName, String qName, Attributes atts) throws SAXException {
         content.setLength(0);
+        inelement = true;
         if (!isNamespace(uri)) {
             return;
         }
         switch (localName) {
-            case COLLECTION: {
-                if (!isCollection) {;
+            case COLLECTION -> {
+                if (!isCollection) {
+                    ;
                     beginCollection();
                     isCollection = true;
                 }
-                break;
             }
-            case RECORD: {
+            case RECORD -> {
                 String thisformat = null;
                 String thistype = null;
                 for (int i = 0; i < atts.getLength(); i++) {
@@ -325,13 +328,11 @@ public class MarcContentHandler
                     thistype = this.type;
                 }
                 beginRecord(thisformat, thistype);
-                break;
             }
-            case LEADER: {
-                break;
+            case LEADER -> {
             }
-            case CONTROLFIELD: // fall-through
-            case DATAFIELD: {
+            // fall-through
+            case CONTROLFIELD, DATAFIELD -> {
                 String tag = null;
                 StringBuilder sb = new StringBuilder();
                 sb.setLength(atts.getLength());
@@ -364,68 +365,63 @@ public class MarcContentHandler
                     builder.indicator(sb.substring(min - 1, max));
                 }
                 stack.push(builder);
-                break;
             }
-            case SUBFIELD: {
+            case SUBFIELD -> {
                 stack.peek().subfield(atts.getValue(CODE_ATTRIBUTE), null);
-                break;
             }
-            default:
-                break;
+            default -> {
+            }
         }
     }
 
     @Override
     public void endElement(String uri, String localName, String qName) throws SAXException {
+        inelement = false;
         if (!isNamespace(uri)) {
             return;
         }
         switch (localName) {
-            case COLLECTION: {
+            case COLLECTION -> {
                 if (isCollection) {
                     endCollection();
                     isCollection = false;
                 }
-                break;
             }
-            case RECORD: {
+            case RECORD -> {
                 endRecord();
-                break;
             }
-            case LEADER: {
+            case LEADER -> {
                 leader(RecordLabel.builder().from(content.toString().toCharArray()).build());
-                break;
             }
-            case CONTROLFIELD: {
+            case CONTROLFIELD -> {
                 MarcField marcField = stack.pop().value(content.toString()).build();
                 if (marcValueTransformers != null) {
                     marcField = marcValueTransformers.transformValue(marcField);
                 }
                 field(marcField);
-                break;
             }
-            case DATAFIELD: {
+            case DATAFIELD -> {
                 MarcField marcField = stack.pop().build();
                 if (marcValueTransformers != null) {
                     marcField = marcValueTransformers.transformValue(marcField);
                 }
                 field(marcField);
-                break;
             }
-            case SUBFIELD: {
+            case SUBFIELD -> {
                 String s = content.toString();
                 stack.peek().subfieldValue(isTrim ? s.trim() : s);
-                break;
             }
-            default: {
-                break;
+            default -> {
             }
         }
     }
 
     @Override
     public void characters(char[] ch, int start, int length) throws SAXException {
-        content.append(ch, start, length);
+        // ignore characters when element has not started
+        if (inelement) {
+            content.append(ch, start, length);
+        }
     }
 
     @Override
