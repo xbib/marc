@@ -22,6 +22,7 @@ import org.xbib.marc.MarcListener;
 import org.xbib.marc.MarcXchangeConstants;
 import org.xbib.marc.StreamMatcher;
 import org.xbib.marc.label.RecordLabel;
+import org.xbib.marc.transformer.value.MarcValueTransformers;
 import org.xbib.marc.xml.MarcXchangeWriter;
 
 import java.io.BufferedWriter;
@@ -30,6 +31,7 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
+import java.text.Normalizer;
 
 public class PicaTest {
 
@@ -117,21 +119,27 @@ public class PicaTest {
 
     @Test
     public void testDE1a() throws IOException {
-        StreamMatcher.fileMatch(getClass(), "DE-1a.pp.xml", ".xml", (inputStream, outputStream) -> {
+        StreamMatcher.xmlMatch(getClass(), "DE-1a.pp.xml", ".xml", (inputStream, outputStream) -> {
             // we can not simply write MarcXchange out of Pica. We will fix it later.
             try (MarcXchangeWriter writer = new MarcXchangeWriter(outputStream, true)
                     .setFormat(MarcXchangeConstants.MARCXCHANGE_FORMAT)
                     .setType(MarcXchangeConstants.BIBLIOGRAPHIC_TYPE)
             ) {
                 PicaXMLContentHandler contentHandler = new PicaXMLContentHandler();
+                MarcValueTransformers marcValueTransformers = new MarcValueTransformers();
+                marcValueTransformers.setMarcValueTransformer(value ->
+                        Normalizer.normalize(value, Normalizer.Form.NFKC));
                 contentHandler.setFormat("Pica");
                 contentHandler.setType("XML");
                 contentHandler.setMarcListener(writer);
-                Marc marc = Marc.builder()
+                Marc.builder()
+                        .disableControlFields()
                         .setInputStream(inputStream)
                         .setContentHandler(contentHandler)
-                        .build();
-                marc.xmlReader().parse();
+                        .setMarcValueTransformers(marcValueTransformers)
+                        .build()
+                        .xmlReader()
+                        .parse();
             }
         });
     }

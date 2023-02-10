@@ -1,7 +1,6 @@
 <?xml version="1.0" ?>
 <ppxml:record xmlns:ppxml="http://www.oclcpica.org/xmlns/ppxml-1.0">
         <ppxml:global opacflag="" status="">
-            <ppxml:tag id="00900004" occ=""></ppxml:tag>
             <ppxml:tag id="001A" occ="">
                 <ppxml:subf id="0">9006:18-11-99</ppxml:subf>
             </ppxml:tag>

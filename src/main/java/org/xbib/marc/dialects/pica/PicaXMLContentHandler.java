@@ -183,6 +183,7 @@ public class PicaXMLContentHandler extends MarcContentHandler implements PicaCon
             default:
                 throw new IllegalArgumentException("unknown end element: " + uri + " " + localName + " " + qName);
         }
+        content.setLength(0);
     }
 
     @Override

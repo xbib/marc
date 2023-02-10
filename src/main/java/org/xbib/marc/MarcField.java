@@ -201,7 +201,11 @@ public class MarcField implements Comparable<MarcField> {
             if (value == null || value.isEmpty()) {
                 value = getFirstSubfieldValue(" ");
             }
-            // still no value? Then it is some exotic like MAB with subfield "a"?
+            // if no value, maybe "0" for Pica 003@ $0?
+            if (value == null || value.isEmpty()) {
+                value = getFirstSubfieldValue("0");
+            }
+            // still no value? Then it is some exotic like MAB 001 with subfield "a"?
             if (value == null || value.isEmpty()) {
                 value = getFirstSubfieldValue("a");
             }
