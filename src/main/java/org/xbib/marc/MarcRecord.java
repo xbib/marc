@@ -15,6 +15,7 @@
  */
 package org.xbib.marc;
 
+import java.util.Objects;
 import org.xbib.marc.label.RecordLabel;
 
 import java.io.InputStream;
@@ -44,7 +45,7 @@ import static org.xbib.marc.json.MarcJsonWriter.LEADER_TAG;
 import static org.xbib.marc.json.MarcJsonWriter.TYPE_TAG;
 
 /**
- * A MARC record. This is an extended MARC record augmented with MarcXchange information.
+ * A MARC record.
  */
 public class MarcRecord implements Map<String, Object> {
 
@@ -91,9 +92,7 @@ public class MarcRecord implements Map<String, Object> {
         this.format = format;
         this.type = type;
         this.recordLabel = recordLabel;
-        if (recordLabel == null) {
-            throw new NullPointerException("record label must not be null");
-        }
+        Objects.requireNonNull(recordLabel, "record label must not be null");
         this.marcFields = marcFields;
         this.delegate = lightweight ? Map.of() : createMapFromMarcFields(comparator);
     }
@@ -179,6 +178,15 @@ public class MarcRecord implements Map<String, Object> {
         return recordLabel;
     }
 
+    /**
+     * Return the MARC fields of this record.
+     *
+     * @return the MARC field list
+     */
+    public List<MarcField> getFields() {
+        return marcFields;
+    }
+
     public LocalDate getCreationDate(LocalDate defaultDate) {
         if (marcFields != null) {
             MarcField marcField = getFirst("008");
@@ -253,15 +261,6 @@ public class MarcRecord implements Map<String, Object> {
             }
             marcFields = stream.toList();
         }
-    }
-
-    /**
-     * Return the MARC fields of this record.
-     *
-     * @return the MARC field list
-     */
-    public List<MarcField> getFields() {
-        return marcFields;
     }
 
     /**
