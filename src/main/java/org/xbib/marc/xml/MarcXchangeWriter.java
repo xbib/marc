@@ -169,7 +169,7 @@ public class MarcXchangeWriter extends MarcContentHandler implements Flushable, 
     /**
      * Create a MarcXchange writer in "split writer" mode.
      * @param fileNamePattern file name pattern
-     * @param splitlimit split write limit
+     * @param splitlimit split write limit. Split records if configured. A splitlimit of -1 prevents splitting.
      * @param bufferSize buffer size
      * @param compress if true, compress MarcXchange output
      * @param indent if true, indent MarcXchange output
