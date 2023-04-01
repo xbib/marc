@@ -8,11 +8,6 @@ public class ValueNode implements Node<Object> {
         this.value = value;
     }
 
-    @Override
-    public int getDepth() {
-        return 0;
-    }
-
     public void set(Object value) {
         this.value = value;
     }
