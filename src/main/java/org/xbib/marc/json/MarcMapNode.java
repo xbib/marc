@@ -3,6 +3,7 @@ package org.xbib.marc.json;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+@SuppressWarnings("serial")
 public class MarcMapNode extends LinkedHashMap<CharSequence, Node<?>> implements MapNode {
 
     public MarcMapNode() {

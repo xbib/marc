@@ -1,11 +1,12 @@
 plugins {
-    id "de.marcphilipp.nexus-publish" version "0.4.0"
-    id "io.codearte.nexus-staging" version "0.21.1"
-    id "org.xbib.gradle.plugin.asciidoctor" version "2.5.2.2"
-    id "org.cyclonedx.bom" version "1.7.2"
-    id "com.github.spotbugs" version "5.0.13"
     id "checkstyle"
     id "pmd"
+    id 'maven-publish'
+    id 'signing'
+    id "io.github.gradle-nexus.publish-plugin" version "1.3.0"
+    id "org.cyclonedx.bom" version "1.7.2"
+    id "com.github.spotbugs" version "5.0.13"
+    id "org.xbib.gradle.plugin.asciidoctor" version "2.5.2.2"
 }
 
 wrapper {

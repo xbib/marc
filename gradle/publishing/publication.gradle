@@ -1,12 +1,10 @@
 
-apply plugin: "de.marcphilipp.nexus-publish"
+apply plugin: 'io.github.gradle-nexus.publish-plugin'
 
 publishing {
     publications {
-        mavenJava(MavenPublication) {
+        javaPublication(MavenPublication) {
             from components.java
-            artifact sourcesJar
-            artifact javadocJar
             pom {
                 name = project.name
                 description = rootProject.ext.description
@@ -22,7 +20,7 @@ publishing {
                         id = 'jprante'
                         name = 'Jörg Prante'
                         email = 'joergprante@gmail.com'
-                        url = 'https://github.com/jprante'
+                        url = 'https://github.com/xbib'
                     }
                 }
                 scm {
@@ -47,18 +45,18 @@ publishing {
 }
 
 if (project.hasProperty("signing.keyId")) {
-    apply plugin: 'signing'
     signing {
-        sign publishing.publications.mavenJava
+        sign publishing.publications.javaPublication
     }
 }
+
 if (project.hasProperty("ossrhUsername")) {
     nexusPublishing {
         repositories {
             sonatype {
                 username = project.property('ossrhUsername')
                 password = project.property('ossrhPassword')
-                packageGroup = "org.xbib"
+                packageGroup = 'org.xbib'
             }
         }
     }

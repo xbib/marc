@@ -21,22 +21,6 @@ jar {
     }
 }
 
-task sourcesJar(type: Jar, dependsOn: classes) {
-    dependsOn classes
-    classifier 'sources'
-    from sourceSets.main.allSource
-}
-
-task javadocJar(type: Jar, dependsOn: javadoc) {
-    dependsOn javadoc
-    classifier 'javadoc'
-    from javadoc.destinationDir
-}
-
-artifacts {
-    archives sourcesJar, javadocJar
-}
-
 tasks.withType(JavaCompile) {
     options.compilerArgs << '-Xlint:all'
     options.encoding = 'UTF-8'
@@ -45,4 +29,9 @@ tasks.withType(JavaCompile) {
 tasks.withType(Javadoc) {
     options.addStringOption('Xdoclint:none', '-quiet')
     options.encoding = 'UTF-8'
+}
+
+java {
+    withSourcesJar()
+    withJavadocJar()
 }
