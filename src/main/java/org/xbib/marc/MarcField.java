@@ -24,6 +24,7 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.function.BinaryOperator;
 import java.util.function.Supplier;
 import java.util.regex.Pattern;
@@ -603,6 +604,20 @@ public class MarcField implements Comparable<MarcField> {
         }
 
         /**
+         * Remove subfields if they match the given set of subfield IDs.
+         * @param subfieldIds the IDs to remove
+         * @return this builder
+         */
+        public Builder removeSubfields(Set<String> subfieldIds) {
+            LinkedList<Subfield> list = subfields.stream()
+                    .filter(sf -> !subfieldIds.contains(sf.id))
+                    .collect(Collectors.toCollection(LinkedList::new));
+            this.subfields.clear();
+            this.subfields.addAll(list);
+            return this;
+        }
+
+        /**
          * Copy a MARC field into this builder.
          * @param field the MARC field to copy
          * @return this builder
@@ -791,6 +806,16 @@ public class MarcField implements Comparable<MarcField> {
          */
         public String getValue() {
             return value;
+        }
+
+        @Override
+        public boolean equals(Object obj) {
+            return obj instanceof Subfield && toString().equals(obj.toString());
+        }
+
+        @Override
+        public int hashCode() {
+            return toString().hashCode();
         }
 
         @Override
