@@ -15,7 +15,7 @@ pluginManagement {
 dependencyResolutionManagement {
     versionCatalogs {
         libs {
-            version('gradle', '8.0.2')
+            version('gradle', '8.1.1')
             version('groovy', '3.0.13')
             version('junit', '5.9.2')
             // all dependencies are test dependencies only

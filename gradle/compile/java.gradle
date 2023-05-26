@@ -3,6 +3,8 @@ apply plugin: 'java-library'
 
 java {
     modularity.inferModulePath.set(true)
+    withSourcesJar()
+    withJavadocJar()
 }
 
 compileJava {
@@ -29,9 +31,4 @@ tasks.withType(JavaCompile) {
 tasks.withType(Javadoc) {
     options.addStringOption('Xdoclint:none', '-quiet')
     options.encoding = 'UTF-8'
-}
-
-java {
-    withSourcesJar()
-    withJavadocJar()
 }

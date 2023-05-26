@@ -1,0 +1,27 @@
+apply plugin: 'ivy-publish'
+
+publishing {
+    repositories {
+        ivy {
+            url = "https://xbib.org/repo"
+        }
+    }
+    publications {
+        ivy(IvyPublication) {
+            from components.java
+            descriptor {
+                license {
+                    name = 'The Apache License, Version 2.0'
+                    url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                }
+                author {
+                    name = 'Jörg Prante'
+                    url = 'http://example.com/users/jane'
+                }
+                descriptor.description {
+                    text = rootProject.ext.description
+                }
+            }
+        }
+    }
+}

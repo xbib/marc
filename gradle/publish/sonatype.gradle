@@ -1,0 +1,12 @@
+
+if (project.hasProperty('ossrhUsername') && project.hasProperty('ossrhPassword')) {
+    nexusPublishing {
+        repositories {
+            sonatype {
+                username = project.property('ossrhUsername')
+                password = project.property('ossrhPassword')
+                packageGroup = "org.xbib"
+            }
+        }
+    }
+}

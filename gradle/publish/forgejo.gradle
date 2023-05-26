@@ -1,0 +1,16 @@
+if (project.hasProperty('forgeJoToken')) {
+    publishing {
+        repositories {
+            maven {
+                url 'https://xbib.org/api/packages/joerg/maven'
+                credentials(HttpHeaderCredentials) {
+                    name = "Authorization"
+                    value = "token ${project.property('forgeJoToken')}"
+                }
+                authentication {
+                    header(HttpHeaderAuthentication)
+                }
+            }
+        }
+    }
+}
