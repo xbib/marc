@@ -15,6 +15,7 @@
  */
 package org.xbib.marc;
 
+import java.util.Objects;
 import org.xbib.marc.dialects.mab.MabSubfieldControl;
 import org.xbib.marc.label.RecordLabel;
 
@@ -609,11 +610,28 @@ public class MarcField implements Comparable<MarcField> {
          * @return this builder
          */
         public Builder removeSubfields(Set<String> subfieldIds) {
+            // create a new subfield list and replace the whole list by a filtered list
             LinkedList<Subfield> list = subfields.stream()
                     .filter(sf -> !subfieldIds.contains(sf.id))
                     .collect(Collectors.toCollection(LinkedList::new));
             this.subfields.clear();
             this.subfields.addAll(list);
+            return this;
+        }
+
+        /**
+         * In-place replacement of all subfields with a given ID.
+         * @param subfieldId the subfield ID
+         * @param newValue the new value, must be non-null
+         * @return this builder
+         */
+        public Builder replace(String subfieldId, String newValue) {
+            Objects.requireNonNull(newValue);
+            for (Subfield subfield : subfields) {
+                if (subfield.getId().equals(subfieldId)) {
+                    subfield.setValue(newValue);
+                }
+            }
             return this;
         }
 
@@ -785,7 +803,7 @@ public class MarcField implements Comparable<MarcField> {
 
         private final String id;
 
-        private final String value;
+        private String value;
 
         private Subfield(String id, String value) {
             this.id = id;
@@ -806,6 +824,10 @@ public class MarcField implements Comparable<MarcField> {
          */
         public String getValue() {
             return value;
+        }
+
+        private void setValue(String value) {
+            this.value = value;
         }
 
         @Override
