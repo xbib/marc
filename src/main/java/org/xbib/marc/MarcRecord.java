@@ -67,7 +67,7 @@ public class MarcRecord implements Map<String, Object> {
 
     private transient RecordLabel recordLabel;
 
-    private transient List<MarcField> marcFields;
+    private transient Collection<MarcField> marcFields;
 
     private MarcRecord(Map<String, Object> delegate) {
         this.delegate = delegate;
@@ -86,7 +86,7 @@ public class MarcRecord implements Map<String, Object> {
     public MarcRecord(String format,
                       String type,
                       RecordLabel recordLabel,
-                      List<MarcField> marcFields,
+                      Collection<MarcField> marcFields,
                       boolean lightweight,
                       Comparator<String> comparator) {
         this.format = format;
@@ -183,7 +183,7 @@ public class MarcRecord implements Map<String, Object> {
      *
      * @return the MARC field list
      */
-    public List<MarcField> getFields() {
+    public Collection<MarcField> getFields() {
         return marcFields;
     }
 

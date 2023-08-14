@@ -308,4 +308,9 @@ public class MarcRecordTest {
         marcRecord.all("001", field -> assertEquals("123", field.getValue()));
         marcRecord.all("100", field -> assertEquals("Hello World", field.getFirstSubfieldValue("a")));
     }
+
+    @Test
+    public void testMarcRecordBuildWithUniqueFields() {
+
+    }
 }
