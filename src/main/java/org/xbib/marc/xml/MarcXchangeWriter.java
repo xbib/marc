@@ -60,6 +60,7 @@ import java.util.zip.GZIPOutputStream;
  * This MarcXchange Writer writes MarcXchange events to a StaX XML output stream or XML event consumer.
  * Default output format is MarcXchange.
  */
+@SuppressWarnings("this-escape")
 public class MarcXchangeWriter extends MarcContentHandler implements Flushable, Closeable {
 
     private static final Logger logger = Logger.getLogger(MarcXchangeWriter.class.getName());

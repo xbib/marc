@@ -18,15 +18,16 @@ package org.xbib.marc.io;
 /**
  * Scan buffer.
  */
+@SuppressWarnings("this-escape")
 public class ScanBuffer {
 
     private boolean cs;
 
-    private char[] buffer = new char[0];
+    private char[] buffer;
 
-    private int[] buffer2 = new int[0];
+    private int[] buffer2;
 
-    private char[] token = new char[0];
+    private char[] token;
 
     private int pos;
 

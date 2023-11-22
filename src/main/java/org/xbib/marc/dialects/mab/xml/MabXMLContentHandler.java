@@ -33,6 +33,7 @@ public class MabXMLContentHandler extends MarcContentHandler implements MabXMLCo
 
     private final Set<String> validNamespaces = new HashSet<>(Collections.singletonList(MABXML_NAMESPACE));
 
+    @SuppressWarnings("this-escape")
     public MabXMLContentHandler() {
         setTrim(true);
     }

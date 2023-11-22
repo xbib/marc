@@ -20,7 +20,7 @@ import org.xbib.marc.label.RecordLabel;
 import java.io.IOException;
 import java.util.TreeMap;
 
-@SuppressWarnings("serial")
+@SuppressWarnings({"serial", "this-escape"})
 public class MarcFieldDirectory extends TreeMap<Integer, MarcField.Builder> {
 
     public MarcFieldDirectory(RecordLabel label, String encodedDirectory) throws IOException {

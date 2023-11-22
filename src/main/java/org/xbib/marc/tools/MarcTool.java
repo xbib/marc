@@ -22,7 +22,7 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.stream.StreamResult;
 import java.io.BufferedInputStream;
 import java.io.InputStream;
-import java.net.URL;
+import java.net.URI;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -120,7 +120,7 @@ public class MarcTool {
                 if (schema != null && stylesheet != null && result != null) {
                     System.setProperty("http.agent", "Java Agent");
                     builder.setSchema(schema).build().transform(TransformerFactory.newInstance(),
-                            new URL(stylesheet),
+                            URI.create(stylesheet).toURL(),
                             new StreamResult(Files.newBufferedWriter(Paths.get(result))));
                 } else {
                     builder.build().writeCollection(65536);
