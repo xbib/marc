@@ -4,6 +4,7 @@ dependencies {
     testImplementation testLibs.junit.jupiter.params
     testImplementation testLibs.hamcrest
     testRuntimeOnly testLibs.junit.jupiter.engine
+    testRuntimeOnly testLibs.junit.jupiter.platform.launcher
 }
 
 test {
@@ -23,4 +24,8 @@ test {
     }
     jvmArgs '-Xmx2048m'
     systemProperty 'java.util.logging.config.file', 'src/test/resources/logging.properties'
+    // for reading large MARC XML files
+    systemProperty 'entityExpansionLimit', '2147480000'
+    systemProperty 'totalEntitySizeLimit', '2147480000'
+    systemProperty 'jdk.xml.totalEntitySizeLimit', '2147480000'
 }
