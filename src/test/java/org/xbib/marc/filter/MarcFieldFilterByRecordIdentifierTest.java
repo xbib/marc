@@ -16,8 +16,8 @@
 package org.xbib.marc.filter;
 
 import org.junit.jupiter.api.Test;
-import org.xbib.content.XContentBuilder;
-import org.xbib.content.json.JsonXContent;
+import org.xbib.datastructures.api.Builder;
+import org.xbib.datastructures.json.tiny.JsonBuilder;
 import org.xbib.marc.Marc;
 import org.xbib.marc.MarcField;
 import org.xbib.marc.MarcFieldAdapter;
@@ -93,15 +93,15 @@ public class MarcFieldFilterByRecordIdentifierTest {
                 .collect(Collectors.toList());
 
         // JSON output
-        XContentBuilder builder = JsonXContent.contentBuilder().prettyPrint()
-                .startObject();
+        Builder builder = JsonBuilder.builder()
+                .beginMap();
         for (Map.Entry<String, Map<String, List<Map<String, String>>>> entry : result.entrySet()) {
             builder.field(entry.getKey(), entry.getValue());
         }
         builder.field("issns", issns);
-        builder.endObject();
+        builder.endMap();
 
-        logger.log(Level.INFO, builder.string());
+        logger.log(Level.INFO, builder.build());
     }
 
     private static boolean matchISSNField(MarcField field, MarcField.Subfield subfield) {

@@ -22,8 +22,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import java.io.IOException;
 import java.time.LocalDate;
 import org.junit.jupiter.api.Test;
-import org.xbib.content.XContentBuilder;
-import org.xbib.content.json.JsonXContent;
+import org.xbib.datastructures.api.Builder;
+import org.xbib.datastructures.json.tiny.JsonBuilder;
 import org.xbib.marc.label.RecordLabel;
 import org.xbib.marc.transformer.value.MarcValueTransformers;
 import org.xbib.marc.xml.MarcXchangeWriter;
@@ -295,9 +295,9 @@ public class MarcRecordTest {
                 "100", Map.of("_", Map.of("a", "Hello World"))));
         MarcRecord marcRecord = MarcRecord.from(map);
         assertEquals("{001=123, 100={_={a=Hello World}}}", marcRecord.toString());
-        XContentBuilder builder = JsonXContent.contentBuilder();
-        builder.map(marcRecord);
-        assertEquals("{\"001\":\"123\",\"100\":{\"_\":{\"a\":\"Hello World\"}}}", builder.string());
+        Builder builder = JsonBuilder.builder();
+        builder.buildMap(marcRecord);
+        assertEquals("{\"001\":\"123\",\"100\":{\"_\":{\"a\":\"Hello World\"}}}", builder.build());
     }
 
     @Test
